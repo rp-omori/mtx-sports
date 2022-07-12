@@ -2,9 +2,10 @@
 > U-factor MTXスポーツ・関節クリニック
 
 ## set up
-### when using docker
+### When using docker
 https://github.com/terraphic/docker-lamp-wp
 
+### After building the development environment
 ```bash
 # install dependencies
 npm install
