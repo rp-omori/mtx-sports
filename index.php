@@ -29,7 +29,5 @@
     <div>
         <p>testtesttest</p>
         <div class="test">aaaa</div>
-    </div>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/index.js"></script>
-</body>
-</html>
+
+<?php get_footer(); ?>
