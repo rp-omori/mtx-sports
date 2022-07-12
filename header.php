@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, initial-scale=1.0, user-scalable=no">
     <meta name="description" content="【ページの説明文】" />
     <title>MTX膝関節クリニック</title>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/reset.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/default.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
     <link rel="shortcut icon" href="【ファイル名.ico】" />
     <link rel="apple-touch-icon-precomposed" href="【画像のパス/apple-touch-icon-precomposed.png】" />
