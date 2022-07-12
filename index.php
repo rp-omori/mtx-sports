@@ -4,7 +4,5 @@
  */
 
 get_header(); ?>
-</div>
-<script src="<?php echo get_template_directory_uri(); ?>/js/index.js"></script>
-</body>
-</html>
+<div class="main">body</div>
+<?php get_footer(); ?>
