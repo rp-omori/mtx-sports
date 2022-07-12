@@ -1,0 +1,13 @@
+:root {
+  --main-text-color: #4c4948;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+a:hover {
+  opacity: 0.8;
+}
