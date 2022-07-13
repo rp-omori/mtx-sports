@@ -12,19 +12,19 @@
     <link rel="shortcut icon" href="【ファイル名.ico】" />
     <link rel="apple-touch-icon-precomposed" href="【画像のパス/apple-touch-icon-precomposed.png】" />
     <!-- facebook -->
-    <meta property="og:url" content="【ページのURL】 /">
+    <!-- <meta property="og:url" content="【ページのURL】 /">
     <meta property="og:title" content="【ページのタイトル】" />
     <meta property="og:type" content="website" />
     <meta property="og:description" content="【ページの説明】" />
     <meta property="og:image" content="【サムネイル画像のURL】" />
     <meta property="og:site_name" content="【サイトのタイトル】" />
     <meta property="fb:app_id" content="【appID】" />
-    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:locale" content="ja_JP" /> -->
     <!-- Twitter -->
-    <meta name="twitter:card" content="【カードの種類】" />
+    <!-- <meta name="twitter:card" content="【カードの種類】" />
     <meta name="twitter:site" content="【@ユーザー名】" />
     <meta name="twitter:description" content="【ページの説明】" />
-    <meta name="twitter:image:src" content="【サムネイル画像のURL】" />
+    <meta name="twitter:image:src" content="【サムネイル画像のURL】" /> -->
     <?php wp_head();?>
 </head>
 <body>
