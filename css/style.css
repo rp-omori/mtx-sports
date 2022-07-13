@@ -1,10 +1,18 @@
-.test {
-  position: absolute;
+@charset "UTF-8";
+/*
+ * htmlのフォントサイズ
+ * @args ベースの画面幅
+ */
+/*
+ * ルートのフォントサイズを基準にフォントサイズを可変にする
+ * @args 最大値（デザイン上の数値）
+ */
+/*
+ * get_vwの設定
+ */
+.testa {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  font-size: clamp(10px, 2rem, 20px);
 }

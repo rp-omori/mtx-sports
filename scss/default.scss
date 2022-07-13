@@ -1,0 +1,20 @@
+@import 'foundation/mixin';
+
+:root {
+  --main-text-color: #4c4948;
+}
+
+html {
+  font-size: rootPx();
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+  

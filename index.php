@@ -4,5 +4,7 @@
  */
 
 get_header(); ?>
-<div class="main">body</div>
+<div class="main">
+    <div class="testa">aaa</div>
+</div>
 <?php get_footer(); ?>
