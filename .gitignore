@@ -1,3 +1,11 @@
+# vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
 # ignore everything in the root except the "wp-content" directory.
 !wp-content/
 
