@@ -30,3 +30,9 @@ npm run dev
 開発環境用branch
 > featureブランチでテストをして、問題なければdevelopブランチにプルリクエストをしてマージしてください。
 > developブランチはgit actionsでステージング環境と同期しています。プッシュしたらステージング環境が更新されるので注意してください。。
+
+## エディター環境
+各エディターの以下のプラグインは非推奨です
+- Live Sass Compiler
+- Live Server
+- Format HTML in PHP
