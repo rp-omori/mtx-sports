@@ -2,9 +2,10 @@
 > U-factor MTXスポーツ・関節クリニック
 
 ## set up
-できればDockerイメージを使用すること。
+できればDockerを使用すること。
+
 https://github.com/terraphic/docker-lamp-wp
-### Dockerイメージ作成後
+### Dockerコンテナ作成後
 以下を実行して開発環境を整えてください。
 ```bash
 # install dependencies
@@ -22,6 +23,7 @@ npm run dev
 - feat: 新しい機能、画面を追加する場合
 - fix: バグの修正
 - refactor: コードのリファクタリング
+
 参考：https://qiita.com/konatsu_p/items/dfe199ebe3a7d2010b3e
 ### main
 本番環境用branch
