@@ -1,4 +1,8 @@
-.testa {
-    display: flex;
-    font-size: calcFz(20);
+.main {
+
+  padding-top: clamp(10px, get_vw(85), 85px);
+
+  @include sp {
+    padding-top: 50px;
+  }
 }

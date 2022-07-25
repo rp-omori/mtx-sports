@@ -1,0 +1,107 @@
+@use "sass:math";
+.section-title__wrapper {
+  position: relative;
+
+  &.--white {
+    h2 {
+      color: #fff;
+    }
+    p {
+      color: #009b8e;
+      font-size: calcFz(42);
+
+      &:before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 1.5em;
+        height: 2px;
+        bottom: 0;
+        background: #009b8e;
+      }
+    }
+  }
+
+  &.--light_green {
+    h2 {
+      color: #22908C;
+    }
+    p {
+      width: 100%;
+      color: #fff;
+      font-size: calcFz(36);
+    }
+  }
+
+  &.--left {
+    text-align: left;
+
+    .section-sub-title {
+      left: 0;
+    }
+  }
+
+  &.--center {
+    text-align: center;
+
+    .section-sub-title {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .section-title {
+    display: inline-block;
+    font-family: $fontFamilyDin2014;
+    font-size: calcFz(98);
+    font-weight: bold;
+  }
+  .section-sub-title {
+    position: absolute;
+    padding-bottom: get_vw(35);
+    bottom: math.div(get_vw(-98), 2.5);
+    font-weight: bold;
+  }
+}
+
+.btn {
+  padding: 20px 0;
+  border-radius: 5px;
+  font-size: calcFz(19);
+  font-weight: bold;
+  text-align: center;
+
+  &.btn--orange {
+    color: var(--main-color-white);
+    background: var(--btn-color-orange);
+  }
+
+  &.btn--white {
+    background: var(--main-color-white);
+  }
+
+  &.btn--shadow {
+    filter: drop-shadow(5px 5px 5px rgba(15, 78, 69, .5))
+  }
+
+  &.btn--line {
+    span {
+      position: relative;
+      padding-left: get_vw(40);
+
+      &:before {
+        content: '';
+        position: absolute;
+        width: get_vw(25);
+        height: get_vw(23);
+        background-image: url(#{$img-root-dir}/icon-line.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left center;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}

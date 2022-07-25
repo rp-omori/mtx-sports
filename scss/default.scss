@@ -3,9 +3,12 @@
 
 :root {
   --main-text-color: #414846;
-  --main-text-color-white: #FFFFFF;
+  --main-color-white: #FFF;
   --main-color: #009875;
+  --main-color-bg: #008B86;
   --main-color-black: #262928;
+  --base-color: #EFF4F3;
+  --btn-color-orange: #EF8112;
 }
 
 html {
@@ -17,7 +20,19 @@ html,body {
 }
 
 body {
+  background: var(--base-color);
   font-family: $fontFamilyYuGo;
+}
+
+p {
+  color: var(--main-color-black);
+}
+
+[type=reset],
+[type=submit],
+button,
+html [type=button] {
+  -webkit-appearance: button;
 }
 
 .container {

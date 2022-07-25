@@ -4,7 +4,7 @@
  */
 
 get_header(); ?>
-<div class="main">
-    <div class="testa">aaa</div>
-</div>
+<main class="main">
+    <div class="kv">キービジュアル</div>
+</main>
 <?php get_footer(); ?>

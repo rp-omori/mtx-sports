@@ -18,7 +18,7 @@
  * get_vwの設定
  */
 @function get_vw($size, $viewport: 1536) {
-  $rate: 100 / $viewport;
+  $rate: math.div(100, $viewport);
   @return $rate * $size * 1vw;
 }
 
@@ -29,13 +29,13 @@ $widthBasePC: 1536px;
 $widthBaseSP: 768px;
 
 @mixin pc {
-  @media screen and (min-width: calc($widthBaseSP + 1px)) {
+  @media screen and (min-width: calc($widthBaseSP)) {
     @content;
   }
 }
 
 @mixin sp {
-  @media screen and (max-width: $widthBaseSP) {
+  @media screen and (max-width: #{$widthBaseSP - 1px}) {
     @content;
   }
 }

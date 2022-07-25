@@ -25,6 +25,9 @@
     <meta name="twitter:site" content="【@ユーザー名】" />
     <meta name="twitter:description" content="【ページの説明】" />
     <meta name="twitter:image:src" content="【サムネイル画像のURL】" /> -->
+    <!-- Adobe Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/ofs1fip.css">
+
     <?php wp_head();?>
 </head>
 <?php
@@ -32,15 +35,15 @@ $rootDir = get_template_directory_uri();
 ?>
 <body>
     <div class="container">
-        <header class="header header--white">
+        <header class="header">
           <div class="header__inner">
             <div class="header__left">
-              <div class="header__logo">
+              <h1 class="header__logo">
                 <a href="/" class="header__logo-link">
                   <img src="<?php echo $rootDir ?>/images/logo--black.svg" alt="MTX SPORTS & ARTICULAR CLINIC スポーツ・関節クリニック">
                 </a>
-              </div>
-              <div class="header__info">
+              </h1>
+              <!-- <div class="header__info">
                 <div class="header__icon-tel">
                   <img src="<?php echo $rootDir ?>/images/icon-tel--white.svg" alt="">
                 </div>
@@ -48,13 +51,14 @@ $rootDir = get_template_directory_uri();
                   <a href="tel:000-00-0000">000-00-0000</a>
                 </div>
                 <p class="header__hour">受付時間 10:00〜18:00</p>
-              </div>
+              </div> -->
             </div>
+
             <nav class="header__nav">
               <ul class="header__list">
-                <li class="header__item header__item--active">
-                  <a href="" class="header__link">
-                    クリニックについて
+                <li class="header__item">
+                  <a href="#" class="header__link">
+                    症状から探す
                   </a>
                 </li>
                 <li class="header__item">
@@ -64,20 +68,57 @@ $rootDir = get_template_directory_uri();
                 </li>
                 <li class="header__item">
                   <a href="" class="header__link">
+                    クリニックの特徴
+                  </a>
+                </li>
+                <li class="header__item">
+                  <a href="" class="header__link">
                     医師・スタッフ紹介
                   </a>
                 </li>
                 <li class="header__item">
                   <a href="" class="header__link">
-                    患者様の声
-                  </a>
-                </li>
-                <li class="header__item">
-                  <a href="" class="header__link">
-                    インフォメーション
+                    アクセス
                   </a>
                 </li>
               </ul>
             </nav>
+
+            <div class="header__mobile-nav header__mobile-nav--active">
+              <button class="header__hamburger" type="button" aria-controls="drawer" aria-expanded="false" aria-label="MENU">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <nav id="drawer" class="header__drawer" aria-hidden="true">
+                <ul class="header__list">
+                  <li class="header__item">
+                    <a href="#" class="header__link">
+                      症状から探す
+                    </a>
+                  </li>
+                  <li class="header__item">
+                    <a href="" class="header__link">
+                      治療について
+                    </a>
+                  </li>
+                  <li class="header__item">
+                    <a href="" class="header__link">
+                      クリニックの特徴
+                    </a>
+                  </li>
+                  <li class="header__item">
+                    <a href="" class="header__link">
+                      医師・スタッフ紹介
+                    </a>
+                  </li>
+                  <li class="header__item">
+                    <a href="" class="header__link">
+                      アクセス
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
           </div>
         </header>
