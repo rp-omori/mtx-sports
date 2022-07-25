@@ -1,11 +1,26 @@
 @import 'foundation/mixin';
 
 :root {
-  --main-text-color: #4c4948;
+  --main-text-color: #414846;
+  --main-color: #009875;
 }
 
 html {
   font-size: rootPx();
+}
+
+html,body {
+	min-height: 100vh;
+}
+
+.container {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+.footer {
+	margin-top: auto;
 }
 
 img {
@@ -17,4 +32,3 @@ img {
 a:hover {
   opacity: 0.8;
 }
-  
