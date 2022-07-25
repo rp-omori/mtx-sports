@@ -27,6 +27,9 @@
     <meta name="twitter:image:src" content="【サムネイル画像のURL】" /> -->
     <?php wp_head();?>
 </head>
+<?php
+$rootDir = get_template_directory_uri();
+?>
 <body>
     <div class="container">
         <header class="header header--white">
@@ -34,12 +37,12 @@
             <div class="header__left">
               <div class="header__logo">
                 <a href="/" class="header__logo-link">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" alt="MTX SPORTS & ARTICULAR CLINIC スポーツ・関節クリニック">
+                  <img src="<?php echo $rootDir ?>/images/logo--black.svg" alt="MTX SPORTS & ARTICULAR CLINIC スポーツ・関節クリニック">
                 </a>
               </div>
               <div class="header__info">
                 <div class="header__icon-tel">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/icon-tel--white.svg" alt="">
+                  <img src="<?php echo $rootDir ?>/images/icon-tel--white.svg" alt="">
                 </div>
                 <div class="header__phone-num">
                   <a href="tel:000-00-0000">000-00-0000</a>

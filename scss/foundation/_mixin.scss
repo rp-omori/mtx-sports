@@ -21,3 +21,21 @@
   $rate: 100 / $viewport;
   @return $rate * $size * 1vw;
 }
+
+/*
+ * breakpointの設定
+ */
+$widthBasePC: 1536px;
+$widthBaseSP: 768px;
+
+@mixin pc {
+  @media screen and (min-width: calc($widthBaseSP + 1px)) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media screen and (max-width: $widthBaseSP) {
+    @content;
+  }
+}

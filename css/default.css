@@ -10,9 +10,14 @@
 /*
  * get_vwの設定
  */
+/*
+ * breakpointの設定
+ */
 :root {
   --main-text-color: #414846;
+  --main-text-color-white: #FFFFFF;
   --main-color: #009875;
+  --main-color-black: #262928;
 }
 
 html {
@@ -21,6 +26,10 @@ html {
 
 html, body {
   min-height: 100vh;
+}
+
+body {
+  font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
 }
 
 .container {

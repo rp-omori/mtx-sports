@@ -1,0 +1,31 @@
+.footer {
+  width: 100%;
+  background: var(--main-color-black);
+
+  .footer__inner {
+    display: flex;
+    padding: get_vw(21) get_vw(158) get_vw(140);
+    align-items: center;
+    justify-content: space-between;
+
+    @include sp {
+      padding: 21px 20px 29px;
+      flex-direction: column;
+    }
+
+    .footer__logo {
+      width: clamp(10px, get_vw(290), 290px);
+
+      @include sp {
+        width: 100%;
+        max-width: 265px;
+        margin: 0 auto 19px;
+      }
+    }
+
+    .footer__copyright {
+      color: var(--main-text-color-white);
+      font-size: calcFz(13);
+    }
+  }
+}

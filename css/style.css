@@ -10,6 +10,9 @@
 /*
  * get_vwの設定
  */
+/*
+ * breakpointの設定
+ */
 .header {
   position: absolute;
   width: 100%;
@@ -40,7 +43,7 @@
           align-items: center;
 }
 .header .header__inner .header__left .header__logo {
-  width: clamp(10px, 21.7447916667vw, 334px);
+  width: clamp(10px, 18.8802083333vw, 290px);
 }
 .header .header__inner .header__left .header__info {
   display: -webkit-box;
@@ -101,9 +104,48 @@
           align-items: center;
 }
 
+.footer {
+  width: 100%;
+  background: var(--main-color-black);
+}
+.footer .footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.3671875vw 10.2864583333vw 9.1145833333vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer .footer__inner .footer__logo {
+  width: clamp(10px, 18.8802083333vw, 290px);
+}
+.footer .footer__inner .footer__copyright {
+  color: var(--main-text-color-white);
+  font-size: clamp(10px, 1.3rem, 13px);
+}
+
 .testa {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-size: clamp(10px, 2rem, 20px);
+}
+
+@media screen and (max-width: 768px) {
+  .footer .footer__inner {
+    padding: 21px 20px 29px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .footer__inner .footer__logo {
+    width: 100%;
+    max-width: 265px;
+    margin: 0 auto 19px;
+  }
 }

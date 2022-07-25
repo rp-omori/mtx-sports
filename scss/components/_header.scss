@@ -2,35 +2,42 @@
   position: absolute;
   width: 100%;
   height: clamp(10px, get_vw(85), 85px);
+
   &.header--white {
     background: #fff;
   }
+
   .header__inner {
     display: flex;
     height: 100%;
     padding: 0 get_vw(112) 0 get_vw(89);
     align-items: center;
     justify-content: space-between;
+
     .header__left {
       display: flex;
       align-items: center;
+
       .header__logo {
-        width: clamp(10px, get_vw(334), 334px);
+        width: clamp(10px, get_vw(290), 290px);
       }
+
       .header__info {
         display: flex;
         align-items: center;
+
         .header__icon-tel {
           width: get_vw(35);
         }
-        .header__phone-num {}
       }
     }
     .header__nav {
       height: 100%;
+
       .header__list {
         display: flex;
         height: 100%;
+
         .header__item {
           position: relative;
           display: flex;
@@ -40,12 +47,15 @@
           font-family: $fontFamilyHiraGo;
           font-size: calcFz(15);
           font-weight: bold;
+
           &:first-child {
             margin-left: 0;
           }
+
           &:last-child {
             margin-right: 0;
           }
+
           &.header__item--active {
             &:after {
               content: '';
