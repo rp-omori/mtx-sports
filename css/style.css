@@ -10,6 +10,97 @@
 /*
  * get_vwの設定
  */
+.header {
+  position: absolute;
+  width: 100%;
+  height: clamp(10px, 5.5338541667vw, 85px);
+}
+.header.header--white {
+  background: #fff;
+}
+.header .header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  padding: 0 7.2916666667vw 0 5.7942708333vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header .header__inner .header__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header .header__inner .header__left .header__logo {
+  width: clamp(10px, 21.7447916667vw, 334px);
+}
+.header .header__inner .header__left .header__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header .header__inner .header__left .header__info .header__icon-tel {
+  width: 2.2786458333vw;
+}
+.header .header__inner .header__nav {
+  height: 100%;
+}
+.header .header__inner .header__nav .header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+.header .header__inner .header__nav .header__list .header__item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 1.3671875vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #272E2C;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-size: clamp(10px, 1.5rem, 15px);
+  font-weight: bold;
+}
+.header .header__inner .header__nav .header__list .header__item:first-child {
+  margin-left: 0;
+}
+.header .header__inner .header__nav .header__list .header__item:last-child {
+  margin-right: 0;
+}
+.header .header__inner .header__nav .header__list .header__item.header__item--active:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  background: var(--main-color);
+}
+.header .header__inner .header__nav .header__list .header__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .testa {
   display: -webkit-box;
   display: -ms-flexbox;

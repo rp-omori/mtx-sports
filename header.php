@@ -29,4 +29,52 @@
 </head>
 <body>
     <div class="container">
-        <header>header</header>
+        <header class="header header--white">
+          <div class="header__inner">
+            <div class="header__left">
+              <div class="header__logo">
+                <a href="/" class="header__logo-link">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" alt="MTX SPORTS & ARTICULAR CLINIC スポーツ・関節クリニック">
+                </a>
+              </div>
+              <div class="header__info">
+                <div class="header__icon-tel">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/icon-tel--white.svg" alt="">
+                </div>
+                <div class="header__phone-num">
+                  <a href="tel:000-00-0000">000-00-0000</a>
+                </div>
+                <p class="header__hour">受付時間 10:00〜18:00</p>
+              </div>
+            </div>
+            <nav class="header__nav">
+              <ul class="header__list">
+                <li class="header__item header__item--active">
+                  <a href="" class="header__link">
+                    クリニックについて
+                  </a>
+                </li>
+                <li class="header__item">
+                  <a href="" class="header__link">
+                    治療について
+                  </a>
+                </li>
+                <li class="header__item">
+                  <a href="" class="header__link">
+                    医師・スタッフ紹介
+                  </a>
+                </li>
+                <li class="header__item">
+                  <a href="" class="header__link">
+                    患者様の声
+                  </a>
+                </li>
+                <li class="header__item">
+                  <a href="" class="header__link">
+                    インフォメーション
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
