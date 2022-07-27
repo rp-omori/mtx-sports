@@ -82,5 +82,6 @@ $rootDir = get_template_directory_uri();
     </footer>
 </div>
 <script src="<?php echo $rootDir ?>/js/index.js"></script>
+<script src="<?php echo $rootDir ?>/js/slider.js"></script>
 </body>
 </html>

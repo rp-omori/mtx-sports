@@ -1,5 +1,121 @@
 .top {
-  .medical-treatment {
+
+
+  // 小池css
+  .kv {
+    .kv__swiper {
+      width: 93%;
+      margin: 0 0 0 auto;
+
+      .swiper-wrapper {
+        width: 100%;
+
+        .swiper-slide {
+          width: 100%;
+          position: relative;
+
+          .kv_img {
+            width: 100%;
+
+            img {
+              width: 100%;
+            }
+          }
+
+          .txtArea {
+            width: 45%;
+            position: absolute;
+            top: 50%;
+            right: get_vw(91);
+            transform: translateY(-50%);
+
+            .txtArea__head {
+              color: var(--main-color-white);
+              font-size: calcFz(100);
+              font-family: $fontFamilyDin2014;
+              line-height: 1.3;
+            }
+
+            .txtArea__label {
+              display: inline-block;
+              margin-bottom: get_vw(19);
+              padding: get_vw(12) get_vw(28) get_vw(12) get_vw(15);
+              color: var(--main-color-white);
+              background: #00A384;
+              font-size: calcFz(19);
+              font-weight: bold;
+              clip-path: polygon(0 0, 100% 0, 94% 100%, 0% 100%);
+            }
+
+            .txtArea__sub-title {
+              margin-bottom: get_vw(31);
+              color: var(--main-color-white);
+              font-size: calcFz(32);
+              font-weight: bold;
+            }
+
+            .txtArea__text {
+              margin-bottom: get_vw(31);
+              color: var(--main-color-white);
+              font-size: calcFz(18);
+              line-height: 1.88;
+            }
+
+            .white_txt {
+              .date {
+                margin-left: 7%;
+                position: relative;
+                color: var(--main-color-white);
+                font-size: calcFz(66);
+                line-height: 1;
+
+                &::after {
+                  position: absolute;
+                  top: 50%;
+                  transform: translate(0,-50%) rotate(-90deg);
+                  left: -7%;
+                  content:"2022";
+                  color: var(--main-color-white);
+                  font-size: calcFz(23);
+                }
+              }
+            }
+
+            .feature__box {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+
+              .feature__circle {
+                position: relative;
+                width: get_vw(164);
+                height: get_vw(164);
+                background: translate;
+                border: 1px solid var(--main-color-white);
+                border-radius: 50%;
+
+                .feature__circle-text {
+                  position: absolute;
+                  width: 100%;
+                  color: var(--main-color-white);
+                  font-family: $fontFamilyHiraGo;
+                  font-size: calcFz(16);
+                  font-weight: 600;
+                  top: 50%;
+                  left: 50%;
+                  line-height: 1.3;
+                  text-align: center;
+                  transform: translate(-50%, -50%);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .medical-menu {
     width: 83%;
     margin: 0 auto;
     padding: get_vw(94) 0 get_vw(250);
@@ -8,7 +124,7 @@
       margin-bottom: get_vw(111);
     }
 
-    .medical-treatment__list {
+    .medical-menu__list {
       display: grid;
       padding-bottom: get_vw(40);
       grid-template-columns: repeat(4, 1fr);
@@ -16,29 +132,29 @@
       gap: 4px;
     }
 
-    .medical-treatment__item {
+    .medical-menu__item {
       position: relative;
       padding: 0 get_vw(35) get_vw(30);
       background: var(--main-color-white);
       border-radius: 10px;
 
-      &.medical-treatment__item--01 {
+      &.medical-menu__item--01 {
         grid-area: 1 / 1 / 2 / 2;
       }
 
-      &.medical-treatment__item--02 {
+      &.medical-menu__item--02 {
         grid-area: 1 / 2 / 2 / 3;
       }
 
-      &.medical-treatment__item--03 {
+      &.medical-menu__item--03 {
         grid-area: 1 / 3 / 2 / 4;
       }
 
-      &.medical-treatment__item--04 {
+      &.medical-menu__item--04 {
         grid-area: 1 / 4 / 2 / 5;
       }
 
-      &.medical-treatment__item--05 {
+      &.medical-menu__item--05 {
         grid-area: 2 / 1 / 3 / 3;
         padding: get_vw(27) get_vw(37) get_vw(30) get_vw(30);
 
@@ -53,7 +169,7 @@
         }
       }
 
-      &.medical-treatment__item--06 {
+      &.medical-menu__item--06 {
         grid-area: 2 / 3 / 3 / 5;
         padding: get_vw(27) get_vw(37) get_vw(30) get_vw(30);
 
@@ -62,7 +178,7 @@
         }
       }
 
-      &.medical-treatment__item--dg {
+      &.medical-menu__item--dg {
         display: grid;
         align-items: flex-start;
         grid-template-columns: get_vw(130) auto;
@@ -70,11 +186,11 @@
         grid-column-gap: get_vw(30);
         grid-row-gap: get_vw(30);
 
-        .medical-treatment__head-img {
+        .medical-menu__head-img {
           grid-area: 1 / 1 / 3 / 2;
         }
 
-        .medical-treatment__accordion {
+        .medical-menu__accordion {
           grid-area: 1 / 2 / 2 / 3;
         }
 
@@ -139,13 +255,13 @@
       }
     }
 
-    .medical-treatment__head {
+    .medical-menu__head {
       display: flex;
       margin-bottom: get_vw(29);
       align-items: center;
       flex-direction: column;
 
-      .medical-treatment__head-img {
+      .medical-menu__head-img {
         margin-bottom: get_vw(22);
 
         &.icon-shoulder {
@@ -179,7 +295,7 @@
         }
       }
 
-      .medical-treatment__accordion {
+      .medical-menu__accordion {
         color: var(--main-color);
         font-size: calcFz(22);
         font-weight: bold;
@@ -187,24 +303,24 @@
       }
     }
 
-    .medical-treatment-line {
+    .medical-menu-line {
       width: 100%;
       background: #DDE8E6;
       border-radius: 10px;
 
-      .medical-treatment-line__inner {
+      .medical-menu-line__inner {
         display: flex;
         padding: get_vw(27) 0;
         align-items: center;
         justify-content: center;
 
-        .medical-treatment-line__text {
+        .medical-menu-line__text {
           margin-right: get_vw(44);
           font-size: calcFz(18);
           font-weight: bold;
         }
 
-        .medical-treatment-line__link {
+        .medical-menu-line__link {
           padding: get_vw(15) get_vw(42) get_vw(15) get_vw(37);
           background: var(--btn-color-orange);
           border-radius: 30px;
@@ -623,6 +739,105 @@
               color: var(--main-color-white);
               font-size: calcFz(18);
               line-height: 1.75;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .treatment {
+    padding-bottom: get_vw(56);
+    .treatment-wrapper {
+      .section-title__wrapper {
+        width: 83%;
+        margin: 0 auto get_vw(104);
+      }
+
+      .treatment__list {
+        .treatment__item {
+          display: flex;
+          margin-bottom: get_vw(120);
+          align-items: center;
+
+          &:nth-child(odd) {
+            .treatment__left {
+              padding: get_vw(112) get_vw(80) 0 get_vw(129);
+            }
+          }
+
+          &:nth-child(even) {
+            .treatment__right {
+              padding: get_vw(112) get_vw(129) 0 get_vw(80);
+            }
+          }
+
+          .treatment__left {
+            width: 60%;
+          }
+
+          .treatment__title {
+            position: relative;
+            display: flex;
+            margin-bottom: get_vw(21);
+            align-items: center;
+            font-size: calcFz(36);
+            font-weight: bold;
+
+            img {
+              width: get_vw(86);
+              height: get_vw(86);
+              margin-right: get_vw(18);
+            }
+
+            &.treatment__title--regenerative {
+            }
+
+            &.treatment__title--rehabilitation {
+            }
+
+            &.treatment__title--physical {
+            }
+          }
+
+          .treatment__text {
+            margin-bottom: get_vw(53);
+            font-size: calcFz(18);
+            line-height: 1.75;
+          }
+
+          .treatment-detail__list {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+
+            .treatment-detail__item {
+              display: flex;
+              height: 48px;
+              margin-bottom: 8px;
+              padding: 0 get_vw(20) 0 get_vw(25);
+              align-items: center;
+              background: var(--main-color-white);
+              border-radius: 6px;
+              font-size: calcFz(18);
+              font-weight: bold;
+
+              .treatment-detail__text {
+                position: relative;
+                padding-left: get_vw(17);
+
+                &:before {
+                  content: '';
+                  position: absolute;
+                  width: 8px;
+                  height: 8px;
+                  top: 50%;
+                  left: 0;
+                  transform: translateY(-50%);
+                  border-radius: 50%;
+                  background: var(--main-color);
+                }
+              }
             }
           }
         }

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/reset.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/default.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/vender/swiper.min.css">
     <link rel="shortcut icon" href="【ファイル名.ico】" />
     <link rel="apple-touch-icon-precomposed" href="【画像のパス/apple-touch-icon-precomposed.png】" />
     <!-- facebook -->
@@ -28,6 +29,7 @@
     <!-- Adobe Fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/ofs1fip.css">
 
+    <script src="<?php echo get_template_directory_uri(); ?>/js/vender/swiper.min.js"></script>
     <?php wp_head();?>
 </head>
 <?php
