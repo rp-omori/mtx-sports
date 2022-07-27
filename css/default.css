@@ -16,7 +16,7 @@
 :root {
   --main-text-color: #414846;
   --main-color-white: #FFF;
-  --main-color: #009875;
+  --main-color: #009B8E;
   --main-color-bg: #008B86;
   --main-color-black: #262928;
   --base-color: #EFF4F3;
@@ -47,6 +47,17 @@ html [type=button] {
   -webkit-appearance: button;
 }
 
+button {
+  padding: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
 .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -56,6 +67,10 @@ html [type=button] {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.main {
+  padding-top: clamp(10px, 5.5338541667vw, 85px);
 }
 
 .footer {
@@ -70,4 +85,10 @@ img {
 
 a:hover {
   opacity: 0.8;
+}
+
+@media screen and (max-width: 767px) {
+  .main {
+    padding-top: 50px;
+  }
 }

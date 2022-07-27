@@ -1,8 +1,632 @@
-.main {
+.top {
+  .medical-treatment {
+    width: 83%;
+    margin: 0 auto;
+    padding: get_vw(94) 0 get_vw(250);
 
-  padding-top: clamp(10px, get_vw(85), 85px);
+    .section-title__wrapper {
+      margin-bottom: get_vw(111);
+    }
 
-  @include sp {
-    padding-top: 50px;
+    .medical-treatment__list {
+      display: grid;
+      padding-bottom: get_vw(40);
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, auto);
+      gap: 4px;
+    }
+
+    .medical-treatment__item {
+      position: relative;
+      padding: 0 get_vw(35) get_vw(30);
+      background: var(--main-color-white);
+      border-radius: 10px;
+
+      &.medical-treatment__item--01 {
+        grid-area: 1 / 1 / 2 / 2;
+      }
+
+      &.medical-treatment__item--02 {
+        grid-area: 1 / 2 / 2 / 3;
+      }
+
+      &.medical-treatment__item--03 {
+        grid-area: 1 / 3 / 2 / 4;
+      }
+
+      &.medical-treatment__item--04 {
+        grid-area: 1 / 4 / 2 / 5;
+      }
+
+      &.medical-treatment__item--05 {
+        grid-area: 2 / 1 / 3 / 3;
+        padding: get_vw(27) get_vw(37) get_vw(30) get_vw(30);
+
+        .symptoms__list {
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-between;
+
+          .symptoms__item {
+            width: 48%;
+          }
+        }
+      }
+
+      &.medical-treatment__item--06 {
+        grid-area: 2 / 3 / 3 / 5;
+        padding: get_vw(27) get_vw(37) get_vw(30) get_vw(30);
+
+        .symptoms__list {
+          padding-top: get_vw(60);
+        }
+      }
+
+      &.medical-treatment__item--dg {
+        display: grid;
+        align-items: flex-start;
+        grid-template-columns: get_vw(130) auto;
+        grid-template-rows: get_vw(33) auto;
+        grid-column-gap: get_vw(30);
+        grid-row-gap: get_vw(30);
+
+        .medical-treatment__head-img {
+          grid-area: 1 / 1 / 3 / 2;
+        }
+
+        .medical-treatment__accordion {
+          grid-area: 1 / 2 / 2 / 3;
+        }
+
+        .symptoms__list {
+          grid-area: 2 / 2 / 3 / 3;
+        }
+      }
+
+      .symptoms__list {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+
+        .symptoms__item {
+          display: flex;
+          height: 54px;
+          margin-bottom: 8px;
+          align-items: center;
+          background: var(--main-color-white);
+          border: 1px solid #E7EDEC;
+          border-radius: 6px;
+          font-size: calcFz(17);
+          font-weight: bold;
+          filter: drop-shadow(2px 2px 2px rgba(182, 200, 193, .5));
+
+          &:after {
+            content: '';
+            position: absolute;
+            width: get_vw(34);
+            height: get_vw(34);
+            background-image: url(#{$img-root-dir}/icon/icon-arrow-circle-right--white.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            top: 50%;
+            transform: translateY(-50%);
+            right: get_vw(10);
+          }
+
+          &:hover {
+            border: 1px solid var(--main-color);
+
+            &:after {
+              background-image: url(#{$img-root-dir}/icon/icon-arrow-circle-right--green.svg);
+            }
+          }
+
+          .symptoms__link {
+            position: relative;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            padding: 0 get_vw(65) 0 get_vw(10);
+            align-items: center;
+          }
+
+          .symptoms__note {
+            padding-left: get_vw(10);
+            font-size: calcFz(13);
+            font-weight: 300;
+          }
+        }
+      }
+    }
+
+    .medical-treatment__head {
+      display: flex;
+      margin-bottom: get_vw(29);
+      align-items: center;
+      flex-direction: column;
+
+      .medical-treatment__head-img {
+        margin-bottom: get_vw(22);
+
+        &.icon-shoulder {
+          width: get_vw(151);
+          margin-top: get_vw(-32);
+        }
+
+        &.icon-lower-back {
+          width: get_vw(142);
+          margin-top: get_vw(-23)
+        }
+
+        &.icon-lower-limbs {
+          width: get_vw(151);
+          margin-top: get_vw(-32)
+        }
+
+        &.icon-knee {
+          width: get_vw(142);
+          margin-top: get_vw(-32)
+        }
+
+        &.icon-sports-injury {
+          width: get_vw(150);
+          margin-bottom: 0;
+        }
+
+        &.icon-growing-pain {
+          width: get_vw(150);
+          margin-bottom: 0;
+        }
+      }
+
+      .medical-treatment__accordion {
+        color: var(--main-color);
+        font-size: calcFz(22);
+        font-weight: bold;
+        pointer-events: none;
+      }
+    }
+
+    .medical-treatment-line {
+      width: 100%;
+      background: #DDE8E6;
+      border-radius: 10px;
+
+      .medical-treatment-line__inner {
+        display: flex;
+        padding: get_vw(27) 0;
+        align-items: center;
+        justify-content: center;
+
+        .medical-treatment-line__text {
+          margin-right: get_vw(44);
+          font-size: calcFz(18);
+          font-weight: bold;
+        }
+
+        .medical-treatment-line__link {
+          padding: get_vw(15) get_vw(42) get_vw(15) get_vw(37);
+          background: var(--btn-color-orange);
+          border-radius: 30px;
+          color: var(--main-color-white);
+          font-size: calcFz(19);
+          font-weight: bold;
+          filter: drop-shadow(2px 3px 3px rgba(24, 37, 63, .02));
+
+          span {
+            position: relative;
+            padding-left: get_vw(40);
+
+            &:before {
+              content: '';
+              position: absolute;
+              width: get_vw(25);
+              height: get_vw(23);
+              background-image: url(#{$img-root-dir}/icon/icon-line--white.svg);
+              background-repeat: no-repeat;
+              background-size: contain;
+              background-position: left center;
+              top: 50%;
+              left: 0;
+              transform: translateY(-50%);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .message {
+    width: 83%;
+    margin: 0 auto get_vw(20);
+    background: var(--main-color-white);
+    border-radius: 20px;
+
+    .message__inner {
+      padding: get_vw(133) get_vw(98);
+
+      .message__top {
+        display: flex;
+
+        .message__img {
+          position: relative;
+          margin-top: calc(get_vw(-133) + get_vw(-100));
+          margin-left: calc(get_vw(-98) + -16%);
+
+          .message__img-bg {
+            position: absolute;
+            top: 0;
+            right: 0;
+          }
+        }
+
+        .message__wrapper {
+          margin-left: get_vw(104);
+
+          .message__label {
+            display: inline-block;
+            padding: get_vw(8) get_vw(13);
+            margin-bottom: get_vw(28);
+            background: #008B86;
+            color: var(--main-color-white);
+            font-size: calcFz(20);
+            font-weight: bold;
+          }
+
+          .message__title {
+            margin-bottom: get_vw(45);
+            color: var(--main-color);
+            font-size: calcFz(38);
+            font-weight: bold;
+            line-height: 1.5;
+          }
+
+          .message__text {
+            margin-bottom: get_vw(45);
+            font-size: calcFz(18);
+            line-height: 1.75;
+          }
+
+          .message__director {
+            margin-bottom: get_vw(83);
+            font-size: calcFz(18);
+            line-height: 1.75;
+            text-align: right;
+          }
+        }
+      }
+    }
+
+    .profile {
+      background: var(--base-color);
+
+      .profile__accordion-head {
+        padding: 22px;
+        text-align: center;
+
+        .profile__accordion {
+          display: flex;
+          margin: 0 auto;
+          align-items: center;
+          color: var(--main-color);
+          font-size: calcFz(22);
+          font-weight: bold;
+
+          .profile__accordion-circle {
+            display: inline-block;
+            width: get_vw(34);
+            height: get_vw(34);
+            margin-left: get_vw(20);
+            background: var(--main-color-white);
+            border-radius: 50%;
+          }
+        }
+      }
+
+      .profile__main {
+        .profile__inner {
+          padding: get_vw(56) get_vw(73);
+        }
+
+        .profile__body {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          gap: 20px 0;
+
+          .profile__item {
+            width: calc(50% - 15px);
+
+            &:last-child {
+              align-self: center;
+            }
+
+            .profile__head {
+              position: relative;
+              margin-bottom: get_vw(14);
+              color: var(--main-color);
+              font-size: calcFz(20);
+              font-weight: bold;
+
+              &:before {
+                content: '';
+                position: absolute;
+                width: calc(100% - 2.5em);
+                height: 1px;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+                background: var(--main-color);
+              }
+            }
+
+            .profile__text {
+              font-size: calcFz(16);
+              line-height: 1.66;
+            }
+
+            .profile__img-wrapper {
+              display: flex;
+              justify-content: space-between;
+
+              .profile__img {
+                width: calc(50% - 6px);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .clinic-features {
+    padding-top: get_vw(179);
+    background: var(--main-color);
+    clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0 95%);
+
+    .clinic-features__wrapper {
+      position: relative;
+
+      .section-title__wrapper {
+        position: absolute;
+        width: auto;
+        top: 0;
+        right: get_vw(222);
+      }
+
+      .clinic-features__head-wrapper {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        color: var(--main-color-white);
+        font-family: $fontFamilyDin2014;
+
+        .clinic-features__head-label {
+          position: absolute;
+          transform: translate(-50%, -50%) rotate(-90deg);
+          top: 50%;
+          left: -1em;
+          font-size: calcFz(16);
+        }
+
+        .clinic-features__head {
+          color: var(--main-color-white);
+          font-size: calcFz(111);
+        }
+      }
+
+      .clinic-features__01 {
+        position: relative;
+        padding: get_vw(115) 0 get_vw(90);
+
+        .clinic-features__01-img-wrapper {
+          clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);
+        }
+
+        .clinic-features__01-body {
+          position: absolute;
+          top: calc(get_vw(115) + get_vw(197));
+          left: get_vw(222);
+
+          .clinic-features__head-wrapper {
+            font-size: calcFz(20);
+
+            .clinic-features__head-label {
+              top: 40%;
+            }
+
+            .clinic-features__head {
+              font-size: calcFz(174);
+            }
+          }
+        }
+
+        .clinic-features__01-main {
+          display: flex;
+          flex-direction: column;
+
+          p {
+            display: inline-block;
+            width: fit-content;
+            padding: 0.3em;
+            background: var(--main-color-white);
+          }
+
+          .clinic-features__01-main-title {
+            margin-bottom: 4px;
+            color: var(--main-color);
+            font-size: calcFz(41);
+            font-weight: bold;
+          }
+
+          .clinic-features__01-main-sub-title {
+            margin-bottom: get_vw(34);
+            color: var(--main-color);
+            font-size: calcFz(21);
+            font-weight: bold;
+          }
+
+          .clinic-features__01-main-text {
+            margin-bottom: 5px;
+            font-size: calcFz(18);
+            font-weight: bold;
+          }
+        }
+      }
+
+      .clinic-features__02 {
+        padding-bottom: get_vw(163);
+
+        .clinic-features__02-wrapper {
+          display: flex;
+
+          .clinic-features__02-left {
+            position: relative;
+            padding-left: get_vw(135);
+
+            &:before {
+              content: '';
+              position: absolute;
+              width: get_vw(371);
+              height: get_vw(376);
+              top: 0;
+              left: 0;
+              background-image: url(#{$img-root-dir}/bg-dot--white.svg);
+              background-repeat: no-repeat;
+              background-size: contain;
+            }
+
+            .clinic-features__02-left-body {
+              .clinic-features__02-left-head {
+                display: flex;
+                margin-bottom: get_vw(49);
+                align-items: center;
+
+                .clinic-features__sub-title {
+                  margin-left: get_vw(33);
+                  color: var(--main-color-white);
+                  font-size: calcFz(30);
+                  font-weight: bold;
+                  line-height: 1.5;
+                }
+              }
+
+              .clinic-features__02-left-text {
+                color: var(--main-color-white);
+                font-size: calcFz(18);
+                line-height: 1.75;
+              }
+            }
+          }
+
+          .clinic-features__02-right {
+            width: 100%;
+          }
+        }
+      }
+
+      .clinic-features__03 {
+        padding-bottom: get_vw(237);
+
+        .clinic-features__03-wrapper {
+          display: flex;
+          align-items: flex-start;
+
+          .clinic-features__03-left {
+            margin-right: get_vw(83);
+          }
+
+          .clinic-features__03-center {
+            position: relative;
+            width: 100%;
+            top: get_vw(60);
+
+            &:before {
+              content: '';
+              position: absolute;
+              width: get_vw(370);
+              height: get_vw(370);
+              top: 50%;
+              right: 0;
+              background-image: url(#{$img-root-dir}/bg-dot--white.svg);
+              background-repeat: no-repeat;
+              background-size: contain;
+            }
+
+            .clinic-features__head-wrapper {
+              margin-bottom: get_vw(21);
+            }
+
+            .clinic-features__sub-title {
+              margin-bottom: get_vw(31);
+              color: var(--main-color-white);
+              font-size: calcFz(30);
+              font-weight: bold;
+              line-height: 1.5;
+            }
+
+            .clinic-features__03-text {
+              width: 80%;
+              color: var(--main-color-white);
+              font-size: calcFz(18);
+              line-height: 1.75;
+            }
+          }
+
+          .clinic-features__03-right {
+            position: relative;
+            top: get_vw(329);
+          }
+        }
+      }
+
+      .clinic-features__04 {
+        padding-bottom: get_vw(246);
+
+        .clinic-features__04-wrapper {
+          display: flex;
+
+          .clinic-features__04-left {
+            margin-right: get_vw(120);
+          }
+
+          .clinic-features__04-right {
+            position: relative;
+            padding-right: get_vw(81);
+            top: get_vw(20);
+
+            &:before {
+              content: '';
+              position: absolute;
+              width: get_vw(370);
+              height: get_vw(370);
+              top: 15%;
+              right: 15%;
+              background-image: url(#{$img-root-dir}/bg-dot--white.svg);
+              background-repeat: no-repeat;
+              background-size: contain;
+            }
+
+            .clinic-features__head-wrapper {
+              padding-bottom: get_vw(21);
+            }
+
+            .clinic-features__sub-title {
+              margin-bottom: get_vw(31);
+              color: var(--main-color-white);
+              font-size: calcFz(30);
+              font-weight: bold;
+              line-height: 1.5;
+            }
+
+            .clinic-features__04-text {
+              color: var(--main-color-white);
+              font-size: calcFz(18);
+              line-height: 1.75;
+            }
+          }
+        }
+      }
+    }
   }
 }

@@ -3,33 +3,41 @@
   position: relative;
 
   &.--white {
-    h2 {
+    .section-title {
       color: #fff;
     }
-    p {
-      color: #009b8e;
-      font-size: calcFz(42);
+    .section-sub-title {
+      color: var(--main-color);
 
       &:before {
-        content: '';
-        position: absolute;
-        display: block;
-        width: 1.5em;
-        height: 2px;
-        bottom: 0;
-        background: #009b8e;
+        background: var(--main-color);
       }
     }
   }
 
   &.--light_green {
-    h2 {
+    .section-title {
       color: #22908C;
     }
-    p {
+
+    .section-sub-title {
       width: 100%;
       color: #fff;
       font-size: calcFz(36);
+    }
+  }
+
+  &.--green {
+    .section-title {
+      color: #0AA89B;
+    }
+
+    .section-sub-title {
+      color: var(--main-color-white);
+
+      &:before {
+        background: var(--main-color-white);
+      }
     }
   }
 
@@ -47,20 +55,58 @@
     .section-sub-title {
       left: 50%;
       transform: translateX(-50%);
+
+      &:before {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  &.--right {
+    text-align: right;
+
+    .section-sub-title {
+      right: 0;
+
+      &:before {
+        right: 0;
+      }
+    }
+  }
+
+  &.--small {
+    .section-title {
+      font-size: calcFz(98);
+    }
+
+    .section-sub-title {
+      font-size: calcFz(42);
     }
   }
 
   .section-title {
     display: inline-block;
     font-family: $fontFamilyDin2014;
-    font-size: calcFz(98);
+    font-size: calcFz(115);
     font-weight: bold;
   }
+
   .section-sub-title {
     position: absolute;
     padding-bottom: get_vw(35);
     bottom: math.div(get_vw(-98), 2.5);
+    font-size: calcFz(46);
     font-weight: bold;
+
+    &:before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 1.5em;
+      height: 2px;
+      bottom: 0;
+    }
   }
 }
 
@@ -94,7 +140,7 @@
         position: absolute;
         width: get_vw(25);
         height: get_vw(23);
-        background-image: url(#{$img-root-dir}/icon-line.svg);
+        background-image: url(#{$img-root-dir}/icon/icon-line.svg);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: left center;

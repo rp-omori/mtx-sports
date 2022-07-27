@@ -40,7 +40,7 @@
         display: flex;
         align-items: center;
 
-        .header__icon-tel {
+        .header__icon--tel {
           width: get_vw(35);
         }
       }
@@ -100,7 +100,7 @@
           top: 50%;
           right: 0;
           transform: translateY(-50%);
-          background-image: url(#{$img-root-dir}/icon-arrow-bottom--black.svg);
+          background-image: url(#{$img-root-dir}/icon/icon-arrow-bottom--black.svg);
           background-position: center;
           background-repeat: no-repeat;
           background-size: contain;

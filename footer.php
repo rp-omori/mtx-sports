@@ -6,8 +6,8 @@ $rootDir = get_template_directory_uri();
       <section class="footer-access">
         <div class="footer-access__inner">
           <div class="footer-access__left">
-            <div class="section-title__wrapper --white --left">
-              <h2 class="section-title">ACCESS</h2>
+            <div class="section-title__wrapper --white --left --small">
+              <h2 class="section-title section-title">ACCESS</h2>
               <p class="section-sub-title">アクセス</p>
             </div>
             <div class="footer-access__info">
@@ -38,7 +38,7 @@ $rootDir = get_template_directory_uri();
 
       <section class="footer-contact">
         <div class="footer-contact__inner">
-          <div class="section-title__wrapper --light_green --center">
+          <div class="section-title__wrapper --light_green --center --small">
             <h2 class="section-title">CONTACT</h2>
             <p class="section-sub-title">ご予約・お問い合わせ</p>
             <span class="footer-contact__text footer-contact__text--float">まずは気軽にご相談から</span>

@@ -35,7 +35,7 @@
 
           .footer-access__info-link {
             margin-left: 10px;
-            color: #009b8e;
+            color: var(--main-color);
             font-size: calcFz(18);
             font-weight: bold;
             text-decoration: underline;
@@ -57,7 +57,7 @@
               top: 50%;
               left: 0;
               transform: translateY(-50%);
-              background-image: url(#{$img-root-dir}/icon-tel--white_g.svg);
+              background-image: url(#{$img-root-dir}/icon/icon-tel--white_g.svg);
               background-repeat: no-repeat;
               background-size: contain;
               background-position: left;
@@ -74,7 +74,7 @@
 
             .footer-access__close-title {
               margin-right: get_vw(15);
-              color: #009B8E;
+              color: var(--main-color);
             }
           }
         }
@@ -160,7 +160,7 @@
               top: 50%;
               left: 0;
               transform: translateY(-50%);
-              background-image: url(#{$img-root-dir}/icon-tel--white_g.svg);
+              background-image: url(#{$img-root-dir}/icon/icon-tel--white_g.svg);
               background-repeat: no-repeat;
               background-size: contain;
               background-position: left;
