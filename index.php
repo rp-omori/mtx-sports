@@ -9,20 +9,97 @@ $rootDir = get_template_directory_uri();
 ?>
 <main class="main">
   <div class="top">
-    <div class="kv">キービジュアル</div>
+    <div class="kv">
+      <p class="kv__float-text">MTX SPORTS & ARTICULAR CLINIC</p>
+      <div class="kv__swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="kv_img"><img src="<?php echo $rootDir ?>/images/top/kv_01.png" alt=""></div>
+            <div class="txtArea">
+              <div class="txtArea__head white_txt">
+                <p class="date">08.29<span>mon~</span></p>
+                <h2>GRAND OPEN!!</h2>
+              </div>
+              <p class="txtArea__label">再生医療×運動療法で</p>
+              <h3 class="txtArea__sub-title white_txt">"治す"スポーツ・関節医療を目指して</h3>
+              <p class="txtArea__text white_txt">アスリートの競技人生・身体的障害のある方の人生に向き合い、身体の機能改善に取り組んできたMTXだからできる「再生医療」×「運動療法」を組み合わせた医療。医師とトレーナー陣がワンチームで取り組み、今まで治すことが難しかった人たちの改善を可能にすることを目指します。</p>
+              <div class="feature__box">
+                <div class="feature__circle">
+                  <p class="feature__circle-text">運動による<br>スポーツ障害</p>
+                </div>
+                <div class="feature__circle">
+                  <p class="feature__circle-text">保険診療では<br>治らなかった<br>関節痛</p>
+                </div>
+                <div class="feature__circle">
+                  <p class="feature__circle-text">子どもの<br>成長痛<br>・運動機能の悩み</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="kv_img"><img src="<?php echo $rootDir ?>/images/top/kv_02.png" alt=""></div>
+            <div class="txtArea">
+              <div class="txtArea__head white_txt">
+                <p class="date">08.29<span>mon~</span></p>
+                <h2>GRAND OPEN!!</h2>
+              </div>
+              <p class="txtArea__label">再生医療×運動療法で</p>
+              <h3 class="txtArea__sub-title white_txt">"治す"スポーツ・関節医療を目指して</h3>
+              <p class="txtArea__text white_txt">アスリートの競技人生・身体的障害のある方の人生に向き合い、身体の機能改善に取り組んできたMTXだからできる「再生医療」×「運動療法」を組み合わせた医療。医師とトレーナー陣がワンチームで取り組み、今まで治すことが難しかった人たちの改善を可能にすることを目指します。</p>
+              <div class="feature__box">
+                <div class="feature__circle">
+                  <p class="feature__circle-text">運動による<br>スポーツ障害</p>
+                </div>
+                <div class="feature__circle">
+                  <p class="feature__circle-text">保険診療では<br>治らなかった<br>関節痛</p>
+                </div>
+                <div class="feature__circle">
+                  <p class="feature__circle-text">子どもの<br>成長痛<br>・運動機能の悩み</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="kv_img"><img src="<?php echo $rootDir ?>/images/top/kv_03.png" alt=""></div>
+            <div class="txtArea">
+              <div class="txtArea__head white_txt">
+                <p class="date">08.29<span>mon~</span></p>
+                <h2>GRAND OPEN!!</h2>
+              </div>
+              <p class="txtArea__label">再生医療×運動療法で</p>
+              <h3 class="txtArea__sub-title white_txt">"治す"スポーツ・関節医療を目指して</h3>
+              <p class="txtArea__text white_txt">アスリートの競技人生・身体的障害のある方の人生に向き合い、身体の機能改善に取り組んできたMTXだからできる「再生医療」×「運動療法」を組み合わせた医療。医師とトレーナー陣がワンチームで取り組み、今まで治すことが難しかった人たちの改善を可能にすることを目指します。</p>
+              <div class="feature__box">
+                <div class="feature__circle">
+                  <p class="feature__circle-text">運動による<br>スポーツ障害</p>
+                </div>
+                <div class="feature__circle">
+                  <p class="feature__circle-text">保険診療では<br>治らなかった<br>関節痛</p>
+                </div>
+                <div class="feature__circle">
+                  <p class="feature__circle-text">子どもの<br>成長痛<br>・運動機能の悩み</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="kv__swiper-pagination"></div>
+    </div>
 
-    <section class="medical-treatment">
+    <section class="medical-menu">
       <div class="section-title__wrapper --white --center">
         <h2 class="section-title">MENU</h2>
         <p class="section-sub-title">症状から探す診療メニュー</p>
       </div>
-      <ul class="medical-treatment__list">
-        <li class="medical-treatment__item medical-treatment__item--01">
-          <h3 class="medical-treatment__head">
-            <div class="medical-treatment__head-img icon-shoulder">
+      <ul class="medical-menu__list">
+        <li class="medical-menu__item medical-menu__item--01">
+          <h3 class="medical-menu__head">
+            <div class="medical-menu__head-img icon-shoulder">
               <img src="<?php echo $rootDir ?>/images/top/icon-shoulder.svg" alt="">
             </div>
-            <button class="medical-treatment__accordion">
+            <button class="medical-menu__accordion">
               肩が痛い・肩がこる
             </button>
           </h3>
@@ -39,12 +116,12 @@ $rootDir = get_template_directory_uri();
             </li>
           </ul>
         </li>
-        <li class="medical-treatment__item medical-treatment__item--02">
-          <h3 class="medical-treatment__head">
-            <div class="medical-treatment__head-img icon-lower-back">
+        <li class="medical-menu__item medical-menu__item--02">
+          <h3 class="medical-menu__head">
+            <div class="medical-menu__head-img icon-lower-back">
               <img src="<?php echo $rootDir ?>/images/top/icon-lower-back.svg" alt="">
             </div>
-            <button class="medical-treatment__accordion">
+            <button class="medical-menu__accordion">
               腰が痛い
             </button>
           </h3>
@@ -71,12 +148,12 @@ $rootDir = get_template_directory_uri();
             </li>
           </ul>
         </li>
-        <li class="medical-treatment__item medical-treatment__item--03">
-          <h3 class="medical-treatment__head">
-            <div class="medical-treatment__head-img icon-lower-limbs">
+        <li class="medical-menu__item medical-menu__item--03">
+          <h3 class="medical-menu__head">
+            <div class="medical-menu__head-img icon-lower-limbs">
               <img src="<?php echo $rootDir ?>/images/top/icon-lower-limbs.svg" alt="">
             </div>
-            <button class="medical-treatment__accordion">
+            <button class="medical-menu__accordion">
               下肢の痛みやしびれなど
             </button>
           </h3>
@@ -103,12 +180,12 @@ $rootDir = get_template_directory_uri();
             </li>
           </ul>
         </li>
-        <li class="medical-treatment__item medical-treatment__item--04">
-          <h3 class="medical-treatment__head">
-            <div class="medical-treatment__head-img icon-knee">
+        <li class="medical-menu__item medical-menu__item--04">
+          <h3 class="medical-menu__head">
+            <div class="medical-menu__head-img icon-knee">
               <img src="<?php echo $rootDir ?>/images/top/icon-knee.svg" alt="">
             </div>
-            <button class="medical-treatment__accordion">
+            <button class="medical-menu__accordion">
               膝が痛い
             </button>
           </h3>
@@ -125,12 +202,12 @@ $rootDir = get_template_directory_uri();
             </li>
           </ul>
         </li>
-        <li class="medical-treatment__item medical-treatment__item--05 medical-treatment__item--dg">
-          <h3 class="medical-treatment__head dc">
-            <div class="medical-treatment__head-img icon-sports-injury">
+        <li class="medical-menu__item medical-menu__item--05 medical-menu__item--dg">
+          <h3 class="medical-menu__head dc">
+            <div class="medical-menu__head-img icon-sports-injury">
               <img src="<?php echo $rootDir ?>/images/top/icon-sports-injury.svg" alt="">
             </div>
-            <button class="medical-treatment__accordion">
+            <button class="medical-menu__accordion">
               スポーツ障害・外傷
             </button>
           </h3>
@@ -167,12 +244,12 @@ $rootDir = get_template_directory_uri();
             </li>
           </ul>
         </li>
-        <li class="medical-treatment__item medical-treatment__item--06 medical-treatment__item--dg">
-          <h3 class="medical-treatment__head dc">
-            <div class="medical-treatment__head-img icon-growing-pain">
+        <li class="medical-menu__item medical-menu__item--06 medical-menu__item--dg">
+          <h3 class="medical-menu__head dc">
+            <div class="medical-menu__head-img icon-growing-pain">
               <img src="<?php echo $rootDir ?>/images/top/icon-growing-pain.svg" alt="">
             </div>
-            <button class="medical-treatment__accordion tal">
+            <button class="medical-menu__accordion tal">
               子どもの成長による痛みと<br>
               運動機能の悩み
             </button>
@@ -192,10 +269,10 @@ $rootDir = get_template_directory_uri();
           </ul>
         </li>
       </ul>
-      <div class="medical-treatment-line">
-        <div class="medical-treatment-line__inner">
-          <p class="medical-treatment-line__text">症状や疾患が特定できない場合はまずご相談ください</p>
-          <a href="" class="medical-treatment-line__link">
+      <div class="medical-menu-line">
+        <div class="medical-menu-line__inner">
+          <p class="medical-menu-line__text">症状や疾患が特定できない場合はまずご相談ください</p>
+          <a href="" class="medical-menu-line__link">
             <span>LINEで診療相談</span>
           </a>
         </div>
@@ -386,6 +463,91 @@ $rootDir = get_template_directory_uri();
             </div>
           </div>
         </div>
+      </div>
+    </section>
+    <section class="treatment">
+      <div class="treatment-wrapper">
+        <div class="section-title__wrapper --white --left --small">
+          <h2 class="section-title section-title">TREATMENT</h2>
+          <p class="section-sub-title">治療メニュー</p>
+        </div>
+        <ul class="treatment__list">
+          <li class="treatment__item">
+            <div class="treatment__left">
+              <h3 class="treatment__title treatment__title--regenerative">
+                <img src="<?php echo $rootDir ?>/images/icon/icon-regenerative-treatment.svg" alt="">再生治療
+              </h3>
+              <p class="treatment__text">この部分はテキストが入ります。イメージ確認用のサンプル文言になります。</p>
+              <ul class="treatment-detail__list">
+                <li class="treatment-detail__item">
+                  <p class="treatment-detail__text">PRP治療</p>
+                </li>
+                <li class="treatment-detail__item">
+                  <p class="treatment-detail__text">脂肪幹細胞治療（ASC）</p>
+                </li>
+                <li class="treatment-detail__item">
+                  <p class="treatment-detail__text">培養上清液治療</p>
+                </li>
+                <li class="treatment-detail__item">
+                  <p class="treatment-detail__text">ハイドロリリース＋培養上清液注射</p>
+                </li>
+              </ul>
+            </div>
+            <div class="treatment__right">
+              <div class="treatment__img">
+                <img src="<?php echo $rootDir ?>/images/top/treatment01.png" alt="">
+              </div>
+            </div>
+          </li>
+          <li class="treatment__item">
+            <div class="treatment__left">
+              <div class="treatment__img">
+                <img src="<?php echo $rootDir ?>/images/top/treatment02.png" alt="">
+              </div>
+            </div>
+            <div class="treatment__right">
+              <h3 class="treatment__title treatment__title--rehabilitation">
+                <img src="<?php echo $rootDir ?>/images/icon/icon-rehabilitation.svg" alt="">運動療法（リハビリ）
+              </h3>
+              <p class="treatment__text">この部分はテキストが入ります。イメージ確認用のサンプル文言になります。</p>
+              <ul class="treatment-detail__list">
+                <li class="treatment-detail__item">
+                  <p class="treatment-detail__text">Dynamic Device（ダイナミックデバイス）</p>
+                </li>
+                <li class="treatment-detail__item">
+                  <p class="treatment-detail__text">D-wall</p>
+                </li>
+                <li class="treatment-detail__item">
+                  <p class="treatment-detail__text">MTXアカデミー(強化/トレーニング)</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="treatment__item">
+            <div class="treatment__left">
+              <h3 class="treatment__title treatment__title--physical">
+                <img src="<?php echo $rootDir ?>/images/icon/icon-physical-therapy.svg" alt="">物理療法
+              </h3>
+              <p class="treatment__text">この部分はテキストが入ります。イメージ確認用のサンプル文言になります。</p>
+              <ul class="treatment-detail__list">
+                <li class="treatment-detail__item">
+                  <p class="treatment-detail__text">体外衝撃破</p>
+                </li>
+                <li class="treatment-detail__item">
+                  <p class="treatment-detail__text">超音波治療</p>
+                </li>
+                <li class="treatment-detail__item">
+                  <p class="treatment-detail__text">MTXアカデミー（リカバリ） </p>
+                </li>
+              </ul>
+            </div>
+            <div class="treatment__right">
+              <div class="treatment__img">
+                <img src="<?php echo $rootDir ?>/images/top/treatment03.png" alt="">
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
   </div>
