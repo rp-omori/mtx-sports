@@ -125,7 +125,7 @@
   right: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background-image: url(/wp-content/themes/mtx-sports/images/icon/icon-arrow-bottom--black.svg);
+  background-image: url(../images/icon/icon-arrow-bottom--black.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -196,7 +196,7 @@
   left: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background-image: url(/wp-content/themes/mtx-sports/images/icon/icon-tel--white_g.svg);
+  background-image: url(../images/icon/icon-tel--white_g.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left;
@@ -295,7 +295,7 @@
   left: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background-image: url(/wp-content/themes/mtx-sports/images/icon/icon-tel--white_g.svg);
+  background-image: url(../images/icon/icon-tel--white_g.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left;
@@ -438,7 +438,7 @@
   position: absolute;
   width: 1.6276041667vw;
   height: 1.4973958333vw;
-  background-image: url(/wp-content/themes/mtx-sports/images/icon/icon-line.svg);
+  background-image: url(../images/icon/icon-line.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left center;
@@ -695,7 +695,7 @@
   position: absolute;
   width: 2.2135416667vw;
   height: 2.2135416667vw;
-  background-image: url(/wp-content/themes/mtx-sports/images/icon/icon-arrow-circle-right--white.svg);
+  background-image: url(../images/icon/icon-arrow-circle-right--white.svg);
   background-repeat: no-repeat;
   background-size: contain;
   top: 50%;
@@ -707,7 +707,7 @@
   border: 1px solid var(--main-color);
 }
 .top .medical-menu .medical-menu__item .symptoms__list .symptoms__item:hover:after {
-  background-image: url(/wp-content/themes/mtx-sports/images/icon/icon-arrow-circle-right--green.svg);
+  background-image: url(../images/icon/icon-arrow-circle-right--green.svg);
 }
 .top .medical-menu .medical-menu__item .symptoms__list .symptoms__item .symptoms__link {
   position: relative;
@@ -813,7 +813,7 @@
   position: absolute;
   width: 1.6276041667vw;
   height: 1.4973958333vw;
-  background-image: url(/wp-content/themes/mtx-sports/images/icon/icon-line--white.svg);
+  background-image: url(../images/icon/icon-line--white.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left center;
@@ -1083,7 +1083,7 @@
   height: 24.4791666667vw;
   top: 0;
   left: 0;
-  background-image: url(/wp-content/themes/mtx-sports/images/bg-dot--white.svg);
+  background-image: url(../images/bg-dot--white.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -1137,7 +1137,7 @@
   height: 24.0885416667vw;
   top: 50%;
   right: 0;
-  background-image: url(/wp-content/themes/mtx-sports/images/bg-dot--white.svg);
+  background-image: url(../images/bg-dot--white.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -1184,7 +1184,7 @@
   height: 24.0885416667vw;
   top: 15%;
   right: 15%;
-  background-image: url(/wp-content/themes/mtx-sports/images/bg-dot--white.svg);
+  background-image: url(../images/bg-dot--white.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
