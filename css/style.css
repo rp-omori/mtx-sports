@@ -448,9 +448,43 @@
           transform: translateY(-50%);
 }
 
+.top .kv {
+  position: relative;
+}
+.top .kv .kv__float-text {
+  color: #358b81;
+  font-size: clamp(10px, 1.3rem, 13px);
+  -webkit-transform: translateY(-50%) rotate(270deg);
+          transform: translateY(-50%) rotate(270deg);
+  text-align: center;
+  position: absolute;
+  top: 45%;
+  left: -6em;
+}
+.top .kv .kv__swiper-pagination {
+  position: absolute;
+  width: auto;
+  bottom: 50%;
+  left: calc(7% - 20px);
+}
+.top .kv .kv__swiper-pagination .swiper-pagination-bullet {
+  display: block;
+  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 6px));
+  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 6px));
+  margin: 15px var(--swiper-pagination-bullet-horizontal-gap, 4px);
+  background-color: var(--btn-color-orange);
+  opacity: 1;
+}
+.top .kv .kv__swiper-pagination .swiper-pagination-bullet-active {
+  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 10px));
+  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 10px));
+  margin: 15px var(--swiper-pagination-bullet-horizontal-gap, 2px);
+  opacity: 1;
+}
 .top .kv .kv__swiper {
   width: 93%;
   margin: 0 0 0 auto;
+  overflow: hidden;
 }
 .top .kv .kv__swiper .swiper-wrapper {
   width: 100%;
@@ -862,12 +896,25 @@
   font-weight: bold;
 }
 .top .message .profile .profile__accordion-head .profile__accordion .profile__accordion-circle {
+  position: relative;
   display: inline-block;
   width: 2.2135416667vw;
   height: 2.2135416667vw;
   margin-left: 1.3020833333vw;
   background: var(--main-color-white);
   border-radius: 50%;
+}
+.top .message .profile .profile__accordion-head .profile__accordion .profile__accordion-circle:before {
+  content: "";
+  position: absolute;
+  width: 47%;
+  height: 2px;
+  margin: 0 auto;
+  background: #00a384;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .top .message .profile .profile__main .profile__inner {
   padding: 3.6458333333vw 4.7526041667vw;

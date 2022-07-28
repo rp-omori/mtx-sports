@@ -10,6 +10,7 @@ $rootDir = get_template_directory_uri();
 <main class="main">
   <div class="top">
     <div class="kv">
+      <p class="kv__float-text">MTX SPORTS & ARTICULAR CLINIC</p>
       <div class="kv__swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -82,9 +83,9 @@ $rootDir = get_template_directory_uri();
             </div>
           </div>
         </div>
-        <!-- If we need pagination -->
-        <div class="kv__swiper-pagination"></div>
       </div>
+      <!-- If we need pagination -->
+      <div class="kv__swiper-pagination"></div>
     </div>
 
     <section class="medical-menu">
