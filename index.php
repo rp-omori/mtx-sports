@@ -316,7 +316,7 @@ $rootDir = get_template_directory_uri();
       <div class="message__inner">
         <div class="message__top">
           <div class="message__img">
-            <img src="<?php echo $rootDir ?>/images/top/director-mask2.png" alt="">
+            <img src="<?php echo $rootDir ?>/images/top/director.png" alt="">
           </div>
           <div class="message__wrapper">
             <span class="message__label">院長メッセージ</span>
