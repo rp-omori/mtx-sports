@@ -9,75 +9,95 @@ $rootDir = get_template_directory_uri();
 ?>
 <main class="main">
   <div class="top">
-    <div class="kv">
+    <div id="kv" class="kv">
+      <div class="bg-triangle-l">
+        <img src="<?php echo $rootDir ?>/images/top/bg-triangle-l.svg" alt="">
+      </div>
       <p class="kv__float-text">MTX SPORTS & ARTICULAR CLINIC</p>
       <div class="kv__swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <div class="kv_img"><img src="<?php echo $rootDir ?>/images/top/kv_01.png" alt=""></div>
+            <div class="kv_img">
+              <picture>
+                <source media="(max-width: 768px)" srcset="<?php echo $rootDir ?>/images/top/kv_01-sp.png">
+                <img src="<?php echo $rootDir ?>/images/top/kv_01.png" alt="">
+              </picture>
+            </div>
             <div class="txtArea">
               <div class="txtArea__head white_txt">
                 <p class="date">08.29<span>mon~</span></p>
                 <h2>GRAND OPEN!!</h2>
               </div>
               <p class="txtArea__label">再生医療×運動療法で</p>
-              <h3 class="txtArea__sub-title white_txt">"治す"スポーツ・関節医療を目指して</h3>
-              <p class="txtArea__text white_txt">アスリートの競技人生・身体的障害のある方の人生に向き合い、身体の機能改善に取り組んできたMTXだからできる「再生医療」×「運動療法」を組み合わせた医療。医師とトレーナー陣がワンチームで取り組み、今まで治すことが難しかった人たちの改善を可能にすることを目指します。</p>
-              <div class="feature__box">
-                <div class="feature__circle">
-                  <p class="feature__circle-text">運動による<br>スポーツ障害</p>
-                </div>
-                <div class="feature__circle">
-                  <p class="feature__circle-text">保険診療では<br>治らなかった<br>関節痛</p>
-                </div>
-                <div class="feature__circle">
-                  <p class="feature__circle-text">子どもの<br>成長痛<br>・運動機能の悩み</p>
+              <h3 class="txtArea__sub-title white_txt">"治す"スポーツ・<br class="sp">関節医療を目指して</h3>
+              <p class="txtArea__text white_txt pc">アスリートの競技人生・身体的障害のある方の人生に向き合い、身体の機能改善に取り組んできたMTXだからできる「再生医療」×「運動療法」を組み合わせた医療。医師とトレーナー陣がワンチームで取り組み、今まで治すことが難しかった人たちの改善を可能にすることを目指します。</p>
+              <div class="feature__box-wrapper pc">
+                <div class="feature__box">
+                  <div class="feature__circle">
+                    <p class="feature__circle-text">運動による<br>スポーツ障害</p>
+                  </div>
+                  <div class="feature__circle">
+                    <p class="feature__circle-text">保険診療では<br>治らなかった<br>関節痛</p>
+                  </div>
+                  <div class="feature__circle">
+                    <p class="feature__circle-text">子どもの<br>成長痛<br>・運動機能の悩み</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="kv_img"><img src="<?php echo $rootDir ?>/images/top/kv_02.png" alt=""></div>
+            <picture>
+              <source media="(max-width: 768px)" srcset="<?php echo $rootDir ?>/images/top/kv_02-sp.png">
+              <img src="<?php echo $rootDir ?>/images/top/kv_02.png" alt="">
+            </picture>
             <div class="txtArea">
               <div class="txtArea__head white_txt">
                 <p class="date">08.29<span>mon~</span></p>
                 <h2>GRAND OPEN!!</h2>
               </div>
               <p class="txtArea__label">再生医療×運動療法で</p>
-              <h3 class="txtArea__sub-title white_txt">"治す"スポーツ・関節医療を目指して</h3>
-              <p class="txtArea__text white_txt">アスリートの競技人生・身体的障害のある方の人生に向き合い、身体の機能改善に取り組んできたMTXだからできる「再生医療」×「運動療法」を組み合わせた医療。医師とトレーナー陣がワンチームで取り組み、今まで治すことが難しかった人たちの改善を可能にすることを目指します。</p>
-              <div class="feature__box">
-                <div class="feature__circle">
-                  <p class="feature__circle-text">運動による<br>スポーツ障害</p>
-                </div>
-                <div class="feature__circle">
-                  <p class="feature__circle-text">保険診療では<br>治らなかった<br>関節痛</p>
-                </div>
-                <div class="feature__circle">
-                  <p class="feature__circle-text">子どもの<br>成長痛<br>・運動機能の悩み</p>
+              <h3 class="txtArea__sub-title white_txt">"治す"スポーツ・<br class="sp">関節医療を目指して</h3>
+              <p class="txtArea__text white_txt pc">アスリートの競技人生・身体的障害のある方の人生に向き合い、身体の機能改善に取り組んできたMTXだからできる「再生医療」×「運動療法」を組み合わせた医療。医師とトレーナー陣がワンチームで取り組み、今まで治すことが難しかった人たちの改善を可能にすることを目指します。</p>
+              <div class="feature__box-wrapper">
+                <div class="feature__box">
+                  <div class="feature__circle">
+                    <p class="feature__circle-text">運動による<br>スポーツ障害</p>
+                  </div>
+                  <div class="feature__circle">
+                    <p class="feature__circle-text">保険診療では<br>治らなかった<br>関節痛</p>
+                  </div>
+                  <div class="feature__circle">
+                    <p class="feature__circle-text">子どもの<br>成長痛<br>・運動機能の悩み</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="kv_img"><img src="<?php echo $rootDir ?>/images/top/kv_03.png" alt=""></div>
+            <picture>
+              <source media="(max-width: 768px)" srcset="<?php echo $rootDir ?>/images/top/kv_03-sp.png">
+              <img src="<?php echo $rootDir ?>/images/top/kv_03.png" alt="">
+            </picture>
             <div class="txtArea">
               <div class="txtArea__head white_txt">
                 <p class="date">08.29<span>mon~</span></p>
                 <h2>GRAND OPEN!!</h2>
               </div>
               <p class="txtArea__label">再生医療×運動療法で</p>
-              <h3 class="txtArea__sub-title white_txt">"治す"スポーツ・関節医療を目指して</h3>
-              <p class="txtArea__text white_txt">アスリートの競技人生・身体的障害のある方の人生に向き合い、身体の機能改善に取り組んできたMTXだからできる「再生医療」×「運動療法」を組み合わせた医療。医師とトレーナー陣がワンチームで取り組み、今まで治すことが難しかった人たちの改善を可能にすることを目指します。</p>
-              <div class="feature__box">
-                <div class="feature__circle">
-                  <p class="feature__circle-text">運動による<br>スポーツ障害</p>
-                </div>
-                <div class="feature__circle">
-                  <p class="feature__circle-text">保険診療では<br>治らなかった<br>関節痛</p>
-                </div>
-                <div class="feature__circle">
-                  <p class="feature__circle-text">子どもの<br>成長痛<br>・運動機能の悩み</p>
+              <h3 class="txtArea__sub-title white_txt">"治す"スポーツ・<br class="sp">関節医療を目指して</h3>
+              <p class="txtArea__text white_txt pc">アスリートの競技人生・身体的障害のある方の人生に向き合い、身体の機能改善に取り組んできたMTXだからできる「再生医療」×「運動療法」を組み合わせた医療。医師とトレーナー陣がワンチームで取り組み、今まで治すことが難しかった人たちの改善を可能にすることを目指します。</p>
+              <div class="feature__box-wrapper pc">
+                <div class="feature__box">
+                  <div class="feature__circle">
+                    <p class="feature__circle-text">運動による<br>スポーツ障害</p>
+                  </div>
+                  <div class="feature__circle">
+                    <p class="feature__circle-text">保険診療では<br>治らなかった<br>関節痛</p>
+                  </div>
+                  <div class="feature__circle">
+                    <p class="feature__circle-text">子どもの<br>成長痛<br>・運動機能の悩み</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -88,7 +108,7 @@ $rootDir = get_template_directory_uri();
       <div class="kv__swiper-pagination"></div>
     </div>
 
-    <section class="medical-menu">
+    <section id="medical-menu" class="medical-menu">
       <div class="section-title__wrapper --white --center">
         <h2 class="section-title">MENU</h2>
         <p class="section-sub-title">症状から探す診療メニュー</p>
@@ -242,6 +262,16 @@ $rootDir = get_template_directory_uri();
                 <h4 class="symptoms__name">シンスプリント</h4>
               </a>
             </li>
+            <li class="symptoms__item">
+              <a href="" class="symptoms__link">
+                <h4 class="symptoms__name">肉離れ</h4>
+              </a>
+            </li>
+            <li class="symptoms__item">
+              <a href="" class="symptoms__link">
+                <h4 class="symptoms__name">健周囲炎</h4>
+              </a>
+            </li>
           </ul>
         </li>
         <li class="medical-menu__item medical-menu__item--06 medical-menu__item--dg">
@@ -279,7 +309,10 @@ $rootDir = get_template_directory_uri();
       </div>
     </section>
 
-    <section class="message">
+    <section id="message" class="message">
+      <div class="bg-triangle-r">
+        <img src="<?php echo $rootDir ?>/images/top/bg-triangle-r.svg" alt="">
+      </div>
       <div class="message__inner">
         <div class="message__top">
           <div class="message__img">
@@ -305,9 +338,9 @@ $rootDir = get_template_directory_uri();
             </p>
           </div>
         </div>
-        <div class="profile">
+        <div id="profile" class="profile">
           <div class="profile__accordion-head">
-            <button class="profile__accordion">
+            <button id="profile-toggle" class="profile__accordion">
               院長プロフィール<span class="profile__accordion-circle"></span>
             </button>
           </div>
@@ -331,7 +364,7 @@ $rootDir = get_template_directory_uri();
                     IOC　Diploma in Sports Medicine<br>
                     NASM　Performance Enhancement Specialist<br>
                     NASM　Corrective Exercise Specialist<br>
-                    SFMA　
+                    SFMA　Selective Functional Movement Assessment
                   </p>
                 </div>
                 <div class="profile__item">
@@ -363,7 +396,7 @@ $rootDir = get_template_directory_uri();
       </div>
     </section>
 
-    <section class="clinic-features">
+    <section id="clinic-features" class="clinic-features">
       <div class="clinic-features__wrapper">
         <div class="section-title__wrapper --green --right">
           <h2 class="section-title">FEATURES</h2>
@@ -465,7 +498,8 @@ $rootDir = get_template_directory_uri();
         </div>
       </div>
     </section>
-    <section class="treatment">
+
+    <section id="treatment" class="treatment">
       <div class="treatment-wrapper">
         <div class="section-title__wrapper --white --left --small">
           <h2 class="section-title section-title">TREATMENT</h2>
@@ -552,4 +586,6 @@ $rootDir = get_template_directory_uri();
     </section>
   </div>
 </main>
+
+<script src="<?php echo $rootDir ?>/js/top.js"></script>
 <?php get_footer(); ?>
