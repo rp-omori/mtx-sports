@@ -17,7 +17,7 @@
 
   &.--light_green {
     .section-title {
-      color: #22908C;
+      color: #1BA087;
     }
 
     .section-sub-title {
@@ -29,7 +29,7 @@
 
   &.--green {
     .section-title {
-      color: #0AA89B;
+      color: #12A88C;
     }
 
     .section-sub-title {
@@ -90,6 +90,10 @@
     font-family: $fontFamilyDin2014;
     font-size: calcFz(115);
     font-weight: bold;
+
+    @include sp {
+      font-size: calcFz(55);
+    }
   }
 
   .section-sub-title {
@@ -98,6 +102,12 @@
     bottom: math.div(get_vw(-98), 2.5);
     font-size: calcFz(46);
     font-weight: bold;
+
+    @include sp {
+      width: 100%;
+      padding-bottom: get_vw(25, 375);
+      font-size: calcFz(24);
+    }
 
     &:before {
       content: '';

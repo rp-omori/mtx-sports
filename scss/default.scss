@@ -4,8 +4,8 @@
 :root {
   --main-text-color: #414846;
   --main-color-white: #FFF;
-  --main-color: #009B8E;
-  --main-color-bg: #008B86;
+  --main-color: #00a384;
+  --main-color-bg: #009578;
   --main-color-black: #262928;
   --base-color: #EFF4F3;
   --btn-color-orange: #EF8112;
@@ -13,6 +13,11 @@
 
 html {
   font-size: rootPx();
+  scroll-behavior: smooth;
+
+  @include sp {
+    font-size: rootPx(375px);
+  }
 }
 
 html,body {
@@ -70,4 +75,20 @@ img {
 
 a:hover {
   opacity: 0.8;
+}
+
+.pc {
+  display: block !important;
+
+  @include sp {
+    display: none !important;
+  }
+}
+
+.sp {
+  display: none !important;
+
+  @include sp {
+    display: block !important;
+  }
 }

@@ -3,7 +3,7 @@ $rootDir = get_template_directory_uri();
 ?>
 <?php wp_footer(); ?>
     <footer class="footer">
-      <section class="footer-access">
+      <section id="access" class="footer-access">
         <div class="footer-access__inner">
           <div class="footer-access__left">
             <div class="section-title__wrapper --white --left --small">
@@ -79,9 +79,34 @@ $rootDir = get_template_directory_uri();
           <small>Copyright © 2022 MTXスポーツ・関節CLINIC.All Rights Reserved.</small>
         </div>
       </div>
+
+      <div class="footer-float">
+        <div class="footer-float__inner">
+          <div class="footer-float__inner-left">
+            <div class="footer-contact__btn-wrapper">
+              <a href="" class="btn btn--orange btn--shadow">
+                <span>まずはWEB予約</span>
+              </a>
+              <a href="" class="btn btn--white btn--line btn--shadow">
+                <span>LINEでご相談・予約</span>
+              </a>
+            </div>
+          </div>
+          <div class="footer-float__inner-right">
+            <div class="footer-contact__time">
+              <div class="footer-contact__time-inner">
+                <p class="footer-contact__tel">03-6272-5047</p>
+                <p class="footer-contact__time-text">
+                  受付時間 10:00~17:00<br>
+                  月曜日〜金曜日（土日祝日は除く）
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
 </div>
 <script src="<?php echo $rootDir ?>/js/index.js"></script>
-<script src="<?php echo $rootDir ?>/js/slider.js"></script>
 </body>
 </html>
