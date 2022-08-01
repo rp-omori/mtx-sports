@@ -52,10 +52,10 @@ $rootDir = get_template_directory_uri();
           </p>
           <h4 class="footer-contact__sub-title">診察のご予約</h4>
           <div class="footer-contact__btn-wrapper">
-            <a href="" class="btn btn--orange btn--shadow">
+            <!-- <a href="" class="btn btn--orange btn--shadow">
               <span>WEB予約</span>
-            </a>
-            <a href="" class="btn btn--white btn--line btn--shadow">
+            </a> -->
+            <a href="" class="btn btn--orange btn--line_white btn--shadow">
               <span>LINEでご相談・予約</span>
             </a>
           </div>
@@ -97,7 +97,7 @@ $rootDir = get_template_directory_uri();
               <!-- <a href="" class="btn btn--orange btn--shadow">
                 <span>まずはWEB予約</span>
               </a> -->
-              <a href="" class="btn btn--white btn--line btn--shadow">
+              <a href="" class="btn btn--orange btn--line_white btn--shadow">
                 <span>LINEでご相談・予約</span>
               </a>
             </div>
@@ -117,6 +117,6 @@ $rootDir = get_template_directory_uri();
       </div>
     </footer>
 </div>
-<script src="<?php echo $rootDir ?>/js/index.js"></script>
+<script src="<?php echo $rootDir ?>/js/common.js"></script>
 </body>
 </html>

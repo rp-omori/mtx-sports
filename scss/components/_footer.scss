@@ -258,6 +258,7 @@
       .footer-contact__btn-wrapper {
         display: flex;
         margin-bottom: get_vw(56);
+        justify-content: center;
         gap: get_vw(15);
 
         @include sp {
@@ -283,7 +284,7 @@
 
     .footer-contact__time-inner {
       display: flex;
-      padding: get_vw(25) 0 get_vw(25) get_vw(44);
+      padding: get_vw(17) 0 get_vw(17) get_vw(44);
       align-items: center;
 
       .footer-contact__tel {
@@ -390,8 +391,8 @@
 
           .btn {
             display: block;
-            min-width: get_vw(240);
-            max-width: get_vw(240);
+            min-width: get_vw(354);
+            max-width: get_vw(354);
             filter: none;
             font-size: calcFz(16);
 

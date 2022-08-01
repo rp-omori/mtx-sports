@@ -36,3 +36,10 @@ const profileToggle = () => {
     }
   })
 }
+
+console.log($('.medical-menu__head'));
+$('.medical-menu__head').on('click', function () {
+  let toggleMenu = $(this).next('.symptoms__list')
+  console.log($(this));
+  toggleMenu.slideToggle();
+})

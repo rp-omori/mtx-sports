@@ -12,7 +12,7 @@
       position: absolute;
       width: get_vw(302);
       top: get_vw(475);
-      
+
       @include sp {
         width: get_vw(105, 375);
         top: initial;
@@ -236,7 +236,7 @@
     .kv__text-bottom {
       width: 89%;
       margin: 0 auto;
-      
+
       .kv__text {
         margin: get_vw(35, 375) 0 get_vw(50, 375);
         color: var(--main-color-black);
@@ -305,6 +305,10 @@
 
     .section-title__wrapper {
       margin-bottom: get_vw(111);
+
+      @include sp {
+        margin-bottom: get_vw(53, 375);
+      }
     }
 
     .medical-menu__list {
@@ -335,6 +339,11 @@
       &.medical-menu__item--01 {
         grid-area: 1 / 1 / 2 / 2;
 
+        .symptoms__link {
+          justify-content: center;
+          text-align: center;
+        }
+
         @include sp {
           grid-area: 1 / 1 / 2 / 2;
         }
@@ -342,6 +351,11 @@
 
       &.medical-menu__item--02 {
         grid-area: 1 / 2 / 2 / 3;
+
+        .symptoms__link {
+          justify-content: center;
+          text-align: center;
+        }
 
         @include sp {
           grid-area: 2 / 1 / 3 / 2;
@@ -351,6 +365,11 @@
       &.medical-menu__item--03 {
         grid-area: 1 / 3 / 2 / 4;
 
+        .symptoms__link {
+          justify-content: center;
+          text-align: center;
+        }
+
         @include sp {
           grid-area: 3 / 1 / 4 / 2;
         }
@@ -358,6 +377,11 @@
 
       &.medical-menu__item--04 {
         grid-area: 1 / 4 / 2 / 5;
+
+        .symptoms__link {
+          justify-content: center;
+          text-align: center;
+        }
 
         @include sp {
           grid-area: 4 / 1 / 5 / 2;
@@ -379,6 +403,18 @@
 
           @include sp {
             flex-direction: row;
+          }
+
+          .col {
+            .symptoms__link {
+              align-items: flex-start;
+              flex-direction: column;
+              justify-content: center;
+
+              .symptoms__note {
+                padding-left: 0;
+              }
+            }
           }
 
           .symptoms__item {
@@ -433,6 +469,10 @@
         display: flex;
         width: 100%;
         flex-direction: column;
+
+        @include sp {
+          display: none;
+        }
 
         .symptoms__item {
           display: flex;
@@ -495,6 +535,10 @@
             }
           }
 
+          .symptoms__name {
+            line-height: 1.2;
+          }
+
           .symptoms__note {
             padding-left: get_vw(10);
             font-size: calcFz(13);
@@ -509,6 +553,7 @@
     }
 
     .medical-menu__head {
+      position: relative;
       display: flex;
       margin-bottom: get_vw(29);
       align-items: center;
@@ -519,9 +564,29 @@
         flex-direction: row;
       }
 
+      &:before,
+      &:after {
+        @include sp {
+          content: '';
+          position: absolute;
+          width: 16px;
+          height: 2px;
+          background: #00A384;
+          top: 50%;
+          right: 0;
+          transform: translateY(-50%);
+        }
+      }
+
+      &:before {
+        @include sp {
+          transform: translateY(-50%) rotate(90deg);
+        }
+      }
+
       .medical-menu__head-img {
         margin-bottom: get_vw(22);
-        
+
         @include sp {
           width: 90px !important;
           margin-top: 0 !important;
@@ -560,6 +625,7 @@
       }
 
       .medical-menu__accordion {
+        position: relative;
         color: var(--main-color);
         font-size: calcFz(22);
         font-weight: bold;
@@ -1212,7 +1278,7 @@
 
       .clinic-features__03 {
         padding-bottom: get_vw(237);
-        
+
         @include sp {
           padding-bottom: get_vw(104, 375);
         }
@@ -1440,10 +1506,10 @@
             @include sp {
               flex-direction: column-reverse;
             }
-            
+
             .treatment__left {
               width: 60%;
-  
+
               @include sp {
                 width: 94%;
                 margin-right: auto;

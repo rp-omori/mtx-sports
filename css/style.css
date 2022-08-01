@@ -133,8 +133,37 @@
 .header .header__inner .header__mobile-nav {
   display: none;
 }
+.header .header__inner .header__mobile-nav.header__mobile-nav--active .header__hamburger span:nth-of-type(1) {
+  -webkit-transform: translateY(6px) rotate(45deg);
+          transform: translateY(6px) rotate(45deg);
+}
+.header .header__inner .header__mobile-nav.header__mobile-nav--active .header__hamburger span:nth-of-type(2) {
+  opacity: 0;
+}
+.header .header__inner .header__mobile-nav.header__mobile-nav--active .header__hamburger span:nth-of-type(3) {
+  -webkit-transform: translateY(-6px) rotate(-45deg);
+          transform: translateY(-6px) rotate(-45deg);
+}
 .header .header__inner .header__hamburger {
   display: none;
+}
+.header .header__inner .header__hamburger span:nth-of-type(1) {
+  top: 0;
+}
+.header .header__inner .header__hamburger span:nth-of-type(2) {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.header .header__inner .header__hamburger span:nth-of-type(3) {
+  bottom: 0;
+}
+.header .header__hamburger-bg.header__hamburger-bg--active {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 99;
 }
 
 .footer {
@@ -264,6 +293,9 @@
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 3.6458333333vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 0.9765625vw;
 }
 .footer .footer-contact .footer-contact__inner .footer-contact__btn-wrapper .btn {
@@ -277,7 +309,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.6276041667vw 0 1.6276041667vw 2.8645833333vw;
+  padding: 1.1067708333vw 0 1.1067708333vw 2.8645833333vw;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -376,8 +408,8 @@
 }
 .footer .footer-float .footer-float__inner .footer-float__inner-left .footer-contact__btn-wrapper .btn {
   display: block;
-  min-width: 15.625vw;
-  max-width: 15.625vw;
+  min-width: 23.046875vw;
+  max-width: 23.046875vw;
   -webkit-filter: none;
           filter: none;
   font-size: clamp(10px, 1.6rem, 16px);
@@ -539,6 +571,24 @@
   width: 1.6276041667vw;
   height: 1.4973958333vw;
   background-image: url(../images/icon/icon-line.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left center;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.btn.btn--line_white span {
+  position: relative;
+  padding-left: 2.6041666667vw;
+}
+.btn.btn--line_white span:before {
+  content: "";
+  position: absolute;
+  width: 1.6276041667vw;
+  height: 1.4973958333vw;
+  background-image: url(../images/icon/icon-line--white.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left center;
@@ -772,14 +822,38 @@
 .top .medical-menu .medical-menu__item.medical-menu__item--01 {
   grid-area: 1/1/2/2;
 }
+.top .medical-menu .medical-menu__item.medical-menu__item--01 .symptoms__link {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
 .top .medical-menu .medical-menu__item.medical-menu__item--02 {
   grid-area: 1/2/2/3;
+}
+.top .medical-menu .medical-menu__item.medical-menu__item--02 .symptoms__link {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
 }
 .top .medical-menu .medical-menu__item.medical-menu__item--03 {
   grid-area: 1/3/2/4;
 }
+.top .medical-menu .medical-menu__item.medical-menu__item--03 .symptoms__link {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
 .top .medical-menu .medical-menu__item.medical-menu__item--04 {
   grid-area: 1/4/2/5;
+}
+.top .medical-menu .medical-menu__item.medical-menu__item--04 .symptoms__link {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
 }
 .top .medical-menu .medical-menu__item.medical-menu__item--05 {
   grid-area: 2/1/3/3;
@@ -795,6 +869,21 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+.top .medical-menu .medical-menu__item.medical-menu__item--05 .symptoms__list .col .symptoms__link {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.top .medical-menu .medical-menu__item.medical-menu__item--05 .symptoms__list .col .symptoms__link .symptoms__note {
+  padding-left: 0;
 }
 .top .medical-menu .medical-menu__item.medical-menu__item--05 .symptoms__list .symptoms__item {
   width: 48%;
@@ -875,12 +964,16 @@
           align-items: center;
   pointer-events: none;
 }
+.top .medical-menu .medical-menu__item .symptoms__list .symptoms__item .symptoms__name {
+  line-height: 1.2;
+}
 .top .medical-menu .medical-menu__item .symptoms__list .symptoms__item .symptoms__note {
   padding-left: 0.6510416667vw;
   font-size: clamp(10px, 1.3rem, 13px);
   font-weight: 300;
 }
 .top .medical-menu .medical-menu__head {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -921,6 +1014,7 @@
   margin-bottom: 0;
 }
 .top .medical-menu .medical-menu__head .medical-menu__accordion {
+  position: relative;
   color: var(--main-color);
   font-size: clamp(10px, 2.2rem, 22px);
   font-weight: bold;
@@ -1497,10 +1591,45 @@
     display: block;
   }
   .header .header__inner .header__mobile-nav.header__mobile-nav--active .header__drawer {
+    position: fixed;
     display: block;
+    width: 55%;
+    top: 73px;
+    right: 10px;
+    z-index: 100;
+  }
+  .header .header__inner .header__mobile-nav.header__mobile-nav--active .header__drawer .header__list {
+    width: 100%;
+    padding: 9.3333333333vw 6.6666666667vw;
+    background: var(--main-color-white);
+    border-radius: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px 0;
+  }
+  .header .header__inner .header__mobile-nav.header__mobile-nav--active .header__drawer .header__list .header__item {
+    margin-right: 0;
+    padding-left: 0;
+  }
+  .header .header__inner .header__mobile-nav.header__mobile-nav--active .header__drawer .header__list .header__link:before {
+    width: 9px;
   }
   .header .header__inner .header__hamburger {
+    position: relative;
     display: block;
+    width: 28px;
+    height: 14px;
+  }
+  .header .header__inner .header__hamburger span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #159875;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
   .header .header__inner .header__drawer {
     display: none;
@@ -1669,6 +1798,13 @@
     width: 5.8666666667vw;
     height: 5.3333333333vw;
   }
+  .btn.btn--line_white span {
+    padding-left: 8vw;
+  }
+  .btn.btn--line_white span:before {
+    width: 5.8666666667vw;
+    height: 5.3333333333vw;
+  }
   .top .kv {
     padding-top: 6.1333333333vw;
   }
@@ -1738,6 +1874,9 @@
     width: 89%;
     padding: 16vw 0 34.4vw;
   }
+  .top .medical-menu .section-title__wrapper {
+    margin-bottom: 14.1333333333vw;
+  }
   .top .medical-menu .medical-menu__list {
     padding-bottom: 5.3333333333vw;
     gap: 10px;
@@ -1777,6 +1916,9 @@
   .top .medical-menu .medical-menu__item.medical-menu__item--dg {
     display: block;
   }
+  .top .medical-menu .medical-menu__item .symptoms__list {
+    display: none;
+  }
   .top .medical-menu .medical-menu__item .symptoms__list .symptoms__item {
     font-size: clamp(10px, 1.5rem, 15px);
   }
@@ -1809,6 +1951,21 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .top .medical-menu .medical-menu__head:before, .top .medical-menu .medical-menu__head:after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 2px;
+    background: #00A384;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .top .medical-menu .medical-menu__head:before {
+    -webkit-transform: translateY(-50%) rotate(90deg);
+            transform: translateY(-50%) rotate(90deg);
   }
   .top .medical-menu .medical-menu__head .medical-menu__head-img {
     width: 90px !important;

@@ -186,7 +186,7 @@ $rootDir = get_template_directory_uri();
               <img src="<?php echo $rootDir ?>/images/top/icon-lower-limbs.svg" alt="">
             </div>
             <button class="medical-menu__accordion">
-              下肢の痛みやしびれなど
+              下肢の痛みやしびれ<br class="sp">など
             </button>
           </h3>
           <ul class="symptoms__list">
@@ -244,9 +244,10 @@ $rootDir = get_template_directory_uri();
             </button>
           </h3>
           <ul class="symptoms__list">
-            <li class="symptoms__item">
+            <li class="symptoms__item col">
               <a href="" class="symptoms__link">
-                <h4 class="symptoms__name">疲労骨折<br>（腰椎分離症）</h4>
+                <h4 class="symptoms__name">疲労骨折</h4>
+                <span class="symptoms__note">（腰椎分離症含む）</span>
               </a>
             </li>
             <li class="symptoms__item">
@@ -292,8 +293,7 @@ $rootDir = get_template_directory_uri();
               <img src="<?php echo $rootDir ?>/images/top/icon-growing-pain.svg" alt="">
             </div>
             <button class="medical-menu__accordion tal">
-              子どもの成長による痛みと<br>
-              運動機能の悩み
+              子どもの成長による<br class="sp">痛みと<br class="pc">運動機能の悩み
             </button>
           </h3>
           <ul class="symptoms__list">
