@@ -59,7 +59,7 @@ $rootDir = get_template_directory_uri();
               <p class="txtArea__label">再生医療×運動療法で</p>
               <h3 class="txtArea__sub-title white_txt">"治す"スポーツ・<br class="sp">関節医療を目指して</h3>
               <p class="txtArea__text white_txt pc">アスリートの競技人生・身体的障害のある方の人生に向き合い、身体の機能改善に取り組んできたMTXだからできる「再生医療」×「運動療法」を組み合わせた医療。医師とトレーナー陣がワンチームで取り組み、今まで治すことが難しかった人たちの改善を可能にすることを目指します。</p>
-              <div class="feature__box-wrapper">
+              <div class="feature__box-wrapper pc">
                 <div class="feature__box">
                   <div class="feature__circle">
                     <p class="feature__circle-text">運動による<br>スポーツ障害</p>
@@ -103,9 +103,21 @@ $rootDir = get_template_directory_uri();
             </div>
           </div>
         </div>
+
+        <p class="kv__scroll">SCROLL</p>
       </div>
-      <!-- If we need pagination -->
       <div class="kv__swiper-pagination"></div>
+
+      <div class="kv__text-bottom sp">
+        <p class="kv__text">
+          アスリートの競技人生・身体的障害のある方の人生に向き合い、身体の機能改善に取り組んできたMTXだからできる「再生医療」×「運動療法」を組み合わせた医療。医師とトレーナー陣がワンチームで取り組み、今まで治すことが難しかった人たちの改善を可能にすることを目指します。
+        </p>
+        <div class="kv__other">
+          <p class="kv__other-text">運動によるスポーツ障害</p>
+          <p class="kv__other-text">保険診療では治らなかった関節痛</p>
+          <p class="kv__other-text">子どもの成長痛・運動機能の悩み</p>
+        </div>
+      </div>
     </div>
 
     <section id="medical-menu" class="medical-menu">
@@ -174,7 +186,7 @@ $rootDir = get_template_directory_uri();
               <img src="<?php echo $rootDir ?>/images/top/icon-lower-limbs.svg" alt="">
             </div>
             <button class="medical-menu__accordion">
-              下肢の痛みやしびれなど
+              下肢の痛みやしびれ<br class="sp">など
             </button>
           </h3>
           <ul class="symptoms__list">
@@ -232,9 +244,10 @@ $rootDir = get_template_directory_uri();
             </button>
           </h3>
           <ul class="symptoms__list">
-            <li class="symptoms__item">
+            <li class="symptoms__item col">
               <a href="" class="symptoms__link">
-                <h4 class="symptoms__name">疲労骨折<br>（腰椎分離症）</h4>
+                <h4 class="symptoms__name">疲労骨折</h4>
+                <span class="symptoms__note">（腰椎分離症含む）</span>
               </a>
             </li>
             <li class="symptoms__item">
@@ -280,8 +293,7 @@ $rootDir = get_template_directory_uri();
               <img src="<?php echo $rootDir ?>/images/top/icon-growing-pain.svg" alt="">
             </div>
             <button class="medical-menu__accordion tal">
-              子どもの成長による痛みと<br>
-              運動機能の悩み
+              子どもの成長による<br class="sp">痛みと<br class="pc">運動機能の悩み
             </button>
           </h3>
           <ul class="symptoms__list">
@@ -301,7 +313,7 @@ $rootDir = get_template_directory_uri();
       </ul>
       <div class="medical-menu-line">
         <div class="medical-menu-line__inner">
-          <p class="medical-menu-line__text">症状や疾患が特定できない場合はまずご相談ください</p>
+          <p class="medical-menu-line__text">症状や疾患が特定できない場合は<br class="sp">まずご相談ください</p>
           <a href="" class="medical-menu-line__link">
             <span>LINEで診療相談</span>
           </a>
@@ -416,9 +428,10 @@ $rootDir = get_template_directory_uri();
             <div class="clinic-features__01-main">
               <p class="clinic-features__01-main-title">再生医療×運動療法</p>
               <p class="clinic-features__01-main-sub-title">ONE TEAMでトータルサポート</p>
-              <p class="clinic-features__01-main-text">治療だけではない、リハビリだけでもない。</p>
-              <p class="clinic-features__01-main-text">医師診断・評価の下、理学療法士や経験と知識をもった</p>
-              <p class="clinic-features__01-main-text">MTXトレーナー陣と連携して予防にも取り組みます。</p>
+              <p class="clinic-features__01-main-text pc">治療だけではない、リハビリだけでもない。</p>
+              <p class="clinic-features__01-main-text pc">医師診断・評価の下、理学療法士や経験と知識をもった</p>
+              <p class="clinic-features__01-main-text pc">MTXトレーナー陣と連携して予防にも取り組みます。</p>
+              <p class="clinic-features__01-main-text sp">治療だけではない、リハビリだけでもない。<br>医師診断・評価の下、理学療法士や経験と知識をもったMTXトレーナー陣と連携して予防にも取り組みます。</p>
             </div>
           </div>
         </div>

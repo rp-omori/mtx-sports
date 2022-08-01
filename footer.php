@@ -24,7 +24,10 @@ $rootDir = get_template_directory_uri();
                 <p class="footer-access__close-text">土日祝日</p>
               </div>
               <div class="footer-access__close-img">
-                <img src="<?php echo $rootDir ?>/images/closed-days.png" alt="診療時間 10:00~17:00 月火水木金">
+                <picture>
+                  <source media="(max-width: 786px)" srcset="<?php echo $rootDir ?>/images/closed-days-sp.png">
+                  <img src="<?php echo $rootDir ?>/images/closed-days.png" alt="診療時間 10:00~17:00 月火水木金">
+                </picture>
               </div>
             </div>
           </div>
@@ -49,15 +52,22 @@ $rootDir = get_template_directory_uri();
           </p>
           <h4 class="footer-contact__sub-title">診察のご予約</h4>
           <div class="footer-contact__btn-wrapper">
-            <a href="" class="btn btn--orange btn--shadow">
+            <!-- <a href="" class="btn btn--orange btn--shadow">
               <span>WEB予約</span>
-            </a>
-            <a href="" class="btn btn--white btn--line btn--shadow">
+            </a> -->
+            <a href="" class="btn btn--orange btn--line_white btn--shadow">
               <span>LINEでご相談・予約</span>
             </a>
           </div>
           <p class="footer-contact__text footer-contact__text-sub">お電話でのご予約・お問い合わせも承っております。</p>
-          <div class="footer-contact__time">
+          <a href="" class="btn btn--white btn--tel btn--shadow sp">
+            <span>03-6272-5047</span>
+          </a>
+          <p class="footer-contact__time-text sp">
+            受付時間 10:00~17:00<br>
+            月曜日〜金曜日（土日祝日は除く）
+          </p>
+          <div class="footer-contact__time pc">
             <div class="footer-contact__time-inner">
               <p class="footer-contact__tel">03-6272-5047</p>
               <p class="footer-contact__time-text">
@@ -80,14 +90,14 @@ $rootDir = get_template_directory_uri();
         </div>
       </div>
 
-      <div class="footer-float">
+      <div class="footer-float pc">
         <div class="footer-float__inner">
           <div class="footer-float__inner-left">
             <div class="footer-contact__btn-wrapper">
-              <a href="" class="btn btn--orange btn--shadow">
+              <!-- <a href="" class="btn btn--orange btn--shadow">
                 <span>まずはWEB予約</span>
-              </a>
-              <a href="" class="btn btn--white btn--line btn--shadow">
+              </a> -->
+              <a href="" class="btn btn--orange btn--line_white btn--shadow">
                 <span>LINEでご相談・予約</span>
               </a>
             </div>
@@ -107,6 +117,6 @@ $rootDir = get_template_directory_uri();
       </div>
     </footer>
 </div>
-<script src="<?php echo $rootDir ?>/js/index.js"></script>
+<script src="<?php echo $rootDir ?>/js/common.js"></script>
 </body>
 </html>

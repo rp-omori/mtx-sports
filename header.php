@@ -30,6 +30,7 @@
     <!-- Adobe Fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/ofs1fip.css">
 
+    <script src="<?php echo get_template_directory_uri(); ?>/js/vender/jquery.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/vender/swiper.min.js"></script>
     <?php wp_head();?>
 </head>
@@ -87,7 +88,7 @@ $rootDir = get_template_directory_uri();
               </ul>
             </nav>
 
-            <div class="header__mobile-nav header__mobile-nav--active">
+            <div class="header__mobile-nav">
               <button class="header__hamburger" type="button" aria-controls="drawer" aria-expanded="false" aria-label="MENU">
                 <span></span>
                 <span></span>
@@ -96,27 +97,27 @@ $rootDir = get_template_directory_uri();
               <nav id="drawer" class="header__drawer" aria-hidden="true">
                 <ul class="header__list">
                   <li class="header__item">
-                    <a href="#" class="header__link">
+                    <a href="#medical-menu" class="header__link">
                       症状から探す
                     </a>
                   </li>
                   <li class="header__item">
-                    <a href="" class="header__link">
-                      治療について
+                    <a href="#message" class="header__link">
+                      院長メッセージ
                     </a>
                   </li>
                   <li class="header__item">
-                    <a href="" class="header__link">
+                    <a href="#clinic-features" class="header__link">
                       クリニックの特徴
                     </a>
                   </li>
                   <li class="header__item">
-                    <a href="" class="header__link">
-                      医師・スタッフ紹介
+                    <a href="#treatment" class="header__link">
+                      治療メニュー
                     </a>
                   </li>
                   <li class="header__item">
-                    <a href="" class="header__link">
+                    <a href="#access" class="header__link">
                       アクセス
                     </a>
                   </li>
@@ -124,4 +125,5 @@ $rootDir = get_template_directory_uri();
               </nav>
             </div>
           </div>
+          <div class="header__hamburger-bg"></div>
         </header>
