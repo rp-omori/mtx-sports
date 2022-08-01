@@ -10,19 +10,46 @@
       padding: get_vw(76) 0 get_vw(125) get_vw(129);
       align-items: center;
 
+      @include sp {
+        width: 89%;
+        margin: 0 auto;
+        padding: get_vw(60, 375) 0 get_vw(70, 375);
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
       .footer-access__left {
+        @include sp {
+          display: contents;
+        }
+
         .section-title__wrapper {
           margin-bottom: get_vw(107);
+
+          @include sp {
+            margin-bottom: get_vw(58, 375);
+            order: 1;
+          }
         }
 
         .footer-access__info {
           margin-bottom: get_vw(29);
+
+          @include sp {
+            margin-bottom: get_vw(31, 375);
+            order: 2;
+          }
 
           .footer-access__info-name {
             margin-bottom: get_vw(19);
             color: var(--main-color-black);
             font-size: calcFz(21);
             font-weight: bold;
+
+            @include sp {
+              margin-bottom: get_vw(10, 375);
+              font-size: calcFz(15);
+            }
           }
 
           .footer-access__info-address {
@@ -31,6 +58,11 @@
             font-size: calcFz(19);
             font-weight: 300;
             line-height: 1.75;
+
+            @include sp {
+              margin-bottom: get_vw(15, 375);
+              font-size: calcFz(15);
+            }
           }
 
           .footer-access__info-link {
@@ -39,6 +71,10 @@
             font-size: calcFz(18);
             font-weight: bold;
             text-decoration: underline;
+
+            @include sp {
+              font-size: calcFz(15);
+            }
           }
 
           .footer-access__info-tel {
@@ -47,6 +83,11 @@
             color: var(--main-color-black);
             font-family: $fontFamilyDin2014;
             font-size: calcFz(27);
+
+            @include sp {
+              padding-left: get_vw(32, 375);
+              font-size: calcFz(20);
+            }
 
             &:before {
               content: '';
@@ -61,16 +102,29 @@
               background-repeat: no-repeat;
               background-size: contain;
               background-position: left;
+
+              @include sp {
+                width: get_vw(23, 375);
+                height: get_vw(23, 375);
+              }
             }
           }
         }
         .footer-access__time {
+          @include sp {
+            order: 4;
+          }
+
           .footer-access__close {
             display: flex;
             margin-bottom: get_vw(40);
             align-items: center;
             font-size: calcFz(18);
             font-weight: bold;
+
+            @include sp {
+              font-size: calcFz(15);
+            }
 
             .footer-access__close-title {
               margin-right: get_vw(15);
@@ -81,6 +135,12 @@
       }
       .footer-access__right {
         margin-left: get_vw(61);
+
+        @include sp {
+          width: 100vw;
+          margin: 0 calc(50% - 50vw) get_vw(57, 375);
+          order: 3;
+        }
       }
     }
   }
@@ -93,14 +153,39 @@
       margin: 0 auto;
       padding: get_vw(78) 0 get_vw(125);
 
+      @include sp {
+        width: 84%;
+        padding: get_vw(40, 375) 0 get_vw(68, 375);
+      }
+
       .section-title__wrapper {
         margin-bottom: get_vw(39);
+
+        @include sp {
+          margin-bottom: get_vw(40, 375);
+        }
+
+        .section-title {
+          @include sp {
+            font-size: calcFz(66);
+          }
+        }
+
+        .section-sub-title {
+          @include sp {
+            font-size: calcFz(22);
+          }
+        }
 
         .footer-contact__text {
           position: absolute;
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
+
+          @include sp {
+            text-align: center;
+          }
         }
       }
 
@@ -110,10 +195,21 @@
         font-size: calcFz(18);
         text-align: center;
         line-height: 1.75;
+
+        @include sp {
+          width: 100%;
+          margin-bottom: get_vw(62, 375);
+          font-size: calcFz(15);
+          text-align: left;
+        }
       }
 
       .footer-contact__text-sub {
         margin-bottom: get_vw(20);
+
+        @include sp {
+          margin-bottom: get_vw(31, 375);
+        }
       }
 
       .footer-contact__sub-title {
@@ -122,6 +218,41 @@
         font-size: calcFz(20);
         font-weight: bold;
         text-align: center;
+
+        @include sp {
+          position: relative;
+          margin-bottom: get_vw(24, 375);
+          padding-bottom: 12px;
+          text-align: left;
+        }
+
+        &:after {
+          @include sp {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            bottom: 0;
+            left: 0;
+            background: linear-gradient(90deg, var(--main-color-white) 0%, var(--main-color-white) 7%, #1BA087 7%, #1BA087 100%);
+          }
+        }
+      }
+
+      .btn--tel {
+        @include sp {
+          margin-bottom: get_vw(10, 375);
+        }
+      }
+
+      .footer-contact__time-text {
+        color: var(--main-color-white);
+        font-size: calcFz(16);
+        line-height: 1.5;
+
+        @include sp {
+          font-size: calcFz(15);
+        }
       }
 
       .footer-contact__btn-wrapper {
@@ -129,8 +260,18 @@
         margin-bottom: get_vw(56);
         gap: get_vw(15);
 
+        @include sp {
+          margin-bottom: get_vw(40, 375);
+          flex-direction: column;
+          gap: get_vw(12, 375);
+        }
+
         .btn {
           width: 50%;
+
+          @include sp {
+            width: 100%;
+          }
         }
       }
     }
@@ -202,6 +343,10 @@
     .footer__copyright {
       color: var(--main-color-white);
       font-size: calcFz(13);
+
+      @include sp {
+        font-size: calcFz(10);
+      }
     }
   }
 
@@ -248,6 +393,7 @@
             min-width: get_vw(240);
             max-width: get_vw(240);
             filter: none;
+            font-size: calcFz(16);
 
             &:first-child {
               margin-right: get_vw(10);
@@ -255,6 +401,12 @@
 
             &.btn--white {
               border: 1px solid #D1DBD8;
+            }
+
+            &.btn--line {
+              span {
+                padding-left: get_vw(32);
+              }
             }
           }
         }

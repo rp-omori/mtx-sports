@@ -12,6 +12,10 @@ const initSwiper = () => {
       el: ".kv__swiper-pagination",
       clickable: true
     },
+    autoplay: {
+      delay: 7000,
+    },
+    loop: true
   });
 }
 
