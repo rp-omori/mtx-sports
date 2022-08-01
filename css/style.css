@@ -1773,6 +1773,7 @@
   }
   .footer .footer-float .footer-float__inner .footer-float__inner-left {
     width: 100%;
+    padding: 0 10px;
   }
   .footer .footer-float .footer-float__inner .footer-float__inner-left .footer-contact__btn-wrapper {
     -webkit-box-pack: center;
@@ -1782,7 +1783,11 @@
   .footer .footer-float .footer-float__inner .footer-float__inner-left .footer-contact__btn-wrapper .btn {
     min-width: initial;
     max-width: 100%;
-    padding: 20px 13px;
+    padding: 20px 7px;
+    font-size: clamp(10px, 1.4rem, 14px);
+  }
+  .footer .footer-float .footer-float__inner .footer-float__inner-left .footer-contact__btn-wrapper .btn:first-child {
+    margin-right: 10px;
   }
   .section-title__wrapper.--small .section-title {
     font-size: clamp(10px, 5.5rem, 55px);
