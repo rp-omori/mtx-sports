@@ -90,7 +90,7 @@ $rootDir = get_template_directory_uri();
         </div>
       </div>
 
-      <div class="footer-float pc">
+      <div class="footer-float">
         <div class="footer-float__inner">
           <div class="footer-float__inner-left">
             <div class="footer-contact__btn-wrapper">
@@ -102,7 +102,7 @@ $rootDir = get_template_directory_uri();
               </a>
             </div>
           </div>
-          <div class="footer-float__inner-right">
+          <div class="footer-float__inner-right pc">
             <div class="footer-contact__time">
               <div class="footer-contact__time-inner">
                 <p class="footer-contact__tel">03-6272-5047</p>

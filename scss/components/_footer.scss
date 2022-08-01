@@ -327,7 +327,7 @@
     background: var(--main-color-black);
 
     @include sp {
-      padding: 21px 20px 29px;
+      padding: 21px 20px 95px;
       flex-direction: column;
     }
 
@@ -364,6 +364,10 @@
       align-items: center;
       justify-content: center;
 
+      @include sp {
+        padding: 5px 0;
+      }
+
       .footer-contact__time {
         background: inherit;
 
@@ -385,9 +389,17 @@
       .footer-float__inner-left {
         padding-right: get_vw(27);
 
+        @include sp {
+          width: 100%;
+        }
+
         .footer-contact__btn-wrapper {
           display: flex;
           align-items: center;
+
+          @include sp {
+            justify-content: center;
+          }
 
           .btn {
             display: block;
@@ -395,6 +407,12 @@
             max-width: get_vw(354);
             filter: none;
             font-size: calcFz(16);
+
+            @include sp {
+              min-width: initial;
+              max-width: 100%;
+              padding: 20px 13px;
+            }
 
             &:first-child {
               margin-right: get_vw(10);
