@@ -97,6 +97,9 @@ $rootDir = get_template_directory_uri();
               <!-- <a href="" class="btn btn--orange btn--shadow">
                 <span>まずはWEB予約</span>
               </a> -->
+              <a href="" class="btn btn--white btn--tel btn--shadow sp">
+                <span>電話で予約・相談</span>
+              </a>
               <a href="" class="btn btn--orange btn--line_white btn--shadow">
                 <span>LINEでご相談・予約</span>
               </a>

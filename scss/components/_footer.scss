@@ -391,6 +391,7 @@
 
         @include sp {
           width: 100%;
+          padding: 0 10px;
         }
 
         .footer-contact__btn-wrapper {
@@ -411,11 +412,16 @@
             @include sp {
               min-width: initial;
               max-width: 100%;
-              padding: 20px 13px;
+              padding: 20px 7px;
+              font-size: calcFz(14);
             }
 
             &:first-child {
               margin-right: get_vw(10);
+
+              @include sp {
+                margin-right: 10px;
+              }
             }
 
             &.btn--white {
