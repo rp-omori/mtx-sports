@@ -182,6 +182,36 @@
     }
   }
 
+  &.btn--tel_white {
+    span {
+      position: relative;
+      padding-left: get_vw(40);
+
+      @include sp {
+        padding-left: get_vw(40, 375);
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        width: get_vw(25);
+        height: get_vw(23);
+        background-image: url(#{$img-root-dir}/icon/icon-tel--white_g.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left center;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+
+        @include sp {
+          width: get_vw(29, 375);
+          height: get_vw(29, 375);
+        }
+      }
+    }
+  }
+
   &.btn--line {
     span {
       position: relative;

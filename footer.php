@@ -60,7 +60,7 @@ $rootDir = get_template_directory_uri();
             </a>
           </div>
           <p class="footer-contact__text footer-contact__text-sub">お電話でのご予約・お問い合わせも承っております。</p>
-          <a href="" class="btn btn--white btn--tel btn--shadow sp">
+          <a href="tel:0362725047" class="btn btn--white btn--tel btn--shadow sp">
             <span>03-6272-5047</span>
           </a>
           <p class="footer-contact__time-text sp">
@@ -97,7 +97,7 @@ $rootDir = get_template_directory_uri();
               <!-- <a href="" class="btn btn--orange btn--shadow">
                 <span>まずはWEB予約</span>
               </a> -->
-              <a href="" class="btn btn--white btn--tel btn--shadow sp">
+              <a href="tel:0362725047" class="btn btn--white btn--tel_white btn--shadow sp">
                 <span>電話で予約・相談</span>
               </a>
               <a href="https://lin.ee/DhflNAe" class="btn btn--orange btn--line_white btn--shadow">

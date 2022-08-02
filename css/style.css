@@ -561,6 +561,24 @@
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
+.btn.btn--tel_white span {
+  position: relative;
+  padding-left: 2.6041666667vw;
+}
+.btn.btn--tel_white span:before {
+  content: "";
+  position: absolute;
+  width: 1.6276041667vw;
+  height: 1.4973958333vw;
+  background-image: url(../images/icon/icon-tel--white_g.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left center;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
 .btn.btn--line span {
   position: relative;
   padding-left: 2.6041666667vw;
@@ -1809,6 +1827,13 @@
     padding-left: 10.6666666667vw;
   }
   .btn.btn--tel span:before {
+    width: 7.7333333333vw;
+    height: 7.7333333333vw;
+  }
+  .btn.btn--tel_white span {
+    padding-left: 10.6666666667vw;
+  }
+  .btn.btn--tel_white span:before {
     width: 7.7333333333vw;
     height: 7.7333333333vw;
   }
