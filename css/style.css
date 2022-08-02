@@ -248,6 +248,11 @@
 .footer .footer-access .footer-access__inner .footer-access__right {
   margin-left: 3.9713541667vw;
 }
+.footer .footer-access .footer-access__inner .footer-access__right .footer-access__right-text {
+  margin-top: 1.6927083333vw;
+  color: var(--main-color-black);
+  font-size: clamp(10px, 1.6rem, 16px);
+}
 .footer .footer-contact {
   background: var(--main-color-bg);
 }
@@ -1255,7 +1260,7 @@
   background: var(--main-color);
 }
 .top .message .profile .profile__main .profile__body .profile__item .profile__text {
-  font-size: clamp(10px, 1.6rem, 16px);
+  font-size: clamp(10px, 1.5rem, 15px);
   line-height: 1.66;
 }
 .top .message .profile .profile__main .profile__body .profile__item .profile__img-wrapper {
@@ -1712,6 +1717,12 @@
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
+  }
+  .footer .footer-access .footer-access__inner .footer-access__right .footer-access__right-text {
+    width: 89%;
+    margin: 6.6666666667vw auto 0;
+    font-size: clamp(10px, 1.3rem, 13px);
+    line-height: 1.6;
   }
   .footer .footer-contact .footer-contact__inner {
     width: 84%;

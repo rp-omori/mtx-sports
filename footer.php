@@ -35,6 +35,7 @@ $rootDir = get_template_directory_uri();
             <div class="footer-access__right-img">
               <img src="<?php echo $rootDir ?>/images/map.png" alt="">
             </div>
+            <p class="footer-access__right-text">※MTXアカデミーとダイナミックデバイス<br class="sp">（ddrobotec）は当クリニックの連携施設です。</p>
           </div>
         </div>
       </section>
