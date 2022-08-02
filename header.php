@@ -1,3 +1,6 @@
+<?php
+$rootDir = get_template_directory_uri();
+?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -6,11 +9,12 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, initial-scale=1.0, user-scalable=no">
     <meta name="description" content="【ページの説明文】" />
     <title>MTX膝関節クリニック</title>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/reset.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/default.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/vender/swiper-bundle.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/vender/swiper.min.css">
+    <link rel="shortcut icon" href="<?php echo $rootDir; ?>/images/favicon.ico">
+    <link rel="stylesheet" href="<?php echo $rootDir; ?>/css/reset.css">
+    <link rel="stylesheet" href="<?php echo $rootDir; ?>/css/default.css">
+    <link rel="stylesheet" href="<?php echo $rootDir; ?>/css/style.css">
+    <link rel="stylesheet" href="<?php echo $rootDir; ?>/css/vender/swiper-bundle.css">
+    <link rel="stylesheet" href="<?php echo $rootDir; ?>/css/vender/swiper.min.css">
     <link rel="shortcut icon" href="【ファイル名.ico】" />
     <link rel="apple-touch-icon-precomposed" href="【画像のパス/apple-touch-icon-precomposed.png】" />
     <!-- facebook -->
@@ -30,13 +34,10 @@
     <!-- Adobe Fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/ofs1fip.css">
 
-    <script src="<?php echo get_template_directory_uri(); ?>/js/vender/jquery.min.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/vender/swiper.min.js"></script>
+    <script src="<?php echo $rootDir; ?>/js/vender/jquery.min.js"></script>
+    <script src="<?php echo $rootDir; ?>/js/vender/swiper.min.js"></script>
     <?php wp_head();?>
 </head>
-<?php
-$rootDir = get_template_directory_uri();
-?>
 <body>
     <div class="container">
         <header class="header">
