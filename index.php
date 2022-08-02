@@ -17,12 +17,10 @@ $rootDir = get_template_directory_uri();
       <div class="kv__swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <div class="kv_img">
-              <picture>
-                <source media="(max-width: 768px)" srcset="<?php echo $rootDir ?>/images/top/kv_01-sp.png">
-                <img src="<?php echo $rootDir ?>/images/top/kv_01.png" alt="">
-              </picture>
-            </div>
+            <picture>
+              <source media="(max-width: 768px)" srcset="<?php echo $rootDir ?>/images/top/kv_02-sp.png">
+              <img src="<?php echo $rootDir ?>/images/top/kv_02.png" alt="">
+            </picture>
             <div class="txtArea">
               <div class="txtArea__head white_txt">
                 <p class="date">08.29<span>mon~</span></p>
@@ -30,7 +28,7 @@ $rootDir = get_template_directory_uri();
               </div>
               <p class="txtArea__label">再生医療×運動療法で</p>
               <h3 class="txtArea__sub-title white_txt">"治す"スポーツ・<br class="sp">関節医療を目指して</h3>
-              <p class="txtArea__text white_txt pc">アスリートの競技人生・身体的障害のある方の人生に向き合い、身体の機能改善に取り組んできたMTXだからできる「再生医療」×「運動療法」を組み合わせた医療。医師とトレーナー陣がワンチームで取り組み、今まで治すことが難しかった人たちの改善を可能にすることを目指します。</p>
+              <p class="txtArea__text white_txt pc">アスリートの競技人生・身体的障害のある方の人生に向き合い、身体の機能改善に取り組んできたMTXだからできる「再生医療」×「運動療法」を組み合わせた医療。医師と理学療法士、トレーナー陣が一体となって、パフォーマンスや痛みに悩む方々に寄り添い、共に解決に向かって進んでいきます。</p>
               <div class="feature__box-wrapper pc">
                 <div class="feature__box">
                   <div class="feature__circle">
@@ -47,10 +45,12 @@ $rootDir = get_template_directory_uri();
             </div>
           </div>
           <div class="swiper-slide">
-            <picture>
-              <source media="(max-width: 768px)" srcset="<?php echo $rootDir ?>/images/top/kv_02-sp.png">
-              <img src="<?php echo $rootDir ?>/images/top/kv_02.png" alt="">
-            </picture>
+            <div class="kv_img">
+              <picture>
+                <source media="(max-width: 768px)" srcset="<?php echo $rootDir ?>/images/top/kv_01-sp.png">
+                <img src="<?php echo $rootDir ?>/images/top/kv_01.png" alt="">
+              </picture>
+            </div>
             <div class="txtArea">
               <div class="txtArea__head white_txt">
                 <p class="date">08.29<span>mon~</span></p>
@@ -58,7 +58,7 @@ $rootDir = get_template_directory_uri();
               </div>
               <p class="txtArea__label">再生医療×運動療法で</p>
               <h3 class="txtArea__sub-title white_txt">"治す"スポーツ・<br class="sp">関節医療を目指して</h3>
-              <p class="txtArea__text white_txt pc">アスリートの競技人生・身体的障害のある方の人生に向き合い、身体の機能改善に取り組んできたMTXだからできる「再生医療」×「運動療法」を組み合わせた医療。医師とトレーナー陣がワンチームで取り組み、今まで治すことが難しかった人たちの改善を可能にすることを目指します。</p>
+              <p class="txtArea__text white_txt pc">アスリートの競技人生・身体的障害のある方の人生に向き合い、身体の機能改善に取り組んできたMTXだからできる「再生医療」×「運動療法」を組み合わせた医療。医師と理学療法士、トレーナー陣が一体となって、パフォーマンスや痛みに悩む方々に寄り添い、共に解決に向かって進んでいきます。</p>
               <div class="feature__box-wrapper pc">
                 <div class="feature__box">
                   <div class="feature__circle">
@@ -86,7 +86,7 @@ $rootDir = get_template_directory_uri();
               </div>
               <p class="txtArea__label">再生医療×運動療法で</p>
               <h3 class="txtArea__sub-title white_txt">"治す"スポーツ・<br class="sp">関節医療を目指して</h3>
-              <p class="txtArea__text white_txt pc">アスリートの競技人生・身体的障害のある方の人生に向き合い、身体の機能改善に取り組んできたMTXだからできる「再生医療」×「運動療法」を組み合わせた医療。医師とトレーナー陣がワンチームで取り組み、今まで治すことが難しかった人たちの改善を可能にすることを目指します。</p>
+              <p class="txtArea__text white_txt pc">アスリートの競技人生・身体的障害のある方の人生に向き合い、身体の機能改善に取り組んできたMTXだからできる「再生医療」×「運動療法」を組み合わせた医療。医師と理学療法士、トレーナー陣が一体となって、パフォーマンスや痛みに悩む方々に寄り添い、共に解決に向かって進んでいきます。</p>
               <div class="feature__box-wrapper pc">
                 <div class="feature__box">
                   <div class="feature__circle">
@@ -110,7 +110,7 @@ $rootDir = get_template_directory_uri();
 
       <div class="kv__text-bottom sp">
         <p class="kv__text">
-          アスリートの競技人生・身体的障害のある方の人生に向き合い、身体の機能改善に取り組んできたMTXだからできる「再生医療」×「運動療法」を組み合わせた医療。医師とトレーナー陣がワンチームで取り組み、今まで治すことが難しかった人たちの改善を可能にすることを目指します。
+          アスリートの競技人生・身体的障害のある方の人生に向き合い、身体の機能改善に取り組んできたMTXだからできる「再生医療」×「運動療法」を組み合わせた医療。医師と理学療法士、トレーナー陣が一体となって、パフォーマンスや痛みに悩む方々に寄り添い、共に解決に向かって進んでいきます。
         </p>
         <div class="kv__other">
           <p class="kv__other-text">運動によるスポーツ障害</p>
@@ -314,7 +314,7 @@ $rootDir = get_template_directory_uri();
       <div class="medical-menu-line">
         <div class="medical-menu-line__inner">
           <p class="medical-menu-line__text">症状や疾患が特定できない場合は<br class="sp">まずご相談ください</p>
-          <a href="" class="medical-menu-line__link">
+          <a href="https://lin.ee/DhflNAe" class="medical-menu-line__link">
             <span>LINEで診療相談</span>
           </a>
         </div>

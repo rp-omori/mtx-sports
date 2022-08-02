@@ -141,6 +141,19 @@
           margin: 0 calc(50% - 50vw) get_vw(57, 375);
           order: 3;
         }
+
+        .footer-access__right-text {
+          margin-top: get_vw(26);
+          color: var(--main-color-black);
+          font-size: calcFz(16);
+
+          @include sp {
+            width: 89%;
+            margin: get_vw(25, 375) auto 0;
+            font-size: calcFz(13);
+            line-height: 1.6;
+          }
+        }
       }
     }
   }
