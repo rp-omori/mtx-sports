@@ -419,13 +419,14 @@
             display: block;
             min-width: get_vw(354);
             max-width: get_vw(354);
+            padding: 16px 0;
             filter: none;
             font-size: calcFz(16);
 
             @include sp {
               min-width: initial;
               max-width: 100%;
-              padding: 20px 7px;
+              padding: 14.5px 7px;
               font-size: calcFz(14);
             }
 

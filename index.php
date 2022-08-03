@@ -15,19 +15,51 @@ $rootDir = get_template_directory_uri();
       </div>
       <p class="kv__float-text">MTX SPORTS & ARTICULAR CLINIC</p>
       <div class="kv__swiper">
+        <div class="txtArea">
+          <div class="txtArea__head white_txt">
+            <p class="date">08.29<span>mon~</span></p>
+            <h2>GRAND OPEN!!</h2>
+          </div>
+          <p class="txtArea__label">再生医療×運動療法で</p>
+          <h3 class="txtArea__sub-title white_txt">
+            <picture>
+              <source media="(max-width: 767px)" srcset="<?php echo $rootDir ?>/images/top/kv_lead-sp.svg">
+              <img src="<?php echo $rootDir ?>/images/top/kv_lead.svg" alt="治るスポーツ・関節医療を目指して">
+            </picture>
+          </h3>
+          <p class="txtArea__text white_txt pc">アスリートの競技人生・身体的障害のある方の人生に向き合い、身体の機能改善に取り組んできたMTXだからできる「再生医療」×「運動療法」を組み合わせた医療。医師と理学療法士、トレーナー陣が一体となって、パフォーマンスや痛みに悩む方々に寄り添い、共に解決に向かって進んでいきます。</p>
+          <div class="feature__box-wrapper pc">
+            <div class="feature__box">
+              <div class="feature__circle">
+                <p class="feature__circle-text">運動による<br>スポーツ障害</p>
+              </div>
+              <div class="feature__circle">
+                <p class="feature__circle-text">保険診療では<br>治らなかった<br>関節痛</p>
+              </div>
+              <div class="feature__circle">
+                <p class="feature__circle-text">子どもの<br>成長痛<br>・運動機能の悩み</p>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <picture>
               <source media="(max-width: 768px)" srcset="<?php echo $rootDir ?>/images/top/kv_02-sp.png">
               <img src="<?php echo $rootDir ?>/images/top/kv_02.png" alt="">
             </picture>
-            <div class="txtArea">
+            <!-- <div class="txtArea">
               <div class="txtArea__head white_txt">
                 <p class="date">08.29<span>mon~</span></p>
                 <h2>GRAND OPEN!!</h2>
               </div>
               <p class="txtArea__label">再生医療×運動療法で</p>
-              <h3 class="txtArea__sub-title white_txt">"治る"スポーツ・<br class="sp">関節医療を目指して</h3>
+              <h3 class="txtArea__sub-title white_txt">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="<?php echo $rootDir ?>/images/top/kv_lead-sp.svg">
+                  <img src="<?php echo $rootDir ?>/images/top/kv_lead.svg" alt="治るスポーツ・関節医療を目指して">
+                </picture>
+              </h3>
               <p class="txtArea__text white_txt pc">アスリートの競技人生・身体的障害のある方の人生に向き合い、身体の機能改善に取り組んできたMTXだからできる「再生医療」×「運動療法」を組み合わせた医療。医師と理学療法士、トレーナー陣が一体となって、パフォーマンスや痛みに悩む方々に寄り添い、共に解決に向かって進んでいきます。</p>
               <div class="feature__box-wrapper pc">
                 <div class="feature__box">
@@ -42,7 +74,7 @@ $rootDir = get_template_directory_uri();
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
           <div class="swiper-slide">
             <div class="kv_img">
@@ -51,13 +83,18 @@ $rootDir = get_template_directory_uri();
                 <img src="<?php echo $rootDir ?>/images/top/kv_01.png" alt="">
               </picture>
             </div>
-            <div class="txtArea">
+            <!-- <div class="txtArea">
               <div class="txtArea__head white_txt">
                 <p class="date">08.29<span>mon~</span></p>
                 <h2>GRAND OPEN!!</h2>
               </div>
               <p class="txtArea__label">再生医療×運動療法で</p>
-              <h3 class="txtArea__sub-title white_txt">"治る"スポーツ・<br class="sp">関節医療を目指して</h3>
+              <h3 class="txtArea__sub-title white_txt">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="<?php echo $rootDir ?>/images/top/kv_lead-sp.svg">
+                  <img src="<?php echo $rootDir ?>/images/top/kv_lead.svg" alt="治るスポーツ・関節医療を目指して">
+                </picture>
+              </h3>
               <p class="txtArea__text white_txt pc">アスリートの競技人生・身体的障害のある方の人生に向き合い、身体の機能改善に取り組んできたMTXだからできる「再生医療」×「運動療法」を組み合わせた医療。医師と理学療法士、トレーナー陣が一体となって、パフォーマンスや痛みに悩む方々に寄り添い、共に解決に向かって進んでいきます。</p>
               <div class="feature__box-wrapper pc">
                 <div class="feature__box">
@@ -72,20 +109,25 @@ $rootDir = get_template_directory_uri();
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
           <div class="swiper-slide">
             <picture>
               <source media="(max-width: 768px)" srcset="<?php echo $rootDir ?>/images/top/kv_03-sp.png">
               <img src="<?php echo $rootDir ?>/images/top/kv_03.png" alt="">
             </picture>
-            <div class="txtArea">
+            <!-- <div class="txtArea">
               <div class="txtArea__head white_txt">
                 <p class="date">08.29<span>mon~</span></p>
                 <h2>GRAND OPEN!!</h2>
               </div>
               <p class="txtArea__label">再生医療×運動療法で</p>
-              <h3 class="txtArea__sub-title white_txt">"治る"スポーツ・<br class="sp">関節医療を目指して</h3>
+              <h3 class="txtArea__sub-title white_txt">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="<?php echo $rootDir ?>/images/top/kv_lead-sp.svg">
+                  <img src="<?php echo $rootDir ?>/images/top/kv_lead.svg" alt="治るスポーツ・関節医療を目指して">
+                </picture>
+              </h3>
               <p class="txtArea__text white_txt pc">アスリートの競技人生・身体的障害のある方の人生に向き合い、身体の機能改善に取り組んできたMTXだからできる「再生医療」×「運動療法」を組み合わせた医療。医師と理学療法士、トレーナー陣が一体となって、パフォーマンスや痛みに悩む方々に寄り添い、共に解決に向かって進んでいきます。</p>
               <div class="feature__box-wrapper pc">
                 <div class="feature__box">
@@ -100,7 +142,7 @@ $rootDir = get_template_directory_uri();
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
 
@@ -514,7 +556,7 @@ $rootDir = get_template_directory_uri();
 
     <section id="treatment" class="treatment">
       <div class="treatment-wrapper">
-        <div class="section-title__wrapper --white --left --small">
+        <div class="section-title__wrapper --white --left">
           <h2 class="section-title section-title">TREATMENT</h2>
           <p class="section-sub-title">治療メニュー</p>
         </div>
