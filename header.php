@@ -17,19 +17,17 @@ $rootDir = get_template_directory_uri();
     <link rel="stylesheet" href="<?php echo $rootDir; ?>/css/vender/swiper.min.css">
     <link rel="apple-touch-icon-precomposed" href="【画像のパス/apple-touch-icon-precomposed.png】" />
     <!-- facebook -->
-    <!-- <meta property="og:url" content="【ページのURL】 /">
+    <meta property="og:url" content="https://mtx-clinic.jp/">
     <meta property="og:title" content="MTXスポーツ・関節クリニック" />
     <meta property="og:type" content="website" />
     <meta property="og:description" content="アスリートの競技人生・身体的障害のある方の人生に向き合い、身体の機能改善に取り組んできたMTXだからできる「再生医療」×「運動療法」を組み合わせた医療。医師とトレーナー陣が一体となって、パフォーマンスや痛みに悩む方々に寄り添い、共に解決に向かって進んでいきます。" />
-    <meta property="og:image" content="【サムネイル画像のURL】" />
+    <meta property="og:image" content="<?php echo $rootDir; ?>/images/ogp.png" />
     <meta property="og:site_name" content="MTXスポーツ・関節クリニック" />
-    <meta property="fb:app_id" content="【appID】" />
-    <meta property="og:locale" content="ja_JP" /> -->
+    <meta property="og:locale" content="ja_JP" />
     <!-- Twitter -->
-    <!-- <meta name="twitter:card" content="【カードの種類】" />
-    <meta name="twitter:site" content="【@ユーザー名】" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:description" content="アスリートの競技人生・身体的障害のある方の人生に向き合い、身体の機能改善に取り組んできたMTXだからできる「再生医療」×「運動療法」を組み合わせた医療。医師とトレーナー陣が一体となって、パフォーマンスや痛みに悩む方々に寄り添い、共に解決に向かって進んでいきます。" />
-    <meta name="twitter:image:src" content="【サムネイル画像のURL】" /> -->
+    <meta name="twitter:image:src" content="<?php echo $rootDir; ?>/images/ogp.png" />
     <!-- Adobe Fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/ofs1fip.css">
 
