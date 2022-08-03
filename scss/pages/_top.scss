@@ -88,11 +88,13 @@
     }
 
     .kv__swiper {
+      position: relative;
       width: 93%;
       margin: 0 0 0 auto;
       overflow: hidden;
 
       .swiper-wrapper {
+        position: relative;
         width: 100%;
 
         .swiper-slide {
@@ -106,127 +108,143 @@
               width: 100%;
             }
           }
+        }
+      }
 
-          .txtArea {
-            width: 45%;
-            position: absolute;
-            top: 50%;
-            right: get_vw(91);
-            transform: translateY(-50%);
+      .txtArea {
+        width: 45%;
+        position: absolute;
+        top: 50%;
+        right: get_vw(91);
+        transform: translateY(-50%);
+        z-index: 2;
+
+        @include sp {
+          width: 93.5%;
+          top: initial;
+          right: initial;
+          bottom: 0;
+          left: 0;
+          transform: translateY(0);
+        }
+
+        .txtArea__head {
+          color: var(--main-color-white);
+          font-size: calcFz(100);
+          font-family: $fontFamilyDin2014;
+          line-height: 1.3;
+
+          @include sp {
+            padding-left: get_vw(12, 375);
+            font-size: calcFz(50);
+          }
+
+          h2 {
+            @include sp {
+              filter: drop-shadow(0 0 6px rgba(0, 0, 0, .65))
+            }
+          }
+        }
+
+        .txtArea__label {
+          display: inline-block;
+          margin-bottom: get_vw(19);
+          padding: get_vw(12) get_vw(28) get_vw(12) get_vw(15);
+          color: var(--main-color-white);
+          background: #00A384;
+          font-size: calcFz(19);
+          font-weight: bold;
+          clip-path: polygon(0 0, 100% 0, 94% 100%, 0% 100%);
+
+          @include sp {
+            font-size: calcFz(18);
+            margin-bottom: get_vw(11, 375);
+            padding: get_vw(12, 375) get_vw(22, 375) get_vw(12, 375) get_vw(15, 375);
+          }
+        }
+
+        .txtArea__sub-title {
+          margin-bottom: get_vw(31);
+          color: var(--main-color-white);
+          font-size: calcFz(32);
+          font-weight: bold;
+
+          @include sp {
+            margin-bottom: get_vw(18, 375);
+            padding-left: get_vw(16, 375);
+            line-height: 1.2;
+          }
+        }
+
+        .txtArea__text {
+          margin-bottom: get_vw(31);
+          color: var(--main-color-white);
+          font-size: calcFz(15);
+          line-height: 1.88;
+        }
+
+        .white_txt {
+          .date {
+            margin-left: 7%;
+            position: relative;
+            color: var(--main-color-white);
+            font-size: calcFz(66);
+            line-height: 1;
 
             @include sp {
-              width: 93.5%;
-              top: initial;
-              right: initial;
-              bottom: 0;
-              left: 0;
-              transform: translateY(0);
+              font-size: calcFz(38);
+              filter: drop-shadow(0 0 6px rgba(0, 0, 0, .65));
             }
 
-            .txtArea__head {
+            span {
+              font-size: calcFz(39);
+
+              @include sp {
+                font-size: calcFz(23);
+              }
+            }
+
+            &::after {
+              position: absolute;
+              top: 50%;
+              transform: translate(0,-50%) rotate(-90deg);
+              left: -7%;
+              content:"2022";
               color: var(--main-color-white);
-              font-size: calcFz(100);
-              font-family: $fontFamilyDin2014;
+              font-size: calcFz(23);
+
+              @include sp {
+                font-size: calcFz(13);
+              }
+            }
+          }
+        }
+
+        .feature__box {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .feature__circle {
+            position: relative;
+            width: get_vw(164);
+            height: get_vw(164);
+            background: translate;
+            border: 1px solid var(--main-color-white);
+            border-radius: 50%;
+
+            .feature__circle-text {
+              position: absolute;
+              width: 100%;
+              color: var(--main-color-white);
+              font-family: $fontFamilyHiraGo;
+              font-size: calcFz(16);
+              font-weight: 600;
+              top: 50%;
+              left: 50%;
               line-height: 1.3;
-
-              @include sp {
-                padding-left: get_vw(12, 375);
-                font-size: calcFz(50);
-              }
-            }
-
-            .txtArea__label {
-              display: inline-block;
-              margin-bottom: get_vw(19);
-              padding: get_vw(12) get_vw(28) get_vw(12) get_vw(15);
-              color: var(--main-color-white);
-              background: #00A384;
-              font-size: calcFz(19);
-              font-weight: bold;
-              clip-path: polygon(0 0, 100% 0, 94% 100%, 0% 100%);
-
-              @include sp {
-                font-size: calcFz(18);
-                margin-bottom: get_vw(11, 375);
-                padding: get_vw(12, 375) get_vw(22, 375) get_vw(12, 375) get_vw(15, 375);
-              }
-            }
-
-            .txtArea__sub-title {
-              margin-bottom: get_vw(31);
-              color: var(--main-color-white);
-              font-size: calcFz(32);
-              font-weight: bold;
-
-              @include sp {
-                margin-bottom: get_vw(18, 375);
-                padding-left: get_vw(16, 375);
-                line-height: 1.2;
-              }
-            }
-
-            .txtArea__text {
-              margin-bottom: get_vw(31);
-              color: var(--main-color-white);
-              font-size: calcFz(18);
-              line-height: 1.88;
-            }
-
-            .white_txt {
-              .date {
-                margin-left: 7%;
-                position: relative;
-                color: var(--main-color-white);
-                font-size: calcFz(66);
-                line-height: 1;
-
-                @include sp {
-                  font-size: calcFz(38);
-                }
-
-                &::after {
-                  position: absolute;
-                  top: 50%;
-                  transform: translate(0,-50%) rotate(-90deg);
-                  left: -7%;
-                  content:"2022";
-                  color: var(--main-color-white);
-                  font-size: calcFz(23);
-
-                  @include sp {
-                    font-size: calcFz(13);
-                  }
-                }
-              }
-            }
-
-            .feature__box {
-              display: flex;
-              align-items: center;
-              justify-content: space-between;
-
-              .feature__circle {
-                position: relative;
-                width: get_vw(164);
-                height: get_vw(164);
-                background: translate;
-                border: 1px solid var(--main-color-white);
-                border-radius: 50%;
-
-                .feature__circle-text {
-                  position: absolute;
-                  width: 100%;
-                  color: var(--main-color-white);
-                  font-family: $fontFamilyHiraGo;
-                  font-size: calcFz(16);
-                  font-weight: 600;
-                  top: 50%;
-                  left: 50%;
-                  line-height: 1.3;
-                  text-align: center;
-                  transform: translate(-50%, -50%);
-                }
-              }
+              text-align: center;
+              transform: translate(-50%, -50%);
             }
           }
         }
@@ -561,6 +579,7 @@
 
       @include sp {
         display: flex !important;
+        margin-bottom: 0;
         flex-direction: row;
       }
 
@@ -1447,6 +1466,8 @@
               color: var(--main-color-white);
               font-size: calcFz(18);
               line-height: 1.75;
+              overflow-wrap: break-word;
+              word-break: keep-all;
 
               @include sp {
                 font-size: calcFz(15);
@@ -1486,6 +1507,7 @@
 
           &:nth-child(odd) {
             .treatment__left {
+              width: 80%;
               padding: get_vw(112) get_vw(80) 0 get_vw(129);
 
               @include sp {
@@ -1518,6 +1540,7 @@
             }
 
             .treatment__right {
+              width: 40%;
               padding: get_vw(112) get_vw(129) 0 get_vw(80);
 
               @include sp {

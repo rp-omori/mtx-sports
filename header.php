@@ -43,7 +43,7 @@ $rootDir = get_template_directory_uri();
           <div class="header__inner">
             <div class="header__left">
               <h1 class="header__logo">
-                <a href="/" class="header__logo-link">
+                <a href="<?php echo home_url(); ?>" class="header__logo-link">
                   <img src="<?php echo $rootDir ?>/images/logo--black.svg" alt="MTX SPORTS & ARTICULAR CLINIC スポーツ・関節クリニック">
                 </a>
               </h1>

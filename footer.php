@@ -82,7 +82,7 @@ $rootDir = get_template_directory_uri();
 
       <div class="footer__inner">
         <div class="footer__logo">
-          <a href="/" class="footer__logo-link">
+          <a href="<?php echo home_url(); ?>" class="footer__logo-link">
             <img src="<?php echo $rootDir ?>/images/logo--white.svg" alt="MTX SPORTS & ARTICULAR CLINIC スポーツ・関節クリニック">
           </a>
         </div>
