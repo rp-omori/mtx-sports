@@ -27,7 +27,7 @@ $rootDir = get_template_directory_uri();
                 <h2>GRAND OPEN!!</h2>
               </div>
               <p class="txtArea__label">再生医療×運動療法で</p>
-              <h3 class="txtArea__sub-title white_txt">"治す"スポーツ・<br class="sp">関節医療を目指して</h3>
+              <h3 class="txtArea__sub-title white_txt">"治る"スポーツ・<br class="sp">関節医療を目指して</h3>
               <p class="txtArea__text white_txt pc">アスリートの競技人生・身体的障害のある方の人生に向き合い、身体の機能改善に取り組んできたMTXだからできる「再生医療」×「運動療法」を組み合わせた医療。医師と理学療法士、トレーナー陣が一体となって、パフォーマンスや痛みに悩む方々に寄り添い、共に解決に向かって進んでいきます。</p>
               <div class="feature__box-wrapper pc">
                 <div class="feature__box">
@@ -57,7 +57,7 @@ $rootDir = get_template_directory_uri();
                 <h2>GRAND OPEN!!</h2>
               </div>
               <p class="txtArea__label">再生医療×運動療法で</p>
-              <h3 class="txtArea__sub-title white_txt">"治す"スポーツ・<br class="sp">関節医療を目指して</h3>
+              <h3 class="txtArea__sub-title white_txt">"治る"スポーツ・<br class="sp">関節医療を目指して</h3>
               <p class="txtArea__text white_txt pc">アスリートの競技人生・身体的障害のある方の人生に向き合い、身体の機能改善に取り組んできたMTXだからできる「再生医療」×「運動療法」を組み合わせた医療。医師と理学療法士、トレーナー陣が一体となって、パフォーマンスや痛みに悩む方々に寄り添い、共に解決に向かって進んでいきます。</p>
               <div class="feature__box-wrapper pc">
                 <div class="feature__box">
@@ -85,7 +85,7 @@ $rootDir = get_template_directory_uri();
                 <h2>GRAND OPEN!!</h2>
               </div>
               <p class="txtArea__label">再生医療×運動療法で</p>
-              <h3 class="txtArea__sub-title white_txt">"治す"スポーツ・<br class="sp">関節医療を目指して</h3>
+              <h3 class="txtArea__sub-title white_txt">"治る"スポーツ・<br class="sp">関節医療を目指して</h3>
               <p class="txtArea__text white_txt pc">アスリートの競技人生・身体的障害のある方の人生に向き合い、身体の機能改善に取り組んできたMTXだからできる「再生医療」×「運動療法」を組み合わせた医療。医師と理学療法士、トレーナー陣が一体となって、パフォーマンスや痛みに悩む方々に寄り添い、共に解決に向かって進んでいきます。</p>
               <div class="feature__box-wrapper pc">
                 <div class="feature__box">
