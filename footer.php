@@ -13,7 +13,7 @@ $rootDir = get_template_directory_uri();
             <div class="footer-access__info">
               <p class="footer-access__info-name">MTXスポーツ・関節クリニック</p>
               <p class="footer-access__info-address">
-                〒102-0083 東京都千代田区麹町６丁目４−１６<br>ESCALIER麹町 2階<a href="https://www.google.com/maps/place/ESCALIER%E9%BA%B9%E7%94%BA/@35.6857951,139.7305219,17z/data=!3m2!4b1!5s0x60188c8a2446dea3:0x821482163a5eb290!4m5!3m4!1s0x60188da116fc62bf:0xad0831d9e59fc5d0!8m2!3d35.6857951!4d139.7327159" class="footer-access__info-link">GoogleMap</a>
+                〒102-0083 東京都千代田区麹町６丁目４−１６<br>ESCALIER麹町 2階<a href="https://www.google.com/maps/place/ESCALIER%E9%BA%B9%E7%94%BA/@35.6857951,139.7305219,17z/data=!3m2!4b1!5s0x60188c8a2446dea3:0x821482163a5eb290!4m5!3m4!1s0x60188da116fc62bf:0xad0831d9e59fc5d0!8m2!3d35.6857951!4d139.7327159" class="footer-access__info-link" target="_blank">GoogleMap</a>
               </p>
               <p class="footer-access__info-address">四ツ谷駅3番出口より徒歩6分<br>麹町駅5番出口より徒歩7分</p>
               <p class="footer-access__info-tel">03-6272-5047</p>
