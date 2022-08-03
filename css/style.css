@@ -2209,6 +2209,7 @@
   .top .clinic-features .clinic-features__wrapper .clinic-features__01 .clinic-features__01-main .clinic-features__01-main-text {
     color: var(--main-color-white);
     font-size: clamp(10px, 1.5rem, 15px);
+    font-weight: 400;
     line-height: 1.6;
   }
   .top .clinic-features .clinic-features__wrapper .clinic-features__02 {

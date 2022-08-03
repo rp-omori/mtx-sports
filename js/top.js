@@ -38,8 +38,12 @@ const profileToggle = () => {
 }
 
 console.log($('.medical-menu__head'));
+
 $('.medical-menu__head').on('click', function () {
-  let toggleMenu = $(this).next('.symptoms__list')
-  console.log($(this));
-  toggleMenu.slideToggle();
+  if (window.matchMedia('(max-width: 768px)').matches) {
+    let toggleMenu = $(this).next('.symptoms__list')
+    toggleMenu.slideToggle();
+  } else {
+    return;
+  }
 })
