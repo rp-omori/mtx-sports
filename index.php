@@ -524,7 +524,7 @@ $rootDir = get_template_directory_uri();
               <p class="clinic-features__03-text">
                 富岡院長はじめドクター陣が、日本のみならず海外で培った経験と、学んだ知識とを活かし、CESやSFMAなどの診察、評価方法を活用して根本的な原因を解明します。<br>
                 今までどこに行っても治らなかった関節の痛みや体のしびれ等がある方は、一度、診察にお越しください。<br>
-                ※CESやSFMAは運動機能を評価する診断方法です
+                ※CESやSFMAは運動機能を評価する診断方法です。
               </p>
             </div>
             <div class="clinic-features__03-right">
@@ -609,8 +609,9 @@ $rootDir = get_template_directory_uri();
               </h3>
               <p class="treatment__text">
                 医師が診察・評価に基づいて運動療法プログラムを計画します。<br>
-                計画にそって、理学療法士やMTXトレーナーが患者さんと共にプログラムを二人三脚で行います。<br>
-                ※「ダイナミック・デバイス」は日本で数台しかない貴重な運動療法の機器です
+                計画にそって、理学療法士やMTXトレーナーが患者さんと共に<br>
+                プログラムを二人三脚で行います。<br>
+                ※「ダイナミック・デバイス」は日本で数台しかない貴重な運動療法の機器です。
               </p>
               <ul class="treatment-detail__list">
                 <li class="treatment-detail__item">
