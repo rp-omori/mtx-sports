@@ -492,7 +492,9 @@ $rootDir = get_template_directory_uri();
                   </div>
                 </div>
                 <p class="clinic-features__02-left-text">
-                  今の患部の状態を評価（数値化）し、目標を最初に決め、それに向けた治療とリハビリの計画立案を医師が行います。定期的に評価を行い、状態の確認と計画の見直しをしていきます。
+                  今の患部の状態を評価（数値化）した内容を基に、目指す目標を患者さんと共に最初に決めます。<br>
+                  次に、目標に向けた最適な治療プログラムを医師が計画し、治療を開始となります。<br>
+                  治療プログラム実行中も、定期的に医師が評価、治療プログラム計画の見直しや調整を行うことで、患者さんの目標達成へと着実につなげます。
                 </p>
               </div>
             </div>
@@ -519,7 +521,11 @@ $rootDir = get_template_directory_uri();
                 院長の持つ豊富な知識・経験で<br>
                 痛みやしびれの根本的な原因を解明
               </div>
-              <p class="clinic-features__03-text">富岡院長はじめ、ドクター陣が日本のみならず海外で培った経験と、学んだ知識とを活かし、様々な診察、評価方法を活用して根本的な原因を解明します。</p>
+              <p class="clinic-features__03-text">
+                富岡院長はじめドクター陣が、日本のみならず海外で培った経験と、学んだ知識とを活かし、CESやSFMAなどの診察、評価方法を活用して根本的な原因を解明します。<br>
+                今までどこに行っても治らなかった関節の痛みや体のしびれ等がある方は、一度、診察にお越しください。<br>
+                ※CESやSFMAは運動機能を評価する診断方法です
+              </p>
             </div>
             <div class="clinic-features__03-right">
               <div class="clinic-features__03-right-img">
@@ -546,7 +552,8 @@ $rootDir = get_template_directory_uri();
               </div>
               <p class="clinic-features__04-text">
                 人工知能が搭載されたダイナミック・デバイス（DD）。<br>
-                運動能力を数値化することが可能なため、パフォーマンス向上、注射と組み合わせての症状改善に向けたリカバリープログラムなど、多岐にわたって活用が可能。
+                運動能力を数値化することが可能なため、パフォーマンス向上、再生医療と組み合わせての症状改善に向けたリカバリープログラムなど、多岐にわたって活用が可能です。<br>
+                その他、当クリニックでは運動機能の状態を評価（数値化）する機器としても活用します。
               </p>
             </div>
           </div>
@@ -566,7 +573,9 @@ $rootDir = get_template_directory_uri();
               <h3 class="treatment__title treatment__title--regenerative">
                 <img src="<?php echo $rootDir ?>/images/icon/icon-regenerative-treatment.svg" alt="">再生治療
               </h3>
-              <p class="treatment__text">この部分はテキストが入ります。イメージ確認用のサンプル文言になります。</p>
+              <p class="treatment__text">
+                手術や入院の必要が無い、低リスクの注射治療です。自分自身の血液や脂肪を採血・採取して行う治療から、採血・採取の必要のない治療まで、患者さんの状態に合わせて最適な治療メニューをご提案します。
+              </p>
               <ul class="treatment-detail__list">
                 <li class="treatment-detail__item">
                   <p class="treatment-detail__text">PRP治療</p>
@@ -598,7 +607,11 @@ $rootDir = get_template_directory_uri();
               <h3 class="treatment__title treatment__title--rehabilitation">
                 <img src="<?php echo $rootDir ?>/images/icon/icon-rehabilitation.svg" alt="">運動療法（リハビリ）
               </h3>
-              <p class="treatment__text">この部分はテキストが入ります。イメージ確認用のサンプル文言になります。</p>
+              <p class="treatment__text">
+                医師が診察・評価に基づいて運動療法プログラムを計画します。<br>
+                計画にそって、理学療法士やMTXトレーナーが患者さんと共にプログラムを二人三脚で行います。<br>
+                ※「ダイナミック・デバイス」は日本で数台しかない貴重な運動療法の機器です
+              </p>
               <ul class="treatment-detail__list">
                 <li class="treatment-detail__item">
                   <p class="treatment-detail__text">Dynamic Device（ダイナミックデバイス）</p>
@@ -617,16 +630,19 @@ $rootDir = get_template_directory_uri();
               <h3 class="treatment__title treatment__title--physical">
                 <img src="<?php echo $rootDir ?>/images/icon/icon-physical-therapy.svg" alt="">物理療法
               </h3>
-              <p class="treatment__text">この部分はテキストが入ります。イメージ確認用のサンプル文言になります。</p>
+              <p class="treatment__text">
+                医師が診察・評価に基づいて物理療法プログラムを計画します。<br>
+                クリニック内で治療機器を使って行うものから、MTXアカデミーの柔道整復師、鍼灸あんま師による手技まで、豊富なメニューで治療の相乗効果につなげます。
+              </p>
               <ul class="treatment-detail__list">
                 <li class="treatment-detail__item">
-                  <p class="treatment-detail__text">体外衝撃破</p>
+                  <p class="treatment-detail__text">体外衝撃波（収束型／BTL-6000 FoCus）</p>
                 </li>
                 <li class="treatment-detail__item">
                   <p class="treatment-detail__text">超音波治療</p>
                 </li>
                 <li class="treatment-detail__item">
-                  <p class="treatment-detail__text">MTXアカデミー（リカバリ） </p>
+                  <p class="treatment-detail__text">MTXアカデミー（回復） </p>
                 </li>
               </ul>
             </div>
