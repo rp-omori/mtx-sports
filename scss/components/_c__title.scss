@@ -1,0 +1,70 @@
+@use "sass:math";
+
+
+.page-title{
+  background: linear-gradient(45deg, #00A384, #008D72);
+  padding: 0 get_vw(32);
+  height: clamp(10px, get_vw(182), 182px);
+  position: relative;
+
+  .breadcrumb{
+    display: flex;
+    color: #fff;
+    padding-top: get_vw(7);
+
+    li{
+      color: #fff;
+      font-size: clamp(10px,get_vw(12),12px);
+      font-family: $fontFamilyYuGo;
+      font-weight: 300;
+
+      a{
+        color: #fff;
+        font-size: clamp(10px,get_vw(12),12px);
+        font-family: $fontFamilyYuGo;
+        font-weight: 300;
+      }
+
+    }
+
+    span{
+      margin: 0 get_vw(8);
+    }
+  }
+
+  &__backgraund{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    text-align: center;
+
+    p{
+      font-size: clamp(10px,get_vw(151),151px);
+      color: #00AA8A;
+      letter-spacing: 0.06em;
+      font-family: din-2014, sans-serif;
+      font-weight: bold;
+    }
+
+  }
+
+  &__main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    text-align: center;
+
+    p{
+      font-size: clamp(10px,get_vw(142),42px);
+      color: #fff;
+      letter-spacing: 0.02em;
+      font-family: $fontFamilyYuGo;
+      font-weight: bold;
+    }
+
+  }
+}
