@@ -23,6 +23,7 @@ npm run dev
 - feat: 新しい機能、画面を追加する場合
 - fix: バグの修正
 - refactor: コードのリファクタリング
+- コメントにissueを紐づけること(#xxを入れる)
 
 参考：https://qiita.com/konatsu_p/items/dfe199ebe3a7d2010b3e
 ### main
