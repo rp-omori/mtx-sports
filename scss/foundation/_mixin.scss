@@ -1,0 +1,41 @@
+@use "sass:math";
+/*
+ * htmlのフォントサイズ
+ * @args ベースの画面幅
+ */
+@function rootPx($baseWidth: 1536px) {
+  @return math.div(10px, $baseWidth) * 100vw;
+}
+/*
+ * ルートのフォントサイズを基準にフォントサイズを可変にする
+ * @args 最大値（デザイン上の数値）
+ */
+@function calcFz($max) {
+  $value: math.div($max, 10);
+  @return clamp(10px, #{$value}rem, #{$max}px);
+}
+/*
+ * get_vwの設定
+ */
+@function get_vw($size, $viewport: 1536) {
+  $rate: math.div(100, $viewport);
+  @return $rate * $size * 1vw;
+}
+
+/*
+ * breakpointの設定
+ */
+$widthBasePC: 1536px;
+$widthBaseSP: 768px;
+
+@mixin pc {
+  @media screen and (min-width: calc($widthBaseSP)) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media screen and (max-width: #{$widthBaseSP - 1px}) {
+    @content;
+  }
+}
