@@ -1,9 +1,161 @@
 .price-contents{
-
-  padding: get_vw(113) 0 0;
+  background-color: #EFF4F3;
+  padding: clamp(10px,get_vw(113),113px) 0 clamp(10px,get_vw(200),200px);
 
   @include sp {
-    padding: 60px 0 0;
+    padding: 60px 0 100px;
+  }
+
+  .contents-box{
+    width: clamp(10px,get_vw(900),900px);
+    margin: 0 auto;
+    margin-bottom: clamp(10px,get_vw(60),60px);
+
+    &:nth-last-child(1){
+      margin-bottom: 0;
+    }
+
+    @include sp {
+      width: 90%;
+      margin-bottom: 40px;
+    }
+
+    &_cat{
+      width: 100%;
+      padding: clamp(10px,get_vw(20),20px) 0;
+      background-color: var(--main-title-background-color);
+      border-radius: 5px 5px 0 0;
+
+      @include sp {
+        padding: 8px 0;
+      }
+
+      p{
+        font-family: $fontFamilyYuGo;
+        font-size: calcFz(22);
+        color: #fff;
+        text-align: center;
+
+        @include sp {
+          font-size: calcFz(16);
+          text-align: left;
+          margin-left: 17px;
+        }
+
+      }
+
+    }
+
+    &_menu{
+      width: 100%;
+      background-color: #FFFFFF;
+      border-radius: 0 0 5px 5px;
+      margin-bottom: clamp(10px,get_vw(20),20px);
+
+
+      @include sp {
+        margin-bottom: 15px;
+      }
+
+      .menu_inner{
+        width: 93.88%;
+        margin: 0 auto;
+        padding: clamp(10px,get_vw(25),25px) 0 clamp(10px,get_vw(28),28px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #CEDCD9;
+
+        @include sp {
+          width: 94.02%;
+          padding: 10px 0;
+          align-items: flex-start;
+        }
+
+        &:nth-child(1){
+          border: none;
+        }
+
+        &_name{
+
+          @include sp {
+            width: 70%;
+          }
+
+          p{
+            font-family: $fontFamilyYuGo;
+            font-size: calcFz(18);
+            font-weight: bold;
+
+            @include sp {
+              font-size: calcFz(15);
+              line-height: 1.7;
+            }
+
+          }
+
+        }
+
+        &_price{
+
+          p{
+            font-family: $fontFamilyDin2014;
+            font-size: calcFz(18);
+            font-weight: 400;
+
+            @include sp {
+              font-size: calcFz(17);
+              line-height: 1.7;
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+    &_all{
+      display: flex;
+      justify-content: flex-end;
+
+      &_inner{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: auto;
+
+        img{
+          display: block;
+          width: clamp(10px,get_vw(20),20px);
+          height: clamp(10px,get_vw(20),20px);
+          margin-right: 8px;
+
+          @include sp {
+            width: 18px;
+            height: 18px;
+          }
+
+        }
+
+        p{
+          color: var(--main-color);
+          font-family: $fontFamilyYuGo;
+          font-size: calcFz(18);
+          font-weight: bold;
+
+          @include sp {
+            font-size: calcFz(15);
+          }
+
+        }
+
+      }
+
+
+    }
+
   }
 
 
