@@ -1,0 +1,10 @@
+.price-contents{
+
+  padding: get_vw(113) 0 0;
+
+  @include sp {
+    padding: 60px 0 0;
+  }
+
+
+}

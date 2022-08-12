@@ -658,6 +658,7 @@
           transform: translate(-50%, -50%);
   width: 100vw;
   text-align: center;
+  overflow: hidden;
 }
 .page-title__backgraund p {
   font-size: clamp(10px, 15.1rem, 151px);
@@ -1724,6 +1725,11 @@
 .privacy-policy-contents.mb200 {
   margin-bottom: clamp(10px, 13.0208333333vw, 200px);
 }
+
+.price-contents {
+  padding: 7.3567708333vw 0 0;
+}
+
 @media screen and (max-width: 767px) {
   .header {
     height: 50px;
@@ -1993,7 +1999,6 @@
   }
   .page-title {
     height: 106px;
-    overflow: hidden;
     padding: 0 20px;
   }
   .page-title .breadcrumb {
@@ -2008,15 +2013,16 @@
   .page-title .breadcrumb span {
     margin: 0 5px;
   }
-  .page-title__backgraund {
-    text-align: left;
-  }
   .page-title__backgraund p {
-    width: 100vw;
-    position: relative;
-    left: 30%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: clamp(10px, 6.5rem, 65px);
     white-space: nowrap;
   }
@@ -2584,5 +2590,8 @@
   }
   .privacy-policy-contents.mb200 {
     margin-bottom: 100px;
+  }
+  .price-contents {
+    padding: 60px 0 0;
   }
 }
