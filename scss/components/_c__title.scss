@@ -1,0 +1,113 @@
+@use "sass:math";
+
+
+.page-title{
+  background: linear-gradient(45deg, var(--main-color), var(--main-color-bg-other));
+  padding: 0 clamp(10px,get_vw(32),32px);
+  height: clamp(10px, get_vw(182), 182px);
+  position: relative;
+
+  @include sp {
+    height: 106px;
+    overflow: hidden;
+    padding: 0 20px;
+  }
+
+  .breadcrumb{
+    display: flex;
+    color: #fff;
+    padding-top: 7px;
+
+    @include sp {
+      padding-top: 5px;
+    }
+
+    li{
+      color: #fff;
+      font-size: calcFz(12);
+      font-family: $fontFamilyYuGo;
+      font-weight: 300;
+
+      @include sp {
+        font-size: calcFz(11);
+      }
+
+      a{
+        color: #fff;
+        font-size: calcFz(12);
+        font-family: $fontFamilyYuGo;
+        font-weight: 300;
+
+        @include sp {
+          font-size: calcFz(11);
+        }
+
+      }
+
+    }
+
+    span{
+      margin: 0 8px;
+
+      @include sp {
+        margin: 0 5px;
+      }
+
+    }
+  }
+
+  &__backgraund{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100vw;
+    text-align: center;
+
+    @include sp {
+      text-align: left;
+    }
+
+    p{
+      font-size: calcFz(151);
+      color: var(--main-title-color);
+      letter-spacing: 0.06em;
+      font-family: din-2014, sans-serif;
+      font-weight: bold;
+
+      @include sp {
+        width: 100vw;
+        position: relative;
+        left: 30%;
+        transform: translateX(-50%);
+        font-size: calcFz(65);
+        white-space: nowrap;
+      }
+
+    }
+
+  }
+
+  &__main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    text-align: center;
+
+    p{
+      font-size: clamp(10px,get_vw(142),42px);
+      color: #fff;
+      letter-spacing: 0.02em;
+      font-family: $fontFamilyYuGo;
+      font-weight: bold;
+
+      @include sp {
+        font-size: calcFz(24);
+      }
+
+    }
+
+  }
+}

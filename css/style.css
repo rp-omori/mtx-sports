@@ -622,6 +622,67 @@
           transform: translateY(-50%);
 }
 
+.page-title {
+  background: linear-gradient(45deg, var(--main-color), var(--main-color-bg-other));
+  padding: 0 clamp(10px, 2.0833333333vw, 32px);
+  height: clamp(10px, 11.8489583333vw, 182px);
+  position: relative;
+}
+.page-title .breadcrumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  padding-top: 7px;
+}
+.page-title .breadcrumb li {
+  color: #fff;
+  font-size: clamp(10px, 1.2rem, 12px);
+  font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-weight: 300;
+}
+.page-title .breadcrumb li a {
+  color: #fff;
+  font-size: clamp(10px, 1.2rem, 12px);
+  font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-weight: 300;
+}
+.page-title .breadcrumb span {
+  margin: 0 8px;
+}
+.page-title__backgraund {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100vw;
+  text-align: center;
+}
+.page-title__backgraund p {
+  font-size: clamp(10px, 15.1rem, 151px);
+  color: var(--main-title-color);
+  letter-spacing: 0.06em;
+  font-family: din-2014, sans-serif;
+  font-weight: bold;
+}
+.page-title__main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+.page-title__main p {
+  font-size: clamp(10px, 9.2447916667vw, 42px);
+  color: #fff;
+  letter-spacing: 0.02em;
+  font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-weight: bold;
+}
+
 .top {
   overflow: hidden;
 }
@@ -1606,6 +1667,63 @@
   border-radius: 50%;
   background: var(--main-color);
 }
+
+.privacy-policy-contents {
+  padding: 7.3567708333vw 0 0;
+}
+.privacy-policy-contents .contents-box {
+  width: clamp(10px, 52.0833333333vw, 800px);
+  margin: 0 auto;
+  margin-bottom: clamp(10px, 4.5572916667vw, 70px);
+}
+.privacy-policy-contents .contents-box:nth-last-child(1) {
+  margin-bottom: 0;
+}
+.privacy-policy-contents .contents-box__title {
+  border-bottom: 2px solid var(--border-color-green);
+  padding-bottom: clamp(10px, 1.3020833333vw, 20px);
+  margin-bottom: clamp(10px, 2.6041666667vw, 40px);
+  position: relative;
+}
+.privacy-policy-contents .contents-box__title p {
+  font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-size: clamp(10px, 2.4rem, 24px);
+  font-weight: bold;
+  color: var(--main-color);
+}
+.privacy-policy-contents .contents-box__title::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: clamp(10px, 2.6041666667vw, 40px);
+  height: 2px;
+  background-color: var(--main-color);
+}
+.privacy-policy-contents .contents-box__text p {
+  font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-size: clamp(10px, 1.8rem, 18px);
+  font-weight: 300;
+  line-height: 1.75;
+}
+.privacy-policy-contents .contents-box.lead-box .contents-box__title {
+  border-bottom: none;
+  padding: clamp(10px, 0.9765625vw, 15px) clamp(10px, 1.3020833333vw, 20px);
+  background-color: var(--main-title-background-color);
+}
+.privacy-policy-contents .contents-box.lead-box .contents-box__title p {
+  font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-size: clamp(10px, 2.7rem, 27px);
+  font-weight: bold;
+  color: #fff;
+}
+.privacy-policy-contents .contents-box.lead-box .contents-box__title::after {
+  width: 0;
+  height: 0;
+}
+.privacy-policy-contents.mb200 {
+  margin-bottom: clamp(10px, 13.0208333333vw, 200px);
+}
 @media screen and (max-width: 767px) {
   .header {
     height: 50px;
@@ -1872,6 +1990,38 @@
   .btn.btn--line_white span:before {
     width: 5.8666666667vw;
     height: 5.3333333333vw;
+  }
+  .page-title {
+    height: 106px;
+    overflow: hidden;
+    padding: 0 20px;
+  }
+  .page-title .breadcrumb {
+    padding-top: 5px;
+  }
+  .page-title .breadcrumb li {
+    font-size: clamp(10px, 1.1rem, 11px);
+  }
+  .page-title .breadcrumb li a {
+    font-size: clamp(10px, 1.1rem, 11px);
+  }
+  .page-title .breadcrumb span {
+    margin: 0 5px;
+  }
+  .page-title__backgraund {
+    text-align: left;
+  }
+  .page-title__backgraund p {
+    width: 100vw;
+    position: relative;
+    left: 30%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    font-size: clamp(10px, 6.5rem, 65px);
+    white-space: nowrap;
+  }
+  .page-title__main p {
+    font-size: clamp(10px, 2.4rem, 24px);
   }
   .top .kv {
     padding-top: 6.1333333333vw;
@@ -2404,5 +2554,35 @@
   }
   .top .treatment .treatment-wrapper .treatment__list .treatment__item .treatment-detail__list .treatment-detail__item .treatment-detail__text {
     padding-left: 4.2666666667vw;
+  }
+  .privacy-policy-contents {
+    padding: 60px 0 0;
+  }
+  .privacy-policy-contents .contents-box {
+    width: 90%;
+    margin-bottom: 40px;
+  }
+  .privacy-policy-contents .contents-box__title {
+    padding-bottom: 13px;
+    margin-bottom: 20px;
+  }
+  .privacy-policy-contents .contents-box__title p {
+    font-size: clamp(10px, 1.6rem, 16px);
+  }
+  .privacy-policy-contents .contents-box__title::after {
+    width: 7%;
+  }
+  .privacy-policy-contents .contents-box__text p {
+    font-size: clamp(10px, 1.5rem, 15px);
+  }
+  .privacy-policy-contents .contents-box.lead-box .contents-box__title {
+    padding: 12px 10px;
+    margin-bottom: 30px;
+  }
+  .privacy-policy-contents .contents-box.lead-box .contents-box__title p {
+    font-size: clamp(10px, 1.8rem, 18px);
+  }
+  .privacy-policy-contents.mb200 {
+    margin-bottom: 100px;
   }
 }
