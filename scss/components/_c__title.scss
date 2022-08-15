@@ -92,7 +92,7 @@
     text-align: center;
 
     p{
-      font-size: clamp(10px,get_vw(142),42px);
+      font-size: calcFz(42);
       color: #fff;
       letter-spacing: 0.02em;
       font-family: $fontFamilyYuGo;
