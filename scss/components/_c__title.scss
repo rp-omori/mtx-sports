@@ -9,7 +9,6 @@
 
   @include sp {
     height: 106px;
-    overflow: hidden;
     padding: 0 20px;
   }
 
@@ -63,10 +62,7 @@
     transform: translate(-50%,-50%);
     width: 100vw;
     text-align: center;
-
-    @include sp {
-      text-align: left;
-    }
+    overflow: hidden;
 
     p{
       font-size: calcFz(151);
@@ -76,10 +72,9 @@
       font-weight: bold;
 
       @include sp {
-        width: 100vw;
-        position: relative;
-        left: 30%;
-        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-size: calcFz(65);
         white-space: nowrap;
       }
@@ -97,7 +92,7 @@
     text-align: center;
 
     p{
-      font-size: clamp(10px,get_vw(142),42px);
+      font-size: calcFz(42);
       color: #fff;
       letter-spacing: 0.02em;
       font-family: $fontFamilyYuGo;

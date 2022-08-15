@@ -1,6 +1,6 @@
 .privacy-policy-contents{
-
-  padding: get_vw(113) 0 0;
+  background-color: #EFF4F3;
+  padding: clamp(10px,get_vw(113),113px) 0 0;
 
   @include sp {
     padding: 60px 0 0;
