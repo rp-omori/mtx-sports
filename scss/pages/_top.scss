@@ -1395,9 +1395,19 @@
             margin-top: get_vw(74);
             align-items: center;
 
+            @include sp {
+              margin-top: get_vw(20, 375);
+              flex-direction: column;
+            }
+
             .btn {
               &:first-child {
                 margin-right: get_vw(18);
+
+                @include sp {
+                  margin-right: 0;
+                  margin-bottom: get_vw(10, 375);
+                }
               }
             }
           }
@@ -1481,6 +1491,7 @@
                 line-height: 1.75;
 
                 @include sp {
+                  margin-bottom: get_vw(25, 375);
                   font-size: calcFz(15);
                 }
               }
@@ -1502,7 +1513,7 @@
         padding-bottom: get_vw(237);
 
         @include sp {
-          padding-bottom: get_vw(104, 375);
+          padding-bottom: get_vw(91, 375);
         }
 
         .clinic-features__03-wrapper {
@@ -1530,7 +1541,7 @@
 
             @include sp {
               width: 89%;
-              margin: 0 auto get_vw(49, 375);
+              margin: 0 auto get_vw(30, 375);
               top: 0;
               order: 1;
             }
@@ -1577,6 +1588,7 @@
 
               @include sp {
                 width: 100%;
+                margin-bottom: get_vw(25, 375);
                 font-size: calcFz(15);
               }
             }
@@ -1627,7 +1639,7 @@
 
             @include sp {
               width: 89%;
-              margin: 0 auto get_vw(73, 375);
+              margin: 0 auto get_vw(40, 375);
               padding-right: 0;
               top: 0;
             }
@@ -1678,6 +1690,7 @@
               word-break: keep-all;
 
               @include sp {
+                margin-bottom: get_vw(25, 375);
                 font-size: calcFz(15);
               }
             }
@@ -1689,6 +1702,10 @@
 
   .treatment {
     padding-bottom: get_vw(159);
+
+    @include sp {
+      padding-bottom: get_vw(70, 375);
+    }
 
     .treatment-wrapper {
       .section-title__wrapper {
@@ -1715,6 +1732,10 @@
 
           &:last-child {
             margin-bottom: get_vw(100);
+
+            @include sp {
+              margin-bottom: get_vw(60, 375);
+            }
           }
 
           &:nth-child(odd) {
@@ -1824,7 +1845,6 @@
 
               @include sp {
                 height: auto;
-                padding: get_vw(12, 375) get_vw(16, 375);
                 font-size: calcFz(15);
               }
 
@@ -1865,7 +1885,7 @@
                 align-items: center;
 
                 @include sp {
-                  padding: get_vw(12, 375) get_vw(16, 375);
+                  padding: get_vw(12, 375) get_vw(58, 375) get_vw(12, 375) get_vw(16, 375);
                   align-items: flex-start;
                   flex-direction: column;
                   justify-content: center;
@@ -1904,6 +1924,13 @@
       align-items: center;
       justify-content: center;
       gap: get_vw(40);
+
+      @include sp {
+        width: 84%;
+        margin: 0 auto;
+        flex-direction: column;
+        gap: get_vw(10, 375);
+      }
     }
   }
 }
