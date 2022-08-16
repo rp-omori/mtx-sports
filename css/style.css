@@ -1276,7 +1276,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.7578125vw 0;
+  padding: 2.8645833333vw 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1289,7 +1289,16 @@
   font-size: clamp(10px, 1.8rem, 18px);
   font-weight: bold;
 }
+.top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link-wrapper {
+  display: contents;
+}
 .top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: var(--btn-color-orange);
   border-radius: 30px;
   color: var(--main-color-white);
@@ -1298,14 +1307,17 @@
   -webkit-filter: drop-shadow(2px 3px 3px rgba(24, 37, 63, 0.02));
           filter: drop-shadow(2px 3px 3px rgba(24, 37, 63, 0.02));
 }
+.top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link .medical-menu-line__link-text .pc {
+  display: inline-block !important;
+}
 .top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link.medical-menu-line__link--line {
   padding: 1.1067708333vw 2.734375vw 1.0416666667vw 2.34375vw;
 }
-.top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link.medical-menu-line__link--line span {
+.top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link.medical-menu-line__link--line .medical-menu-line__link-text {
   position: relative;
   padding-left: 2.6041666667vw;
 }
-.top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link.medical-menu-line__link--line span:before {
+.top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link.medical-menu-line__link--line .medical-menu-line__link-text:before {
   content: "";
   position: absolute;
   width: 1.6276041667vw;
@@ -1323,11 +1335,11 @@
   margin-left: 0.9765625vw;
   padding: 1.1067708333vw 2.1484375vw 1.0416666667vw 2.1484375vw;
 }
-.top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link.medical-menu-line__link--email span {
+.top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link.medical-menu-line__link--email .medical-menu-line__link-text {
   position: relative;
   padding-left: 2.6041666667vw;
 }
-.top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link.medical-menu-line__link--email span:before {
+.top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link.medical-menu-line__link--email .medical-menu-line__link-text:before {
   content: "";
   position: absolute;
   width: 1.2369791667vw;
@@ -2562,25 +2574,41 @@
     line-height: 1.5;
     text-align: center;
   }
+  .top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
   .top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link {
     width: 100%;
     padding: 3.2vw 0;
     font-size: clamp(10px, 1.5rem, 15px);
     text-align: center;
   }
-  .top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link.medical-menu-line__link--line span {
-    padding-left: 8.5333333333vw;
+  .top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link .medical-menu-line__link-text .pc {
+    display: none !important;
   }
-  .top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link.medical-menu-line__link--line span:before {
+  .top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link.medical-menu-line__link--line {
+    padding: 2.6666666667vw 5.6vw;
+  }
+  .top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link.medical-menu-line__link--line .medical-menu-line__link-text {
+    padding-left: 7.4666666667vw;
+  }
+  .top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link.medical-menu-line__link--line .medical-menu-line__link-text:before {
     width: 6.1333333333vw;
     height: 5.6vw;
   }
-  .top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link.medical-menu-line__link--email span {
-    padding-left: 8.5333333333vw;
+  .top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link.medical-menu-line__link--email {
+    margin-left: 1.3333333333vw;
+    padding: 3.4666666667vw 4.8vw;
   }
-  .top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link.medical-menu-line__link--email span:before {
-    width: 6.1333333333vw;
-    height: 5.6vw;
+  .top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link.medical-menu-line__link--email .medical-menu-line__link-text {
+    padding-left: 5.6vw;
+  }
+  .top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link.medical-menu-line__link--email .medical-menu-line__link-text:before {
+    width: 5.0666666667vw;
+    height: 3.7333333333vw;
   }
   .top .message {
     width: 100%;
