@@ -684,6 +684,32 @@
   font-weight: bold;
 }
 
+.page-bread {
+  background: linear-gradient(45deg, var(--main-color), var(--main-color-bg-other));
+  padding: 7px clamp(10px, 2.0833333333vw, 32px);
+}
+.page-bread .breadcrumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+}
+.page-bread .breadcrumb li {
+  color: #fff;
+  font-size: clamp(10px, 1.2rem, 12px);
+  font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-weight: 300;
+}
+.page-bread .breadcrumb li a {
+  color: #fff;
+  font-size: clamp(10px, 1.2rem, 12px);
+  font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-weight: 300;
+}
+.page-bread .breadcrumb span {
+  margin: 0 8px;
+}
+
 .footer__other {
   width: 98.6%;
   margin: 0 auto clamp(10px, 5.859375vw, 90px);
@@ -1877,6 +1903,12 @@
   font-size: clamp(10px, 1.8rem, 18px);
   font-weight: bold;
 }
+
+.privacy-policy-contents {
+  background-color: #EFF4F3;
+  padding: clamp(10px, 7.3567708333vw, 113px) 0 0;
+}
+
 @media screen and (max-width: 767px) {
   .header {
     height: 50px;
@@ -2175,6 +2207,15 @@
   }
   .page-title__main p {
     font-size: clamp(10px, 2.4rem, 24px);
+  }
+  .page-bread .breadcrumb li {
+    font-size: clamp(10px, 1.1rem, 11px);
+  }
+  .page-bread .breadcrumb li a {
+    font-size: clamp(10px, 1.1rem, 11px);
+  }
+  .page-bread .breadcrumb span {
+    margin: 0 5px;
   }
   .footer__other {
     width: 95%;
@@ -2802,5 +2843,8 @@
   }
   .price-contents .contents-box_all_inner p {
     font-size: clamp(10px, 1.5rem, 15px);
+  }
+  .privacy-policy-contents {
+    padding: 60px 0 0;
   }
 }
