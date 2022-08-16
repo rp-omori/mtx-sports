@@ -63,24 +63,44 @@ $rootDir = get_template_directory_uri();
                     症状から探す
                   </a>
                 </li>
-                <li class="header__item">
+                <!-- <li class="header__item">
                   <a href="#message" class="header__link">
                     院長メッセージ
                   </a>
-                </li>
+                </li> -->
                 <li class="header__item">
                   <a href="#clinic-features" class="header__link">
                     クリニックの特徴
                   </a>
                 </li>
                 <li class="header__item">
+                  <a href="#clinic-features" class="header__link">
+                    治療について
+                  </a>
+                </li>
+                <li class="header__item">
+                  <a href="#clinic-features" class="header__link">
+                    医師・スタッフ紹介
+                  </a>
+                </li>
+                <!-- <li class="header__item">
                   <a href="#treatment" class="header__link">
                     治療メニュー
+                  </a>
+                </li> -->
+                <li class="header__item">
+                  <a href="#access" class="header__link">
+                    アクセス
                   </a>
                 </li>
                 <li class="header__item">
                   <a href="#access" class="header__link">
-                    アクセス
+                    お知らせ
+                  </a>
+                </li>
+                <li class="header__item">
+                  <a href="#access" class="header__link">
+                    コラム
                   </a>
                 </li>
               </ul>

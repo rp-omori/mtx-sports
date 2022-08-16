@@ -8,12 +8,17 @@ window.addEventListener('load', () => {
 const initSwiper = () => {
   const kvSwiper = new Swiper('.kv__swiper', {
     slidePerView: 1,
+    effect: "fade",
+    speed: 1000,
+    // fadeEffect: {
+    //   crossFade: true
+    // },
     pagination: {
       el: ".kv__swiper-pagination",
       clickable: true
     },
     autoplay: {
-      delay: 7000,
+      delay: 5000,
     },
     loop: true
   });

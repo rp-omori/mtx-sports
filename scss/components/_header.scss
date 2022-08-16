@@ -93,7 +93,8 @@
         align-items: center;
 
         &:before {
-          content: '';
+          // content: ''; // ティザー
+          content: none;
           position: absolute;
           width: get_vw(12);
           height: 100%;
