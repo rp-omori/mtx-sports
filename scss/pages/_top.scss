@@ -311,10 +311,161 @@
     }
   }
 
+  .news {
+    position: relative;
+    width: 90%;
+    margin: 0 auto 0 0;
+    padding: get_vw(45) 0 0;
+    z-index: 2;
+
+    @include sp {
+      width: 100%;
+      padding: 0;
+      margin: get_vw(55, 375) 0 0;
+    }
+
+    .news__wrapper {
+      margin-left: get_vw(-54);
+      background: var(--main-color-white);
+      border-radius: 20px;
+
+      @include sp {
+        margin-left: 0;
+        border-radius: 0;
+      }
+    }
+
+    .news__inner {
+      padding: get_vw(68) get_vw(108) get_vw(53) get_vw(242);
+
+      @include sp {
+        padding: get_vw(28, 375) get_vw(30, 375) get_vw(30, 375);
+      }
+
+      .news__head {
+        display: flex;
+        margin-bottom: get_vw(18);
+        align-items: center;
+        justify-content: space-between;
+
+        @include sp {
+          margin-bottom: get_vw(5, 375);
+        }
+
+        .news__head-label {
+          margin-bottom: get_vw(5, 375);
+          color: var(--main-color);
+          font-family: $fontFamilyDin2014;
+          font-size: calcFz(13);
+          font-weight: bold;
+        }
+
+        .news__head-title {
+          font-size: calcFz(37);
+          font-weight: bold;
+
+          @include sp {
+            font-family: $fontFamilyHiraGo;
+            font-size: calcFz(20);
+          }
+        }
+
+        .news__archive {
+          position: relative;
+          padding-left: get_vw(28);
+          color: var(--main-color);
+          font-size: calcFz(18);
+          font-weight: bold;
+
+          @include sp {
+            padding-left: get_vw(26, 375);
+            font-size: calcFz(15);
+          }
+
+          &:before {
+            content: '';
+            position: absolute;
+            width: get_vw(20);
+            height: get_vw(20);
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            background-image: url(#{$img-root-dir}/icon/icon-arrow-circle-right--light_green.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            @include sp {
+              width: get_vw(18, 375);
+              height: get_vw(18, 375);
+            }
+          }
+        }
+      }
+
+      .news__list {
+        width: 79%;
+        margin-left: auto;
+
+        @include sp {
+          width: 100%;
+        }
+
+        .news__item {
+          padding: get_vw(18) get_vw(10);
+          border-bottom: 1px solid #CEDCD9;
+
+          @include sp {
+            padding: get_vw(20, 375) 0 get_vw(15, 375);
+          }
+
+          .news__link {
+            display: flex;
+            align-items: center;
+
+            @include sp {
+              align-items: flex-start;
+              flex-direction: column;
+              justify-content: center;
+            }
+
+            .news__date {
+              min-width: get_vw(105);
+              padding-right: get_vw(32);
+              color: var(--main-color);
+              font-family: $fontFamilyDin2014;
+              font-size: calcFz(20);
+              font-weight: bold;
+
+              @include sp {
+                min-width: auto;
+                margin-bottom: get_vw(10, 375);
+                padding-right: 0;
+                font-size: calcFz(15);
+              }
+            }
+
+            .news__title {
+              color: #6a8381;
+              font-size: calcFz(18);
+              font-weight: bold;
+              line-height: 1.5;
+
+              @include sp {
+                font-family: $fontFamilyHiraGo;
+                font-size: calcFz(15);
+                font-weight: 300;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
   .medical-menu {
     width: 83%;
     margin: 0 auto;
-    padding: get_vw(94) 0 get_vw(250);
+    padding: get_vw(78) 0 get_vw(250);
 
     @include sp {
       width: 89%;
@@ -358,8 +509,8 @@
         grid-area: 1 / 1 / 2 / 2;
 
         .symptoms__link {
-          justify-content: center;
-          text-align: center;
+          justify-content: flex-start;
+          text-align: left;
         }
 
         @include sp {
@@ -371,8 +522,8 @@
         grid-area: 1 / 2 / 2 / 3;
 
         .symptoms__link {
-          justify-content: center;
-          text-align: center;
+          justify-content: flex-start;
+          text-align: left;
         }
 
         @include sp {
@@ -384,8 +535,8 @@
         grid-area: 1 / 3 / 2 / 4;
 
         .symptoms__link {
-          justify-content: center;
-          text-align: center;
+          justify-content: flex-start;
+          text-align: left;
         }
 
         @include sp {
@@ -397,8 +548,8 @@
         grid-area: 1 / 4 / 2 / 5;
 
         .symptoms__link {
-          justify-content: center;
-          text-align: center;
+          justify-content: flex-start;
+          text-align: left;
         }
 
         @include sp {
@@ -490,6 +641,7 @@
 
         @include sp {
           display: none;
+          margin-top: get_vw(25, 375);
         }
 
         .symptoms__item {
@@ -502,14 +654,14 @@
           border-radius: 6px;
           font-size: calcFz(17);
           font-weight: bold;
-          // filter: drop-shadow(2px 2px 2px rgba(182, 200, 193, .5)); // 本番公開用
+          filter: drop-shadow(2px 2px 2px rgba(182, 200, 193, .5)); // 本番公開用
 
           @include sp {
             font-size: calcFz(15);
           }
 
           &:after {
-            // content: '';　// 本番公開用
+            content: ''; // 本番公開用
             position: absolute;
             width: get_vw(34);
             height: get_vw(34);
@@ -528,10 +680,10 @@
           }
 
           &:hover {
-            // border: 1px solid var(--main-color);　// 本番公開用
+            border: 1px solid var(--main-color); // 本番公開用
 
             &:after {
-              // background-image: url(#{$img-root-dir}/icon/icon-arrow-circle-right--green.svg);　// 本番公開用
+              background-image: url(#{$img-root-dir}/icon/icon-arrow-circle-right--green.svg); // 本番公開用
             }
           }
 
@@ -540,10 +692,10 @@
             display: flex;
             width: 100%;
             height: 100%;
-            // padding: 0 get_vw(65) 0 get_vw(10); // 本番公開用
-            padding: 0 get_vw(10);
+            padding: 0 get_vw(65) 0 get_vw(10); // 本番公開用
+            // padding: 0 get_vw(10); // ティザー用
             align-items: center;
-            pointer-events: none; // ティザー用
+            // pointer-events: none; // ティザー用
 
             @include sp {
               padding: get_vw(10, 375);
@@ -689,7 +841,6 @@
         }
 
         .medical-menu-line__link {
-          padding: get_vw(15) get_vw(42) get_vw(15) get_vw(37);
           background: var(--btn-color-orange);
           border-radius: 30px;
           color: var(--main-color-white);
@@ -704,30 +855,67 @@
             text-align: center;
           }
 
-          span {
-            position: relative;
-            padding-left: get_vw(40);
+          &.medical-menu-line__link--line {
+            padding: get_vw(17) get_vw(42) get_vw(16) get_vw(36);
 
-            @include sp {
-              padding-left: get_vw(32, 375);
-            }
-
-            &:before {
-              content: '';
-              position: absolute;
-              width: get_vw(25);
-              height: get_vw(23);
-              background-image: url(#{$img-root-dir}/icon/icon-line--white.svg);
-              background-position: left center;
-              background-repeat: no-repeat;
-              background-size: contain;
-              top: 50%;
-              left: 0;
-              transform: translateY(-50%);
+            span {
+              position: relative;
+              padding-left: get_vw(40);
 
               @include sp {
-                width: get_vw(23, 375);
-                height: get_vw(21, 375);
+                padding-left: get_vw(32, 375);
+              }
+
+              &:before {
+                content: '';
+                position: absolute;
+                width: get_vw(25);
+                height: get_vw(23);
+                background-image: url(#{$img-root-dir}/icon/icon-line--white.svg);
+                background-position: left center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+
+                @include sp {
+                  width: get_vw(23, 375);
+                  height: get_vw(21, 375);
+                }
+              }
+            }
+          }
+
+          &.medical-menu-line__link--email {
+            margin-left: get_vw(15);
+            padding: get_vw(17) get_vw(33) get_vw(16) get_vw(33);
+
+            span {
+              position: relative;
+              padding-left: get_vw(40);
+
+              @include sp {
+                padding-left: get_vw(32, 375);
+              }
+
+              &:before {
+                content: '';
+                position: absolute;
+                width: get_vw(19);
+                height: get_vw(14);
+                background-image: url(#{$img-root-dir}/icon/icon-email--white.svg);
+                background-position: left center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+
+                @include sp {
+                  width: get_vw(23, 375);
+                  height: get_vw(21, 375);
+                }
               }
             }
           }
@@ -1085,6 +1273,7 @@
         .clinic-features__head {
           color: var(--main-color-white);
           font-size: calcFz(111);
+          font-weight: bold;
 
           @include sp {
             font-size: calcFz(67);
@@ -1200,6 +1389,18 @@
               line-height: 1.6;
             }
           }
+
+          .clinic-features__btn-wrapper {
+            display: flex;
+            margin-top: get_vw(74);
+            align-items: center;
+
+            .btn {
+              &:first-child {
+                margin-right: get_vw(18);
+              }
+            }
+          }
         }
       }
 
@@ -1274,6 +1475,7 @@
               }
 
               .clinic-features__02-left-text {
+                margin-bottom: get_vw(45);
                 color: var(--main-color-white);
                 font-size: calcFz(18);
                 line-height: 1.75;
@@ -1368,6 +1570,7 @@
 
             .clinic-features__03-text {
               width: 80%;
+              margin-bottom: get_vw(45);
               color: var(--main-color-white);
               font-size: calcFz(18);
               line-height: 1.75;
@@ -1447,6 +1650,10 @@
 
             .clinic-features__head-wrapper {
               padding-bottom: get_vw(21);
+
+              .clinic-features__head-label {
+                top: 45%;
+              }
             }
 
             .clinic-features__sub-title {
@@ -1463,6 +1670,7 @@
             }
 
             .clinic-features__04-text {
+              margin-bottom: get_vw(45);
               color: var(--main-color-white);
               font-size: calcFz(18);
               line-height: 1.75;
@@ -1480,7 +1688,7 @@
   }
 
   .treatment {
-    padding-bottom: get_vw(56);
+    padding-bottom: get_vw(159);
 
     .treatment-wrapper {
       .section-title__wrapper {
@@ -1503,6 +1711,10 @@
             margin-bottom: get_vw(60, 375);
             flex-direction: column;
             line-height: 1.6;
+          }
+
+          &:last-child {
+            margin-bottom: get_vw(100);
           }
 
           &:nth-child(odd) {
@@ -1601,12 +1813,14 @@
               display: flex;
               height: 48px;
               margin-bottom: 8px;
-              padding: 0 get_vw(20) 0 get_vw(25);
               align-items: center;
               background: var(--main-color-white);
+              border: 1px solid #E7EDEC;
               border-radius: 6px;
+              color:var(--main-color);
               font-size: calcFz(18);
               font-weight: bold;
+              filter: drop-shadow(2px 2px 2px rgba(182, 200, 193, .5)); // 本番公開用
 
               @include sp {
                 height: auto;
@@ -1614,9 +1828,54 @@
                 font-size: calcFz(15);
               }
 
+              &:after {
+                content: ''; // 本番公開用
+                position: absolute;
+                width: get_vw(34);
+                height: get_vw(34);
+                background-image: url(#{$img-root-dir}/icon/icon-arrow-circle-right--white.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                top: 50%;
+                transform: translateY(-50%);
+                right: get_vw(10);
+
+                @include sp {
+                  width: 33px;
+                  height: 34px;
+                  right: get_vw(10, 375);
+                }
+              }
+
+              &:hover {
+                border: 1px solid var(--main-color); // 本番公開用
+                cursor: pointer;
+
+                &:after {
+                  background-image: url(#{$img-root-dir}/icon/icon-arrow-circle-right--green.svg); // 本番公開用
+                }
+              }
+
+              .treatment-detail__link {
+                position: relative;
+                display: flex;
+                width: 100%;
+                height: 100%;
+                padding: 0 get_vw(20) 0 get_vw(25);
+                align-items: center;
+
+                @include sp {
+                  padding: get_vw(12, 375) get_vw(16, 375);
+                  align-items: flex-start;
+                  flex-direction: column;
+                  justify-content: center;
+                }
+              }
+
               .treatment-detail__text {
                 position: relative;
                 padding-left: get_vw(17);
+                color: var(--main-color);
 
                 @include sp {
                   padding-left: get_vw(16, 375);
@@ -1638,6 +1897,13 @@
           }
         }
       }
+    }
+
+    .treatment__btn-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: get_vw(40);
     }
   }
 }
