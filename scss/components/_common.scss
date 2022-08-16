@@ -285,6 +285,15 @@
     font-weight: bold;
     text-align: center;
 
+    @include sp {
+      width: 100%;
+      max-width: initial;
+      min-width: auto;
+      padding: get_vw(19, 375) 0 get_vw(18, 375);
+      font-family: $fontFamilyHiraGo;
+      font-size: calcFz(15);
+    }
+
     &:after {
       content: '';
       position: absolute;
@@ -296,11 +305,23 @@
       top: 50%;
       right: get_vw(20);
       transform: translateY(-50%);
+
+      @include sp {
+        width: get_vw(7, 375);
+        height: get_vw(11, 375);
+        right: get_vw(20, 375);
+      }
     }
 
     &.btn--dark_green_small {
       max-width: get_vw(236);
       min-width: get_vw(236);
+
+      @include sp {
+        width: 100%;
+        max-width: initial;
+        min-width: auto;
+      }
     }
   }
 
@@ -317,6 +338,15 @@
     font-weight: bold;
     text-align: center;
 
+    @include sp {
+      width: 100%;
+      max-width: initial;
+      min-width: auto;
+      padding: get_vw(19, 375) 0 get_vw(18, 375);
+      font-family: $fontFamilyHiraGo;
+      font-size: calcFz(15);
+    }
+
     &:after {
       content: '';
       position: absolute;
@@ -328,11 +358,23 @@
       top: 50%;
       right: get_vw(20);
       transform: translateY(-50%);
+
+      @include sp {
+        width: get_vw(7, 375);
+        height: get_vw(11, 375);
+        right: get_vw(20, 375);
+      }
     }
 
     &.btn--green_small {
       max-width: get_vw(236);
       min-width: get_vw(236);
+
+      @include sp {
+        width: 100%;
+        max-width: initial;
+        min-width: auto;
+      }
     }
   }
 }

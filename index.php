@@ -388,12 +388,14 @@ $rootDir = get_template_directory_uri();
       <div class="medical-menu-line">
         <div class="medical-menu-line__inner">
           <p class="medical-menu-line__text">症状や疾患が特定できない場合は<br class="sp">まずご相談ください</p>
-          <a href="https://lin.ee/DhflNAe" class="medical-menu-line__link medical-menu-line__link--line">
-            <span>LINEで診療相談</span>
-          </a>
-          <a href="https://lin.ee/DhflNAe" class="medical-menu-line__link medical-menu-line__link--email">
-            <span>メールで診療相談</span>
-          </a>
+          <div class="medical-menu-line__link-wrapper">
+            <a href="https://lin.ee/DhflNAe" class="medical-menu-line__link medical-menu-line__link--line">
+              <span class="medical-menu-line__link-text">LINEで<span class="pc">診療</span>相談</span>
+            </a>
+            <a href="https://lin.ee/DhflNAe" class="medical-menu-line__link medical-menu-line__link--email">
+              <span class="medical-menu-line__link-text">メールで<span class="pc">診療</span>相談</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>

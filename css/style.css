@@ -1363,7 +1363,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.7578125vw 0;
+  padding: 2.8645833333vw 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1376,7 +1376,16 @@
   font-size: clamp(10px, 1.8rem, 18px);
   font-weight: bold;
 }
+.top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link-wrapper {
+  display: contents;
+}
 .top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: var(--btn-color-orange);
   border-radius: 30px;
   color: var(--main-color-white);
@@ -1385,14 +1394,17 @@
   -webkit-filter: drop-shadow(2px 3px 3px rgba(24, 37, 63, 0.02));
           filter: drop-shadow(2px 3px 3px rgba(24, 37, 63, 0.02));
 }
+.top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link .medical-menu-line__link-text .pc {
+  display: inline-block !important;
+}
 .top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link.medical-menu-line__link--line {
   padding: 1.1067708333vw 2.734375vw 1.0416666667vw 2.34375vw;
 }
-.top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link.medical-menu-line__link--line span {
+.top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link.medical-menu-line__link--line .medical-menu-line__link-text {
   position: relative;
   padding-left: 2.6041666667vw;
 }
-.top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link.medical-menu-line__link--line span:before {
+.top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link.medical-menu-line__link--line .medical-menu-line__link-text:before {
   content: "";
   position: absolute;
   width: 1.6276041667vw;
@@ -1410,11 +1422,11 @@
   margin-left: 0.9765625vw;
   padding: 1.1067708333vw 2.1484375vw 1.0416666667vw 2.1484375vw;
 }
-.top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link.medical-menu-line__link--email span {
+.top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link.medical-menu-line__link--email .medical-menu-line__link-text {
   position: relative;
   padding-left: 2.6041666667vw;
 }
-.top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link.medical-menu-line__link--email span:before {
+.top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link.medical-menu-line__link--email .medical-menu-line__link-text:before {
   content: "";
   position: absolute;
   width: 1.2369791667vw;
@@ -2426,6 +2438,42 @@
     width: 5.8666666667vw;
     height: 5.3333333333vw;
   }
+  .btn.btn--dark_green {
+    width: 100%;
+    max-width: initial;
+    min-width: auto;
+    padding: 5.0666666667vw 0 4.8vw;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+    font-size: clamp(10px, 1.5rem, 15px);
+  }
+  .btn.btn--dark_green:after {
+    width: 1.8666666667vw;
+    height: 2.9333333333vw;
+    right: 5.3333333333vw;
+  }
+  .btn.btn--dark_green.btn--dark_green_small {
+    width: 100%;
+    max-width: initial;
+    min-width: auto;
+  }
+  .btn.btn--green {
+    width: 100%;
+    max-width: initial;
+    min-width: auto;
+    padding: 5.0666666667vw 0 4.8vw;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+    font-size: clamp(10px, 1.5rem, 15px);
+  }
+  .btn.btn--green:after {
+    width: 1.8666666667vw;
+    height: 2.9333333333vw;
+    right: 5.3333333333vw;
+  }
+  .btn.btn--green.btn--green_small {
+    width: 100%;
+    max-width: initial;
+    min-width: auto;
+  }
   .page-title {
     height: 106px;
     padding: 0 20px;
@@ -2742,25 +2790,41 @@
     line-height: 1.5;
     text-align: center;
   }
+  .top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
   .top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link {
     width: 100%;
     padding: 3.2vw 0;
     font-size: clamp(10px, 1.5rem, 15px);
     text-align: center;
   }
-  .top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link.medical-menu-line__link--line span {
-    padding-left: 8.5333333333vw;
+  .top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link .medical-menu-line__link-text .pc {
+    display: none !important;
   }
-  .top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link.medical-menu-line__link--line span:before {
+  .top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link.medical-menu-line__link--line {
+    padding: 2.6666666667vw 5.6vw;
+  }
+  .top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link.medical-menu-line__link--line .medical-menu-line__link-text {
+    padding-left: 7.4666666667vw;
+  }
+  .top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link.medical-menu-line__link--line .medical-menu-line__link-text:before {
     width: 6.1333333333vw;
     height: 5.6vw;
   }
-  .top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link.medical-menu-line__link--email span {
-    padding-left: 8.5333333333vw;
+  .top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link.medical-menu-line__link--email {
+    margin-left: 1.3333333333vw;
+    padding: 3.4666666667vw 4.8vw;
   }
-  .top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link.medical-menu-line__link--email span:before {
-    width: 6.1333333333vw;
-    height: 5.6vw;
+  .top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link.medical-menu-line__link--email .medical-menu-line__link-text {
+    padding-left: 5.6vw;
+  }
+  .top .medical-menu .medical-menu-line .medical-menu-line__inner .medical-menu-line__link.medical-menu-line__link--email .medical-menu-line__link-text:before {
+    width: 5.0666666667vw;
+    height: 3.7333333333vw;
   }
   .top .message {
     width: 100%;
@@ -2913,6 +2977,17 @@
     font-weight: 400;
     line-height: 1.6;
   }
+  .top .clinic-features .clinic-features__wrapper .clinic-features__01 .clinic-features__01-main .clinic-features__btn-wrapper {
+    margin-top: 5.3333333333vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .top .clinic-features .clinic-features__wrapper .clinic-features__01 .clinic-features__01-main .clinic-features__btn-wrapper .btn:first-child {
+    margin-right: 0;
+    margin-bottom: 2.6666666667vw;
+  }
   .top .clinic-features .clinic-features__wrapper .clinic-features__02 {
     padding-bottom: 16vw;
   }
@@ -2948,6 +3023,7 @@
     font-size: clamp(10px, 1.8rem, 18px);
   }
   .top .clinic-features .clinic-features__wrapper .clinic-features__02 .clinic-features__02-wrapper .clinic-features__02-left .clinic-features__02-left-body .clinic-features__02-left-text {
+    margin-bottom: 6.6666666667vw;
     font-size: clamp(10px, 1.5rem, 15px);
   }
   .top .clinic-features .clinic-features__wrapper .clinic-features__02 .clinic-features__02-wrapper .clinic-features__02-right {
@@ -2955,7 +3031,7 @@
     margin-left: auto;
   }
   .top .clinic-features .clinic-features__wrapper .clinic-features__03 {
-    padding-bottom: 27.7333333333vw;
+    padding-bottom: 24.2666666667vw;
   }
   .top .clinic-features .clinic-features__wrapper .clinic-features__03 .clinic-features__03-wrapper {
     -ms-flex-wrap: wrap;
@@ -2970,7 +3046,7 @@
   }
   .top .clinic-features .clinic-features__wrapper .clinic-features__03 .clinic-features__03-wrapper .clinic-features__03-center {
     width: 89%;
-    margin: 0 auto 13.0666666667vw;
+    margin: 0 auto 8vw;
     top: 0;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -2985,6 +3061,7 @@
   }
   .top .clinic-features .clinic-features__wrapper .clinic-features__03 .clinic-features__03-wrapper .clinic-features__03-center .clinic-features__03-text {
     width: 100%;
+    margin-bottom: 6.6666666667vw;
     font-size: clamp(10px, 1.5rem, 15px);
   }
   .top .clinic-features .clinic-features__wrapper .clinic-features__03 .clinic-features__03-wrapper .clinic-features__03-right {
@@ -3012,7 +3089,7 @@
   }
   .top .clinic-features .clinic-features__wrapper .clinic-features__04 .clinic-features__04-wrapper .clinic-features__04-right {
     width: 89%;
-    margin: 0 auto 19.4666666667vw;
+    margin: 0 auto 10.6666666667vw;
     padding-right: 0;
     top: 0;
   }
@@ -3024,7 +3101,11 @@
     font-size: clamp(10px, 1.8rem, 18px);
   }
   .top .clinic-features .clinic-features__wrapper .clinic-features__04 .clinic-features__04-wrapper .clinic-features__04-right .clinic-features__04-text {
+    margin-bottom: 6.6666666667vw;
     font-size: clamp(10px, 1.5rem, 15px);
+  }
+  .top .treatment {
+    padding-bottom: 18.6666666667vw;
   }
   .top .treatment .treatment-wrapper .section-title__wrapper {
     width: 89%;
@@ -3037,6 +3118,9 @@
         -ms-flex-direction: column;
             flex-direction: column;
     line-height: 1.6;
+  }
+  .top .treatment .treatment-wrapper .treatment__list .treatment__item:last-child {
+    margin-bottom: 16vw;
   }
   .top .treatment .treatment-wrapper .treatment__list .treatment__item:nth-child(odd) .treatment__left {
     width: 89%;
@@ -3079,7 +3163,6 @@
   }
   .top .treatment .treatment-wrapper .treatment__list .treatment__item .treatment-detail__list .treatment-detail__item {
     height: auto;
-    padding: 3.2vw 4.2666666667vw;
     font-size: clamp(10px, 1.5rem, 15px);
   }
   .top .treatment .treatment-wrapper .treatment__list .treatment__item .treatment-detail__list .treatment-detail__item:after {
@@ -3088,7 +3171,7 @@
     right: 2.6666666667vw;
   }
   .top .treatment .treatment-wrapper .treatment__list .treatment__item .treatment-detail__list .treatment-detail__item .treatment-detail__link {
-    padding: 3.2vw 4.2666666667vw;
+    padding: 3.2vw 15.4666666667vw 3.2vw 4.2666666667vw;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -3102,6 +3185,15 @@
   }
   .top .treatment .treatment-wrapper .treatment__list .treatment__item .treatment-detail__list .treatment-detail__item .treatment-detail__text {
     padding-left: 4.2666666667vw;
+  }
+  .top .treatment .treatment__btn-wrapper {
+    width: 84%;
+    margin: 0 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2.6666666667vw;
   }
   .privacy-policy-contents {
     padding: 60px 0 0;
