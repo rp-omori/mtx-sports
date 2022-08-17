@@ -790,6 +790,40 @@
   width: clamp(10px, 1.4322916667vw, 22px);
 }
 
+.contentsBox_ttl {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: clamp(10px, 1.3020833333vw, 20px);
+  border-bottom: 2px solid var(--border-color-green);
+  position: relative;
+}
+.contentsBox_ttl::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: clamp(10px, 4.8828125vw, 75px);
+  height: 2px;
+  background-color: var(--main-color);
+}
+.contentsBox_ttl .contentsBox_ttl_img {
+  width: clamp(10px, 4.8828125vw, 75px);
+  margin-right: clamp(10px, 1.1067708333vw, 17px);
+}
+.contentsBox_ttl .contentsBox_ttl_img img {
+  width: 100%;
+}
+.contentsBox_ttl .contentsBox_ttl_txt p {
+  font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-size: clamp(10px, 2.8rem, 28px);
+  font-weight: 600;
+}
+
 .footer__other {
   width: 98.6%;
   margin: 0 auto clamp(10px, 5.859375vw, 90px);
@@ -2297,7 +2331,7 @@
 .medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__img img {
   width: 100%;
 }
-.medical-detail-contents .medical-detail-imdexArea {
+.medical-detail-contents .medical-detail-indexArea {
   width: clamp(10px, 72.7213541667vw, 1117px);
   margin: 0 auto clamp(10px, 5.2408854167vw, 80.5px);
   display: -webkit-box;
@@ -2306,6 +2340,74 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+.medical-detail-contents .medical-detail-menuArea {
+  width: clamp(10px, 83.3333333333vw, 1280px);
+  margin: 0 auto;
+}
+.medical-detail-contents .medical-detail-menuArea .medical-detail-menuArea__box {
+  width: calc(100% - clamp(10px, 3.90625vw, 60px));
+  margin: 0 auto;
+  padding: clamp(10px, 1.5950520833vw, 24.5px) clamp(10px, 1.953125vw, 30px);
+  border-radius: 20px;
+  background-color: #fff;
+  margin-bottom: clamp(10px, 4.1666666667vw, 64px);
+}
+.medical-detail-contents .medical-detail-menuArea .medical-detail-menuArea__box .medical-detail-menuArea__box_contents {
+  width: clamp(10px, 62.5vw, 960px);
+  margin-top: clamp(10px, 1.8229166667vw, 28px);
+  margin-bottom: clamp(10px, 1.4973958333vw, 23px);
+}
+.medical-detail-contents .medical-detail-menuArea .medical-detail-menuArea__box .medical-detail-menuArea__box_contents p {
+  font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-size: clamp(10px, 1.8rem, 18px);
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  line-height: 1.6;
+  margin-bottom: clamp(10px, 2.7994791667vw, 43px);
+  display: block;
+}
+.medical-detail-contents .medical-detail-menuArea .medical-detail-menuArea__box .medical-detail-menuArea__box_contents p:nth-last-child(1) {
+  margin-bottom: 0;
+}
+.medical-detail-contents .medical-detail-menuArea .medical-detail-menuArea__box .medical-detail-menuArea__box_contents ul {
+  width: clamp(10px, 47.8515625vw, 735px);
+  margin-bottom: clamp(10px, 2.7994791667vw, 43px);
+}
+.medical-detail-contents .medical-detail-menuArea .medical-detail-menuArea__box .medical-detail-menuArea__box_contents ul li {
+  list-style: inside;
+  padding-left: 1.6276041667vw;
+  text-indent: -1.6276041667vw;
+  font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-size: clamp(10px, 1.8rem, 18px);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1.6;
+  margin-bottom: clamp(10px, 1.8229166667vw, 28px);
+}
+.medical-detail-contents .medical-detail-menuArea .medical-detail-menuArea__box .medical-detail-menuArea__box_contents ul li:nth-last-child(1) {
+  margin-bottom: 0;
+}
+.medical-detail-contents .medical-detail-menuArea .medical-detail-menuArea__box .medical-detail-menuArea__box_contents .index_btn_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.medical-detail-contents .medical-detail-menuArea .medical-detail-menuArea__box .medical-detail-menuArea__box_contents .index_btn_wrapper .index_btn {
+  border: 0;
+  padding-bottom: 0;
+}
+.medical-detail-contents .medical-detail-menuArea .medical-detail-menuArea__box .medical-detail-menuArea__box_contents .index_btn_wrapper .index_btn p {
+  margin-bottom: 0;
+  font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-size: clamp(10px, 2rem, 20px);
+  font-weight: 600;
+  margin-right: clamp(10px, 1.3020833333vw, 20px);
 }
 @media screen and (max-width: 767px) {
   .header {
@@ -2650,6 +2752,44 @@
   }
   .page-bread .breadcrumb span {
     margin: 0 5px;
+  }
+  .index_btn {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 47%;
+    padding-bottom: 12.5px;
+    margin-bottom: 24.5px;
+  }
+  .index_btn:nth-last-child(-n+2) {
+    margin-bottom: 0;
+  }
+  .index_btn p {
+    font-size: clamp(10px, 1.4rem, 14px);
+    line-height: 1.6;
+  }
+  .index_btn img {
+    width: 15px;
+  }
+  .contentsBox_ttl {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-bottom: 11.4px;
+  }
+  .contentsBox_ttl::after {
+    width: 13.5%;
+  }
+  .contentsBox_ttl .contentsBox_ttl_img {
+    width: 40px;
+    margin-right: 12px;
+  }
+  .contentsBox_ttl .contentsBox_ttl_txt p {
+    font-size: clamp(10px, 2.2rem, 22px);
+    line-height: 1.6;
   }
   .footer__other {
     width: 95%;
@@ -3406,14 +3546,111 @@
   }
   .medical-detail-contents .medical-detail-top-wrapper {
     padding: 20px 0 0;
+    height: auto;
+    background-position: top;
+    background-size: 100% 62%;
+    background-image: url("../images/medical_detail/medical-detail-top-background_sp.png");
+    margin-bottom: 105px;
   }
   .medical-detail-contents .medical-detail-top-wrapper .medical-detail-top {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 90%;
   }
   .medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__left {
-    width: clamp(10px, 34.2447916667vw, 526px);
+    width: 100%;
+    margin: 0 auto 24px;
+  }
+  .medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__right {
+    width: 100%;
+    margin-top: 0;
+  }
+  .medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__right_txtArea {
+    width: 100%;
+  }
+  .medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__right_txtArea_tab {
+    padding: 8px 14px;
+    margin-bottom: 12px;
+  }
+  .medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__right_txtArea_tab p {
+    font-size: clamp(10px, 1.4rem, 14px);
+  }
+  .medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__right_txtArea_ttl {
+    margin-bottom: 40px;
+  }
+  .medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__right_txtArea_ttl p {
+    font-size: clamp(10px, 2.4rem, 24px);
+  }
+  .medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__right_txtArea_txt {
+    margin-bottom: 40px;
+    width: 190px;
+  }
+  .medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__right_txtArea_txt p {
+    font-size: clamp(10px, 1.5rem, 15px);
+    line-height: 1.6;
+  }
+  .medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__right_txtArea_soreSpot_sore {
+    font-size: clamp(10px, 1.5rem, 15px);
+    margin-bottom: 12px;
+  }
+  .medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__right_txtArea_soreSpot_spot_detail {
+    width: 75px;
+    padding: 6px 0;
+  }
+  .medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__right_txtArea_soreSpot_spot_detail p {
+    font-size: clamp(10px, 1.5rem, 15px);
+  }
+  .medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__img {
+    width: 135px;
+    top: auto;
+    bottom: -65px;
+    right: 0;
+  }
+  .medical-detail-contents .medical-detail-indexArea {
+    width: 90%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 auto 50px;
+  }
+  .medical-detail-contents .medical-detail-menuArea {
+    width: 90%;
+    margin: 0 auto 50px;
+  }
+  .medical-detail-contents .medical-detail-menuArea .medical-detail-menuArea__box {
+    width: calc(100% - 40px);
+    padding: 24.5px 20px;
+  }
+  .medical-detail-contents .medical-detail-menuArea .medical-detail-menuArea__box .medical-detail-menuArea__box_contents {
+    width: 100%;
+    margin-top: 24.5px;
+    margin-bottom: 15.4px;
+  }
+  .medical-detail-contents .medical-detail-menuArea .medical-detail-menuArea__box .medical-detail-menuArea__box_contents p {
+    font-size: clamp(10px, 1.5rem, 15px);
+    margin-bottom: 32px;
+  }
+  .medical-detail-contents .medical-detail-menuArea .medical-detail-menuArea__box .medical-detail-menuArea__box_contents ul {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+  .medical-detail-contents .medical-detail-menuArea .medical-detail-menuArea__box .medical-detail-menuArea__box_contents ul li {
+    font-size: clamp(10px, 1.5rem, 15px);
+    padding-left: 18px;
+    text-indent: -18px;
+    margin-bottom: 24px;
+  }
+  .medical-detail-contents .medical-detail-menuArea .medical-detail-menuArea__box .medical-detail-menuArea__box_contents .index_btn_wrapper .index_btn {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .medical-detail-contents .medical-detail-menuArea .medical-detail-menuArea__box .medical-detail-menuArea__box_contents .index_btn_wrapper .index_btn p {
+    font-size: clamp(10px, 1.4rem, 14px);
+    line-height: 1.6;
   }
 }
