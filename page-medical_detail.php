@@ -17,6 +17,14 @@ $rootDir = get_template_directory_uri();
   <!-- コンテンツ部分 -->
   <div id="medical-detail" class="medical-detail-contents">
 
+    <div class="bg_img_left">
+      <img src="<?php echo $rootDir ?>/images/medical_detail/background_img_left.png" alt="">
+    </div>
+
+    <div class="bg_img_right">
+      <img src="<?php echo $rootDir ?>/images/medical_detail/background_img_right.png" alt="">
+    </div>
+
     <div class="medical-detail-top-wrapper">
       <div class="medical-detail-top">
         <div class="medical-detail-top__left">
@@ -161,6 +169,18 @@ $rootDir = get_template_directory_uri();
             </a>
           </div>
         </div>
+      </div>
+    </div>
+
+    <div class="medical-detail-btnArea">
+      <div class="btn btn--green medical-detail-btnArea__btn">
+        <a>その他の治療メニューはこちら</a>
+      </div>
+      <div class="btn btn--green medical-detail-btnArea__btn">
+        <a>料金一覧を見る</a>
+      </div>
+      <div class="btn btn--green medical-detail-btnArea__btn">
+        <a>治療の流れはこちら</a>
       </div>
     </div>
 
