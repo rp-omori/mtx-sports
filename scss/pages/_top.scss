@@ -1771,7 +1771,7 @@
           &:nth-child(odd) {
             .treatment__left {
               width: 80%;
-              padding: get_vw(112) get_vw(80) 0 get_vw(129);
+              padding: get_vw(80) get_vw(80) 0 get_vw(100);
 
               @include sp {
                 width: 89%;
@@ -1784,6 +1784,14 @@
               @include sp {
                 width: 89%;
                 margin-left: auto;
+              }
+
+              .treatment__img {
+                width: get_vw(880);
+
+                @include sp {
+                  width: 100%;
+                }
               }
             }
           }
@@ -1800,11 +1808,19 @@
                 width: 94%;
                 margin-right: auto;
               }
+
+              .treatment__img {
+                width: get_vw(880);
+
+                @include sp {
+                  width: 100%;
+                }
+              }
             }
 
             .treatment__right {
               width: 40%;
-              padding: get_vw(112) get_vw(129) 0 get_vw(80);
+              padding: get_vw(80) get_vw(100) 0 get_vw(80);
 
               @include sp {
                 width: 89%;
@@ -1831,7 +1847,7 @@
             img {
               width: get_vw(86);
               height: get_vw(86);
-              margin-right: get_vw(18);
+              margin-right: get_vw(17);
 
               @include sp {
                 width: get_vw(55, 375);
@@ -1862,7 +1878,7 @@
 
             .treatment-detail__item {
               display: flex;
-              height: 48px;
+              height: get_vw(48);
               margin-bottom: 8px;
               align-items: center;
               background: var(--main-color-white);
@@ -1934,13 +1950,18 @@
                 &:before {
                   content: '';
                   position: absolute;
-                  width: 8px;
-                  height: 8px;
+                  width: get_vw(8);
+                  height: get_vw(8);
                   top: 50%;
                   left: 0;
                   transform: translateY(-50%);
                   border-radius: 50%;
                   background: var(--main-color);
+
+                  @include sp {
+                    width: 8px;
+                    height: 8px;
+                  }
                 }
               }
             }
