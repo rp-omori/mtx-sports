@@ -7,7 +7,7 @@
   @return math.div(10px, $baseWidth) * 100vw;
 }
 /*
- * ルートのフォントサイズを基準にフォントサイズを可変にする
+ * ルートのフォントサイズを基準にフォントサイズを可変にする（SPはrootPxを設定しておくこと）
  * @args 最大値（デザイン上の数値）
  */
 @function calcFz($max) {
