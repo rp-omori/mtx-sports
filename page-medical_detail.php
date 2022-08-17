@@ -16,6 +16,7 @@ $rootDir = get_template_directory_uri();
 
   <!-- コンテンツ部分 -->
   <div id="medical-detail" class="medical-detail-contents">
+
     <div class="medical-detail-top-wrapper">
       <div class="medical-detail-top">
         <div class="medical-detail-top__left">
@@ -35,9 +36,9 @@ $rootDir = get_template_directory_uri();
             <div class="medical-detail-top__right_txtArea_soreSpot">
               <p class="medical-detail-top__right_txtArea_soreSpot_sore">・痛む箇所</p>
               <div class="medical-detail-top__right_txtArea_soreSpot_spot">
-                <div class="medical-detail-top__right_txtArea_soreSpot_spot_detail">
+                <!-- <div class="medical-detail-top__right_txtArea_soreSpot_spot_detail">
                   <p>肘</p>
-                </div>
+                </div> -->
                 <div class="medical-detail-top__right_txtArea_soreSpot_spot_detail">
                   <p>肘</p>
                 </div>
@@ -45,8 +46,32 @@ $rootDir = get_template_directory_uri();
             </div>
           </div>
         </div>
+        <div class="medical-detail-top__img">
+          <img src="<?php echo $rootDir ?>/images/medical_detail/medical_detail_sub_img.png" alt="">
+        </div>
       </div>
     </div>
+
+    <div class="medical-detail-imdexArea">
+      <a href="#" class="index_btn">
+        <p>症状</p>
+        <img src="<?php echo $rootDir ?>/images/medical_detail/medical_detail_btn.png" alt="">
+      </a>
+      <a href="#" class="index_btn">
+        <p>病態と原因</p>
+        <img src="<?php echo $rootDir ?>/images/medical_detail/medical_detail_btn.png" alt="">
+      </a>
+      <a href="#" class="index_btn">
+        <p>当クリニックの治療方法</p>
+        <img src="<?php echo $rootDir ?>/images/medical_detail/medical_detail_btn.png" alt="">
+      </a>
+      <a href="#" class="index_btn">
+        <p>該当する治療メニュー</p>
+        <img src="<?php echo $rootDir ?>/images/medical_detail/medical_detail_btn.png" alt="">
+      </a>
+    </div>
+
+
   </div>
 
 </main>

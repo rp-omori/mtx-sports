@@ -770,6 +770,26 @@
   margin: 0 8px;
 }
 
+.index_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #009578;
+  padding-bottom: clamp(10px, 1.07421875vw, 16.5px);
+}
+.index_btn p {
+  font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-size: clamp(10px, 2rem, 20px);
+  font-weight: 600;
+  margin-right: clamp(10px, 1.3020833333vw, 20px);
+}
+.index_btn img {
+  width: clamp(10px, 1.4322916667vw, 22px);
+}
+
 .footer__other {
   width: 98.6%;
   margin: 0 auto clamp(10px, 5.859375vw, 90px);
@@ -2166,11 +2186,127 @@
   font-weight: bold;
 }
 
-.privacy-policy-contents {
+.medical-detail-contents {
   background-color: #EFF4F3;
-  padding: clamp(10px, 7.3567708333vw, 113px) 0 0;
 }
-
+.medical-detail-contents .medical-detail-top-wrapper {
+  padding: clamp(10px, 2.6041666667vw, 40px) 0 0;
+  width: 100vw;
+  height: clamp(10px, 37.7604166667vw, 580px);
+  background-image: url("../images/medical_detail/medical-detail-top-background.png");
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-bottom: clamp(10px, 2.6041666667vw, 40px);
+}
+.medical-detail-contents .medical-detail-top-wrapper .medical-detail-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: clamp(10px, 77.34375vw, 1188px);
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__left {
+  width: clamp(10px, 34.2447916667vw, 526px);
+  margin-right: clamp(10px, 3.2552083333vw, 50px);
+}
+.medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__left img {
+  width: 100%;
+}
+.medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: clamp(10px, 3.2552083333vw, 50px);
+}
+.medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__right_txtArea {
+  width: clamp(10px, 24.7395833333vw, 380px);
+}
+.medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__right_txtArea_tab {
+  background-color: var(--footer--other--orange);
+  display: inline-block;
+  padding: clamp(10px, 0.78125vw, 12px) clamp(10px, 1.3020833333vw, 20px);
+  border-radius: 20px;
+  margin-bottom: clamp(10px, 1.3020833333vw, 20px);
+}
+.medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__right_txtArea_tab p {
+  font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-size: clamp(10px, 1.6rem, 16px);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: #fff;
+}
+.medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__right_txtArea_ttl {
+  margin-bottom: clamp(10px, 2.6041666667vw, 40px);
+}
+.medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__right_txtArea_ttl p {
+  font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-size: clamp(10px, 4.1rem, 41px);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--main-color-bg);
+}
+.medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__right_txtArea_txt {
+  margin-bottom: clamp(10px, 3.2552083333vw, 50px);
+}
+.medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__right_txtArea_txt p {
+  font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-size: clamp(10px, 1.8rem, 18px);
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  line-height: 1.77;
+}
+.medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__right_txtArea_soreSpot_sore {
+  font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-size: clamp(10px, 2rem, 20px);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+  margin-bottom: clamp(10px, 1.0416666667vw, 16px);
+}
+.medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__right_txtArea_soreSpot_spot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__right_txtArea_soreSpot_spot_detail {
+  border: 1px solid var(--main-color);
+  background-color: #fff;
+  width: clamp(10px, 6.5104166667vw, 100px);
+  padding: 8px 0;
+  text-align: center;
+  margin-right: 10px;
+}
+.medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__right_txtArea_soreSpot_spot_detail p {
+  font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-size: clamp(10px, 2rem, 20px);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+}
+.medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__img {
+  position: absolute;
+  top: clamp(10px, 3.2552083333vw, 50px);
+  right: 0;
+  width: clamp(10px, 19.2057291667vw, 295px);
+}
+.medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__img img {
+  width: 100%;
+}
+.medical-detail-contents .medical-detail-imdexArea {
+  width: clamp(10px, 72.7213541667vw, 1117px);
+  margin: 0 auto clamp(10px, 5.2408854167vw, 80.5px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 @media screen and (max-width: 767px) {
   .header {
     height: 50px;
@@ -3268,7 +3404,16 @@
   .price-contents .contents-box_all_inner p {
     font-size: clamp(10px, 1.5rem, 15px);
   }
-  .privacy-policy-contents {
-    padding: 60px 0 0;
+  .medical-detail-contents .medical-detail-top-wrapper {
+    padding: 20px 0 0;
+  }
+  .medical-detail-contents .medical-detail-top-wrapper .medical-detail-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__left {
+    width: clamp(10px, 34.2447916667vw, 526px);
   }
 }

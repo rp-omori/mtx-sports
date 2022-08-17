@@ -1,0 +1,25 @@
+@use "sass:math";
+
+
+.index_btn{
+
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #009578;
+  padding-bottom: clamp(10px,get_vw(16.5),16.5px);
+
+  p{
+    font-family: $fontFamilyYuGo;
+    font-size: calcFz(20);
+    font-weight: 600;
+    // line-height: 1.75;
+    margin-right: clamp(10px,get_vw(20),20px);
+  }
+
+  img{
+    width: clamp(10px,get_vw(22),22px);
+  }
+
+}
+
+
