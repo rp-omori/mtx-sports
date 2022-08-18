@@ -283,10 +283,10 @@
       position: absolute;
       width: get_vw(116);
       color: var(--main-color-white);
-      right: -3em;
-      bottom: 5em;
+      right: -2em;
+      bottom: 10em;
       font-family: $fontFamilyDin2014;
-      font-size: 12px;
+      font-size: 15px;
       font-weight: bold;
       transform: rotate(90deg);
       z-index: 10;
@@ -296,12 +296,13 @@
         top: 50%;
         right: -2em;
         bottom: initial;
+        font-size: 12px;
       }
 
       &:after {
         content: '';
         position: absolute;
-        width: 50%;
+        width: 80%;
         height: 1px;
         margin-left: get_vw(11);
         top: 50%;
@@ -1095,9 +1096,9 @@
       background: var(--base-color);
 
       &.profile-open {
-        .profile__main {
-          display: block;
-        }
+        // .profile__main {
+        //   display: block;
+        // }
 
         .profile__accordion-circle {
           &:after {
@@ -1542,7 +1543,7 @@
             position: relative;
             .graph-wrap{
               display: flex;
-              align-items: end;
+              align-items: flex-end;
             }
             .graph-item{
               position: relative;
@@ -1749,7 +1750,7 @@
               width: get_vw(370);
               height: get_vw(370);
               top: 15%;
-              right: 15%;
+              right: 0;
               background-image: url(#{$img-root-dir}/bg-dot--white.svg);
               background-repeat: no-repeat;
               background-size: contain;
