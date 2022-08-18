@@ -2,19 +2,19 @@
 
 const hamburger = document.querySelector('.header__mobile-nav');
 const hamburgerBtn = document.querySelector('.header__hamburger');
-const hamburgerBg = document.querySelector('.header__hamburger-bg');
+// const hamburgerBg = document.querySelector('.header__hamburger-bg');
 const headerLink = document.querySelectorAll('.header__item');
 let isHamburgerOpen = false;
 hamburgerBtn.addEventListener('click', e => {
   if (isHamburgerOpen) {
     document.body.style.overflow = 'auto';
     hamburger.classList.remove('header__mobile-nav--active');
-    hamburgerBg.classList.remove('header__hamburger-bg--active');
+    // hamburgerBg.classList.remove('header__hamburger-bg--active');
     isHamburgerOpen = false;
   } else {
     document.body.style.overflow = 'hidden';
     hamburger.classList.add('header__mobile-nav--active');
-    hamburgerBg.classList.add('header__hamburger-bg--active');
+    // hamburgerBg.classList.add('header__hamburger-bg--active');
     isHamburgerOpen = true;
   }
 })

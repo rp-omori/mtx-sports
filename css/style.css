@@ -174,9 +174,6 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
-.header .header__inner .header__list .header__link:hover {
-  color: var(--main-color);
-}
 .header .header__inner .header__mobile-nav {
   display: none;
 }
@@ -1247,10 +1244,10 @@
   position: absolute;
   width: 7.5520833333vw;
   color: var(--main-color-white);
-  right: -3em;
-  bottom: 5em;
+  right: -2em;
+  bottom: 10em;
   font-family: din-2014, sans-serif;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: bold;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
@@ -1259,7 +1256,7 @@
 .top .kv .kv__scroll:after {
   content: "";
   position: absolute;
-  width: 50%;
+  width: 80%;
   height: 1px;
   margin-left: 0.7161458333vw;
   top: 50%;
@@ -1737,9 +1734,6 @@
 .top .message .profile {
   background: var(--base-color);
 }
-.top .message .profile.profile-open .profile__main {
-  display: block;
-}
 .top .message .profile.profile-open .profile__accordion-circle:after {
   content: none !important;
 }
@@ -2017,7 +2011,7 @@
   display: flex;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: end;
+          align-items: flex-end;
 }
 .top .clinic-features .clinic-features__wrapper .clinic-features__02 .clinic-features__02-wrapper .clinic-features__02-right-graph .graph-item {
   position: relative;
@@ -2143,7 +2137,7 @@
   width: 24.0885416667vw;
   height: 24.0885416667vw;
   top: 15%;
-  right: 15%;
+  right: 0;
   background-image: url(../images/bg-dot--white.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -2729,9 +2723,10 @@
     position: fixed;
     display: block;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     top: 0;
     right: 0;
+    opacity: 1;
     z-index: 100;
   }
   .header .header__inner .header__mobile-nav.header__mobile-nav--active .header__drawer .header__list {
@@ -2812,7 +2807,8 @@
     transition: all 0.5s;
   }
   .header .header__inner .header__drawer {
-    display: none;
+    position: absolute;
+    opacity: 0;
   }
   .footer .footer-access .footer-access__inner {
     width: 89%;
@@ -3283,6 +3279,7 @@
     top: 50%;
     right: -2em;
     bottom: initial;
+    font-size: 12px;
   }
   .top .news {
     width: 100%;
@@ -4078,5 +4075,10 @@
   .medical-detail-contents .medical-detail-menuArea .medical-detail-menuArea__box .medical-detail-menuArea__box_contents .index_btn_wrapper .index_btn p {
     font-size: clamp(10px, 1.4rem, 14px);
     line-height: 1.6;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header .header__inner .header__list .header__link:hover {
+    color: var(--main-color);
   }
 }
