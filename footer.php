@@ -200,8 +200,8 @@ $rootDir = get_template_directory_uri();
               <a href="tel:0362725047" class="btn btn--white btn--tel_white btn--shadow sp">
                 <span>電話で予約・相談</span>
               </a>
-              <a href="https://lin.ee/DhflNAe" class="btn btn--orange btn--line_white">
-                <span>LINEでご相談・予約</span>
+              <a href="https://lin.ee/DhflNAe" class="btn btn--white btn--line">
+                <span>LINEで予約</span>
               </a>
             </div>
           </div>
