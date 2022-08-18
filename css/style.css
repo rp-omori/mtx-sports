@@ -568,7 +568,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-right: 1.7578125vw;
+  padding-right: 2.6041666667vw;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -594,16 +594,18 @@
 .footer .footer-float .footer-float__inner .footer-contact__btn-wrapper .btn.btn--web {
   min-width: 13.8671875vw;
   max-width: 13.8671875vw;
+  background: #EB9136;
 }
 .footer .footer-float .footer-float__inner .footer-contact__btn-wrapper .btn.btn--white {
   border: 1px solid #D1DBD8;
 }
-.footer .footer-float .footer-float__inner .footer-contact__btn-wrapper .btn.btn--line_white {
+.footer .footer-float .footer-float__inner .footer-contact__btn-wrapper .btn.btn--line {
   min-width: 13.7369791667vw;
   max-width: 13.7369791667vw;
 }
-.footer .footer-float .footer-float__inner .footer-contact__btn-wrapper .btn.btn--line_white span {
+.footer .footer-float .footer-float__inner .footer-contact__btn-wrapper .btn.btn--line span {
   padding-left: 2.0833333333vw;
+  color: #4F6083;
 }
 .footer .footer-float .footer-float__inner .footer-contact__btn-wrapper .btn.btn--email {
   min-width: 12.3046875vw;
@@ -614,7 +616,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 1.7578125vw;
+  padding-left: 2.6041666667vw;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -623,7 +625,7 @@
   content: "";
   position: absolute;
   width: 1px;
-  height: calc(100% - 20px);
+  height: 100%;
   padding: 5px 0;
   background: #d1d4db;
   top: 50%;
