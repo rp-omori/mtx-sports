@@ -106,6 +106,10 @@
           background-repeat: no-repeat;
           background-size: contain;
         }
+
+        &:hover {
+          color: var(--main-color);
+        }
       }
     }
     .header__mobile-nav {
