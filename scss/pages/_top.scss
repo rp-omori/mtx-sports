@@ -1534,6 +1534,75 @@
             @include sp {
               width: 94%;
               margin-left: auto;
+              margin-top: get_vw(60,375);
+            }
+          }
+
+          .clinic-features__02-right-graph{
+            position: relative;
+            .graph-wrap{
+              display: flex;
+              align-items: end;
+            }
+            .graph-item{
+              position: relative;
+            }
+            .graph-text{
+              color: var(--main-color-white);
+              font-weight: bold;
+              font-size: calcFz(22);
+              -ms-writing-mode: tb-rl;
+              writing-mode: vertical-rl;
+              position: absolute;
+              top: 10%;
+              left: 50%;
+              transform: translateX(-50%);
+              opacity: 0;
+              @include sp {
+                font-size: calcFz(10);
+              }
+            }
+            .graph-pic{
+              transform: scaleY(0);
+              transform-origin: bottom;
+            }
+            .graph01{
+              .graph-text{
+                top: 20%;
+              }
+              .graph-line{
+                @include sp {
+                  top: -10%;
+                }
+              }
+            }
+            .graph07{
+              .graph-text{
+                left: 20%;
+                transform: initial;
+              }
+            }
+            .graph-line{
+              position: absolute;
+              top: 0;
+              left: 0;
+              opacity: 0;
+              @include sp {
+                top: -3%;
+              }
+            }
+            .graph-line03{
+              position: absolute;
+              top: -9%;
+              left: 0;
+              opacity: 0;
+            }
+            .graph-arrow{
+              width: 31.4%;
+              position: absolute;
+              top: 0%;
+              left: 15%;
+              transform: scale(0);
             }
           }
         }

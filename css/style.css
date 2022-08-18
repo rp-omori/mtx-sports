@@ -1964,6 +1964,68 @@
 .top .clinic-features .clinic-features__wrapper .clinic-features__02 .clinic-features__02-wrapper .clinic-features__02-right {
   width: 100%;
 }
+.top .clinic-features .clinic-features__wrapper .clinic-features__02 .clinic-features__02-wrapper .clinic-features__02-right-graph {
+  position: relative;
+}
+.top .clinic-features .clinic-features__wrapper .clinic-features__02 .clinic-features__02-wrapper .clinic-features__02-right-graph .graph-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+.top .clinic-features .clinic-features__wrapper .clinic-features__02 .clinic-features__02-wrapper .clinic-features__02-right-graph .graph-item {
+  position: relative;
+}
+.top .clinic-features .clinic-features__wrapper .clinic-features__02 .clinic-features__02-wrapper .clinic-features__02-right-graph .graph-text {
+  color: var(--main-color-white);
+  font-weight: bold;
+  font-size: clamp(10px, 2.2rem, 22px);
+  -ms-writing-mode: tb-rl;
+  -webkit-writing-mode: vertical-rl;
+          writing-mode: vertical-rl;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  opacity: 0;
+}
+.top .clinic-features .clinic-features__wrapper .clinic-features__02 .clinic-features__02-wrapper .clinic-features__02-right-graph .graph-pic {
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+.top .clinic-features .clinic-features__wrapper .clinic-features__02 .clinic-features__02-wrapper .clinic-features__02-right-graph .graph01 .graph-text {
+  top: 20%;
+}
+.top .clinic-features .clinic-features__wrapper .clinic-features__02 .clinic-features__02-wrapper .clinic-features__02-right-graph .graph07 .graph-text {
+  left: 20%;
+  -webkit-transform: initial;
+          transform: initial;
+}
+.top .clinic-features .clinic-features__wrapper .clinic-features__02 .clinic-features__02-wrapper .clinic-features__02-right-graph .graph-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.top .clinic-features .clinic-features__wrapper .clinic-features__02 .clinic-features__02-wrapper .clinic-features__02-right-graph .graph-line03 {
+  position: absolute;
+  top: -9%;
+  left: 0;
+  opacity: 0;
+}
+.top .clinic-features .clinic-features__wrapper .clinic-features__02 .clinic-features__02-wrapper .clinic-features__02-right-graph .graph-arrow {
+  width: 31.4%;
+  position: absolute;
+  top: 0%;
+  left: 15%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
 .top .clinic-features .clinic-features__wrapper .clinic-features__03 {
   padding-bottom: 15.4296875vw;
 }
@@ -3548,6 +3610,16 @@
   .top .clinic-features .clinic-features__wrapper .clinic-features__02 .clinic-features__02-wrapper .clinic-features__02-right {
     width: 94%;
     margin-left: auto;
+    margin-top: 16vw;
+  }
+  .top .clinic-features .clinic-features__wrapper .clinic-features__02 .clinic-features__02-wrapper .clinic-features__02-right-graph .graph-text {
+    font-size: clamp(10px, 1rem, 10px);
+  }
+  .top .clinic-features .clinic-features__wrapper .clinic-features__02 .clinic-features__02-wrapper .clinic-features__02-right-graph .graph01 .graph-line {
+    top: -10%;
+  }
+  .top .clinic-features .clinic-features__wrapper .clinic-features__02 .clinic-features__02-wrapper .clinic-features__02-right-graph .graph-line {
+    top: -3%;
   }
   .top .clinic-features .clinic-features__wrapper .clinic-features__03 {
     padding-bottom: 24.2666666667vw;
