@@ -42,8 +42,6 @@ const profileToggle = () => {
   })
 }
 
-console.log($('.medical-menu__head'));
-
 $('.medical-menu__head').on('click', function () {
   if (window.matchMedia('(max-width: 768px)').matches) {
     let toggleMenu = $(this).next('.symptoms__list')
