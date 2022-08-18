@@ -454,7 +454,7 @@ $rootDir = get_template_directory_uri();
                     NATA　Certified Athletic Trainer<br>
                     IOC　Diploma in Sports Medicine<br>
                     NASM　Performance Enhancement Specialist<br>
-                    NASM　Corrective Exercise Specialist<br>
+                    CES　Corrective Exercise Specialist<br>
                     SFMA　Selective Functional Movement Assessment
                   </p>
                 </div>
@@ -703,7 +703,7 @@ $rootDir = get_template_directory_uri();
                 </li>
                 <li class="treatment-detail__item">
                   <a href="" class="treatment-detail__link">
-                    <p class="treatment-detail__text">ハイドロリリース＋培養上清液注射</p>
+                    <p class="treatment-detail__text">ハイドロリリース</p>
                   </a>
                 </li>
               </ul>
@@ -733,7 +733,7 @@ $rootDir = get_template_directory_uri();
               <ul class="treatment-detail__list">
                 <li class="treatment-detail__item">
                   <a href="" class="treatment-detail__link">
-                    <p class="treatment-detail__text">Dynamic Device（ダイナミックデバイス）</p>
+                    <p class="treatment-detail__text">DDシステム</p>
                   </a>
                 </li>
                 <li class="treatment-detail__item">
@@ -743,7 +743,17 @@ $rootDir = get_template_directory_uri();
                 </li>
                 <li class="treatment-detail__item">
                   <a href="" class="treatment-detail__link">
-                    <p class="treatment-detail__text">MTXアカデミー(強化/トレーニング)</p>
+                    <p class="treatment-detail__text">HAL</p>
+                  </a>
+                </li>
+                <li class="treatment-detail__item">
+                  <a href="" class="treatment-detail__link">
+                    <p class="treatment-detail__text">MTXアカデミー Strength(強化）</p>
+                  </a>
+                </li>
+                <li class="treatment-detail__item">
+                  <a href="" class="treatment-detail__link">
+                    <p class="treatment-detail__text">MTXアカデミー Practice(実践）</p>
                   </a>
                 </li>
               </ul>
@@ -761,17 +771,17 @@ $rootDir = get_template_directory_uri();
               <ul class="treatment-detail__list">
                 <li class="treatment-detail__item">
                   <a href="" class="treatment-detail__link">
-                    <p class="treatment-detail__text">体外衝撃波（収束型／BTL-6000 FoCus）</p>
+                    <p class="treatment-detail__text">収束型 体外衝撃波(BTL6000-Focus)</p>
                   </a>
                 </li>
                 <li class="treatment-detail__item">
                   <a href="" class="treatment-detail__link">
-                    <p class="treatment-detail__text">超音波治療</p>
+                    <p class="treatment-detail__text">超音波治療(LIPUS)</p>
                   </a>
                 </li>
                 <li class="treatment-detail__item">
                   <a href="" class="treatment-detail__link">
-                    <p class="treatment-detail__text">MTXアカデミー（回復） </p>
+                    <p class="treatment-detail__text">MTX  アカデミー Recovery （回復） </p>
                   </a>
                 </li>
               </ul>

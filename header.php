@@ -213,5 +213,5 @@ $rootDir = get_template_directory_uri();
               </nav>
             </div>
           </div>
-          <div class="header__hamburger-bg"></div>
+          <!-- <div class="header__hamburger-bg"></div> -->
         </header>
