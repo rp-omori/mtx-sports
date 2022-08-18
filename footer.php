@@ -179,8 +179,8 @@ $rootDir = get_template_directory_uri();
                 </a>
               </div>
             </div>
-            <div class="footer__other">
-              <a href="" class="footer__other-text">個人情報保護方針</a>
+            <div class="footer__copyright-wrapper">
+              <a href="" class="footer__copyright-wrapper-text">個人情報保護方針</a>
               <div class="footer__copyright">
                 <small>Copyright © 2022 MTXスポーツ・関節CLINIC.All Rights Reserved.</small>
               </div>
