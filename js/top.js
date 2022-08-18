@@ -42,8 +42,6 @@ const profileToggle = () => {
   })
 }
 
-console.log($('.medical-menu__head'));
-
 $('.medical-menu__head').on('click', function () {
   if (window.matchMedia('(max-width: 768px)').matches) {
     let toggleMenu = $(this).next('.symptoms__list')
@@ -52,3 +50,88 @@ $('.medical-menu__head').on('click', function () {
     return;
   }
 })
+
+
+/*
+ * グラフアニメーション
+ */
+
+const target = document.querySelector('.clinic-features__02');
+
+const options = {
+  root: null,
+  rootMargin: "-50% 0px",
+  threshold: 0
+};
+
+const c = function (entries) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      animGraph();
+    }
+  });
+};
+
+const animGraph = () => {
+  const tl = gsap.timeline();
+  tl.to('.graph01 .graph-pic', {
+    scaleY: 1,
+    duration: 0.2,
+    ease: Power1.easeOut
+  })
+  tl.to('.graph02 .graph-pic', {
+    scaleY: 1,
+    duration: 0.2,
+    ease: Power1.easeOut
+  }, "+=0.05")
+  tl.to('.graph03 .graph-pic', {
+    scaleY: 1,
+    duration: 0.2,
+    ease: Power1.easeOut
+  }, "+=0.05")
+  tl.to('.graph04 .graph-pic', {
+    scaleY: 1,
+    duration: 0.2,
+    ease: Power1.easeOut
+  }, "+=0.05")
+  tl.to('.graph05 .graph-pic', {
+    scaleY: 1,
+    duration: 0.2,
+    ease: Power1.easeOut
+  }, "+=0.05")
+  tl.to('.graph06 .graph-pic', {
+    scaleY: 1,
+    duration: 0.2,
+    ease: Power1.easeOut
+  }, "+=0.05")
+  tl.to('.graph07 .graph-pic', {
+    scaleY: 1,
+    duration: 0.2,
+    ease: Power1.easeOut
+  }, "+=0.05")
+  tl.to('.graph-text', {
+    opacity: 1,
+    duration: 0.2,
+    ease: Power1.easeOut
+  }, "+=0.1")
+  tl.to('.graph-line', {
+    opacity: 1,
+    duration: 0.2,
+    ease: Power1.easeOut,
+  }, "<")
+  tl.to('.graph-line03', {
+    opacity: 1,
+    duration: 0.2,
+    ease: Power1.easeOut,
+  }, "<")
+  tl.to('.graph-arrow', {
+    scale: 1,
+    duration: 0.2,
+    ease: Power1.easeOut,
+  }, "+=0.2")
+};
+
+const observer = new IntersectionObserver(c, options);
+observer.observe(target);
+
+
