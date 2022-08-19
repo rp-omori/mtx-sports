@@ -127,13 +127,13 @@ $rootDir = get_template_directory_uri();
           </div>
           <div class="facility-collaboratingArea__inner_contents_box flex">
             <div class="img">
-              <img src="<?php echo $rootDir ?>/images/facility/facility_img_02.jpg" alt="">
+              <img src="<?php echo $rootDir ?>/images/facility/facility_img_01.jpg" alt="">
             </div>
             <div class="img">
-              <img src="<?php echo $rootDir ?>/images/facility/facility_img_02.jpg" alt="">
+              <img src="<?php echo $rootDir ?>/images/facility/facility_img_01.jpg" alt="">
             </div>
             <div class="img">
-              <img src="<?php echo $rootDir ?>/images/facility/facility_img_02.jpg" alt="">
+              <img src="<?php echo $rootDir ?>/images/facility/facility_img_01.jpg" alt="">
             </div>
           </div>
           <div class="facility-collaboratingArea__inner_contents_box reverse">
