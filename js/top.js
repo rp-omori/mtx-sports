@@ -59,7 +59,10 @@ $('.profile__accordion-head').on('click', function () {
  * グラフアニメーション
  */
 
-const target = document.querySelector('.clinic-features__02');
+const target = document.querySelectorAll('.js-animationTarget');
+const titleTarget = document.querySelectorAll('.js-titleAnimationTarget');
+const menuTarget = document.querySelectorAll('.medical-menu__item');
+const imgTarget = document.querySelectorAll('.js-imgAnimation');
 
 const options = {
   root: null,
@@ -67,9 +70,46 @@ const options = {
   threshold: 0
 };
 
+const titleAnimeOptions = {
+  root: null,
+  rootMargin: "-10% 0px",
+  threshold: 0
+};
+
+const menuAnimeOptions = {
+  root: null,
+  rootMargin: "-20% 0px",
+  threshold: 0
+};
+
+const titleAnimationCallback = entries => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      sectionTitleAnimation(entry);
+    }
+  });
+};
+
+const menuAnimationCallback = entries => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      menuAnimation(entry);
+    }
+  });
+};
+
+const imgAnimationCallback = entries => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      imgAnimation(entry);
+    }
+  });
+};
+
 const c = function (entries) {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
+      featureTitleAnimation();
       animGraph();
     }
   });
@@ -135,6 +175,51 @@ const animGraph = () => {
 };
 
 const observer = new IntersectionObserver(c, options);
-observer.observe(target);
+const titleObserver = new IntersectionObserver(titleAnimationCallback, titleAnimeOptions);
+const menuObserver = new IntersectionObserver(menuAnimationCallback, menuAnimeOptions);
+const imgObserver = new IntersectionObserver(imgAnimationCallback, options);
 
+target.forEach(item => {
+  observer.observe(item);
+})
 
+titleTarget.forEach(item => {
+  titleObserver.observe(item);
+})
+
+menuTarget.forEach(item => {
+  menuObserver.observe(item);
+})
+
+imgTarget.forEach(item => {
+  imgObserver.observe(item);
+})
+
+/*
+* featureタイトルテキストアニメーション
+*/
+const featureTitleAnimation = () => {
+  const clinicFeatures01 = document.querySelector('.clinic-features__01-main')
+  clinicFeatures01.classList.add('is-active')
+}
+
+/*
+ * セクションタイトルアニメーション
+ */
+const sectionTitleAnimation = (entry) => {
+  entry.target.classList.add('title-fade')
+}
+
+/*
+ *　診療メニュー
+ */
+const menuAnimation = (entry) => {
+  entry.target.classList.add('menu-fade')
+}
+
+/*
+ *　feature画像
+ */
+const imgAnimation = (entry) => {
+  entry.target.classList.add('img-fade')
+}
