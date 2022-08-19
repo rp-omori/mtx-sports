@@ -49,6 +49,7 @@
     &_menu{
       width: 100%;
       background-color: #FFFFFF;
+      border: 1px solid #CADAD4;
       border-radius: 0 0 5px 5px;
       margin-bottom: clamp(10px,get_vw(20),20px);
 
@@ -58,11 +59,10 @@
       }
 
       .menu_inner{
-        width: 93.88%;
-        margin: 0 auto;
-        padding: clamp(10px,get_vw(25),25px) 0 clamp(10px,get_vw(28),28px);
+        width: 100%;
+        // padding: clamp(10px,get_vw(25),25px) 0 clamp(10px,get_vw(28),28px);
+        height: clamp(10px,get_vw(50),50px);
         display: flex;
-        justify-content: space-between;
         align-items: center;
         border-top: 1px solid #CEDCD9;
 
@@ -78,6 +78,26 @@
 
         &_name{
 
+          width: clamp(10px,get_vw(469),469px);
+          text-align: center;
+          position: relative;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 0 clamp(10px,get_vw(20),20px);
+
+          &::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: block;
+            width: 1px;
+            height: 100%;
+            background-color: #CEDCD9;
+          }
+
           @include sp {
             width: 70%;
           }
@@ -86,6 +106,48 @@
             font-family: $fontFamilyYuGo;
             font-size: calcFz(18);
             font-weight: bold;
+            color: #009578;
+
+            @include sp {
+              font-size: calcFz(15);
+              line-height: 1.7;
+            }
+
+          }
+
+        }
+
+        &_minute{
+
+          width: clamp(10px,get_vw(124),124px);
+          position: relative;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          padding: 0 clamp(10px,get_vw(20),20px);
+
+          &::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: block;
+            width: 1px;
+            height: 100%;
+            background-color: #CEDCD9;
+          }
+
+
+          @include sp {
+            width: 70%;
+          }
+
+          p{
+            font-family: $fontFamilyYuGo;
+            font-size: calcFz(18);
+            font-weight: 300;
 
             @include sp {
               font-size: calcFz(15);
@@ -97,6 +159,16 @@
         }
 
         &_price{
+
+          width: clamp(10px,get_vw(409),409px);
+          text-align: center;
+          position: relative;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          justify-content: center;
+          padding: 0 clamp(10px,get_vw(20),20px);
 
           p{
             font-family: $fontFamilyDin2014;
@@ -116,9 +188,9 @@
 
     }
 
-    &_all{
+    &_caution{
       display: flex;
-      justify-content: flex-end;
+      justify-content: flex-start;
 
       &_inner{
         display: flex;
@@ -140,10 +212,10 @@
         }
 
         p{
-          color: var(--main-color);
+          color: #6A8381;
           font-family: $fontFamilyYuGo;
           font-size: calcFz(18);
-          font-weight: bold;
+          font-weight: 300;
 
           @include sp {
             font-size: calcFz(15);
