@@ -60,16 +60,17 @@
 
       .menu_inner{
         width: 100%;
-        // padding: clamp(10px,get_vw(25),25px) 0 clamp(10px,get_vw(28),28px);
         height: clamp(10px,get_vw(50),50px);
         display: flex;
         align-items: center;
         border-top: 1px solid #CEDCD9;
 
         @include sp {
-          width: 94.02%;
-          padding: 10px 0;
+          width: 100%;
+          height: auto;
           align-items: flex-start;
+          justify-content: space-between;
+          flex-wrap: wrap;
         }
 
         &:nth-child(1){
@@ -96,10 +97,18 @@
             width: 1px;
             height: 100%;
             background-color: #CEDCD9;
+
+            @include sp {
+              display: none;
+            }
+
           }
 
           @include sp {
-            width: 70%;
+            width: 100%;
+            padding: 12.5px 20px;
+            align-items: flex-start;
+            border-bottom: 1px solid #CEDCD9;
           }
 
           p{
@@ -137,11 +146,19 @@
             width: 1px;
             height: 100%;
             background-color: #CEDCD9;
+
+            @include sp {
+              display: none;
+            }
+
           }
 
-
           @include sp {
-            width: 70%;
+            width: 37%;
+            padding: 0;
+            padding: 12.5px 20px;
+            align-items: flex-start;
+            border-right: 1px solid #CEDCD9;
           }
 
           p{
@@ -150,7 +167,7 @@
             font-weight: 300;
 
             @include sp {
-              font-size: calcFz(15);
+              font-size: calcFz(17);
               line-height: 1.7;
             }
 
@@ -169,6 +186,11 @@
           align-items: flex-end;
           justify-content: center;
           padding: 0 clamp(10px,get_vw(20),20px);
+
+          @include sp {
+            width: auto;
+            padding: 12.5px 20px;
+          }
 
           p{
             font-family: $fontFamilyDin2014;
@@ -218,7 +240,7 @@
           font-weight: 300;
 
           @include sp {
-            font-size: calcFz(15);
+            font-size: calcFz(14);
           }
 
         }
