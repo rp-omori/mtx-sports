@@ -406,24 +406,24 @@ $rootDir = get_template_directory_uri();
       </div>
       <div class="message__inner">
         <div class="message__top">
-          <div class="message__img">
+          <div class="message__img fade-anime-img js-imgAnimation">
             <img src="<?php echo $rootDir ?>/images/top/director.png" alt="">
           </div>
           <div class="message__wrapper">
-            <span class="message__label">院長メッセージ</span>
-            <h3 class="message__title">
+            <span class="message__label fade-anime-text js-titleAnimationTarget">院長メッセージ</span>
+            <h3 class="message__title fade-anime-text js-titleAnimationTarget">
               再生医療×運動療法で<br>
               関節の痛み、スポーツの悩みに<br>
               新たな提案を。
             </h3>
-            <p class="message__text">
+            <p class="message__text fade-anime-text js-titleAnimationTarget">
               私がスポーツドクターになろうと志したきっかけは、私自身の高校時代のアメリカンフットボールの練習中に負った膝の大怪我の経験です。<br>
               痛みや不安と共に運動を続ける日々の中で、自分と同じような悩みをもつアスリートを助けたいと思うようになり、スポーツ医療の本場である米国に留学し、アスレティックトレーナー(ATC)の資格を取得しました。そこで得た現場第一の姿勢は今も医療者としての根幹に息づいています。<br><br>
               これまで、整形外科医として診療をする中で、手術加療を選択せざるを得ない方や、まだ手術に至らないまでも、痛みで苦しんでいる方を多く診てきました。<br>
               日本の保険診療は全ての方々に同様の質の高い医療を安価で提供できる一方、海外では認められているような再生医療を含む先進医療を導入するのには非常に時間がかかっているのが実情です。<br><br>
               当院では、最先端の体外衝撃波や、再生医療の注射を用い、また運動療法も最先端器具と一流のスタッフで行うことにより、相乗効果で症状の改善、再発の予防をしてまいります。
             </p>
-            <p class="message__director">
+            <p class="message__director fade-anime-text js-titleAnimationTarget">
               MTXスポーツ・関節クリニック院長<br>
               富岡 義仁（とみおか　よしひと）
             </p>
