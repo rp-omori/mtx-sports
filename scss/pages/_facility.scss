@@ -2,40 +2,6 @@
   background-color: #EFF4F3;
   position: relative;
 
-  .bg_img_left{
-    position: absolute;
-    top: clamp(10px,get_vw(1090),1090px);
-    left: 0;
-    width: clamp(10px,get_vw(225),225px);
-
-    @include sp {
-      width: 126px;
-      top: 1100px;
-    }
-
-    img{
-      width: 100%;
-    }
-
-  }
-
-  .bg_img_right{
-    position: absolute;
-    top: clamp(10px,get_vw(2167),2167px);
-    right: 0;
-    width: clamp(10px,get_vw(225),225px);
-
-    @include sp {
-      width: 126px;
-      top: 2600px;
-    }
-
-    img{
-      width: 100%;
-    }
-
-  }
-
   .facility-top-wrapper{
     position: relative;
     z-index: 2;
@@ -372,11 +338,70 @@
   .facility-collaboratingArea{
     width: 100%;
     background-color: var(--main-section-bg);
-    padding: clamp(10px,get_vw(85),85px) 0;
+    padding: clamp(10px,get_vw(160),160px) 0;
+    position: relative;
+    margin-bottom: clamp(10px,get_vw(90),90px);
+
+    @include sp {
+      padding: 100px 0;
+      margin-bottom: 100px;
+    }
+
+    .bg_img_left{
+      position: absolute;
+      top: clamp(10px,get_vw(1790),1790px);
+      left: 0;
+      width: clamp(10px,get_vw(300),300px);
+
+      @include sp {
+        width: 165px;
+        top: 3720px;
+      }
+
+      img{
+        width: 100%;
+      }
+
+    }
+
+    .bg_img_right{
+      position: absolute;
+      top: clamp(10px,get_vw(920),920px);
+      right: 0;
+      width: clamp(10px,get_vw(300),300px);
+
+      @include sp {
+        width: 165px;
+        top: 1290px;
+      }
+
+      img{
+        width: 100%;
+      }
+
+    }
+
+    .bg_img_bottom{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: clamp(10px,get_vw(590),590px);
+
+      @include sp {
+        width: 280px;
+      }
+
+      img{
+        width: 100%;
+      }
+
+    }
 
     &__inner{
       width: clamp(10px,get_vw(1280),1280px);
       margin: 0 auto;
+      position: relative;
+      z-index: 2;
 
       @include sp {
         width: 90%;
@@ -494,6 +519,14 @@
             margin-bottom: 20px;
           }
 
+          &.sp_mb{
+
+            @include sp {
+              margin-bottom: 60px;
+            }
+
+          }
+
           &_left{
             width: clamp(10px,get_vw(610),610px);
 
@@ -509,9 +542,37 @@
 
           &_right{
             width: clamp(10px,get_vw(555),555px);
+            position: relative;
 
             @include sp {
               width: 100%;
+            }
+
+            &_logo{
+              position: absolute;
+              top: 0;
+              right: 0;
+              width: clamp(10px,get_vw(80),80px);
+
+              &.medium{
+                width: clamp(10px,get_vw(120),120px);
+
+                @include sp {
+                  top: 65px;
+                  width: 75px;
+                }
+
+              }
+
+              @include sp {
+                top: 55px;
+                width: 46px;
+              }
+
+              img{
+                width: 100%;
+              }
+
             }
 
             &_tab{
@@ -580,6 +641,16 @@
                   width: clamp(10px,get_vw(235),235px);
                   height: 1px;
                   background-color: var(--border-line);
+
+                  @include sp {
+                    position: absolute;
+                    bottom: 0;
+                    left: 38px;
+                    width: 180px;
+                    height: 1px;
+                    background-color: var(--border-line);
+                  }
+
                 }
 
               }
@@ -640,6 +711,11 @@
 
               .abso{
                 width: clamp(10px,get_vw(17),17px);
+
+                @include sp {
+                  width: 15px;
+                  margin-top: 10px;
+                }
 
               }
 
