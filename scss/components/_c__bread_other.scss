@@ -1,0 +1,60 @@
+@use "sass:math";
+
+
+.page-bread{
+
+  &.other{
+
+    position: absolute;
+    top: clamp(10px, get_vw(85), 85px);
+    left: 0;
+    z-index: 3;
+    background: transparent;
+    padding: 7px clamp(10px,get_vw(32),32px);
+
+    @include sp {
+      top: 50px;
+    }
+
+    .breadcrumb{
+      display: flex;
+      color: #fff;
+
+      li{
+        color: #fff;
+        font-size: calcFz(12);
+        font-family: $fontFamilyYuGo;
+        font-weight: 300;
+
+        @include sp {
+          font-size: calcFz(11);
+        }
+
+        a{
+          color: #fff;
+          font-size: calcFz(12);
+          font-family: $fontFamilyYuGo;
+          font-weight: 300;
+
+          @include sp {
+            font-size: calcFz(11);
+          }
+
+        }
+
+      }
+
+      span{
+        margin: 0 8px;
+
+        @include sp {
+          margin: 0 5px;
+        }
+
+      }
+    }
+
+  }
+
+
+}
