@@ -33,7 +33,7 @@ $rootDir = get_template_directory_uri();
           </div>
           <div class="footer-access__right">
             <div class="footer-access__right-img">
-              <img src="<?php echo $rootDir ?>/images/map.png" alt="">
+              <img src="<?php echo $rootDir ?>/images/map.png" alt="MTX">
             </div>
             <p class="footer-access__right-text">※MTXアカデミーとダイナミックデバイス<br class="sp">（ddrobotec）は当クリニックの連携施設です。</p>
           </div>
@@ -42,7 +42,7 @@ $rootDir = get_template_directory_uri();
 
       <section class="footer-contact">
         <div class="footer-contact__inner">
-          <div class="section-title__wrapper --light_green --center --small">
+          <div class="section-title__wrapper --light_green --center --x_small">
             <h2 class="section-title">CONTACT</h2>
             <p class="section-sub-title">ご予約・お問い合わせ</p>
             <span class="footer-contact__text footer-contact__text--float">まずは気軽にご相談から</span>
@@ -51,13 +51,16 @@ $rootDir = get_template_directory_uri();
             あなたの膝・関節の悩みをお聞かせください。<br>
             ひとりひとりに適した治療法をご提案させていただきます。
           </p>
-          <h4 class="footer-contact__sub-title">診察のご予約</h4>
+          <h4 class="footer-contact__sub-title">診察のご予約・ご相談</h4>
           <div class="footer-contact__btn-wrapper">
-            <!-- <a href="" class="btn btn--orange btn--shadow">
+            <a href="" class="btn btn--orange btn--shadow">
               <span>WEB予約</span>
-            </a> -->
-            <a href="https://lin.ee/DhflNAe" class="btn btn--orange btn--line_white btn--shadow">
+            </a>
+            <a href="https://lin.ee/DhflNAe" class="btn btn--white btn--line btn--shadow">
               <span>LINEでご相談・予約</span>
+            </a>
+            <a href="https://lin.ee/DhflNAe" class="btn btn--white btn--email_green btn--shadow">
+              <span>メールで診療相談</span>
             </a>
           </div>
           <p class="footer-contact__text footer-contact__text-sub">お電話でのご予約・お問い合わせも承っております。</p>
@@ -80,16 +83,111 @@ $rootDir = get_template_directory_uri();
         </div>
       </section>
 
-      <div class="footer__inner">
-        <div class="footer__logo">
-          <a href="<?php echo home_url(); ?>" class="footer__logo-link">
-            <img src="<?php echo $rootDir ?>/images/logo--white.svg" alt="MTX SPORTS & ARTICULAR CLINIC スポーツ・関節クリニック">
-          </a>
+      <section class="footer__main">
+        <div class="footer__inner">
+          <div class="footer__top">
+            <div class="footer__logo">
+              <a href="<?php echo home_url(); ?>" class="footer__logo-link">
+                <img src="<?php echo $rootDir ?>/images/logo--white.svg" alt="MTX SPORTS & ARTICULAR CLINIC スポーツ・関節クリニック">
+              </a>
+            </div>
+            <ul class="footer__menu">
+              <li class="footer__menu-nav">
+                <ul class="footer__menu-list">
+                  <li class="footer__menu-head">
+                    <span class="footer_menu-link">クリニックの特徴</span>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a href="" class="footer_menu-link">開院の背景と想い</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a href="" class="footer_menu-link">治療体制と施設・設備</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer__menu-nav">
+                <ul class="footer__menu-list">
+                  <li class="footer__menu-head">
+                    <span class="footer__menu-link">治療について</span>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a href="" class="footer__menu-link">治療の流れ</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a href="" class="footer__menu-link">診療科目</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a href="" class="footer__menu-link">治療メニュー</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a href="" class="footer__menu-link">料金表</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer__menu-nav">
+                <ul class="footer__menu-list">
+                  <li class="footer__menu-head">
+                    <span class="footer__menu-link">医師・スタッフ紹介</span>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a href="" class="footer__menu-link">院長</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a href="" class="footer__menu-link">監修医師</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a href="" class="footer__menu-link">外来医師</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a href="" class="footer__menu-link">理学療法士</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a href="" class="footer__menu-link">柔道整復師</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a href="" class="footer__menu-link">ハリ師・きゅう師・あん摩<br>マッサージ指圧師</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a href="" class="footer__menu-link">HALリハビリ担当</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer__menu-nav">
+                <ul class="footer__menu-list">
+                  <li class="footer__menu-sub">
+                    <a href="" class="footer_menu-link">アクセス</a>
+                  </li>
+                  <li class="footer__menu-sub">
+                    <a href="" class="footer_menu-link">お知らせ</a>
+                  </li>
+                  <li class="footer__menu-sub">
+                    <a href="" class="footer_menu-link">コラム</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__sns">
+              <p class="footer__sns-text">OFFICIAL SNS</p>
+              <div class="footer__sns-wrapper">
+                <a href="" class="footer__sns-link footer__sns-link--instagram">
+                  <img src="<?php echo $rootDir ?>/images/icon/icon-instagram.svg" alt="">
+                </a>
+                <a href="" class="footer__sns-link footer__sns-link--facebook">
+                  <img src="<?php echo $rootDir ?>/images/icon/icon-facebook.svg" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="footer__copyright-wrapper">
+              <a href="" class="footer__copyright-wrapper-text">個人情報保護方針</a>
+              <div class="footer__copyright">
+                <small>Copyright © 2022 MTXスポーツ・関節CLINIC.All Rights Reserved.</small>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="footer__copyright">
-          <small>Copyright © 2022 MTXスポーツ・関節CLINIC.All Rights Reserved.</small>
-        </div>
-      </div>
+      </section>
 
       <div class="footer-float">
         <div class="footer-float__inner">

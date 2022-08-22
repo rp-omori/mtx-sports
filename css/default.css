@@ -4,7 +4,7 @@
  * @args ベースの画面幅
  */
 /*
- * ルートのフォントサイズを基準にフォントサイズを可変にする
+ * ルートのフォントサイズを基準にフォントサイズを可変にする（SPはrootPxを設定しておくこと）
  * @args 最大値（デザイン上の数値）
  */
 /*
@@ -22,6 +22,8 @@
   --main-color-black: #262928;
   --base-color: #EFF4F3;
   --btn-color-orange: #EF8112;
+  --btn-color-green: #0A6460;
+  --btn-color-dark-green: #053B39;
   --border-color-green: #CEDCD9;
   --main-title-color: #00A384;
   --main-title-background-color: #0A6460;
@@ -40,6 +42,7 @@ html, body {
 body {
   background: var(--base-color);
   font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 p {

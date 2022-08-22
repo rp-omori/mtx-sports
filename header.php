@@ -64,23 +64,58 @@ $rootDir = get_template_directory_uri();
                   </a>
                 </li>
                 <li class="header__item">
-                  <a href="#message" class="header__link">
-                    院長メッセージ
-                  </a>
-                </li>
-                <li class="header__item">
                   <a href="#clinic-features" class="header__link">
                     クリニックの特徴
                   </a>
+                  <div class="header__dropdown">
+                    <a href="" class="header__dropdown-item">開院の背景と想い</a>
+                    <a href="" class="header__dropdown-item">治療体制と施設・設備</a>
+                  </div>
                 </li>
                 <li class="header__item">
-                  <a href="#treatment" class="header__link">
-                    治療メニュー
+                  <a href="#clinic-features" class="header__link">
+                    治療について
                   </a>
+                  <div class="header__dropdown">
+                    <a href="" class="header__dropdown-item">治療の流れ</a>
+                    <a href="" class="header__dropdown-item">診療科目</a>
+                    <a href="" class="header__dropdown-item">治療メニュー</a>
+                    <a href="" class="header__dropdown-item">料金表</a>
+                  </div>
+                </li>
+                <li class="header__item">
+                  <a href="#clinic-features" class="header__link">
+                    医師・スタッフ紹介
+                  </a>
+                  <div class="header__dropdown header__dropdown--wide">
+                    <div class="header__dropdown-item-wrapper">
+                      <div class="header__dropdown-item-left">
+                        <a href="" class="header__dropdown-item">院長</a>
+                        <a href="" class="header__dropdown-item">監修医師</a>
+                        <a href="" class="header__dropdown-item">外来医師</a>
+                      </div>
+                      <div class="header__dropdown-item-right">
+                        <a href="" class="header__dropdown-item">理学療法士</a>
+                        <a href="" class="header__dropdown-item">柔道整復師</a>
+                        <a href="" class="header__dropdown-item">HALリハビリ担当</a>
+                      </div>
+                    </div>
+                    <a href="" class="header__dropdown-item">はり師・きゅう師・あん摩マッサージ指圧師</a>
+                  </div>
                 </li>
                 <li class="header__item">
                   <a href="#access" class="header__link">
                     アクセス
+                  </a>
+                </li>
+                <li class="header__item">
+                  <a href="#access" class="header__link">
+                    お知らせ
+                  </a>
+                </li>
+                <li class="header__item">
+                  <a href="#access" class="header__link">
+                    コラム
                   </a>
                 </li>
               </ul>
@@ -95,33 +130,88 @@ $rootDir = get_template_directory_uri();
               <nav id="drawer" class="header__drawer" aria-hidden="true">
                 <ul class="header__list">
                   <li class="header__item">
-                    <a href="#medical-menu" class="header__link">
+                    <span class="header__link js-header-drawer">
                       症状から探す
-                    </a>
+                    </span>
                   </li>
                   <li class="header__item">
-                    <a href="#message" class="header__link">
-                      院長メッセージ
-                    </a>
-                  </li>
-                  <li class="header__item">
-                    <a href="#clinic-features" class="header__link">
+                    <span class="header__link js-header-drawer header__circle">
                       クリニックの特徴
-                    </a>
+                    </span>
+                    <ul class="header__drawer-list">
+                      <li class="header__drawer-item">
+                        <a href="" class="header__drawer-link">開院の背景と想い</a>
+                      </li>
+                      <li class="header__drawer-item">
+                        <a href="" class="header__drawer-link">治療体制と施設・設備</a>
+                      </li>
+                    </ul>
                   </li>
                   <li class="header__item">
-                    <a href="#treatment" class="header__link">
+                    <span class="header__link js-header-drawer header__circle">
                       治療メニュー
-                    </a>
+                    </span>
+                    <ul class="header__drawer-list">
+                      <li class="header__drawer-item">
+                        <a href="" class="header__drawer-link">治療の流れ</a>
+                      </li>
+                      <li class="header__drawer-item">
+                        <a href="" class="header__drawer-link">診療科目</a>
+                      </li>
+                      <li class="header__drawer-item">
+                        <a href="" class="header__drawer-link">治療メニュー</a>
+                      </li>
+                      <li class="header__drawer-item">
+                        <a href="" class="header__drawer-link">料金表</a>
+                      </li>
+                    </ul>
                   </li>
                   <li class="header__item">
-                    <a href="#access" class="header__link">
+                    <span class="header__link js-header-drawer header__circle">
+                      医師・スタッフ紹介
+                    </span>
+                    <ul class="header__drawer-list">
+                      <li class="header__drawer-item">
+                        <a href="" class="header__drawer-link">院長</a>
+                      </li>
+                      <li class="header__drawer-item">
+                        <a href="" class="header__drawer-link">監修医師</a>
+                      </li>
+                      <li class="header__drawer-item">
+                        <a href="" class="header__drawer-link">外来医師</a>
+                      </li>
+                      <li class="header__drawer-item">
+                        <a href="" class="header__drawer-link">理学療法士</a>
+                      </li>
+                      <li class="header__drawer-item">
+                        <a href="" class="header__drawer-link">柔道整復師</a>
+                      </li>
+                      <li class="header__drawer-item">
+                        <a href="" class="header__drawer-link">HALリハビリ担当</a>
+                      </li>
+                      <li class="header__drawer-item">
+                        <a href="" class="header__drawer-link">はり師・きゅう師・あん摩マッサージ指圧師</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header__item">
+                    <span class="header__link js-header-drawer">
                       アクセス
-                    </a>
+                    </span>
+                  </li>
+                  <li class="header__item">
+                    <span class="header__link js-header-drawer">
+                      お知らせ
+                    </span>
+                  </li>
+                  <li class="header__item">
+                    <span class="header__link js-header-drawer">
+                      コラム
+                    </span>
                   </li>
                 </ul>
               </nav>
             </div>
           </div>
-          <div class="header__hamburger-bg"></div>
+          <!-- <div class="header__hamburger-bg"></div> -->
         </header>

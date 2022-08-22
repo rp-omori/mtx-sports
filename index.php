@@ -16,15 +16,17 @@ $rootDir = get_template_directory_uri();
       <p class="kv__float-text">MTX SPORTS & ARTICULAR CLINIC</p>
       <div class="kv__swiper">
         <div class="txtArea">
-          <div class="txtArea__head white_txt">
+          <!-- <div class="txtArea__head white_txt">
             <p class="date">08.29<span>mon~</span></p>
             <h2>GRAND OPEN!!</h2>
-          </div>
+          </div> -->
           <p class="txtArea__label">再生医療×運動療法で</p>
           <h3 class="txtArea__sub-title white_txt">
             <picture>
-              <source media="(max-width: 767px)" srcset="<?php echo $rootDir ?>/images/top/kv_lead-sp.svg">
-              <img src="<?php echo $rootDir ?>/images/top/kv_lead.svg" alt="治るスポーツ・関節医療を目指して">
+              <!-- <source media="(max-width: 767px)" srcset="<?php echo $rootDir ?>/images/top/kv_lead-sp.svg">
+              <img src="<?php echo $rootDir ?>/images/top/kv_lead.svg" alt="治るスポーツ・関節医療を目指して"> -->
+              <source media="(max-width: 767px)" srcset="<?php echo $rootDir ?>/images/top/kv_lead_new-sp.svg">
+              <img src="<?php echo $rootDir ?>/images/top/kv_lead_new.svg" alt="治るスポーツ・関節医療を目指して">
             </picture>
           </h3>
           <p class="txtArea__text white_txt pc">アスリートの競技人生・身体的障害のある方の人生に向き合い、身体の機能改善に取り組んできたMTXだからできる「再生医療」×「運動療法」を組み合わせた医療。医師と理学療法士、トレーナー陣が一体となって、パフォーマンスや痛みに悩む方々に寄り添い、共に解決に向かって進んでいきます。</p>
@@ -161,6 +163,36 @@ $rootDir = get_template_directory_uri();
         </div>
       </div>
     </div>
+
+    <section class="news">
+      <div class="news__wrapper">
+        <div class="news__inner">
+          <div class="news__head">
+            <div class="news__head-wrapper">
+              <span class="news__head-label sp">NEWS</span>
+              <h2 class="news__head-title">お知らせ</h2>
+            </div>
+            <a href="" class="news__archive">
+              一覧を見る
+            </a>
+          </div>
+          <ul class="news__list">
+            <li class="news__item">
+              <a href="" class="news__link">
+                <p class="news__date">2022.5.10</p>
+                <p class="news__title">タイトルが入ります</p>
+              </a>
+            </li>
+            <li class="news__item">
+              <a href="" class="news__link">
+                <p class="news__date">2022.5.10</p>
+                <p class="news__title">タイトルが入ります</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
     <section id="medical-menu" class="medical-menu">
       <div class="section-title__wrapper --white --center">
@@ -356,9 +388,14 @@ $rootDir = get_template_directory_uri();
       <div class="medical-menu-line">
         <div class="medical-menu-line__inner">
           <p class="medical-menu-line__text">症状や疾患が特定できない場合は<br class="sp">まずご相談ください</p>
-          <a href="https://lin.ee/DhflNAe" class="medical-menu-line__link">
-            <span>LINEで診療相談</span>
-          </a>
+          <div class="medical-menu-line__link-wrapper">
+            <a href="https://lin.ee/DhflNAe" class="medical-menu-line__link medical-menu-line__link--line">
+              <span class="medical-menu-line__link-text">LINEで<span class="pc">診療</span>相談</span>
+            </a>
+            <a href="https://lin.ee/DhflNAe" class="medical-menu-line__link medical-menu-line__link--email">
+              <span class="medical-menu-line__link-text">メールで<span class="pc">診療</span>相談</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -417,7 +454,7 @@ $rootDir = get_template_directory_uri();
                     NATA　Certified Athletic Trainer<br>
                     IOC　Diploma in Sports Medicine<br>
                     NASM　Performance Enhancement Specialist<br>
-                    NASM　Corrective Exercise Specialist<br>
+                    CES　Corrective Exercise Specialist<br>
                     SFMA　Selective Functional Movement Assessment
                   </p>
                 </div>
@@ -474,6 +511,14 @@ $rootDir = get_template_directory_uri();
               <p class="clinic-features__01-main-text pc">医師診断・評価の下、理学療法士や経験と知識をもった</p>
               <p class="clinic-features__01-main-text pc">MTXトレーナー陣と連携して予防にも取り組みます。</p>
               <p class="clinic-features__01-main-text sp">治療だけではない、リハビリだけでもない。<br>医師診断・評価の下、理学療法士や経験と知識をもったMTXトレーナー陣と連携して予防にも取り組みます。</p>
+              <div class="clinic-features__btn-wrapper">
+                <a href="" class="btn btn--dark_green">
+                  <span>開院の背景と想い</span>
+                </a>
+                <a href="" class="btn btn--dark_green btn--dark_green_small">
+                  <span>治療体制</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -496,11 +541,69 @@ $rootDir = get_template_directory_uri();
                   次に、目標に向けた最適な治療プログラムを医師が計画し、治療を開始となります。<br>
                   治療プログラム実行中も、定期的に医師が評価、治療プログラム計画の見直しや調整を行うことで、患者さんの目標達成へと着実につなげます。
                 </p>
+                <a href="" class="btn btn--dark_green">
+                  <span>治療の流れ</span>
+                </a>
               </div>
             </div>
             <div class="clinic-features__02-right">
               <div class="clinic-features__02-right-graph">
-                <img src="<?php echo $rootDir ?>/images/top/graph.svg" alt="">
+                <div class="graph-wrap">
+                  <div class="graph-item graph01">
+                    <div class="graph-pic">
+                      <img src="<?php echo $rootDir ?>/images/top/graph01.png" alt="">
+                    </div>
+                    <div class="graph-line">
+                      <img src="<?php echo $rootDir ?>/images/top/line_green.png" alt="">
+                    </div>
+                    <p class="graph-text">診察</p>
+                  </div>
+                  <div class="graph-item graph02">
+                    <div class="graph-pic">
+                      <img src="<?php echo $rootDir ?>/images/top/graph02.png" alt="">
+                    </div>
+                    <p class="graph-text">評価・数値化</p>
+                  </div>
+                  <div class="graph-item graph03">
+                    <div class="graph-pic">
+                      <img src="<?php echo $rootDir ?>/images/top/graph03.png" alt="">
+                    </div>
+                    <p class="graph-text">目標設定</p>
+                  </div>
+                  <div class="graph-item graph04">
+                    <div class="graph-pic">
+                      <img src="<?php echo $rootDir ?>/images/top/graph04.png" alt="">
+                    </div>
+                    <p class="graph-text">治療・リハビリ計画</p>
+                  </div>
+                  <div class="graph-item graph05">
+                    <div class="graph-pic">
+                      <img src="<?php echo $rootDir ?>/images/top/graph05.png" alt="">
+                    </div>
+                    <div class="graph-line graph-line02">
+                      <img src="<?php echo $rootDir ?>/images/top/line_green.png" alt="">
+                    </div>
+                    <p class="graph-text">治療開始</p>
+                  </div>
+                  <div class="graph-item graph06">
+                    <div class="graph-pic">
+                      <img src="<?php echo $rootDir ?>/images/top/graph06.png" alt="">
+                    </div>
+                    <p class="graph-text">再評価（計画見直し）</p>
+                  </div>
+                  <div class="graph-item graph07">
+                    <div class="graph-pic">
+                      <img src="<?php echo $rootDir ?>/images/top/graph07.png" alt="">
+                    </div>
+                    <div class="graph-line03">
+                      <img src="<?php echo $rootDir ?>/images/top/line_green02.png" alt="">
+                    </div>
+                    <p class="graph-text">目標達成</p>
+                  </div>
+                </div>
+                <div class="graph-arrow">
+                  <img src="<?php echo $rootDir ?>/images/top/arrow.png" alt="">
+                </div>
               </div>
             </div>
           </div>
@@ -526,6 +629,9 @@ $rootDir = get_template_directory_uri();
                 今までどこに行っても治らなかった関節の痛みや体のしびれ等がある方は、一度、診察にお越しください。<br>
                 ※CESやSFMAは運動機能を評価する診断方法です。
               </p>
+              <a href="" class="btn btn--dark_green">
+                <span>医師・スタッフ紹介</span>
+              </a>
             </div>
             <div class="clinic-features__03-right">
               <div class="clinic-features__03-right-img">
@@ -555,6 +661,9 @@ $rootDir = get_template_directory_uri();
                 運動能力を数値化することが可能なため、パフォーマンス向上、再生医療と組み合わせての症状改善に向けたリカバリープログラムなど、多岐にわたって活用が可能です。<br>
                 その他、当クリニックでは運動機能の状態を評価（数値化）する機器としても活用します。
               </p>
+              <a href="" class="btn btn--dark_green">
+                <span>施設・設備の紹介</span>
+              </a>
             </div>
           </div>
         </div>
@@ -578,16 +687,24 @@ $rootDir = get_template_directory_uri();
               </p>
               <ul class="treatment-detail__list">
                 <li class="treatment-detail__item">
-                  <p class="treatment-detail__text">PRP治療</p>
+                  <a href="" class="treatment-detail__link">
+                    <p class="treatment-detail__text">PRP治療</p>
+                  </a>
                 </li>
                 <li class="treatment-detail__item">
-                  <p class="treatment-detail__text">脂肪幹細胞治療（ASC）</p>
+                  <a href="" class="treatment-detail__link">
+                    <p class="treatment-detail__text">脂肪幹細胞治療（ASC）</p>
+                  </a>
                 </li>
                 <li class="treatment-detail__item">
-                  <p class="treatment-detail__text">培養上清液治療</p>
+                  <a href="" class="treatment-detail__link">
+                    <p class="treatment-detail__text">培養上清液治療</p>
+                  </a>
                 </li>
                 <li class="treatment-detail__item">
-                  <p class="treatment-detail__text">ハイドロリリース＋培養上清液注射</p>
+                  <a href="" class="treatment-detail__link">
+                    <p class="treatment-detail__text">ハイドロリリース</p>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -615,13 +732,29 @@ $rootDir = get_template_directory_uri();
               </p>
               <ul class="treatment-detail__list">
                 <li class="treatment-detail__item">
-                  <p class="treatment-detail__text">Dynamic Device（ダイナミックデバイス）</p>
+                  <a href="" class="treatment-detail__link">
+                    <p class="treatment-detail__text">DDシステム</p>
+                  </a>
                 </li>
                 <li class="treatment-detail__item">
-                  <p class="treatment-detail__text">D-wall</p>
+                  <a href="" class="treatment-detail__link">
+                    <p class="treatment-detail__text">D-wall</p>
+                  </a>
                 </li>
                 <li class="treatment-detail__item">
-                  <p class="treatment-detail__text">MTXアカデミー(強化/トレーニング)</p>
+                  <a href="" class="treatment-detail__link">
+                    <p class="treatment-detail__text">HAL</p>
+                  </a>
+                </li>
+                <li class="treatment-detail__item">
+                  <a href="" class="treatment-detail__link">
+                    <p class="treatment-detail__text">MTXアカデミー Strength(強化）</p>
+                  </a>
+                </li>
+                <li class="treatment-detail__item">
+                  <a href="" class="treatment-detail__link">
+                    <p class="treatment-detail__text">MTXアカデミー Practice(実践）</p>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -637,13 +770,19 @@ $rootDir = get_template_directory_uri();
               </p>
               <ul class="treatment-detail__list">
                 <li class="treatment-detail__item">
-                  <p class="treatment-detail__text">体外衝撃波（収束型／BTL-6000 FoCus）</p>
+                  <a href="" class="treatment-detail__link">
+                    <p class="treatment-detail__text">収束型 体外衝撃波(BTL6000-Focus)</p>
+                  </a>
                 </li>
                 <li class="treatment-detail__item">
-                  <p class="treatment-detail__text">超音波治療</p>
+                  <a href="" class="treatment-detail__link">
+                    <p class="treatment-detail__text">超音波治療(LIPUS)</p>
+                  </a>
                 </li>
                 <li class="treatment-detail__item">
-                  <p class="treatment-detail__text">MTXアカデミー（回復） </p>
+                  <a href="" class="treatment-detail__link">
+                    <p class="treatment-detail__text">MTX  アカデミー Recovery （回復） </p>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -654,10 +793,16 @@ $rootDir = get_template_directory_uri();
             </div>
           </li>
         </ul>
+        <div class="treatment__btn-wrapper">
+          <a href="" class="btn btn--green">治療の流れ</a>
+          <a href="" class="btn btn--green">治療メニュー</a>
+          <a href="" class="btn btn--green">料金表</a>
+        </div>
       </div>
     </section>
   </div>
 </main>
 
+<script src="//cdn.jsdelivr.net/npm/gsap@3.7.0/dist/gsap.min.js"></script>
 <script src="<?php echo $rootDir ?>/js/top.js"></script>
 <?php get_footer(); ?>

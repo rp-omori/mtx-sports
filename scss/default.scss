@@ -10,6 +10,8 @@
   --main-color-black: #262928;
   --base-color: #EFF4F3;
   --btn-color-orange: #EF8112;
+  --btn-color-green: #0A6460;
+  --btn-color-dark-green: #053B39;
   --border-color-green: #CEDCD9;
   --main-title-color: #00A384;
   --main-title-background-color: #0A6460;
@@ -32,6 +34,7 @@ html,body {
 body {
   background: var(--base-color);
   font-family: $fontFamilyYuGo;
+  -webkit-tap-highlight-color:rgba(0, 0, 0, 0)
 }
 
 p {
