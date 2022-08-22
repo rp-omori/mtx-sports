@@ -44,6 +44,7 @@ html, body {
 body {
   background: var(--base-color);
   font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 p {

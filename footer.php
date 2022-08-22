@@ -33,9 +33,9 @@ $rootDir = get_template_directory_uri();
           </div>
           <div class="footer-access__right">
             <div class="footer-access__right-img">
-              <img src="<?php echo $rootDir ?>/images/map.png" alt="">
+              <img src="<?php echo $rootDir ?>/images/map.png" alt="MTX">
             </div>
-            <p class="footer-access__right-text">※MTXアカデミーとダイナミックデバイス<br class="sp">（ddrobotec）は当クリニックの連携施設です。</p>
+            <p class="footer-access__right-text">※MTXアカデミーと四ツ谷メディカル＆テクノロジーセンター（ddrobotec）は当クリニックの連携施設です。</p>
           </div>
         </div>
       </section>
@@ -179,8 +179,8 @@ $rootDir = get_template_directory_uri();
                 </a>
               </div>
             </div>
-            <div class="footer__other">
-              <a href="" class="footer__other-text">個人情報保護方針</a>
+            <div class="footer__copyright-wrapper">
+              <a href="" class="footer__copyright-wrapper-text">個人情報保護方針</a>
               <div class="footer__copyright">
                 <small>Copyright © 2022 MTXスポーツ・関節CLINIC.All Rights Reserved.</small>
               </div>
@@ -192,20 +192,27 @@ $rootDir = get_template_directory_uri();
       <div class="footer-float">
         <div class="footer-float__inner">
           <div class="footer-float__inner-left">
+            <p class="footer-float__inner-text">診療のご予約はこちら</p>
             <div class="footer-contact__btn-wrapper">
-              <!-- <a href="" class="btn btn--orange btn--shadow">
+              <a href="" class="btn btn--orange btn--web">
                 <span>まずはWEB予約</span>
-              </a> -->
+              </a>
               <a href="tel:0362725047" class="btn btn--white btn--tel_white btn--shadow sp">
                 <span>電話で予約・相談</span>
               </a>
-              <a href="https://lin.ee/DhflNAe" class="btn btn--orange btn--line_white btn--shadow">
-                <span>LINEでご相談・予約</span>
+              <a href="https://lin.ee/DhflNAe" class="btn btn--white btn--line">
+                <span>LINEで予約</span>
               </a>
             </div>
           </div>
-          <div class="footer-float__inner-right pc">
-            <div class="footer-contact__time">
+          <div class="footer-float__inner-right">
+            <p class="footer-float__inner-text">受診前のご相談はこちら</p>
+            <div class="footer-contact__btn-wrapper">
+              <a href="" class="btn btn--footer_green btn--email">
+                <span>メールで診療相談</span>
+              </a>
+            </div>
+            <!-- <div class="footer-contact__time">
               <div class="footer-contact__time-inner">
                 <p class="footer-contact__tel">03-6272-5047</p>
                 <p class="footer-contact__time-text">
@@ -213,7 +220,7 @@ $rootDir = get_template_directory_uri();
                   月曜日〜金曜日（土日祝日は除く）
                 </p>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
