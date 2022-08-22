@@ -93,6 +93,24 @@
     }
   }
 
+  &.--x_small {
+    .section-title {
+      font-size: calcFz(98);
+
+      @include sp {
+        font-size: calcFz(55);
+      }
+    }
+
+    .section-sub-title {
+      font-size: calcFz(36);
+
+      @include sp {
+        font-size: calcFz(24);
+      }
+    }
+  }
+
   .section-title {
     display: inline-block;
     font-family: $fontFamilyDin2014;
@@ -257,6 +275,36 @@
         width: get_vw(25);
         height: get_vw(23);
         background-image: url(#{$img-root-dir}/icon/icon-line--white.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left center;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+
+        @include sp {
+          width: get_vw(22, 375);
+          height: get_vw(20, 375);
+        }
+      }
+    }
+  }
+
+  &.btn--email_green {
+    span {
+      position: relative;
+      padding-left: get_vw(40);
+
+      @include sp {
+        padding-left: get_vw(30, 375);
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        width: get_vw(25);
+        height: get_vw(23);
+        background-image: url(#{$img-root-dir}/icon/icon-email--green.svg);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: left center;

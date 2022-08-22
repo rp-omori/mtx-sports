@@ -16,6 +16,8 @@
   --main-title-color: #00A384;
   --main-title-background-color: #0A6460;
   --footer--other--orange: #E5923E;
+  --main-section-bg: #DEEAE7;
+  --border-line: #47A086;
 }
 
 html {
@@ -34,6 +36,7 @@ html,body {
 body {
   background: var(--base-color);
   font-family: $fontFamilyYuGo;
+  -webkit-tap-highlight-color:rgba(0, 0, 0, 0)
 }
 
 p {
@@ -64,6 +67,7 @@ button {
 
 .main {
   padding-top: clamp(10px, get_vw(85), 85px);
+  position: relative;
 
   @include sp {
     padding-top: 50px;

@@ -28,6 +28,8 @@
   --main-title-color: #00A384;
   --main-title-background-color: #0A6460;
   --footer--other--orange: #E5923E;
+  --main-section-bg: #DEEAE7;
+  --border-line: #47A086;
 }
 
 html {
@@ -42,6 +44,7 @@ html, body {
 body {
   background: var(--base-color);
   font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 p {
@@ -79,6 +82,7 @@ button {
 
 .main {
   padding-top: clamp(10px, 5.5338541667vw, 85px);
+  position: relative;
 }
 
 .footer {
