@@ -16,6 +16,8 @@
   --main-title-color: #00A384;
   --main-title-background-color: #0A6460;
   --footer--other--orange: #E5923E;
+  --main-section-bg: #DEEAE7;
+  --border-line: #47A086;
 }
 
 html {
@@ -65,6 +67,7 @@ button {
 
 .main {
   padding-top: clamp(10px, get_vw(85), 85px);
+  position: relative;
 
   @include sp {
     padding-top: 50px;
