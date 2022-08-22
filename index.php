@@ -454,7 +454,7 @@ $rootDir = get_template_directory_uri();
                     NATA　Certified Athletic Trainer<br>
                     IOC　Diploma in Sports Medicine<br>
                     NASM　Performance Enhancement Specialist<br>
-                    NASM　Corrective Exercise Specialist<br>
+                    CES　Corrective Exercise Specialist<br>
                     SFMA　Selective Functional Movement Assessment
                   </p>
                 </div>
@@ -548,7 +548,62 @@ $rootDir = get_template_directory_uri();
             </div>
             <div class="clinic-features__02-right">
               <div class="clinic-features__02-right-graph">
-                <img src="<?php echo $rootDir ?>/images/top/graph.svg" alt="">
+                <div class="graph-wrap">
+                  <div class="graph-item graph01">
+                    <div class="graph-pic">
+                      <img src="<?php echo $rootDir ?>/images/top/graph01.png" alt="">
+                    </div>
+                    <div class="graph-line">
+                      <img src="<?php echo $rootDir ?>/images/top/line_green.png" alt="">
+                    </div>
+                    <p class="graph-text">診察</p>
+                  </div>
+                  <div class="graph-item graph02">
+                    <div class="graph-pic">
+                      <img src="<?php echo $rootDir ?>/images/top/graph02.png" alt="">
+                    </div>
+                    <p class="graph-text">評価・数値化</p>
+                  </div>
+                  <div class="graph-item graph03">
+                    <div class="graph-pic">
+                      <img src="<?php echo $rootDir ?>/images/top/graph03.png" alt="">
+                    </div>
+                    <p class="graph-text">目標設定</p>
+                  </div>
+                  <div class="graph-item graph04">
+                    <div class="graph-pic">
+                      <img src="<?php echo $rootDir ?>/images/top/graph04.png" alt="">
+                    </div>
+                    <p class="graph-text">治療・リハビリ計画</p>
+                  </div>
+                  <div class="graph-item graph05">
+                    <div class="graph-pic">
+                      <img src="<?php echo $rootDir ?>/images/top/graph05.png" alt="">
+                    </div>
+                    <div class="graph-line graph-line02">
+                      <img src="<?php echo $rootDir ?>/images/top/line_green.png" alt="">
+                    </div>
+                    <p class="graph-text">治療開始</p>
+                  </div>
+                  <div class="graph-item graph06">
+                    <div class="graph-pic">
+                      <img src="<?php echo $rootDir ?>/images/top/graph06.png" alt="">
+                    </div>
+                    <p class="graph-text">再評価（計画見直し）</p>
+                  </div>
+                  <div class="graph-item graph07">
+                    <div class="graph-pic">
+                      <img src="<?php echo $rootDir ?>/images/top/graph07.png" alt="">
+                    </div>
+                    <div class="graph-line03">
+                      <img src="<?php echo $rootDir ?>/images/top/line_green02.png" alt="">
+                    </div>
+                    <p class="graph-text">目標達成</p>
+                  </div>
+                </div>
+                <div class="graph-arrow">
+                  <img src="<?php echo $rootDir ?>/images/top/arrow.png" alt="">
+                </div>
               </div>
             </div>
           </div>
@@ -648,7 +703,7 @@ $rootDir = get_template_directory_uri();
                 </li>
                 <li class="treatment-detail__item">
                   <a href="" class="treatment-detail__link">
-                    <p class="treatment-detail__text">ハイドロリリース＋培養上清液注射</p>
+                    <p class="treatment-detail__text">ハイドロリリース</p>
                   </a>
                 </li>
               </ul>
@@ -678,7 +733,7 @@ $rootDir = get_template_directory_uri();
               <ul class="treatment-detail__list">
                 <li class="treatment-detail__item">
                   <a href="" class="treatment-detail__link">
-                    <p class="treatment-detail__text">Dynamic Device（ダイナミックデバイス）</p>
+                    <p class="treatment-detail__text">DDシステム</p>
                   </a>
                 </li>
                 <li class="treatment-detail__item">
@@ -688,7 +743,17 @@ $rootDir = get_template_directory_uri();
                 </li>
                 <li class="treatment-detail__item">
                   <a href="" class="treatment-detail__link">
-                    <p class="treatment-detail__text">MTXアカデミー(強化/トレーニング)</p>
+                    <p class="treatment-detail__text">HAL</p>
+                  </a>
+                </li>
+                <li class="treatment-detail__item">
+                  <a href="" class="treatment-detail__link">
+                    <p class="treatment-detail__text">MTXアカデミー Strength(強化）</p>
+                  </a>
+                </li>
+                <li class="treatment-detail__item">
+                  <a href="" class="treatment-detail__link">
+                    <p class="treatment-detail__text">MTXアカデミー Practice(実践）</p>
                   </a>
                 </li>
               </ul>
@@ -706,17 +771,17 @@ $rootDir = get_template_directory_uri();
               <ul class="treatment-detail__list">
                 <li class="treatment-detail__item">
                   <a href="" class="treatment-detail__link">
-                    <p class="treatment-detail__text">体外衝撃波（収束型／BTL-6000 FoCus）</p>
+                    <p class="treatment-detail__text">収束型 体外衝撃波(BTL6000-Focus)</p>
                   </a>
                 </li>
                 <li class="treatment-detail__item">
                   <a href="" class="treatment-detail__link">
-                    <p class="treatment-detail__text">超音波治療</p>
+                    <p class="treatment-detail__text">超音波治療(LIPUS)</p>
                   </a>
                 </li>
                 <li class="treatment-detail__item">
                   <a href="" class="treatment-detail__link">
-                    <p class="treatment-detail__text">MTXアカデミー（回復） </p>
+                    <p class="treatment-detail__text">MTX  アカデミー Recovery （回復） </p>
                   </a>
                 </li>
               </ul>
@@ -738,5 +803,6 @@ $rootDir = get_template_directory_uri();
   </div>
 </main>
 
+<script src="//cdn.jsdelivr.net/npm/gsap@3.7.0/dist/gsap.min.js"></script>
 <script src="<?php echo $rootDir ?>/js/top.js"></script>
 <?php get_footer(); ?>

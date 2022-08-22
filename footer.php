@@ -33,7 +33,7 @@ $rootDir = get_template_directory_uri();
           </div>
           <div class="footer-access__right">
             <div class="footer-access__right-img">
-              <img src="<?php echo $rootDir ?>/images/map.png" alt="">
+              <img src="<?php echo $rootDir ?>/images/map.png" alt="MTX">
             </div>
             <p class="footer-access__right-text">※MTXアカデミーとダイナミックデバイス<br class="sp">（ddrobotec）は当クリニックの連携施設です。</p>
           </div>
@@ -179,8 +179,8 @@ $rootDir = get_template_directory_uri();
                 </a>
               </div>
             </div>
-            <div class="footer__other">
-              <a href="" class="footer__other-text">個人情報保護方針</a>
+            <div class="footer__copyright-wrapper">
+              <a href="" class="footer__copyright-wrapper-text">個人情報保護方針</a>
               <div class="footer__copyright">
                 <small>Copyright © 2022 MTXスポーツ・関節CLINIC.All Rights Reserved.</small>
               </div>
