@@ -325,7 +325,10 @@
     .header__drawer {
       @include sp {
         position: absolute;
+        top: 0;
+        left: 0;
         opacity: 0;
+        z-index: -1;
         // transition: all .2s linear;
       }
     }

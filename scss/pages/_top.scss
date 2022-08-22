@@ -1798,6 +1798,44 @@
         }
       }
     }
+
+    .feature-text-animation {
+      @media screen and (min-width: 768px) {
+        transform-origin: left;
+        transform: scaleX(0);
+        transition: transform .4s cubic-bezier(.645,.045,.355,1);
+      }
+
+      &:after {
+        @media screen and (min-width: 768px) {
+          background-color: var(--main-color-white);
+          content: "";
+          display: block;
+          height: 100%;
+          left: 0;
+          position: absolute;
+          top: 0;
+          transform-origin: right;
+          transition: transform .5s cubic-bezier(.645,.045,.355,1) .2s;
+          width: 100%;
+          z-index: 10;
+        }
+      }
+    }
+
+    .is-active {
+      .feature-text-animation {
+        @media screen and (min-width: 768px) {
+          transform: scaleX(1);
+        }
+
+        &:after {
+          @media screen and (min-width: 768px) {
+            transform: scaleX(0);
+          }
+        }
+      }
+    }
   }
 
   .treatment {
@@ -2053,5 +2091,67 @@
         gap: get_vw(10, 375);
       }
     }
+  }
+
+  .section-title__wrapper {
+    opacity: 0;
+  }
+
+  .fade-anime-text {
+    opacity: 0;
+  }
+
+  .medical-menu__item {
+    opacity: 0;
+  }
+
+  .fade-anime-img {
+    opacity: 0;
+  }
+
+  .title-fade {
+    opacity: 1;
+    animation: fadeIn .8s ease 1 normal backwards;
+  }
+
+  .menu-fade {
+    opacity: 1;
+    animation: fadeUp .8s ease 1 normal backwards;
+  }
+
+  .img-fade {
+    opacity: 1;
+    animation: fade 1.2s ease 1 normal backwards;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

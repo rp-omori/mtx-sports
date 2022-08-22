@@ -195,12 +195,12 @@ $rootDir = get_template_directory_uri();
     </section>
 
     <section id="medical-menu" class="medical-menu">
-      <div class="section-title__wrapper --white --center">
+      <div class="section-title__wrapper --white --center js-titleAnimationTarget">
         <h2 class="section-title">MENU</h2>
         <p class="section-sub-title">症状から探す診療メニュー</p>
       </div>
       <ul class="medical-menu__list">
-        <li class="medical-menu__item medical-menu__item--01">
+        <li class="medical-menu__item medical-menu__item--01" style="animation-delay: 0s">
           <h3 class="medical-menu__head">
             <div class="medical-menu__head-img icon-shoulder">
               <img src="<?php echo $rootDir ?>/images/top/icon-shoulder.svg" alt="">
@@ -222,7 +222,7 @@ $rootDir = get_template_directory_uri();
             </li>
           </ul>
         </li>
-        <li class="medical-menu__item medical-menu__item--02">
+        <li class="medical-menu__item medical-menu__item--02" style="animation-delay: 0.2s">
           <h3 class="medical-menu__head">
             <div class="medical-menu__head-img icon-lower-back">
               <img src="<?php echo $rootDir ?>/images/top/icon-lower-back.svg" alt="">
@@ -254,7 +254,7 @@ $rootDir = get_template_directory_uri();
             </li>
           </ul>
         </li>
-        <li class="medical-menu__item medical-menu__item--03">
+        <li class="medical-menu__item medical-menu__item--03" style="animation-delay: 0.6s">
           <h3 class="medical-menu__head">
             <div class="medical-menu__head-img icon-lower-limbs">
               <img src="<?php echo $rootDir ?>/images/top/icon-lower-limbs.svg" alt="">
@@ -286,7 +286,7 @@ $rootDir = get_template_directory_uri();
             </li>
           </ul>
         </li>
-        <li class="medical-menu__item medical-menu__item--04">
+        <li class="medical-menu__item medical-menu__item--04" style="animation-delay: 0.8s">
           <h3 class="medical-menu__head">
             <div class="medical-menu__head-img icon-knee">
               <img src="<?php echo $rootDir ?>/images/top/icon-knee.svg" alt="">
@@ -308,7 +308,7 @@ $rootDir = get_template_directory_uri();
             </li>
           </ul>
         </li>
-        <li class="medical-menu__item medical-menu__item--05 medical-menu__item--dg">
+        <li class="medical-menu__item medical-menu__item--05 medical-menu__item--dg" style="animation-delay: 1s">
           <h3 class="medical-menu__head dc">
             <div class="medical-menu__head-img icon-sports-injury">
               <img src="<?php echo $rootDir ?>/images/top/icon-sports-injury.svg" alt="">
@@ -361,7 +361,7 @@ $rootDir = get_template_directory_uri();
             </li>
           </ul>
         </li>
-        <li class="medical-menu__item medical-menu__item--06 medical-menu__item--dg">
+        <li class="medical-menu__item medical-menu__item--06 medical-menu__item--dg" style="animation-delay: 1.2s">
           <h3 class="medical-menu__head dc">
             <div class="medical-menu__head-img icon-growing-pain">
               <img src="<?php echo $rootDir ?>/images/top/icon-growing-pain.svg" alt="">
@@ -406,24 +406,24 @@ $rootDir = get_template_directory_uri();
       </div>
       <div class="message__inner">
         <div class="message__top">
-          <div class="message__img">
+          <div class="message__img fade-anime-img js-imgAnimation">
             <img src="<?php echo $rootDir ?>/images/top/director.png" alt="">
           </div>
           <div class="message__wrapper">
-            <span class="message__label">院長メッセージ</span>
-            <h3 class="message__title">
+            <span class="message__label fade-anime-text js-titleAnimationTarget">院長メッセージ</span>
+            <h3 class="message__title fade-anime-text js-titleAnimationTarget">
               再生医療×運動療法で<br>
               関節の痛み、スポーツの悩みに<br>
               新たな提案を。
             </h3>
-            <p class="message__text">
+            <p class="message__text fade-anime-text js-titleAnimationTarget">
               私がスポーツドクターになろうと志したきっかけは、私自身の高校時代のアメリカンフットボールの練習中に負った膝の大怪我の経験です。<br>
               痛みや不安と共に運動を続ける日々の中で、自分と同じような悩みをもつアスリートを助けたいと思うようになり、スポーツ医療の本場である米国に留学し、アスレティックトレーナー(ATC)の資格を取得しました。そこで得た現場第一の姿勢は今も医療者としての根幹に息づいています。<br><br>
               これまで、整形外科医として診療をする中で、手術加療を選択せざるを得ない方や、まだ手術に至らないまでも、痛みで苦しんでいる方を多く診てきました。<br>
               日本の保険診療は全ての方々に同様の質の高い医療を安価で提供できる一方、海外では認められているような再生医療を含む先進医療を導入するのには非常に時間がかかっているのが実情です。<br><br>
               当院では、最先端の体外衝撃波や、再生医療の注射を用い、また運動療法も最先端器具と一流のスタッフで行うことにより、相乗効果で症状の改善、再発の予防をしてまいります。
             </p>
-            <p class="message__director">
+            <p class="message__director fade-anime-text js-titleAnimationTarget">
               MTXスポーツ・関節クリニック院長<br>
               富岡 義仁（とみおか　よしひと）
             </p>
@@ -489,7 +489,7 @@ $rootDir = get_template_directory_uri();
 
     <section id="clinic-features" class="clinic-features">
       <div class="clinic-features__wrapper">
-        <div class="section-title__wrapper --green --right">
+        <div class="section-title__wrapper --green --right js-titleAnimationTarget">
           <h2 class="section-title">FEATURES</h2>
           <p class="section-sub-title">クリニックの特徴</p>
         </div>
@@ -499,18 +499,20 @@ $rootDir = get_template_directory_uri();
               <img src="<?php echo $rootDir ?>/images/top/features.png" alt="">
             </div>
           </div>
-          <div class="clinic-features__01-body">
-            <div class="clinic-features__head-wrapper">
+          <div class="clinic-features__01-body js-animationTarget">
+            <div class="clinic-features__head-wrapper fade-anime-text js-titleAnimationTarget">
               <span class="clinic-features__head-label">FEATURES</span>
               <p class="clinic-features__head">01</p>
             </div>
             <div class="clinic-features__01-main">
-              <p class="clinic-features__01-main-title">再生医療×運動療法</p>
-              <p class="clinic-features__01-main-sub-title">ONE TEAMでトータルサポート</p>
-              <p class="clinic-features__01-main-text pc">治療だけではない、リハビリだけでもない。</p>
-              <p class="clinic-features__01-main-text pc">医師診断・評価の下、理学療法士や経験と知識をもった</p>
-              <p class="clinic-features__01-main-text pc">MTXトレーナー陣と連携して予防にも取り組みます。</p>
-              <p class="clinic-features__01-main-text sp">治療だけではない、リハビリだけでもない。<br>医師診断・評価の下、理学療法士や経験と知識をもったMTXトレーナー陣と連携して予防にも取り組みます。</p>
+              <p class="clinic-features__01-main-title feature-text-animation pc">再生医療×運動療法</p>
+              <p class="clinic-features__01-main-title fade-anime-text js-titleAnimationTarget sp">再生医療×運動療法</p>
+              <p class="clinic-features__01-main-sub-title feature-text-animation pc">ONE TEAMでトータルサポート</p>
+              <p class="clinic-features__01-main-sub-title fade-anime-text js-titleAnimationTarget sp">ONE TEAMでトータルサポート</p>
+              <p class="clinic-features__01-main-text pc feature-text-animation">治療だけではない、リハビリだけでもない。</p>
+              <p class="clinic-features__01-main-text pc feature-text-animation">医師診断・評価の下、理学療法士や経験と知識をもった</p>
+              <p class="clinic-features__01-main-text pc feature-text-animation">MTXトレーナー陣と連携して予防にも取り組みます。</p>
+              <p class="clinic-features__01-main-text sp fade-anime-text js-titleAnimationTarget">治療だけではない、リハビリだけでもない。<br>医師診断・評価の下、理学療法士や経験と知識をもったMTXトレーナー陣と連携して予防にも取り組みます。</p>
               <div class="clinic-features__btn-wrapper">
                 <a href="" class="btn btn--dark_green">
                   <span>開院の背景と想い</span>
@@ -522,21 +524,21 @@ $rootDir = get_template_directory_uri();
             </div>
           </div>
         </div>
-        <div class="clinic-features__02">
+        <div class="clinic-features__02 js-animationTarget">
           <div class="clinic-features__02-wrapper">
             <div class="clinic-features__02-left">
               <div class="clinic-features__02-left-body">
                 <div class="clinic-features__02-left-head">
-                  <div class="clinic-features__head-wrapper">
+                  <div class="clinic-features__head-wrapper fade-anime-text js-titleAnimationTarget">
                     <span class="clinic-features__head-label">FEATURES</span>
                     <p class="clinic-features__head">02</p>
                   </div>
-                  <div class="clinic-features__sub-title">
+                  <div class="clinic-features__sub-title fade-anime-text js-titleAnimationTarget">
                     数値化されたゴールに向かう<br>
                     “終わりの見える”治療プログラム
                   </div>
                 </div>
-                <p class="clinic-features__02-left-text">
+                <p class="clinic-features__02-left-text fade-anime-text js-titleAnimationTarget">
                   今の患部の状態を評価（数値化）した内容を基に、目指す目標を患者さんと共に最初に決めます。<br>
                   次に、目標に向けた最適な治療プログラムを医師が計画し、治療を開始となります。<br>
                   治療プログラム実行中も、定期的に医師が評価、治療プログラム計画の見直しや調整を行うことで、患者さんの目標達成へと着実につなげます。
@@ -611,20 +613,20 @@ $rootDir = get_template_directory_uri();
         <div class="clinic-features__03">
           <div class="clinic-features__03-wrapper">
             <div class="clinic-features__03-left">
-              <div class="clinic-features__03-left-img">
+              <div class="clinic-features__03-left-img fade-anime-img js-imgAnimation">
                 <img src="<?php echo $rootDir ?>/images/top/feature03-01.png" alt="">
               </div>
             </div>
             <div class="clinic-features__03-center">
-              <div class="clinic-features__head-wrapper">
+              <div class="clinic-features__head-wrapper fade-anime-text js-titleAnimationTarget">
                 <span class="clinic-features__head-label">FEATURES</span>
                 <p class="clinic-features__head">03</p>
               </div>
-              <div class="clinic-features__sub-title">
+              <div class="clinic-features__sub-title fade-anime-text js-titleAnimationTarget">
                 院長の持つ豊富な知識・経験で<br>
                 痛みやしびれの根本的な原因を解明
               </div>
-              <p class="clinic-features__03-text">
+              <p class="clinic-features__03-text fade-anime-text js-titleAnimationTarget">
                 富岡院長はじめドクター陣が、日本のみならず海外で培った経験と、学んだ知識とを活かし、CESやSFMAなどの診察、評価方法を活用して根本的な原因を解明します。<br>
                 今までどこに行っても治らなかった関節の痛みや体のしびれ等がある方は、一度、診察にお越しください。<br>
                 ※CESやSFMAは運動機能を評価する診断方法です。
@@ -634,7 +636,7 @@ $rootDir = get_template_directory_uri();
               </a>
             </div>
             <div class="clinic-features__03-right">
-              <div class="clinic-features__03-right-img">
+              <div class="clinic-features__03-right-img fade-anime-img js-imgAnimation">
                 <img src="<?php echo $rootDir ?>/images/top/feature03-02.png" alt="">
               </div>
             </div>
@@ -643,20 +645,20 @@ $rootDir = get_template_directory_uri();
         <div class="clinic-features__04">
           <div class="clinic-features__04-wrapper">
             <div class="clinic-features__04-left">
-              <div class="clinic-features__04-left-img">
+              <div class="clinic-features__04-left-img fade-anime-img js-imgAnimation">
                 <img src="<?php echo $rootDir ?>/images/top/feature04.png" alt="">
               </div>
             </div>
             <div class="clinic-features__04-right">
-              <div class="clinic-features__head-wrapper">
+              <div class="clinic-features__head-wrapper fade-anime-text js-titleAnimationTarget">
                 <span class="clinic-features__head-label">FEATURES</span>
                 <p class="clinic-features__head">04</p>
               </div>
-              <div class="clinic-features__sub-title">
+              <div class="clinic-features__sub-title fade-anime-text js-titleAnimationTarget">
                 日本に4台しかない最先端機器<br>
                 “ダイナミック・デバイス（DD）”
               </div>
-              <p class="clinic-features__04-text">
+              <p class="clinic-features__04-text fade-anime-text js-titleAnimationTarget">
                 人工知能が搭載されたダイナミック・デバイス（DD）。<br>
                 運動能力を数値化することが可能なため、パフォーマンス向上、再生医療と組み合わせての症状改善に向けたリカバリープログラムなど、多岐にわたって活用が可能です。<br>
                 その他、当クリニックでは運動機能の状態を評価（数値化）する機器としても活用します。
@@ -672,86 +674,86 @@ $rootDir = get_template_directory_uri();
 
     <section id="treatment" class="treatment">
       <div class="treatment-wrapper">
-        <div class="section-title__wrapper --white --left">
+        <div class="section-title__wrapper --white --left js-titleAnimationTarget">
           <h2 class="section-title section-title">TREATMENT</h2>
           <p class="section-sub-title">治療メニュー</p>
         </div>
         <ul class="treatment__list">
           <li class="treatment__item">
             <div class="treatment__left">
-              <h3 class="treatment__title treatment__title--regenerative">
+              <h3 class="treatment__title treatment__title--regenerative fade-anime-text js-titleAnimationTarget">
                 <img src="<?php echo $rootDir ?>/images/icon/icon-regenerative-treatment.svg" alt="">再生治療
               </h3>
-              <p class="treatment__text">
+              <p class="treatment__text fade-anime-text js-titleAnimationTarget">
                 手術や入院の必要が無い、低リスクの注射治療です。自分自身の血液や脂肪を採血・採取して行う治療から、採血・採取の必要のない治療まで、患者さんの状態に合わせて最適な治療メニューをご提案します。
               </p>
               <ul class="treatment-detail__list">
-                <li class="treatment-detail__item">
+                <li class="treatment-detail__item fade-anime-text js-titleAnimationTarget">
                   <a href="" class="treatment-detail__link">
                     <p class="treatment-detail__text">PRP治療</p>
                   </a>
                 </li>
-                <li class="treatment-detail__item">
+                <li class="treatment-detail__item fade-anime-text js-titleAnimationTarget" style="animation-delay: 0.2s">
                   <a href="" class="treatment-detail__link">
                     <p class="treatment-detail__text">脂肪幹細胞治療（ASC）</p>
                   </a>
                 </li>
-                <li class="treatment-detail__item">
+                <li class="treatment-detail__item fade-anime-text js-titleAnimationTarget" style="animation-delay: 0.4s">
                   <a href="" class="treatment-detail__link">
                     <p class="treatment-detail__text">培養上清液治療</p>
                   </a>
                 </li>
-                <li class="treatment-detail__item">
+                <li class="treatment-detail__item fade-anime-text js-titleAnimationTarget" style="animation-delay: 0.6s">
                   <a href="" class="treatment-detail__link">
                     <p class="treatment-detail__text">ハイドロリリース</p>
                   </a>
                 </li>
               </ul>
             </div>
-            <div class="treatment__right">
+            <div class="treatment__right fade-anime-img js-imgAnimation">
               <div class="treatment__img">
                 <img src="<?php echo $rootDir ?>/images/top/treatment01.png" alt="">
               </div>
             </div>
           </li>
           <li class="treatment__item">
-            <div class="treatment__left">
+            <div class="treatment__left fade-anime-img js-imgAnimation">
               <div class="treatment__img">
                 <img src="<?php echo $rootDir ?>/images/top/treatment02.png" alt="">
               </div>
             </div>
             <div class="treatment__right">
-              <h3 class="treatment__title treatment__title--rehabilitation">
+              <h3 class="treatment__title treatment__title--rehabilitation fade-anime-text js-titleAnimationTarget">
                 <img src="<?php echo $rootDir ?>/images/icon/icon-rehabilitation.svg" alt="">運動療法（リハビリ）
               </h3>
-              <p class="treatment__text">
+              <p class="treatment__text fade-anime-text js-titleAnimationTarget">
                 医師が診察・評価に基づいて運動療法プログラムを計画します。<br>
                 計画にそって、理学療法士やMTXトレーナーが患者さんと共に<br>
                 プログラムを二人三脚で行います。<br>
                 ※「ダイナミック・デバイス」は日本で数台しかない貴重な運動療法の機器です。
               </p>
               <ul class="treatment-detail__list">
-                <li class="treatment-detail__item">
+                <li class="treatment-detail__item fade-anime-text js-titleAnimationTarget">
                   <a href="" class="treatment-detail__link">
                     <p class="treatment-detail__text">DDシステム</p>
                   </a>
                 </li>
-                <li class="treatment-detail__item">
+                <li class="treatment-detail__item fade-anime-text js-titleAnimationTarget" style="animation-delay: 0.2s">
                   <a href="" class="treatment-detail__link">
                     <p class="treatment-detail__text">D-wall</p>
                   </a>
                 </li>
-                <li class="treatment-detail__item">
+                <li class="treatment-detail__item fade-anime-text js-titleAnimationTarget" style="animation-delay: 0.4s">
                   <a href="" class="treatment-detail__link">
                     <p class="treatment-detail__text">HAL</p>
                   </a>
                 </li>
-                <li class="treatment-detail__item">
+                <li class="treatment-detail__item fade-anime-text js-titleAnimationTarget" style="animation-delay: 0.6s">
                   <a href="" class="treatment-detail__link">
                     <p class="treatment-detail__text">MTXアカデミー Strength(強化）</p>
                   </a>
                 </li>
-                <li class="treatment-detail__item">
+                <li class="treatment-detail__item fade-anime-text js-titleAnimationTarget" style="animation-delay: 0.8s">
                   <a href="" class="treatment-detail__link">
                     <p class="treatment-detail__text">MTXアカデミー Practice(実践）</p>
                   </a>
@@ -761,32 +763,32 @@ $rootDir = get_template_directory_uri();
           </li>
           <li class="treatment__item">
             <div class="treatment__left">
-              <h3 class="treatment__title treatment__title--physical">
+              <h3 class="treatment__title treatment__title--physical fade-anime-text js-titleAnimationTarget">
                 <img src="<?php echo $rootDir ?>/images/icon/icon-physical-therapy.svg" alt="">物理療法
               </h3>
-              <p class="treatment__text">
+              <p class="treatment__text fade-anime-text js-titleAnimationTarget">
                 医師が診察・評価に基づいて物理療法プログラムを計画します。<br>
                 クリニック内で治療機器を使って行うものから、MTXアカデミーの柔道整復師、鍼灸あんま師による手技まで、豊富なメニューで治療の相乗効果につなげます。
               </p>
               <ul class="treatment-detail__list">
-                <li class="treatment-detail__item">
+                <li class="treatment-detail__item fade-anime-text js-titleAnimationTarget">
                   <a href="" class="treatment-detail__link">
                     <p class="treatment-detail__text">収束型 体外衝撃波(BTL6000-Focus)</p>
                   </a>
                 </li>
-                <li class="treatment-detail__item">
+                <li class="treatment-detail__item fade-anime-text js-titleAnimationTarget" style="animation-delay: 0.2s">
                   <a href="" class="treatment-detail__link">
                     <p class="treatment-detail__text">超音波治療(LIPUS)</p>
                   </a>
                 </li>
-                <li class="treatment-detail__item">
+                <li class="treatment-detail__item fade-anime-text js-titleAnimationTarget" style="animation-delay: 0.4s">
                   <a href="" class="treatment-detail__link">
                     <p class="treatment-detail__text">MTX  アカデミー Recovery （回復） </p>
                   </a>
                 </li>
               </ul>
             </div>
-            <div class="treatment__right">
+            <div class="treatment__right fade-anime-img js-imgAnimation">
               <div class="treatment__img">
                 <img src="<?php echo $rootDir ?>/images/top/treatment03.png" alt="">
               </div>
