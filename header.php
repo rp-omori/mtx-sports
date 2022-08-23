@@ -37,7 +37,7 @@ $rootDir = get_template_directory_uri();
 </head>
 <body>
     <div class="container">
-        <header class="header">
+        <header id="header" class="header">
           <div class="header__inner">
             <div class="header__left">
               <h1 class="header__logo">
@@ -64,7 +64,7 @@ $rootDir = get_template_directory_uri();
                   </a>
                 </li>
                 <li class="header__item">
-                  <a href="#clinic-features" class="header__link">
+                  <a href="#clinic-features" class="header__link header__link--arrow">
                     クリニックの特徴
                   </a>
                   <div class="header__dropdown">
@@ -73,7 +73,7 @@ $rootDir = get_template_directory_uri();
                   </div>
                 </li>
                 <li class="header__item">
-                  <a href="#clinic-features" class="header__link">
+                  <a href="#clinic-features" class="header__link header__link--arrow">
                     治療について
                   </a>
                   <div class="header__dropdown">
@@ -87,7 +87,7 @@ $rootDir = get_template_directory_uri();
                   <a href="#clinic-features" class="header__link">
                     医師・スタッフ紹介
                   </a>
-                  <div class="header__dropdown header__dropdown--wide">
+                  <!-- <div class="header__dropdown header__dropdown--wide">
                     <div class="header__dropdown-item-wrapper">
                       <div class="header__dropdown-item-left">
                         <a href="" class="header__dropdown-item">院長</a>
@@ -101,7 +101,7 @@ $rootDir = get_template_directory_uri();
                       </div>
                     </div>
                     <a href="" class="header__dropdown-item">はり師・きゅう師・あん摩マッサージ指圧師</a>
-                  </div>
+                  </div> -->
                 </li>
                 <li class="header__item">
                   <a href="#access" class="header__link">
@@ -167,10 +167,10 @@ $rootDir = get_template_directory_uri();
                     </ul>
                   </li>
                   <li class="header__item">
-                    <span class="header__link js-header-drawer header__circle">
+                    <span class="header__link js-header-drawer">
                       医師・スタッフ紹介
                     </span>
-                    <ul class="header__drawer-list">
+                    <!-- <ul class="header__drawer-list">
                       <li class="header__drawer-item">
                         <a href="" class="header__drawer-link">院長</a>
                       </li>
@@ -192,7 +192,7 @@ $rootDir = get_template_directory_uri();
                       <li class="header__drawer-item">
                         <a href="" class="header__drawer-link">はり師・きゅう師・あん摩マッサージ指圧師</a>
                       </li>
-                    </ul>
+                    </ul> -->
                   </li>
                   <li class="header__item">
                     <span class="header__link js-header-drawer">
