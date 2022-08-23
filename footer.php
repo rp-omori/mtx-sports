@@ -136,9 +136,6 @@ $rootDir = get_template_directory_uri();
                     <a href="" class="footer__menu-link">監修医師</a>
                   </li>
                   <li class="footer__menu-item">
-                    <a href="" class="footer__menu-link">外来医師</a>
-                  </li>
-                  <li class="footer__menu-item">
                     <a href="" class="footer__menu-link">理学療法士</a>
                   </li>
                   <li class="footer__menu-item">
