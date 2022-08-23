@@ -173,15 +173,15 @@ $rootDir = get_template_directory_uri();
     </div>
 
     <div class="medical-detail-btnArea">
-      <div class="btn btn--green medical-detail-btnArea__btn">
-        <a>その他の治療メニューはこちら</a>
-      </div>
-      <div class="btn btn--green medical-detail-btnArea__btn">
-        <a>料金一覧を見る</a>
-      </div>
-      <div class="btn btn--green medical-detail-btnArea__btn">
-        <a>治療の流れはこちら</a>
-      </div>
+      <a href="#" class="btn btn--green medical-detail-btnArea__btn">
+        <p>その他の治療メニューはこちら</p>
+      </a>
+      <a href="#" class="btn btn--green medical-detail-btnArea__btn">
+        <p>料金一覧を見る</p>
+      </a>
+      <a href="#" class="btn btn--green medical-detail-btnArea__btn">
+        <p>治療の流れはこちら</p>
+      </a>
     </div>
 
 
