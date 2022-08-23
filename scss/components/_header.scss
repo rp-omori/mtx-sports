@@ -1,11 +1,19 @@
 .header {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: clamp(10px, get_vw(85), 85px);
+  background: var(--base-color);
+  transform: translateY(0);
+  transition: 0.5s;
+  z-index: 100;
 
   @include sp {
     height: 50px;
     background: #fff;
+  }
+
+  &.is-hide {
+    transform: translateY(-100%);
   }
 
   &.header--white {
@@ -151,19 +159,21 @@
         height: 100%;
         align-items: center;
 
-        &:before {
-          // content: ''; // ティザー
-          content: none;
-          position: absolute;
-          width: get_vw(12);
-          height: 100%;
-          top: 50%;
-          right: 0;
-          transform: translateY(-50%);
-          background-image: url(#{$img-root-dir}/icon/icon-arrow-bottom--black.svg);
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: contain;
+        &.header__link--arrow {
+          &:before {
+            content: ''; // ティザー
+            // content: none;
+            position: absolute;
+            width: get_vw(12);
+            height: 100%;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            background-image: url(#{$img-root-dir}/icon/icon-arrow-bottom--black.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+          }
         }
 
         &:hover {
