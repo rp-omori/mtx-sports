@@ -1,5 +1,7 @@
 "use strict";
 
+const mediaQuery = window.matchMedia('(max-width: 768px)');
+
 const hamburger = document.querySelector('.header__mobile-nav');
 const hamburgerBtn = document.querySelector('.header__hamburger');
 // const hamburgerBg = document.querySelector('.header__hamburger-bg');
@@ -28,11 +30,21 @@ headerLink.forEach(item => {
 })
 
 $('.js-header-drawer').on('click', function () {
-  if (window.matchMedia('(max-width: 768px)').matches) {
+  if (mediaQuery.matches) {
     let toggleMenu = $(this).next('.header__drawer-list')
     $(this).toggleClass('is-active')
     toggleMenu.slideToggle();
   } else {
     return;
+  }
+})
+
+const header = document.getElementById('header')
+let scrollSetPosition = 0
+
+window.addEventListener('scroll', (e) => {
+  if (!mediaQuery.matches) {
+    scrollSetPosition < window.scrollY ? header.classList.add('is-hide') : header.classList.remove('is-hide');
+    scrollSetPosition = window.scrollY;
   }
 })
