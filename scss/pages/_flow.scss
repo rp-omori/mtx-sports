@@ -1,0 +1,800 @@
+.flow-contents{
+  background-color: #EFF4F3;
+  position: relative;
+
+  .flow-top-wrapper{
+    position: relative;
+    z-index: 2;
+    // padding: clamp(10px,get_vw(40),40px) 0 0;
+    width: 100vw;
+    height: clamp(10px,get_vw(613),613px);
+    background-image: url("../images/flow/flow-top-background.png");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-bottom: clamp(10px,get_vw(40),40px);
+    overflow: hidden;
+
+    @include sp {
+      // padding: 20px 0 0;
+      height: 250px;
+      background-position: top;
+      background-size: 100% 100%;
+      background-image: url("../images/flow/flow-top-background_sp.png");
+      margin-bottom: 60px;
+    }
+
+    .flow-top{
+
+      position: absolute;
+      top: clamp(10px,get_vw(250),250px);
+      left: clamp(10px,get_vw(127),127px);
+      width: 100%;
+
+      @include sp {
+        top: 65px;
+        left: 18px;
+      }
+
+      p{
+        color: rgba($color: #fff, $alpha: .15);
+        font-size: calcFz(143);
+        font-family: $fontFamilyDin2014;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        line-height: 1.76;
+
+        @include sp {
+          font-size: calcFz(72);
+        }
+
+      }
+
+      &::after{
+        content: "治療体制と施設・設備";
+        color: #fff;
+        font-size: calcFz(50);
+        font-family: $fontFamilyYuGo;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        line-height: 1.28;
+        position: absolute;
+        bottom: 13%;
+        left: 0;
+
+        @include sp {
+          font-size: calcFz(25);
+        }
+
+      }
+
+    }
+
+  }
+
+
+  .flow-main{
+    width: 100%;
+    margin-bottom: clamp(10px,get_vw(120),120px);
+
+    @include sp {
+      margin-bottom: 70px;
+    }
+
+    &__inner{
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      @include sp {
+        width: 100%;
+        flex-direction: column;
+      }
+
+      &_left{
+        width: clamp(10px,get_vw(640),640px);
+        margin-right: clamp(10px,get_vw(55),55px);
+
+        @include sp {
+          width: 90%;
+          margin: 0 auto 32px;
+        }
+
+        &_ttl{
+          position: relative;
+          margin-bottom: clamp(10px,get_vw(86),86px);
+
+          p{
+            color: rgba($color: #fff, $alpha: 1);
+            font-size: calcFz(100);
+            font-family: $fontFamilyDin2014;
+            font-weight: 600;
+            line-height: 1.75;
+            letter-spacing: 0em;
+
+            @include sp {
+              position: relative;
+              z-index: 1;
+              left: 50%;
+              transform: translateX(-50%);
+              font-size: calcFz(55);
+            }
+
+          }
+
+          &::before{
+            content: "治療体制";
+            position: absolute;
+            bottom: 10%;
+            left: 0;
+            color: var(--main-color);
+            font-size: calcFz(40);
+            font-family: $fontFamilyYuGo;
+            font-weight: 600;
+            line-height: 1.75;
+            width: 100%;
+
+            @include sp {
+              font-size: calcFz(24);
+              z-index: 2;
+            }
+
+          }
+
+          &::after{
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: clamp(10px,get_vw(64),64px);
+            height: 3px;
+            background-color:var(--main-color);
+            border-radius: 2px;
+
+            @include sp {
+              width: 44px;
+            }
+
+          }
+
+        }
+
+        &_txt{
+
+          @include sp {
+            width: 95%;
+            margin: 0 auto 20px;
+          }
+
+          p{
+            font-size: calcFz(18);
+            font-family: $fontFamilyYuGo;
+            font-weight: 300;
+            line-height: 1.75;
+            width: 100%;
+
+            @include sp {
+              font-size: calcFz(15);
+            }
+
+          }
+
+        }
+
+        &_btn{
+          background-color: #fff;
+          border: 1px solid #E7EDEC;
+          box-shadow: 2px 2px 2px #B6C8C1;
+          padding: 10px;
+          width: clamp(10px,get_vw(280),280px);
+          margin: 0 0 0 auto;
+          border-radius: 6px;
+          justify-content: space-between;
+
+          @include sp {
+            width: 92%;
+            margin: 0 auto;
+          }
+
+          p{
+            font-size: calcFz(17);
+            color: var(--main-color);
+            margin-right: 0;
+
+            @include sp {
+              font-size: calcFz(15);
+            }
+
+          }
+
+          img{
+            width: clamp(10px,get_vw(34),34px);
+
+            @include sp {
+              width: 24px;
+            }
+
+          }
+        }
+
+      }
+
+      &_right{
+        width: clamp(10px,get_vw(715),715px);
+
+        @include sp {
+          width: 85%;
+          margin: 0 0 0 auto;
+        }
+
+        img{
+          width: 100%;
+        }
+
+      }
+
+    }
+
+  }
+
+  .flow-circle{
+
+    &__inner{
+
+      width: clamp(10px,get_vw(1280),1280px);
+      margin: 0 auto;
+      display: flex;
+
+      @include sp {
+        width: 90%;
+        flex-direction: column;
+      }
+
+      &_left{
+        width: clamp(10px,get_vw(280),280px);
+        margin-right: clamp(10px,get_vw(155),155px);
+
+        @include sp {
+          width: 100%;
+          margin: 0 auto 65px;
+        }
+
+        img{
+          width: 100%;
+          height: clamp(10px,get_vw(3300),3300px);
+          margin-bottom: clamp(10px,get_vw(33),33px);
+
+          &.dot{
+            width: clamp(10px,get_vw(13.3),13.3px);
+            height: auto;
+            margin: 0 auto;
+
+            @include sp {
+              display: none;
+            }
+          }
+
+        }
+
+      }
+
+      &_right{
+        width: clamp(10px,get_vw(885),885px);
+        padding-top: clamp(10px,get_vw(140),140px);
+
+        @include sp {
+          width: 100%;
+          padding-top: 0;
+        }
+
+        &_box{
+          width: 100%;
+          margin-bottom: clamp(10px,get_vw(80),80px);
+          position: relative;
+
+          &::after{
+            content: "";
+            position: absolute;
+            top: get_vw(38);
+            left: -17.5%;
+            width: clamp(10px,get_vw(125),125px);
+            height: 2px;
+            background-color: #00A384;
+
+            @include sp {
+              display: none;
+            }
+
+          }
+
+          &::before{
+            content: "";
+            position: absolute;
+            top: get_vw(22);
+            left: -21.2%;
+            width: clamp(10px,get_vw(40),40px);
+            height: clamp(10px,get_vw(40),40px);
+            background-color: #00A384;
+            border-radius: 50%;
+
+            @include sp {
+              display: none;
+            }
+          }
+
+          &.more{
+
+            &::after{
+              left: -32%;
+              width: clamp(10px,get_vw(250),250px);
+            }
+
+            &::before{
+              left: -36.5%;
+            }
+
+          }
+
+          &_top{
+            margin-bottom: clamp(10px,get_vw(40),40px);
+
+            @include sp {
+              margin-bottom: 30px;
+            }
+
+            &_ttl{
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              margin-bottom: clamp(10px,get_vw(40),40px);
+
+              @include sp {
+                align-items: flex-start;
+              }
+
+              &_left{
+                display: flex;
+                align-items: center;
+
+                @include sp {
+                  flex-direction: column;
+                  align-items: flex-start;
+                }
+
+                img{
+                  width: clamp(10px,get_vw(100),100px);
+                  margin-right: clamp(10px,get_vw(40),40px);
+
+                  @include sp {
+                    width: 70px;
+                  }
+
+                }
+
+                p{
+                  color: var(--main-color);
+                  font-size: calcFz(28);
+                  font-family: $fontFamilyYuGo;
+                  font-weight: 600;
+                  line-height: 1.75;
+                  letter-spacing: 0em;
+
+                  @include sp {
+                    font-size: calcFz(24);
+                  }
+
+                }
+
+              }
+
+              &_right{
+
+                img{
+                  width: clamp(10px,get_vw(80),80px);
+                  margin-right: 10px;
+
+                  @include sp {
+                    width: 65px;
+                    margin-right: 8px;
+                  }
+
+                  &:nth-last-child(1){
+                    margin-right: 0;
+                  }
+
+                }
+
+              }
+
+
+            }
+
+            &_txt{
+              display: flex;
+              justify-content: space-between;
+              margin-bottom: clamp(10px,get_vw(24),24px);
+
+              p{
+                font-size: calcFz(18);
+                font-family: $fontFamilyYuGo;
+                font-weight: 300;
+                line-height: 1.75;
+                letter-spacing: 0em;
+
+                @include sp {
+                  font-size: calcFz(15);
+                }
+
+                &.width{
+                  width: clamp(10px,get_vw(500),500px);
+                }
+
+              }
+
+              img{
+                width: clamp(10px,get_vw(290),290px);
+              }
+
+            }
+
+            &_logo{
+              display: flex;
+              align-items: center;
+              flex-wrap: wrap;
+              padding: clamp(10px,get_vw(10),10px) clamp(10px,get_vw(40),40px);
+              background-color: #DEEAE7;
+              border-radius: 10px;
+
+              @include sp {
+                justify-content: center;
+                padding: 10px;
+              }
+
+              p{
+                color: var(--main-color);
+                font-size: calcFz(20);
+                font-family: $fontFamilyYuGo;
+                font-weight: 600;
+                letter-spacing: 0em;
+                margin-right: clamp(10px,get_vw(40),40px);
+
+                @include sp {
+                  font-size: calcFz(15);
+                  width: 100%;
+                  text-align: center;
+                  margin: 0 auto 10px;
+                }
+
+              }
+
+              img{
+                width: clamp(10px,get_vw(130),130px);
+                margin-right: 10px;
+
+                @include sp {
+                  width: 100px;
+                  margin-right: 20px;
+                }
+
+                &:nth-last-child(1){
+                  margin-right: 0;
+                }
+
+                &.small{
+                  width: clamp(10px,get_vw(80),80px);
+
+                  @include sp {
+                    width: 60px;
+                  }
+
+                }
+
+              }
+
+            }
+
+          }
+
+          &_middle{
+
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: clamp(10px,get_vw(40),40px);
+
+            @include sp {
+              width: 100%;
+              margin: 0 auto;
+              flex-direction: column;
+              margin-bottom: 25px;
+            }
+
+            &_left{
+
+              border-radius: 10px;
+              width: clamp(10px,get_vw(420),420px);
+              border: 1px solid #419279;
+
+              @include sp {
+                width: 100%;
+                margin-bottom: 30px;
+              }
+
+              &_top{
+
+                border-radius: 10px 10px 0 0 ;
+                background-color: #009578;
+                text-align: center;
+                padding: 10px 0;
+
+                p{
+                  color: #fff;
+                  font-size: calcFz(20);
+                  font-family: $fontFamilyYuGo;
+                  font-weight: 600;
+                  letter-spacing: 0em;
+
+                  @include sp {
+                    font-size: calcFz(18);
+                  }
+
+                }
+
+              }
+
+              &_bottom{
+
+                background-color: #fff;
+                border-radius: 0 0 10px 10px;
+                padding: clamp(10px,get_vw(28),28px);
+
+                p{
+                  font-size: calcFz(15);
+                  font-family: $fontFamilyYuGo;
+                  line-height: 1.73;
+                  font-weight: 300;
+                  letter-spacing: 0em;
+                  margin-bottom: clamp(10px,get_vw(28),28px);
+
+                  &:nth-last-child(1){
+                    margin-bottom: 0;
+                  }
+
+                  @include sp {
+                    font-size: calcFz(14);
+                    margin-bottom: 24px;
+                  }
+
+                  &.green{
+                    color: #009578;
+                    font-weight: 600;
+                    margin-bottom: clamp(10px,get_vw(12),12px);
+                  }
+
+                }
+
+              }
+
+            }
+
+            &_right{
+
+              width: clamp(10px,get_vw(400),400px);
+
+              @include sp {
+                width: 100%;
+              }
+
+              &.sp_mb{
+
+                @include sp {
+                  margin-bottom: 25px;
+                }
+
+              }
+
+              &_txt{
+
+                display: flex;
+                margin-bottom: clamp(10px,get_vw(12),12px);
+
+                @include sp {
+                  margin-bottom: 5px;
+                }
+
+                img{
+                  width: clamp(10px,get_vw(15),15px);
+                  margin-right: 8px;
+
+                  @include sp {
+                    width: 10px;
+                  }
+
+                }
+
+                p{
+                  font-size: calcFz(19);
+                  color: #009578;
+                  font-weight: 600;
+                  line-height: 1.73;
+                  letter-spacing: 0em;
+
+                  @include sp {
+                    font-size: calcFz(15);
+                  }
+
+                }
+
+              }
+
+              &_img{
+
+                width: 100%;
+
+                img{
+                  width: 100%;
+                }
+
+              }
+
+            }
+
+          }
+
+          &_bottom{
+
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: clamp(10px,get_vw(40),40px);
+
+            @include sp {
+              width: 100%;
+              margin: 0 auto;
+              flex-direction: column;
+              margin-bottom: 25px;
+            }
+
+            &_left{
+
+              border-radius: 10px;
+              width: clamp(10px,get_vw(420),420px);
+              border: 1px solid #419279;
+
+              @include sp {
+                width: 100%;
+                margin-bottom: 30px;
+              }
+
+              &_top{
+
+                border-radius: 10px 10px 0 0 ;
+                background-color: #009578;
+                text-align: center;
+                padding: 10px 0;
+
+                p{
+                  color: #fff;
+                  font-size: calcFz(20);
+                  font-family: $fontFamilyYuGo;
+                  font-weight: 600;
+                  letter-spacing: 0em;
+
+                  @include sp {
+                    font-size: calcFz(18);
+                  }
+
+                }
+
+              }
+
+              &_bottom{
+
+                background-color: #fff;
+                border-radius: 0 0 10px 10px;
+                padding: clamp(10px,get_vw(28),28px);
+
+                p{
+                  font-size: calcFz(15);
+                  font-family: $fontFamilyYuGo;
+                  line-height: 1.73;
+                  font-weight: 300;
+                  letter-spacing: 0em;
+                  margin-bottom: clamp(10px,get_vw(28),28px);
+
+                  &:nth-last-child(1){
+                    margin-bottom: 0;
+                  }
+
+                  @include sp {
+                    font-size: calcFz(14);
+                    margin-bottom: 24px;
+                  }
+
+                  &.green{
+                    color: #009578;
+                    font-weight: 600;
+                    margin-bottom: clamp(10px,get_vw(12),12px);
+                  }
+
+                }
+
+              }
+
+            }
+
+            &_right{
+
+              width: clamp(10px,get_vw(400),400px);
+
+              @include sp {
+                width: 100%;
+              }
+
+              &.sp_mb{
+
+                @include sp {
+                  margin-bottom: 25px;
+                }
+
+              }
+
+              &_txt{
+
+                display: flex;
+                margin-bottom: clamp(10px,get_vw(12),12px);
+
+                @include sp {
+                  margin-bottom: 5px;
+                }
+
+                img{
+                  width: clamp(10px,get_vw(15),15px);
+                  margin-right: 8px;
+
+                  @include sp {
+                    width: 10px;
+                  }
+
+                }
+
+                p{
+                  font-size: calcFz(19);
+                  color: #009578;
+                  font-weight: 600;
+                  line-height: 1.73;
+                  letter-spacing: 0em;
+
+                  @include sp {
+                    font-size: calcFz(15);
+                  }
+
+                }
+
+              }
+
+              &_img{
+
+                width: 100%;
+
+                img{
+                  width: 100%;
+                }
+
+              }
+
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+
+}
