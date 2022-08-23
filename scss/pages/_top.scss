@@ -2022,11 +2022,11 @@
               }
 
               &:hover {
-                border: 1px solid var(--main-color); // 本番公開用
+                border: 1px solid var(--main-color); // 本番公開
                 cursor: pointer;
 
                 &:after {
-                  background-image: url(#{$img-root-dir}/icon/icon-arrow-circle-right--green.svg); // 本番公開用
+                  background-image: url(#{$img-root-dir}/icon/icon-arrow-circle-right--green.svg); // 本番公開
                 }
               }
 

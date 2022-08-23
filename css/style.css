@@ -663,6 +663,10 @@
           transform: translateY(-50%);
 }
 
+.test {
+  display: block;
+}
+
 .section-title__wrapper {
   position: relative;
 }

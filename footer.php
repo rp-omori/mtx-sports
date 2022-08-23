@@ -197,10 +197,10 @@ $rootDir = get_template_directory_uri();
               <a href="tel:0362725047" class="btn btn--white btn--tel_white sp">
                 <span></span>
               </a>
-              <a href="" class="btn btn--orange btn--web pc">
+              <a href="#" class="btn btn--orange btn--web pc">
                 <span>まずはWEB予約</span>
               </a>
-              <a href="" class="btn btn--orange btn--web sp">
+              <a href="#" class="btn btn--orange btn--web sp">
                 <span>WEB予約</span>
               </a>
               <a href="https://lin.ee/DhflNAe" class="btn btn--white btn--line pc">
