@@ -1,0 +1,353 @@
+<?php
+/**
+ * Template Name: privacy-policy
+ */
+
+get_header(); ?>
+<?php
+$rootDir = get_template_directory_uri();
+?>
+
+
+<main class="main">
+
+  <!-- 共通タイトル部分 -->
+  <?php get_template_part('component/c__bread_other'); ?>
+
+  <!-- コンテンツ部分 -->
+  <div id="introduce" class="introduce-contents">
+
+    <div class="introduce-top-wrapper">
+      <div class="introduce-top">
+        <p>STAFF</p>
+      </div>
+    </div>
+
+    <div class="introduce-top-lead">
+    <img class="pc" src="<?php echo $rootDir ?>/images/introduce/introduce-top-img.png" alt="">
+    <img class="sp" src="<?php echo $rootDir ?>/images/introduce/introduce-top-img_sp.png" alt="">
+    </div>
+
+    <div id="system" class="introduce-contents">
+      <div class="introduce-contents__inner">
+        <div class="introduce-contents__inner_ttl">
+          <p>院長</p>
+        </div>
+        <div class="introduce-contents__inner_box">
+          <div class="introduce-contents__inner_box_left">
+            <img src="<?php echo $rootDir ?>/images/introduce/staff_01.png" alt="">
+          </div>
+          <div class="introduce-contents__inner_box_right">
+            <div class="introduce-contents__inner_box_right_name">
+              <div class="introduce-contents__inner_box_right_name_top">
+                <div class="introduce-contents__inner_box_right_name_top_left">
+                  <p class="en">TOMIOKA</p>
+                  <p>富岡 義仁</p>
+                  <p class="small">とみおか よしひと</p>
+                </div>
+                <div class="introduce-contents__inner_box_right_name_top_right">
+                  <img src="<?php echo $rootDir ?>/images/introduce/method_01_white.png" alt="">
+                  </div>
+              </div>
+              <div class="introduce-contents__inner_box_right_name_bottom">
+                <p>担当領域：診察/動きの評価</p>
+              </div>
+            </div>
+            <div class="introduce-contents__inner_box_right_lead">
+              <p>
+                患者さんの悩みに寄り添い<br>
+                共に解決を目指します
+              </p>
+              <p class="small">
+                今までスムーズに繋げることが難しかった、医療機関での治療や運動療法と、パフォーマンスアップまでを一貫して診ることができる施設です。<br>
+                アスリートのみならず、ご高齢の方でも健康に生活する上で運動療法は非常に重要です。
+              </p>
+            </div>
+            <div class="introduce-contents__inner_box_right_license">
+              <p>・ 取得資格</p>
+              <ul>
+                <li>整形外科専門医</li>
+                <li>NATA Certified Athletic Trainer</li>
+                <li>(全米公認アスレティックトレーナー)</li>
+                <li>IOC Diploma in Sports Medicine</li>
+                <li>(国際オリンピック委員会公認スポーツドクター)</li>
+                <li>NASM Performance Enhancement Specialist</li>
+                <li>NASM Collective Excercise Specialist</li>
+                <li>SFMA Selective Functional Movement Assessment</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="introduce-contents__inner bg_white">
+        <div class="introduce-contents__inner_ttl pd_0">
+          <p class="green">監修医師</p>
+        </div>
+        <div class="introduce-contents__inner_box reverse">
+          <div class="introduce-contents__inner_box_left sp_right">
+            <img src="<?php echo $rootDir ?>/images/introduce/staff_02.png" alt="">
+          </div>
+          <div class="introduce-contents__inner_box_right reverse">
+            <div class="introduce-contents__inner_box_right_name">
+              <div class="introduce-contents__inner_box_right_name_top border_green">
+                <div class="introduce-contents__inner_box_right_name_top_left">
+                  <p class="en white">SERA</p>
+                  <p class="black">世良 泰</p>
+                  <p class="small black">せら やすし</p>
+                </div>
+                <div class="introduce-contents__inner_box_right_name_top_right">
+                  <img src="<?php echo $rootDir ?>/images/introduce/method_01_white.png" alt="">
+                </div>
+              </div>
+              <div class="introduce-contents__inner_box_right_name_bottom">
+                <p class="black">担当領域：診察/動きの評価</p>
+              </div>
+            </div>
+            <div class="introduce-contents__inner_box_right_lead">
+              <p class="green">
+                生活に最も身近な、真のスポーツ医学を<br>
+                日本そして世界で実践することを目指します
+              </p>
+              <p class="small black">
+                正しい医療を受けられず夢を諦めた選手、痛みは年齢のせいと諦めた方々を数多くみてきました。<br>
+                運動は飲み薬と同じかそれ以上の効果があります。<br>
+                保険診療の医療だけでは提供できない、全ての悩みに寄り添う真のスポーツ医学を全てのスタッフで提供します。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="introduce-contents__inner_box_license">
+              <p class="green">・ 取得資格</p>
+              <ul>
+                <li>日本整形外科学会専門医</li>
+                <li>日本内科学会認定内科医</li>
+                <li>公衆衛生学修士</li>
+                <li>International Olympic Committee Diploma in Sports Medicine</li>
+                <li>日本スポーツ協会公認スポーツドクター</li>
+                <li>日本医師会認定健康スポーツ医</li>
+                <li>日本整形外科学会認定スポーツ医</li>
+                <li>日本パラスポーツ協会公認障がい者スポーツ医</li>
+                <li>Performance Enhancement Specialist（National Academy of Sports Medicine）</li>
+                <li>Corrective Exercise Specialist（National Academy of Sports Medicine）</li>
+                <li>日本医師会認定産業医</li>
+                <li>MTX Academyチームドクター（ジム，野球，レスリング）</li>
+                <li>TWOLAPSチームドクター（陸上）</li>
+                <li>日本陸上連盟医事委員</li>
+                <li class="pc">　</li>
+                <li class="pc">　</li>
+              </ul>
+            </div>
+      </div>
+      <div class="introduce-contents__inner">
+        <div class="introduce-contents__inner_ttl">
+          <p>理学療法士</p>
+        </div>
+        <div class="introduce-contents__inner_box mb">
+          <div class="introduce-contents__inner_box_left">
+            <img src="<?php echo $rootDir ?>/images/introduce/staff_03.png" alt="">
+          </div>
+          <div class="introduce-contents__inner_box_right">
+            <div class="introduce-contents__inner_box_right_name">
+              <div class="introduce-contents__inner_box_right_name_top border_none">
+                <div class="introduce-contents__inner_box_right_name_top_left">
+                  <p class="en">NAMAE</p>
+                  <p>名前 名前</p>
+                  <p class="small">なまえ なまえ</p>
+                </div>
+                <div class="introduce-contents__inner_box_right_name_top_right">
+                  <img src="<?php echo $rootDir ?>/images/introduce/method_01_white.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="introduce-contents__inner_box_right_lead">
+              <p class="small">
+                医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="introduce-contents__inner_box reverse">
+          <div class="introduce-contents__inner_box_left sp_right">
+            <img src="<?php echo $rootDir ?>/images/introduce/staff_04.png" alt="">
+          </div>
+          <div class="introduce-contents__inner_box_right reverse">
+            <div class="introduce-contents__inner_box_right_name">
+              <div class="introduce-contents__inner_box_right_name_top border_none">
+                <div class="introduce-contents__inner_box_right_name_top_left">
+                  <p class="en">NAMAE</p>
+                  <p>名前 名前</p>
+                  <p class="small">なまえ なまえ</p>
+                </div>
+                <div class="introduce-contents__inner_box_right_name_top_right">
+                  <img src="<?php echo $rootDir ?>/images/introduce/method_01_white.png" alt="">
+                </div>
+              </div>
+              <!-- <div class="introduce-contents__inner_box_right_name_bottom">
+                <p>担当領域：診察/動きの評価</p>
+              </div> -->
+            </div>
+            <div class="introduce-contents__inner_box_right_lead">
+              <p class="small">
+                医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="introduce-contents__inner bg_white mb">
+        <div class="introduce-contents__inner_ttl pd_0">
+          <p class="green">MTXアカデミートレーナー　<br class="sp">- 強化 -</p>
+        </div>
+        <div class="introduce-contents__inner_box reverse">
+          <div class="introduce-contents__inner_box_left sp_right">
+            <img src="<?php echo $rootDir ?>/images/introduce/staff_05.png" alt="">
+          </div>
+          <div class="introduce-contents__inner_box_right reverse">
+            <div class="introduce-contents__inner_box_right_name">
+              <div class="introduce-contents__inner_box_right_name_top border_green">
+                <div class="introduce-contents__inner_box_right_name_top_left">
+                  <p class="en white">KIMURA</p>
+                  <p class="black">木村 國宏</p>
+                  <p class="small black">きむら まさひろ</p>
+                  <p class="degree">柔道整復師<br class="pc"><span class="sp" style="display: inline !important;">/</span>医療国家資格取得</p>
+                </div>
+                <div class="introduce-contents__inner_box_right_name_top_right">
+                  <img src="<?php echo $rootDir ?>/images/introduce/method_01_white.png" alt="">
+                  <img src="<?php echo $rootDir ?>/images/introduce/method_01_white.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="introduce-contents__inner_box_right_lead">
+              <p class="green">
+                私たちが目指すのは、<br>
+                “日本に、スポーツ医学を正しく広めること”です
+              </p>
+              <p class="small black">
+                私も柔道整復師として患者様と向き合っていく中で、必ずぶつかってきた事があります。それは「施術の限界」です。<br>
+                今回はその限界を突破するきっかけをドクターが作ってくれます。<br>
+                整骨院と整形外科との連携を今まで以上に身近にし、正確な診断のもと、さらに寄り添った患者様へのサポートをチーム一丸で行なっていきます。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="introduce-contents__inner bg_white pd_sp">
+        <div class="introduce-contents__inner_ttl pd_0">
+          <p class="green">MTXアカデミートレーナー　<br class="sp">- 回復 -</p>
+        </div>
+        <div class="introduce-contents__inner_box">
+          <div class="introduce-contents__inner_box_left sp_right">
+            <img src="<?php echo $rootDir ?>/images/introduce/staff_06.png" alt="">
+          </div>
+          <div class="introduce-contents__inner_box_right">
+            <div class="introduce-contents__inner_box_right_name">
+              <div class="introduce-contents__inner_box_right_name_top border_green">
+                <div class="introduce-contents__inner_box_right_name_top_left">
+                  <p class="en white">WATANABE</p>
+                  <p class="black">渡邊 健二</p>
+                  <p class="small black">わたなべ けんじ</p>
+                  <p class="degree less">柔道整復師</p>
+                </div>
+                <div class="introduce-contents__inner_box_right_name_top_right">
+                  <img src="<?php echo $rootDir ?>/images/introduce/method_01_white.png" alt="">
+                  <img src="<?php echo $rootDir ?>/images/introduce/method_01_white.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="introduce-contents__inner_box_right_lead">
+              <p class="green">
+                チーム一丸で<br>
+                患者様をサポートします
+              </p>
+              <p class="small black">
+                私も柔道整復師として患者様と向き合っていく中で、必ずぶつかってきた事があります。それは「施術の限界」です。<br>
+                今回はその限界を突破するきっかけをドクターが作ってくれます。<br>
+                整骨院と整形外科との連携を今まで以上に身近にし、正確な診断のもと、さらに寄り添った患者様へのサポートをチーム一丸で行なっていきます。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="introduce-contents__inner pd_more">
+        <div class="introduce-contents__inner_ttl">
+          <p>MTXアカデミートレーナー　<br class="sp">- トレーニング -</p>
+        </div>
+        <div class="introduce-contents__inner_box mb_more reverse">
+          <div class="introduce-contents__inner_box_left">
+            <img src="<?php echo $rootDir ?>/images/introduce/staff_07.png" alt="">
+          </div>
+          <div class="introduce-contents__inner_box_right reverse">
+            <div class="introduce-contents__inner_box_right_name">
+              <div class="introduce-contents__inner_box_right_name_top border_none">
+                <div class="introduce-contents__inner_box_right_name_top_left">
+                  <p class="en">TANABE</p>
+                  <p>田邊 大吾</p>
+                  <p class="small">たなべ だいご</p>
+                  <p class="degree more white">鍼灸師<br class="pc"><span class="sp" style="display: inline !important;">/</span>あん摩マッサージ指圧師</p>
+                </div>
+                <div class="introduce-contents__inner_box_right_name_top_right">
+                  <img src="<?php echo $rootDir ?>/images/introduce/method_01_white.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="introduce-contents__inner_box_right_lead">
+              <p>
+                一人一人に寄り添い最善の<br>
+                サポートを行います
+              </p>
+              <p class="small">
+                正しい情報や判断基準を得られず、繰り返し起こってしまう怪我に泣かされる子どもたちを、今までたくさん見てきました。<br>
+                同じことを繰り返さないために、ドクターの診察からリハビリ、競技復帰のためのトレーニングまで、専門家が連携を取りながら一人一人に寄り添い最善のサポートをいたします。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="introduce-contents__inner_ttl">
+          <p>MTXアカデミートレーナー　<br class="sp">- HAL -</p>
+        </div>
+        <div class="introduce-contents__inner_box mb">
+          <div class="introduce-contents__inner_box_left">
+            <img src="<?php echo $rootDir ?>/images/introduce/staff_08.png" alt="">
+          </div>
+          <div class="introduce-contents__inner_box_right">
+            <div class="introduce-contents__inner_box_right_name">
+              <div class="introduce-contents__inner_box_right_name_top border_none">
+                <div class="introduce-contents__inner_box_right_name_top_left">
+                  <p class="en">SUZUKI</p>
+                  <p>鈴木 昂輔</p>
+                  <p class="small">すずき こうすけ</p>
+                  <p class="degree less white">介護福祉士</p>
+                </div>
+                <div class="introduce-contents__inner_box_right_name_top_right">
+                  <img src="<?php echo $rootDir ?>/images/introduce/method_01_white.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="introduce-contents__inner_box_right_lead">
+              <p>
+                小学生からご高齢の方まで幅広い<br>
+                患者様の怪我や病気を治したいです
+              </p>
+              <p class="small">
+                病院で診察を受けてお薬をもらって帰る。<br>
+                これだけではなく、専門家が寄り添って<br>
+                社会復帰を出来るように、一人一人サポートいたします。<br>
+                <br>
+                怪我や病気に悩まされ家の中で生活している人が、身体を動かす大切さを知れる、小学生からご高齢の方まで幅広く利用できる施設を目指します。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <?php get_template_part('component/footer__other'); ?>
+
+
+
+  </div>
+
+</main>
+
+<?php get_footer(); ?>
