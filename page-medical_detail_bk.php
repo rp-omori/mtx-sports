@@ -15,19 +15,6 @@ $rootDir = get_template_directory_uri();
   <?php get_template_part('component/c__bread'); ?>
 
   <!-- コンテンツ部分 -->
-  <?php
-
-    $args = array(
-        'post_type' => 'medicaldetail',
-        'post_status' => 'publish', //取得するステータス。publishなら一般公開のもののみ
-    );
-
-    $my_query = new WP_Query($args);
-
-    if ($my_query->have_posts()): while ( $my_query->have_posts() ) : $my_query->the_post();
-
-  ?>
-
   <div id="medical-detail" class="medical-detail-contents">
 
     <div class="bg_img_left">
@@ -41,37 +28,34 @@ $rootDir = get_template_directory_uri();
     <div class="medical-detail-top-wrapper">
       <div class="medical-detail-top">
         <div class="medical-detail-top__left">
-          <!-- <img src="<?php echo $rootDir ?>/images/medical_detail/medical_detail_main_img.png" alt=""> -->
-          <img src="<?php the_field('body_diagram'); ?>" alt="">
+          <img src="<?php echo $rootDir ?>/images/medical_detail/medical_detail_main_img.png" alt="">
         </div>
         <div class="medical-detail-top__right">
           <div class="medical-detail-top__right_txtArea">
             <div class="medical-detail-top__right_txtArea_tab">
-              <!-- <p>スポーツによる関節の怪我・痛み</p> -->
-              <p><?php the_field('orange_tab'); ?></p>
+              <p>スポーツによる関節の怪我・痛み</p>
             </div>
             <div class="medical-detail-top__right_txtArea_ttl">
-              <!-- <p>野球肘</p> -->
-              <p><?php the_title(); ?></p>
+              <p>野球肘</p>
             </div>
             <div class="medical-detail-top__right_txtArea_txt">
-              <!-- <p>野球で多いですが、いろいろな種目で起きることがあります。無症状でも骨や軟骨が壊れていることもあり、早期発見が重要です。</p> -->
-              <p><?php the_field('lead_txt'); ?></p>
+              <p>野球で多いですが、いろいろな種目で起きることがあります。無症状でも骨や軟骨が壊れていることもあり、早期発見が重要です。</p>
             </div>
             <div class="medical-detail-top__right_txtArea_soreSpot">
               <p class="medical-detail-top__right_txtArea_soreSpot_sore">・痛む箇所</p>
               <div class="medical-detail-top__right_txtArea_soreSpot_spot">
                 <div class="medical-detail-top__right_txtArea_soreSpot_spot_detail">
-                  <!-- <p>肘</p> -->
-                  <p><?php the_field('sore_spot'); ?></p>
+                  <p>肘</p>
+                </div>
+                <div class="medical-detail-top__right_txtArea_soreSpot_spot_detail">
+                  <p>肘</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="medical-detail-top__img">
-          <!-- <img src="<?php echo $rootDir ?>/images/medical_detail/medical_detail_sub_img.png" alt=""> -->
-          <img src="<?php the_field('illustration'); ?>" alt="">
+          <img src="<?php echo $rootDir ?>/images/medical_detail/medical_detail_sub_img.png" alt="">
         </div>
       </div>
     </div>
@@ -106,11 +90,10 @@ $rootDir = get_template_directory_uri();
           </div>
         </div>
         <div class="medical-detail-menuArea__box_contents">
-          <!-- <p>
+          <p>
             投球時に肘痛が出現します。疼痛の出現部位により様々な原因が考えられます。<br>
             最初期には最初期には肘痛がない場合もあり、早期発見、早期治療が非常に重要になります。
-          </p> -->
-          <p><?php the_field('symptoms'); ?></p>
+          </p>
         </div>
       </div>
       <div id="cause" class="medical-detail-menuArea__box">
@@ -123,7 +106,7 @@ $rootDir = get_template_directory_uri();
           </div>
         </div>
         <div class="medical-detail-menuArea__box_contents">
-          <!-- <p>
+          <p>
             投球動作の繰り返しによって起きる肘周囲の障害ですが、骨や筋力、投球フォームが未熟な小中学生に起きやすいとされています。無理なフォームによる靭帯へのストレスや、未熟な骨に対する牽引ストレスが主な原因と言われています。
           </p>
           <ul>
@@ -133,8 +116,7 @@ $rootDir = get_template_directory_uri();
           </ul>
           <p>
             内側型、外側型、後方型に分けられます。筋肉の引っ張る力により骨に繰り返しのストレスがかかって骨折を骨折を起こしたり、無理のあるフォームで靭帯にストレスがかってしまうこともあります。
-          </p> -->
-          <p><?php the_field('cause'); ?></p>
+          </p>
         </div>
       </div>
       <div id="method" class="medical-detail-menuArea__box">
@@ -147,7 +129,7 @@ $rootDir = get_template_directory_uri();
           </div>
         </div>
         <div class="medical-detail-menuArea__box_contents">
-          <!-- <p>
+          <p>
             早期発見のためのエコー検査を行うことができます。
           </p>
           <p>
@@ -155,8 +137,7 @@ $rootDir = get_template_directory_uri();
           </p>
           <p>
             疼痛が消失したら、投球フォームの修正を行いながら徐々に球数、距離を増やしていきます。MTX Academyのstrength, performance部門と連携を行いながら行いながら治療ができます。
-          </p> -->
-          <p><?php the_field('method'); ?></p>
+          </p>
         </div>
       </div>
       <div id="menu" class="medical-detail-menuArea__box">
@@ -170,15 +151,7 @@ $rootDir = get_template_directory_uri();
         </div>
         <div class="medical-detail-menuArea__box_contents">
           <div class="index_btn_wrapper">
-            <?php if(have_rows('treatment_menu')): ?>
-              <?php while(have_rows('treatment_menu')): the_row(); ?>
-            <a href="<?php the_sub_field("menu_link") ?>" class="index_btn">
-              <p><?php the_sub_field("menu_name") ?></p>
-              <img src="<?php echo $rootDir ?>/images/medical_detail/medical_detail_btn_right.png" alt="">
-            </a>
-              <?php endwhile; ?>
-            <?php endif;?>
-            <!-- <a href="#" class="index_btn">
+            <a href="#" class="index_btn">
               <p>体外衝撃波</p>
               <img src="<?php echo $rootDir ?>/images/medical_detail/medical_detail_btn_right.png" alt="">
             </a>
@@ -193,7 +166,7 @@ $rootDir = get_template_directory_uri();
             <a href="#" class="index_btn">
               <p>再生医療</p>
               <img src="<?php echo $rootDir ?>/images/medical_detail/medical_detail_btn_right.png" alt="">
-            </a> -->
+            </a>
           </div>
         </div>
       </div>
@@ -213,9 +186,6 @@ $rootDir = get_template_directory_uri();
 
 
   </div>
-
-  <?php endwhile; ?>
-  <?php endif;?>
 
 </main>
 
