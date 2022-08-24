@@ -2545,6 +2545,8 @@
   padding: clamp(10px, 1.3020833333vw, 20px) 0;
   background-color: var(--main-title-background-color);
   border-radius: 5px 5px 0 0;
+  border: 1px solid #CADAD4;
+  border-bottom: 0;
 }
 .price-contents .contents-box_cat p {
   font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
@@ -2557,17 +2559,16 @@
   background-color: #FFFFFF;
   border: 1px solid #CADAD4;
   border-radius: 0 0 5px 5px;
-  margin-bottom: clamp(10px, 1.3020833333vw, 20px);
+  border-top: 0;
 }
 .price-contents .contents-box_menu .menu_inner {
   width: 100%;
-  height: clamp(10px, 3.2552083333vw, 50px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   border-top: 1px solid #CEDCD9;
 }
 .price-contents .contents-box_menu .menu_inner:nth-child(1) {
@@ -2577,7 +2578,6 @@
   width: clamp(10px, 30.5338541667vw, 469px);
   text-align: center;
   position: relative;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2588,28 +2588,41 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 clamp(10px, 1.3020833333vw, 20px);
+  padding: clamp(10px, 1.3020833333vw, 20px) clamp(10px, 1.3020833333vw, 20px);
+  border-right: 1px solid #CEDCD9;
 }
-.price-contents .contents-box_menu .menu_inner_name::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: block;
-  width: 1px;
-  height: 100%;
-  background-color: #CEDCD9;
+.price-contents .contents-box_menu .menu_inner_name.width {
+  width: clamp(10px, 13.0208333333vw, 200px);
+  padding: clamp(10px, 1.3020833333vw, 20px) clamp(10px, 1.3020833333vw, 20px) clamp(10px, 1.3671875vw, 21px);
 }
 .price-contents .contents-box_menu .menu_inner_name p {
   font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
   font-size: clamp(10px, 1.8rem, 18px);
-  font-weight: bold;
+  font-weight: 600;
   color: #009578;
+  line-height: 1.6;
+}
+.price-contents .contents-box_menu .menu_inner_name p.part {
+  margin-top: clamp(10px, 0.9765625vw, 15px);
+  font-size: clamp(10px, 1.4rem, 14px);
+  font-weight: 300;
+  color: #6A8381;
+  line-height: 1.6;
+}
+.price-contents .contents-box_menu .menu_inner_name p.tab {
+  width: clamp(10px, 7.4869791667vw, 115px);
+  margin: 0 auto;
+  font-size: clamp(10px, 1.2rem, 12px);
+  font-weight: 600;
+  color: #fff;
+  background-color: #E5923E;
+  line-height: 1.6;
+  margin-bottom: 10px;
 }
 .price-contents .contents-box_menu .menu_inner_minute {
   width: clamp(10px, 8.0729166667vw, 124px);
+  text-align: center;
   position: relative;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2617,34 +2630,26 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 clamp(10px, 1.3020833333vw, 20px);
+  padding: clamp(10px, 1.3020833333vw, 20px);
+  border-right: 1px solid #CEDCD9;
 }
-.price-contents .contents-box_menu .menu_inner_minute::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: block;
-  width: 1px;
-  height: 100%;
-  background-color: #CEDCD9;
+.price-contents .contents-box_menu .menu_inner_minute.width {
+  width: clamp(10px, 6.5104166667vw, 100px);
+  padding: clamp(10px, 1.3020833333vw, 20px) clamp(10px, 1.3020833333vw, 20px) clamp(10px, 1.3671875vw, 21px);
 }
 .price-contents .contents-box_menu .menu_inner_minute p {
   font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
   font-size: clamp(10px, 1.8rem, 18px);
   font-weight: 300;
+  line-height: 1.6;
 }
-.price-contents .contents-box_menu .menu_inner_price {
-  width: clamp(10px, 26.6276041667vw, 409px);
+.price-contents .contents-box_menu .menu_inner_site {
+  width: clamp(10px, 8.0729166667vw, 124px);
   text-align: center;
   position: relative;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2652,18 +2657,46 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 clamp(10px, 1.3020833333vw, 20px);
+  padding: clamp(10px, 1.3020833333vw, 20px);
+  border-right: 1px solid #CEDCD9;
+}
+.price-contents .contents-box_menu .menu_inner_site p {
+  font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-size: clamp(10px, 1.8rem, 18px);
+  font-weight: 300;
+  line-height: 1.6;
+}
+.price-contents .contents-box_menu .menu_inner_price {
+  width: clamp(10px, 26.6276041667vw, 409px);
+  text-align: center;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: clamp(10px, 0.9765625vw, 15px) clamp(10px, 1.3020833333vw, 20px);
+}
+.price-contents .contents-box_menu .menu_inner_price.width {
+  width: clamp(10px, 20.3776041667vw, 313px);
+  padding: clamp(10px, 1.3020833333vw, 20px) clamp(10px, 1.3020833333vw, 20px) clamp(10px, 1.3671875vw, 21px);
 }
 .price-contents .contents-box_menu .menu_inner_price p {
   font-family: din-2014, sans-serif;
   font-size: clamp(10px, 1.8rem, 18px);
   font-weight: 400;
+  line-height: 1.6;
 }
 .price-contents .contents-box_caution {
   display: -webkit-box;
@@ -2672,6 +2705,7 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  margin-top: clamp(10px, 1.3020833333vw, 20px);
 }
 .price-contents .contents-box_caution_inner {
   display: -webkit-box;
@@ -4618,9 +4652,6 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .price-contents .contents-box_menu .menu_inner_name::after {
-    display: none;
-  }
   .price-contents .contents-box_menu .menu_inner_name {
     width: 100%;
     padding: 12.5px 20px;
@@ -4633,9 +4664,6 @@
     font-size: clamp(10px, 1.5rem, 15px);
     line-height: 1.7;
   }
-  .price-contents .contents-box_menu .menu_inner_minute::after {
-    display: none;
-  }
   .price-contents .contents-box_menu .menu_inner_minute {
     width: 37%;
     padding: 0;
@@ -4646,6 +4674,19 @@
     border-right: 1px solid #CEDCD9;
   }
   .price-contents .contents-box_menu .menu_inner_minute p {
+    font-size: clamp(10px, 1.7rem, 17px);
+    line-height: 1.7;
+  }
+  .price-contents .contents-box_menu .menu_inner_site {
+    width: 37%;
+    padding: 0;
+    padding: 12.5px 20px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    border-right: 1px solid #CEDCD9;
+  }
+  .price-contents .contents-box_menu .menu_inner_site p {
     font-size: clamp(10px, 1.7rem, 17px);
     line-height: 1.7;
   }

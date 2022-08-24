@@ -25,6 +25,8 @@
       padding: clamp(10px,get_vw(20),20px) 0;
       background-color: var(--main-title-background-color);
       border-radius: 5px 5px 0 0;
+      border: 1px solid #CADAD4;
+      border-bottom: 0;
 
       @include sp {
         padding: 8px 0;
@@ -51,7 +53,7 @@
       background-color: #FFFFFF;
       border: 1px solid #CADAD4;
       border-radius: 0 0 5px 5px;
-      margin-bottom: clamp(10px,get_vw(20),20px);
+      border-top: 0;
 
 
       @include sp {
@@ -60,9 +62,8 @@
 
       .menu_inner{
         width: 100%;
-        height: clamp(10px,get_vw(50),50px);
         display: flex;
-        align-items: center;
+        align-items:stretch;
         border-top: 1px solid #CEDCD9;
 
         @include sp {
@@ -82,26 +83,15 @@
           width: clamp(10px,get_vw(469),469px);
           text-align: center;
           position: relative;
-          height: 100%;
           display: flex;
           flex-direction: column;
           justify-content: center;
-          padding: 0 clamp(10px,get_vw(20),20px);
+          padding:clamp(10px,get_vw(20),20px) clamp(10px,get_vw(20),20px);
+          border-right: 1px solid #CEDCD9;
 
-          &::after{
-            content: "";
-            position: absolute;
-            top: 0;
-            right: 0;
-            display: block;
-            width: 1px;
-            height: 100%;
-            background-color: #CEDCD9;
-
-            @include sp {
-              display: none;
-            }
-
+          &.width{
+            width: clamp(10px,get_vw(200),200px);
+            padding: clamp(10px,get_vw(20),20px) clamp(10px,get_vw(20),20px) clamp(10px,get_vw(21),21px);
           }
 
           @include sp {
@@ -114,8 +104,28 @@
           p{
             font-family: $fontFamilyYuGo;
             font-size: calcFz(18);
-            font-weight: bold;
+            font-weight: 600;
             color: #009578;
+            line-height: 1.6;
+
+            &.part{
+              margin-top: clamp(10px,get_vw(15),15px);
+              font-size: calcFz(14);
+              font-weight: 300;
+              color: #6A8381;
+              line-height: 1.6;
+            }
+
+            &.tab{
+              width: clamp(10px,get_vw(115),115px);
+              margin: 0 auto;
+              font-size: calcFz(12);
+              font-weight: 600;
+              color: #fff;
+              background-color: #E5923E;
+              line-height: 1.6;
+              margin-bottom: 10px;
+            }
 
             @include sp {
               font-size: calcFz(15);
@@ -129,29 +139,19 @@
         &_minute{
 
           width: clamp(10px,get_vw(124),124px);
+          text-align: center;
           position: relative;
-          height: 100%;
           display: flex;
           flex-direction: column;
-          align-items: flex-start;
           justify-content: center;
-          padding: 0 clamp(10px,get_vw(20),20px);
+          padding: clamp(10px,get_vw(20),20px);
+          border-right: 1px solid #CEDCD9;
 
-          &::after{
-            content: "";
-            position: absolute;
-            top: 0;
-            right: 0;
-            display: block;
-            width: 1px;
-            height: 100%;
-            background-color: #CEDCD9;
-
-            @include sp {
-              display: none;
-            }
-
+          &.width{
+            width: clamp(10px,get_vw(100),100px);
+            padding: clamp(10px,get_vw(20),20px) clamp(10px,get_vw(20),20px) clamp(10px,get_vw(21),21px);
           }
+
 
           @include sp {
             width: 37%;
@@ -165,6 +165,42 @@
             font-family: $fontFamilyYuGo;
             font-size: calcFz(18);
             font-weight: 300;
+            line-height: 1.6;
+
+            @include sp {
+              font-size: calcFz(17);
+              line-height: 1.7;
+            }
+
+          }
+
+        }
+
+        &_site{
+
+          width: clamp(10px,get_vw(124),124px);
+          text-align: center;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: clamp(10px,get_vw(20),20px);
+          border-right: 1px solid #CEDCD9;
+
+
+          @include sp {
+            width: 37%;
+            padding: 0;
+            padding: 12.5px 20px;
+            align-items: flex-start;
+            border-right: 1px solid #CEDCD9;
+          }
+
+          p{
+            font-family: $fontFamilyYuGo;
+            font-size: calcFz(18);
+            font-weight: 300;
+            line-height: 1.6;
 
             @include sp {
               font-size: calcFz(17);
@@ -180,12 +216,16 @@
           width: clamp(10px,get_vw(409),409px);
           text-align: center;
           position: relative;
-          height: 100%;
           display: flex;
           flex-direction: column;
-          align-items: flex-end;
           justify-content: center;
-          padding: 0 clamp(10px,get_vw(20),20px);
+          align-items: flex-end;
+          padding:clamp(10px,get_vw(15),15px) clamp(10px,get_vw(20),20px);
+
+          &.width{
+            width: clamp(10px,get_vw(313),313px);
+            padding: clamp(10px,get_vw(20),20px) clamp(10px,get_vw(20),20px) clamp(10px,get_vw(21),21px);
+          }
 
           @include sp {
             width: auto;
@@ -196,6 +236,7 @@
             font-family: $fontFamilyDin2014;
             font-size: calcFz(18);
             font-weight: 400;
+            line-height: 1.6;
 
             @include sp {
               font-size: calcFz(17);
@@ -213,6 +254,7 @@
     &_caution{
       display: flex;
       justify-content: flex-start;
+      margin-top: clamp(10px,get_vw(20),20px);
 
       &_inner{
         display: flex;

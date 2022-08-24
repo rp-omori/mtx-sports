@@ -50,6 +50,13 @@ $rootDir = get_template_directory_uri();
         </a>
       </div>
     </div>
+
+    <div class="contents-box">
+      <div class="contents-box_cat">
+        <p>再生医療</p>
+      </div>
+    </div>
+
   </div>
 
   <!-- footer手前の２つ並びのメニュー -->
