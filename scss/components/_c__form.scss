@@ -1,0 +1,127 @@
+.form-group {
+  .form-group__head {
+    display: flex;
+    margin-bottom: get_vw(12);
+    align-items: center;
+
+    @include sp {
+      margin-bottom: get_vw(8, 375);
+    }
+  }
+
+  .form-label {
+    margin-right: get_vw(20);
+    font-size: calcFz(20);
+    font-weight: bold;
+
+    @include sp {
+      margin-right: get_vw(12, 375);
+      font-size: calcFz(15);
+    }
+  }
+
+  .form-badge {
+    padding: get_vw(8) get_vw(20);
+    border-radius: 2px;
+    color: var(--main-color-white);
+    font-size: calcFz(14);
+    font-weight: bold;
+
+    @include sp {
+      padding: get_vw(3, 375) get_vw(8, 375);
+      font-size: calcFz(12);
+    }
+
+    &.form-badge--required {
+      background: var(--note-red);
+    }
+
+    &.form-badge--optional {
+      background: #9DA7A6;
+    }
+  }
+
+  .form-group__body {
+    width: 100%;
+  }
+
+  .form-select-wrapper {
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: get_vw(12);
+      height: get_vw(7);
+      top: 50%;
+      right: get_vw(24);
+      transform: translateY(-50%);
+      background-image: url(#{$img-root-dir}/icon/icon-arrow-bottom--black.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      @include sp {
+        width: get_vw(7, 375);
+        height: get_vw(4, 375);
+        right: get_vw(12, 375);
+      }
+    }
+  }
+
+  .form-input {
+    width: 100%;
+    padding: get_vw(30) get_vw(40);
+    background: #EFF4F3;
+    border: 1px solid #CADDD9;
+    border-radius: 5px;
+    color: var(--main-color-black);
+    font-size: calcFz(18);
+    appearance: none;
+    box-sizing: border-box;
+
+    @include sp {
+      padding: get_vw(16, 375);
+      font-size: calcFz(15);
+    }
+
+    &::placeholder {
+      color: #C6C6C6;
+      font-weight: 400;
+    }
+
+    &:focus-visible {
+      outline: var(--main-color) auto 1px;
+    }
+  }
+
+  textarea {
+    resize: vertical;
+  }
+}
+
+.form-checkbox {
+  label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    input {
+      margin: 0;
+      cursor: pointer;
+    }
+
+    span {
+      display: block;
+      margin-left: get_vw(8);
+      font-size: calcFz(18);
+      font-weight: bold;
+      cursor: pointer;
+
+      @include sp {
+        margin-left: get_vw(6, 375);
+        font-size: calcFz(16);
+      }
+    }
+  }
+}
