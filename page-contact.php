@@ -104,9 +104,14 @@ $rootDir = get_template_directory_uri();
                 <div class="form-select-wrapper w520">
                   <select class="form-input" name="age" id="age">
                     <option selected>---</option>
-                    <option value="1900">1900</option>
-                    <option value="1902">1901</option>
-                    <option value="1903">1903</option>
+                    <option value="20代">20代</option>
+                    <option value="30代">30代</option>
+                    <option value="40代">40代</option>
+                    <option value="50代">50代</option>
+                    <option value="60代">60代</option>
+                    <option value="70代">70代</option>
+                    <option value="80代">80代</option>
+                    <option value="90代">90代</option>
                   </select>
                 </div>
               </div>

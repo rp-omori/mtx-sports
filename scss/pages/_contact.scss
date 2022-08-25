@@ -305,3 +305,99 @@
     }
   }
 }
+
+.contact-confirm {
+  background: var(--main-color-white);
+
+  @include sp {
+    font-family: $fontFamilyHiraGo;
+  }
+
+  .contact-confirm__inner {
+    width: 52%;
+    margin: 0 auto;
+    padding: get_vw(100) 0 get_vw(200);
+
+    @include sp {
+      width: 89%;
+      padding: get_vw(60, 375) 0 get_vw(100, 375);
+    }
+  }
+
+  .contact-confirm__text {
+    margin-bottom: get_vw(100);
+    font-size: calcFz(20);
+    font-weight: bold;
+    text-align: center;
+
+    @include sp {
+      margin-bottom: get_vw(60, 375);
+      font-size: calcFz(15);
+      line-height: 1.6;
+      text-align: left;
+    }
+  }
+
+  .contact-confirm__body {
+    margin-top: get_vw(-35);
+    margin-bottom: get_vw(80);
+
+    @include sp {
+      margin-top: get_vw(-20, 375);
+      margin-bottom: get_vw(30, 375);
+    }
+  }
+
+  .contact-confirm__list {
+    .contact-confirm__item {
+      display: flex;
+      padding: get_vw(35) 0;
+      align-items: flex-start;
+      border-bottom: 1px solid #CADAD4;
+
+      @include sp {
+        padding: get_vw(20, 375) get_vw(10, 375);
+        flex-direction: column;
+      }
+
+      .contact-confirm__item-head {
+        min-width: get_vw(264);
+        font-size: calcFz(20);
+        font-weight: bold;
+        line-height: 1.7;
+
+        @include sp {
+          min-width: initial;
+          margin-bottom: get_vw(20, 375);
+          font-size: calcFz(15);
+          line-height: 1.6;
+        }
+      }
+
+      .contact-confirm__item-text {
+        font-size: calcFz(18);
+        line-height: 1.7;
+
+        @include sp {
+          padding-left: 1em;
+          font-size: calcFz(15);
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+
+  .contact-confirm__btn {
+    .btn {
+      margin: 0 auto;
+
+      &:after {
+        content: none;
+      }
+
+      p {
+        color: var(--main-color-white);
+      }
+    }
+  }
+}
