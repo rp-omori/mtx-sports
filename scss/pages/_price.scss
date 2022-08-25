@@ -83,7 +83,7 @@
           &_name{
 
             width: 47%;
-            position: relative;
+            vertical-align: middle;
 
             &.width{
               width: 23.5%;
@@ -101,10 +101,7 @@
             .flex{
 
               width: 85%;
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%,-50%);
+              margin: 0 auto;
 
               @include sp {
                 width: 100%;
@@ -117,8 +114,11 @@
 
               &_box{
 
+                width: 100%;
+
                 @include sp {
                   width: 50%;
+                  margin: 0 auto 0 0;
                 }
 
                 .orange_tab{
@@ -232,7 +232,7 @@
                 position: static;
                 width: 100%;
                 transform: translate(0,0);
-                font-size: calcFz(15);
+                font-size: calcFz(14);
               }
 
             }
@@ -278,7 +278,7 @@
                 position: static;
                 width: 100%;
                 transform: translate(0,0);
-                font-size: calcFz(15);
+                font-size: calcFz(14);
               }
 
             }
@@ -288,6 +288,7 @@
           &_exp{
 
             position: relative;
+            vertical-align: middle;
 
             @include sp {
               width: 100%;
@@ -295,10 +296,11 @@
 
             p{
               width: 85%;
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%,-50%);
+              margin: 0 auto;
+              // position: absolute;
+              // top: 50%;
+              // left: 50%;
+              // transform: translate(-50%,-50%);
               font-family: $fontFamilyYuGo;
               font-size: calcFz(15);
               font-weight: 300;
@@ -351,6 +353,15 @@
       right: 0;
       display: flex;
       align-items: center;
+
+      &.sp_btn{
+        @include sp {
+          p{
+            text-align: left;
+            line-height: 1.6;
+          }
+        }
+      }
 
       @include sp {
         position: static;

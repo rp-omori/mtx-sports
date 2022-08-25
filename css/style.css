@@ -2598,18 +2598,17 @@
 }
 .price-contents .contents-box_menu__inner_box_name {
   width: 47%;
-  position: relative;
+  vertical-align: middle;
 }
 .price-contents .contents-box_menu__inner_box_name.width {
   width: 23.5%;
 }
 .price-contents .contents-box_menu__inner_box_name .flex {
   width: 85%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  margin: 0 auto;
+}
+.price-contents .contents-box_menu__inner_box_name .flex_box {
+  width: 100%;
 }
 .price-contents .contents-box_menu__inner_box_name .flex_box .orange_tab {
   width: 60%;
@@ -2698,14 +2697,11 @@
 }
 .price-contents .contents-box_menu__inner_box_exp {
   position: relative;
+  vertical-align: middle;
 }
 .price-contents .contents-box_menu__inner_box_exp p {
   width: 85%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  margin: 0 auto;
   font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
   font-size: clamp(10px, 1.5rem, 15px);
   font-weight: 300;
@@ -5653,6 +5649,7 @@ td, th {
   }
   .price-contents .contents-box_menu__inner_box_name .flex_box {
     width: 50%;
+    margin: 0 auto 0 0;
   }
   .price-contents .contents-box_menu__inner_box_name .flex_box .orange_tab {
     width: 70%;
@@ -5689,7 +5686,7 @@ td, th {
     width: 100%;
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
-    font-size: clamp(10px, 1.5rem, 15px);
+    font-size: clamp(10px, 1.4rem, 14px);
   }
   .price-contents .contents-box_menu__inner_box_price {
     width: 55%;
@@ -5699,7 +5696,7 @@ td, th {
     width: 100%;
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
-    font-size: clamp(10px, 1.5rem, 15px);
+    font-size: clamp(10px, 1.4rem, 14px);
   }
   .price-contents .contents-box_menu__inner_box_exp {
     width: 100%;
@@ -5716,6 +5713,10 @@ td, th {
   }
   .price-contents .contents-box_caution p {
     font-size: clamp(10px, 1.4rem, 14px);
+  }
+  .price-contents .contents-box_btn.sp_btn p {
+    text-align: left;
+    line-height: 1.6;
   }
   .price-contents .contents-box_btn {
     position: static;

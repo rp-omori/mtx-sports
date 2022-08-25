@@ -288,8 +288,10 @@ $rootDir = get_template_directory_uri();
                 </div>
               </div>
             </td>
-            <td class="contents-box_menu__inner_box_exp"></td>
-            <td class="contents-box_menu__inner_box_price width" rowspan="4"><p>※セットでのご提案がベースとなります</p></td>
+            <td class="contents-box_menu__inner_box_exp">
+              <p>※セットでのご提案がベースとなります</p>
+            </td>
+            <!-- <td class="contents-box_menu__inner_box_price width" rowspan="4"><p>※セットでのご提案がベースとなります</p></td> -->
           </tr>
           <tr class="contents-box_menu__inner_box">
             <td class="contents-box_menu__inner_box_name">
@@ -299,7 +301,9 @@ $rootDir = get_template_directory_uri();
                 </div>
               </div>
             </td>
-            <td class="contents-box_menu__inner_box_exp"></td>
+            <td class="contents-box_menu__inner_box_exp">
+              <p>※セットでのご提案がベースとなります</p>
+            </td>
           </tr>
           <tr class="contents-box_menu__inner_box">
             <td class="contents-box_menu__inner_box_name" rowspan="2">
@@ -309,10 +313,16 @@ $rootDir = get_template_directory_uri();
                 </div>
               </div>
             </td>
-            <td class="contents-box_menu__inner_box_exp"><p>トレーナーによる強化・トレーニング</p></td>
+            <td class="contents-box_menu__inner_box_exp">
+              <p>トレーナーによる強化・トレーニング</p>
+              <p>※セットでのご提案がベースとなります</p>
+            </td>
           </tr>
           <tr class="contents-box_menu__inner_box">
-            <td class="contents-box_menu__inner_box_exp"><p>HAL</p></td>
+            <td class="contents-box_menu__inner_box_exp">
+              <p>HAL</p>
+              <p>※セットでのご提案がベースとなります</p>
+            </td>
           </tr>
         </tbody>
       </table>
@@ -322,6 +332,131 @@ $rootDir = get_template_directory_uri();
       <a href="" class="contents-box_btn">
         <img src="<?php echo $rootDir ?>/images/price/price_btn.png" alt="">
         <p>運動療法についてはこちら</p>
+      </a>
+    </div>
+
+    <div class="contents-box">
+      <div class="contents-box_cat">
+        <p>物理療法</p>
+      </div>
+      <table class="contents-box_menu">
+        <tbody class="contents-box_menu__inner">
+          <tr class="contents-box_menu__inner_box">
+            <td class="contents-box_menu__inner_box_name" rowspan="3">
+              <div class="flex">
+                <div class="flex_box">
+                  <p>体外衝撃波(収束型）</p>
+                </div>
+              </div>
+            </td>
+            <td class="contents-box_menu__inner_box_minute"><p>1回</p></td>
+            <td class="contents-box_menu__inner_box_price"><p>¥15,000</p></td>
+          </tr>
+          <tr class="contents-box_menu__inner_box">
+            <td class="contents-box_menu__inner_box_minute"><p>3回セット</p></td>
+            <td class="contents-box_menu__inner_box_price"><p>¥40,000</p></td>
+          </tr>
+          <tr class="contents-box_menu__inner_box">
+            <td class="contents-box_menu__inner_box_minute"><p>5回セット</p></td>
+            <td class="contents-box_menu__inner_box_price"><p>¥60,000</p></td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="contents-box_menu">
+        <tbody class="contents-box_menu__inner">
+          <tr class="contents-box_menu__inner_box">
+            <td class="contents-box_menu__inner_box_name">
+              <div class="flex">
+                <div class="flex_box">
+                  <p>MTXアカデミー</p>
+                </div>
+              </div>
+            </td>
+            <td class="contents-box_menu__inner_box_exp">
+              <p>
+                新治療器と手技を併せたMTX独自の治療（LIPUS等）<br>
+                ※治療法により異なります
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="contents-box_caution">
+        <p>　</p>
+      </div>
+      <a href="" class="contents-box_btn">
+        <img src="<?php echo $rootDir ?>/images/price/price_btn.png" alt="">
+        <p>物理療法についてはこちら</p>
+      </a>
+    </div>
+
+    <div class="contents-box">
+      <div class="contents-box_cat">
+        <p>再生医療</p>
+      </div>
+      <table class="contents-box_menu">
+        <tbody class="contents-box_menu__inner">
+          <tr class="contents-box_menu__inner_box">
+            <td class="contents-box_menu__inner_box_name width" rowspan="1">
+              <div class="flex">
+                <div class="flex_box">
+                  <p>サイレントマニピュレーション（ブロック＋手技）</p>
+                </div>
+              </div>
+            </td>
+            <td class="contents-box_menu__inner_box_part">
+              <p>肩</p>
+            </td>
+            <td class="contents-box_menu__inner_box_minute">
+              <p>1回</p>
+            </td>
+            <td class="contents-box_menu__inner_box_price">
+              <p>¥150,000</p>
+            </td>
+          </tr>
+          <tr class="contents-box_menu__inner_box">
+            <td class="contents-box_menu__inner_box_name width" rowspan="1">
+              <div class="flex">
+                <div class="flex_box">
+                  <p>ボツリヌス注射（脳梗塞などの痙縮）</p>
+                </div>
+              </div>
+            </td>
+            <td class="contents-box_menu__inner_box_part">
+              <p>1部位</p>
+            </td>
+            <td class="contents-box_menu__inner_box_minute">
+              <p>1回</p>
+            </td>
+            <td class="contents-box_menu__inner_box_price">
+              <p>※仕入れ価格次第で決定</p>
+            </td>
+          </tr>
+          <tr class="contents-box_menu__inner_box">
+            <td class="contents-box_menu__inner_box_name width" rowspan="1">
+              <div class="flex">
+                <div class="flex_box">
+                  <p>幹細胞培養上清液 点滴</p>
+                </div>
+              </div>
+            </td>
+            <td class="contents-box_menu__inner_box_part">
+              <p>-</p>
+            </td>
+            <td class="contents-box_menu__inner_box_minute">
+              <p>1ml</p>
+            </td>
+            <td class="contents-box_menu__inner_box_price">
+              <p>¥30,000</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="contents-box_caution">
+        <p>※オープニング価格は年内まで。</p>
+      </div>
+      <a href="" class="contents-box_btn sp_btn">
+        <p>その他オプション等については、お問い合わせください。</p>
       </a>
     </div>
 
