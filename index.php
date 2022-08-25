@@ -656,10 +656,10 @@ $rootDir = get_template_directory_uri();
               </div>
               <div class="clinic-features__sub-title fade-anime-text js-titleAnimationTarget">
                 日本に4台しかない最先端機器<br>
-                “ダイナミック・デバイス（DD）”
+                “DDシステム”
               </div>
               <p class="clinic-features__04-text fade-anime-text js-titleAnimationTarget">
-                人工知能が搭載されたダイナミック・デバイス（DD）。<br>
+                人工知能が搭載されたDDシステム。<br>
                 運動能力を数値化することが可能なため、パフォーマンス向上、再生医療と組み合わせての症状改善に向けたリカバリープログラムなど、多岐にわたって活用が可能です。<br>
                 その他、当クリニックでは運動機能の状態を評価（数値化）する機器としても活用します。
               </p>
@@ -730,7 +730,7 @@ $rootDir = get_template_directory_uri();
                 医師が診察・評価に基づいて運動療法プログラムを計画します。<br>
                 計画にそって、理学療法士やMTXトレーナーが患者さんと共に<br>
                 プログラムを二人三脚で行います。<br>
-                ※「ダイナミック・デバイス」は日本で数台しかない貴重な運動療法の機器です。
+                ※「DDシステム」は日本で数台しかない貴重な運動療法の機器です。
               </p>
               <ul class="treatment-detail__list">
                 <li class="treatment-detail__item fade-anime-text js-titleAnimationTarget">
