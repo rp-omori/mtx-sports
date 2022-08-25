@@ -2533,20 +2533,17 @@
   padding: clamp(10px, 7.3567708333vw, 113px) 0 clamp(10px, 13.0208333333vw, 200px);
 }
 .price-contents .contents-box {
-  width: clamp(10px, 58.59375vw, 900px);
+  position: relative;
+  width: clamp(10px, 65.1041666667vw, 1000px);
   margin: 0 auto;
-  margin-bottom: clamp(10px, 3.90625vw, 60px);
-}
-.price-contents .contents-box:nth-last-child(1) {
-  margin-bottom: 0;
+  margin-bottom: clamp(10px, 4.2317708333vw, 65px);
 }
 .price-contents .contents-box_cat {
   width: 100%;
   padding: clamp(10px, 1.3020833333vw, 20px) 0;
   background-color: var(--main-title-background-color);
-  border-radius: 5px 5px 0 0;
-  border: 1px solid #CADAD4;
   border-bottom: 0;
+  border-collapse: collapse;
 }
 .price-contents .contents-box_cat p {
   font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
@@ -2557,145 +2554,129 @@
 .price-contents .contents-box_menu {
   width: 100%;
   background-color: #FFFFFF;
-  border: 1px solid #CADAD4;
-  border-radius: 0 0 5px 5px;
   border-top: 0;
+  border-collapse: collapse;
 }
-.price-contents .contents-box_menu .menu_inner {
+.price-contents .contents-box_menu__inner {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  border-top: 1px solid #CEDCD9;
 }
-.price-contents .contents-box_menu .menu_inner:nth-child(1) {
+.price-contents .contents-box_menu__inner:nth-child(1) {
   border: none;
 }
-.price-contents .contents-box_menu .menu_inner_name {
-  width: clamp(10px, 30.5338541667vw, 469px);
-  text-align: center;
+.price-contents .contents-box_menu__inner_box_name {
+  width: 47%;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: clamp(10px, 1.3020833333vw, 20px) clamp(10px, 1.3020833333vw, 20px);
-  border-right: 1px solid #CEDCD9;
 }
-.price-contents .contents-box_menu .menu_inner_name.width {
-  width: clamp(10px, 13.0208333333vw, 200px);
-  padding: clamp(10px, 1.3020833333vw, 20px) clamp(10px, 1.3020833333vw, 20px) clamp(10px, 1.3671875vw, 21px);
+.price-contents .contents-box_menu__inner_box_name.width {
+  width: 23.5%;
 }
-.price-contents .contents-box_menu .menu_inner_name p {
+.price-contents .contents-box_menu__inner_box_name .flex {
+  width: 85%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.price-contents .contents-box_menu__inner_box_name .flex_box .orange_tab {
+  width: 60%;
+  margin: 0 auto 8px;
+  background-color: #E5923E;
+  color: #fff;
+  padding: 2px 0;
+  font-size: clamp(10px, 1.2rem, 12px);
+}
+.price-contents .contents-box_menu__inner_box_name .flex p {
   font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
   font-size: clamp(10px, 1.8rem, 18px);
   font-weight: 600;
+  text-align: center;
   color: #009578;
   line-height: 1.6;
 }
-.price-contents .contents-box_menu .menu_inner_name p.part {
-  margin-top: clamp(10px, 0.9765625vw, 15px);
-  font-size: clamp(10px, 1.4rem, 14px);
-  font-weight: 300;
+.price-contents .contents-box_menu__inner_box_name .flex .detail {
   color: #6A8381;
-  line-height: 1.6;
-}
-.price-contents .contents-box_menu .menu_inner_name p.tab {
-  width: clamp(10px, 7.4869791667vw, 115px);
-  margin: 0 auto;
   font-size: clamp(10px, 1.2rem, 12px);
-  font-weight: 600;
-  color: #fff;
-  background-color: #E5923E;
-  line-height: 1.6;
-  margin-bottom: 10px;
+  margin-top: 8px;
 }
-.price-contents .contents-box_menu .menu_inner_minute {
-  width: clamp(10px, 8.0729166667vw, 124px);
-  text-align: center;
+.price-contents .contents-box_menu__inner_box_part {
+  width: 23.5%;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: clamp(10px, 1.3020833333vw, 20px);
-  border-right: 1px solid #CEDCD9;
 }
-.price-contents .contents-box_menu .menu_inner_minute.width {
-  width: clamp(10px, 6.5104166667vw, 100px);
-  padding: clamp(10px, 1.3020833333vw, 20px) clamp(10px, 1.3020833333vw, 20px) clamp(10px, 1.3671875vw, 21px);
-}
-.price-contents .contents-box_menu .menu_inner_minute p {
+.price-contents .contents-box_menu__inner_box_part p {
+  width: 85%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
   font-size: clamp(10px, 1.8rem, 18px);
   font-weight: 300;
+  color: #262928;
   line-height: 1.6;
+  white-space: nowrap;
 }
-.price-contents .contents-box_menu .menu_inner_site {
-  width: clamp(10px, 8.0729166667vw, 124px);
-  text-align: center;
+.price-contents .contents-box_menu__inner_box_minute {
+  width: 12%;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: clamp(10px, 1.3020833333vw, 20px);
-  border-right: 1px solid #CEDCD9;
 }
-.price-contents .contents-box_menu .menu_inner_site p {
+.price-contents .contents-box_menu__inner_box_minute p {
+  width: 85%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
   font-size: clamp(10px, 1.8rem, 18px);
   font-weight: 300;
+  color: #262928;
   line-height: 1.6;
 }
-.price-contents .contents-box_menu .menu_inner_price {
-  width: clamp(10px, 26.6276041667vw, 409px);
-  text-align: center;
+.price-contents .contents-box_menu__inner_box_price {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  padding: clamp(10px, 0.9765625vw, 15px) clamp(10px, 1.3020833333vw, 20px);
+  width: 41%;
 }
-.price-contents .contents-box_menu .menu_inner_price.width {
-  width: clamp(10px, 20.3776041667vw, 313px);
-  padding: clamp(10px, 1.3020833333vw, 20px) clamp(10px, 1.3020833333vw, 20px) clamp(10px, 1.3671875vw, 21px);
+.price-contents .contents-box_menu__inner_box_price.width {
+  width: 22%;
 }
-.price-contents .contents-box_menu .menu_inner_price p {
+.price-contents .contents-box_menu__inner_box_price.width p {
+  font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-size: clamp(10px, 1.8rem, 18px);
+  font-weight: 300;
+  color: #262928;
+  text-align: center;
+  line-height: 1.6;
+}
+.price-contents .contents-box_menu__inner_box_price p {
+  width: 85%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: right;
   font-family: din-2014, sans-serif;
   font-size: clamp(10px, 1.8rem, 18px);
-  font-weight: 400;
+  font-weight: 300;
+  color: #262928;
+  line-height: 1.6;
+}
+.price-contents .contents-box_menu__inner_box_exp {
+  position: relative;
+}
+.price-contents .contents-box_menu__inner_box_exp p {
+  width: 85%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-size: clamp(10px, 1.5rem, 15px);
+  font-weight: 300;
+  color: #262928;
   line-height: 1.6;
 }
 .price-contents .contents-box_caution {
@@ -2707,29 +2688,39 @@
           justify-content: flex-start;
   margin-top: clamp(10px, 1.3020833333vw, 20px);
 }
-.price-contents .contents-box_caution_inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: auto;
-}
-.price-contents .contents-box_caution_inner img {
-  display: block;
-  width: clamp(10px, 1.3020833333vw, 20px);
-  height: clamp(10px, 1.3020833333vw, 20px);
-  margin-right: 8px;
-}
-.price-contents .contents-box_caution_inner p {
+.price-contents .contents-box_caution p {
   color: #6A8381;
   font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
   font-size: clamp(10px, 1.8rem, 18px);
   font-weight: 300;
+}
+.price-contents .contents-box_btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.price-contents .contents-box_btn img {
+  width: clamp(10px, 1.3020833333vw, 20px);
+  margin-right: 8px;
+}
+.price-contents .contents-box_btn p {
+  font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-size: clamp(10px, 1.8rem, 18px);
+  font-weight: 600;
+  text-align: center;
+  color: #009578;
+}
+
+td, th {
+  border: 1px solid #CADAD4;
+  border-collapse: collapse;
+  padding: clamp(10px, 1.953125vw, 30px) 0;
 }
 
 .medical-detail-contents {
@@ -4627,22 +4618,21 @@
   }
   .price-contents .contents-box {
     width: 90%;
-    margin-bottom: 40px;
+    margin-bottom: 70px;
   }
   .price-contents .contents-box_cat {
     padding: 8px 0;
   }
   .price-contents .contents-box_cat p {
     font-size: clamp(10px, 1.6rem, 16px);
-    text-align: left;
-    margin-left: 17px;
+    text-align: center;
   }
-  .price-contents .contents-box_menu {
-    margin-bottom: 15px;
-  }
-  .price-contents .contents-box_menu .menu_inner {
+  .price-contents .contents-box_menu__inner {
     width: 100%;
     height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -4652,58 +4642,117 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .price-contents .contents-box_menu .menu_inner_name {
+  .price-contents .contents-box_menu__inner_box {
     width: 100%;
-    padding: 12.5px 20px;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    border-bottom: 1px solid #CEDCD9;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-  .price-contents .contents-box_menu .menu_inner_name p {
+  .price-contents .contents-box_menu__inner_box_name.width {
+    width: 100%;
+  }
+  .price-contents .contents-box_menu__inner_box_name {
+    width: 100%;
+  }
+  .price-contents .contents-box_menu__inner_box_name .flex {
+    width: 100%;
+    position: static;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .price-contents .contents-box_menu__inner_box_name .flex_box {
+    width: 50%;
+  }
+  .price-contents .contents-box_menu__inner_box_name .flex_box .orange_tab {
+    width: 70%;
+    margin: 0 auto 5px 0;
+    font-size: clamp(10px, 1rem, 10px);
+    text-align: center;
+  }
+  .price-contents .contents-box_menu__inner_box_name .flex p {
+    width: 100%;
+    text-align: left;
     font-size: clamp(10px, 1.5rem, 15px);
-    line-height: 1.7;
   }
-  .price-contents .contents-box_menu .menu_inner_minute {
-    width: 37%;
-    padding: 0;
-    padding: 12.5px 20px;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    border-right: 1px solid #CEDCD9;
+  .price-contents .contents-box_menu__inner_box_name .flex .detail {
+    margin-top: 0;
+    text-align: left;
+    width: 45%;
+    font-size: clamp(10px, 1rem, 10px);
   }
-  .price-contents .contents-box_menu .menu_inner_minute p {
-    font-size: clamp(10px, 1.7rem, 17px);
-    line-height: 1.7;
+  .price-contents .contents-box_menu__inner_box_part {
+    width: 100%;
   }
-  .price-contents .contents-box_menu .menu_inner_site {
-    width: 37%;
-    padding: 0;
-    padding: 12.5px 20px;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    border-right: 1px solid #CEDCD9;
+  .price-contents .contents-box_menu__inner_box_part p {
+    position: static;
+    width: 100%;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    font-size: clamp(10px, 1.5rem, 15px);
   }
-  .price-contents .contents-box_menu .menu_inner_site p {
-    font-size: clamp(10px, 1.7rem, 17px);
-    line-height: 1.7;
+  .price-contents .contents-box_menu__inner_box_minute {
+    width: 20%;
   }
-  .price-contents .contents-box_menu .menu_inner_price {
-    width: auto;
-    padding: 12.5px 20px;
+  .price-contents .contents-box_menu__inner_box_minute p {
+    position: static;
+    width: 100%;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    font-size: clamp(10px, 1.5rem, 15px);
   }
-  .price-contents .contents-box_menu .menu_inner_price p {
-    font-size: clamp(10px, 1.7rem, 17px);
-    line-height: 1.7;
+  .price-contents .contents-box_menu__inner_box_price {
+    width: 55%;
   }
-  .price-contents .contents-box_caution_inner img {
-    width: 18px;
-    height: 18px;
+  .price-contents .contents-box_menu__inner_box_price p {
+    position: static;
+    width: 100%;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    font-size: clamp(10px, 1.5rem, 15px);
   }
-  .price-contents .contents-box_caution_inner p {
+  .price-contents .contents-box_menu__inner_box_exp {
+    width: 100%;
+  }
+  .price-contents .contents-box_menu__inner_box_exp p {
+    position: static;
+    width: 100%;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    font-size: clamp(10px, 1.5rem, 15px);
+  }
+  .price-contents .contents-box_caution {
+    margin-bottom: 25px;
+  }
+  .price-contents .contents-box_caution p {
     font-size: clamp(10px, 1.4rem, 14px);
+  }
+  .price-contents .contents-box_btn {
+    position: static;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .price-contents .contents-box_btn img {
+    width: 20px;
+  }
+  .price-contents .contents-box_btn p {
+    font-size: clamp(10px, 1.6rem, 16px);
+    margin-bottom: 0;
+  }
+  td, th {
+    padding: 10px 20px;
   }
   .medical-detail-contents .bg_img_left {
     width: 126px;
