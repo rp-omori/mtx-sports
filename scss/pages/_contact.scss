@@ -401,3 +401,63 @@
     }
   }
 }
+
+.contact-complete {
+  background: var(--main-color-white);
+
+  @include sp {
+    font-family: $fontFamilyHiraGo;
+  }
+
+  .contact-complete__inner {
+    width: 44%;
+    margin: 0 auto;
+    padding: get_vw(100) 0 get_vw(200);
+
+    @include sp {
+      width: 89%;
+      padding: get_vw(60, 375) 0 get_vw(100, 375);
+    }
+  }
+
+  .contact-complete__text {
+    margin-bottom: get_vw(60);
+    font-size: calcFz(25);
+    font-weight: bold;
+    text-align: center;
+
+    @include sp {
+      margin-bottom: get_vw(40, 375);
+      font-size: calcFz(18);
+    }
+  }
+
+  .contact-complete__body {
+    margin-bottom: get_vw(60);
+
+    @include sp {
+      margin-bottom: get_vw(40, 375);
+    }
+
+    p {
+      font-size: calcFz(18);
+      text-align: center;
+      line-height: 1.75;
+
+      @include sp {
+        font-size: calcFz(15);
+        text-align: left;
+      }
+    }
+  }
+
+  .contact-complete__btn {
+    .btn {
+      margin: 0 auto;
+
+      p {
+        color: var(--main-color-white);
+      }
+    }
+  }
+}
