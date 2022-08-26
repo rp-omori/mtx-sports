@@ -7,24 +7,22 @@
   }
 
   .contents-box{
-    width: clamp(10px,get_vw(900),900px);
+    position: relative;
+    width: clamp(10px,get_vw(1000),1000px);
     margin: 0 auto;
-    margin-bottom: clamp(10px,get_vw(60),60px);
-
-    &:nth-last-child(1){
-      margin-bottom: 0;
-    }
+    margin-bottom: clamp(10px,get_vw(65),65px);
 
     @include sp {
       width: 90%;
-      margin-bottom: 40px;
+      margin-bottom: 70px;
     }
 
     &_cat{
       width: 100%;
       padding: clamp(10px,get_vw(20),20px) 0;
       background-color: var(--main-title-background-color);
-      border-radius: 5px 5px 0 0;
+      border-bottom: 0;
+      border-collapse: collapse;
 
       @include sp {
         padding: 8px 0;
@@ -38,8 +36,8 @@
 
         @include sp {
           font-size: calcFz(16);
-          text-align: left;
-          margin-left: 17px;
+          text-align: center;
+          // margin-left: 17px;
         }
 
       }
@@ -49,25 +47,21 @@
     &_menu{
       width: 100%;
       background-color: #FFFFFF;
-      border: 1px solid #CADAD4;
-      border-radius: 0 0 5px 5px;
-      margin-bottom: clamp(10px,get_vw(20),20px);
+      border-top: 0;
+      border-collapse: collapse;
 
 
       @include sp {
-        margin-bottom: 15px;
+
       }
 
-      .menu_inner{
+      &__inner{
         width: 100%;
-        height: clamp(10px,get_vw(50),50px);
-        display: flex;
-        align-items: center;
-        border-top: 1px solid #CEDCD9;
 
         @include sp {
           width: 100%;
           height: auto;
+          display: flex;
           align-items: flex-start;
           justify-content: space-between;
           flex-wrap: wrap;
@@ -77,129 +71,249 @@
           border: none;
         }
 
-        &_name{
-
-          width: clamp(10px,get_vw(469),469px);
-          text-align: center;
-          position: relative;
-          height: 100%;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          padding: 0 clamp(10px,get_vw(20),20px);
-
-          &::after{
-            content: "";
-            position: absolute;
-            top: 0;
-            right: 0;
-            display: block;
-            width: 1px;
-            height: 100%;
-            background-color: #CEDCD9;
-
-            @include sp {
-              display: none;
-            }
-
-          }
+        &_box{
 
           @include sp {
             width: 100%;
-            padding: 12.5px 20px;
-            align-items: flex-start;
-            border-bottom: 1px solid #CEDCD9;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
           }
 
-          p{
-            font-family: $fontFamilyYuGo;
-            font-size: calcFz(18);
-            font-weight: bold;
-            color: #009578;
+          &_name{
+
+            width: 47%;
+            vertical-align: middle;
+
+            &.width{
+              width: 23.5%;
+
+              @include sp {
+                width: 100%;
+              }
+
+            }
 
             @include sp {
+              width: 100%;
+            }
+
+            .flex{
+
+              width: 85%;
+              margin: 0 auto;
+
+              @include sp {
+                width: 100%;
+                position: static;
+                transform: translate(0,0);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              }
+
+              &_box{
+
+                width: 100%;
+
+                @include sp {
+                  width: 50%;
+                  margin: 0 auto 0 0;
+                }
+
+                .orange_tab{
+                  width: 60%;
+                  margin: 0 auto 8px;
+                  background-color: #E5923E;
+                  color: #fff;
+                  padding: 2px 0;
+                  font-size: calcFz(12);
+
+                  @include sp {
+                    width: 70%;
+                    margin: 0 auto 5px 0;
+                    font-size: calcFz(10);
+                    text-align: center;
+                  }
+
+                }
+
+              }
+
+              p{
+                font-family: $fontFamilyYuGo;
+                font-size: calcFz(18);
+                font-weight: 600;
+                text-align: center;
+                color: #009578;
+                line-height: 1.6;
+
+                @include sp {
+                  width: 100%;
+                  text-align: left;
+                  font-size: calcFz(15);
+                }
+
+              }
+
+              .detail{
+                color: #6A8381;
+                font-size: calcFz(12);
+                margin-top: 8px;
+
+                @include sp {
+                  margin-top: 0;
+                  text-align: left;
+                  width: 45%;
+                  font-size: calcFz(10);
+                }
+
+              }
+            }
+
+
+
+          }
+
+          &_part{
+
+            width: 23.5%;
+            position: relative;
+
+            @include sp {
+              width: 100%;
+            }
+
+            p{
+              width: 85%;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%,-50%);
+              font-family: $fontFamilyYuGo;
+              font-size: calcFz(18);
+              font-weight: 300;
+              color: #262928;
+              line-height: 1.6;
+              white-space: nowrap;
+
+              @include sp {
+                position: static;
+                width: 100%;
+                transform: translate(0,0);
+                font-size: calcFz(15);
+              }
+
+            }
+
+          }
+
+          &_minute{
+            width: 12%;
+            position: relative;
+
+            @include sp {
+              width: 20%;
+            }
+
+            p{
+              width: 85%;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%,-50%);
+              font-family: $fontFamilyYuGo;
+              font-size: calcFz(18);
+              font-weight: 300;
+              color: #262928;
+              line-height: 1.6;
+
+              @include sp {
+                position: static;
+                width: 100%;
+                transform: translate(0,0);
+                font-size: calcFz(14);
+              }
+
+            }
+
+          }
+
+          &_price{
+            position: relative;
+            width: 41%;
+
+            &.width{
+              width: 22%;
+
+              p{
+                font-family: $fontFamilyYuGo;
+                font-size: calcFz(18);
+                font-weight: 300;
+                color: #262928;
+                text-align: center;
+                line-height: 1.6;
+              }
+
+            }
+
+            @include sp {
+              width: 55%;
+            }
+
+            p{
+              width: 85%;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%,-50%);
+              text-align: right;
+              font-family: $fontFamilyDin2014;
+              font-size: calcFz(18);
+              font-weight: 300;
+              color: #262928;
+              line-height: 1.6;
+
+              @include sp {
+                position: static;
+                width: 100%;
+                transform: translate(0,0);
+                font-size: calcFz(14);
+              }
+
+            }
+
+          }
+
+          &_exp{
+
+            position: relative;
+            vertical-align: middle;
+
+            @include sp {
+              width: 100%;
+            }
+
+            p{
+              width: 85%;
+              margin: 0 auto;
+              // position: absolute;
+              // top: 50%;
+              // left: 50%;
+              // transform: translate(-50%,-50%);
+              font-family: $fontFamilyYuGo;
               font-size: calcFz(15);
-              line-height: 1.7;
-            }
+              font-weight: 300;
+              color: #262928;
+              line-height: 1.6;
 
-          }
+              @include sp {
+                position: static;
+                width: 100%;
+                transform: translate(0,0);
+                font-size: calcFz(15);
+              }
 
-        }
-
-        &_minute{
-
-          width: clamp(10px,get_vw(124),124px);
-          position: relative;
-          height: 100%;
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          justify-content: center;
-          padding: 0 clamp(10px,get_vw(20),20px);
-
-          &::after{
-            content: "";
-            position: absolute;
-            top: 0;
-            right: 0;
-            display: block;
-            width: 1px;
-            height: 100%;
-            background-color: #CEDCD9;
-
-            @include sp {
-              display: none;
-            }
-
-          }
-
-          @include sp {
-            width: 37%;
-            padding: 0;
-            padding: 12.5px 20px;
-            align-items: flex-start;
-            border-right: 1px solid #CEDCD9;
-          }
-
-          p{
-            font-family: $fontFamilyYuGo;
-            font-size: calcFz(18);
-            font-weight: 300;
-
-            @include sp {
-              font-size: calcFz(17);
-              line-height: 1.7;
-            }
-
-          }
-
-        }
-
-        &_price{
-
-          width: clamp(10px,get_vw(409),409px);
-          text-align: center;
-          position: relative;
-          height: 100%;
-          display: flex;
-          flex-direction: column;
-          align-items: flex-end;
-          justify-content: center;
-          padding: 0 clamp(10px,get_vw(20),20px);
-
-          @include sp {
-            width: auto;
-            padding: 12.5px 20px;
-          }
-
-          p{
-            font-family: $fontFamilyDin2014;
-            font-size: calcFz(18);
-            font-weight: 400;
-
-            @include sp {
-              font-size: calcFz(17);
-              line-height: 1.7;
             }
 
           }
@@ -213,25 +327,11 @@
     &_caution{
       display: flex;
       justify-content: flex-start;
+      margin-top: clamp(10px,get_vw(20),20px);
 
-      &_inner{
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        width: auto;
-
-        img{
-          display: block;
-          width: clamp(10px,get_vw(20),20px);
-          height: clamp(10px,get_vw(20),20px);
-          margin-right: 8px;
-
-          @include sp {
-            width: 18px;
-            height: 18px;
-          }
-
-        }
+      @include sp {
+        margin-bottom: 25px;
+      }
 
         p{
           color: #6A8381;
@@ -245,11 +345,67 @@
 
         }
 
+    }
+
+    &_btn{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+
+      &.sp_btn{
+        @include sp {
+          p{
+            text-align: left;
+            line-height: 1.6;
+          }
+        }
       }
 
+      @include sp {
+        position: static;
+        justify-content: center;
+      }
+
+      img{
+        width: clamp(10px,get_vw(20),20px);
+        margin-right: 8px;
+
+        @include sp {
+          width: 20px;
+        }
+
+      }
+
+      p{
+        font-family: $fontFamilyYuGo;
+        font-size: calcFz(18);
+        font-weight: 600;
+        text-align: center;
+        color: #009578;
+
+        @include sp {
+          font-size: calcFz(16);
+          margin-bottom: 0;
+        }
+
+      }
 
     }
 
+  }
+
+
+}
+
+td, th {
+	border: 1px solid #CADAD4;
+	border-collapse: collapse;
+  padding: clamp(10px,get_vw(30),30px) 0;
+
+  @include sp {
+    padding: 10px 20px;
   }
 
 
