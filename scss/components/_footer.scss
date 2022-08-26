@@ -313,8 +313,8 @@
           content: '';
           position: absolute;
           display: block;
-          width: get_vw(23);
-          height: get_vw(23);
+          width: get_vw(45);
+          height: get_vw(45);
           top: 50%;
           left: 0;
           transform: translateY(-50%);
@@ -349,6 +349,14 @@
     @include sp {
       width: 89%;
       padding: get_vw(41, 375) 0 get_vw(71 + 50, 375);
+    }
+
+    &.footer__inner--contact {
+      padding: get_vw(84) 0 get_vw(84);
+
+      @include sp {
+        padding: get_vw(41, 375) 0 get_vw(71, 375);
+      }
     }
 
     .footer__top,
@@ -548,6 +556,13 @@
           padding-left: get_vw(30);
           padding-right: get_vw(10);
           color: var(--main-color-black);
+
+          &:before {
+            content: '';
+            width: get_vw(23);
+            height: get_vw(23);
+            background-image: url(#{$img-root-dir}/icon/icon-tel.svg);
+          }
         }
 
         .footer-contact__time-text {
