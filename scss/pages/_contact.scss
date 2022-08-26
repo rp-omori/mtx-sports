@@ -239,6 +239,28 @@
     }
   }
 
+  .form-error {
+    margin-top: get_vw(12);
+    background: #F5E4E4;
+    border-radius: 5px;
+
+    @include sp {
+      margin-top: get_vw(8, 375);
+    }
+
+    .form-error__text {
+      padding: get_vw(10) get_vw(15);
+      color: var(--note-red);
+      font-size: calcFz(16);
+      font-weight: bold;
+
+      @include sp {
+        padding: get_vw(7, 375) get_vw(10, 375);
+        font-size: calcFz(13);
+      }
+    }
+  }
+
   .form-note {
     margin-right: get_vw(20);
     font-size: calcFz(20);

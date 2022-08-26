@@ -62,6 +62,9 @@ $rootDir = get_template_directory_uri();
               <div class="form-input-wrapper">
                 <input class="form-input" type="text" placeholder="例：東京 太郎">
               </div>
+              <div class="form-error">
+                <p class="form-error__text">お名前（フルネーム）を入力してください。</p>
+              </div>
             </div>
           </div>
           <div class="form-group">
