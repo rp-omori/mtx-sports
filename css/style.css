@@ -5679,7 +5679,7 @@ td, th {
     font-size: clamp(10px, 1.5rem, 15px);
   }
   .price-contents .contents-box_menu__inner_box_minute {
-    width: 20%;
+    width: 25%;
   }
   .price-contents .contents-box_menu__inner_box_minute p {
     position: static;
@@ -5689,7 +5689,7 @@ td, th {
     font-size: clamp(10px, 1.4rem, 14px);
   }
   .price-contents .contents-box_menu__inner_box_price {
-    width: 55%;
+    width: 61.8%;
   }
   .price-contents .contents-box_menu__inner_box_price p {
     position: static;
@@ -5732,7 +5732,7 @@ td, th {
     margin-bottom: 0;
   }
   td, th {
-    padding: 10px 20px;
+    padding: 10px 3%;
   }
   .medical-detail-contents .bg_img_left {
     width: 126px;

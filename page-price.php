@@ -18,38 +18,47 @@ $rootDir = get_template_directory_uri();
   <div class="price-contents">
 
     <div class="contents-box">
-      <div class="contents-box_cat">
-        <p>診療</p>
-      </div>
-      <table class="contents-box_menu">
-        <tbody class="contents-box_menu__inner">
-          <tr class="contents-box_menu__inner_box">
-            <td class="contents-box_menu__inner_box_name">
-              <div class="flex">
-                <div class="flex_box">
-                  <p>初診</p>
+        <div class="contents-box_cat">
+          <p>診断</p>
+        </div>
+        <table class="contents-box_menu">
+          <tbody class="contents-box_menu__inner">
+            <?php if(have_rows('treatment',62)): ?>
+            <?php while(have_rows('treatment',62)): the_row(); ?>
+            <tr class="contents-box_menu__inner_box">
+              <td class="contents-box_menu__inner_box_name">
+                <div class="flex">
+                  <div class="flex_box">
+                    <!-- <p>初診</p> -->
+                    <p><?php the_sub_field("treatment_name") ?></p>
+                  </div>
                 </div>
-              </div>
-            </td>
-            <td class="contents-box_menu__inner_box_minute"><p>20分</p></td>
-            <td class="contents-box_menu__inner_box_price"><p>¥5,000</p></td>
-          </tr>
-          <tr class="contents-box_menu__inner_box">
-            <td class="contents-box_menu__inner_box_name">
-              <div class="flex">
-                <div class="flex_box">
-                  <p>2回目以降</p>
-                </div>
-              </div>
-            </td>
-            <td class="contents-box_menu__inner_box_minute"><p>10分</p></td>
-            <td class="contents-box_menu__inner_box_price"><p>¥3,000</p></td>
-          </tr>
-        </tbody>
-      </table>
-      <div class="contents-box_caution">
-        <p>※治療を行なった場合は、診察料を頂戴しません。</p>
-      </div>
+              </td>
+              <?php if(have_rows('treatment_detail')): ?>
+                <?php while(have_rows('treatment_detail')): the_row(); ?>
+                <?php if(have_rows('treatment_set')): ?>
+                  <?php while(have_rows('treatment_set')): the_row(); ?>
+                        <td class="contents-box_menu__inner_box_minute">
+                          <!-- <p>20分</p> -->
+                          <p><?php the_sub_field("treatment_times") ?></p>
+                        </td>
+                        <td class="contents-box_menu__inner_box_price">
+                          <!-- <p>¥5,000</p> -->
+                          <p><?php the_sub_field("treatment_price") ?></p>
+                        </td>
+                    <?php endwhile; ?>
+                  <?php endif;?>
+                <?php endwhile; ?>
+              <?php endif;?>
+            </tr>
+            <?php endwhile; ?>
+            <?php endif;?>
+          </tbody>
+        </table>
+        <div class="contents-box_caution">
+          <p>※治療を行なった場合は、診察料を頂戴しません。</p>
+        </div>
+      <?php wp_reset_postdata(); ?>
     </div>
 
     <div class="contents-box">
@@ -392,7 +401,7 @@ $rootDir = get_template_directory_uri();
 
     <div class="contents-box">
       <div class="contents-box_cat">
-        <p>再生医療</p>
+        <p>その他</p>
       </div>
       <table class="contents-box_menu">
         <tbody class="contents-box_menu__inner">
