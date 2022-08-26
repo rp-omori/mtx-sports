@@ -3872,7 +3872,7 @@ td, th {
   line-height: 1.76;
 }
 .flow-contents .flow-top-wrapper .flow-top::after {
-  content: "治療体制と施設・設備";
+  content: "治療の流れ";
   color: #fff;
   font-size: clamp(10px, 5rem, 50px);
   font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
