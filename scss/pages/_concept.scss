@@ -1,0 +1,405 @@
+.concept-contents {
+  background-color: #EFF4F3;
+  position: relative;
+
+  .concept-top-wrapper {
+    position: relative;
+    z-index: 2;
+    width: 100vw;
+    height: clamp(10px, get_vw(613), 613px);
+    background-image: url(#{$img-root-dir}/concept/concept-top-background.png);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-bottom: clamp(10px, get_vw(40), 40px);
+    overflow: hidden;
+
+    @include sp {
+      height: 250px;
+      background-position: top;
+      background-size: 100% 100%;
+      background-image: url(#{$img-root-dir}/concept/concept-top-background_sp.png);
+      margin-bottom: 60px;
+    }
+
+    .concept-top {
+
+      position: absolute;
+      top: clamp(10px, get_vw(250), 250px);
+      left: clamp(10px, get_vw(127), 127px);
+      width: 100%;
+
+      @include sp {
+        top: 65px;
+        left: 18px;
+      }
+
+      p {
+        color: rgba($color: #fff, $alpha: .15);
+        font-size: calcFz(143);
+        font-family: $fontFamilyDin2014;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        line-height: 1.76;
+
+        @include sp {
+          font-size: calcFz(72);
+        }
+      }
+
+      &::after {
+        content: "開院の背景と想い";
+        color: #fff;
+        font-size: calcFz(50);
+        font-family: $fontFamilyYuGo;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        line-height: 1.28;
+        position: absolute;
+        bottom: 13%;
+        left: 0;
+
+        @include sp {
+          font-size: calcFz(25);
+        }
+      }
+    }
+  }
+
+  .concept-systemArea {
+    width: 100%;
+    margin-bottom: clamp(10px, get_vw(90), 90px);
+
+    @include sp {
+      margin-bottom: 70px;
+    }
+
+    &__inner {
+      width: clamp(10px,get_vw(880),880px);
+      margin: 0 auto;
+
+      @include sp {
+        width: 90%;
+      }
+
+      &_ttl {
+        text-align: center;
+        position: relative;
+        margin-bottom: clamp(10px, get_vw(80), 80px);
+
+        p{
+          color: rgba($color: #fff, $alpha: 1);
+          font-size: calcFz(100);
+          font-family: $fontFamilyDin2014;
+          font-weight: 600;
+          line-height: 1.75;
+          letter-spacing: 0em;
+
+          @include sp {
+            width: 100vw;
+            position: relative;
+            z-index: 1;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: calcFz(48);
+          }
+        }
+
+        &::before {
+          content: "私たちの想い";
+          position: absolute;
+          bottom: 10%;
+          left: 0;
+          color: var(--main-color);
+          font-size: calcFz(40);
+          font-family: $fontFamilyYuGo;
+          font-weight: 600;
+          line-height: 1.75;
+          width: 100%;
+
+          @include sp {
+            font-size: calcFz(24);
+            z-index: 2;
+          }
+        }
+
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          width: clamp(10px, get_vw(64), 64px);
+          height: 3px;
+          background-color:var(--main-color);
+
+          @include sp {
+            width: 44px;
+          }
+        }
+      }
+
+      &_txt {
+        margin: 0 auto clamp(10px, get_vw(40), 40px);
+
+        @include sp {
+          width: 100%;
+          margin-bottom: 34px;
+        }
+
+        p {
+          text-align: left;
+          font-size: calcFz(18);
+          font-family: $fontFamilyYuGo;
+          font-weight: 400;
+          line-height: 1.75;
+          letter-spacing: 0em;
+
+          @include sp {
+            font-size: calcFz(15);
+            line-height: 1.6;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+
+  .concept-indexArea {
+    position: relative;
+    z-index: 2;
+    width: clamp(10px, get_vw(630), 630px);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    @include sp {
+      width: 77.3%;
+      flex-wrap: wrap;
+      margin: 0 auto;
+    }
+
+
+    .index_btn {
+      position: relative;
+
+      @include sp {
+        width: 100%;
+        margin-bottom: 35.5px;
+      }
+
+      &:last-child {
+        @include sp {
+          margin-bottom: 17px;
+        }
+      }
+
+      .green_txt {
+        position: absolute;
+        top: -26px;
+        left: 0;
+        color: var(--main-color-bg);
+        font-size: calcFz(14);
+        font-family: $fontFamilyDin2014;
+        font-weight: 600;
+        line-height: 1.92;
+        width: 100%;
+        white-space: nowrap;
+
+        @include sp {
+          top: -20px;
+          font-size: calcFz(12);
+        }
+      }
+
+      p {
+        @include sp {
+          font-size: calcFz(15);
+        }
+      }
+    }
+  }
+
+  .concept-lead {
+    width: 71%;
+    margin: 0 auto;
+
+    .concept-lead__wrapper {
+      display: flex;
+      margin-bottom: get_vw(146);
+      align-items: center;
+
+      .concept-lead__left {
+        width: get_vw(575);
+        margin-right: get_vw(80);
+      }
+
+      .concept-lead__right {
+        width: get_vw(446);
+      }
+
+      .concept-lead__head {
+        display: flex;
+        margin-bottom: get_vw(28);
+        align-items: center;
+        gap: 0 53px;
+      }
+
+      .concept-lead__cross {
+        position: relative;
+
+        .concept-lead__cross-text {
+          display: block;
+          padding: get_vw(16) get_vw(24);
+          background: var(--main-color);
+          color: var(--main-color-white);
+          font-size: calcFz(28);
+          font-weight: bold;
+        }
+
+        &:first-child {
+          &:before {
+            content: '✖️';
+            position: absolute;
+            color: var(--main-color);
+            font-size: calcFz(32);
+            top: 50%;
+            right: calc(get_vw(-32) + get_vw(-16));
+            transform: translateY(-50%);
+          }
+        }
+      }
+
+      .concept-lead__title {
+        margin-bottom: get_vw(56);
+        color: var(--main-color);
+        font-size: calcFz(32);
+        font-weight: bold;
+      }
+
+      .concept-lead__text {
+        color: var(--main-color-black);
+        font-size: calcFz(18);
+        line-height: 1.75;
+      }
+    }
+  }
+
+  .concept-background {
+    padding-top: get_vw(147);
+    padding-bottom: get_vw(350);
+    background: var(--main-color);
+    clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0 92%);
+
+    .concept-background__wrapper {
+      position: relative;
+    }
+
+    .concept-background__main {
+      padding-top: get_vw(245);
+
+      .concept-background__main-inner {
+        width: 91%;
+        display: flex;
+        gap: 0 44px;
+
+        &:first-child {
+          margin-left: auto;
+          margin-bottom: get_vw(80);
+
+          .concept-background__left {
+            margin-top: get_vw(48);
+          }
+        }
+
+        &:last-child {
+          margin-right: auto;
+          flex-direction: row-reverse;
+
+          .concept-background__right {
+            margin-top: get_vw(48);
+          }
+        }
+      }
+
+      .concept-background__title-wrapper {
+        margin-bottom: get_vw(48);
+      }
+
+      .concept-background__title {
+        width: fit-content;
+        padding: 0.3em;
+        margin-bottom: 8px;
+        background: var(--main-color-white);
+        color: var(--main-color);
+        font-size: calcFz(35);
+        font-weight: bold;
+      }
+
+      .concept-background__main-text {
+        color: var(--main-color-white);
+        font-size: calcFz(18);
+        line-height: 1.75;
+      }
+
+      .concept-background__img {
+        width: get_vw(811);
+      }
+    }
+  }
+
+  .concept-section__title-wrapper {
+    position: absolute;
+    width: auto;
+    top: 0;
+    right: get_vw(128);
+
+    .concept-section__title {
+      font-size: calcFz(100);
+      font-weight: bold;
+      font-family: $fontFamilyDin2014;
+    }
+
+    .concept-section__sub-title {
+      position: absolute;
+      padding-bottom: get_vw(39);
+      bottom: get_vw(-43);
+      font-size: calcFz(46);
+      font-weight: bold;
+
+      &:before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 1.5em;
+        height: 2px;
+        bottom: 0;
+      }
+    }
+
+    &.concept-section__title-wrapper--green {
+      .concept-section__title {
+        color: #12A88C;
+      }
+
+      .concept-section__sub-title {
+        color: var(--main-color-white);
+
+        &:before {
+          background: var(--main-color-white);
+        }
+      }
+    }
+
+    &.concept-section__title-wrapper--right {
+      .concept-section__sub-title {
+        right: 0;
+
+        &:before {
+          right: 0;
+        }
+      }
+    }
+  }
+}
