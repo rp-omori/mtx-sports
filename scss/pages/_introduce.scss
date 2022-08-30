@@ -101,7 +101,7 @@
       background-position: top;
       background-size: 100% 100%;
       // background-size: cover;
-      padding: clamp(10px,get_vw(250),250px) 0 clamp(10px,get_vw(280),280px);
+      padding: clamp(10px,get_vw(250),250px) 0 clamp(10px,get_vw(300),300px);
       background-repeat: no-repeat;
       height: auto;
 
@@ -201,7 +201,7 @@
         }
 
         &.mb_more{
-          margin-bottom: clamp(10px,get_vw(140),140px);
+          margin-bottom: clamp(10px,get_vw(200),200px);
         }
 
         &_left{
@@ -315,7 +315,7 @@
                     line-height: 1;
 
                     @include sp {
-                      font-size: calcFz(48);
+                      font-size: calcFz(43);
                       color: rgba($color: #009578, $alpha: .7);
                     }
 
@@ -376,10 +376,20 @@
               &_right{
 
                 display: flex;
+                align-items: flex-end;
 
                 img{
                   width: clamp(10px,get_vw(72),72px);
                   margin-right: 10px;
+
+                  &.small{
+                    width: clamp(10px,get_vw(60),60px);
+
+                    @include sp {
+                      width: 40px;
+                    }
+
+                  }
 
                   &:nth-last-child(1){
                     margin-right: 0;
@@ -475,7 +485,7 @@
 
             p{
               color: #fff;
-              font-size: calcFz(18);
+              font-size: calcFz(20);
               font-family: $fontFamilyYuGo;
               font-weight: 600;
               line-height: 1.75;

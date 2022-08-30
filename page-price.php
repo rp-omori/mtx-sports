@@ -15,41 +15,103 @@ $rootDir = get_template_directory_uri();
   <?php get_template_part('component/c__title'); ?>
 
   <!-- コンテンツ部分 -->
+
+  <!-- onlineshop一覧の取得 -->
+<?php
+
+
+$args = array(
+    'post_type' => 'prices',
+    'order' => 'ASC',
+    'posts_per_page' => -1,
+);
+
+$WP_post = new WP_Query($args);
+
+// var_dump($WP_post);
+
+// if($WP_post -> have_posts()){
+//     while($WP_post -> have_posts()) {
+//         foreach( $WP_post -> posts as $WP_posts ){
+//             $post_data = [];
+//             $WP_post->the_post();
+//             $post_data['treatment']  =  get_the_title();
+//             $post_id = get_the_ID();
+//             $post_data['data'] = [];
+//             $object = new stdClass();
+//             if(have_rows('treatment')){
+//                 while(have_rows('treatment')) {
+//                     while(the_row()){
+//                         $treatment_name = get_sub_field("treatment_name");
+//                         $online_shop_items = get_sub_field("onlineshop_items");
+//                         // var_dump($online_shop_name);
+//                         foreach( $online_shop_items as $value){
+//                             // $items_name = $value['onlineshp_items_name'] == 'バッグ' ? 'bag' : 'item';
+//                             $items_name = $value['onlineshp_items_name'];
+//                             $items_link = $value['onlineshp_items_link'];
+//                             $object -> name = $online_shop_name;
+//                             $object -> $items_name = $items_link;
+//                         }
+//                         // var_dump($object);
+//                         $arr_obj = (array) $object;
+//                         $post_data['data'][] = $arr_obj;
+//                     }
+//                 }
+//             }
+//             $my_post2['data'][] = $post_data;
+//         }
+//     }
+//     $WP_post_json2 = json_encode($my_post2);
+// }
+
+
+
+?>
+
   <div class="price-contents">
 
     <div class="contents-box">
-      <div class="contents-box_cat">
-        <p>診療</p>
-      </div>
-      <table class="contents-box_menu">
-        <tbody class="contents-box_menu__inner">
-          <tr class="contents-box_menu__inner_box">
-            <td class="contents-box_menu__inner_box_name">
-              <div class="flex">
-                <div class="flex_box">
-                  <p>初診</p>
+        <div class="contents-box_cat">
+          <p>診断</p>
+        </div>
+        <table class="contents-box_menu">
+          <tbody class="contents-box_menu__inner">
+            <?php if(have_rows('treatment',62)): ?>
+            <?php while(have_rows('treatment',62)): the_row(); ?>
+            <tr class="contents-box_menu__inner_box">
+              <td class="contents-box_menu__inner_box_name">
+                <div class="flex">
+                  <div class="flex_box">
+                    <!-- <p>初診</p> -->
+                    <p><?php the_sub_field("treatment_name") ?></p>
+                  </div>
                 </div>
-              </div>
-            </td>
-            <td class="contents-box_menu__inner_box_minute"><p>20分</p></td>
-            <td class="contents-box_menu__inner_box_price"><p>¥5,000</p></td>
-          </tr>
-          <tr class="contents-box_menu__inner_box">
-            <td class="contents-box_menu__inner_box_name">
-              <div class="flex">
-                <div class="flex_box">
-                  <p>2回目以降</p>
-                </div>
-              </div>
-            </td>
-            <td class="contents-box_menu__inner_box_minute"><p>10分</p></td>
-            <td class="contents-box_menu__inner_box_price"><p>¥3,000</p></td>
-          </tr>
-        </tbody>
-      </table>
-      <div class="contents-box_caution">
-        <p>※治療を行なった場合は、診察料を頂戴しません。</p>
-      </div>
+              </td>
+              <?php if(have_rows('treatment_detail')): ?>
+                <?php while(have_rows('treatment_detail')): the_row(); ?>
+                <?php if(have_rows('treatment_set')): ?>
+                  <?php while(have_rows('treatment_set')): the_row(); ?>
+                        <td class="contents-box_menu__inner_box_minute">
+                          <!-- <p>20分</p> -->
+                          <p><?php the_sub_field("treatment_times") ?></p>
+                        </td>
+                        <td class="contents-box_menu__inner_box_price">
+                          <!-- <p>¥5,000</p> -->
+                          <p><?php the_sub_field("treatment_price") ?></p>
+                        </td>
+                    <?php endwhile; ?>
+                  <?php endif;?>
+                <?php endwhile; ?>
+              <?php endif;?>
+            </tr>
+            <?php endwhile; ?>
+            <?php endif;?>
+          </tbody>
+        </table>
+        <div class="contents-box_caution">
+          <p>※治療を行なった場合は、診察料を頂戴しません。</p>
+        </div>
+      <?php wp_reset_postdata(); ?>
     </div>
 
     <div class="contents-box">
@@ -173,7 +235,7 @@ $rootDir = get_template_directory_uri();
           </tr>
           <tr class="contents-box_menu__inner_box">
             <td class="contents-box_menu__inner_box_part" rowspan="2">
-              <p>22関節 10ml (5ml×2)</p>
+              <p>2関節 10ml (5ml×2)</p>
             </td>
             <td class="contents-box_menu__inner_box_minute">
               <p>1回</p>
@@ -199,7 +261,7 @@ $rootDir = get_template_directory_uri();
               <div class="flex">
                 <div class="flex_box">
                   <p class="orange_tab">オープニング価格</p>
-                  <p>ハイドロリリース</p>
+                  <p>ハイドロリリース <br>＋ 培養上清液治療</p>
                 </div>
               </div>
             </td>
@@ -238,7 +300,7 @@ $rootDir = get_template_directory_uri();
               <div class="flex">
                 <div class="flex_box">
                   <p class="orange_tab">オープニング価格</p>
-                  <p>体外衝撃波（収束型）＋ 培養上清液治療</p>
+                  <p>体外衝撃波（収束型）<br>＋ 培養上清液治療</p>
                 </div>
               </div>
             </td>
@@ -392,19 +454,19 @@ $rootDir = get_template_directory_uri();
 
     <div class="contents-box">
       <div class="contents-box_cat">
-        <p>再生医療</p>
+        <p>その他</p>
       </div>
       <table class="contents-box_menu">
         <tbody class="contents-box_menu__inner">
           <tr class="contents-box_menu__inner_box">
-            <td class="contents-box_menu__inner_box_name width" rowspan="1">
+            <td class="contents-box_menu__inner_box_name" rowspan="1">
               <div class="flex">
                 <div class="flex_box">
-                  <p>サイレントマニピュレーション（ブロック＋手技）</p>
+                  <p>サイレントマニピュレーション<br>（ブロック＋手技）</p>
                 </div>
               </div>
             </td>
-            <td class="contents-box_menu__inner_box_part">
+            <td class="contents-box_menu__inner_box_part small">
               <p>肩</p>
             </td>
             <td class="contents-box_menu__inner_box_minute">
@@ -415,14 +477,14 @@ $rootDir = get_template_directory_uri();
             </td>
           </tr>
           <tr class="contents-box_menu__inner_box">
-            <td class="contents-box_menu__inner_box_name width" rowspan="1">
+            <td class="contents-box_menu__inner_box_name" rowspan="1">
               <div class="flex">
                 <div class="flex_box">
-                  <p>ボツリヌス注射（脳梗塞などの痙縮）</p>
+                  <p>ボツリヌス注射<br>（脳梗塞などの痙縮）</p>
                 </div>
               </div>
             </td>
-            <td class="contents-box_menu__inner_box_part">
+            <td class="contents-box_menu__inner_box_part small">
               <p>1部位</p>
             </td>
             <td class="contents-box_menu__inner_box_minute">
@@ -433,14 +495,14 @@ $rootDir = get_template_directory_uri();
             </td>
           </tr>
           <tr class="contents-box_menu__inner_box">
-            <td class="contents-box_menu__inner_box_name width" rowspan="1">
+            <td class="contents-box_menu__inner_box_name" rowspan="1">
               <div class="flex">
                 <div class="flex_box">
                   <p>幹細胞培養上清液 点滴</p>
                 </div>
               </div>
             </td>
-            <td class="contents-box_menu__inner_box_part">
+            <td class="contents-box_menu__inner_box_part small">
               <p>-</p>
             </td>
             <td class="contents-box_menu__inner_box_minute">

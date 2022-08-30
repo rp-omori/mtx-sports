@@ -47,10 +47,12 @@ $rootDir = get_template_directory_uri();
                 </div>
                 <div class="introduce-contents__inner_box_right_name_top_right">
                   <img src="<?php echo $rootDir ?>/images/introduce/method_01_white.png" alt="">
-                  </div>
+                  <img class="small" src="<?php echo $rootDir ?>/images/introduce/method_02_white.png" alt="">
+                  <img class="small" src="<?php echo $rootDir ?>/images/introduce/method_03_white.png" alt="">
+                </div>
               </div>
               <div class="introduce-contents__inner_box_right_name_bottom">
-                <p>担当領域：診察/動きの評価</p>
+                <p>担当領域：診察／動きの評価／運動療法・物理療法の処方および治療経過の評価</p>
               </div>
             </div>
             <div class="introduce-contents__inner_box_right_lead">
@@ -64,16 +66,15 @@ $rootDir = get_template_directory_uri();
               </p>
             </div>
             <div class="introduce-contents__inner_box_right_license">
-              <p>・ 取得資格</p>
+              <p>・ 保有資格</p>
               <ul>
                 <li>整形外科専門医</li>
-                <li>NATA Certified Athletic Trainer</li>
-                <li>(全米公認アスレティックトレーナー)</li>
-                <li>IOC Diploma in Sports Medicine</li>
-                <li>(国際オリンピック委員会公認スポーツドクター)</li>
-                <li>NASM Performance Enhancement Specialist</li>
-                <li>NASM Collective Excercise Specialist</li>
-                <li>SFMA Selective Functional Movement Assessment</li>
+                <li>NATA Certified Athletic Trainer |全米公認アスレティックトレーナー</li>
+                <li>IOC Diploma in Sports Medicine | 国際オリンピック委員会公認スポーツドクター</li>
+                <li>NASM | Performance Enhancement Specialist</li>
+                <li>NASM | Collective Excercise Specialist</li>
+                <li>FMS | Functional Movement Systems</li>
+                <li>SFMA | Selective Functional Movement Assessment</li>
               </ul>
             </div>
           </div>
@@ -97,10 +98,12 @@ $rootDir = get_template_directory_uri();
                 </div>
                 <div class="introduce-contents__inner_box_right_name_top_right">
                   <img src="<?php echo $rootDir ?>/images/introduce/method_01_white.png" alt="">
+                  <img class="small" src="<?php echo $rootDir ?>/images/introduce/method_02_white.png" alt="">
+                  <img class="small" src="<?php echo $rootDir ?>/images/introduce/method_03_white.png" alt="">
                 </div>
               </div>
               <div class="introduce-contents__inner_box_right_name_bottom">
-                <p class="black">担当領域：診察/動きの評価</p>
+                <p class="black">担当領域：治療内容監修</p>
               </div>
             </div>
             <div class="introduce-contents__inner_box_right_lead">
@@ -117,18 +120,18 @@ $rootDir = get_template_directory_uri();
           </div>
         </div>
         <div class="introduce-contents__inner_box_license">
-              <p class="green">・ 取得資格</p>
+              <p class="green">・ 保有資格</p>
               <ul>
                 <li>日本整形外科学会専門医</li>
                 <li>日本内科学会認定内科医</li>
                 <li>公衆衛生学修士</li>
-                <li>International Olympic Committee Diploma in Sports Medicine</li>
+                <li>IOC Diploma in Sports Medicine | 国際オリンピック委員会公認スポーツドクター</li>
                 <li>日本スポーツ協会公認スポーツドクター</li>
                 <li>日本医師会認定健康スポーツ医</li>
                 <li>日本整形外科学会認定スポーツ医</li>
                 <li>日本パラスポーツ協会公認障がい者スポーツ医</li>
-                <li>Performance Enhancement Specialist（National Academy of Sports Medicine）</li>
-                <li>Corrective Exercise Specialist（National Academy of Sports Medicine）</li>
+                <li>NASM | Performance Enhancement Specialist</li>
+                <li>NASM | Collective Excercise Specialist</li>
                 <li>日本医師会認定産業医</li>
                 <li>MTX Academyチームドクター（ジム，野球，レスリング）</li>
                 <li>TWOLAPSチームドクター（陸上）</li>
@@ -142,7 +145,7 @@ $rootDir = get_template_directory_uri();
         <div class="introduce-contents__inner_ttl">
           <p>理学療法士</p>
         </div>
-        <div class="introduce-contents__inner_box mb">
+        <div class="introduce-contents__inner_box mb_more">
           <div class="introduce-contents__inner_box_left">
             <img src="<?php echo $rootDir ?>/images/introduce/staff_03.png" alt="">
           </div>
@@ -150,19 +153,34 @@ $rootDir = get_template_directory_uri();
             <div class="introduce-contents__inner_box_right_name">
               <div class="introduce-contents__inner_box_right_name_top border_none">
                 <div class="introduce-contents__inner_box_right_name_top_left">
-                  <p class="en">NAMAE</p>
-                  <p>名前 名前</p>
-                  <p class="small">なまえ なまえ</p>
+                  <p class="en">ISHIZAKI</p>
+                  <p>石崎 翔大</p>
+                  <p class="small">いしざき しょうた</p>
                 </div>
                 <div class="introduce-contents__inner_box_right_name_top_right">
-                  <img src="<?php echo $rootDir ?>/images/introduce/method_01_white.png" alt="">
+                  <img src="<?php echo $rootDir ?>/images/introduce/method_02.png" alt="">
                 </div>
               </div>
             </div>
             <div class="introduce-contents__inner_box_right_lead">
-              <p class="small">
-                医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。
+              <p>
+                痛みのない最高の身体機能獲得に向けて<br>
+                最善を尽くします
               </p>
+              <p class="small">
+                2011年理学療法士免許を取得。整形外科領域で延べ6万件以上の治療、トレーニングに携わり、日常生活での痛みの改善、オリンピック代表選手などのアスリートの競技復帰をサポートしてきました。<br>
+                当クリニックでは、最先端の治療技術、エクササイズを活用して治療、痛みの改善を行なっていきます。
+              </p>
+            </div>
+            <div class="introduce-contents__inner_box_right_license">
+              <p>・ 保有資格</p>
+              <ul>
+                <li>Physical Therapist｜理学療法士</li>
+                <li>SFMA | Selective Functional Movement Assessment</li>
+                <li>TRX functional training</li>
+                <li>Fascal　Manipulation®</li>
+                <li>PRI ® ｜Postural Restoration Institute</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -174,21 +192,28 @@ $rootDir = get_template_directory_uri();
             <div class="introduce-contents__inner_box_right_name">
               <div class="introduce-contents__inner_box_right_name_top border_none">
                 <div class="introduce-contents__inner_box_right_name_top_left">
-                  <p class="en">NAMAE</p>
-                  <p>名前 名前</p>
-                  <p class="small">なまえ なまえ</p>
+                  <p class="en">SHINKAI</p>
+                  <p>新海 貴史</p>
+                  <p class="small">しんかい たかふみ</p>
                 </div>
                 <div class="introduce-contents__inner_box_right_name_top_right">
-                  <img src="<?php echo $rootDir ?>/images/introduce/method_01_white.png" alt="">
+                  <img src="<?php echo $rootDir ?>/images/introduce/method_02.png" alt="">
                 </div>
               </div>
-              <!-- <div class="introduce-contents__inner_box_right_name_bottom">
-                <p>担当領域：診察/動きの評価</p>
-              </div> -->
+              <div class="introduce-contents__inner_box_right_name_bottom">
+                <p>Physical Therapist｜理学療法士</p>
+              </div>
             </div>
             <div class="introduce-contents__inner_box_right_lead">
+              <p>
+                １人でも多くの患者さんの<br>
+                悩み解消のために全力をつくします
+              </p>
               <p class="small">
-                医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。医師の紹介文が入ります。
+                理学療法士として今まで整形外科病院やクリニックにおいて、<br>
+                子どもから高齢者、アスリートまで幅広いジャンルの患者さんに携わらせていただきました。<br>
+                <br>
+                自身も小学校から野球を始めて現在もプレーヤーとして続けておりますので、投球障害で悩む野球選手を1人でも多くサポートしてまいります。
               </p>
             </div>
           </div>
@@ -209,11 +234,10 @@ $rootDir = get_template_directory_uri();
                   <p class="en white">KIMURA</p>
                   <p class="black">木村 國宏</p>
                   <p class="small black">きむら まさひろ</p>
-                  <p class="degree">柔道整復師<br class="pc"><span class="sp" style="display: inline !important;">/</span>医療国家資格取得</p>
+                  <p class="degree">柔道整復師<br class="pc"><span class="sp" style="display: inline !important;"></span>医療国家資格取得</p>
                 </div>
                 <div class="introduce-contents__inner_box_right_name_top_right">
-                  <img src="<?php echo $rootDir ?>/images/introduce/method_01_white.png" alt="">
-                  <img src="<?php echo $rootDir ?>/images/introduce/method_01_white.png" alt="">
+                  <img src="<?php echo $rootDir ?>/images/introduce/method_02_white.png" alt="">
                 </div>
               </div>
             </div>
@@ -233,7 +257,7 @@ $rootDir = get_template_directory_uri();
       </div>
       <div class="introduce-contents__inner bg_white pd_sp">
         <div class="introduce-contents__inner_ttl pd_0">
-          <p class="green">MTXアカデミートレーナー　<br class="sp">- 回復 -</p>
+          <p class="green">MTXアカデミートレーナー　<br class="sp">- 実践 -</p>
         </div>
         <div class="introduce-contents__inner_box">
           <div class="introduce-contents__inner_box_left sp_right">
@@ -243,14 +267,13 @@ $rootDir = get_template_directory_uri();
             <div class="introduce-contents__inner_box_right_name">
               <div class="introduce-contents__inner_box_right_name_top border_green">
                 <div class="introduce-contents__inner_box_right_name_top_left">
-                  <p class="en white">WATANABE</p>
-                  <p class="black">渡邊 健二</p>
-                  <p class="small black">わたなべ けんじ</p>
+                  <p class="en white">TANABE</p>
+                  <p class="black">田邊 大吾</p>
+                  <p class="small black">たなべ だいご</p>
                   <p class="degree less">柔道整復師</p>
                 </div>
                 <div class="introduce-contents__inner_box_right_name_top_right">
-                  <img src="<?php echo $rootDir ?>/images/introduce/method_01_white.png" alt="">
-                  <img src="<?php echo $rootDir ?>/images/introduce/method_01_white.png" alt="">
+                  <img src="<?php echo $rootDir ?>/images/introduce/method_02_white.png" alt="">
                 </div>
               </div>
             </div>
@@ -260,9 +283,8 @@ $rootDir = get_template_directory_uri();
                 患者様をサポートします
               </p>
               <p class="small black">
-                私も柔道整復師として患者様と向き合っていく中で、必ずぶつかってきた事があります。それは「施術の限界」です。<br>
-                今回はその限界を突破するきっかけをドクターが作ってくれます。<br>
-                整骨院と整形外科との連携を今まで以上に身近にし、正確な診断のもと、さらに寄り添った患者様へのサポートをチーム一丸で行なっていきます。
+                正しい情報や判断基準を得られず、繰り返し起こってしまう怪我に泣かされる子どもたちやアスリートを、今までたくさん見てきました。<br>
+                同じことを繰り返さないためにも、ドクターの診察からリハビリ、競技復帰のためのトレーニングまで、医師、理学療法士、そして私たちトレーナーという専門家が連携を取り、一人一人に寄り添った最善のサポートをいたします。
               </p>
             </div>
           </div>
@@ -270,7 +292,7 @@ $rootDir = get_template_directory_uri();
       </div>
       <div class="introduce-contents__inner pd_more">
         <div class="introduce-contents__inner_ttl">
-          <p>MTXアカデミートレーナー　<br class="sp">- トレーニング -</p>
+          <p>MTXアカデミートレーナー　<br class="sp">- 回復 -</p>
         </div>
         <div class="introduce-contents__inner_box mb_more reverse">
           <div class="introduce-contents__inner_box_left">
@@ -280,13 +302,13 @@ $rootDir = get_template_directory_uri();
             <div class="introduce-contents__inner_box_right_name">
               <div class="introduce-contents__inner_box_right_name_top border_none">
                 <div class="introduce-contents__inner_box_right_name_top_left">
-                  <p class="en">TANABE</p>
-                  <p>田邊 大吾</p>
-                  <p class="small">たなべ だいご</p>
-                  <p class="degree more white">鍼灸師<br class="pc"><span class="sp" style="display: inline !important;">/</span>あん摩マッサージ指圧師</p>
+                  <p class="en">WATANABE</p>
+                  <p>渡邊　健二</p>
+                  <p class="small">わたなべ　けんじ</p>
+                  <p class="degree more white">鍼灸師<br class="pc"><span class="sp" style="display: inline !important;"></span>あん摩マッサージ指圧師</p>
                 </div>
                 <div class="introduce-contents__inner_box_right_name_top_right">
-                  <img src="<?php echo $rootDir ?>/images/introduce/method_01_white.png" alt="">
+                  <img src="<?php echo $rootDir ?>/images/introduce/method_03.png" alt="">
                 </div>
               </div>
             </div>
@@ -296,8 +318,9 @@ $rootDir = get_template_directory_uri();
                 サポートを行います
               </p>
               <p class="small">
-                正しい情報や判断基準を得られず、繰り返し起こってしまう怪我に泣かされる子どもたちを、今までたくさん見てきました。<br>
-                同じことを繰り返さないために、ドクターの診察からリハビリ、競技復帰のためのトレーニングまで、専門家が連携を取りながら一人一人に寄り添い最善のサポートをいたします。
+                私も柔道整復師として患者様と向き合っていく中で、必ずぶつかってきた壁があります。それは「施術の限界」という壁でした。<br>
+                このクリニックでは、その「施術の限界」を突破するきっかけをドクターが作ってくれます。<br>
+                さらに、治療連携においては整骨院と整形外科との連携をこれまで以上に身近にし、正確な診断のもと、さらに患者様に寄り添ったサポートを、チーム一丸で行なってまいります。
               </p>
             </div>
           </div>
@@ -319,7 +342,7 @@ $rootDir = get_template_directory_uri();
                   <p class="degree less white">介護福祉士</p>
                 </div>
                 <div class="introduce-contents__inner_box_right_name_top_right">
-                  <img src="<?php echo $rootDir ?>/images/introduce/method_01_white.png" alt="">
+                  <img src="<?php echo $rootDir ?>/images/introduce/method_02.png" alt="">
                 </div>
               </div>
             </div>
