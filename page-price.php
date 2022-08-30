@@ -15,6 +15,59 @@ $rootDir = get_template_directory_uri();
   <?php get_template_part('component/c__title'); ?>
 
   <!-- コンテンツ部分 -->
+
+  <!-- onlineshop一覧の取得 -->
+<?php
+
+
+$args = array(
+    'post_type' => 'prices',
+    'order' => 'ASC',
+    'posts_per_page' => -1,
+);
+
+$WP_post = new WP_Query($args);
+
+var_dump($WP_post);
+
+if($WP_post -> have_posts()){
+    while($WP_post -> have_posts()) {
+        foreach( $WP_post -> posts as $WP_posts ){
+            $post_data = [];
+            $WP_post->the_post();
+            $post_data['treatment']  =  get_the_title();
+            $post_id = get_the_ID();
+            $post_data['data'] = [];
+            $object = new stdClass();
+            if(have_rows('treatment')){
+                while(have_rows('treatment')) {
+                    while(the_row()){
+                        $treatment_name = get_sub_field("treatment_name");
+                        $online_shop_items = get_sub_field("onlineshop_items");
+                        // var_dump($online_shop_name);
+                        foreach( $online_shop_items as $value){
+                            // $items_name = $value['onlineshp_items_name'] == 'バッグ' ? 'bag' : 'item';
+                            $items_name = $value['onlineshp_items_name'];
+                            $items_link = $value['onlineshp_items_link'];
+                            $object -> name = $online_shop_name;
+                            $object -> $items_name = $items_link;
+                        }
+                        // var_dump($object);
+                        $arr_obj = (array) $object;
+                        $post_data['data'][] = $arr_obj;
+                    }
+                }
+            }
+            $my_post2['data'][] = $post_data;
+        }
+    }
+    $WP_post_json2 = json_encode($my_post2);
+}
+
+
+
+?>
+
   <div class="price-contents">
 
     <div class="contents-box">
