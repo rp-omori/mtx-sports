@@ -3,6 +3,11 @@ $rootDir = get_template_directory_uri();
 ?>
 <?php wp_footer(); ?>
     <footer class="footer">
+      <?php
+        $url = $_SERVER['REQUEST_URI'];
+        $is_contact = strstr($url, 'contact');
+        if ($is_contact == false):
+      ?>
       <section id="access" class="footer-access">
         <div class="footer-access__inner">
           <div class="footer-access__left">
@@ -82,9 +87,10 @@ $rootDir = get_template_directory_uri();
           </div>
         </div>
       </section>
+      <?php endif; ?>
 
       <section class="footer__main">
-        <div class="footer__inner">
+        <div class="footer__inner <?php if($is_contact == true): ?>footer__inner--contact<?php endif; ?>">
           <div class="footer__top">
             <div class="footer__logo">
               <a href="<?php echo home_url(); ?>" class="footer__logo-link">
@@ -186,6 +192,7 @@ $rootDir = get_template_directory_uri();
         </div>
       </section>
 
+      <?php if ($is_contact == false): ?>
       <div class="footer-float">
         <div class="footer-float__inner">
           <div class="footer-float__inner-left">
@@ -233,6 +240,7 @@ $rootDir = get_template_directory_uri();
           </div>
         </div>
       </div>
+      <?php endif; ?>
     </footer>
 </div>
 <script src="<?php echo $rootDir ?>/js/common.js"></script>
