@@ -46,7 +46,7 @@ $rootDir = get_template_directory_uri();
 
     <div id="" class="flow-circle">
       <div class="flow-circle__inner">
-        <div class="flow-circle__inner_left">
+        <div id="left" style="" class="flow-circle__inner_left">
           <!-- <img class="pc" src="<?php echo $rootDir ?>/images/flow/flow_circle_more.png" alt=""> -->
           <img class="pc" src="<?php echo $rootDir ?>/images/flow/flow_circle.png" alt="">
           <!-- <img class="dot pc" src="<?php echo $rootDir ?>/images/flow/dots.svg" alt=""> -->
@@ -55,7 +55,7 @@ $rootDir = get_template_directory_uri();
           <img class="dot pc" src="<?php echo $rootDir ?>/images/flow/thirteen_dots.svg" alt=""> -->
           <img class="sp" src="<?php echo $rootDir ?>/images/flow/flow_circle_sp.png" alt="">
         </div>
-        <div class="flow-circle__inner_right">
+        <div id="right" class="flow-circle__inner_right">
           <div class="flow-circle__inner_right_box">
             <div class="flow-circle__inner_right_box_top">
               <div class="flow-circle__inner_right_box_top_ttl">
@@ -276,7 +276,7 @@ $rootDir = get_template_directory_uri();
               </div>
             </div>
           </div>
-          <div class="flow-circle__inner_right_box more">
+          <div id="last_item" class="flow-circle__inner_right_box more">
             <div class="flow-circle__inner_right_box_top">
               <div class="flow-circle__inner_right_box_top_ttl">
                 <div class="flow-circle__inner_right_box_top_ttl_left">
@@ -289,14 +289,14 @@ $rootDir = get_template_directory_uri();
                   <img src="<?php echo $rootDir ?>/images/flow/flow_person_03.svg" alt="">
                 </div>
               </div>
-              <div class="flow-circle__inner_right_box_top_txt">
+              <div id="txtArea" class="flow-circle__inner_right_box_top_txt">
                 <p class="width">
                   私たちの目指すものは、人々が運動の必要性を感じ、人々の生活の中に常に運動があることです。<br>
                   それにより、人々が自分の足で人生の最後まで立ち、動き、楽しく生きられることを目指します。
                 </p>
                 <img src="<?php echo $rootDir ?>/images/flow/flow_img_06.jpg" alt="">
               </div>
-              <div class="flow-circle__inner_right_box_top_logo">
+              <div id="logoArea" class="flow-circle__inner_right_box_top_logo">
                 <p>関連施設</p>
                 <img src="<?php echo $rootDir ?>/images/flow/flow_logo_01.svg" alt="">
                 <img class="small" src="<?php echo $rootDir ?>/images/flow/flow_logo_03.svg" alt="">
@@ -317,3 +317,29 @@ $rootDir = get_template_directory_uri();
 </main>
 
 <?php get_footer(); ?>
+
+<script>
+
+const rightContents = document.getElementById("right");
+const leftContents = document.getElementById("left");
+const lastItem = document.getElementById("last_item");
+
+
+function resizeWindow(){
+  if (window.matchMedia('(max-width: 767px)').matches) {
+    //スマホ処理
+    leftContents.style.height = 'auto'
+  } else if (window.matchMedia('(min-width:768px)').matches) {
+    //PC処理
+    let rightContentsHeight = rightContents.clientHeight
+    let lastItemHeight = lastItem.clientHeight
+    console.log(rightContentsHeight)
+    leftContents.style.height = `${rightContentsHeight - lastItemHeight - 60}px`
+  }
+}
+
+window.addEventListener('resize', resizeWindow);
+
+
+
+</script>

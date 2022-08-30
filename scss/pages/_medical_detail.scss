@@ -354,6 +354,7 @@
 
           li{
             list-style: inside;
+            // list-style: none;
             padding-left: get_vw(25);
             text-indent: get_vw(-25);
             font-family: $fontFamilyYuGo;
@@ -373,6 +374,11 @@
               text-indent: -18px;
               margin-bottom: 24px;
             }
+
+            &::marker{
+              color: var(--main-color);
+            }
+
           }
 
         }
