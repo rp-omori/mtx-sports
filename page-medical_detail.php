@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: privacy-policy
+ * Template Name: medical_detail
  */
 
 get_header(); ?>
@@ -17,8 +17,11 @@ $rootDir = get_template_directory_uri();
   <!-- コンテンツ部分 -->
   <?php
 
+    $post_id = get_the_ID();
+
     $args = array(
         'post_type' => 'medicaldetail',
+        'post_id' => $post_id,
         'post_status' => 'publish', //取得するステータス。publishなら一般公開のもののみ
     );
 
