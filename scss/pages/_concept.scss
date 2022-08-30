@@ -470,6 +470,57 @@
   }
 
   .concept-interview {
+    position: relative;
+
+    .triangle--left,
+    .triangle--right {
+      position: absolute;
+    }
+
+    .triangle--left {
+      right: 0;
+    }
+
+    .triangle--right {
+      left: 0;
+    }
+
+    .triangle--01 {
+      top: 18%;
+
+      @include sp {
+        top: 16%;
+        width: 50%;
+      }
+    }
+
+    .triangle--02 {
+      top: 27%;
+
+      @include sp {
+        top: 30%;
+        width: 50%;
+      }
+    }
+
+    .triangle--03 {
+      top: 50%;
+
+      @include sp {
+        top: 49%;
+        width: 50%;
+      }
+    }
+
+    .triangle--04 {
+      top: 80%;
+
+      @include sp {
+        top: 86%;
+        width: 50%;
+      }
+    }
+
     .concept-interview__wrapper {
       position: relative;
     }
