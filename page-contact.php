@@ -10,7 +10,6 @@ $rootDir = get_template_directory_uri();
 
 
 <main class="main">
-
   <!-- 共通タイトル部分 -->
   <?php get_template_part('component/c__title'); ?>
 
@@ -50,7 +49,8 @@ $rootDir = get_template_directory_uri();
         </div>
       </div>
     </div>
-    <div class="contact__body">
+    <?php echo do_shortcode('[mwform_formkey key="110"]'); ?>
+    <!-- <div class="contact__body">
       <div class="contact__body-inner">
         <div class="form-body">
           <div class="form-group">
@@ -144,7 +144,7 @@ $rootDir = get_template_directory_uri();
           </div>
           <div class="form-group">
             <div class="form-group__head">
-              <label class="form-label">電話番号</label>
+              <label class="form-label">メッセージ</label>
               <span class="form-badge form-badge--optional">任意</span>
             </div>
             <div class="form-group__body">
@@ -173,7 +173,7 @@ $rootDir = get_template_directory_uri();
           </a>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </main>
 
