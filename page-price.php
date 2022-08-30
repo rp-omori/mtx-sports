@@ -182,7 +182,7 @@ $rootDir = get_template_directory_uri();
           </tr>
           <tr class="contents-box_menu__inner_box">
             <td class="contents-box_menu__inner_box_part" rowspan="2">
-              <p>22関節 10ml (5ml×2)</p>
+              <p>2関節 10ml (5ml×2)</p>
             </td>
             <td class="contents-box_menu__inner_box_minute">
               <p>1回</p>
@@ -208,7 +208,7 @@ $rootDir = get_template_directory_uri();
               <div class="flex">
                 <div class="flex_box">
                   <p class="orange_tab">オープニング価格</p>
-                  <p>ハイドロリリース</p>
+                  <p>ハイドロリリース <br>＋ 培養上清液治療</p>
                 </div>
               </div>
             </td>
@@ -247,7 +247,7 @@ $rootDir = get_template_directory_uri();
               <div class="flex">
                 <div class="flex_box">
                   <p class="orange_tab">オープニング価格</p>
-                  <p>体外衝撃波（収束型）＋ 培養上清液治療</p>
+                  <p>体外衝撃波（収束型）<br>＋ 培養上清液治療</p>
                 </div>
               </div>
             </td>
@@ -406,14 +406,14 @@ $rootDir = get_template_directory_uri();
       <table class="contents-box_menu">
         <tbody class="contents-box_menu__inner">
           <tr class="contents-box_menu__inner_box">
-            <td class="contents-box_menu__inner_box_name width" rowspan="1">
+            <td class="contents-box_menu__inner_box_name" rowspan="1">
               <div class="flex">
                 <div class="flex_box">
-                  <p>サイレントマニピュレーション（ブロック＋手技）</p>
+                  <p>サイレントマニピュレーション<br>（ブロック＋手技）</p>
                 </div>
               </div>
             </td>
-            <td class="contents-box_menu__inner_box_part">
+            <td class="contents-box_menu__inner_box_part small">
               <p>肩</p>
             </td>
             <td class="contents-box_menu__inner_box_minute">
@@ -424,14 +424,14 @@ $rootDir = get_template_directory_uri();
             </td>
           </tr>
           <tr class="contents-box_menu__inner_box">
-            <td class="contents-box_menu__inner_box_name width" rowspan="1">
+            <td class="contents-box_menu__inner_box_name" rowspan="1">
               <div class="flex">
                 <div class="flex_box">
-                  <p>ボツリヌス注射（脳梗塞などの痙縮）</p>
+                  <p>ボツリヌス注射<br>（脳梗塞などの痙縮）</p>
                 </div>
               </div>
             </td>
-            <td class="contents-box_menu__inner_box_part">
+            <td class="contents-box_menu__inner_box_part small">
               <p>1部位</p>
             </td>
             <td class="contents-box_menu__inner_box_minute">
@@ -442,14 +442,14 @@ $rootDir = get_template_directory_uri();
             </td>
           </tr>
           <tr class="contents-box_menu__inner_box">
-            <td class="contents-box_menu__inner_box_name width" rowspan="1">
+            <td class="contents-box_menu__inner_box_name" rowspan="1">
               <div class="flex">
                 <div class="flex_box">
                   <p>幹細胞培養上清液 点滴</p>
                 </div>
               </div>
             </td>
-            <td class="contents-box_menu__inner_box_part">
+            <td class="contents-box_menu__inner_box_part small">
               <p>-</p>
             </td>
             <td class="contents-box_menu__inner_box_minute">

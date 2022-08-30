@@ -180,6 +180,17 @@
             width: 23.5%;
             position: relative;
 
+            &.small{
+              width: 10%;
+              text-align: center;
+
+              @include sp {
+                width: 100%;
+                text-align: left;
+              }
+
+            }
+
             @include sp {
               width: 100%;
             }
