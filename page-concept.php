@@ -113,6 +113,18 @@ $rootDir = get_template_directory_uri();
     </section>
 
     <section class="concept-interview">
+      <div class="triangle--right triangle--01">
+        <img src="<?php echo $rootDir ?>/images/concept/triangle-right.svg" alt="">
+      </div>
+      <div class="triangle--left triangle--02">
+        <img src="<?php echo $rootDir ?>/images/concept/triangle-left.svg" alt="">
+      </div>
+      <div class="triangle--right triangle--03">
+        <img src="<?php echo $rootDir ?>/images/concept/triangle-right.svg" alt="">
+      </div>
+      <div class="triangle--left triangle--04">
+        <img src="<?php echo $rootDir ?>/images/concept/triangle-left.svg" alt="">
+      </div>
       <div class="concept-interview__wrapper">
         <div class="concept-section__title-wrapper concept-section__title-wrapper--left concept-section__title-wrapper--white">
           <h3 class="concept-section__title">INTERVIEW</h3>

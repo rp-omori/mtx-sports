@@ -5555,6 +5555,31 @@ td, th {
 .concept-contents .concept-background .concept-background__main .concept-background__img {
   width: 52.7994791667vw;
 }
+.concept-contents .concept-interview {
+  position: relative;
+}
+.concept-contents .concept-interview .triangle--left,
+.concept-contents .concept-interview .triangle--right {
+  position: absolute;
+}
+.concept-contents .concept-interview .triangle--left {
+  right: 0;
+}
+.concept-contents .concept-interview .triangle--right {
+  left: 0;
+}
+.concept-contents .concept-interview .triangle--01 {
+  top: 18%;
+}
+.concept-contents .concept-interview .triangle--02 {
+  top: 27%;
+}
+.concept-contents .concept-interview .triangle--03 {
+  top: 50%;
+}
+.concept-contents .concept-interview .triangle--04 {
+  top: 80%;
+}
 .concept-contents .concept-interview .concept-interview__wrapper {
   position: relative;
 }
@@ -8800,6 +8825,22 @@ td, th {
   .concept-contents .concept-background .concept-background__main .concept-background__img {
     width: 82%;
     margin-left: auto;
+  }
+  .concept-contents .concept-interview .triangle--01 {
+    top: 16%;
+    width: 50%;
+  }
+  .concept-contents .concept-interview .triangle--02 {
+    top: 30%;
+    width: 50%;
+  }
+  .concept-contents .concept-interview .triangle--03 {
+    top: 49%;
+    width: 50%;
+  }
+  .concept-contents .concept-interview .triangle--04 {
+    top: 86%;
+    width: 50%;
   }
   .concept-contents .concept-interview .concept-interview__main {
     padding-top: 36.2666666667vw;
