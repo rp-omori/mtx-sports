@@ -51,19 +51,19 @@ $rootDir = get_template_directory_uri();
       </div>
     </div>
     <div class="concept-indexArea">
-      <a href="#system" class="index_btn">
+      <a href="#background" class="index_btn">
         <p class="green_txt">BACKGROUND</p>
         <p>クリニックをつくった背景</p>
         <img src="<?php echo $rootDir ?>/images/facility/facility_btn.png" alt="">
       </a>
-      <a href="#collaborating" class="index_btn">
+      <a href="#interview" class="index_btn">
         <p class="green_txt">INTERVIEW</p>
         <p>メソッド開発者の想い</p>
         <img src="<?php echo $rootDir ?>/images/facility/facility_btn.png" alt="">
       </a>
     </div>
 
-    <section class="concept-background">
+    <section id="background" class="concept-background">
       <div class="concept-background__wrapper">
         <div class="concept-section__title-wrapper concept-section__title-wrapper--right concept-section__title-wrapper--green">
           <h3 class="concept-section__title">BACKGROUND</h3>
@@ -112,7 +112,7 @@ $rootDir = get_template_directory_uri();
       </div>
     </section>
 
-    <section class="concept-interview">
+    <section id="interview" class="concept-interview">
       <div class="triangle--right triangle--01">
         <img src="<?php echo $rootDir ?>/images/concept/triangle-right.svg" alt="">
       </div>
@@ -133,7 +133,7 @@ $rootDir = get_template_directory_uri();
         <div class="concept-interview__main">
           <div class="concept-interview__lead">
             <p class="concept-interview__lead-text">
-              MTX膝・関節クリニックのメソッドは、医師とトレーナーが手を組み開発されました。<br>
+              MTXスポーツ・関節クリニックのメソッドは、医師とトレーナーが手を組み開発されました。<br>
               開発に携わった3人のメソッド開発にかけた想いを語ってもらいました。
             </p>
             <div class="concept-interview__lead-human-wrapper">
