@@ -15,16 +15,9 @@ $rootDir = get_template_directory_uri();
   <?php get_template_part('component/c__title'); ?>
 
   <?php
-    $post_id = get_the_ID();
-    $args = array(
-        'post_type' => 'treatment',
-        'post_id' => $post_id,
-        'post_status' => 'publish',
-    );
-    $my_query = new WP_Query($args);
-    if ($my_query->have_posts()):
-      while ($my_query->have_posts()):
-        $my_query->the_post();
+    if (have_posts()) {
+      while (have_posts()) {
+        the_post();
 
         // 対象疾患
         $condition = get_field('condition');
@@ -242,9 +235,8 @@ $rootDir = get_template_directory_uri();
     </div>
     <?php get_template_part('component/footer__other'); ?>
   </div>
-
-    <?php endwhile; ?>
-  <?php endif;?>
+  <?php  }
+	} ?>
 </main>
 
 <?php get_footer(); ?>
