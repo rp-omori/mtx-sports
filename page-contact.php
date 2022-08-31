@@ -176,5 +176,5 @@ $rootDir = get_template_directory_uri();
     </div> -->
   </div>
 </main>
-
+<script src="<?php echo $rootDir ?>/js/form.js"></script>
 <?php get_footer(); ?>
