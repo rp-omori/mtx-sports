@@ -30,7 +30,7 @@ $rootDir = get_template_directory_uri();
         </p>
       </div>
       <div class="contact-complete__btn">
-        <a href="#" class="btn btn--green">
+        <a href="<?php echo home_url(); ?>" class="btn btn--green">
           <p>トップページへ戻る</p>
         </a>
       </div>
