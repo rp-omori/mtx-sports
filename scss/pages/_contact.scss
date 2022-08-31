@@ -239,13 +239,19 @@
     }
   }
 
-  .form-error {
+  .error {
     margin-top: get_vw(12);
     background: #F5E4E4;
     border-radius: 5px;
+    padding: get_vw(10) get_vw(15);
+    color: var(--note-red) !important;
+    font-size: calcFz(16) !important;
+    font-weight: bold !important;
 
     @include sp {
       margin-top: get_vw(8, 375);
+      padding: get_vw(7, 375) get_vw(10, 375);
+      font-size: calcFz(13) !important;
     }
 
     .form-error__text {
