@@ -6,7 +6,11 @@
 add_theme_support( 'post-thumbnails' );
 // <p> タグ、 <br /> タグの自動挿入無効化
 remove_filter('the_title', 'wpautop'); // タイトル蘭
-// remove_filter('the_content', 'wpautop'); // 本文欄
+$url = $_SERVER['REQUEST_URI'];
+$is_contact = strstr($url, 'contact');
+if ($is_contact == true) {
+  remove_filter('the_content', 'wpautop'); // 本文欄
+}
 remove_filter('comment_text', 'wpautop'); // コメント欄
 remove_filter('the_excerpt', 'wpautop'); // 抜粋欄
 // wp_headから不要なものを削除
