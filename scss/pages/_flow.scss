@@ -51,7 +51,7 @@
       }
 
       &::after{
-        content: "治療体制と施設・設備";
+        content: "治療の流れ";
         color: #fff;
         font-size: calcFz(50);
         font-family: $fontFamilyYuGo;
@@ -254,16 +254,19 @@
       &_left{
         width: clamp(10px,get_vw(280),280px);
         margin-right: clamp(10px,get_vw(155),155px);
+        padding-top: clamp(10px,get_vw(50),50px);
+        height: clamp(10px,get_vw(3880),3850px);
 
         @include sp {
           width: 100%;
+          height: auto;
           margin: 0 auto 65px;
         }
 
         img{
           width: 100%;
-          height: clamp(10px,get_vw(3300),3300px);
-          margin-bottom: clamp(10px,get_vw(33),33px);
+          height: 100%;
+          // margin-bottom: clamp(10px,get_vw(33),33px);
 
           &.dot{
             width: clamp(10px,get_vw(13.3),13.3px);
@@ -285,7 +288,7 @@
 
       &_right{
         width: clamp(10px,get_vw(885),885px);
-        padding-top: clamp(10px,get_vw(140),140px);
+        // padding-top: clamp(10px,get_vw(140),140px);
 
         @include sp {
           width: 100%;
@@ -309,6 +312,7 @@
             width: clamp(10px,get_vw(125),125px);
             height: 2px;
             background-color: #00A384;
+            // display: none;
 
             @include sp {
               display: none;
@@ -325,6 +329,7 @@
             height: clamp(10px,get_vw(40),40px);
             background-color: #00A384;
             border-radius: 50%;
+            // display: none;
 
             @include sp {
               display: none;

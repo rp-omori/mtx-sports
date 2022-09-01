@@ -185,6 +185,14 @@
         flex-direction: column-reverse;
       }
     }
+
+    .treatment-detail__contents-item-text {
+      margin-bottom: get_vw(10);
+
+      @include sp {
+        margin-bottom: get_vw(12, 375);
+      }
+    }
   }
 
   .contents-item-detail__list {
@@ -282,6 +290,10 @@
     color: var(--main-color-black);
     font-size: calcFz(18);
     line-height: 1.6;
+
+    &.fwb {
+      font-weight: bold;
+    }
 
     @include sp {
       font-size: calcFz(15);

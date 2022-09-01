@@ -17,62 +17,54 @@ $rootDir = get_template_directory_uri();
   <!-- onlineshop一覧の取得 -->
 <?php
 
-  $args = array(
-      'post_type' => 'prices',
-      'order' => 'ASC',
-      'posts_per_page' => -1,
-      'post_status' => 'publish', //取得するステータス。publishなら一般公開のもののみ
-  );
+$args = array(
+    'post_type' => 'prices',
+    'order' => 'ASC',
+    'posts_per_page' => -1,
+);
 
-  $WP_post = new WP_Query($args);
+$WP_post = new WP_Query($args);
 
-  // var_dump($WP_post);
+// var_dump($WP_post);
 
-  if($WP_post -> have_posts()){
-    while($WP_post -> have_posts()) {
-      foreach( $WP_post -> posts as $WP_posts ){
-        $post_data = [];
-        $WP_post->the_post();
-        $post_data['treatment']  =  get_the_title();
-        $post_id = get_the_ID();
-        $post_data['data'] = [];
-        $object = new stdClass();
-        if(have_rows('treatment')){
-          while(have_rows('treatment')) {
-            while(the_row()){
-              $treatment_name = get_sub_field("treatment_name");
-              $treatment_tab = get_sub_field("treatment_tab");
-              $treatment_point = get_sub_field("treatment_point");
-              $treatment_detail = get_sub_field("treatment_detail");
-              $object -> name = $treatment_name;
-              $object -> tab = $treatment_tab;
-              $object -> point = $treatment_point;
-              $object -> detail = $treatment_detail;
-                foreach( $treatment_detail as $value){
-                  $treatment_part = $value['treatment_part'];
-                  $treatment_set = $value['treatment_set'];
-                  $total = $value['total'];
-                  $object -> part = $treatment_part;
-                  $n=0;
-                  foreach( $treatment_set as $value){
-                    $treatment_times = $value['treatment_times'];
-                    $treatment_price = $value['treatment_price'];
-                    ++$n;
-                  }
-                }
-                $object -> total = $n;
-                $arr_obj = (array) $object;
-                $post_data['data'][] = $arr_obj;
-            }
-          }
-        }
-        $my_post['data'][] = $post_data;
-      }
-    }
-    $WP_post_json = json_encode($my_post);
-  }
+// if($WP_post -> have_posts()){
+//     while($WP_post -> have_posts()) {
+//         foreach( $WP_post -> posts as $WP_posts ){
+//             $post_data = [];
+//             $WP_post->the_post();
+//             $post_data['treatment']  =  get_the_title();
+//             $post_id = get_the_ID();
+//             $post_data['data'] = [];
+//             $object = new stdClass();
+//             if(have_rows('treatment')){
+//                 while(have_rows('treatment')) {
+//                     while(the_row()){
+//                         $treatment_name = get_sub_field("treatment_name");
+//                         $online_shop_items = get_sub_field("onlineshop_items");
+//                         // var_dump($online_shop_name);
+//                         foreach( $online_shop_items as $value){
+//                             // $items_name = $value['onlineshp_items_name'] == 'バッグ' ? 'bag' : 'item';
+//                             $items_name = $value['onlineshp_items_name'];
+//                             $items_link = $value['onlineshp_items_link'];
+//                             $object -> name = $online_shop_name;
+//                             $object -> $items_name = $items_link;
+//                         }
+//                         // var_dump($object);
+//                         $arr_obj = (array) $object;
+//                         $post_data['data'][] = $arr_obj;
+//                     }
+//                 }
+//             }
+//             $my_post2['data'][] = $post_data;
+//         }
+//     }
+//     $WP_post_json2 = json_encode($my_post2);
+// }
+
+
 
 ?>
+
 
   <div id="price-contents" class="price-contents">
 
@@ -238,7 +230,7 @@ $rootDir = get_template_directory_uri();
           </tr>
           <tr class="contents-box_menu__inner_box">
             <td class="contents-box_menu__inner_box_part" rowspan="2">
-              <p>22関節 10ml (5ml×2)</p>
+              <p>2関節 10ml (5ml×2)</p>
             </td>
             <td class="contents-box_menu__inner_box_minute">
               <p>1回</p>
@@ -264,7 +256,7 @@ $rootDir = get_template_directory_uri();
               <div class="flex">
                 <div class="flex_box">
                   <p class="orange_tab">オープニング価格</p>
-                  <p>ハイドロリリース</p>
+                  <p>ハイドロリリース <br>＋ 培養上清液治療</p>
                 </div>
               </div>
             </td>
@@ -303,7 +295,7 @@ $rootDir = get_template_directory_uri();
               <div class="flex">
                 <div class="flex_box">
                   <p class="orange_tab">オープニング価格</p>
-                  <p>体外衝撃波（収束型）＋ 培養上清液治療</p>
+                  <p>体外衝撃波（収束型）<br>＋ 培養上清液治療</p>
                 </div>
               </div>
             </td>
@@ -462,14 +454,14 @@ $rootDir = get_template_directory_uri();
       <table class="contents-box_menu">
         <tbody class="contents-box_menu__inner">
           <tr class="contents-box_menu__inner_box">
-            <td class="contents-box_menu__inner_box_name width" rowspan="1">
+            <td class="contents-box_menu__inner_box_name" rowspan="1">
               <div class="flex">
                 <div class="flex_box">
-                  <p>サイレントマニピュレーション（ブロック＋手技）</p>
+                  <p>サイレントマニピュレーション<br>（ブロック＋手技）</p>
                 </div>
               </div>
             </td>
-            <td class="contents-box_menu__inner_box_part">
+            <td class="contents-box_menu__inner_box_part small">
               <p>肩</p>
             </td>
             <td class="contents-box_menu__inner_box_minute">
@@ -480,14 +472,14 @@ $rootDir = get_template_directory_uri();
             </td>
           </tr>
           <tr class="contents-box_menu__inner_box">
-            <td class="contents-box_menu__inner_box_name width" rowspan="1">
+            <td class="contents-box_menu__inner_box_name" rowspan="1">
               <div class="flex">
                 <div class="flex_box">
-                  <p>ボツリヌス注射（脳梗塞などの痙縮）</p>
+                  <p>ボツリヌス注射<br>（脳梗塞などの痙縮）</p>
                 </div>
               </div>
             </td>
-            <td class="contents-box_menu__inner_box_part">
+            <td class="contents-box_menu__inner_box_part small">
               <p>1部位</p>
             </td>
             <td class="contents-box_menu__inner_box_minute">
@@ -498,14 +490,14 @@ $rootDir = get_template_directory_uri();
             </td>
           </tr>
           <tr class="contents-box_menu__inner_box">
-            <td class="contents-box_menu__inner_box_name width" rowspan="1">
+            <td class="contents-box_menu__inner_box_name" rowspan="1">
               <div class="flex">
                 <div class="flex_box">
                   <p>幹細胞培養上清液 点滴</p>
                 </div>
               </div>
             </td>
-            <td class="contents-box_menu__inner_box_part">
+            <td class="contents-box_menu__inner_box_part small">
               <p>-</p>
             </td>
             <td class="contents-box_menu__inner_box_minute">
