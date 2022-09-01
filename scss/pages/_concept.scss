@@ -554,11 +554,13 @@
         }
 
         .concept-interview__lead-human-wrapper {
-          margin-bottom: get_vw(124);
+          width: get_vw(1172);
+          margin: 0 auto get_vw(124);
           background: var(--main-color-white);
           border-radius: 20px;
 
           @include sp {
+            width: 100%;
             margin-bottom: get_vw(61, 375);
           }
         }

@@ -81,6 +81,12 @@
 
     }
 
+    .page-title__treatments {
+      @include sp {
+        font-size: calcFz(49);
+      }
+    }
+
   }
 
   &__main{
