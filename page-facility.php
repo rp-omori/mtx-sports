@@ -19,7 +19,7 @@ $rootDir = get_template_directory_uri();
 
     <div class="facility-top-wrapper">
       <div class="facility-top">
-        <p>ABOUT US</p>
+        <p>SYSTEM & FACILITY</p>
       </div>
     </div>
 
