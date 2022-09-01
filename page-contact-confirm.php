@@ -18,7 +18,7 @@ $rootDir = get_template_directory_uri();
   <div id="contact-confirm" class="contact-confirm">
     <div class="contact-confirm__inner">
       <p class="contact-confirm__text">入力内容をご確認の上、「送信する」ボタンを押してください。</p>
-      <?php echo do_shortcode('[mwform_formkey key="110"]'); ?>
+      <?php echo do_shortcode('[mwform_formkey key="'. $form_key .'"]'); ?>
       <!-- <div class="contact-confirm__body">
         <ul class="contact-confirm__list">
           <li class="contact-confirm__item">

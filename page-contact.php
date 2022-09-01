@@ -49,7 +49,7 @@ $rootDir = get_template_directory_uri();
         </div>
       </div>
     </div>
-    <?php echo do_shortcode('[mwform_formkey key="110"]'); ?>
+    <?php echo do_shortcode('[mwform_formkey key="'. $form_key .'"]'); ?>
     <!-- <div class="contact__body">
       <div class="contact__body-inner">
         <div class="form-body">
