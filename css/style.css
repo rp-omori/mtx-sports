@@ -2834,6 +2834,7 @@
   position: relative;
   width: clamp(10px, 65.1041666667vw, 1000px);
   margin: 0 auto;
+  margin-bottom: clamp(10px, 4.2317708333vw, 65px);
 }
 .price-contents .contents-box_cat {
   width: 100%;
@@ -2976,25 +2977,25 @@
   color: #262928;
   line-height: 1.6;
 }
-.price-contents .contents-box_sub {
-  width: clamp(10px, 65.1041666667vw, 1000px);
-  margin: 0 auto;
-  margin-top: clamp(10px, 0.9765625vw, 15px);
-  margin-bottom: clamp(10px, 4.2317708333vw, 65px);
+.price-contents .contents-box_caution {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: clamp(10px, 1.3020833333vw, 20px);
 }
-.price-contents .contents-box_sub_caution p {
+.price-contents .contents-box_caution p {
   color: #6A8381;
   font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
   font-size: clamp(10px, 1.8rem, 18px);
   font-weight: 300;
 }
-.price-contents .contents-box_sub_btn {
+.price-contents .contents-box_btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3002,11 +3003,11 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.price-contents .contents-box_sub_btn img {
+.price-contents .contents-box_btn img {
   width: clamp(10px, 1.3020833333vw, 20px);
   margin-right: 8px;
 }
-.price-contents .contents-box_sub_btn p {
+.price-contents .contents-box_btn p {
   font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
   font-size: clamp(10px, 1.8rem, 18px);
   font-weight: 600;
@@ -7305,6 +7306,7 @@ td, th {
   }
   .price-contents .contents-box {
     width: 90%;
+    margin-bottom: 70px;
   }
   .price-contents .contents-box_cat {
     padding: 8px 0;
@@ -7423,34 +7425,26 @@ td, th {
             transform: translate(0, 0);
     font-size: clamp(10px, 1.5rem, 15px);
   }
-  .price-contents .contents-box_sub {
-    width: 90%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-bottom: 70px;
+  .price-contents .contents-box_caution {
+    margin-bottom: 25px;
   }
-  .price-contents .contents-box_sub_caution p {
+  .price-contents .contents-box_caution p {
     font-size: clamp(10px, 1.4rem, 14px);
   }
-  .price-contents .contents-box_sub_btn {
-    margin-top: 20px;
-  }
-  .price-contents .contents-box_sub_btn.sp_btn p {
+  .price-contents .contents-box_btn.sp_btn p {
     text-align: left;
     line-height: 1.6;
   }
-  .price-contents .contents-box_sub_btn {
+  .price-contents .contents-box_btn {
     position: static;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .price-contents .contents-box_sub_btn img {
+  .price-contents .contents-box_btn img {
     width: 20px;
   }
-  .price-contents .contents-box_sub_btn p {
+  .price-contents .contents-box_btn p {
     font-size: clamp(10px, 1.6rem, 16px);
     margin-bottom: 0;
   }
