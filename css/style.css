@@ -3298,7 +3298,7 @@ td, th {
   line-height: 1.76;
 }
 .facility-contents .facility-top-wrapper .facility-top::after {
-  content: "治療の流れ";
+  content: "治療体制と施設・設備";
   color: #fff;
   font-size: clamp(10px, 5rem, 50px);
   font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
@@ -4140,7 +4140,8 @@ td, th {
   width: clamp(10px, 18.2291666667vw, 280px);
   margin-right: clamp(10px, 10.0911458333vw, 155px);
   padding-top: clamp(10px, 3.2552083333vw, 50px);
-  height: clamp(10px, 252.6041666667vw, 3850px);
+  height: clamp(10px, 247.3958333333vw, 3800px);
+  position: relative;
 }
 .flow-contents .flow-circle__inner_left img {
   width: 100%;
@@ -4150,6 +4151,13 @@ td, th {
   width: clamp(10px, 0.8658854167vw, 13.3px);
   height: auto;
   margin: 0 auto;
+}
+.flow-contents .flow-circle__inner_left .flow_mark {
+  position: absolute;
+  bottom: 2%;
+  right: -40%;
+  width: clamp(10px, 13.671875vw, 210px);
+  height: clamp(10px, 13.671875vw, 210px);
 }
 .flow-contents .flow-circle__inner_right {
   width: clamp(10px, 57.6171875vw, 885px);
@@ -4409,7 +4417,7 @@ td, th {
   margin-bottom: clamp(10px, 0.78125vw, 12px);
 }
 .flow-contents .flow-circle__inner_right_box_bottom_right {
-  width: clamp(10px, 26.0416666667vw, 400px);
+  width: clamp(10px, 17.9036458333vw, 275px);
 }
 .flow-contents .flow-circle__inner_right_box_bottom_right_txt {
   display: -webkit-box;
