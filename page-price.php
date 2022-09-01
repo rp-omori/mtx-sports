@@ -18,52 +18,67 @@ $rootDir = get_template_directory_uri();
 <?php
 
 $args = array(
-    'post_type' => 'prices',
-    'order' => 'ASC',
-    'posts_per_page' => -1,
+  'post_type' => 'prices',
+  'order' => 'ASC',
+  'posts_per_page' => -1,
+  'post_status' => 'publish', //取得するステータス。publishなら一般公開のもののみ
 );
 
 $WP_post = new WP_Query($args);
 
 // var_dump($WP_post);
 
-// if($WP_post -> have_posts()){
-//     while($WP_post -> have_posts()) {
-//         foreach( $WP_post -> posts as $WP_posts ){
-//             $post_data = [];
-//             $WP_post->the_post();
-//             $post_data['treatment']  =  get_the_title();
-//             $post_id = get_the_ID();
-//             $post_data['data'] = [];
-//             $object = new stdClass();
-//             if(have_rows('treatment')){
-//                 while(have_rows('treatment')) {
-//                     while(the_row()){
-//                         $treatment_name = get_sub_field("treatment_name");
-//                         $online_shop_items = get_sub_field("onlineshop_items");
-//                         // var_dump($online_shop_name);
-//                         foreach( $online_shop_items as $value){
-//                             // $items_name = $value['onlineshp_items_name'] == 'バッグ' ? 'bag' : 'item';
-//                             $items_name = $value['onlineshp_items_name'];
-//                             $items_link = $value['onlineshp_items_link'];
-//                             $object -> name = $online_shop_name;
-//                             $object -> $items_name = $items_link;
-//                         }
-//                         // var_dump($object);
-//                         $arr_obj = (array) $object;
-//                         $post_data['data'][] = $arr_obj;
-//                     }
-//                 }
-//             }
-//             $my_post2['data'][] = $post_data;
-//         }
-//     }
-//     $WP_post_json2 = json_encode($my_post2);
-// }
+if($WP_post -> have_posts()){
+  while($WP_post -> have_posts()) {
+    foreach( $WP_post -> posts as $WP_posts ){
+      $post_data = [];
+      $WP_post->the_post();
+      $post_data['treatment']  =  get_the_title();
+      $post_id = get_the_ID();
+      $post_data['data'] = [];
+      $object = new stdClass();
+      if(have_rows('treatment')){
+        while(have_rows('treatment')) {
+          while(the_row()){
+            $treatment_name = get_sub_field("treatment_name");
+            $treatment_tab = get_sub_field("treatment_tab");
+            $treatment_point = get_sub_field("treatment_point");
+            $treatment_detail = get_sub_field("treatment_detail");
+            $object -> name = $treatment_name;
+            $object -> tab = $treatment_tab;
+            $object -> point = $treatment_point;
+            $object -> detail = $treatment_detail;
+              foreach( $treatment_detail as $value){
+                $treatment_part = $value['treatment_part'];
+                $treatment_set = $value['treatment_set'];
+                $total = $value['total'];
+                $object -> part = $treatment_part;
+                $n=0;
+                foreach( $treatment_set as $value){
+                  $treatment_times = $value['treatment_times'];
+                  $treatment_price = $value['treatment_price'];
+                  ++$n;
+                }
+              }
+              $object -> total = $n;
+              $arr_obj = (array) $object;
+              $post_data['data'][] = $arr_obj;
+          }
+        }
+      }
+    $my_post['data'][] = $post_data;
+  }
+}
+$WP_post_json = json_encode($my_post);
+}
+
+?>
 
 
 
 ?>
+
+  <div class="price-contents">
 
 
   <div id="price-contents" class="price-contents">
