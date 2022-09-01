@@ -201,7 +201,7 @@ $rootDir = get_template_directory_uri();
               <a href="tel:0362725047" class="btn btn--white btn--tel_white sp">
                 <span></span>
               </a>
-              <a href="#" class="btn btn--orange btn--web pc">
+              <a href="https://web.booking.clius.jp/reserve/mtx" class="btn btn--orange btn--web pc">
                 <span>まずはWEB予約</span>
               </a>
               <a href="#" class="btn btn--orange btn--web sp">

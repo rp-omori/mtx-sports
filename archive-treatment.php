@@ -35,17 +35,17 @@ $rootDir = get_template_directory_uri();
       </div>
     </div>
     <div class="treatment-indexArea">
-      <a href="#system" class="index_btn">
+      <a href="#service" class="index_btn">
         <p class="green_txt">SERVICE THERAPY</p>
         <p>再生治療</p>
         <img src="<?php echo $rootDir ?>/images/facility/facility_btn.png" alt="">
       </a>
-      <a href="#collaborating" class="index_btn">
+      <a href="#exercise" class="index_btn">
         <p class="green_txt">EXERCISE THERAPY</p>
         <p>運動療法</p>
         <img src="<?php echo $rootDir ?>/images/facility/facility_btn.png" alt="">
       </a>
-      <a href="#collaborating" class="index_btn">
+      <a href="#physical" class="index_btn">
         <p class="green_txt">PHYSICAL THERAPY</p>
         <p>物理療法</p>
         <img src="<?php echo $rootDir ?>/images/facility/facility_btn.png" alt="">
@@ -106,14 +106,14 @@ $rootDir = get_template_directory_uri();
                       <div class="treatment__model-squre-body">
                         <div class="treatment__model-squre-body-group treatment__model-squre-body-group--left treatment__model-squre-body-group--left_right">
                           <div class="treatment__model-squre-img">
-                            <img src="<?php echo $rootDir ?>/images/treatment/dummy.png" alt="">
+                            <img src="<?php echo $rootDir ?>/images/treatment/model01-dd.jpg" alt="">
                           </div>
                           <p class="treatment__model-squre-body-title">DDシステム</p>
                           <p class="treatment__model-squre-body-text">筋力だけでなく、関節の安定性や反射速度等、様々な情報を可視化し、トレーニングに活かします。</p>
                         </div>
                         <div class="treatment__model-squre-body-group">
                           <div class="treatment__model-squre-img">
-                            <img src="<?php echo $rootDir ?>/images/treatment/dummy.png" alt="">
+                            <img src="<?php echo $rootDir ?>/images/treatment/model01-rehabilitation.jpg" alt="">
                           </div>
                           <p class="treatment__model-squre-body-title">理学療法士によるリハビリ</p>
                           <p class="treatment__model-squre-body-text">それぞれの患者さんの症状に合わせ、オーダーメイドのリハビリを提供します。</p>
@@ -190,14 +190,14 @@ $rootDir = get_template_directory_uri();
                       <div class="treatment__model-squre-body">
                         <div class="treatment__model-squre-body-group treatment__model-squre-body-group--left treatment__model-squre-body-group--left_right treatment__model-squre-body-group--pt">
                           <div class="treatment__model-squre-img">
-                            <img src="<?php echo $rootDir ?>/images/treatment/dummy.png" alt="">
+                            <img src="<?php echo $rootDir ?>/images/treatment/model01-dd.jpg" alt="">
                           </div>
                           <p class="treatment__model-squre-body-title">DDシステム</p>
                           <p class="treatment__model-squre-body-text">筋力だけでなく、関節の安定性や反射速度等、様々な情報を可視化し、トレーニングに活かします。</p>
                         </div>
                         <div class="treatment__model-squre-body-group">
                           <div class="treatment__model-squre-img">
-                            <img src="<?php echo $rootDir ?>/images/treatment/dummy.png" alt="">
+                            <img src="<?php echo $rootDir ?>/images/treatment/model01-rehabilitation.jpg" alt="">
                           </div>
                           <p class="treatment__model-squre-body-title">理学療法士によるリハビリ</p>
                           <p class="treatment__model-squre-body-text">それぞれの患者さんの症状に合わせ、オーダーメイドのリハビリを提供します。</p>
@@ -224,7 +224,7 @@ $rootDir = get_template_directory_uri();
       </div>
     </section>
 
-    <section class="treatment__menu treatment__menu--white treatment__menu--01">
+    <section id="service" class="treatment__menu treatment__menu--white treatment__menu--01">
       <div class="treatment__menu-inner">
         <div class="treatment__menu-head">
           <div class="treatment__menu-head-label-wrapper">
@@ -298,7 +298,7 @@ $rootDir = get_template_directory_uri();
         </ul>
       </div>
     </section>
-    <section class="treatment__menu treatment__menu--green treatment__menu--02">
+    <section id="exercise" class="treatment__menu treatment__menu--green treatment__menu--02">
       <div class="treatment__menu-inner">
         <div class="treatment__menu-head">
           <div class="treatment__menu-head-label-wrapper">
@@ -424,7 +424,7 @@ $rootDir = get_template_directory_uri();
         </ul>
       </div>
     </section>
-    <section class="treatment__menu treatment__menu--white treatment__menu--03">
+    <section id="physical" class="treatment__menu treatment__menu--white treatment__menu--03">
       <div class="treatment__menu-inner">
         <div class="treatment__menu-head">
           <div class="treatment__menu-head-label-wrapper">

@@ -224,7 +224,7 @@
   .treatment__model {
     padding: get_vw(250) 0 get_vw(324);
     background: var(--main-color);
-    clip-path: polygon(0 14%, 100% 0%, 100% 100%, 0 90%);
+    clip-path: polygon(0 11%, 100% 0%, 100% 100%, 0 90%);
 
     @include sp {
       padding: get_vw(130, 375) 0 get_vw(186, 375);
@@ -611,6 +611,7 @@
             color: var(--note-red);
             font-size: calcFz(15);
             font-weight: bold;
+            line-height: 1.6;
 
             @include sp {
               margin-top: get_vw(5, 375);
