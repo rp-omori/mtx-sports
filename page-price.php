@@ -19,7 +19,6 @@ $rootDir = get_template_directory_uri();
   <!-- onlineshop一覧の取得 -->
 <?php
 
-
 $args = array(
     'post_type' => 'prices',
     'order' => 'ASC',
