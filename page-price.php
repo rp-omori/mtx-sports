@@ -81,7 +81,7 @@ if($WP_post -> have_posts()){
 
   <div id="price-contents" class="price-contents">
 
-    <!-- <div class="contents-box">
+    <div class="contents-box">
         <div class="contents-box_cat">
           <p>診断</p>
         </div>
@@ -123,11 +123,9 @@ if($WP_post -> have_posts()){
           <p>※治療を行なった場合は、診察料を頂戴しません。</p>
         </div>
       <?php wp_reset_postdata(); ?>
-    </div> -->
+    </div>
 
-    <!-- <div id="contents-box" class="contents-box"></div> -->
-
-    <!-- <div id="contents-box_sub" class="contents-box_sub">
+    <div id="contents-box_sub" class="contents-box_sub">
 
       <div class="contents-box_sub_caution">
         <p>※治療を行なった場合は、診察料を頂戴しません。</p>
@@ -138,9 +136,9 @@ if($WP_post -> have_posts()){
           <p>再生医療についてはこちら</p>
       </a>
 
-    </div> -->
+    </div>
 
-    <!-- <div class="contents-box">
+    <div class="contents-box">
       <div class="contents-box_cat">
         <p>再生医療</p>
       </div>
@@ -360,9 +358,9 @@ if($WP_post -> have_posts()){
         <img src="<?php echo $rootDir ?>/images/price/price_btn.png" alt="">
         <p>再生医療についてはこちら</p>
       </a>
-    </div> -->
+    </div>
 
-    <!-- <div class="contents-box">
+    <div class="contents-box">
       <div class="contents-box_cat">
         <p>運動療法</p>
       </div>
@@ -420,9 +418,9 @@ if($WP_post -> have_posts()){
         <img src="<?php echo $rootDir ?>/images/price/price_btn.png" alt="">
         <p>運動療法についてはこちら</p>
       </a>
-    </div> -->
+    </div>
 
-    <!-- <div class="contents-box">
+    <div class="contents-box">
       <div class="contents-box_cat">
         <p>物理療法</p>
       </div>
@@ -475,9 +473,9 @@ if($WP_post -> have_posts()){
         <img src="<?php echo $rootDir ?>/images/price/price_btn.png" alt="">
         <p>物理療法についてはこちら</p>
       </a>
-    </div> -->
+    </div>
 
-    <!-- <div class="contents-box">
+    <div class="contents-box">
       <div class="contents-box_cat">
         <p>その他</p>
       </div>
@@ -545,7 +543,7 @@ if($WP_post -> have_posts()){
       <a href="" class="contents-box_btn sp_btn">
         <p>その他オプション等については、お問い合わせください。</p>
       </a>
-    </div> -->
+    </div>
 
   </div>
 
@@ -558,7 +556,7 @@ if($WP_post -> have_posts()){
 
 
 
-<script>
+<!-- <script>
 
 $(function(){
 
@@ -739,8 +737,4 @@ $(function(){
 
 })
 
-
-
-
-
-</script>
+</script> -->
