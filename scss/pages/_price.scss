@@ -10,11 +10,9 @@
     position: relative;
     width: clamp(10px,get_vw(1000),1000px);
     margin: 0 auto;
-    margin-bottom: clamp(10px,get_vw(65),65px);
 
     @include sp {
       width: 90%;
-      margin-bottom: 70px;
     }
 
     &_cat{
@@ -49,11 +47,6 @@
       background-color: #FFFFFF;
       border-top: 0;
       border-collapse: collapse;
-
-
-      @include sp {
-
-      }
 
       &__inner{
         width: 100%;
@@ -331,14 +324,24 @@
 
     }
 
-    &_caution{
-      display: flex;
-      justify-content: flex-start;
-      margin-top: clamp(10px,get_vw(20),20px);
+  }
 
-      @include sp {
-        margin-bottom: 25px;
-      }
+
+  .contents-box_sub{
+    width: clamp(10px,get_vw(1000),1000px);
+    margin: 0 auto;
+    margin-top: clamp(10px,get_vw(15),15px);
+    margin-bottom: clamp(10px,get_vw(65),65px);
+    display: flex;
+    justify-content: space-between;
+
+    @include sp {
+      width: 90%;
+      flex-direction: column;
+      margin-bottom: 70px;
+    }
+
+    &_caution{
 
         p{
           color: #6A8381;
@@ -355,11 +358,12 @@
     }
 
     &_btn{
-      position: absolute;
-      bottom: 0;
-      right: 0;
       display: flex;
       align-items: center;
+
+      @include sp {
+        margin-top: 20px;
+      }
 
       &.sp_btn{
         @include sp {

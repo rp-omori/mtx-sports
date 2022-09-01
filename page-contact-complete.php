@@ -17,11 +17,11 @@ $rootDir = get_template_directory_uri();
   <!-- コンテンツ部分 -->
   <div id="contact-complete" class="contact-complete">
     <div class="contact-complete__inner">
-      <p class="contact-complete__text">お問い合わせありがとうございました</p>
+      <p class="contact-complete__text">送信完了</p>
       <div class="contact-complete__body">
         <p>
-          お問い合わせいただきありがとうございました。<br>
-          お問い合わせを受け付けました。<br><br>
+          <b>お問い合わせいただきありがとうございました。<br>
+          お問い合わせを受け付けました。</b><br><br>
           折り返し、担当者よりご連絡いたしますので、<br>
           恐れ入りますが、しばらくお待ちください。<br><br>
           なお、ご入力いただいたメールアドレス宛に受付完了メールを配信しております。<br>
@@ -30,7 +30,7 @@ $rootDir = get_template_directory_uri();
         </p>
       </div>
       <div class="contact-complete__btn">
-        <a href="#" class="btn btn--green">
+        <a href="<?php echo home_url(); ?>" class="btn btn--green">
           <p>トップページへ戻る</p>
         </a>
       </div>
