@@ -10,6 +10,8 @@
       if (!strstr($url, 'treatment')):
     ?>
     <p><?php the_content(); ?></p>
+    <?php else:?>
+    <p class="page-title__treatments">TREATMENTS</p>
     <?php endif;?>
   </div>
 

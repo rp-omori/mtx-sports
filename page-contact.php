@@ -157,7 +157,7 @@ $rootDir = get_template_directory_uri();
         <div class="form-agree">
           <div class="form-agree__inner">
             <p class="form-agree__text">
-              <a href="" class="form-agree__link">プライバシーポリシー</a>をご確認の上、「同意する」にチェックを入れてください。
+              <a href="<?php echo esc_url(home_url('/privacy-policy')); ?>" class="form-agree__link">プライバシーポリシー</a>をご確認の上、「同意する」にチェックを入れてください。
             </p>
             <div class="form-checkbox">
               <label for="agree">

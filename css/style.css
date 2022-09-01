@@ -4563,8 +4563,8 @@ td, th {
 .treatment-contents .treatment__model {
   padding: 16.2760416667vw 0 21.09375vw;
   background: var(--main-color);
-  -webkit-clip-path: polygon(0 14%, 100% 0%, 100% 100%, 0 90%);
-          clip-path: polygon(0 14%, 100% 0%, 100% 100%, 0 90%);
+  -webkit-clip-path: polygon(0 11%, 100% 0%, 100% 100%, 0 90%);
+          clip-path: polygon(0 11%, 100% 0%, 100% 100%, 0 90%);
 }
 .treatment-contents .treatment__model .treatment__model-wrapper {
   position: relative;
@@ -4774,6 +4774,7 @@ td, th {
   color: var(--note-red);
   font-size: clamp(10px, 1.5rem, 15px);
   font-weight: bold;
+  line-height: 1.6;
 }
 .treatment-contents .treatment__model .treatment__model-wrapper .treatment__model-area .treatment__model-area-body .treatment__model-squre {
   border-radius: 6px;
@@ -5759,7 +5760,8 @@ td, th {
   line-height: 1.75;
 }
 .concept-contents .concept-interview .concept-interview__main .concept-interview__lead .concept-interview__lead-human-wrapper {
-  margin-bottom: 8.0729166667vw;
+  width: 76.3020833333vw;
+  margin: 0 auto 8.0729166667vw;
   background: var(--main-color-white);
   border-radius: 20px;
 }
@@ -6440,6 +6442,9 @@ td, th {
             align-items: center;
     font-size: clamp(10px, 6.5rem, 65px);
     white-space: nowrap;
+  }
+  .page-title__backgraund .page-title__treatments {
+    font-size: clamp(10px, 4.9rem, 49px);
   }
   .page-title__main p {
     font-size: clamp(10px, 2.4rem, 24px);
@@ -9069,6 +9074,7 @@ td, th {
     font-size: clamp(10px, 1.5rem, 15px);
   }
   .concept-contents .concept-interview .concept-interview__main .concept-interview__lead .concept-interview__lead-human-wrapper {
+    width: 100%;
     margin-bottom: 16.2666666667vw;
   }
   .concept-contents .concept-interview .concept-interview__main .concept-interview__lead .concept-interview__lead-human-inner {
