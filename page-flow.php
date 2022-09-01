@@ -47,13 +47,9 @@ $rootDir = get_template_directory_uri();
     <div id="" class="flow-circle">
       <div class="flow-circle__inner">
         <div id="left" style="" class="flow-circle__inner_left">
-          <!-- <img class="pc" src="<?php echo $rootDir ?>/images/flow/flow_circle_more.png" alt=""> -->
           <img class="pc" src="<?php echo $rootDir ?>/images/flow/flow_circle.png" alt="">
-          <!-- <img class="dot pc" src="<?php echo $rootDir ?>/images/flow/dots.svg" alt=""> -->
-          <!-- <img class="dot pc" src="<?php echo $rootDir ?>/images/flow/three_dots.svg" alt="">
-          <img class="dot pc" src="<?php echo $rootDir ?>/images/flow/eight_dots.svg" alt="">
-          <img class="dot pc" src="<?php echo $rootDir ?>/images/flow/thirteen_dots.svg" alt=""> -->
           <img class="sp" src="<?php echo $rootDir ?>/images/flow/flow_circle_sp.png" alt="">
+          <img class="pc flow_mark" src="<?php echo $rootDir ?>/images/flow/flow_mark.png" alt="">
         </div>
         <div id="right" class="flow-circle__inner_right">
           <div class="flow-circle__inner_right_box">
@@ -202,6 +198,11 @@ $rootDir = get_template_directory_uri();
             <div class="flow-circle__inner_right_box_bottom">
               <div class="flow-circle__inner_right_box_bottom_right sp_mb">
                 <div class="flow-circle__inner_right_box_bottom_right_img">
+                  <img src="<?php echo $rootDir ?>/images/flow/flow_img_04.jpg" alt="">
+                </div>
+              </div>
+              <div class="flow-circle__inner_right_box_bottom_right sp_mb">
+                <div class="flow-circle__inner_right_box_bottom_right_img">
                   <img src="<?php echo $rootDir ?>/images/flow/flow_img_05.jpg" alt="">
                 </div>
               </div>
@@ -294,7 +295,7 @@ $rootDir = get_template_directory_uri();
                   私たちの目指すものは、人々が運動の必要性を感じ、人々の生活の中に常に運動があることです。<br>
                   それにより、人々が自分の足で人生の最後まで立ち、動き、楽しく生きられることを目指します。
                 </p>
-                <img src="<?php echo $rootDir ?>/images/flow/flow_img_06.jpg" alt="">
+                <img src="<?php echo $rootDir ?>/images/flow/flow_img_07.jpg" alt="">
               </div>
               <div id="logoArea" class="flow-circle__inner_right_box_top_logo">
                 <p>関連施設</p>
