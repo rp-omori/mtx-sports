@@ -75,8 +75,8 @@ $WP_post = new WP_Query($args);
         </div>
         <table class="contents-box_menu">
           <tbody class="contents-box_menu__inner">
-            <?php if(have_rows('treatment',62)): ?>
-            <?php while(have_rows('treatment',62)): the_row(); ?>
+            <?php if(have_rows('treatment',$price_key)): ?>
+            <?php while(have_rows('treatment',$price_key)): the_row(); ?>
             <tr class="contents-box_menu__inner_box">
               <td class="contents-box_menu__inner_box_name">
                 <div class="flex">
