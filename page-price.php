@@ -17,7 +17,76 @@ $rootDir = get_template_directory_uri();
   <!-- コンテンツ部分 -->
   <div class="price-contents">
 
+<<<<<<< Updated upstream
     <div class="contents-box">
+=======
+  <!-- onlineshop一覧の取得 -->
+<?php
+
+
+$args = array(
+    'post_type' => 'prices',
+    'order' => 'ASC',
+    'posts_per_page' => -1,
+    'post_status' => 'publish', //取得するステータス。publishなら一般公開のもののみ
+);
+
+$WP_post = new WP_Query($args);
+
+// var_dump($WP_post);
+
+if($WP_post -> have_posts()){
+  while($WP_post -> have_posts()) {
+    foreach( $WP_post -> posts as $WP_posts ){
+      $post_data = [];
+      $WP_post->the_post();
+      $post_data['treatment']  =  get_the_title();
+      $post_id = get_the_ID();
+      $post_data['data'] = [];
+      $object = new stdClass();
+      if(have_rows('treatment')){
+        while(have_rows('treatment')) {
+          while(the_row()){
+            $treatment_name = get_sub_field("treatment_name");
+            $treatment_tab = get_sub_field("treatment_tab");
+            $treatment_point = get_sub_field("treatment_point");
+            $treatment_detail = get_sub_field("treatment_detail");
+            $object -> name = $treatment_name;
+            $object -> tab = $treatment_tab;
+            $object -> point = $treatment_point;
+            $object -> detail = $treatment_detail;
+              foreach( $treatment_detail as $value){
+                $treatment_part = $value['treatment_part'];
+                $treatment_set = $value['treatment_set'];
+                $total = $value['total'];
+                $object -> part = $treatment_part;
+                $n=0;
+                foreach( $treatment_set as $value){
+                  $treatment_times = $value['treatment_times'];
+                  $treatment_price = $value['treatment_price'];
+                  ++$n;
+                }
+              }
+              $object -> total = $n;
+              $arr_obj = (array) $object;
+              $post_data['data'][] = $arr_obj;
+          }
+        }
+      }
+      $my_post['data'][] = $post_data;
+    }
+  }
+  $WP_post_json = json_encode($my_post);
+}
+
+
+
+?>
+
+  <div id="price-contents" class="price-contents">
+
+    <!-- <div class="contents-box">
+>>>>>>> Stashed changes
         <div class="contents-box_cat">
           <p>診断</p>
         </div>
@@ -59,9 +128,15 @@ $rootDir = get_template_directory_uri();
           <p>※治療を行なった場合は、診察料を頂戴しません。</p>
         </div>
       <?php wp_reset_postdata(); ?>
+<<<<<<< Updated upstream
     </div>
 
     <div class="contents-box">
+=======
+    </div> -->
+
+    <!-- <div class="contents-box">
+>>>>>>> Stashed changes
       <div class="contents-box_cat">
         <p>再生医療</p>
       </div>
@@ -477,3 +552,227 @@ $rootDir = get_template_directory_uri();
 </main>
 
 <?php get_footer(); ?>
+<<<<<<< Updated upstream
+=======
+
+
+
+<script>
+
+  $(function(){
+
+
+    /*
+    * @画面を読み込んだら処理開始
+    */
+    window.addEventListener('load', function () {
+      //下で定義している処理をここで開始
+      init()
+    })
+
+
+    // データ取得
+    const getWPData = () => {
+      const data = JSON.parse('<?php echo $WP_post_json; ?>');
+      return data;
+    }
+
+    // const getWPData = () => {
+    //   const data = JSON.parse('<?php echo $WP_post_json; ?>').slice();
+    //   data.sort( (a,b) => {
+    //     if(a.order < b.order){
+    //       return -1;
+    //     } else {
+    //       return 1;
+    //     }
+    //   });
+    //   console.log(data);
+    //   return data;
+    // }
+
+
+    // 初期化
+    const init = () => {
+
+      const priceData = getWPData()
+      const lengthArr = []
+      const priceContents = document.getElementById('price-contents')
+      console.log(priceData)
+
+
+      // const getLength = () =>{
+      //   priceData.
+      // }
+
+      const createContents = () => {
+
+        let priceList = ''
+
+        priceData.data.forEach(arrContents => {
+
+          priceList += `
+              <div id="contents-box" class="contents-box">
+                <div class="contents-box_cat">
+                  <p>${arrContents.treatment}</p>
+                </div>
+          `
+
+          arrContents.data.forEach(contentsData => {
+
+            priceList+=`
+              <table class="contents-box_menu">
+                <tbody class="contents-box_menu__inner">
+                  <tr class="contents-box_menu__inner_box">
+            `
+
+            if(arrContents.treatment === "再生医療"){
+
+                priceList+=`
+                  <td class="contents-box_menu__inner_box_name width" rowspan="${contentsData.total * contentsData.detail.length}">
+                    <div class="flex">
+                      <div class="flex_box">
+                `
+
+                if(contentsData.tab){
+                  priceList+=`
+                    <p class="orange_tab">オープニング価格</p>
+                  `
+                }
+
+                priceList+=`
+                    <p>${contentsData.name}</p>
+                  </div>
+                `
+
+                if(contentsData.point){
+                  priceList+=`
+                    <p class="detail">肩・手・肘・股関節・膝・足関節・その他ブロック</p>
+                  `
+                }
+
+                priceList+=`
+                    </div>
+                  </td>
+                `
+
+            } else if (arrContents.treatment === "運動療法") {
+                priceList+=`
+                  <td class="contents-box_menu__inner_box_name" rowspan="${contentsData.total * contentsData.detail.length}">
+                    <div class="flex">
+                      <div class="flex_box">
+                        <p>${contentsData.name}</p>
+                      </div>
+                    </div>
+                  </td>
+                `
+            }
+            else{
+                priceList+=`
+                  <td class="contents-box_menu__inner_box_name" rowspan="${contentsData.total * contentsData.detail.length}">
+                    <div class="flex">
+                      <div class="flex_box">
+                        <p>${contentsData.name}</p>
+                      </div>
+                    </div>
+                  </td>
+                `
+            }
+
+            contentsData.detail.forEach(contentsDetail => {
+
+              if(contentsDetail.treatment_part !== ''){
+                  priceList += `
+                    <td class="contents-box_menu__inner_box_part" rowspan="${contentsDetail.treatment_set.length}">
+                      <p>${contentsDetail.treatment_part}</p>
+                    </td>
+                  `
+              }
+
+
+              contentsDetail.treatment_set.forEach(contentsSet => {
+                // console.log(contentsSet)
+
+                if(contentsDetail.treatment_part !== '') {
+                  priceList+=`
+                      <td class="contents-box_menu__inner_box_minute">
+                        <p>${contentsSet.treatment_times}</p>
+                      </td>
+                      <td class="contents-box_menu__inner_box_price">
+                        <p>${contentsSet.treatment_price}</p>
+                      </td>
+                    </tr>
+                  `
+                } else if(contentsDetail.treatment_part === '' && contentsSet.treatment_price === ''){
+                  priceList+=`
+                    <td class="contents-box_menu__inner_box_exp">
+                      <p>${contentsSet.treatment_times}</p>
+                    </td>
+                  </tr>
+                  `
+                } else {
+                  priceList+=`
+                    <td class="contents-box_menu__inner_box_minute">
+                      <p>${contentsSet.treatment_times}</p>
+                    </td>
+                    <td class="contents-box_menu__inner_box_price">
+                      <p>${contentsSet.treatment_price}</p>
+                    </td>
+                  `
+                }
+
+
+              })
+
+            })
+
+            if(contentsData.detail.treatment_part !== ''){
+              priceList+=`
+                  </tbody>
+                </table>
+              `
+            } else{
+              priceList+=`
+                    </tr>
+                  </tbody>
+                </table>
+              `
+            }
+
+          })
+
+          priceList += `
+            </div>
+          `
+
+          priceList += `
+            <div id="contents-box_sub" class="contents-box_sub">
+              <div class="contents-box_sub_caution">
+                <p>※治療を行なった場合は、診察料を頂戴しません。</p>
+              </div>
+              <a href="" class="contents-box_sub_btn">
+                  <img src="<?php echo $rootDir ?>/images/price/price_btn.png" alt="">
+                  <p>再生医療についてはこちら</p>
+              </a>
+            </div>
+          `
+
+        })
+
+
+        // console.log(priceList)
+
+        priceContents.insertAdjacentHTML('afterbegin', priceList)
+
+
+      }
+
+      // getLength()
+      createContents()
+
+    }
+
+
+  })
+
+</script>
+>>>>>>> Stashed changes
