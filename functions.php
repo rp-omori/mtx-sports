@@ -1,4 +1,5 @@
 <?php
+require 'config.php';
 /*
  * 初期設定
  */
