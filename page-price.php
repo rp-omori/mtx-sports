@@ -14,79 +14,69 @@ $rootDir = get_template_directory_uri();
   <!-- 共通タイトル部分 -->
   <?php get_template_part('component/c__title'); ?>
 
-  <!-- コンテンツ部分 -->
-  <div class="price-contents">
-
-<<<<<<< Updated upstream
-    <div class="contents-box">
-=======
   <!-- onlineshop一覧の取得 -->
 <?php
 
+  $args = array(
+      'post_type' => 'prices',
+      'order' => 'ASC',
+      'posts_per_page' => -1,
+      'post_status' => 'publish', //取得するステータス。publishなら一般公開のもののみ
+  );
 
-$args = array(
-    'post_type' => 'prices',
-    'order' => 'ASC',
-    'posts_per_page' => -1,
-    'post_status' => 'publish', //取得するステータス。publishなら一般公開のもののみ
-);
+  $WP_post = new WP_Query($args);
 
-$WP_post = new WP_Query($args);
+  // var_dump($WP_post);
 
-// var_dump($WP_post);
-
-if($WP_post -> have_posts()){
-  while($WP_post -> have_posts()) {
-    foreach( $WP_post -> posts as $WP_posts ){
-      $post_data = [];
-      $WP_post->the_post();
-      $post_data['treatment']  =  get_the_title();
-      $post_id = get_the_ID();
-      $post_data['data'] = [];
-      $object = new stdClass();
-      if(have_rows('treatment')){
-        while(have_rows('treatment')) {
-          while(the_row()){
-            $treatment_name = get_sub_field("treatment_name");
-            $treatment_tab = get_sub_field("treatment_tab");
-            $treatment_point = get_sub_field("treatment_point");
-            $treatment_detail = get_sub_field("treatment_detail");
-            $object -> name = $treatment_name;
-            $object -> tab = $treatment_tab;
-            $object -> point = $treatment_point;
-            $object -> detail = $treatment_detail;
-              foreach( $treatment_detail as $value){
-                $treatment_part = $value['treatment_part'];
-                $treatment_set = $value['treatment_set'];
-                $total = $value['total'];
-                $object -> part = $treatment_part;
-                $n=0;
-                foreach( $treatment_set as $value){
-                  $treatment_times = $value['treatment_times'];
-                  $treatment_price = $value['treatment_price'];
-                  ++$n;
+  if($WP_post -> have_posts()){
+    while($WP_post -> have_posts()) {
+      foreach( $WP_post -> posts as $WP_posts ){
+        $post_data = [];
+        $WP_post->the_post();
+        $post_data['treatment']  =  get_the_title();
+        $post_id = get_the_ID();
+        $post_data['data'] = [];
+        $object = new stdClass();
+        if(have_rows('treatment')){
+          while(have_rows('treatment')) {
+            while(the_row()){
+              $treatment_name = get_sub_field("treatment_name");
+              $treatment_tab = get_sub_field("treatment_tab");
+              $treatment_point = get_sub_field("treatment_point");
+              $treatment_detail = get_sub_field("treatment_detail");
+              $object -> name = $treatment_name;
+              $object -> tab = $treatment_tab;
+              $object -> point = $treatment_point;
+              $object -> detail = $treatment_detail;
+                foreach( $treatment_detail as $value){
+                  $treatment_part = $value['treatment_part'];
+                  $treatment_set = $value['treatment_set'];
+                  $total = $value['total'];
+                  $object -> part = $treatment_part;
+                  $n=0;
+                  foreach( $treatment_set as $value){
+                    $treatment_times = $value['treatment_times'];
+                    $treatment_price = $value['treatment_price'];
+                    ++$n;
+                  }
                 }
-              }
-              $object -> total = $n;
-              $arr_obj = (array) $object;
-              $post_data['data'][] = $arr_obj;
+                $object -> total = $n;
+                $arr_obj = (array) $object;
+                $post_data['data'][] = $arr_obj;
+            }
           }
         }
+        $my_post['data'][] = $post_data;
       }
-      $my_post['data'][] = $post_data;
     }
+    $WP_post_json = json_encode($my_post);
   }
-  $WP_post_json = json_encode($my_post);
-}
-
-
 
 ?>
 
   <div id="price-contents" class="price-contents">
 
     <!-- <div class="contents-box">
->>>>>>> Stashed changes
         <div class="contents-box_cat">
           <p>診断</p>
         </div>
@@ -98,7 +88,6 @@ if($WP_post -> have_posts()){
               <td class="contents-box_menu__inner_box_name">
                 <div class="flex">
                   <div class="flex_box">
-                    <!-- <p>初診</p> -->
                     <p><?php the_sub_field("treatment_name") ?></p>
                   </div>
                 </div>
@@ -108,11 +97,9 @@ if($WP_post -> have_posts()){
                 <?php if(have_rows('treatment_set')): ?>
                   <?php while(have_rows('treatment_set')): the_row(); ?>
                         <td class="contents-box_menu__inner_box_minute">
-                          <!-- <p>20分</p> -->
                           <p><?php the_sub_field("treatment_times") ?></p>
                         </td>
                         <td class="contents-box_menu__inner_box_price">
-                          <!-- <p>¥5,000</p> -->
                           <p><?php the_sub_field("treatment_price") ?></p>
                         </td>
                     <?php endwhile; ?>
@@ -128,15 +115,9 @@ if($WP_post -> have_posts()){
           <p>※治療を行なった場合は、診察料を頂戴しません。</p>
         </div>
       <?php wp_reset_postdata(); ?>
-<<<<<<< Updated upstream
-    </div>
-
-    <div class="contents-box">
-=======
     </div> -->
 
     <!-- <div class="contents-box">
->>>>>>> Stashed changes
       <div class="contents-box_cat">
         <p>再生医療</p>
       </div>
@@ -356,9 +337,9 @@ if($WP_post -> have_posts()){
         <img src="<?php echo $rootDir ?>/images/price/price_btn.png" alt="">
         <p>再生医療についてはこちら</p>
       </a>
-    </div>
+    </div> -->
 
-    <div class="contents-box">
+    <!-- <div class="contents-box">
       <div class="contents-box_cat">
         <p>運動療法</p>
       </div>
@@ -375,7 +356,7 @@ if($WP_post -> have_posts()){
             <td class="contents-box_menu__inner_box_exp">
               <p>※セットでのご提案がベースとなります</p>
             </td>
-            <!-- <td class="contents-box_menu__inner_box_price width" rowspan="4"><p>※セットでのご提案がベースとなります</p></td> -->
+            <td class="contents-box_menu__inner_box_price width" rowspan="4"><p>※セットでのご提案がベースとなります</p></td>
           </tr>
           <tr class="contents-box_menu__inner_box">
             <td class="contents-box_menu__inner_box_name">
@@ -417,9 +398,9 @@ if($WP_post -> have_posts()){
         <img src="<?php echo $rootDir ?>/images/price/price_btn.png" alt="">
         <p>運動療法についてはこちら</p>
       </a>
-    </div>
+    </div> -->
 
-    <div class="contents-box">
+    <!-- <div class="contents-box">
       <div class="contents-box_cat">
         <p>物理療法</p>
       </div>
@@ -472,9 +453,9 @@ if($WP_post -> have_posts()){
         <img src="<?php echo $rootDir ?>/images/price/price_btn.png" alt="">
         <p>物理療法についてはこちら</p>
       </a>
-    </div>
+    </div> -->
 
-    <div class="contents-box">
+    <!-- <div class="contents-box">
       <div class="contents-box_cat">
         <p>その他</p>
       </div>
@@ -542,7 +523,7 @@ if($WP_post -> have_posts()){
       <a href="" class="contents-box_btn sp_btn">
         <p>その他オプション等については、お問い合わせください。</p>
       </a>
-    </div>
+    </div> -->
 
   </div>
 
@@ -552,8 +533,6 @@ if($WP_post -> have_posts()){
 </main>
 
 <?php get_footer(); ?>
-<<<<<<< Updated upstream
-=======
 
 
 
@@ -775,4 +754,3 @@ if($WP_post -> have_posts()){
   })
 
 </script>
->>>>>>> Stashed changes
