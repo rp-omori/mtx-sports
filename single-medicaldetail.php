@@ -15,21 +15,6 @@ $rootDir = get_template_directory_uri();
   <?php get_template_part('component/c__bread'); ?>
 
   <!-- コンテンツ部分 -->
-  <?php
-
-    $post_id = get_the_ID();
-
-    $args = array(
-        'post_type' => 'medicaldetail',
-        'post_id' => $post_id,
-        'post_status' => 'publish', //取得するステータス。publishなら一般公開のもののみ
-    );
-
-    $my_query = new WP_Query($args);
-
-    if ($my_query->have_posts()): while ( $my_query->have_posts() ) : $my_query->the_post();
-
-  ?>
 
   <div id="medical-detail" class="medical-detail-contents">
 
@@ -217,8 +202,6 @@ $rootDir = get_template_directory_uri();
 
   </div>
 
-  <?php endwhile; ?>
-  <?php endif;?>
 
 </main>
 
