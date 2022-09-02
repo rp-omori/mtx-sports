@@ -5212,6 +5212,7 @@ td, th {
 }
 .treatment-detail .treatment-detail__contents-item-img {
   margin-top: -6.5104166667vw;
+  z-index: 2;
 }
 .treatment-detail .treatment-detail__contents-item-img.treatment-detail__contents-item-img--small {
   width: 23.1119791667vw;
