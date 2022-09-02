@@ -42,6 +42,10 @@ $rootDir = get_template_directory_uri();
               <!-- <p>野球肘</p> -->
               <p><?php the_title(); ?></p>
             </div>
+            <div class="medical-detail-top__right_txtArea_subTtl">
+              <!-- <p>野球肘</p> -->
+              <p><?php the_field('other_name'); ?></p>
+            </div>
             <div class="medical-detail-top__right_txtArea_txt">
               <!-- <p>野球で多いですが、いろいろな種目で起きることがあります。無症状でも骨や軟骨が壊れていることもあり、早期発見が重要です。</p> -->
               <p><?php the_field('lead_txt'); ?></p>
@@ -49,10 +53,14 @@ $rootDir = get_template_directory_uri();
             <div class="medical-detail-top__right_txtArea_soreSpot">
               <p class="medical-detail-top__right_txtArea_soreSpot_sore">・痛む箇所</p>
               <div class="medical-detail-top__right_txtArea_soreSpot_spot">
-                <div class="medical-detail-top__right_txtArea_soreSpot_spot_detail">
-                  <!-- <p>肘</p> -->
-                  <p><?php the_field('sore_spot'); ?></p>
-                </div>
+                <?php if(have_rows('sore_spot')): ?>
+                  <?php while(have_rows('sore_spot')): the_row(); ?>
+                    <div class="medical-detail-top__right_txtArea_soreSpot_spot_detail">
+                    <!-- <p>肘</p> -->
+                      <p><?php the_sub_field('spot'); ?></p>
+                    </div>
+                    <?php endwhile; ?>
+                  <?php endif; ?>
               </div>
             </div>
           </div>
@@ -160,28 +168,17 @@ $rootDir = get_template_directory_uri();
           <div class="index_btn_wrapper">
             <?php if(have_rows('treatment_menu')): ?>
               <?php while(have_rows('treatment_menu')): the_row(); ?>
-            <a href="<?php the_sub_field("menu_link") ?>" class="index_btn">
-              <p><?php the_sub_field("menu_name") ?></p>
-              <img src="<?php echo $rootDir ?>/images/medical_detail/medical_detail_btn_right.png" alt="">
-            </a>
+                <a href="<?php the_sub_field("menu_link") ?>" class="index_btn">
+                  <p><?php the_sub_field("menu_name") ?></p>
+                  <?php $etc = get_sub_field('menu_link'); ?>
+                    <?php if(empty($etc)):?>
+                    <?php else:?>
+                      <img src="<?php echo $rootDir ?>/images/medical_detail/medical_detail_btn_right.png" alt="">
+                    <?php endif;?>
+                </a>
               <?php endwhile; ?>
             <?php endif;?>
-            <!-- <a href="#" class="index_btn">
-              <p>体外衝撃波</p>
-              <img src="<?php echo $rootDir ?>/images/medical_detail/medical_detail_btn_right.png" alt="">
-            </a>
-            <a href="#" class="index_btn">
-              <p>運動療法</p>
-              <img src="<?php echo $rootDir ?>/images/medical_detail/medical_detail_btn_right.png" alt="">
-            </a>
-            <a href="#" class="index_btn">
-              <p>投球指導</p>
-              <img src="<?php echo $rootDir ?>/images/medical_detail/medical_detail_btn_right.png" alt="">
-            </a>
-            <a href="#" class="index_btn">
-              <p>再生医療</p>
-              <img src="<?php echo $rootDir ?>/images/medical_detail/medical_detail_btn_right.png" alt="">
-            </a> -->
+            <p><?php the_field('other_treatment_menu'); ?></p>
           </div>
         </div>
       </div>
