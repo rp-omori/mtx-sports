@@ -136,10 +136,10 @@
 
           &_ttl{
 
-            margin-bottom: clamp(10px,get_vw(40),40px);
+            margin-bottom: clamp(10px,get_vw(10),10px);
 
             @include sp {
-              margin-bottom: 40px;
+              margin-bottom: 10px;
             }
 
             p{
@@ -151,6 +151,30 @@
 
               @include sp {
                 font-size: calcFz(24);
+              }
+
+            }
+
+          }
+
+          &_subTtl{
+
+            margin-bottom: clamp(10px,get_vw(40),40px);
+
+            @include sp {
+              margin-bottom: 40px;
+            }
+
+            p{
+              font-family: $fontFamilyYuGo;
+              font-size: calcFz(15);
+              font-weight: 600;
+              letter-spacing: 0.02em;
+              line-height: 1.6;
+              color: #6A8381;
+
+              @include sp {
+                font-size: calcFz(14);
               }
 
             }
@@ -208,14 +232,16 @@
 
                 border:1px solid  var(--main-color);
                 background-color: #fff;
-                width: clamp(10px,get_vw(100),100px);
-                padding: 8px 0;
+                // width: clamp(10px,get_vw(100),100px);
+                padding: 8px clamp(10px,get_vw(50),50px);
                 text-align: center;
                 margin-right: 10px;
+                margin-bottom: 10px;
 
                 @include sp {
-                  width: 75px;
-                  padding: 6px 0;
+                  // width: 75px;
+                  padding: 6px clamp(10px,get_vw(37.5),37.5px);
+                  // padding: 6px 0;
                 }
 
                 p{
@@ -245,7 +271,7 @@
       &__img{
         position: absolute;
         top: clamp(10px,get_vw(50),50px);
-        right: 0;
+        right: -30px;
         width: clamp(10px,get_vw(295),295px);
 
         @include sp {
@@ -412,6 +438,19 @@
 
           }
 
+          p{
+            margin-bottom: 0;
+            font-family: $fontFamilyYuGo;
+            font-size: calcFz(20);
+            font-weight: 300;
+            margin-right: clamp(10px,get_vw(20),20px);
+
+            @include sp {
+              font-size: calcFz(14);
+              line-height: 1.6;
+            }
+          }
+
         }
 
 
@@ -428,6 +467,7 @@
     width: clamp(10px,get_vw(750),750px);
     margin: 0 auto;
     flex-wrap: wrap;
+    margin-bottom: clamp(10px,get_vw(50),50px);
 
     @include sp {
       width: 90%;
