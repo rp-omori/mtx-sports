@@ -5485,9 +5485,10 @@ td, th {
   z-index: 2;
   width: 100vw;
   height: clamp(10px, 39.9088541667vw, 613px);
+  padding-bottom: 13.0208333333vw;
   background-image: url(../images/concept/concept-top-background.png);
   background-position: center;
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: clamp(10px, 2.6041666667vw, 40px);
   overflow: hidden;
@@ -8893,8 +8894,8 @@ td, th {
   }
   .concept-contents .concept-top-wrapper {
     height: 250px;
+    padding-bottom: 0;
     background-position: top;
-    background-size: 100% 100%;
     background-image: url(../images/concept/concept-top-background_sp.png);
     margin-bottom: 60px;
   }
