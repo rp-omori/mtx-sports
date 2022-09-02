@@ -5232,6 +5232,8 @@ td, th {
 .treatment-detail .treatment-detail__contents-item-img.treatment-detail__contents-item-img--small {
   width: 23.1119791667vw;
   margin-right: 5.46875vw;
+  margin-top: -6.5104166667vw;
+  z-index: 2;
 }
 .treatment-detail .treatment-detail__contents-item-note-wrapper {
   margin-bottom: 0.6510416667vw;
@@ -5504,9 +5506,10 @@ td, th {
   z-index: 2;
   width: 100vw;
   height: clamp(10px, 39.9088541667vw, 613px);
+  padding-bottom: 13.0208333333vw;
   background-image: url(../images/concept/concept-top-background.png);
   background-position: center;
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: clamp(10px, 2.6041666667vw, 40px);
   overflow: hidden;
@@ -8707,9 +8710,8 @@ td, th {
     left: 10px;
   }
   .treatment-detail .treatment-detail__contents-item-img.treatment-detail__contents-item-img--small {
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 6.4vw;
+    width: 50%;
+    margin: 0 auto 6.4vw;
   }
   .treatment-detail .treatment-detail__contents-item-note-wrapper {
     margin-bottom: 3.2vw;
@@ -8921,8 +8923,8 @@ td, th {
   }
   .concept-contents .concept-top-wrapper {
     height: 250px;
+    padding-bottom: 0;
     background-position: top;
-    background-size: 100% 100%;
     background-image: url(../images/concept/concept-top-background_sp.png);
     margin-bottom: 60px;
   }

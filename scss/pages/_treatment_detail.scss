@@ -258,11 +258,12 @@
     &.treatment-detail__contents-item-img--small {
       width: get_vw(355);
       margin-right: get_vw(84);
+      margin-top: get_vw(-100);
+      z-index: 2;
 
       @include sp {
-        width: 100%;
-        margin-right: 0;
-        margin-bottom: get_vw(24, 375);
+        width: 50%;
+        margin: 0 auto get_vw(24, 375);
       }
     }
   }

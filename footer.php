@@ -58,13 +58,13 @@ $rootDir = get_template_directory_uri();
           </p>
           <h4 class="footer-contact__sub-title">診察のご予約・ご相談</h4>
           <div class="footer-contact__btn-wrapper">
-            <a href="" class="btn btn--orange btn--shadow">
+            <a href="https://web.booking.clius.jp/reserve/mtx" class="btn btn--orange btn--shadow">
               <span>WEB予約</span>
             </a>
             <a href="https://lin.ee/DhflNAe" class="btn btn--white btn--line btn--shadow">
               <span>LINEでご相談・予約</span>
             </a>
-            <a href="https://lin.ee/DhflNAe" class="btn btn--white btn--email_green btn--shadow">
+            <a href="<?php echo esc_url(home_url('/contact')); ?>" class="btn btn--white btn--email_green btn--shadow">
               <span>メールで診療相談</span>
             </a>
           </div>
@@ -120,7 +120,7 @@ $rootDir = get_template_directory_uri();
                     <a href="<?php echo esc_url(home_url('/flow')); ?>" class="footer__menu-link">治療の流れ</a>
                   </li>
                   <li class="footer__menu-item">
-                    <a href="<?php echo esc_url(home_url('/medical_detail')); ?>" class="footer__menu-link">診療科目</a>
+                    <a href="<?php echo esc_url(home_url('/')), '#', 'medical-menu'; ?>" class="footer__menu-link">診療科目</a>
                   </li>
                   <li class="footer__menu-item">
                     <a href="<?php echo esc_url(home_url('/services')); ?>" class="footer__menu-link">治療メニュー</a>
@@ -174,10 +174,10 @@ $rootDir = get_template_directory_uri();
             <div class="footer__sns">
               <p class="footer__sns-text">OFFICIAL SNS</p>
               <div class="footer__sns-wrapper">
-                <a href="" class="footer__sns-link footer__sns-link--instagram">
+                <a href="https://www.instagram.com/mtx_s_and_a_clinic" target="_blank" class="footer__sns-link footer__sns-link--instagram">
                   <img src="<?php echo $rootDir ?>/images/icon/icon-instagram.svg" alt="">
                 </a>
-                <a href="" class="footer__sns-link footer__sns-link--facebook">
+                <a href="https://www.facebook.com/MTX-%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%E9%96%A2%E7%AF%80%E[…]%95%B7-%E5%AF%8C%E5%B2%A1%E7%BE%A9%E4%BB%81-108017555332156/" target="_blank" class="footer__sns-link footer__sns-link--facebook">
                   <img src="<?php echo $rootDir ?>/images/icon/icon-facebook.svg" alt="">
                 </a>
               </div>
