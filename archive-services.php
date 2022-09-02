@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: treatment
+ * Template Name: services
  */
 
 get_header(); ?>
@@ -237,7 +237,7 @@ $rootDir = get_template_directory_uri();
         <ul class="treatment__menu-list">
           <?php
             $args = [
-              'post_type' => 'treatment',
+              'post_type' => 'services',
               'order' => 'ASC',
               'posts_per_page' => -1,
               'tax_query' => [
@@ -286,7 +286,7 @@ $rootDir = get_template_directory_uri();
         <ul class="treatment__menu-list">
           <?php
             $args = [
-              'post_type' => 'treatment',
+              'post_type' => 'services',
               'order' => 'ASC',
               'posts_per_page' => -1,
               'tax_query' => [
@@ -363,7 +363,7 @@ $rootDir = get_template_directory_uri();
         <ul class="treatment__menu-list">
           <?php
             $args = [
-              'post_type' => 'treatment',
+              'post_type' => 'services',
               'order' => 'ASC',
               'posts_per_page' => -1,
               'tax_query' => [

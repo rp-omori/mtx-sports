@@ -392,7 +392,7 @@ $rootDir = get_template_directory_uri();
             <a href="https://lin.ee/DhflNAe" class="medical-menu-line__link medical-menu-line__link--line">
               <span class="medical-menu-line__link-text">LINEで<span class="pc">診療</span>相談</span>
             </a>
-            <a href="https://lin.ee/DhflNAe" class="medical-menu-line__link medical-menu-line__link--email">
+            <a href="<?php echo esc_url(home_url('/contact')); ?>" class="medical-menu-line__link medical-menu-line__link--email">
               <span class="medical-menu-line__link-text">メールで<span class="pc">診療</span>相談</span>
             </a>
           </div>
@@ -514,10 +514,10 @@ $rootDir = get_template_directory_uri();
               <p class="clinic-features__01-main-text pc feature-text-animation">MTXトレーナー陣と連携して予防にも取り組みます。</p>
               <p class="clinic-features__01-main-text sp fade-anime-text js-titleAnimationTarget">治療だけではない、リハビリだけでもない。<br>医師診断・評価の下、理学療法士や経験と知識をもったMTXトレーナー陣と連携して予防にも取り組みます。</p>
               <div class="clinic-features__btn-wrapper">
-                <a href="" class="btn btn--dark_green">
+                <a href="<?php echo esc_url(home_url('/aboutus')); ?>" class="btn btn--dark_green">
                   <span>開院の背景と想い</span>
                 </a>
-                <a href="" class="btn btn--dark_green btn--dark_green_small">
+                <a href="<?php echo esc_url(home_url('/system_facility')); ?>" class="btn btn--dark_green btn--dark_green_small">
                   <span>治療体制</span>
                 </a>
               </div>
@@ -543,7 +543,7 @@ $rootDir = get_template_directory_uri();
                   次に、目標に向けた最適な治療プログラムを医師が計画し、治療を開始となります。<br>
                   治療プログラム実行中も、定期的に医師が評価、治療プログラム計画の見直しや調整を行うことで、患者さんの目標達成へと着実につなげます。
                 </p>
-                <a href="" class="btn btn--dark_green">
+                <a href="<?php echo esc_url(home_url('/flow')); ?>" class="btn btn--dark_green">
                   <span>治療の流れ</span>
                 </a>
               </div>
@@ -631,7 +631,7 @@ $rootDir = get_template_directory_uri();
                 今までどこに行っても治らなかった関節の痛みや体のしびれ等がある方は、一度、診察にお越しください。<br>
                 ※CESやSFMAは運動機能を評価する診断方法です。
               </p>
-              <a href="" class="btn btn--dark_green">
+              <a href="<?php echo esc_url(home_url('/staff')); ?>" class="btn btn--dark_green">
                 <span>医師・スタッフ紹介</span>
               </a>
             </div>
@@ -663,7 +663,7 @@ $rootDir = get_template_directory_uri();
                 運動能力を数値化することが可能なため、パフォーマンス向上、再生医療と組み合わせての症状改善に向けたリカバリープログラムなど、多岐にわたって活用が可能です。<br>
                 その他、当クリニックでは運動機能の状態を評価（数値化）する機器としても活用します。
               </p>
-              <a href="" class="btn btn--dark_green">
+              <a href="<?php echo esc_url(home_url('/system_facility')); ?>" class="btn btn--dark_green">
                 <span>施設・設備の紹介</span>
               </a>
             </div>
@@ -796,9 +796,9 @@ $rootDir = get_template_directory_uri();
           </li>
         </ul>
         <div class="treatment__btn-wrapper">
-          <a href="" class="btn btn--green">治療の流れ</a>
-          <a href="" class="btn btn--green">治療メニュー</a>
-          <a href="" class="btn btn--green">料金表</a>
+          <a href="<?php echo esc_url(home_url('/flow')); ?>" class="btn btn--green">治療の流れ</a>
+          <a href="<?php echo esc_url(home_url('/services')); ?>" class="btn btn--green">治療メニュー</a>
+          <a href="<?php echo esc_url(home_url('/price')); ?>" class="btn btn--green">料金表</a>
         </div>
       </div>
     </section>
