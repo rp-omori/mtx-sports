@@ -255,22 +255,15 @@
   }
 
   .treatment-detail__contents-item-img {
-    margin-top: get_vw(-100);
-    z-index: 2;
-
-    @include sp {
-      margin-top: 0;
-    }
-
     &.treatment-detail__contents-item-img--small {
       width: get_vw(355);
       margin-right: get_vw(84);
+      margin-top: get_vw(-100);
+      z-index: 2;
 
       @include sp {
         width: 50%;
-        margin-right: 0;
-        margin-left: auto;
-        margin-bottom: get_vw(24, 375);
+        margin: 0 auto get_vw(24, 375);
       }
     }
   }
