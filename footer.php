@@ -58,13 +58,13 @@ $rootDir = get_template_directory_uri();
           </p>
           <h4 class="footer-contact__sub-title">診察のご予約・ご相談</h4>
           <div class="footer-contact__btn-wrapper">
-            <a href="" class="btn btn--orange btn--shadow">
+            <a href="https://web.booking.clius.jp/reserve/mtx" class="btn btn--orange btn--shadow">
               <span>WEB予約</span>
             </a>
             <a href="https://lin.ee/DhflNAe" class="btn btn--white btn--line btn--shadow">
               <span>LINEでご相談・予約</span>
             </a>
-            <a href="https://lin.ee/DhflNAe" class="btn btn--white btn--email_green btn--shadow">
+            <a href="<?php echo esc_url(home_url('/contact')); ?>" class="btn btn--white btn--email_green btn--shadow">
               <span>メールで診療相談</span>
             </a>
           </div>
@@ -120,7 +120,7 @@ $rootDir = get_template_directory_uri();
                     <a href="<?php echo esc_url(home_url('/flow')); ?>" class="footer__menu-link">治療の流れ</a>
                   </li>
                   <li class="footer__menu-item">
-                    <a href="<?php echo esc_url(home_url('/medical_detail')); ?>" class="footer__menu-link">診療科目</a>
+                    <a href="<?php echo esc_url(home_url('/')), '#', 'medical-menu'; ?>" class="footer__menu-link">診療科目</a>
                   </li>
                   <li class="footer__menu-item">
                     <a href="<?php echo esc_url(home_url('/services')); ?>" class="footer__menu-link">治療メニュー</a>
