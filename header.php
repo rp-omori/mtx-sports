@@ -59,12 +59,12 @@ $rootDir = get_template_directory_uri();
             <nav class="header__nav">
               <ul class="header__list">
                 <li class="header__item">
-                  <a href="#medical-menu" class="header__link">
+                  <a href="<?php echo esc_url(home_url('/')), '#', 'medical-menu'; ?>" class="header__link">
                     症状から探す
                   </a>
                 </li>
                 <li class="header__item">
-                  <a href="#clinic-features" class="header__link header__link--arrow">
+                  <a href="<?php echo esc_url(home_url('/')), '#', 'clinic-features'; ?>" class="header__link header__link--arrow">
                     クリニックの特徴
                   </a>
                   <div class="header__dropdown">
@@ -73,12 +73,12 @@ $rootDir = get_template_directory_uri();
                   </div>
                 </li>
                 <li class="header__item">
-                  <a href="#clinic-features" class="header__link header__link--arrow">
+                  <a href="<?php echo esc_url(home_url('/')), '#', 'clinic-features'; ?>" class="header__link header__link--arrow">
                     治療について
                   </a>
                   <div class="header__dropdown">
                     <a href="<?php echo esc_url(home_url('/flow')); ?>" class="header__dropdown-item">治療の流れ</a>
-                    <a href="#medical-menu" class="header__dropdown-item">診療科目</a>
+                    <a href="<?php echo esc_url(home_url('/')), '#', 'medical-menu'; ?>" class="header__dropdown-item">診療科目</a>
                     <a href="<?php echo esc_url(home_url('/services')); ?>" class="header__dropdown-item">治療メニュー</a>
                     <a href="<?php echo esc_url(home_url('/price')); ?>" class="header__dropdown-item">料金表</a>
                   </div>
@@ -104,7 +104,7 @@ $rootDir = get_template_directory_uri();
                   </div> -->
                 </li>
                 <li class="header__item">
-                  <a href="#access" class="header__link">
+                  <a href="<?php echo esc_url(home_url('/')), '#', 'access'; ?>" class="header__link">
                     アクセス
                   </a>
                 </li>
@@ -130,9 +130,9 @@ $rootDir = get_template_directory_uri();
               <nav id="drawer" class="header__drawer" aria-hidden="true">
                 <ul class="header__list">
                   <li class="header__item">
-                    <span class="header__link js-header-drawer">
+                    <a href="<?php echo esc_url(home_url('/')), '#', 'medical-menu'; ?>" class="header__link js-header-drawer">
                       症状から探す
-                    </span>
+                    </a>
                   </li>
                   <li class="header__item">
                     <span class="header__link js-header-drawer header__circle">
@@ -140,10 +140,10 @@ $rootDir = get_template_directory_uri();
                     </span>
                     <ul class="header__drawer-list">
                       <li class="header__drawer-item">
-                        <a href="" class="header__drawer-link">開院の背景と想い</a>
+                        <a href="<?php echo esc_url(home_url('/aboutus')); ?>" class="header__drawer-link">開院の背景と想い</a>
                       </li>
                       <li class="header__drawer-item">
-                        <a href="" class="header__drawer-link">治療体制と施設・設備</a>
+                        <a href="<?php echo esc_url(home_url('/system_facility')); ?>" class="header__drawer-link">治療体制と施設・設備</a>
                       </li>
                     </ul>
                   </li>
@@ -153,23 +153,23 @@ $rootDir = get_template_directory_uri();
                     </span>
                     <ul class="header__drawer-list">
                       <li class="header__drawer-item">
-                        <a href="" class="header__drawer-link">治療の流れ</a>
+                        <a href="<?php echo esc_url(home_url('/flow')); ?>" class="header__drawer-link">治療の流れ</a>
                       </li>
                       <li class="header__drawer-item">
-                        <a href="" class="header__drawer-link">診療科目</a>
+                        <a href="<?php echo esc_url(home_url('/')), '#', 'medical-menu'; ?>" class="header__drawer-link">診療科目</a>
                       </li>
                       <li class="header__drawer-item">
-                        <a href="" class="header__drawer-link">治療メニュー</a>
+                        <a href="<?php echo esc_url(home_url('/services')); ?>" class="header__drawer-link">治療メニュー</a>
                       </li>
                       <li class="header__drawer-item">
-                        <a href="" class="header__drawer-link">料金表</a>
+                        <a href="<?php echo esc_url(home_url('/price')); ?>" class="header__drawer-link">料金表</a>
                       </li>
                     </ul>
                   </li>
                   <li class="header__item">
-                    <span class="header__link js-header-drawer">
+                    <a href="<?php echo esc_url(home_url('/staff')); ?>" class="header__link js-header-drawer">
                       医師・スタッフ紹介
-                    </span>
+                    </a>
                     <!-- <ul class="header__drawer-list">
                       <li class="header__drawer-item">
                         <a href="" class="header__drawer-link">院長</a>
@@ -195,19 +195,19 @@ $rootDir = get_template_directory_uri();
                     </ul> -->
                   </li>
                   <li class="header__item">
-                    <span class="header__link js-header-drawer">
+                    <a href="<?php echo esc_url(home_url('/')), '#', 'access'; ?>" class="header__link js-header-drawer">
                       アクセス
-                    </span>
+                  </a>
                   </li>
                   <li class="header__item">
-                    <span class="header__link js-header-drawer">
+                    <a href="<?php echo esc_url(home_url('/news')); ?>" class="header__link js-header-drawer">
                       お知らせ
-                    </span>
+                    </a>
                   </li>
                   <li class="header__item">
-                    <span class="header__link js-header-drawer">
+                    <a href="<?php echo esc_url(home_url('/colum')); ?>" class="header__link js-header-drawer">
                       コラム
-                    </span>
+                    </a>
                   </li>
                 </ul>
               </nav>
