@@ -120,7 +120,7 @@ $rootDir = get_template_directory_uri();
                     <a href="<?php echo esc_url(home_url('/flow')); ?>" class="footer__menu-link">治療の流れ</a>
                   </li>
                   <li class="footer__menu-item">
-                    <a href="<?php echo esc_url(home_url('/medical_detail')); ?>" class="footer__menu-link">診療科目</a>
+                    <a href="<?php echo esc_url(home_url('/')), '#', 'medical-menu'; ?>" class="footer__menu-link">診療科目</a>
                   </li>
                   <li class="footer__menu-item">
                     <a href="<?php echo esc_url(home_url('/services')); ?>" class="footer__menu-link">治療メニュー</a>
