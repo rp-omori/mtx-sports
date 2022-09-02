@@ -104,10 +104,10 @@ $rootDir = get_template_directory_uri();
                     <span class="footer_menu-link">クリニックの特徴</span>
                   </li>
                   <li class="footer__menu-item">
-                    <a href="" class="footer_menu-link">開院の背景と想い</a>
+                    <a href="<?php echo esc_url(home_url('/aboutus')); ?>" class="footer_menu-link">開院の背景と想い</a>
                   </li>
                   <li class="footer__menu-item">
-                    <a href="" class="footer_menu-link">治療体制と施設・設備</a>
+                    <a href="<?php echo esc_url(home_url('/system_facility')); ?>" class="footer_menu-link">治療体制と施設・設備</a>
                   </li>
                 </ul>
               </li>
@@ -117,25 +117,25 @@ $rootDir = get_template_directory_uri();
                     <span class="footer__menu-link">治療について</span>
                   </li>
                   <li class="footer__menu-item">
-                    <a href="" class="footer__menu-link">治療の流れ</a>
+                    <a href="<?php echo esc_url(home_url('/flow')); ?>" class="footer__menu-link">治療の流れ</a>
                   </li>
                   <li class="footer__menu-item">
-                    <a href="" class="footer__menu-link">診療科目</a>
+                    <a href="<?php echo esc_url(home_url('/medical_detail')); ?>" class="footer__menu-link">診療科目</a>
                   </li>
                   <li class="footer__menu-item">
-                    <a href="" class="footer__menu-link">治療メニュー</a>
+                    <a href="<?php echo esc_url(home_url('/services')); ?>" class="footer__menu-link">治療メニュー</a>
                   </li>
                   <li class="footer__menu-item">
-                    <a href="" class="footer__menu-link">料金表</a>
+                    <a href="<?php echo esc_url(home_url('/price')); ?>" class="footer__menu-link">料金表</a>
                   </li>
                 </ul>
               </li>
               <li class="footer__menu-nav">
                 <ul class="footer__menu-list">
                   <li class="footer__menu-head">
-                    <span class="footer__menu-link">医師・スタッフ紹介</span>
+                    <a href="<?php echo esc_url(home_url('/staff')); ?>" class="footer__menu-link">医師・スタッフ紹介</a>
                   </li>
-                  <li class="footer__menu-item">
+                  <!-- <li class="footer__menu-item">
                     <a href="" class="footer__menu-link">院長</a>
                   </li>
                   <li class="footer__menu-item">
@@ -152,19 +152,19 @@ $rootDir = get_template_directory_uri();
                   </li>
                   <li class="footer__menu-item">
                     <a href="" class="footer__menu-link">HALリハビリ担当</a>
-                  </li>
+                  </li> -->
                 </ul>
               </li>
               <li class="footer__menu-nav">
                 <ul class="footer__menu-list">
-                  <li class="footer__menu-sub">
+                  <!-- <li class="footer__menu-sub">
                     <a href="" class="footer_menu-link">アクセス</a>
+                  </li> -->
+                  <li class="footer__menu-sub">
+                    <a href="<?php echo esc_url(home_url('/news')); ?>" class="footer_menu-link">お知らせ</a>
                   </li>
                   <li class="footer__menu-sub">
-                    <a href="" class="footer_menu-link">お知らせ</a>
-                  </li>
-                  <li class="footer__menu-sub">
-                    <a href="" class="footer_menu-link">コラム</a>
+                    <a href="<?php echo esc_url(home_url('/colum')); ?>" class="footer_menu-link">コラム</a>
                   </li>
                 </ul>
               </li>
@@ -183,7 +183,7 @@ $rootDir = get_template_directory_uri();
               </div>
             </div>
             <div class="footer__copyright-wrapper">
-              <a href="" class="footer__copyright-wrapper-text">個人情報保護方針</a>
+              <a href="<?php echo esc_url(home_url('/privacy-policy')); ?>" class="footer__copyright-wrapper-text">個人情報保護方針</a>
               <div class="footer__copyright">
                 <small>Copyright © 2022 MTXスポーツ・関節CLINIC.All Rights Reserved.</small>
               </div>
@@ -213,10 +213,10 @@ $rootDir = get_template_directory_uri();
               <a href="https://lin.ee/DhflNAe" target="_blank" class="btn btn--white btn--line sp">
                 <span>予約・相談</span>
               </a>
-              <a href="" target="_blank" class="btn btn--white btn--email_green pc">
+              <a href="<?php echo esc_url(home_url('/contact')); ?>" target="_blank" class="btn btn--white btn--email_green pc">
                 <span>メールで相談</span>
               </a>
-              <a href="" target="_blank" class="btn btn--white btn--email_green sp">
+              <a href="<?php echo esc_url(home_url('/contact')); ?>" target="_blank" class="btn btn--white btn--email_green sp">
                 <span>相談</span>
               </a>
             </div>

@@ -19,7 +19,7 @@ $rootDir = get_template_directory_uri();
 
     <div class="facility-top-wrapper">
       <div class="facility-top">
-        <p>SYSTEM & FACILITY</p>
+        <p>ABOUT US</p>
       </div>
     </div>
 
@@ -105,7 +105,7 @@ $rootDir = get_template_directory_uri();
           </div>
           <div class="facility-collaboratingArea__inner_contents_box">
             <div class="facility-collaboratingArea__inner_contents_box_left">
-              <img src="<?php echo $rootDir ?>/images/facility/facility_img_01.jpg" alt="">
+              <img src="<?php echo $rootDir ?>/images/facility/facility_img_01.png" alt="">
             </div>
             <div class="facility-collaboratingArea__inner_contents_box_right">
               <div class="facility-collaboratingArea__inner_contents_box_right_tab">
@@ -127,18 +127,18 @@ $rootDir = get_template_directory_uri();
           </div>
           <div class="facility-collaboratingArea__inner_contents_box flex">
             <div class="img">
-              <img src="<?php echo $rootDir ?>/images/facility/facility_img_02.jpg" alt="">
+              <img src="<?php echo $rootDir ?>/images/facility/facility_img_01.png" alt="">
             </div>
             <div class="img">
-              <img src="<?php echo $rootDir ?>/images/facility/facility_img_03.jpg" alt="">
+              <img src="<?php echo $rootDir ?>/images/facility/facility_img_01.png" alt="">
             </div>
             <div class="img">
-              <img src="<?php echo $rootDir ?>/images/facility/facility_img_04.jpg" alt="">
+              <img src="<?php echo $rootDir ?>/images/facility/facility_img_01.png" alt="">
             </div>
           </div>
           <div class="facility-collaboratingArea__inner_contents_box reverse">
             <div class="facility-collaboratingArea__inner_contents_box_left">
-              <img src="<?php echo $rootDir ?>/images/facility/facility_img_05.jpg" alt="">
+              <img src="<?php echo $rootDir ?>/images/facility/facility_img_01.png" alt="">
             </div>
             <div class="facility-collaboratingArea__inner_contents_box_right">
               <div class="facility-collaboratingArea__inner_contents_box_right_tab">
@@ -162,7 +162,7 @@ $rootDir = get_template_directory_uri();
           </div>
           <div class="facility-collaboratingArea__inner_contents_box">
             <div class="facility-collaboratingArea__inner_contents_box_left">
-              <img src="<?php echo $rootDir ?>/images/facility/facility_img_06.jpg" alt="">
+              <img src="<?php echo $rootDir ?>/images/facility/facility_img_01.png" alt="">
             </div>
             <div class="facility-collaboratingArea__inner_contents_box_right">
               <div class="facility-collaboratingArea__inner_contents_box_right_tab">
@@ -183,13 +183,13 @@ $rootDir = get_template_directory_uri();
           </div>
           <div class="facility-collaboratingArea__inner_contents_box flex">
             <div class="img">
-              <img src="<?php echo $rootDir ?>/images/facility/facility_img_07.jpg" alt="">
+              <img src="<?php echo $rootDir ?>/images/facility/facility_img_01.png" alt="">
             </div>
             <div class="img">
-              <img src="<?php echo $rootDir ?>/images/facility/facility_img_08.jpg" alt="">
+              <img src="<?php echo $rootDir ?>/images/facility/facility_img_01.png" alt="">
             </div>
             <div class="img">
-              <img src="<?php echo $rootDir ?>/images/facility/facility_img_09.jpg" alt="">
+              <img src="<?php echo $rootDir ?>/images/facility/facility_img_01.png" alt="">
             </div>
           </div>
         </div>
@@ -202,7 +202,7 @@ $rootDir = get_template_directory_uri();
           </div>
           <div class="facility-collaboratingArea__inner_contents_box reverse">
             <div class="facility-collaboratingArea__inner_contents_box_left">
-              <img src="<?php echo $rootDir ?>/images/facility/facility_img_10.jpg" alt="">
+              <img src="<?php echo $rootDir ?>/images/facility/facility_img_01.png" alt="">
             </div>
             <div class="facility-collaboratingArea__inner_contents_box_right">
               <div class="facility-collaboratingArea__inner_contents_box_right_logo">
@@ -225,18 +225,18 @@ $rootDir = get_template_directory_uri();
           </div>
           <div class="facility-collaboratingArea__inner_contents_box flex">
             <div class="img">
-              <img src="<?php echo $rootDir ?>/images/facility/facility_img_11.jpg" alt="">
+              <img src="<?php echo $rootDir ?>/images/facility/facility_img_01.png" alt="">
             </div>
             <div class="img">
-              <img src="<?php echo $rootDir ?>/images/facility/facility_img_12.jpg" alt="">
+              <img src="<?php echo $rootDir ?>/images/facility/facility_img_01.png" alt="">
             </div>
             <div class="img">
-              <img src="<?php echo $rootDir ?>/images/facility/facility_img_13.jpg" alt="">
+              <img src="<?php echo $rootDir ?>/images/facility/facility_img_01.png" alt="">
             </div>
           </div>
           <div class="facility-collaboratingArea__inner_contents_box sp_mb">
             <div class="facility-collaboratingArea__inner_contents_box_left">
-              <img src="<?php echo $rootDir ?>/images/facility/facility_img_14.jpg" alt="">
+              <img src="<?php echo $rootDir ?>/images/facility/facility_img_01.png" alt="">
             </div>
             <div class="facility-collaboratingArea__inner_contents_box_right">
               <div class="facility-collaboratingArea__inner_contents_box_right_logo medium">
@@ -259,7 +259,7 @@ $rootDir = get_template_directory_uri();
           </div>
           <div class="facility-collaboratingArea__inner_contents_box reverse">
             <div class="facility-collaboratingArea__inner_contents_box_left">
-              <img src="<?php echo $rootDir ?>/images/facility/facility_img_15.jpg" alt="">
+              <img src="<?php echo $rootDir ?>/images/facility/facility_img_01.png" alt="">
             </div>
             <div class="facility-collaboratingArea__inner_contents_box_right">
               <div class="facility-collaboratingArea__inner_contents_box_right_logo medium">
@@ -283,7 +283,7 @@ $rootDir = get_template_directory_uri();
           </div>
           <div class="facility-collaboratingArea__inner_contents_box">
             <div class="facility-collaboratingArea__inner_contents_box_left">
-              <img src="<?php echo $rootDir ?>/images/facility/facility_img_16.jpg" alt="">
+              <img src="<?php echo $rootDir ?>/images/facility/facility_img_01.png" alt="">
             </div>
             <div class="facility-collaboratingArea__inner_contents_box_right">
               <div class="facility-collaboratingArea__inner_contents_box_right_logo medium">
