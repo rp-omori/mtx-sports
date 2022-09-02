@@ -5210,13 +5210,11 @@ td, th {
 .treatment-detail .contents-item-detail__item.contents-item-detail__item--green:before {
   background: #6A8381;
 }
-.treatment-detail .treatment-detail__contents-item-img {
-  margin-top: -6.5104166667vw;
-  z-index: 2;
-}
 .treatment-detail .treatment-detail__contents-item-img.treatment-detail__contents-item-img--small {
   width: 23.1119791667vw;
   margin-right: 5.46875vw;
+  margin-top: -6.5104166667vw;
+  z-index: 2;
 }
 .treatment-detail .treatment-detail__contents-item-note-wrapper {
   margin-bottom: 0.6510416667vw;
@@ -8683,14 +8681,9 @@ td, th {
     height: 2.1333333333vw;
     left: 10px;
   }
-  .treatment-detail .treatment-detail__contents-item-img {
-    margin-top: 0;
-  }
   .treatment-detail .treatment-detail__contents-item-img.treatment-detail__contents-item-img--small {
     width: 50%;
-    margin-right: 0;
-    margin-left: auto;
-    margin-bottom: 6.4vw;
+    margin: 0 auto 6.4vw;
   }
   .treatment-detail .treatment-detail__contents-item-note-wrapper {
     margin-bottom: 3.2vw;
