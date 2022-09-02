@@ -201,22 +201,22 @@ $rootDir = get_template_directory_uri();
               <a href="tel:0362725047" class="btn btn--white btn--tel_white sp">
                 <span></span>
               </a>
-              <a href="https://web.booking.clius.jp/reserve/mtx" class="btn btn--orange btn--web pc">
+              <a href="https://web.booking.clius.jp/reserve/mtx" target="_blank" class="btn btn--orange btn--web pc">
                 <span>まずはWEB予約</span>
               </a>
-              <a href="#" class="btn btn--orange btn--web sp">
+              <a href="https://web.booking.clius.jp/reserve/mtx" target="_blank" class="btn btn--orange btn--web sp">
                 <span>WEB予約</span>
               </a>
-              <a href="https://lin.ee/DhflNAe" class="btn btn--white btn--line pc">
+              <a href="https://lin.ee/DhflNAe" target="_blank" class="btn btn--white btn--line pc">
                 <span>LINEでご相談・予約</span>
               </a>
-              <a href="https://lin.ee/DhflNAe" class="btn btn--white btn--line sp">
+              <a href="https://lin.ee/DhflNAe" target="_blank" class="btn btn--white btn--line sp">
                 <span>予約・相談</span>
               </a>
-              <a href="https://lin.ee/DhflNAe" class="btn btn--white btn--email_green pc">
+              <a href="" target="_blank" class="btn btn--white btn--email_green pc">
                 <span>メールで相談</span>
               </a>
-              <a href="https://lin.ee/DhflNAe" class="btn btn--white btn--email_green sp">
+              <a href="" target="_blank" class="btn btn--white btn--email_green sp">
                 <span>相談</span>
               </a>
             </div>
