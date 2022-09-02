@@ -174,10 +174,10 @@ $rootDir = get_template_directory_uri();
             <div class="footer__sns">
               <p class="footer__sns-text">OFFICIAL SNS</p>
               <div class="footer__sns-wrapper">
-                <a href="" class="footer__sns-link footer__sns-link--instagram">
+                <a href="https://www.instagram.com/mtx_s_and_a_clinic" target="_blank" class="footer__sns-link footer__sns-link--instagram">
                   <img src="<?php echo $rootDir ?>/images/icon/icon-instagram.svg" alt="">
                 </a>
-                <a href="" class="footer__sns-link footer__sns-link--facebook">
+                <a href="https://www.facebook.com/MTX-%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%E9%96%A2%E7%AF%80%E[…]%95%B7-%E5%AF%8C%E5%B2%A1%E7%BE%A9%E4%BB%81-108017555332156/" target="_blank" class="footer__sns-link footer__sns-link--facebook">
                   <img src="<?php echo $rootDir ?>/images/icon/icon-facebook.svg" alt="">
                 </a>
               </div>
