@@ -235,66 +235,44 @@ $rootDir = get_template_directory_uri();
           </div>
         </div>
         <ul class="treatment__menu-list">
+          <?php
+            $args = [
+              'post_type' => 'treatment',
+              'order' => 'ASC',
+              'posts_per_page' => -1,
+              'tax_query' => [
+                [
+                  'taxonomy' => 'treatment_type',
+                  'field'    => 'slug',
+                  'terms'    => 'service',
+                ]
+              ],
+            ];
+            $WP_post = new WP_Query($args);
+            if ($WP_post->have_posts()) {
+              while ($WP_post->have_posts()) {
+                $WP_post->the_post();
+          ?>
           <li class="treatment__menu-item">
-            <a href="" class="treatment__menu-link">
+            <a href="<?php the_permalink(); ?>" class="treatment__menu-link">
               <div class="treatment__menu-img">
-                <img src="<?php echo $rootDir ?>/images/treatment/treatment-menu.png" alt="">
+                <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id()); ?>" alt="<?php the_title(); ?>">
               </div>
               <div class="treatment__menu-body">
                 <div class="treatment__menu-body-title-wrapper">
-                  <p class="treatment__menu-body-title treatment__menu-body-title--link">培養上清液治療</p>
+                  <p class="treatment__menu-body-title treatment__menu-body-title--link"><?php the_title(); ?></p>
                 </div>
-                <p class="treatment__menu-body-text">
-                  幹細胞培養上清液療法は幹細胞を培養するときに生じる上清液を用いた治療法です。上清液のみを投与するため、幹細胞は含まれていません。しかし上清液には成長因子やサイトカインが多く含まれていると考えられており、炎症を抑えたり組織修復の効果が期待されています。
-                </p>
+                <div class="treatment__menu-body-text">
+                  <?php echo get_field('lead'); ?>
+                </div>
               </div>
             </a>
           </li>
-          <li class="treatment__menu-item">
-            <a href="" class="treatment__menu-link">
-              <div class="treatment__menu-img">
-                <img src="<?php echo $rootDir ?>/images/treatment/treatment-menu.png" alt="">
-              </div>
-              <div class="treatment__menu-body">
-                <div class="treatment__menu-body-title-wrapper">
-                  <p class="treatment__menu-body-title treatment__menu-body-title--link">PRP治療</p>
-                </div>
-                <p class="treatment__menu-body-text">
-                  PRP（Plate Rich Plasma）療法とは自己多血小板血漿注入療法のことです。血小板には成長因子が多く含まれていると考えられており、その成長因子によって幹部の自己修復機能を促進することを期待して行う治療法です。
-                </p>
-              </div>
-            </a>
-          </li>
-          <li class="treatment__menu-item">
-            <a href="" class="treatment__menu-link">
-              <div class="treatment__menu-img">
-                <img src="<?php echo $rootDir ?>/images/treatment/treatment-menu.png" alt="">
-              </div>
-              <div class="treatment__menu-body">
-                <div class="treatment__menu-body-title-wrapper">
-                  <p class="treatment__menu-body-title treatment__menu-body-title--link">脂肪肝細胞治療（ASC）</p>
-                </div>
-                <p class="treatment__menu-body-text">
-                  ASC（Adipose-derived Stem Cell）療法とはASC：脂肪由来幹細胞を用いた治療法のことです。細胞の中で様々な細胞に変化する多分化能を持つ細胞を幹細胞と呼びます。幹細胞は自己複製能を持っており、関節内の組織に作用することで炎症を抑えたり、組織の修復を促したりする治療法です。
-                </p>
-              </div>
-            </a>
-          </li>
-          <li class="treatment__menu-item">
-            <a href="" class="treatment__menu-link">
-              <div class="treatment__menu-img">
-                <img src="<?php echo $rootDir ?>/images/treatment/treatment-menu.png" alt="">
-              </div>
-              <div class="treatment__menu-body">
-                <div class="treatment__menu-body-title-wrapper">
-                  <p class="treatment__menu-body-title treatment__menu-body-title--link">ハイドロリリース</p>
-                </div>
-                <p class="treatment__menu-body-text">
-                  近年超音波診断装置（エコー）の技術発達により盛んになってきた手技です。エコーで身体の中の痛んでいたり動きの悪い部位を確認し、その周囲に薬液を注入します。薬液には生理食塩水、局所麻酔、ステロイド、PRP等を用いることが多いですが、当院では上清液を中心に使用します。
-                </p>
-              </div>
-            </a>
-          </li>
+          <?php
+              }
+              wp_reset_postdata();
+            }
+          ?>
         </ul>
       </div>
     </section>
@@ -306,121 +284,72 @@ $rootDir = get_template_directory_uri();
           </div>
         </div>
         <ul class="treatment__menu-list">
+          <?php
+            $args = [
+              'post_type' => 'treatment',
+              'order' => 'ASC',
+              'posts_per_page' => -1,
+              'tax_query' => [
+                [
+                  'taxonomy' => 'treatment_type',
+                  'field'    => 'slug',
+                  'terms'    => 'exercise',
+                ]
+              ],
+            ];
+            $WP_post = new WP_Query($args);
+            if ($WP_post->have_posts()) {
+              while ($WP_post->have_posts()) {
+                $WP_post->the_post();
+          ?>
           <li class="treatment__menu-item">
-            <a href="" class="treatment__menu-link">
+            <a href="<?php echo get_field('url'); ?>" target="_blank" class="treatment__menu-link">
               <div class="treatment__menu-img">
-                <img src="<?php echo $rootDir ?>/images/treatment/treatment-menu.png" alt="">
+                <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id()); ?>" alt="<?php the_title(); ?>">
               </div>
               <div class="treatment__menu-body">
                 <div class="treatment__menu-body-title-wrapper">
-                  <p class="treatment__menu-body-title treatment__menu-body-title--ex_link">培養上清液治療</p>
+                  <p class="treatment__menu-body-title treatment__menu-body-title--ex_link"><?php the_title(); ?></p>
                 </div>
-                <p class="treatment__menu-body-text">
-                  幹細胞培養上清液療法は幹細胞を培養するときに生じる上清液を用いた治療法です。上清液のみを投与するため、幹細胞は含まれていません。しかし上清液には成長因子やサイトカインが多く含まれていると考えられており、炎症を抑えたり組織修復の効果が期待されています。
-                </p>
+                <div class="treatment__menu-body-text">
+                  <?php echo get_field('lead'); ?>
+                </div>
+                <?php
+                  $facilities = get_field('facilities');
+                  if (!empty($facilities)):
+                ?>
                 <div class="treatment__menu-body-associated">
                   <div class="treatment__menu-body-associated-inner">
                     <p class="treatment__menu-body-associated-text">関連施設</p>
-                    <div class="treatment__menu-body-associated-img treatment__menu-body-associated-img--ddrobotec">
-                      <img src="<?php echo $rootDir ?>/images/treatment/ddrobotec-logo.png" alt="">
-                    </div>
+                    <?php
+                    foreach (get_field('facilities') as $facility) {
+                      if ($facility == 'ddrobotec'): ?>
+                        <div class="treatment__menu-body-associated-img treatment__menu-body-associated-img--ddrobotec">
+                          <img src="<?php echo $rootDir ?>/images/treatment/ddrobotec-logo.png" alt="">
+                        </div>
+                      <?php elseif ($facility == 'mtx-academy'): ?>
+                        <div class="treatment__menu-body-associated-img treatment__menu-body-associated-img--academy">
+                          <img src="<?php echo $rootDir ?>/images/treatment/academy-logo-white.png" alt="">
+                        </div>
+                      <?php else: ?>
+                        <div class="treatment__menu-body-associated-img treatment__menu-body-associated-img--academy">
+                          <img src="<?php echo $rootDir ?>/images/treatment/academy-logo.png" alt="">
+                        </div>
+                      <?php
+                      endif;
+                    }
+                    ?>
                   </div>
                 </div>
+                <?php endif; ?>
               </div>
             </a>
           </li>
-          <li class="treatment__menu-item">
-            <a href="" class="treatment__menu-link">
-              <div class="treatment__menu-img">
-                <img src="<?php echo $rootDir ?>/images/treatment/treatment-menu.png" alt="">
-              </div>
-              <div class="treatment__menu-body">
-                <div class="treatment__menu-body-title-wrapper">
-                  <p class="treatment__menu-body-title treatment__menu-body-title--ex_link">PRP治療</p>
-                </div>
-                <p class="treatment__menu-body-text">
-                  PRP（Plate Rich Plasma）療法とは自己多血小板血漿注入療法のことです。血小板には成長因子が多く含まれていると考えられており、その成長因子によって幹部の自己修復機能を促進することを期待して行う治療法です。
-                </p>
-                <div class="treatment__menu-body-associated">
-                  <div class="treatment__menu-body-associated-inner">
-                    <p class="treatment__menu-body-associated-text">関連施設</p>
-                    <div class="treatment__menu-body-associated-img treatment__menu-body-associated-img--ddrobotec">
-                      <img src="<?php echo $rootDir ?>/images/treatment/ddrobotec-logo.png" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="treatment__menu-item">
-            <a href="" class="treatment__menu-link">
-              <div class="treatment__menu-img">
-                <img src="<?php echo $rootDir ?>/images/treatment/treatment-menu.png" alt="">
-              </div>
-              <div class="treatment__menu-body">
-                <div class="treatment__menu-body-title-wrapper">
-                  <p class="treatment__menu-body-title treatment__menu-body-title--ex_link">脂肪肝細胞治療（ASC）</p>
-                </div>
-                <p class="treatment__menu-body-text">
-                  ASC（Adipose-derived Stem Cell）療法とはASC：脂肪由来幹細胞を用いた治療法のことです。細胞の中で様々な細胞に変化する多分化能を持つ細胞を幹細胞と呼びます。幹細胞は自己複製能を持っており、関節内の組織に作用することで炎症を抑えたり、組織の修復を促したりする治療法です。
-                </p>
-                <div class="treatment__menu-body-associated">
-                  <div class="treatment__menu-body-associated-inner">
-                    <p class="treatment__menu-body-associated-text">関連施設</p>
-                    <div class="treatment__menu-body-associated-img treatment__menu-body-associated-img--academy">
-                      <img src="<?php echo $rootDir ?>/images/treatment/academy-logo-white.png" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="treatment__menu-item">
-            <a href="" class="treatment__menu-link">
-              <div class="treatment__menu-img">
-                <img src="<?php echo $rootDir ?>/images/treatment/treatment-menu.png" alt="">
-              </div>
-              <div class="treatment__menu-body">
-                <div class="treatment__menu-body-title-wrapper">
-                  <p class="treatment__menu-body-title treatment__menu-body-title--ex_link">脂肪肝細胞治療（ASC）</p>
-                </div>
-                <p class="treatment__menu-body-text">
-                  ASC（Adipose-derived Stem Cell）療法とはASC：脂肪由来幹細胞を用いた治療法のことです。細胞の中で様々な細胞に変化する多分化能を持つ細胞を幹細胞と呼びます。幹細胞は自己複製能を持っており、関節内の組織に作用することで炎症を抑えたり、組織の修復を促したりする治療法です。
-                </p>
-                <div class="treatment__menu-body-associated">
-                  <div class="treatment__menu-body-associated-inner">
-                    <p class="treatment__menu-body-associated-text">関連施設</p>
-                    <div class="treatment__menu-body-associated-img treatment__menu-body-associated-img--academy">
-                      <img src="<?php echo $rootDir ?>/images/treatment/academy-logo-white.png" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="treatment__menu-item">
-            <a href="" class="treatment__menu-link">
-              <div class="treatment__menu-img">
-                <img src="<?php echo $rootDir ?>/images/treatment/treatment-menu.png" alt="">
-              </div>
-              <div class="treatment__menu-body">
-                <div class="treatment__menu-body-title-wrapper">
-                  <p class="treatment__menu-body-title treatment__menu-body-title--ex_link">ハイドロリリース</p>
-                </div>
-                <p class="treatment__menu-body-text">
-                  近年超音波診断装置（エコー）の技術発達により盛んになってきた手技です。エコーで身体の中の痛んでいたり動きの悪い部位を確認し、その周囲に薬液を注入します。薬液には生理食塩水、局所麻酔、ステロイド、PRP等を用いることが多いですが、当院では上清液を中心に使用します。
-                </p>
-                <div class="treatment__menu-body-associated">
-                  <div class="treatment__menu-body-associated-inner">
-                    <p class="treatment__menu-body-associated-text">関連施設</p>
-                    <div class="treatment__menu-body-associated-img treatment__menu-body-associated-img--academy">
-                      <img src="<?php echo $rootDir ?>/images/treatment/academy-logo-white.png" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
+          <?php
+              }
+              wp_reset_postdata();
+            }
+          ?>
         </ul>
       </div>
     </section>
@@ -432,102 +361,83 @@ $rootDir = get_template_directory_uri();
           </div>
         </div>
         <ul class="treatment__menu-list">
+          <?php
+            $args = [
+              'post_type' => 'treatment',
+              'order' => 'ASC',
+              'posts_per_page' => -1,
+              'tax_query' => [
+                [
+                  'taxonomy' => 'treatment_type',
+                  'field'    => 'slug',
+                  'terms'    => 'physical',
+                ]
+              ],
+            ];
+            $WP_post = new WP_Query($args);
+            if ($WP_post->have_posts()) {
+              while ($WP_post->have_posts()) {
+                $WP_post->the_post();
+          ?>
           <li class="treatment__menu-item">
-            <a href="" class="treatment__menu-link">
+            <?php if (get_field('url') !== ''): ?>
+            <a href="<?php echo get_field('url'); ?>" target="_blank" class="treatment__menu-link">
+            <?php else: ?>
+            <a href="<?php the_permalink(); ?>" class="treatment__menu-link">
+            <?php endif; ?>
               <div class="treatment__menu-img">
-                <img src="<?php echo $rootDir ?>/images/treatment/treatment-menu.png" alt="">
+                <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id()); ?>" alt="<?php the_title(); ?>">
               </div>
               <div class="treatment__menu-body">
                 <div class="treatment__menu-body-title-wrapper">
-                  <p class="treatment__menu-body-title treatment__menu-body-title--link">培養上清液治療</p>
+                  <?php if (get_field('url') !== ''): ?>
+                  <p class="treatment__menu-body-title treatment__menu-body-title--ex_link"><?php the_title(); ?></p>
+                  <?php else: ?>
+                  <p class="treatment__menu-body-title treatment__menu-body-title--link"><?php the_title(); ?></p>
+                  <?php endif; ?>
                 </div>
-                <p class="treatment__menu-body-text">
-                  幹細胞培養上清液療法は幹細胞を培養するときに生じる上清液を用いた治療法です。上清液のみを投与するため、幹細胞は含まれていません。しかし上清液には成長因子やサイトカインが多く含まれていると考えられており、炎症を抑えたり組織修復の効果が期待されています。
-                </p>
+                <div class="treatment__menu-body-text">
+                  <?php echo get_field('lead'); ?>
+                </div>
+                <?php
+                  $facilities = get_field('facilities');
+                  if (!empty($facilities)):
+                ?>
                 <div class="treatment__menu-body-associated">
                   <div class="treatment__menu-body-associated-inner">
                     <p class="treatment__menu-body-associated-text">関連施設</p>
-                    <div class="treatment__menu-body-associated-img">
-                      <img src="<?php echo $rootDir ?>/images/treatment/logo.png" alt="">
-                    </div>
+                    <?php
+                    foreach (get_field('facilities') as $facility) {
+                      if ($facility == 'ddrobotec'): ?>
+                        <div class="treatment__menu-body-associated-img treatment__menu-body-associated-img--ddrobotec">
+                          <img src="<?php echo $rootDir ?>/images/treatment/ddrobotec-logo.png" alt="">
+                        </div>
+                      <?php elseif ($facility == 'mtx-academy'): ?>
+                        <div class="treatment__menu-body-associated-img treatment__menu-body-associated-img--academy">
+                          <img src="<?php echo $rootDir ?>/images/treatment/academy-logo.png" alt="">
+                        </div>
+                      <?php else: ?>
+                        <div class="treatment__menu-body-associated-img">
+                          <img src="<?php echo $rootDir ?>/images/treatment/logo.png" alt="">
+                        </div>
+                      <?php
+                      endif;
+                    }
+                    ?>
                   </div>
                 </div>
+                <?php endif; ?>
               </div>
             </a>
           </li>
-          <li class="treatment__menu-item">
-            <a href="" class="treatment__menu-link">
-              <div class="treatment__menu-img">
-                <img src="<?php echo $rootDir ?>/images/treatment/treatment-menu.png" alt="">
-              </div>
-              <div class="treatment__menu-body">
-                <div class="treatment__menu-body-title-wrapper">
-                  <p class="treatment__menu-body-title treatment__menu-body-title--link">PRP治療</p>
-                </div>
-                <p class="treatment__menu-body-text">
-                  PRP（Plate Rich Plasma）療法とは自己多血小板血漿注入療法のことです。血小板には成長因子が多く含まれていると考えられており、その成長因子によって幹部の自己修復機能を促進することを期待して行う治療法です。
-                </p>
-                <div class="treatment__menu-body-associated">
-                  <div class="treatment__menu-body-associated-inner">
-                    <p class="treatment__menu-body-associated-text">関連施設</p>
-                    <div class="treatment__menu-body-associated-img">
-                      <img src="<?php echo $rootDir ?>/images/treatment/logo.png" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="treatment__menu-item">
-            <a href="" class="treatment__menu-link">
-              <div class="treatment__menu-img">
-                <img src="<?php echo $rootDir ?>/images/treatment/treatment-menu.png" alt="">
-              </div>
-              <div class="treatment__menu-body">
-                <div class="treatment__menu-body-title-wrapper">
-                  <p class="treatment__menu-body-title treatment__menu-body-title--link">脂肪肝細胞治療（ASC）</p>
-                </div>
-                <p class="treatment__menu-body-text">
-                  ASC（Adipose-derived Stem Cell）療法とはASC：脂肪由来幹細胞を用いた治療法のことです。細胞の中で様々な細胞に変化する多分化能を持つ細胞を幹細胞と呼びます。幹細胞は自己複製能を持っており、関節内の組織に作用することで炎症を抑えたり、組織の修復を促したりする治療法です。
-                </p>
-                <div class="treatment__menu-body-associated">
-                  <div class="treatment__menu-body-associated-inner">
-                    <p class="treatment__menu-body-associated-text">関連施設</p>
-                    <div class="treatment__menu-body-associated-img">
-                      <img src="<?php echo $rootDir ?>/images/treatment/logo.png" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li class="treatment__menu-item">
-            <a href="" class="treatment__menu-link">
-              <div class="treatment__menu-img">
-                <img src="<?php echo $rootDir ?>/images/treatment/treatment-menu.png" alt="">
-              </div>
-              <div class="treatment__menu-body">
-                <div class="treatment__menu-body-title-wrapper">
-                  <p class="treatment__menu-body-title treatment__menu-body-title--ex_link">ハイドロリリース</p>
-                </div>
-                <p class="treatment__menu-body-text">
-                  近年超音波診断装置（エコー）の技術発達により盛んになってきた手技です。エコーで身体の中の痛んでいたり動きの悪い部位を確認し、その周囲に薬液を注入します。薬液には生理食塩水、局所麻酔、ステロイド、PRP等を用いることが多いですが、当院では上清液を中心に使用します。
-                </p>
-                <div class="treatment__menu-body-associated">
-                  <div class="treatment__menu-body-associated-inner">
-                    <p class="treatment__menu-body-associated-text">関連施設</p>
-                    <div class="treatment__menu-body-associated-img treatment__menu-body-associated-img--academy">
-                      <img src="<?php echo $rootDir ?>/images/treatment/academy-logo.png" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </li>
+          <?php
+              }
+              wp_reset_postdata();
+            }
+          ?>
         </ul>
       </div>
     </section>
-
     <?php get_template_part('component/footer__other'); ?>
   </div>
 </main>

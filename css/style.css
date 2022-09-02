@@ -9040,6 +9040,9 @@ td, th {
     margin-left: initial;
     margin-right: auto;
   }
+  .concept-contents .concept-background .concept-background__main .concept-background__right {
+    z-index: -1;
+  }
   .concept-contents .concept-background .concept-background__main .concept-background__title-wrapper {
     margin-bottom: 6.4vw;
   }
