@@ -19,6 +19,9 @@ $rootDir = get_template_directory_uri();
       while (have_posts()) {
         the_post();
 
+        // リード文
+        $lead = get_field('lead_detail');
+
         // 対象疾患
         $condition = get_field('condition');
         $condition_list = $condition['condition_list'];
@@ -93,7 +96,7 @@ $rootDir = get_template_directory_uri();
               </div>
               <div class="treatment-detail__contents-body">
                 <div class="treatment-detail__contents-text">
-                  <?php the_content(); ?>
+                  <?php echo $lead; ?>
                 </div>
                 <?php if(has_post_thumbnail()): ?>
                   <div class="treatment-detail__contents-img">
