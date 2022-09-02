@@ -425,6 +425,12 @@
         }
       }
 
+      .concept-background__right {
+        @include sp {
+          z-index: -1;
+        }
+      }
+
       .concept-background__title-wrapper {
         margin-bottom: get_vw(48);
 
