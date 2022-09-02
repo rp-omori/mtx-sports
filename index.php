@@ -688,12 +688,32 @@ $rootDir = get_template_directory_uri();
                 手術や入院の必要が無い、低リスクの注射治療です。自分自身の血液や脂肪を採血・採取して行う治療から、採血・採取の必要のない治療まで、患者さんの状態に合わせて最適な治療メニューをご提案します。
               </p>
               <ul class="treatment-detail__list">
-                <li class="treatment-detail__item fade-anime-text js-titleAnimationTarget">
-                  <a href="" class="treatment-detail__link">
-                    <p class="treatment-detail__text">PRP治療</p>
+              <?php
+                $args = [
+                  'post_type' => 'services',
+                  'order' => 'ASC',
+                  'posts_per_page' => -1,
+                  'tax_query' => [
+                    [
+                      'taxonomy' => 'treatment_type',
+                      'field'    => 'slug',
+                      'terms'    => 'service',
+                    ]
+                  ],
+                ];
+                $WP_post = new WP_Query($args);
+                $index = 0;
+                if ($WP_post->have_posts()) {
+                  while ($WP_post->have_posts()) {
+                    $WP_post->the_post();
+                    $animation_delay = $index * 0.2;
+              ?>
+                <li class="treatment-detail__item fade-anime-text js-titleAnimationTarget" style="animation-delay: <?php $animation_delay.'s' ?>">
+                  <a href="<?php the_permalink(); ?>" class="treatment-detail__link">
+                    <p class="treatment-detail__text"><?php the_title(); ?></p>
                   </a>
                 </li>
-                <li class="treatment-detail__item fade-anime-text js-titleAnimationTarget" style="animation-delay: 0.2s">
+                <!-- <li class="treatment-detail__item fade-anime-text js-titleAnimationTarget" style="animation-delay: 0.2s">
                   <a href="" class="treatment-detail__link">
                     <p class="treatment-detail__text">脂肪幹細胞治療（ASC）</p>
                   </a>
@@ -707,7 +727,12 @@ $rootDir = get_template_directory_uri();
                   <a href="" class="treatment-detail__link">
                     <p class="treatment-detail__text">ハイドロリリース</p>
                   </a>
-                </li>
+                </li> -->
+              <?php
+                  }
+                  wp_reset_postdata();
+                }
+              ?>
               </ul>
             </div>
             <div class="treatment__right fade-anime-img js-imgAnimation">
@@ -733,12 +758,37 @@ $rootDir = get_template_directory_uri();
                 ※「DDシステム」は日本で数台しかない貴重な運動療法の機器です。
               </p>
               <ul class="treatment-detail__list">
-                <li class="treatment-detail__item fade-anime-text js-titleAnimationTarget">
-                  <a href="" class="treatment-detail__link">
-                    <p class="treatment-detail__text">DDシステム</p>
+              <?php
+                $args = [
+                  'post_type' => 'services',
+                  'order' => 'ASC',
+                  'posts_per_page' => -1,
+                  'tax_query' => [
+                    [
+                      'taxonomy' => 'treatment_type',
+                      'field'    => 'slug',
+                      'terms'    => 'exercise',
+                    ]
+                  ],
+                ];
+                $WP_post = new WP_Query($args);
+                $index = 0;
+                if ($WP_post->have_posts()) {
+                  while ($WP_post->have_posts()) {
+                    $WP_post->the_post();
+                    $animation_delay = $index * 0.2;
+              ?>
+                <li class="treatment-detail__item fade-anime-text js-titleAnimationTarget" style="animation-delay: <?php $animation_delay.'s' ?>">
+                  <a href="<?php echo get_field('url'); ?>" target="_blank" class="treatment-detail__link">
+                    <p class="treatment-detail__text"><?php the_title(); ?></p>
                   </a>
                 </li>
-                <li class="treatment-detail__item fade-anime-text js-titleAnimationTarget" style="animation-delay: 0.2s">
+              <?php
+                  }
+                  wp_reset_postdata();
+                }
+              ?>
+                <!-- <li class="treatment-detail__item fade-anime-text js-titleAnimationTarget" style="animation-delay: 0.2s">
                   <a href="" class="treatment-detail__link">
                     <p class="treatment-detail__text">D-wall</p>
                   </a>
@@ -757,7 +807,7 @@ $rootDir = get_template_directory_uri();
                   <a href="" class="treatment-detail__link">
                     <p class="treatment-detail__text">MTXアカデミー Practice(実践）</p>
                   </a>
-                </li>
+                </li> -->
               </ul>
             </div>
           </li>
@@ -771,12 +821,41 @@ $rootDir = get_template_directory_uri();
                 クリニック内で治療機器を使って行うものから、MTXアカデミーの柔道整復師、鍼灸あんま師による手技まで、豊富なメニューで治療の相乗効果につなげます。
               </p>
               <ul class="treatment-detail__list">
-                <li class="treatment-detail__item fade-anime-text js-titleAnimationTarget">
-                  <a href="" class="treatment-detail__link">
-                    <p class="treatment-detail__text">収束型 体外衝撃波(BTL6000-Focus)</p>
+              <?php
+                $args = [
+                  'post_type' => 'services',
+                  'order' => 'ASC',
+                  'posts_per_page' => -1,
+                  'tax_query' => [
+                    [
+                      'taxonomy' => 'treatment_type',
+                      'field'    => 'slug',
+                      'terms'    => 'physical',
+                    ]
+                  ],
+                ];
+                $WP_post = new WP_Query($args);
+                $index = 0;
+                if ($WP_post->have_posts()) {
+                  while ($WP_post->have_posts()) {
+                    $WP_post->the_post();
+                    $animation_delay = $index * 0.2;
+              ?>
+                <li class="treatment-detail__item fade-anime-text js-titleAnimationTarget" style="animation-delay: <?php $animation_delay.'s' ?>">
+                  <?php if (get_field('url') !== ''): ?>
+                  <a href="<?php echo get_field('url'); ?>" class="treatment-detail__link">
+                  <?php else: ?>
+                  <a href="<?php the_permalink(); ?>" class="treatment-detail__link">
+                  <?php endif; ?>
+                    <p class="treatment-detail__text"><?php the_title(); ?></p>
                   </a>
                 </li>
-                <li class="treatment-detail__item fade-anime-text js-titleAnimationTarget" style="animation-delay: 0.2s">
+              <?php
+                  }
+                  wp_reset_postdata();
+                }
+              ?>
+                <!-- <li class="treatment-detail__item fade-anime-text js-titleAnimationTarget" style="animation-delay: 0.2s">
                   <a href="" class="treatment-detail__link">
                     <p class="treatment-detail__text">超音波治療(LIPUS)</p>
                   </a>
@@ -785,7 +864,7 @@ $rootDir = get_template_directory_uri();
                   <a href="" class="treatment-detail__link">
                     <p class="treatment-detail__text">MTX  アカデミー Recovery （回復） </p>
                   </a>
-                </li>
+                </li> -->
               </ul>
             </div>
             <div class="treatment__right fade-anime-img js-imgAnimation">
