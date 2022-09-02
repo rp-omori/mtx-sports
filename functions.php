@@ -159,3 +159,15 @@ function output_breadcrumb(){
   }
   echo '</ul>';
 }
+
+//サイトのパスを取得するショートコード
+function homePathcode() {
+  return get_home_url();
+  }
+add_shortcode('homePath', 'homePathcode');
+
+//テーマのテーマフォルダのパスを取得するショートコード
+function imgPathcode() {
+return get_template_directory_uri();
+}
+add_shortcode('imgPath', 'imgPathcode');
