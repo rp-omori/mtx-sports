@@ -674,13 +674,16 @@ $rootDir = get_template_directory_uri();
 
     <section id="treatment" class="treatment">
       <div class="treatment-wrapper">
-        <div class="section-title__wrapper --white --left js-titleAnimationTarget">
+        <div class="section-title__wrapper --white --center js-titleAnimationTarget">
           <h2 class="section-title section-title">TREATMENT</h2>
           <p class="section-sub-title">治療メニュー</p>
         </div>
         <ul class="treatment__list">
-          <li class="treatment__item">
-            <div class="treatment__left">
+          <li class="treatment__item treatment__item--service">
+            <div class="treatment__item--service_img fade-anime-img js-imgAnimation">
+              <img src="<?php echo $rootDir ?>/images/top/service01.png" alt="">
+            </div>
+            <div class="treatment__item--service_center">
               <h3 class="treatment__title treatment__title--regenerative fade-anime-text js-titleAnimationTarget">
                 <img src="<?php echo $rootDir ?>/images/icon/icon-regenerative-treatment.svg" alt="">再生治療
               </h3>
@@ -713,21 +716,6 @@ $rootDir = get_template_directory_uri();
                     <p class="treatment-detail__text"><?php the_title(); ?></p>
                   </a>
                 </li>
-                <!-- <li class="treatment-detail__item fade-anime-text js-titleAnimationTarget" style="animation-delay: 0.2s">
-                  <a href="" class="treatment-detail__link">
-                    <p class="treatment-detail__text">脂肪幹細胞治療（ASC）</p>
-                  </a>
-                </li>
-                <li class="treatment-detail__item fade-anime-text js-titleAnimationTarget" style="animation-delay: 0.4s">
-                  <a href="" class="treatment-detail__link">
-                    <p class="treatment-detail__text">培養上清液治療</p>
-                  </a>
-                </li>
-                <li class="treatment-detail__item fade-anime-text js-titleAnimationTarget" style="animation-delay: 0.6s">
-                  <a href="" class="treatment-detail__link">
-                    <p class="treatment-detail__text">ハイドロリリース</p>
-                  </a>
-                </li> -->
               <?php
                   }
                   wp_reset_postdata();
@@ -735,19 +723,18 @@ $rootDir = get_template_directory_uri();
               ?>
               </ul>
             </div>
-            <div class="treatment__right fade-anime-img js-imgAnimation">
-              <div class="treatment__img">
-                <img src="<?php echo $rootDir ?>/images/top/treatment01.png" alt="">
-              </div>
+            <div class="treatment__item--service_img02 fade-anime-img js-imgAnimation">
+              <img src="<?php echo $rootDir ?>/images/top/service02.png" alt="">
             </div>
           </li>
-          <li class="treatment__item">
-            <div class="treatment__left fade-anime-img js-imgAnimation">
-              <div class="treatment__img">
-                <img src="<?php echo $rootDir ?>/images/top/treatment02.png" alt="">
-              </div>
+          <li class="treatment__item treatment__item--exercise">
+            <div class="treatment__item--exercise_img fade-anime-img js-imgAnimation">
+              <img src="<?php echo $rootDir ?>/images/top/exercise01.png" alt="">
             </div>
-            <div class="treatment__right">
+            <div class="treatment__item--exercise_img02 fade-anime-img js-imgAnimation">
+              <img src="<?php echo $rootDir ?>/images/top/exercise02.png" alt="">
+            </div>
+            <div class="treatment__item-list">
               <h3 class="treatment__title treatment__title--rehabilitation fade-anime-text js-titleAnimationTarget">
                 <img src="<?php echo $rootDir ?>/images/icon/icon-rehabilitation.svg" alt="">運動療法（リハビリ）
               </h3>
@@ -788,31 +775,11 @@ $rootDir = get_template_directory_uri();
                   wp_reset_postdata();
                 }
               ?>
-                <!-- <li class="treatment-detail__item fade-anime-text js-titleAnimationTarget" style="animation-delay: 0.2s">
-                  <a href="" class="treatment-detail__link">
-                    <p class="treatment-detail__text">D-wall</p>
-                  </a>
-                </li>
-                <li class="treatment-detail__item fade-anime-text js-titleAnimationTarget" style="animation-delay: 0.4s">
-                  <a href="" class="treatment-detail__link">
-                    <p class="treatment-detail__text">HAL</p>
-                  </a>
-                </li>
-                <li class="treatment-detail__item fade-anime-text js-titleAnimationTarget" style="animation-delay: 0.6s">
-                  <a href="" class="treatment-detail__link">
-                    <p class="treatment-detail__text">MTXアカデミー Strength(強化）</p>
-                  </a>
-                </li>
-                <li class="treatment-detail__item fade-anime-text js-titleAnimationTarget" style="animation-delay: 0.8s">
-                  <a href="" class="treatment-detail__link">
-                    <p class="treatment-detail__text">MTXアカデミー Practice(実践）</p>
-                  </a>
-                </li> -->
               </ul>
             </div>
           </li>
-          <li class="treatment__item">
-            <div class="treatment__left">
+          <li class="treatment__item treatment__item--physical">
+            <div class="treatment__item-list">
               <h3 class="treatment__title treatment__title--physical fade-anime-text js-titleAnimationTarget">
                 <img src="<?php echo $rootDir ?>/images/icon/icon-physical-therapy.svg" alt="">物理療法
               </h3>
@@ -855,22 +822,13 @@ $rootDir = get_template_directory_uri();
                   wp_reset_postdata();
                 }
               ?>
-                <!-- <li class="treatment-detail__item fade-anime-text js-titleAnimationTarget" style="animation-delay: 0.2s">
-                  <a href="" class="treatment-detail__link">
-                    <p class="treatment-detail__text">超音波治療(LIPUS)</p>
-                  </a>
-                </li>
-                <li class="treatment-detail__item fade-anime-text js-titleAnimationTarget" style="animation-delay: 0.4s">
-                  <a href="" class="treatment-detail__link">
-                    <p class="treatment-detail__text">MTX  アカデミー Recovery （回復） </p>
-                  </a>
-                </li> -->
               </ul>
             </div>
-            <div class="treatment__right fade-anime-img js-imgAnimation">
-              <div class="treatment__img">
-                <img src="<?php echo $rootDir ?>/images/top/treatment03.png" alt="">
-              </div>
+            <div class="treatment__item--physical_img fade-anime-img js-imgAnimation">
+              <img src="<?php echo $rootDir ?>/images/top/physical01.png" alt="">
+            </div>
+            <div class="treatment__item--physical_img02 fade-anime-img js-imgAnimation">
+              <img src="<?php echo $rootDir ?>/images/top/physical02.png" alt="">
             </div>
           </li>
         </ul>

@@ -9,6 +9,7 @@
       display: flex;
       padding: get_vw(76) 0 get_vw(125) get_vw(129);
       align-items: center;
+      justify-content: space-between;
 
       @include sp {
         width: 89%;
@@ -131,6 +132,14 @@
               color: var(--main-color);
             }
           }
+
+          .footer-access__close-img {
+            width: get_vw(509);
+
+            @include sp {
+              width: 100%;
+            }
+          }
         }
       }
       .footer-access__right {
@@ -142,17 +151,88 @@
           order: 3;
         }
 
+        .footer-access__right-wrapper {
+          position: relative;
+          margin-bottom: get_vw(333);
+
+          @include sp {
+            margin-bottom: 0;
+          }
+        }
+
+        .footer-access__right-img {
+          position: relative;
+          width: get_vw(760);
+          margin-top: get_vw(-75);
+          z-index: 2;
+
+          @include sp {
+            width: 100%;
+            margin-bottom: get_vw(31, 375);
+          }
+        }
+
+        .footer-access__right-img-02 {
+          position: absolute;
+          width: get_vw(664);
+          bottom: get_vw(-300);
+          left: get_vw(-70);
+
+          @include sp {
+            position: relative;
+            width: 89%;
+            margin: 0 auto;
+            bottom: 0;
+            left: 0;
+          }
+        }
+
         .footer-access__right-text {
           margin-top: get_vw(26);
+          margin-left: get_vw(-70);
           color: var(--main-color-black);
           font-size: calcFz(16);
+          line-height: 1.6;
 
           @include sp {
             width: 89%;
-            margin: get_vw(25, 375) auto 0;
+            margin: get_vw(20, 375) auto 0;
             font-size: calcFz(13);
             line-height: 1.6;
           }
+        }
+      }
+    }
+  }
+
+  .footer-slider {
+    overflow: hidden;
+
+    .footer-slider-wrapper {
+      display: flex;
+      width: 100%;
+      height: get_vw(340);
+
+      @include sp {
+        height: get_vw(218, 375);
+      }
+
+      .footer-slider-inner {
+        display: flex;
+        height: 100%;
+        white-space: nowrap;
+      }
+
+      .footer-linear {
+        animation: infinite-linear 40s 0.5s linear infinite both;
+      }
+
+      .footer-slider-item {
+        width: auto !important;
+
+        img {
+          width: auto;
+          height: 100%;
         }
       }
     }
@@ -747,6 +827,12 @@
     }
   }
 }
-.test {
-  display: block;
+
+@keyframes infinite-linear {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
