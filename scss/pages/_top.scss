@@ -1839,10 +1839,66 @@
   }
 
   .treatment {
+    position: relative;
     padding-bottom: get_vw(159);
 
     @include sp {
       padding-bottom: get_vw(70, 375);
+    }
+
+    .section-title__wrapper {
+      @include sp {
+        text-align: left;
+      }
+
+      .section-sub-title {
+        &:before {
+          @include sp {
+            left: 20px;
+          }
+        }
+      }
+    }
+
+    .treatment__triangle {
+      position: absolute;
+      z-index: -1;
+
+      @include sp {
+        width: 30%;
+      }
+
+      &.treatment__triangle--right {
+        right: 0;
+      }
+
+      &.treatment__triangle--left {
+        left: 0;
+      }
+
+      &.treatment__triangle--01 {
+        top: get_vw(159);
+
+        @include sp {
+          top: 20px;
+        }
+      }
+
+      &.treatment__triangle--02 {
+        top: get_vw(950);
+
+        @include sp {
+          top: 1180px;
+        }
+      }
+
+      &.treatment__triangle--03 {
+        top: get_vw(1900);
+
+        @include sp {
+          display: none;
+        }
+      }
     }
 
     .treatment__item--service {
