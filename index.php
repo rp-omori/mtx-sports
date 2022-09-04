@@ -673,6 +673,15 @@ $rootDir = get_template_directory_uri();
     </section>
 
     <section id="treatment" class="treatment">
+      <div class="treatment__triangle treatment__triangle--right treatment__triangle--01">
+        <img src="<?php echo $rootDir ?>/images/top/triangle-left.svg" alt="">
+      </div>
+      <div class="treatment__triangle treatment__triangle--left treatment__triangle--02">
+        <img src="<?php echo $rootDir ?>/images/top/triangle-right.svg" alt="">
+      </div>
+      <div class="treatment__triangle treatment__triangle--right treatment__triangle--03">
+        <img src="<?php echo $rootDir ?>/images/top/triangle-left.svg" alt="">
+      </div>
       <div class="treatment-wrapper">
         <div class="section-title__wrapper --white --center js-titleAnimationTarget">
           <h2 class="section-title section-title">TREATMENT</h2>
