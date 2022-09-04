@@ -37,10 +37,38 @@ $rootDir = get_template_directory_uri();
             </div>
           </div>
           <div class="footer-access__right">
-            <div class="footer-access__right-img">
-              <img src="<?php echo $rootDir ?>/images/map.png" alt="MTX">
+            <div class="footer-access__right-wrapper">
+              <div class="footer-access__right-img">
+                <img src="<?php echo $rootDir ?>/images/map.png" alt="MTX">
+              </div>
+              <div class="footer-access__right-img-02">
+                <img src="<?php echo $rootDir ?>/images/inside.jpg" alt="">
+              </div>
             </div>
-            <p class="footer-access__right-text">※MTXアカデミーと四ツ谷メディカル＆テクノロジーセンター（ddrobotec）は当クリニックの連携施設です。</p>
+            <p class="footer-access__right-text">※MTXアカデミーと四ツ谷メディカル＆テクノロジーセンター<br class="sp">（ddrobotec）は<br class="pc">当クリニックの連携施設です。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="footer-slider">
+        <div class="footer-slider-wrapper">
+          <div class="footer-slider-inner footer-linear">
+            <div class="footer-slider-item"><img src="<?php echo $rootDir ?>/images/footer-slide01.jpg" alt=""></div>
+            <div class="footer-slider-item"><img src="<?php echo $rootDir ?>/images/footer-slide02.jpg" alt=""></div>
+            <div class="footer-slider-item"><img src="<?php echo $rootDir ?>/images/footer-slide03.jpg" alt=""></div>
+            <div class="footer-slider-item"><img src="<?php echo $rootDir ?>/images/footer-slide04.jpg" alt=""></div>
+            <div class="footer-slider-item"><img src="<?php echo $rootDir ?>/images/footer-slide05.jpg" alt=""></div>
+            <div class="footer-slider-item"><img src="<?php echo $rootDir ?>/images/footer-slide06.jpg" alt=""></div>
+            <div class="footer-slider-item"><img src="<?php echo $rootDir ?>/images/footer-slide07.jpg" alt=""></div>
+          </div>
+          <div class="footer-slider-inner footer-linear">
+            <div class="footer-slider-item"><img src="<?php echo $rootDir ?>/images/footer-slide01.jpg" alt=""></div>
+            <div class="footer-slider-item"><img src="<?php echo $rootDir ?>/images/footer-slide02.jpg" alt=""></div>
+            <div class="footer-slider-item"><img src="<?php echo $rootDir ?>/images/footer-slide03.jpg" alt=""></div>
+            <div class="footer-slider-item"><img src="<?php echo $rootDir ?>/images/footer-slide04.jpg" alt=""></div>
+            <div class="footer-slider-item"><img src="<?php echo $rootDir ?>/images/footer-slide05.jpg" alt=""></div>
+            <div class="footer-slider-item"><img src="<?php echo $rootDir ?>/images/footer-slide06.jpg" alt=""></div>
+            <div class="footer-slider-item"><img src="<?php echo $rootDir ?>/images/footer-slide07.jpg" alt=""></div>
           </div>
         </div>
       </section>
