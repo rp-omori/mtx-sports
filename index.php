@@ -172,23 +172,33 @@ $rootDir = get_template_directory_uri();
               <span class="news__head-label sp">NEWS</span>
               <h2 class="news__head-title">お知らせ</h2>
             </div>
-            <a href="" class="news__archive">
+            <a href="<?php echo esc_url(home_url('/news')); ?>" class="news__archive">
               一覧を見る
             </a>
           </div>
           <ul class="news__list">
+            <?php
+              $args = [
+                'post_type' => 'news',
+                'order' => 'ASC',
+                'posts_per_page' => 2
+              ];
+              $WP_post = new WP_Query($args);
+              if ($WP_post->have_posts()) {
+                while ($WP_post->have_posts()) {
+                  $WP_post->the_post();
+            ?>
             <li class="news__item">
-              <a href="" class="news__link">
-                <p class="news__date">2022.5.10</p>
-                <p class="news__title">タイトルが入ります</p>
+              <a href="<?php the_permalink(); ?>" class="news__link">
+                <p class="news__date"><?php the_time('Y.n.j') ?></p>
+                <p class="news__title"><?php the_title() ?></p>
               </a>
             </li>
-            <li class="news__item">
-              <a href="" class="news__link">
-                <p class="news__date">2022.5.10</p>
-                <p class="news__title">タイトルが入ります</p>
-              </a>
-            </li>
+            <?php
+                }
+                wp_reset_postdata();
+              }
+            ?>
           </ul>
         </div>
       </div>

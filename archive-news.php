@@ -30,7 +30,7 @@ $rootDir = get_template_directory_uri();
               $WP_post->the_post();
         ?>
         <li class="news-archive__item">
-          <a href="" class="news-archive__link">
+          <a href="<?php the_permalink(); ?>" class="news-archive__link">
             <p class="news-archive__date"><?php the_time('Y.n.j') ?></p>
             <h2 class="news-archive__title"><?php the_title() ?></h2>
           </a>
