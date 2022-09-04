@@ -9,14 +9,22 @@
       $url = $_SERVER['REQUEST_URI'];
       if (!strstr($url, 'treatment')):
     ?>
-    <p><?php the_content(); ?></p>
+      <?php if (strstr($url, 'news')): ?>
+      <p>NEWS</p>
+      <?php else: ?>
+      <p><?php the_content(); ?></p>
+      <?php endif; ?>
     <?php else:?>
     <p class="page-title__treatments">TREATMENTS</p>
     <?php endif;?>
   </div>
 
   <div class="page-title__main">
+    <?php if (strstr($url, 'news')): ?>
+    <p>お知らせ一覧</p>
+    <?php else: ?>
     <p><?the_title();?></p>
+    <?php endif; ?>
   </div>
 
 </div>

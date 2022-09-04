@@ -1,0 +1,98 @@
+.news-archive {
+  width: 100%;
+
+  .news-archive__container {
+    width: 100%;
+    margin: get_vw(100) 0 get_vw(200);
+
+    @include sp {
+      margin: get_vw(33, 375) 0 get_vw(100, 375);
+    }
+  }
+
+  .news-archive__list {
+    width: 59%;
+    margin: 0 auto get_vw(70);
+
+    @include sp {
+      width: 89%;
+      margin: 0 auto get_vw(80, 375);
+    }
+  }
+
+  .news-archive__item {
+    position: relative;
+    width: 100%;
+    margin-bottom: get_vw(18);
+    border-radius: 6px;
+    background: var(--main-color-white);
+    filter: drop-shadow(2px 2px 2px rgba(182, 200, 193, .5));
+
+    @include sp {
+      margin-bottom: get_vw(10, 375);
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: get_vw(34);
+      height: get_vw(34);
+      background-image: url(#{$img-root-dir}/icon/icon-arrow-circle-right--white.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: get_vw(20);
+      right: get_vw(30);
+
+      @include sp {
+        content: none;
+      }
+    }
+
+    &:hover {
+      outline: 1px solid var(--main-color);
+
+      &:after {
+        background-image: url(#{$img-root-dir}/icon/icon-arrow-circle-right--green.svg);
+      }
+    }
+  }
+
+  .news-archive__link {
+    display: flex;
+    padding: get_vw(20) get_vw(107) get_vw(20) get_vw(30);
+    align-items: flex-start;
+
+    @include sp {
+      padding: get_vw(25, 375) get_vw(22, 375);
+      flex-direction: column;
+    }
+  }
+
+  .news-archive__date {
+    min-width: get_vw(105);
+    margin-right: get_vw(30);
+    color: var(--main-color);
+    font-family: $fontFamilyDin2014;
+    font-size: calcFz(20);
+    font-weight: bold;
+    line-height: 1.75;
+
+    @include sp {
+      min-width: initial;
+      margin-right: 0;
+      margin-bottom: get_vw(11, 375);
+      font-size: calcFz(15);
+    }
+  }
+
+  .news-archive__title {
+    color: #6A8381;
+    font-size: calcFz(18);
+    font-weight: bold;
+    line-height: 1.75;
+
+    @include sp {
+      font-size: calcFz(15);
+    }
+  }
+}
