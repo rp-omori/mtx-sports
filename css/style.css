@@ -2598,7 +2598,27 @@
   word-break: keep-all;
 }
 .top .treatment {
+  position: relative;
   padding-bottom: 10.3515625vw;
+}
+.top .treatment .treatment__triangle {
+  position: absolute;
+  z-index: -1;
+}
+.top .treatment .treatment__triangle.treatment__triangle--right {
+  right: 0;
+}
+.top .treatment .treatment__triangle.treatment__triangle--left {
+  left: 0;
+}
+.top .treatment .treatment__triangle.treatment__triangle--01 {
+  top: 10.3515625vw;
+}
+.top .treatment .treatment__triangle.treatment__triangle--02 {
+  top: 61.8489583333vw;
+}
+.top .treatment .treatment__triangle.treatment__triangle--03 {
+  top: 123.6979166667vw;
 }
 .top .treatment .treatment__item--service {
   display: -webkit-box;
@@ -7366,6 +7386,24 @@ td, th {
   }
   .top .treatment {
     padding-bottom: 18.6666666667vw;
+  }
+  .top .treatment .section-title__wrapper {
+    text-align: left;
+  }
+  .top .treatment .section-title__wrapper .section-sub-title:before {
+    left: 20px;
+  }
+  .top .treatment .treatment__triangle {
+    width: 30%;
+  }
+  .top .treatment .treatment__triangle.treatment__triangle--01 {
+    top: 20px;
+  }
+  .top .treatment .treatment__triangle.treatment__triangle--02 {
+    top: 1180px;
+  }
+  .top .treatment .treatment__triangle.treatment__triangle--03 {
+    display: none;
   }
   .top .treatment .treatment__item--service {
     margin-bottom: 16vw !important;
