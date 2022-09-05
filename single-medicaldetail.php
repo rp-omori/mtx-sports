@@ -46,12 +46,19 @@ $rootDir = get_template_directory_uri();
               <p><?php the_field('lead_txt'); ?></p>
             </div>
             <div class="medical-detail-top__right_txtArea_soreSpot">
-              <p class="medical-detail-top__right_txtArea_soreSpot_sore">・痛む箇所</p>
+                <?php if(have_rows('sore_spot')): ?>
+                  <?php while(have_rows('sore_spot')): the_row(); ?>
+                    <?php $etc = get_sub_field('spot'); ?>
+                    <?php if(empty($etc)):?>
+                      <?php else:?>
+                        <p class="medical-detail-top__right_txtArea_soreSpot_sore">・痛む箇所</p>
+                      <?php endif;?>
+                  <?php endwhile; ?>
+                <?php endif; ?>
               <div class="medical-detail-top__right_txtArea_soreSpot_spot">
                 <?php if(have_rows('sore_spot')): ?>
                   <?php while(have_rows('sore_spot')): the_row(); ?>
                     <div class="medical-detail-top__right_txtArea_soreSpot_spot_detail">
-                    <!-- <p>肘</p> -->
                       <p><?php the_sub_field('spot'); ?></p>
                     </div>
                     <?php endwhile; ?>
@@ -155,13 +162,13 @@ $rootDir = get_template_directory_uri();
     </div>
 
     <div class="medical-detail-btnArea">
-      <a href="#" class="btn btn--green medical-detail-btnArea__btn">
+      <a href="<?php echo esc_url(home_url('/')); ?>" class="btn btn--green medical-detail-btnArea__btn">
         <p>その他の治療メニューはこちら</p>
       </a>
-      <a href="#" class="btn btn--green medical-detail-btnArea__btn">
+      <a href="<?php echo esc_url(home_url('/price')); ?>" class="btn btn--green medical-detail-btnArea__btn">
         <p>料金一覧を見る</p>
       </a>
-      <a href="#" class="btn btn--green medical-detail-btnArea__btn">
+      <a href="<?php echo esc_url(home_url('/flow')); ?>" class="btn btn--green medical-detail-btnArea__btn">
         <p>治療の流れはこちら</p>
       </a>
     </div>

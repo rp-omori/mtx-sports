@@ -69,11 +69,11 @@ $rootDir = get_template_directory_uri();
           </p>
         </div>
         <div class="facility-systemArea__inner_btnArea">
-          <a href="" class="index_btn">
+          <a href="<?php echo esc_url(home_url('/flow')); ?>" class="index_btn">
             <p>治療の流れ</p>
             <img src="<?php echo $rootDir ?>/images/facility/facility_btn_right_white.png" alt="">
           </a>
-          <a href="" class="index_btn">
+          <a href="<?php echo esc_url(home_url('/staff')); ?>" class="index_btn">
             <p>医師・スタッフ紹介</p>
             <img src="<?php echo $rootDir ?>/images/facility/facility_btn_right_white.png" alt="">
           </a>
@@ -145,7 +145,7 @@ $rootDir = get_template_directory_uri();
                 <p>連携施設</p>
               </div>
               <div class="index_btn facility-collaboratingArea__inner_contents_box_right_ttl">
-                <a class="link">
+                <a href="https://ddrobotec.com/ja/" class="link">
                   <p>ddrobtec©︎</p>
                   <img src="<?php echo $rootDir ?>/images/facility/facility_link.png" alt="">
                 </a>
@@ -168,7 +168,7 @@ $rootDir = get_template_directory_uri();
               <div class="facility-collaboratingArea__inner_contents_box_right_tab">
                 <p>連携施設</p>
               </div>
-              <a href="" class="index_btn facility-collaboratingArea__inner_contents_box_right_ttl border">
+              <a href="https://mtx-academy.movetex.co.jp/" class="index_btn facility-collaboratingArea__inner_contents_box_right_ttl border">
                 <img src="<?php echo $rootDir ?>/images/facility/facility_btn_white.png" alt="">
                 <p>MTXアカデミー</p>
                 <img class="abso" src="<?php echo $rootDir ?>/images/facility/facility_link.png" alt="">
@@ -247,7 +247,7 @@ $rootDir = get_template_directory_uri();
               </div>
               <div class="index_btn facility-collaboratingArea__inner_contents_box_right_ttl">
                 <img src="<?php echo $rootDir ?>/images/facility/facility_btn_green.png" alt="">
-                <p>HAL®（Hybrid<br class="zp"> Assistive Limb®）</p>
+                <p>HAL®（Hybrid<br class="sp"> Assistive Limb®）</p>
               </div>
               <div class="facility-collaboratingArea__inner_contents_box_right_txt">
                 <p>
