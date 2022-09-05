@@ -3014,6 +3014,54 @@
   border-top: 0;
   border-collapse: collapse;
 }
+.price-contents .contents-box_menu_other {
+  position: absolute;
+  top: 0;
+  right: -22%;
+  width: clamp(10px, 14.3229166667vw, 220px);
+}
+.price-contents .contents-box_menu_other__inner {
+  width: 100%;
+}
+.price-contents .contents-box_menu_other__inner:nth-child(1) {
+  border: none;
+}
+.price-contents .contents-box_menu_other__inner_box_ttl {
+  background-color: var(--main-title-background-color);
+  padding: 0;
+  border-bottom: 0;
+  border-left: 0;
+  border-top: 0;
+  padding: clamp(10px, 1.0546875vw, 16.2px) 0;
+  border-collapse: collapse;
+}
+.price-contents .contents-box_menu_other__inner_box_ttl p {
+  text-align: center;
+  font-family: din-2014, sans-serif;
+  font-size: clamp(10px, 1.6rem, 16px);
+  font-weight: 300;
+  color: #fff;
+  line-height: 1.8;
+}
+.price-contents .contents-box_menu_other__inner_box_price {
+  position: relative;
+  background-color: #fff;
+  padding: clamp(10px, 1.6276041667vw, 25px);
+}
+.price-contents .contents-box_menu_other__inner_box_price.bottom {
+  border-bottom: 2px solid #CADAD4;
+}
+.price-contents .contents-box_menu_other__inner_box_price.small {
+  padding: clamp(10px, 1.3671875vw, 21px);
+}
+.price-contents .contents-box_menu_other__inner_box_price p {
+  text-align: center;
+  font-family: din-2014, sans-serif;
+  font-size: clamp(10px, 1.8rem, 18px);
+  font-weight: 300;
+  color: #262928;
+  line-height: 1;
+}
 .price-contents .contents-box_menu__inner {
   width: 100%;
 }
@@ -3033,6 +3081,7 @@
 }
 .price-contents .contents-box_menu__inner_box_name .flex_box {
   width: 100%;
+  position: relative;
 }
 .price-contents .contents-box_menu__inner_box_name .flex_box .orange_tab {
   width: 60%;
@@ -3071,7 +3120,7 @@
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
-  font-size: clamp(10px, 1.8rem, 18px);
+  font-size: clamp(10px, 1.6rem, 16px);
   font-weight: 300;
   color: #262928;
   line-height: 1.6;
@@ -3089,7 +3138,7 @@
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
-  font-size: clamp(10px, 1.8rem, 18px);
+  font-size: clamp(10px, 1.6rem, 16px);
   font-weight: 300;
   color: #262928;
   line-height: 1.6;
@@ -3146,9 +3195,9 @@
   margin-top: clamp(10px, 1.3020833333vw, 20px);
 }
 .price-contents .contents-box_caution p {
-  color: #6A8381;
+  color: #262928;
   font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
-  font-size: clamp(10px, 1.8rem, 18px);
+  font-size: clamp(10px, 1.6rem, 16px);
   font-weight: 300;
 }
 .price-contents .contents-box_btn {
@@ -3168,7 +3217,7 @@
 }
 .price-contents .contents-box_btn p {
   font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
-  font-size: clamp(10px, 1.8rem, 18px);
+  font-size: clamp(10px, 1.6rem, 16px);
   font-weight: 600;
   text-align: center;
   color: #009578;
@@ -7642,6 +7691,53 @@ td, th {
   .price-contents .contents-box_cat p {
     font-size: clamp(10px, 1.6rem, 16px);
     text-align: center;
+  }
+  .price-contents .contents-box_menu_other {
+    display: none;
+  }
+  .price-contents .contents-box_menu_other__inner {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .price-contents .contents-box_menu_other__inner_box {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .price-contents .contents-box_menu_other__inner_box_ttl {
+    width: 61.8%;
+  }
+  .price-contents .contents-box_menu_other__inner_box_ttl p {
+    position: static;
+    width: 100%;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    font-size: clamp(10px, 1.4rem, 14px);
+  }
+  .price-contents .contents-box_menu_other__inner_box_price {
+    width: 61.8%;
+  }
+  .price-contents .contents-box_menu_other__inner_box_price p {
+    position: static;
+    width: 100%;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    font-size: clamp(10px, 1.4rem, 14px);
   }
   .price-contents .contents-box_menu__inner {
     width: 100%;
