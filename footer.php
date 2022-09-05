@@ -183,11 +183,8 @@ $rootDir = get_template_directory_uri();
                   </li> -->
                 </ul>
               </li>
-              <li class="footer__menu-nav">
+              <!-- <li class="footer__menu-nav">
                 <ul class="footer__menu-list">
-                  <!-- <li class="footer__menu-sub">
-                    <a href="" class="footer_menu-link">アクセス</a>
-                  </li> -->
                   <li class="footer__menu-sub">
                     <a href="<?php echo esc_url(home_url('/news')); ?>" class="footer_menu-link">お知らせ</a>
                   </li>
@@ -195,7 +192,7 @@ $rootDir = get_template_directory_uri();
                     <a href="<?php echo esc_url(home_url('/colum')); ?>" class="footer_menu-link">コラム</a>
                   </li>
                 </ul>
-              </li>
+              </li> -->
             </ul>
           </div>
           <div class="footer__bottom">

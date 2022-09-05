@@ -108,7 +108,7 @@ $rootDir = get_template_directory_uri();
                     アクセス
                   </a>
                 </li>
-                <li class="header__item">
+                <!-- <li class="header__item">
                   <a href="<?php echo esc_url(home_url('/news')); ?>" class="header__link">
                     お知らせ
                   </a>
@@ -117,7 +117,7 @@ $rootDir = get_template_directory_uri();
                   <a href="<?php echo esc_url(home_url('/colum')); ?>" class="header__link">
                     コラム
                   </a>
-                </li>
+                </li> -->
               </ul>
             </nav>
 
@@ -199,7 +199,7 @@ $rootDir = get_template_directory_uri();
                       アクセス
                   </a>
                   </li>
-                  <li class="header__item">
+                  <!-- <li class="header__item">
                     <a href="<?php echo esc_url(home_url('/news')); ?>" class="header__link js-header-drawer">
                       お知らせ
                     </a>
@@ -208,7 +208,7 @@ $rootDir = get_template_directory_uri();
                     <a href="<?php echo esc_url(home_url('/colum')); ?>" class="header__link js-header-drawer">
                       コラム
                     </a>
-                  </li>
+                  </li> -->
                 </ul>
               </nav>
             </div>
