@@ -89,7 +89,7 @@ $rootDir = get_template_directory_uri();
                   <p>「痛みがないにもかかわらず、動きの制限がある部位」に焦点を当て、身体の隠れた問題を探ります。</p>
                   <p class="green">CES （Corrective Exercise Specialist）</p>
                   <p>スクワットや片足バランスで動きの中の異常を探り、筋膜リリースや筋の刺激を用いて改善していきます。</p>
-                  <p class="green">DDシステム ddrobotec©</p>
+                  <p class="green">DDシステム (ddrobotec©)</p>
                   <p>下半身の筋力や瞬発力など、約50項目を視覚化してグラフに表し視覚化することで、有効な筋力強化ができます。</p>
                 </div>
               </div>

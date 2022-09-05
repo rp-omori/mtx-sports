@@ -43,7 +43,7 @@ $rootDir = get_template_directory_uri();
         </div>
         <div class="facility-systemArea__inner_lead">
           <p>
-            「再生医療」「物理療法・手技療法」<br class="sp">「運動療法」などを駆使して、<br>
+            「再生医療」「運動療法」<br class="sp">「物理療法」などを駆使して、<br>
             ONE TEAMでトータルサポートします！
           </p>
         </div>
