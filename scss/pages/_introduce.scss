@@ -314,6 +314,11 @@
                     font-weight: 600;
                     line-height: 1;
 
+                    &.other{
+                      color: rgba($color: #009578, $alpha: .7);
+                    }
+
+
                     @include sp {
                       font-size: calcFz(43);
                       color: rgba($color: #009578, $alpha: .7);

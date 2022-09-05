@@ -13,8 +13,8 @@ $rootDir = get_template_directory_uri();
       <img src="<?php echo $rootDir ?>/images/footer__other/footer_other_01.jpg" alt="">
     </div>
     <div class="footer__other_box_text">
-      <p class="orange">MEDICAL SUBJECTS</p>
-      <p class="white">診療科目</p>
+      <p class="orange">FLOW</p>
+      <p class="white">治療の流れ</p>
     </div>
   </a>
   <a href="<?php echo esc_url(home_url('/staff')); ?>" class="footer__other_box">
@@ -105,8 +105,8 @@ $rootDir = get_template_directory_uri();
       <img src="<?php echo $rootDir ?>/images/footer__other/footer_other_06.jpg" alt="">
     </div>
     <div class="footer__other_box_text">
-      <p class="orange">MEDICAL SUBJECTS</p>
-      <p class="white">診療科目</p>
+      <p class="orange">FLOW</p>
+      <p class="white">治療の流れ</p>
     </div>
   </a>
   <a href="<?php echo esc_url(home_url('/staff')); ?>" class="footer__other_box">
@@ -132,13 +132,13 @@ $rootDir = get_template_directory_uri();
       <p class="white">治療の流れ</p>
     </div>
   </a>
-  <a href="<?php echo esc_url(home_url()); ?>" class="footer__other_box">
+  <a href="<?php echo esc_url(home_url('/staff')); ?>" class="footer__other_box">
     <div class="footer__other_box_img">
-      <img src="<?php echo $rootDir ?>/images/footer__other/footer_other_06.jpg" alt="">
+      <img src="<?php echo $rootDir ?>/images/footer__other/footer_other_02.jpg" alt="">
     </div>
     <div class="footer__other_box_text">
-      <p class="orange">MEDICAL SUBJECTS</p>
-      <p class="white">診療科目</p>
+      <p class="orange">STAFF</p>
+      <p class="white">医師・スタッフ紹介</p>
     </div>
   </a>
 </div>
