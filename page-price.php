@@ -597,7 +597,7 @@ $WP_post = new WP_Query($args);
         <p>※オープニング価格は年内まで。</p>
       </div>
       <a href="<?php echo esc_url(home_url('/contact')); ?>" class="contents-box_btn sp_btn center">
-        <p>その他オプション等については、お問い合わせください。</p>
+        <p>その他オプション等については、<br>お問い合わせください。</p>
       </a>
     </div>
 
