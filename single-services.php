@@ -41,6 +41,7 @@ $rootDir = get_template_directory_uri();
         $flow_note = $flow['note_list'];
         $flow_description = $flow['description'];
         $flow_image = $flow['image'];
+        $flow_image_sp = $flow['image_sp'];
 
         // 注意事項（リスク・副作用）
         $side_effects = get_field('side_effects');
@@ -198,7 +199,10 @@ $rootDir = get_template_directory_uri();
               <?php endif; ?>
               <div class="treatment-detail__contents-item-img">
                 <?php if ($flow_image): ?>
-                  <img src="<?php echo $flow_image ?>" alt="">
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="<?php echo $flow_image_sp ?>">
+                    <img src="<?php echo $flow_image ?>" alt="">
+                  </picture>
                 <?php endif; ?>
               </div>
             </div>
@@ -211,7 +215,7 @@ $rootDir = get_template_directory_uri();
                 <img src="<?php echo $rootDir ?>/images/icon/icon-attention.svg" alt="">
               </div>
               <div class="contentsBox_ttl_txt">
-                <p>注意事項（リスク・副作用）</p>
+                <p>注意事項<br class="sp">（リスク・副作用）</p>
               </div>
             </div>
             <div class="treatment-detail__contents-item-body">
