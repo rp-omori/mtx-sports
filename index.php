@@ -47,8 +47,8 @@ $rootDir = get_template_directory_uri();
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <picture>
-              <source media="(max-width: 768px)" srcset="<?php echo $rootDir ?>/images/top/kv_02-sp.png">
-              <img src="<?php echo $rootDir ?>/images/top/kv_02.png" alt="">
+              <source media="(max-width: 768px)" srcset="<?php echo $rootDir ?>/images/top/kv_01-sp.png">
+              <img src="<?php echo $rootDir ?>/images/top/kv_01.png" alt="">
             </picture>
             <!-- <div class="txtArea">
               <div class="txtArea__head white_txt">
@@ -81,8 +81,8 @@ $rootDir = get_template_directory_uri();
           <div class="swiper-slide">
             <div class="kv_img">
               <picture>
-                <source media="(max-width: 768px)" srcset="<?php echo $rootDir ?>/images/top/kv_01-sp.png">
-                <img src="<?php echo $rootDir ?>/images/top/kv_01.png" alt="">
+                <source media="(max-width: 768px)" srcset="<?php echo $rootDir ?>/images/top/kv_02-sp.png">
+                <img src="<?php echo $rootDir ?>/images/top/kv_02.png" alt="">
               </picture>
             </div>
             <!-- <div class="txtArea">
