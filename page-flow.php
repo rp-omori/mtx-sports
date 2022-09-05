@@ -26,13 +26,13 @@ $rootDir = get_template_directory_uri();
     <div id="" class="flow-main">
       <div class="flow-main__inner">
         <div class="flow-main__inner_left">
-          <div class="flow-main__inner_left_ttl">
+          <!-- <div class="flow-main__inner_left_ttl">
             <p>FLOW</p>
-          </div>
+          </div> -->
           <div class="flow-main__inner_left_txt">
             <p>患者さんの 良くなった、良くなっていない といった主観的な感覚は、治療経過の評価に非常に重要なものです。ですが、この感覚は本人だけのものであり、医師は正確に評価できません。そこでわれわれ我々は、患者さんの現状を具体的かつ客観的に評価・数値化することを大切にしています。データをもとに、都度治療の方針を軌道修正することで、具体的なゴールを患者さんと共有しながら治療を進めていくのです。数値化に用いるのは、最先端の計測機器「ダイナミック・デバイス」とSFMAやCESなどが用意した、運動機能の状態を測る診断基準です。その結果、現在どこまで良くなっていて、次はどうリハビリに取り組むかという状況・情報を表す数値が、医師、理学療法士、トレーナー、患者さんの全員で共有できます。</p>
           </div>
-          <a href="" class="flow-main__inner_left_btn index_btn">
+          <a href="<?php echo esc_url(home_url('system_facility')); ?>" class="flow-main__inner_left_btn index_btn">
             <p>治療体制はこちら</p>
             <img src="<?php echo $rootDir ?>/images/flow/icon-arrow-circle-right--white.svg" alt="">
           </a>
@@ -56,12 +56,12 @@ $rootDir = get_template_directory_uri();
             <div class="flow-circle__inner_right_box_top">
               <div class="flow-circle__inner_right_box_top_ttl">
                 <div class="flow-circle__inner_right_box_top_ttl_left">
-                  <img src="<?php echo $rootDir ?>/images/flow/flow_01.svg" alt="">
+                  <img src="<?php echo $rootDir ?>/images/flow/flow_01.png" alt="">
                   <p>診察・動きの評価</p>
                 </div>
                 <div class="flow-circle__inner_right_box_top_ttl_right">
-                  <img src="<?php echo $rootDir ?>/images/flow/flow_person_01.svg" alt="">
-                  <img src="<?php echo $rootDir ?>/images/flow/flow_person_02.svg" alt="">
+                  <img src="<?php echo $rootDir ?>/images/flow/flow_person_01.png" alt="">
+                  <img src="<?php echo $rootDir ?>/images/flow/flow_person_02.png" alt="">
                 </div>
               </div>
               <div class="flow-circle__inner_right_box_top_txt">
@@ -72,8 +72,8 @@ $rootDir = get_template_directory_uri();
               </div>
               <div class="flow-circle__inner_right_box_top_logo">
                 <p>関連施設</p>
-                <img src="<?php echo $rootDir ?>/images/flow/flow_logo_01.svg" alt="">
-                <img class="small" src="<?php echo $rootDir ?>/images/flow/flow_logo_02.svg" alt="">
+                <img src="<?php echo $rootDir ?>/images/flow/flow_logo_01.png" alt="">
+                <img class="small" src="<?php echo $rootDir ?>/images/flow/flow_logo_02.png" alt="">
               </div>
             </div>
             <div class="flow-circle__inner_right_box_middle">
@@ -89,7 +89,7 @@ $rootDir = get_template_directory_uri();
                   <p>「痛みがないにもかかわらず、動きの制限がある部位」に焦点を当て、身体の隠れた問題を探ります。</p>
                   <p class="green">CES （Corrective Exercise Specialist）</p>
                   <p>スクワットや片足バランスで動きの中の異常を探り、筋膜リリースや筋の刺激を用いて改善していきます。</p>
-                  <p class="green">DDシステム</p>
+                  <p class="green">DDシステム ddrobotec©</p>
                   <p>下半身の筋力や瞬発力など、約50項目を視覚化してグラフに表し視覚化することで、有効な筋力強化ができます。</p>
                 </div>
               </div>
@@ -128,11 +128,11 @@ $rootDir = get_template_directory_uri();
             <div class="flow-circle__inner_right_box_top">
               <div class="flow-circle__inner_right_box_top_ttl">
                 <div class="flow-circle__inner_right_box_top_ttl_left">
-                  <img src="<?php echo $rootDir ?>/images/flow/flow_02.svg" alt="">
+                  <img src="<?php echo $rootDir ?>/images/flow/flow_02.png" alt="">
                   <p>目標設定</p>
                 </div>
                 <div class="flow-circle__inner_right_box_top_ttl_right">
-                  <img src="<?php echo $rootDir ?>/images/flow/flow_person_01.svg" alt="">
+                  <img src="<?php echo $rootDir ?>/images/flow/flow_person_01.png" alt="">
                 </div>
               </div>
               <div class="flow-circle__inner_right_box_top_txt">
@@ -144,7 +144,7 @@ $rootDir = get_template_directory_uri();
               </div>
               <div class="flow-circle__inner_right_box_top_logo">
                 <p>関連施設</p>
-                <img src="<?php echo $rootDir ?>/images/flow/flow_logo_01.svg" alt="">
+                <img src="<?php echo $rootDir ?>/images/flow/flow_logo_01.png" alt="">
               </div>
             </div>
           </div>
@@ -152,11 +152,11 @@ $rootDir = get_template_directory_uri();
             <div class="flow-circle__inner_right_box_top">
               <div class="flow-circle__inner_right_box_top_ttl">
                 <div class="flow-circle__inner_right_box_top_ttl_left">
-                  <img src="<?php echo $rootDir ?>/images/flow/flow_03.svg" alt="">
+                  <img src="<?php echo $rootDir ?>/images/flow/flow_03.png" alt="">
                   <p>治療計画（再生医療・運動療法・物理療法）</p>
                 </div>
                 <div class="flow-circle__inner_right_box_top_ttl_right">
-                  <img src="<?php echo $rootDir ?>/images/flow/flow_person_01.svg" alt="">
+                  <img src="<?php echo $rootDir ?>/images/flow/flow_person_01.png" alt="">
                 </div>
               </div>
               <div class="flow-circle__inner_right_box_top_txt">
@@ -167,7 +167,7 @@ $rootDir = get_template_directory_uri();
               </div>
               <div class="flow-circle__inner_right_box_top_logo">
                 <p>関連施設</p>
-                <img src="<?php echo $rootDir ?>/images/flow/flow_logo_01.svg" alt="">
+                <img src="<?php echo $rootDir ?>/images/flow/flow_logo_01.png" alt="">
               </div>
             </div>
           </div>
@@ -175,11 +175,11 @@ $rootDir = get_template_directory_uri();
             <div class="flow-circle__inner_right_box_top">
               <div class="flow-circle__inner_right_box_top_ttl">
                 <div class="flow-circle__inner_right_box_top_ttl_left">
-                  <img src="<?php echo $rootDir ?>/images/flow/flow_04.svg" alt="">
+                  <img src="<?php echo $rootDir ?>/images/flow/flow_04.png" alt="">
                   <p>治療開始<br>（再生医療・運動療法・物理療法）</p>
                 </div>
                 <div class="flow-circle__inner_right_box_top_ttl_right">
-                  <img src="<?php echo $rootDir ?>/images/flow/flow_person_01.svg" alt="">
+                  <img src="<?php echo $rootDir ?>/images/flow/flow_person_01.png" alt="">
                 </div>
               </div>
               <div class="flow-circle__inner_right_box_top_txt">
@@ -190,9 +190,9 @@ $rootDir = get_template_directory_uri();
               </div>
               <div class="flow-circle__inner_right_box_top_logo">
                 <p>関連施設</p>
-                <img src="<?php echo $rootDir ?>/images/flow/flow_logo_01.svg" alt="">
-                <img class="small" src="<?php echo $rootDir ?>/images/flow/flow_logo_03.svg" alt="">
-                <img class="small" src="<?php echo $rootDir ?>/images/flow/flow_logo_02.svg" alt="">
+                <img src="<?php echo $rootDir ?>/images/flow/flow_logo_01.png" alt="">
+                <img class="small" src="<?php echo $rootDir ?>/images/flow/flow_logo_03.png" alt="">
+                <img class="small" src="<?php echo $rootDir ?>/images/flow/flow_logo_02.png" alt="">
               </div>
             </div>
             <div class="flow-circle__inner_right_box_bottom">
@@ -217,11 +217,11 @@ $rootDir = get_template_directory_uri();
             <div class="flow-circle__inner_right_box_top">
               <div class="flow-circle__inner_right_box_top_ttl">
                 <div class="flow-circle__inner_right_box_top_ttl_left">
-                  <img src="<?php echo $rootDir ?>/images/flow/flow_05.svg" alt="">
+                  <img src="<?php echo $rootDir ?>/images/flow/flow_05.png" alt="">
                   <p>再診・再評価</p>
                 </div>
                 <div class="flow-circle__inner_right_box_top_ttl_right">
-                  <img src="<?php echo $rootDir ?>/images/flow/flow_person_01.svg" alt="">
+                  <img src="<?php echo $rootDir ?>/images/flow/flow_person_01.png" alt="">
                 </div>
               </div>
               <div class="flow-circle__inner_right_box_top_txt">
@@ -236,11 +236,11 @@ $rootDir = get_template_directory_uri();
             <div class="flow-circle__inner_right_box_top">
               <div class="flow-circle__inner_right_box_top_ttl">
                 <div class="flow-circle__inner_right_box_top_ttl_left">
-                  <img src="<?php echo $rootDir ?>/images/flow/flow_06.svg" alt="">
+                  <img src="<?php echo $rootDir ?>/images/flow/flow_06.png" alt="">
                   <p>目標達成</p>
                 </div>
                 <div class="flow-circle__inner_right_box_top_ttl_right">
-                  <img src="<?php echo $rootDir ?>/images/flow/flow_person_01.svg" alt="">
+                  <img src="<?php echo $rootDir ?>/images/flow/flow_person_01.png" alt="">
                 </div>
               </div>
               <div class="flow-circle__inner_right_box_top_txt">
@@ -254,13 +254,13 @@ $rootDir = get_template_directory_uri();
             <div class="flow-circle__inner_right_box_top">
               <div class="flow-circle__inner_right_box_top_ttl">
                 <div class="flow-circle__inner_right_box_top_ttl_left">
-                  <img src="<?php echo $rootDir ?>/images/flow/flow_07.svg" alt="">
+                  <img src="<?php echo $rootDir ?>/images/flow/flow_07.png" alt="">
                   <p>フォローアップ</p>
                 </div>
                 <div class="flow-circle__inner_right_box_top_ttl_right">
-                  <img src="<?php echo $rootDir ?>/images/flow/flow_person_01.svg" alt="">
-                  <img src="<?php echo $rootDir ?>/images/flow/flow_person_02.svg" alt="">
-                  <img src="<?php echo $rootDir ?>/images/flow/flow_person_03.svg" alt="">
+                  <img src="<?php echo $rootDir ?>/images/flow/flow_person_01.png" alt="">
+                  <img src="<?php echo $rootDir ?>/images/flow/flow_person_02.png" alt="">
+                  <img src="<?php echo $rootDir ?>/images/flow/flow_person_03.png" alt="">
                 </div>
               </div>
               <div class="flow-circle__inner_right_box_top_txt">
@@ -271,9 +271,9 @@ $rootDir = get_template_directory_uri();
               </div>
               <div class="flow-circle__inner_right_box_top_logo">
                 <p>関連施設</p>
-                <img src="<?php echo $rootDir ?>/images/flow/flow_logo_01.svg" alt="">
-                <img class="small" src="<?php echo $rootDir ?>/images/flow/flow_logo_03.svg" alt="">
-                <img class="small" src="<?php echo $rootDir ?>/images/flow/flow_logo_02.svg" alt="">
+                <img src="<?php echo $rootDir ?>/images/flow/flow_logo_01.png" alt="">
+                <img class="small" src="<?php echo $rootDir ?>/images/flow/flow_logo_03.png" alt="">
+                <img class="small" src="<?php echo $rootDir ?>/images/flow/flow_logo_02.png" alt="">
               </div>
             </div>
           </div>
@@ -281,13 +281,13 @@ $rootDir = get_template_directory_uri();
             <div class="flow-circle__inner_right_box_top">
               <div class="flow-circle__inner_right_box_top_ttl">
                 <div class="flow-circle__inner_right_box_top_ttl_left">
-                  <img src="<?php echo $rootDir ?>/images/flow/flow_08.svg" alt="">
+                  <img src="<?php echo $rootDir ?>/images/flow/flow_08.png" alt="">
                   <p>フォローアップ</p>
                 </div>
                 <div class="flow-circle__inner_right_box_top_ttl_right">
-                  <img src="<?php echo $rootDir ?>/images/flow/flow_person_01.svg" alt="">
-                  <img src="<?php echo $rootDir ?>/images/flow/flow_person_02.svg" alt="">
-                  <img src="<?php echo $rootDir ?>/images/flow/flow_person_03.svg" alt="">
+                  <img src="<?php echo $rootDir ?>/images/flow/flow_person_01.png" alt="">
+                  <img src="<?php echo $rootDir ?>/images/flow/flow_person_02.png" alt="">
+                  <img src="<?php echo $rootDir ?>/images/flow/flow_person_03.png" alt="">
                 </div>
               </div>
               <div id="txtArea" class="flow-circle__inner_right_box_top_txt">
@@ -299,9 +299,9 @@ $rootDir = get_template_directory_uri();
               </div>
               <div id="logoArea" class="flow-circle__inner_right_box_top_logo">
                 <p>関連施設</p>
-                <img src="<?php echo $rootDir ?>/images/flow/flow_logo_01.svg" alt="">
-                <img class="small" src="<?php echo $rootDir ?>/images/flow/flow_logo_03.svg" alt="">
-                <img class="small" src="<?php echo $rootDir ?>/images/flow/flow_logo_02.svg" alt="">
+                <img src="<?php echo $rootDir ?>/images/flow/flow_logo_01.png" alt="">
+                <img class="small" src="<?php echo $rootDir ?>/images/flow/flow_logo_03.png" alt="">
+                <img class="small" src="<?php echo $rootDir ?>/images/flow/flow_logo_02.png" alt="">
               </div>
             </div>
           </div>

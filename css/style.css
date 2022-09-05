@@ -3213,6 +3213,13 @@
       -ms-flex-align: center;
           align-items: center;
 }
+.price-contents .contents-box_btn.center {
+  bottom: 0;
+  left: 50%;
+  right: auto;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
 .price-contents .contents-box_btn img {
   width: clamp(10px, 1.3020833333vw, 20px);
   margin-right: 8px;
