@@ -216,6 +216,10 @@
               color: var(--main-color);
               margin-bottom: clamp(10px,get_vw(16),16px);
 
+              &:nth-of-type(n+2){
+                display: none;
+              }
+
               @include sp {
                 font-size: calcFz(15);
                 margin-bottom: 12px;

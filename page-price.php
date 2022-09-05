@@ -403,7 +403,7 @@ $WP_post = new WP_Query($args);
       <div class="contents-box_caution">
         <p>※オープニング価格は年内まで。</p>
       </div>
-      <a href="" class="contents-box_btn">
+      <a href="<?php echo esc_url(home_url('services/#service')); ?>" class="contents-box_btn">
         <img src="<?php echo $rootDir ?>/images/price/price_btn.png" alt="">
         <p>再生医療についてはこちら</p>
       </a>
@@ -470,7 +470,7 @@ $WP_post = new WP_Query($args);
       <div class="contents-box_caution">
         <p>　</p>
       </div>
-      <a href="" class="contents-box_btn">
+      <a href="<?php echo esc_url(home_url('services/#exercise')); ?>" class="contents-box_btn">
         <img src="<?php echo $rootDir ?>/images/price/price_btn.png" alt="">
         <p>運動療法についてはこちら</p>
       </a>
@@ -525,7 +525,7 @@ $WP_post = new WP_Query($args);
       <div class="contents-box_caution">
         <p>　</p>
       </div>
-      <a href="" class="contents-box_btn">
+      <a href="<?php echo esc_url(home_url('services/#physical')); ?>" class="contents-box_btn">
         <img src="<?php echo $rootDir ?>/images/price/price_btn.png" alt="">
         <p>物理療法についてはこちら</p>
       </a>
