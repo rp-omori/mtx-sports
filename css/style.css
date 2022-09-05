@@ -1914,6 +1914,7 @@
           flex-direction: column;
 }
 .top .medical-menu .medical-menu__item .symptoms__list .symptoms__item {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2756,6 +2757,7 @@
           flex-direction: column;
 }
 .top .treatment .treatment-wrapper .treatment__list .treatment__item .treatment-detail__list .treatment-detail__item {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
