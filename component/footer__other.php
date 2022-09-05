@@ -8,7 +8,7 @@ $rootDir = get_template_directory_uri();
 <?php elseif(is_page('aboutus') || is_page('system_facility') ) :?>
 
 <div class="footer__other">
-  <a href="" class="footer__other_box">
+  <a href="<?php echo esc_url(home_url('/flow')); ?>" class="footer__other_box">
     <div class="footer__other_box_img">
       <img src="<?php echo $rootDir ?>/images/footer__other/footer_other_01.jpg" alt="">
     </div>
@@ -17,7 +17,7 @@ $rootDir = get_template_directory_uri();
       <p class="white">診療科目</p>
     </div>
   </a>
-  <a href="" class="footer__other_box">
+  <a href="<?php echo esc_url(home_url('/staff')); ?>" class="footer__other_box">
     <div class="footer__other_box_img">
       <img src="<?php echo $rootDir ?>/images/footer__other/footer_other_02.jpg" alt="">
     </div>
@@ -31,7 +31,7 @@ $rootDir = get_template_directory_uri();
 <?php elseif(is_page('flow')) :?>
 
 <div class="footer__other">
-  <a href="" class="footer__other_box">
+  <a href="<?php echo esc_url(home_url('/system_facility')); ?>" class="footer__other_box">
     <div class="footer__other_box_img">
       <img src="<?php echo $rootDir ?>/images/footer__other/footer_other_03.jpg" alt="">
     </div>
@@ -40,7 +40,7 @@ $rootDir = get_template_directory_uri();
       <p class="white">治療体制と施設・設備</p>
     </div>
   </a>
-  <a href="" class="footer__other_box">
+  <a href="<?php echo esc_url(home_url('/services')); ?>" class="footer__other_box">
     <div class="footer__other_box_img">
       <img src="<?php echo $rootDir ?>/images/footer__other/footer_other_04.jpg" alt="">
     </div>
@@ -54,7 +54,7 @@ $rootDir = get_template_directory_uri();
 <?php elseif(is_page('staff')) :?>
 
 <div class="footer__other">
-  <a href="" class="footer__other_box">
+  <a href="<?php echo esc_url(home_url()); ?>" class="footer__other_box">
     <div class="footer__other_box_img">
       <img src="<?php echo $rootDir ?>/images/footer__other/footer_other_05.jpg" alt="">
     </div>
@@ -63,7 +63,7 @@ $rootDir = get_template_directory_uri();
       <p class="white">コラム</p>
     </div>
   </a>
-  <a href="" class="footer__other_box">
+  <a href="<?php echo esc_url(home_url('/aboutus')); ?>" class="footer__other_box">
     <div class="footer__other_box_img">
       <img src="<?php echo $rootDir ?>/images/footer__other/footer_other_07.jpg" alt="">
     </div>
@@ -74,10 +74,10 @@ $rootDir = get_template_directory_uri();
   </a>
 </div>
 
-<?php elseif(is_archive('service')) :?>
+<?php elseif(is_archive('services')) :?>
 
 <div class="footer__other">
-  <a href="" class="footer__other_box">
+  <a href="<?php echo esc_url(home_url('/flow')); ?>" class="footer__other_box">
     <div class="footer__other_box_img">
       <img src="<?php echo $rootDir ?>/images/footer__other/footer_other_01.jpg" alt="">
     </div>
@@ -86,7 +86,7 @@ $rootDir = get_template_directory_uri();
       <p class="white">治療の流れ</p>
     </div>
   </a>
-  <a href="" class="footer__other_box">
+  <a href="<?php echo esc_url(home_url()); ?>" class="footer__other_box">
     <div class="footer__other_box_img">
       <img src="<?php echo $rootDir ?>/images/footer__other/footer_other_05.jpg" alt="">
     </div>
@@ -100,7 +100,7 @@ $rootDir = get_template_directory_uri();
 <?php elseif(is_page('price')) :?>
 
 <div class="footer__other">
-  <a href="" class="footer__other_box">
+  <a href="<?php echo esc_url(home_url()); ?>" class="footer__other_box">
     <div class="footer__other_box_img">
       <img src="<?php echo $rootDir ?>/images/footer__other/footer_other_06.jpg" alt="">
     </div>
@@ -109,7 +109,7 @@ $rootDir = get_template_directory_uri();
       <p class="white">診療科目</p>
     </div>
   </a>
-  <a href="" class="footer__other_box">
+  <a href="<?php echo esc_url(home_url('/staff')); ?>" class="footer__other_box">
     <div class="footer__other_box_img">
       <img src="<?php echo $rootDir ?>/images/footer__other/footer_other_02.jpg" alt="">
     </div>
@@ -123,7 +123,7 @@ $rootDir = get_template_directory_uri();
 <?php elseif( is_single('')) :?>
 
 <div class="footer__other">
-  <a href="" class="footer__other_box">
+  <a href="<?php echo esc_url(home_url('/flow')); ?>" class="footer__other_box">
     <div class="footer__other_box_img">
       <img src="<?php echo $rootDir ?>/images/footer__other/footer_other_01.jpg" alt="">
     </div>
@@ -132,7 +132,7 @@ $rootDir = get_template_directory_uri();
       <p class="white">治療の流れ</p>
     </div>
   </a>
-  <a href="" class="footer__other_box">
+  <a href="<?php echo esc_url(home_url()); ?>" class="footer__other_box">
     <div class="footer__other_box_img">
       <img src="<?php echo $rootDir ?>/images/footer__other/footer_other_06.jpg" alt="">
     </div>
