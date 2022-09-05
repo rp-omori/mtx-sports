@@ -162,7 +162,7 @@ $rootDir = get_template_directory_uri();
     </div>
 
     <div class="medical-detail-btnArea">
-      <a href="<?php echo esc_url(home_url('/')); ?>" class="btn btn--green medical-detail-btnArea__btn">
+      <a href="<?php echo esc_url(home_url('/services')); ?>" class="btn btn--green medical-detail-btnArea__btn">
         <p>その他の治療メニューはこちら</p>
       </a>
       <a href="<?php echo esc_url(home_url('/price')); ?>" class="btn btn--green medical-detail-btnArea__btn">
