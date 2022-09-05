@@ -210,16 +210,39 @@ $rootDir = get_template_directory_uri();
             </button>
           </h3>
           <ul class="symptoms__list">
+          <?php
+            $args = [
+              'post_type' => 'medicaldetail',
+              'order' => 'ASC',
+              'posts_per_page' => -1,
+              'tax_query' => [
+                [
+                  'taxonomy' => 'medical_type',
+                  'field'    => 'slug',
+                  'terms'    => 'shoulder',
+                ]
+              ],
+            ];
+            $WP_post = new WP_Query($args);
+            if ($WP_post->have_posts()) {
+              while ($WP_post->have_posts()) {
+                $WP_post->the_post();
+          ?>
             <li class="symptoms__item">
-              <a href="" class="symptoms__link">
-                <h4 class="symptoms__name">肩関節周囲炎<br>（凍結肩・五十肩）</h4>
+              <a href="<?php the_permalink(); ?>" class="symptoms__link">
+                <h4 class="symptoms__name"><?php the_title(); ?></h4>
               </a>
             </li>
-            <li class="symptoms__item">
+          <?php
+            }
+            wp_reset_postdata();
+          }
+          ?>
+            <!-- <li class="symptoms__item">
               <a href="" class="symptoms__link">
                 <h4 class="symptoms__name">腱板損傷</h4>
               </a>
-            </li>
+            </li> -->
           </ul>
         </li>
         <li class="medical-menu__item medical-menu__item--02" style="animation-delay: 0.2s">
@@ -232,7 +255,35 @@ $rootDir = get_template_directory_uri();
             </button>
           </h3>
           <ul class="symptoms__list">
+          <?php
+            $args = [
+              'post_type' => 'medicaldetail',
+              'order' => 'ASC',
+              'posts_per_page' => -1,
+              'tax_query' => [
+                [
+                  'taxonomy' => 'medical_type',
+                  'field'    => 'slug',
+                  'terms'    => 'lower-back',
+                ]
+              ],
+            ];
+            $WP_post = new WP_Query($args);
+            if ($WP_post->have_posts()) {
+              while ($WP_post->have_posts()) {
+                $WP_post->the_post();
+          ?>
             <li class="symptoms__item">
+              <a href="<?php the_permalink(); ?>" class="symptoms__link">
+                <h4 class="symptoms__name"><?php the_title(); ?></h4>
+              </a>
+            </li>
+          <?php
+            }
+            wp_reset_postdata();
+          }
+          ?>
+            <!-- <li class="symptoms__item">
               <a href="" class="symptoms__link">
                 <h4 class="symptoms__name">腰部脊柱管狭窄症</h4>
               </a>
@@ -251,7 +302,7 @@ $rootDir = get_template_directory_uri();
               <a href="" class="symptoms__link">
                 <h4 class="symptoms__name">ロコモティブシンドローム</h4>
               </a>
-            </li>
+            </li> -->
           </ul>
         </li>
         <li class="medical-menu__item medical-menu__item--03" style="animation-delay: 0.6s">
@@ -264,7 +315,35 @@ $rootDir = get_template_directory_uri();
             </button>
           </h3>
           <ul class="symptoms__list">
+          <?php
+            $args = [
+              'post_type' => 'medicaldetail',
+              'order' => 'ASC',
+              'posts_per_page' => -1,
+              'tax_query' => [
+                [
+                  'taxonomy' => 'medical_type',
+                  'field'    => 'slug',
+                  'terms'    => 'legs',
+                ]
+              ],
+            ];
+            $WP_post = new WP_Query($args);
+            if ($WP_post->have_posts()) {
+              while ($WP_post->have_posts()) {
+                $WP_post->the_post();
+          ?>
             <li class="symptoms__item">
+              <a href="<?php the_permalink(); ?>" class="symptoms__link">
+                <h4 class="symptoms__name"><?php the_title(); ?></h4>
+              </a>
+            </li>
+          <?php
+            }
+            wp_reset_postdata();
+          }
+          ?>
+            <!-- <li class="symptoms__item">
               <a href="" class="symptoms__link">
                 <h4 class="symptoms__name">腰部脊柱管狭窄症</h4>
               </a>
@@ -283,7 +362,7 @@ $rootDir = get_template_directory_uri();
               <a href="" class="symptoms__link">
                 <h4 class="symptoms__name">ロコモティブシンドローム</h4>
               </a>
-            </li>
+            </li> -->
           </ul>
         </li>
         <li class="medical-menu__item medical-menu__item--04" style="animation-delay: 0.8s">
@@ -296,7 +375,35 @@ $rootDir = get_template_directory_uri();
             </button>
           </h3>
           <ul class="symptoms__list">
+          <?php
+            $args = [
+              'post_type' => 'medicaldetail',
+              'order' => 'ASC',
+              'posts_per_page' => -1,
+              'tax_query' => [
+                [
+                  'taxonomy' => 'medical_type',
+                  'field'    => 'slug',
+                  'terms'    => 'knee',
+                ]
+              ],
+            ];
+            $WP_post = new WP_Query($args);
+            if ($WP_post->have_posts()) {
+              while ($WP_post->have_posts()) {
+                $WP_post->the_post();
+          ?>
             <li class="symptoms__item">
+              <a href="<?php the_permalink(); ?>" class="symptoms__link">
+                <h4 class="symptoms__name"><?php the_title(); ?></h4>
+              </a>
+            </li>
+          <?php
+            }
+            wp_reset_postdata();
+          }
+          ?>
+            <!-- <li class="symptoms__item">
               <a href="" class="symptoms__link">
                 <h4 class="symptoms__name">変形性関節症</h4>
               </a>
@@ -305,7 +412,7 @@ $rootDir = get_template_directory_uri();
               <a href="" class="symptoms__link">
                 <h4 class="symptoms__name">ロコモティブシンドローム</h4>
               </a>
-            </li>
+            </li> -->
           </ul>
         </li>
         <li class="medical-menu__item medical-menu__item--05 medical-menu__item--dg" style="animation-delay: 1s">
@@ -318,7 +425,35 @@ $rootDir = get_template_directory_uri();
             </button>
           </h3>
           <ul class="symptoms__list">
-            <li class="symptoms__item col">
+          <?php
+            $args = [
+              'post_type' => 'medicaldetail',
+              'order' => 'ASC',
+              'posts_per_page' => -1,
+              'tax_query' => [
+                [
+                  'taxonomy' => 'medical_type',
+                  'field'    => 'slug',
+                  'terms'    => 'sports',
+                ]
+              ],
+            ];
+            $WP_post = new WP_Query($args);
+            if ($WP_post->have_posts()) {
+              while ($WP_post->have_posts()) {
+                $WP_post->the_post();
+          ?>
+            <li class="symptoms__item">
+              <a href="<?php the_permalink(); ?>" class="symptoms__link">
+                <h4 class="symptoms__name"><?php the_title(); ?></h4>
+              </a>
+            </li>
+          <?php
+            }
+            wp_reset_postdata();
+          }
+          ?>
+            <!-- <li class="symptoms__item col">
               <a href="" class="symptoms__link">
                 <h4 class="symptoms__name">疲労骨折</h4>
                 <span class="symptoms__note">（腰椎分離症含む）</span>
@@ -358,7 +493,7 @@ $rootDir = get_template_directory_uri();
               <a href="" class="symptoms__link">
                 <h4 class="symptoms__name">健周囲炎</h4>
               </a>
-            </li>
+            </li> -->
           </ul>
         </li>
         <li class="medical-menu__item medical-menu__item--06 medical-menu__item--dg" style="animation-delay: 1.2s">
@@ -371,7 +506,35 @@ $rootDir = get_template_directory_uri();
             </button>
           </h3>
           <ul class="symptoms__list">
+          <?php
+            $args = [
+              'post_type' => 'medicaldetail',
+              'order' => 'ASC',
+              'posts_per_page' => -1,
+              'tax_query' => [
+                [
+                  'taxonomy' => 'medical_type',
+                  'field'    => 'slug',
+                  'terms'    => 'child',
+                ]
+              ],
+            ];
+            $WP_post = new WP_Query($args);
+            if ($WP_post->have_posts()) {
+              while ($WP_post->have_posts()) {
+                $WP_post->the_post();
+          ?>
             <li class="symptoms__item">
+              <a href="<?php the_permalink(); ?>" class="symptoms__link">
+                <h4 class="symptoms__name"><?php the_title(); ?></h4>
+              </a>
+            </li>
+          <?php
+            }
+            wp_reset_postdata();
+          }
+          ?>
+            <!-- <li class="symptoms__item">
               <a href="" class="symptoms__link">
                 <h4 class="symptoms__name">成長痛（骨端症・オスグッド病）</h4>
               </a>
@@ -381,7 +544,7 @@ $rootDir = get_template_directory_uri();
                 <h4 class="symptoms__name">運動機能の悩み</h4>
                 <span class="symptoms__note">※まずはお問合せください</span>
               </a>
-            </li>
+            </li> -->
           </ul>
         </li>
       </ul>
