@@ -1839,10 +1839,204 @@
   }
 
   .treatment {
+    position: relative;
     padding-bottom: get_vw(159);
 
     @include sp {
       padding-bottom: get_vw(70, 375);
+    }
+
+    .section-title__wrapper {
+      @include sp {
+        text-align: left;
+      }
+
+      .section-sub-title {
+        &:before {
+          @include sp {
+            left: 20px;
+          }
+        }
+      }
+    }
+
+    .treatment__triangle {
+      position: absolute;
+      z-index: -1;
+
+      @include sp {
+        width: 30%;
+      }
+
+      &.treatment__triangle--right {
+        right: 0;
+      }
+
+      &.treatment__triangle--left {
+        left: 0;
+      }
+
+      &.treatment__triangle--01 {
+        top: get_vw(159);
+
+        @include sp {
+          top: 20px;
+        }
+      }
+
+      &.treatment__triangle--02 {
+        top: get_vw(950);
+
+        @include sp {
+          top: 1180px;
+        }
+      }
+
+      &.treatment__triangle--03 {
+        top: get_vw(1900);
+
+        @include sp {
+          display: none;
+        }
+      }
+    }
+
+    .treatment__item--service {
+      display: flex;
+      margin-bottom: get_vw(45) !important;
+      align-items: flex-start !important;
+      justify-content: space-between;
+
+      @include sp {
+        margin-bottom: get_vw(60, 375) !important;
+        flex-direction: row !important;
+        flex-wrap: wrap;
+      }
+
+      .treatment__item--service_img {
+        width: get_vw(464);
+        margin-top: get_vw(-90);
+
+        @include sp {
+          width: get_vw(186, 375);
+          margin-top: 0;
+          order: 2;
+        }
+      }
+
+      .treatment__item--service_img02 {
+        width: get_vw(380);
+        margin-top: get_vw(140);
+
+        @include sp {
+          width: get_vw(151, 375);
+          margin-top: 58px;
+          margin-right: 25px;
+          order: 3;
+        }
+      }
+
+      .treatment__item--service_center {
+        width: get_vw(448);
+
+        @include sp {
+          width: 89%;
+          margin: 0 auto;
+          order: 1;
+        }
+      }
+    }
+
+    .treatment__item--exercise {
+      display: flex;
+      margin-bottom: get_vw(54) !important;
+      align-items: flex-start !important;
+      justify-content: flex-start !important;
+
+      @include sp {
+        margin-bottom: get_vw(60, 375) !important;
+        flex-direction: row !important;
+        flex-wrap: wrap;
+        justify-content: space-between !important;
+      }
+
+      .treatment__item--exercise_img {
+        width: get_vw(317);
+        margin-top: get_vw(360);
+
+        @include sp {
+          width: get_vw(146, 375);
+          margin: get_vw(38, 375) 0 0 30px;
+          order: 2;
+        }
+      }
+
+      .treatment__item--exercise_img02 {
+        width: get_vw(464);
+        margin: 0 get_vw(55) 0 get_vw(92);
+
+        @include sp {
+          width: get_vw(185, 375);
+          margin: 0;
+          order: 3;
+        }
+      }
+
+      .treatment__item-list {
+        width: get_vw(510);
+        margin-top: get_vw(170);
+
+        @include sp {
+          width: 89%;
+          margin: 0 auto;
+          order: 1;
+        }
+      }
+    }
+
+    .treatment__item--physical {
+      display: flex;
+      margin-bottom: get_vw(150) !important;
+      align-items: flex-start !important;
+      justify-content: flex-end !important;
+
+      @include sp {
+        margin-bottom: get_vw(45, 375) !important;
+        flex-direction: row !important;
+        flex-wrap: wrap;
+        justify-content: flex-start !important;
+      }
+
+      .treatment__item--physical_img {
+        width: get_vw(277);
+        margin: get_vw(360) get_vw(44) 0 get_vw(80);
+
+        @include sp {
+          width: get_vw(150, 375);
+          margin: 85px 0 0 21px;
+          order: 3;
+        }
+      }
+
+      .treatment__item--physical_img02 {
+        width: get_vw(464);
+
+        @include sp {
+          width: get_vw(186, 375);
+          order: 2;
+        }
+      }
+
+      .treatment__item-list {
+        width: get_vw(448);
+        margin-top: get_vw(100);
+
+        @include sp {
+          width: 89%;
+          margin: 0 auto;
+          order: 1;
+        }
+      }
     }
 
     .treatment-wrapper {
