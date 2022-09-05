@@ -325,7 +325,7 @@ $rootDir = get_template_directory_uri();
                   <div class="concept-interview__comment-inner">
                     <p class="concept-interview__comment-name">富岡</p>
                     <p class="concept-interview__comment-text">
-                      クリニックではDDシステムとD-Wallっていう２種類の最新器具を導入しています。<br>
+                      クリニックではDDシステムとD-Wallという２種類の最新器具を導入しています。<br>
                       どちらも自分の身体の状態を数値で表示する機械です。数値で表すことで、どれくらい良くなったかが分かりやすいと思います。
                     </p>
                   </div>
@@ -360,7 +360,7 @@ $rootDir = get_template_directory_uri();
                   <div class="concept-interview__comment-inner">
                     <p class="concept-interview__comment-name">富岡</p>
                     <p class="concept-interview__comment-text">
-                      患者さんが自分の身体のことを、きちんと理解できるようになって欲しいと思いますね。<br>
+                      患者さんが自分の身体の状態を、きちんと理解できるようになるのが理想です。<br>
                       子どもは、身体の使い方を間違えたり、限界がわからず無理をしてケガをするということが多いのです。自分の身体を知れば、痛みなく効率的にパフォーマンスを伸ばせると思います。
                     </p>
                   </div>
