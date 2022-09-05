@@ -3214,11 +3214,15 @@
           align-items: center;
 }
 .price-contents .contents-box_btn.center {
-  bottom: 0;
+  bottom: -150px;
   left: 50%;
   right: auto;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+.price-contents .contents-box_btn.center p {
+  line-height: 2;
+  font-size: clamp(10px, 2rem, 20px);
 }
 .price-contents .contents-box_btn img {
   width: clamp(10px, 1.3020833333vw, 20px);
@@ -7873,6 +7877,20 @@ td, th {
   .price-contents .contents-box_btn.sp_btn p {
     text-align: left;
     line-height: 1.6;
+  }
+  .price-contents .contents-box_btn.center {
+    position: static;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    margin-top: 50px;
+  }
+  .price-contents .contents-box_btn.center p {
+    font-size: clamp(10px, 2rem, 20px);
+    margin-bottom: 0;
+    text-align: center;
   }
   .price-contents .contents-box_btn {
     position: static;
