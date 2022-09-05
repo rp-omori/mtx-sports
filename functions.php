@@ -92,6 +92,27 @@ if (!function_exists('output_custom_columns_for_thumb')) {
 add_action('manage_pages_custom_column', 'output_custom_columns_for_thumb', 10, 2);
 add_action('manage_posts_custom_column', 'output_custom_columns_for_thumb', 10, 2);
 
+// the_archive_title 余計な文字を削除
+add_filter( 'get_the_archive_title', function ($title) {
+  if (is_category()) {
+    $title = single_cat_title('',false);
+  } elseif (is_tag()) {
+    $title = single_tag_title('',false);
+  } elseif (is_tax()) {
+    $title = single_term_title('',false);
+  } elseif (is_post_type_archive() ){
+    $title = post_type_archive_title('',false);
+  } elseif (is_date()) {
+    $title = get_the_time('Y年n月');
+  } elseif (is_search()) {
+    $title = '検索結果：'.esc_html( get_search_query(false) );
+  } elseif (is_404()) {
+    $title = '「404」ページが見つかりません';
+  } else {
+
+  }
+  return $title;
+});
 
 
 
@@ -140,6 +161,9 @@ function output_breadcrumb(){
   foreach($cat_list as $value) {
     echo $value;
   }
+  $cp_label = esc_html(get_post_type_object(get_post_type())->label);
+  $cp_name = esc_html(get_post_type_object(get_post_type())->name);
+  echo '<li><a href="' . esc_url(home_url($cp_name)) . '">' . $cp_label . '</a></li><span>&gt;&#160;</span>';
   the_title('<li>', '</li>');
 
   // 固定ページの場合
