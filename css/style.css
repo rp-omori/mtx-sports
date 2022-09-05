@@ -5405,7 +5405,7 @@ td, th {
 .treatment-detail .contents-item-detail__item {
   position: relative;
   margin-bottom: 0.6510416667vw;
-  padding: 0.9765625vw 2.6041666667vw;
+  padding: 0.9765625vw 2.9296875vw;
   border-radius: 6px;
   color: var(--main-color-black);
   font-size: clamp(10px, 1.8rem, 18px);
@@ -5420,7 +5420,7 @@ td, th {
   width: 0.5208333333vw;
   height: 0.5208333333vw;
   border-radius: 50%;
-  top: 50%;
+  top: 1.953125vw;
   left: 20px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -9096,6 +9096,7 @@ td, th {
   .treatment-detail .contents-item-detail__item:before {
     width: 2.1333333333vw;
     height: 2.1333333333vw;
+    top: 7.4666666667vw;
     left: 10px;
   }
   .treatment-detail .treatment-detail__contents-item-img.treatment-detail__contents-item-img--small {

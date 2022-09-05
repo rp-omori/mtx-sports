@@ -206,7 +206,7 @@
   .contents-item-detail__item {
     position: relative;
     margin-bottom: get_vw(10);
-    padding: get_vw(15) get_vw(40);
+    padding: get_vw(15) get_vw(45);
     border-radius: 6px;
     color: var(--main-color-black);
     font-size: calcFz(18);
@@ -226,13 +226,14 @@
       width: get_vw(8);
       height: get_vw(8);
       border-radius: 50%;
-      top: 50%;
+      top: get_vw(30);
       left: 20px;
       transform: translateY(-50%);
 
       @include sp {
         width: get_vw(8, 375);
         height: get_vw(8, 375);
+        top: get_vw(28, 375);
         left: 10px;
       }
     }
