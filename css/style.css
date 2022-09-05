@@ -1914,6 +1914,7 @@
           flex-direction: column;
 }
 .top .medical-menu .medical-menu__item .symptoms__list .symptoms__item {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2756,6 +2757,7 @@
           flex-direction: column;
 }
 .top .treatment .treatment-wrapper .treatment__list .treatment__item .treatment-detail__list .treatment-detail__item {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3340,6 +3342,9 @@ td, th {
   letter-spacing: 0.02em;
   color: var(--main-color);
   margin-bottom: clamp(10px, 1.0416666667vw, 16px);
+}
+.medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__right_txtArea_soreSpot_sore:nth-of-type(n+2) {
+  display: none;
 }
 .medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__right_txtArea_soreSpot_spot {
   display: -webkit-box;
@@ -4092,6 +4097,9 @@ td, th {
   font-family: din-2014, sans-serif;
   font-weight: 600;
   line-height: 1;
+}
+.introduce-contents .introduce-contents__inner_box_right_name_top_left p.en.other {
+  color: rgba(0, 149, 120, 0.7);
 }
 .introduce-contents .introduce-contents__inner_box_right_name_top_left p.en.white {
   color: rgba(255, 255, 255, 0.7);
