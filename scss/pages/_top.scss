@@ -646,6 +646,7 @@
         }
 
         .symptoms__item {
+          position: relative;
           display: flex;
           height: 54px;
           margin-bottom: 8px;
@@ -2179,6 +2180,7 @@
             }
 
             .treatment-detail__item {
+              position: relative;
               display: flex;
               height: get_vw(48);
               margin-bottom: 8px;
