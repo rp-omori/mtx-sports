@@ -6007,7 +6007,7 @@ td, th {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 3.125vw 6.0546875vw;
+  padding: 3.125vw 4.5572916667vw;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
