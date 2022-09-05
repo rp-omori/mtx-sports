@@ -354,6 +354,7 @@
 }
 .footer .footer-slider .footer-slider-wrapper .footer-slider-item {
   width: auto !important;
+  height: 100%;
 }
 .footer .footer-slider .footer-slider-wrapper .footer-slider-item img {
   width: auto;
