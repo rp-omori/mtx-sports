@@ -6308,7 +6308,7 @@ td, th {
   }
   .header .header__inner .header__drawer {
     position: absolute;
-    top: 0;
+    top: -100000px;
     left: 0;
     opacity: 0;
     z-index: -1;
