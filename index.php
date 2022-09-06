@@ -534,6 +534,12 @@ $rootDir = get_template_directory_uri();
             wp_reset_postdata();
           }
           ?>
+            <li class="symptoms__item no-link">
+              <a href="javascript:void(0)" class="symptoms__link">
+                <h4 class="symptoms__name">運動機能の悩み</h4>
+                <span class="symptoms__note">※まずはお問合せください</span>
+              </a>
+            </li>
             <!-- <li class="symptoms__item">
               <a href="" class="symptoms__link">
                 <h4 class="symptoms__name">成長痛（骨端症・オスグッド病）</h4>
