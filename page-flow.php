@@ -141,7 +141,7 @@ $rootDir = get_template_directory_uri();
               </div>
               <div class="flow-circle__inner_right_box_top_txt">
                 <p>
-                  医師により今の患部の状態を分析し、患者様とともに目標を決めます。<br>
+                  医師が今の患部の状態を分析し、患者様とともに目標を決めます。<br>
                   目標については、“まずは歩けるようになりたい”なのか“歩くことはもちろん、走ったり運動もしたい”など、
                   患者様により設定されるゴールが異なるものですので、どのような状態を目指したいのかもお聞きした上で設定いたします。
                 </p>
@@ -165,8 +165,8 @@ $rootDir = get_template_directory_uri();
               </div>
               <div class="flow-circle__inner_right_box_top_txt">
                 <p>
-                  ０２．で立てた目標に合わせて、医師により、再生医療と運動療法・物理療法を組み合わせた治療計画をおこなっていきます。<br>
-                  治療計画は、目指すゴールに合わせて、治療期間や回数なども異なります。
+                  02.目標設定で立てた目標に合わせて、医師により、再生医療と運動療法・物理療法を組み合わせた治療プログラムを計画します。<br>
+                  治療プログラムは、目指すゴールに合わせて、治療期間や回数なども異なります。
                 </p>
               </div>
               <div class="flow-circle__inner_right_box_top_logo">
@@ -180,7 +180,7 @@ $rootDir = get_template_directory_uri();
               <div class="flow-circle__inner_right_box_top_ttl">
                 <div class="flow-circle__inner_right_box_top_ttl_left">
                   <img src="<?php echo $rootDir ?>/images/flow/flow_04.svg" alt="">
-                  <p>治療開始<br>（再生医療・運動療法・物理療法）</p>
+                  <p>治療プログラム開始<br>（再生医療・運動療法・物理療法）</p>
                 </div>
                 <div class="flow-circle__inner_right_box_top_ttl_right">
                   <img src="<?php echo $rootDir ?>/images/flow/flow_person_01.svg" alt="">
@@ -188,8 +188,8 @@ $rootDir = get_template_directory_uri();
               </div>
               <div class="flow-circle__inner_right_box_top_txt">
                 <p>
-                  03.で立てた治療計画にそって医師、理学療法士、トレーナーが連携して治療を行っていきます。<br>
-                  運動療法は、DDシステムやＭＴＸアカデミーでも行いますが、患者様の治療の状況はすべて共通のカルテで共有され、スムーズに治療を行う体制を整えております。
+                  03.治療計画で立てた治療計画にそって医師、理学療法士、トレーナーが連携して治療を行っていきます。<br>
+                  運動療法は、DDシステムやMTXアカデミーでも行いますが、患者様の治療の状況はすべて共通のカルテで共有され、スムーズに治療を行う体制を整えております。
                 </p>
               </div>
               <div class="flow-circle__inner_right_box_top_logo">
@@ -281,7 +281,7 @@ $rootDir = get_template_directory_uri();
               <div class="flow-circle__inner_right_box_top_ttl">
                 <div class="flow-circle__inner_right_box_top_ttl_left">
                   <img src="<?php echo $rootDir ?>/images/flow/flow_08.svg" alt="">
-                  <p>フォローアップ</p>
+                  <p>運動の日常化</p>
                 </div>
                 <div class="flow-circle__inner_right_box_top_ttl_right">
                   <img src="<?php echo $rootDir ?>/images/flow/flow_person_01.svg" alt="">
@@ -291,7 +291,8 @@ $rootDir = get_template_directory_uri();
               </div>
               <div id="txtArea" class="flow-circle__inner_right_box_top_txt">
                 <p class="width">
-                  私たちの目指すものは、人々が運動の必要性を感じ、人々の生活の中に常に運動があることです。<br>
+                  私たちの目指すものは、人々が運動の必要性を感じ、<br>
+                  人々の生活の中に常に運動があることです。<br>
                   それにより、人々が自分の足で人生の最後まで立ち、動き、楽しく生きられることを目指します。
                 </p>
                 <img src="<?php echo $rootDir ?>/images/flow/flow_img_06.jpg" alt="">

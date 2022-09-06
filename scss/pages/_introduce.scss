@@ -2,24 +2,27 @@
   background-color: #EFF4F3;
   position: relative;
 
+  @include sp {
+    font-family: $fontFamilyHiraGo;
+  }
+
   .introduce-top-wrapper{
     position: relative;
     z-index: 2;
-    // padding: clamp(10px,get_vw(40),40px) 0 0;
     width: 100vw;
     height: clamp(10px,get_vw(613),613px);
+    padding-bottom: get_vw(200);
     background-image: url("../images/introduce/introduce-top-background.png");
     background-position: center;
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: clamp(10px,get_vw(40),40px);
     overflow: hidden;
 
     @include sp {
-      // padding: 20px 0 0;
       height: 250px;
+      padding-bottom: 0;
       background-position: top;
-      background-size: 100% 100%;
       background-image: url("../images/introduce/introduce-top-background_sp.png");
       margin-bottom: 60px;
     }

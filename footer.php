@@ -86,7 +86,7 @@ $rootDir = get_template_directory_uri();
           </p>
           <h4 class="footer-contact__sub-title">診察のご予約・ご相談</h4>
           <div class="footer-contact__btn-wrapper">
-            <a href="https://web.booking.clius.jp/reserve/mtx" class="btn btn--orange btn--shadow">
+            <a href="https://web.booking.clius.jp/reserve/mtxclinic_yotsuya" class="btn btn--orange btn--shadow">
               <span>WEB予約</span>
             </a>
             <a href="https://lin.ee/DhflNAe" class="btn btn--white btn--line btn--shadow">
@@ -226,10 +226,10 @@ $rootDir = get_template_directory_uri();
               <a href="tel:0362725047" class="btn btn--white btn--tel_white sp">
                 <span></span>
               </a>
-              <a href="https://web.booking.clius.jp/reserve/mtx" target="_blank" class="btn btn--orange btn--web pc">
+              <a href="https://web.booking.clius.jp/reserve/mtxclinic_yotsuya" target="_blank" class="btn btn--orange btn--web pc">
                 <span>まずはWEB予約</span>
               </a>
-              <a href="https://web.booking.clius.jp/reserve/mtx" target="_blank" class="btn btn--orange btn--web sp">
+              <a href="https://web.booking.clius.jp/reserve/mtxclinic_yotsuya" target="_blank" class="btn btn--orange btn--web sp">
                 <span>WEB予約</span>
               </a>
               <a href="https://lin.ee/DhflNAe" target="_blank" class="btn btn--white btn--line pc">
