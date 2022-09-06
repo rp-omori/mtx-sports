@@ -221,7 +221,7 @@ $rootDir = get_template_directory_uri();
       </div>
       <div class="introduce-contents__inner bg_white mb">
         <div class="introduce-contents__inner_ttl pd_0">
-          <p class="green">MTXアカデミートレーナー　<br class="sp">- 強化 -</p>
+          <p class="green">MTXアカデミートレーナー<br>- 強化トレーニング -</p>
         </div>
         <div class="introduce-contents__inner_box reverse">
           <div class="introduce-contents__inner_box_left sp_right">
@@ -257,7 +257,7 @@ $rootDir = get_template_directory_uri();
       </div>
       <div class="introduce-contents__inner bg_white pd_sp">
         <div class="introduce-contents__inner_ttl pd_0">
-          <p class="green">MTXアカデミートレーナー　<br class="sp">- 実践 -</p>
+          <p class="green">MTXアカデミートレーナー<br>- 実践トレーニング -</p>
         </div>
         <div class="introduce-contents__inner_box">
           <div class="introduce-contents__inner_box_left">
@@ -270,7 +270,7 @@ $rootDir = get_template_directory_uri();
                   <p class="en white">TANABE</p>
                   <p class="black">田邊 大吾</p>
                   <p class="small black">たなべ だいご</p>
-                  <p class="degree less">柔道整復師</p>
+                  <p class="degree more">はり師<br class="pc"><span>/</span>きゅう師<br class="pc"><span>/</span>あん摩マッサージ指圧師</p>
                 </div>
                 <div class="introduce-contents__inner_box_right_name_top_right">
                   <img src="<?php echo $rootDir ?>/images/introduce/method_02_white.png" alt="">
@@ -292,7 +292,7 @@ $rootDir = get_template_directory_uri();
       </div>
       <div class="introduce-contents__inner pd_more">
         <div class="introduce-contents__inner_ttl">
-          <p>MTXアカデミートレーナー　<br class="sp">- 回復 -</p>
+          <p>MTXアカデミートレーナー<br>- 回復治療 -</p>
         </div>
         <div class="introduce-contents__inner_box mb_more reverse">
           <div class="introduce-contents__inner_box_left sp_right">
@@ -305,7 +305,7 @@ $rootDir = get_template_directory_uri();
                   <p class="en other">WATANABE</p>
                   <p>渡邊　健二</p>
                   <p class="small">わたなべ　けんじ</p>
-                  <p class="degree more white">鍼灸師<br class="pc"><span class="sp" style="display: inline !important;"></span>あん摩マッサージ指圧師</p>
+                  <p class="degree more white">柔道整復師<br class="pc"><span>/</span>あん摩マッサージ指圧師</p>
                 </div>
                 <div class="introduce-contents__inner_box_right_name_top_right">
                   <img src="<?php echo $rootDir ?>/images/introduce/method_03.png" alt="">
@@ -326,7 +326,7 @@ $rootDir = get_template_directory_uri();
           </div>
         </div>
         <div class="introduce-contents__inner_ttl">
-          <p>MTXアカデミートレーナー　<br class="sp">- HAL -</p>
+          <p>MTXアカデミートレーナー<br>- HAL® -</p>
         </div>
         <div class="introduce-contents__inner_box mb">
           <div class="introduce-contents__inner_box_left">

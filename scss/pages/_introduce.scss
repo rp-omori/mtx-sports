@@ -5,18 +5,19 @@
   .introduce-top-wrapper{
     position: relative;
     z-index: 2;
-    // padding: clamp(10px,get_vw(40),40px) 0 0;
     width: 100vw;
+    height: clamp(10px, 39.9088541667vw, 613px);
+    padding-bottom: 13.0208333333vw;
     height: clamp(10px,get_vw(613),613px);
     background-image: url("../images/introduce/introduce-top-background.png");
     background-position: center;
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    margin-bottom: clamp(10px,get_vw(40),40px);
+    margin-bottom: clamp(10px, 2.6041666667vw, 40px);
     overflow: hidden;
 
     @include sp {
-      // padding: 20px 0 0;
+      padding: 0;
       height: 250px;
       background-position: top;
       background-size: 100% 100%;
@@ -342,10 +343,11 @@
                       right: -140px;
 
                       @include sp{
-                        bottom: -25px;
+                        bottom: -30px;
                       }
 
                     }
+
                     &.less{
                       right: -70px;
 
@@ -366,6 +368,13 @@
                       bottom: -35px;
                       left: 0;
                       white-space: nowrap;
+                    }
+
+                    span{
+                      display: none;
+                      @include sp {
+                        display: inline;
+                      }
                     }
 
                   }

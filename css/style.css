@@ -3948,9 +3948,11 @@ td, th {
   z-index: 2;
   width: 100vw;
   height: clamp(10px, 39.9088541667vw, 613px);
+  padding-bottom: 13.0208333333vw;
+  height: clamp(10px, 39.9088541667vw, 613px);
   background-image: url("../images/introduce/introduce-top-background.png");
   background-position: center;
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: clamp(10px, 2.6041666667vw, 40px);
   overflow: hidden;
@@ -4144,6 +4146,9 @@ td, th {
 .introduce-contents .introduce-contents__inner_box_right_name_top_left p.degree.white {
   color: white;
 }
+.introduce-contents .introduce-contents__inner_box_right_name_top_left p.degree span {
+  display: none;
+}
 .introduce-contents .introduce-contents__inner_box_right_name_top_left p.black {
   color: #000;
 }
@@ -4266,9 +4271,11 @@ td, th {
   z-index: 2;
   width: 100vw;
   height: clamp(10px, 39.9088541667vw, 613px);
+  padding-bottom: 13.0208333333vw;
+  height: clamp(10px, 39.9088541667vw, 613px);
   background-image: url("../images/flow/flow-top-background.png");
   background-position: center;
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: clamp(10px, 2.6041666667vw, 40px);
   overflow: hidden;
@@ -8303,6 +8310,7 @@ td, th {
     margin-bottom: 20px;
   }
   .introduce-contents .introduce-top-wrapper {
+    padding: 0;
     height: 250px;
     background-position: top;
     background-size: 100% 100%;
@@ -8390,7 +8398,7 @@ td, th {
     color: rgba(0, 149, 120, 0.7);
   }
   .introduce-contents .introduce-contents__inner_box_right_name_top_left p.degree.more {
-    bottom: -25px;
+    bottom: -30px;
   }
   .introduce-contents .introduce-contents__inner_box_right_name_top_left p.degree.less {
     bottom: -25px;
@@ -8402,6 +8410,9 @@ td, th {
     bottom: -35px;
     left: 0;
     white-space: nowrap;
+  }
+  .introduce-contents .introduce-contents__inner_box_right_name_top_left p.degree span {
+    display: inline;
   }
   .introduce-contents .introduce-contents__inner_box_right_name_top_right img.small {
     width: 40px;
@@ -8460,6 +8471,7 @@ td, th {
     padding-bottom: 0px;
   }
   .flow-contents .flow-top-wrapper {
+    padding: 0;
     height: 250px;
     background-position: top;
     background-size: 100% 100%;
