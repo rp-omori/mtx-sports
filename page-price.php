@@ -424,9 +424,9 @@ $WP_post = new WP_Query($args);
               </div>
             </td>
             <td class="contents-box_menu__inner_box_exp">
-              <p>※治療と組み合わせてのご提案となります</p>
+              <p>※治療と組み合わせてのご料金となります</p>
             </td>
-            <!-- <td class="contents-box_menu__inner_box_price width" rowspan="4"><p>※治療と組み合わせてのご提案となります</p></td> -->
+            <!-- <td class="contents-box_menu__inner_box_price width" rowspan="4"><p>※治療と組み合わせてのご料金となります</p></td> -->
           </tr>
           <tr class="contents-box_menu__inner_box">
             <td class="contents-box_menu__inner_box_name">
@@ -437,7 +437,7 @@ $WP_post = new WP_Query($args);
               </div>
             </td>
             <td class="contents-box_menu__inner_box_exp">
-              <p>※治療と組み合わせてのご提案となります</p>
+              <p>※治療と組み合わせてのご料金となります</p>
             </td>
           </tr>
           <tr class="contents-box_menu__inner_box">
@@ -450,19 +450,19 @@ $WP_post = new WP_Query($args);
             </td>
             <td class="contents-box_menu__inner_box_exp">
               <p>MTXアカデミー　Practice（実践）</p>
-              <p>※治療と組み合わせてのご提案となります</p>
+              <p>※治療と組み合わせてのご料金となります</p>
             </td>
           </tr>
           <tr class="contents-box_menu__inner_box">
             <td class="contents-box_menu__inner_box_exp">
               <p>MTXアカデミー　Strength（強化）</p>
-              <p>※治療と組み合わせてのご提案となります</p>
+              <p>※治療と組み合わせてのご料金となります</p>
             </td>
           </tr>
           <tr class="contents-box_menu__inner_box">
             <td class="contents-box_menu__inner_box_exp">
               <p>HAL</p>
-              <p>※治療と組み合わせてのご提案となります</p>
+              <p>※治療と組み合わせてのご料金となります</p>
             </td>
           </tr>
         </tbody>
@@ -516,7 +516,7 @@ $WP_post = new WP_Query($args);
             <td class="contents-box_menu__inner_box_exp">
               <p>
                 新治療器と手技を併せたMTX独自の治療（LIPUS等）<br>
-                ※治療と組み合わせてのご提案となります
+                ※治療と組み合わせてのご料金となります
               </p>
             </td>
           </tr>
