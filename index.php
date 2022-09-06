@@ -988,7 +988,7 @@ $rootDir = get_template_directory_uri();
               ?>
                 <li class="treatment-detail__item fade-anime-text js-titleAnimationTarget" style="animation-delay: <?php $animation_delay.'s' ?>">
                   <?php if (get_field('url') !== ''): ?>
-                  <a href="<?php echo get_field('url'); ?>" class="treatment-detail__link">
+                  <a href="<?php echo get_field('url'); ?>" target="_blank" class="treatment-detail__link">
                   <?php else: ?>
                   <a href="<?php the_permalink(); ?>" class="treatment-detail__link">
                   <?php endif; ?>

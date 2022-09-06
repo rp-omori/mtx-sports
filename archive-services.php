@@ -276,8 +276,8 @@ $rootDir = get_template_directory_uri();
         </ul>
       </div>
     </section>
-    <section id="exercise" class="treatment__menu treatment__menu--green treatment__menu--02">
-      <div class="treatment__menu-inner">
+    <section class="treatment__menu treatment__menu--green treatment__menu--02">
+      <div id="exercise" class="treatment__menu-inner">
         <div class="treatment__menu-head">
           <div class="treatment__menu-head-label-wrapper">
             <p class="treatment__menu-head-label">運動療法</p>
