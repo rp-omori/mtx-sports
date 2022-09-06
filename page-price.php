@@ -19,67 +19,55 @@ $rootDir = get_template_directory_uri();
   <!-- onlineshop一覧の取得 -->
 <?php
 
-
 $args = array(
     'post_type' => 'prices',
     'order' => 'ASC',
     'posts_per_page' => -1,
-    'post_status' => 'publish', //取得するステータス。publishなら一般公開のもののみ
 );
 
 $WP_post = new WP_Query($args);
 
 // var_dump($WP_post);
 
-if($WP_post -> have_posts()){
-  while($WP_post -> have_posts()) {
-    foreach( $WP_post -> posts as $WP_posts ){
-      $post_data = [];
-      $WP_post->the_post();
-      $post_data['treatment']  =  get_the_title();
-      $post_id = get_the_ID();
-      $post_data['data'] = [];
-      $object = new stdClass();
-      if(have_rows('treatment')){
-        while(have_rows('treatment')) {
-          while(the_row()){
-            $treatment_name = get_sub_field("treatment_name");
-            $treatment_tab = get_sub_field("treatment_tab");
-            $treatment_point = get_sub_field("treatment_point");
-            $treatment_detail = get_sub_field("treatment_detail");
-            $object -> name = $treatment_name;
-            $object -> tab = $treatment_tab;
-            $object -> point = $treatment_point;
-            $object -> detail = $treatment_detail;
-              foreach( $treatment_detail as $value){
-                $treatment_part = $value['treatment_part'];
-                $treatment_set = $value['treatment_set'];
-                $object -> part = $treatment_part;
-                // $object -> set = $treatment_set;
-                // var_dump($object);
-                foreach( $treatment_set as $value){
-                  $treatment_times = $value['treatment_times'];
-                  $treatment_price = $value['treatment_price'];
-                }
-              }
-            // var_dump($object);
-            $arr_obj = (array) $object;
-            $post_data['data'][] = $arr_obj;
-          }
-        }
-      }
-      $my_post['data'][] = $post_data;
-    }
-  }
-  $WP_post_json = json_encode($my_post);
-  // var_dump($my_post);
-}
+// if($WP_post -> have_posts()){
+//     while($WP_post -> have_posts()) {
+//         foreach( $WP_post -> posts as $WP_posts ){
+//             $post_data = [];
+//             $WP_post->the_post();
+//             $post_data['treatment']  =  get_the_title();
+//             $post_id = get_the_ID();
+//             $post_data['data'] = [];
+//             $object = new stdClass();
+//             if(have_rows('treatment')){
+//                 while(have_rows('treatment')) {
+//                     while(the_row()){
+//                         $treatment_name = get_sub_field("treatment_name");
+//                         $online_shop_items = get_sub_field("onlineshop_items");
+//                         // var_dump($online_shop_name);
+//                         foreach( $online_shop_items as $value){
+//                             // $items_name = $value['onlineshp_items_name'] == 'バッグ' ? 'bag' : 'item';
+//                             $items_name = $value['onlineshp_items_name'];
+//                             $items_link = $value['onlineshp_items_link'];
+//                             $object -> name = $online_shop_name;
+//                             $object -> $items_name = $items_link;
+//                         }
+//                         // var_dump($object);
+//                         $arr_obj = (array) $object;
+//                         $post_data['data'][] = $arr_obj;
+//                     }
+//                 }
+//             }
+//             $my_post2['data'][] = $post_data;
+//         }
+//     }
+//     $WP_post_json2 = json_encode($my_post2);
+// }
 
 
 
 ?>
 
-  <div id="price-contents" class="price-contents">
+  <div class="price-contents">
 
     <div class="contents-box">
         <div class="contents-box_cat">
@@ -87,36 +75,36 @@ if($WP_post -> have_posts()){
         </div>
         <table class="contents-box_menu">
           <tbody class="contents-box_menu__inner">
-            <?php if(have_rows('treatment',62)): ?>
-            <?php while(have_rows('treatment',62)): the_row(); ?>
             <tr class="contents-box_menu__inner_box">
               <td class="contents-box_menu__inner_box_name">
                 <div class="flex">
                   <div class="flex_box">
                     <p>初診</p>
-                    <p><?php the_sub_field("treatment_name") ?></p>
                   </div>
                 </div>
               </td>
-              <?php if(have_rows('treatment_detail')): ?>
-                <?php while(have_rows('treatment_detail')): the_row(); ?>
-                <?php if(have_rows('treatment_set')): ?>
-                  <?php while(have_rows('treatment_set')): the_row(); ?>
-                        <td class="contents-box_menu__inner_box_minute">
-                          <p>20分</p>
-                          <p><?php the_sub_field("treatment_times") ?></p>
-                        </td>
-                        <td class="contents-box_menu__inner_box_price">
-                          <p>¥5,000</p>
-                          <p><?php the_sub_field("treatment_price") ?></p>
-                        </td>
-                    <?php endwhile; ?>
-                  <?php endif;?>
-                <?php endwhile; ?>
-              <?php endif;?>
+              <td class="contents-box_menu__inner_box_minute">
+                <p>20分</p>
+              </td>
+              <td class="contents-box_menu__inner_box_price">
+                <p>¥5,000</p>
+              </td>
             </tr>
-            <?php endwhile; ?>
-            <?php endif;?>
+            <tr class="contents-box_menu__inner_box">
+              <td class="contents-box_menu__inner_box_name">
+                <div class="flex">
+                  <div class="flex_box">
+                    <p>2回目以降</p>
+                  </div>
+                </div>
+              </td>
+              <td class="contents-box_menu__inner_box_minute">
+                <p>10分</p>
+              </td>
+              <td class="contents-box_menu__inner_box_price">
+                <p>¥3,000</p>
+              </td>
+            </tr>
           </tbody>
         </table>
         <div class="contents-box_caution">
@@ -125,23 +113,68 @@ if($WP_post -> have_posts()){
       <?php wp_reset_postdata(); ?>
     </div>
 
-    <div id="contents-box_sub" class="contents-box_sub">
-
-      <div class="contents-box_sub_caution">
-        <p>※治療を行なった場合は、診察料を頂戴しません。</p>
-      </div>
-
-      <a href="" class="contents-box_sub_btn">
-          <img src="<?php echo $rootDir ?>/images/price/price_btn.png" alt="">
-          <p>再生医療についてはこちら</p>
-      </a>
-
-    </div>
-
     <div class="contents-box">
       <div class="contents-box_cat">
         <p>再生医療</p>
       </div>
+      <table class="contents-box_menu_other">
+        <tbody class="contents-box_menu__other__inner">
+          <tr class="contents-box_menu_other__inner_box">
+            <td class="contents-box_menu_other__inner_box_ttl"><p>体験価格５０％OFF</p></td>
+          </tr>
+          <tr class="contents-box_menu_other__inner_box">
+            <td class="contents-box_menu_other__inner_box_price"><p>-</p></td>
+          </tr>
+          <tr class="contents-box_menu_other__inner_box">
+            <td class="contents-box_menu_other__inner_box_price bottom"><p>-</p></td>
+          </tr>
+          <tr class="contents-box_menu_other__inner_box">
+            <td class="contents-box_menu_other__inner_box_price small"><p>-</p></td>
+          </tr>
+          <tr class="contents-box_menu_other__inner_box">
+            <td class="contents-box_menu_other__inner_box_price small"><p>-</p></td>
+          </tr>
+          <tr class="contents-box_menu_other__inner_box">
+            <td class="contents-box_menu_other__inner_box_price small"><p>-</p></td>
+          </tr>
+          <tr class="contents-box_menu_other__inner_box">
+            <td class="contents-box_menu_other__inner_box_price small bottom"><p>-</p></td>
+          </tr>
+          <tr class="contents-box_menu_other__inner_box">
+            <td class="contents-box_menu_other__inner_box_price small"><p>¥30,000</p></td>
+          </tr>
+          <tr class="contents-box_menu_other__inner_box">
+            <td class="contents-box_menu_other__inner_box_price small"><p>¥75,000</p></td>
+          </tr>
+          <tr class="contents-box_menu_other__inner_box">
+            <td class="contents-box_menu_other__inner_box_price small"><p>¥50,000</p></td>
+          </tr>
+          <tr class="contents-box_menu_other__inner_box">
+            <td class="contents-box_menu_other__inner_box_price small bottom"><p>¥140,000</p></td>
+          </tr>
+          <tr class="contents-box_menu_other__inner_box">
+            <td class="contents-box_menu_other__inner_box_price small"><p>¥7,500</p></td>
+          </tr>
+          <tr class="contents-box_menu_other__inner_box">
+            <td class="contents-box_menu_other__inner_box_price small"><p>¥20,000</p></td>
+          </tr>
+          <tr class="contents-box_menu_other__inner_box">
+            <td class="contents-box_menu_other__inner_box_price small bottom"><p>¥30,000</p></td>
+          </tr>
+          <tr class="contents-box_menu_other__inner_box">
+            <td class="contents-box_menu_other__inner_box_price small"><p>¥35,000</p></td>
+          </tr>
+          <tr class="contents-box_menu_other__inner_box">
+            <td class="contents-box_menu_other__inner_box_price small"><p>¥87,500</p></td>
+          </tr>
+          <tr class="contents-box_menu_other__inner_box">
+            <td class="contents-box_menu_other__inner_box_price small"><p>¥55,000</p></td>
+          </tr>
+          <tr class="contents-box_menu_other__inner_box">
+            <td class="contents-box_menu_other__inner_box_price small"><p>¥152,500</p></td>
+          </tr>
+        </tbody>
+      </table>
       <table class="contents-box_menu">
         <tbody class="contents-box_menu__inner">
           <tr class="contents-box_menu__inner_box">
@@ -320,7 +353,7 @@ if($WP_post -> have_posts()){
       <table class="contents-box_menu">
         <tbody class="contents-box_menu__inner">
           <tr class="contents-box_menu__inner_box">
-            <td class="contents-box_menu__inner_box_name width" rowspan="2">
+            <td class="contents-box_menu__inner_box_name width" rowspan="4">
               <div class="flex">
                 <div class="flex_box">
                   <p class="orange_tab">オープニング価格</p>
@@ -328,25 +361,41 @@ if($WP_post -> have_posts()){
                 </div>
               </div>
             </td>
-            <td class="contents-box_menu__inner_box_part" rowspan="1">
-              <p>-</p>
+            <td class="contents-box_menu__inner_box_part" rowspan="2">
+              <p>1関節　5ml</p>
             </td>
             <td class="contents-box_menu__inner_box_minute">
               <p>1回</p>
             </td>
             <td class="contents-box_menu__inner_box_price">
-              <p>※上清液＋衝撃波1回から、− ¥5,000</p>
+              <p>¥70,000</p>
             </td>
           </tr>
           <tr class="contents-box_menu__inner_box">
-            <td class="contents-box_menu__inner_box_part" rowspan="1">
-              <p>-</p>
-            </td>
             <td class="contents-box_menu__inner_box_minute">
               <p>3回セット</p>
             </td>
             <td class="contents-box_menu__inner_box_price">
-              <p>※上清液＋衝撃波3回から、− ¥15,000</p>
+              <p>¥175,000</p>
+            </td>
+          </tr>
+          <tr class="contents-box_menu__inner_box">
+            <td class="contents-box_menu__inner_box_part" rowspan="2">
+              <p>2関節 10ml (5ml×2)</p>
+            </td>
+            <td class="contents-box_menu__inner_box_minute">
+              <p>1回</p>
+            </td>
+            <td class="contents-box_menu__inner_box_price">
+              <p>¥110,000</p>
+            </td>
+          </tr>
+          <tr class="contents-box_menu__inner_box">
+            <td class="contents-box_menu__inner_box_minute">
+              <p>3回セット</p>
+            </td>
+            <td class="contents-box_menu__inner_box_price">
+              <p>¥305,000</p>
             </td>
           </tr>
         </tbody>
@@ -354,7 +403,7 @@ if($WP_post -> have_posts()){
       <div class="contents-box_caution">
         <p>※オープニング価格は年内まで。</p>
       </div>
-      <a href="" class="contents-box_btn">
+      <a href="<?php echo esc_url(home_url('services/#service')); ?>" class="contents-box_btn">
         <img src="<?php echo $rootDir ?>/images/price/price_btn.png" alt="">
         <p>再生医療についてはこちら</p>
       </a>
@@ -370,28 +419,29 @@ if($WP_post -> have_posts()){
             <td class="contents-box_menu__inner_box_name">
               <div class="flex">
                 <div class="flex_box">
-                  <p>DDシステム</p>
+                  <p>DDシステム（ddrobotec®）</p>
                 </div>
               </div>
             </td>
             <td class="contents-box_menu__inner_box_exp">
-              <p>※セットでのご提案がベースとなります</p>
+              <p>※治療と組み合わせてのご提案となります</p>
             </td>
+            <!-- <td class="contents-box_menu__inner_box_price width" rowspan="4"><p>※治療と組み合わせてのご提案となります</p></td> -->
           </tr>
           <tr class="contents-box_menu__inner_box">
             <td class="contents-box_menu__inner_box_name">
               <div class="flex">
                 <div class="flex_box">
-                  <p>D-Wall</p>
+                  <p>D-Wall　（Technology社）</p>
                 </div>
               </div>
             </td>
             <td class="contents-box_menu__inner_box_exp">
-              <p>※セットでのご提案がベースとなります</p>
+              <p>※治療と組み合わせてのご提案となります</p>
             </td>
           </tr>
           <tr class="contents-box_menu__inner_box">
-            <td class="contents-box_menu__inner_box_name" rowspan="2">
+            <td class="contents-box_menu__inner_box_name" rowspan="3">
               <div class="flex">
                 <div class="flex_box">
                   <p>MTXアカデミー</p>
@@ -399,14 +449,20 @@ if($WP_post -> have_posts()){
               </div>
             </td>
             <td class="contents-box_menu__inner_box_exp">
-              <p>トレーナーによる強化・トレーニング</p>
-              <p>※セットでのご提案がベースとなります</p>
+              <p>MTXアカデミー　Practice（実践）</p>
+              <p>※治療と組み合わせてのご提案となります</p>
+            </td>
+          </tr>
+          <tr class="contents-box_menu__inner_box">
+            <td class="contents-box_menu__inner_box_exp">
+              <p>MTXアカデミー　Strength（強化）</p>
+              <p>※治療と組み合わせてのご提案となります</p>
             </td>
           </tr>
           <tr class="contents-box_menu__inner_box">
             <td class="contents-box_menu__inner_box_exp">
               <p>HAL</p>
-              <p>※セットでのご提案がベースとなります</p>
+              <p>※治療と組み合わせてのご提案となります</p>
             </td>
           </tr>
         </tbody>
@@ -414,7 +470,7 @@ if($WP_post -> have_posts()){
       <div class="contents-box_caution">
         <p>　</p>
       </div>
-      <a href="" class="contents-box_btn">
+      <a href="<?php echo esc_url(home_url('services/#exercise')); ?>" class="contents-box_btn">
         <img src="<?php echo $rootDir ?>/images/price/price_btn.png" alt="">
         <p>運動療法についてはこちら</p>
       </a>
@@ -430,7 +486,7 @@ if($WP_post -> have_posts()){
             <td class="contents-box_menu__inner_box_name" rowspan="3">
               <div class="flex">
                 <div class="flex_box">
-                  <p>体外衝撃波(収束型）</p>
+                  <p>収束型 体外衝撃波(BTL-6000-Focus）</p>
                 </div>
               </div>
             </td>
@@ -460,7 +516,7 @@ if($WP_post -> have_posts()){
             <td class="contents-box_menu__inner_box_exp">
               <p>
                 新治療器と手技を併せたMTX独自の治療（LIPUS等）<br>
-                ※治療法により異なります
+                ※治療と組み合わせてのご提案となります
               </p>
             </td>
           </tr>
@@ -469,7 +525,7 @@ if($WP_post -> have_posts()){
       <div class="contents-box_caution">
         <p>　</p>
       </div>
-      <a href="" class="contents-box_btn">
+      <a href="<?php echo esc_url(home_url('services/#physical')); ?>" class="contents-box_btn">
         <img src="<?php echo $rootDir ?>/images/price/price_btn.png" alt="">
         <p>物理療法についてはこちら</p>
       </a>
@@ -499,7 +555,7 @@ if($WP_post -> have_posts()){
               <p>¥150,000</p>
             </td>
           </tr>
-          <tr class="contents-box_menu__inner_box">
+          <!-- <tr class="contents-box_menu__inner_box">
             <td class="contents-box_menu__inner_box_name" rowspan="1">
               <div class="flex">
                 <div class="flex_box">
@@ -516,7 +572,7 @@ if($WP_post -> have_posts()){
             <td class="contents-box_menu__inner_box_price">
               <p>※仕入れ価格次第で決定</p>
             </td>
-          </tr>
+          </tr> -->
           <tr class="contents-box_menu__inner_box">
             <td class="contents-box_menu__inner_box_name" rowspan="1">
               <div class="flex">
@@ -540,8 +596,8 @@ if($WP_post -> have_posts()){
       <div class="contents-box_caution">
         <p>※オープニング価格は年内まで。</p>
       </div>
-      <a href="" class="contents-box_btn sp_btn">
-        <p>その他オプション等については、お問い合わせください。</p>
+      <a href="<?php echo esc_url(home_url('/contact')); ?>" class="contents-box_btn sp_btn center">
+        <p>その他オプション等については、<br>お問い合わせください。</p>
       </a>
     </div>
 
@@ -553,188 +609,3 @@ if($WP_post -> have_posts()){
 </main>
 
 <?php get_footer(); ?>
-
-
-
-<!-- <script>
-
-$(function(){
-
-
-  /*
-  * @画面を読み込んだら処理開始
-  */
-  window.addEventListener('load', function () {
-    //下で定義している処理をここで開始
-    init()
-  })
-
-
-  // データ取得
-  const getWPData = () => {
-    const data = JSON.parse('<?php echo $WP_post_json; ?>');
-    return data;
-  }
-
-
-  // 初期化
-  const init = () => {
-
-    const priceData = getWPData()
-    // const lengthArr = []
-    const priceContents = document.getElementById('price-contents')
-    console.log(priceData)
-
-
-    // const getLength = () =>{
-    //   console.log(lengthArr)
-    // }
-
-    const createContents = () => {
-
-      let priceList = ''
-
-      priceData.data.forEach(arrContents => {
-
-        priceList += `
-            <div id="contents-box" class="contents-box">
-              <div class="contents-box_cat">
-                <p>${arrContents.treatment}</p>
-              </div>
-              <table class="contents-box_menu">
-                <tbody class="contents-box_menu__inner">
-        `
-
-        arrContents.data.forEach(contentsData => {
-
-          if(arrContents.treatment !== "診断"){
-
-              priceList+=`
-                <tr class="contents-box_menu__inner_box">
-                  <td class="contents-box_menu__inner_box_name width" rowspan="${contentsData.detail.length}">
-                    <div class="flex">
-                      <div class="flex_box">
-              `
-
-              if(contentsData.tab){
-                priceList+=`
-                  <p class="orange_tab">オープニング価格</p>
-                `
-              }
-
-              priceList+=`
-                  <p>${contentsData.name}</p>
-                </div>
-              `
-
-              if(contentsData.point){
-                priceList+=`
-                  <p class="detail">肩・手・肘・股関節・膝・足関節・その他ブロック</p>
-                `
-              }
-
-              priceList+=`
-                  </div>
-                </td>
-              `
-
-          } else{
-              priceList+=`
-                <tr class="contents-box_menu__inner_box">
-                  <td class="contents-box_menu__inner_box_name">
-                    <div class="flex">
-                      <div class="flex_box">
-                        <p>${contentsData.name}</p>
-                      </div>
-                    </div>
-                  </td>
-              `
-          }
-
-          contentsData.detail.forEach(contentsDetail => {
-
-            if(contentsDetail.treatment_part !== ''){
-                priceList += `
-                  <td class="contents-box_menu__inner_box_part" rowspan="${contentsDetail.treatment_set.length}">
-                    <p>${contentsDetail.treatment_part}</p>
-                  </td>
-                `
-            }
-
-
-            contentsDetail.treatment_set.forEach(contentsSet => {
-
-              if(contentsDetail.treatment_part !== '') {
-                priceList+=`
-                    <td class="contents-box_menu__inner_box_minute">
-                      <p>${contentsSet.treatment_times}</p>
-                    </td>
-                    <td class="contents-box_menu__inner_box_price">
-                      <p>${contentsSet.treatment_price}</p>
-                    </td>
-                  </tr>
-                `
-              } else{
-                priceList+=`
-                  <td class="contents-box_menu__inner_box_minute">
-                    <p>${contentsSet.treatment_times}</p>
-                  </td>
-                  <td class="contents-box_menu__inner_box_price">
-                    <p>${contentsSet.treatment_price}</p>
-                  </td>
-                `
-              }
-
-
-            })
-
-          })
-
-          if(contentsData.detail.treatment_part !== ''){
-            priceList+=``
-          } else{
-            priceList+=`
-              </tr>
-            `
-          }
-
-
-        })
-
-        priceList += `
-              </tbody>
-            </table>
-          </div>
-        `
-
-        priceList += `
-          <div id="contents-box_sub" class="contents-box_sub">
-            <div class="contents-box_sub_caution">
-              <p>※治療を行なった場合は、診察料を頂戴しません。</p>
-            </div>
-            <a href="" class="contents-box_sub_btn">
-                <img src="<?php echo $rootDir ?>/images/price/price_btn.png" alt="">
-                <p>再生医療についてはこちら</p>
-            </a>
-          </div>
-        `
-
-      })
-
-
-      // console.log(priceList)
-
-      priceContents.insertAdjacentHTML('afterbegin', priceList)
-
-
-    }
-
-    // getLength()
-    createContents()
-
-  }
-
-
-})
-
-</script> -->
