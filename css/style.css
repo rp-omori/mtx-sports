@@ -140,7 +140,7 @@
           align-items: center;
   color: #272E2C;
   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
-  font-size: clamp(10px, 1.5rem, 15px);
+  font-size: clamp(10px, 1.7rem, 17px);
   font-weight: bold;
 }
 .header .header__inner .header__list .header__item:first-child {
