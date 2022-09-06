@@ -235,6 +235,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .footer .footer-access .footer-access__inner .footer-access__left .section-title__wrapper {
   margin-bottom: 6.9661458333vw;
@@ -299,13 +302,63 @@
   margin-right: 0.9765625vw;
   color: var(--main-color);
 }
+.footer .footer-access .footer-access__inner .footer-access__left .footer-access__time .footer-access__close-img {
+  width: 33.1380208333vw;
+}
 .footer .footer-access .footer-access__inner .footer-access__right {
   margin-left: 3.9713541667vw;
 }
+.footer .footer-access .footer-access__inner .footer-access__right .footer-access__right-wrapper {
+  position: relative;
+  margin-bottom: 21.6796875vw;
+}
+.footer .footer-access .footer-access__inner .footer-access__right .footer-access__right-img {
+  position: relative;
+  width: 49.4791666667vw;
+  margin-top: -4.8828125vw;
+  z-index: 2;
+}
+.footer .footer-access .footer-access__inner .footer-access__right .footer-access__right-img-02 {
+  position: absolute;
+  width: 43.2291666667vw;
+  bottom: -19.53125vw;
+  left: -4.5572916667vw;
+}
 .footer .footer-access .footer-access__inner .footer-access__right .footer-access__right-text {
   margin-top: 1.6927083333vw;
+  margin-left: -4.5572916667vw;
   color: var(--main-color-black);
   font-size: clamp(10px, 1.6rem, 16px);
+  line-height: 1.6;
+}
+.footer .footer-slider {
+  overflow: hidden;
+}
+.footer .footer-slider .footer-slider-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 22.1354166667vw;
+}
+.footer .footer-slider .footer-slider-wrapper .footer-slider-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  white-space: nowrap;
+}
+.footer .footer-slider .footer-slider-wrapper .footer-linear {
+  -webkit-animation: infinite-linear 40s 0.5s linear infinite both;
+          animation: infinite-linear 40s 0.5s linear infinite both;
+}
+.footer .footer-slider .footer-slider-wrapper .footer-slider-item {
+  width: auto !important;
+  height: 100%;
+}
+.footer .footer-slider .footer-slider-wrapper .footer-slider-item img {
+  width: auto;
+  height: 100%;
 }
 .footer .footer-contact {
   background: var(--main-color-bg);
@@ -672,10 +725,27 @@
           transform: translateY(-50%);
 }
 
-.test {
-  display: block;
+@-webkit-keyframes infinite-linear {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
 }
 
+@keyframes infinite-linear {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
 .section-title__wrapper {
   position: relative;
 }
@@ -1845,6 +1915,7 @@
           flex-direction: column;
 }
 .top .medical-menu .medical-menu__item .symptoms__list .symptoms__item {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1860,6 +1931,18 @@
   font-weight: bold;
   -webkit-filter: drop-shadow(2px 2px 2px rgba(182, 200, 193, 0.5));
           filter: drop-shadow(2px 2px 2px rgba(182, 200, 193, 0.5));
+}
+.top .medical-menu .medical-menu__item .symptoms__list .symptoms__item.no-link:after {
+  background-image: none;
+}
+.top .medical-menu .medical-menu__item .symptoms__list .symptoms__item.no-link:hover {
+  border: 1px solid #E7EDEC;
+}
+.top .medical-menu .medical-menu__item .symptoms__list .symptoms__item.no-link:hover:after {
+  background-image: none;
+}
+.top .medical-menu .medical-menu__item .symptoms__list .symptoms__item.no-link a {
+  cursor: auto;
 }
 .top .medical-menu .medical-menu__item .symptoms__list .symptoms__item:after {
   content: "";
@@ -2529,7 +2612,97 @@
   word-break: keep-all;
 }
 .top .treatment {
+  position: relative;
   padding-bottom: 10.3515625vw;
+}
+.top .treatment .treatment__triangle {
+  position: absolute;
+  z-index: -1;
+}
+.top .treatment .treatment__triangle.treatment__triangle--right {
+  right: 0;
+}
+.top .treatment .treatment__triangle.treatment__triangle--left {
+  left: 0;
+}
+.top .treatment .treatment__triangle.treatment__triangle--01 {
+  top: 10.3515625vw;
+}
+.top .treatment .treatment__triangle.treatment__triangle--02 {
+  top: 61.8489583333vw;
+}
+.top .treatment .treatment__triangle.treatment__triangle--03 {
+  top: 123.6979166667vw;
+}
+.top .treatment .treatment__item--service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2.9296875vw !important;
+  -webkit-box-align: start !important;
+      -ms-flex-align: start !important;
+          align-items: flex-start !important;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.top .treatment .treatment__item--service .treatment__item--service_img {
+  width: 30.2083333333vw;
+  margin-top: -5.859375vw;
+}
+.top .treatment .treatment__item--service .treatment__item--service_img02 {
+  width: 24.7395833333vw;
+  margin-top: 9.1145833333vw;
+}
+.top .treatment .treatment__item--service .treatment__item--service_center {
+  width: 29.1666666667vw;
+}
+.top .treatment .treatment__item--exercise {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 3.515625vw !important;
+  -webkit-box-align: start !important;
+      -ms-flex-align: start !important;
+          align-items: flex-start !important;
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: flex-start !important;
+}
+.top .treatment .treatment__item--exercise .treatment__item--exercise_img {
+  width: 20.6380208333vw;
+  margin-top: 23.4375vw;
+}
+.top .treatment .treatment__item--exercise .treatment__item--exercise_img02 {
+  width: 30.2083333333vw;
+  margin: 0 3.5807291667vw 0 5.9895833333vw;
+}
+.top .treatment .treatment__item--exercise .treatment__item-list {
+  width: 33.203125vw;
+  margin-top: 11.0677083333vw;
+}
+.top .treatment .treatment__item--physical {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 9.765625vw !important;
+  -webkit-box-align: start !important;
+      -ms-flex-align: start !important;
+          align-items: flex-start !important;
+  -webkit-box-pack: end !important;
+      -ms-flex-pack: end !important;
+          justify-content: flex-end !important;
+}
+.top .treatment .treatment__item--physical .treatment__item--physical_img {
+  width: 18.0338541667vw;
+  margin: 23.4375vw 2.8645833333vw 0 5.2083333333vw;
+}
+.top .treatment .treatment__item--physical .treatment__item--physical_img02 {
+  width: 30.2083333333vw;
+}
+.top .treatment .treatment__item--physical .treatment__item-list {
+  width: 29.1666666667vw;
+  margin-top: 6.5104166667vw;
 }
 .top .treatment .treatment-wrapper .section-title__wrapper {
   width: 83%;
@@ -2597,6 +2770,7 @@
           flex-direction: column;
 }
 .top .treatment .treatment-wrapper .treatment__list .treatment__item .treatment-detail__list .treatment-detail__item {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2834,6 +3008,7 @@
   position: relative;
   width: clamp(10px, 65.1041666667vw, 1000px);
   margin: 0 auto;
+  margin-bottom: clamp(10px, 4.2317708333vw, 65px);
 }
 .price-contents .contents-box_cat {
   width: 100%;
@@ -2854,6 +3029,54 @@
   border-top: 0;
   border-collapse: collapse;
 }
+.price-contents .contents-box_menu_other {
+  position: absolute;
+  top: 0;
+  right: -22%;
+  width: clamp(10px, 14.3229166667vw, 220px);
+}
+.price-contents .contents-box_menu_other__inner {
+  width: 100%;
+}
+.price-contents .contents-box_menu_other__inner:nth-child(1) {
+  border: none;
+}
+.price-contents .contents-box_menu_other__inner_box_ttl {
+  background-color: var(--main-title-background-color);
+  padding: 0;
+  border-bottom: 0;
+  border-left: 0;
+  border-top: 0;
+  padding: clamp(10px, 1.0546875vw, 16.2px) 0;
+  border-collapse: collapse;
+}
+.price-contents .contents-box_menu_other__inner_box_ttl p {
+  text-align: center;
+  font-family: din-2014, sans-serif;
+  font-size: clamp(10px, 1.6rem, 16px);
+  font-weight: 300;
+  color: #fff;
+  line-height: 1.8;
+}
+.price-contents .contents-box_menu_other__inner_box_price {
+  position: relative;
+  background-color: #fff;
+  padding: clamp(10px, 1.6276041667vw, 25px);
+}
+.price-contents .contents-box_menu_other__inner_box_price.bottom {
+  border-bottom: 2px solid #CADAD4;
+}
+.price-contents .contents-box_menu_other__inner_box_price.small {
+  padding: clamp(10px, 1.3671875vw, 21px);
+}
+.price-contents .contents-box_menu_other__inner_box_price p {
+  text-align: center;
+  font-family: din-2014, sans-serif;
+  font-size: clamp(10px, 1.8rem, 18px);
+  font-weight: 300;
+  color: #262928;
+  line-height: 1;
+}
 .price-contents .contents-box_menu__inner {
   width: 100%;
 }
@@ -2873,6 +3096,7 @@
 }
 .price-contents .contents-box_menu__inner_box_name .flex_box {
   width: 100%;
+  position: relative;
 }
 .price-contents .contents-box_menu__inner_box_name .flex_box .orange_tab {
   width: 60%;
@@ -2911,7 +3135,7 @@
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
-  font-size: clamp(10px, 1.8rem, 18px);
+  font-size: clamp(10px, 1.6rem, 16px);
   font-weight: 300;
   color: #262928;
   line-height: 1.6;
@@ -2929,7 +3153,7 @@
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
-  font-size: clamp(10px, 1.8rem, 18px);
+  font-size: clamp(10px, 1.6rem, 16px);
   font-weight: 300;
   color: #262928;
   line-height: 1.6;
@@ -2976,25 +3200,25 @@
   color: #262928;
   line-height: 1.6;
 }
-.price-contents .contents-box_sub {
-  width: clamp(10px, 65.1041666667vw, 1000px);
-  margin: 0 auto;
-  margin-top: clamp(10px, 0.9765625vw, 15px);
-  margin-bottom: clamp(10px, 4.2317708333vw, 65px);
+.price-contents .contents-box_caution {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: clamp(10px, 1.3020833333vw, 20px);
 }
-.price-contents .contents-box_sub_caution p {
-  color: #6A8381;
+.price-contents .contents-box_caution p {
+  color: #262928;
   font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
-  font-size: clamp(10px, 1.8rem, 18px);
+  font-size: clamp(10px, 1.6rem, 16px);
   font-weight: 300;
 }
-.price-contents .contents-box_sub_btn {
+.price-contents .contents-box_btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3002,13 +3226,24 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.price-contents .contents-box_sub_btn img {
+.price-contents .contents-box_btn.center {
+  bottom: -150px;
+  left: 50%;
+  right: auto;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.price-contents .contents-box_btn.center p {
+  line-height: 2;
+  font-size: clamp(10px, 2rem, 20px);
+}
+.price-contents .contents-box_btn img {
   width: clamp(10px, 1.3020833333vw, 20px);
   margin-right: 8px;
 }
-.price-contents .contents-box_sub_btn p {
+.price-contents .contents-box_btn p {
   font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
-  font-size: clamp(10px, 1.8rem, 18px);
+  font-size: clamp(10px, 1.6rem, 16px);
   font-weight: 600;
   text-align: center;
   color: #009578;
@@ -3094,7 +3329,7 @@ td, th {
   color: #fff;
 }
 .medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__right_txtArea_ttl {
-  margin-bottom: clamp(10px, 2.6041666667vw, 40px);
+  margin-bottom: clamp(10px, 0.6510416667vw, 10px);
 }
 .medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__right_txtArea_ttl p {
   font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
@@ -3102,6 +3337,17 @@ td, th {
   font-weight: 600;
   letter-spacing: 0.02em;
   color: var(--main-color-bg);
+}
+.medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__right_txtArea_subTtl {
+  margin-bottom: clamp(10px, 2.6041666667vw, 40px);
+}
+.medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__right_txtArea_subTtl p {
+  font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-size: clamp(10px, 1.5rem, 15px);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1.6;
+  color: #6A8381;
 }
 .medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__right_txtArea_txt {
   margin-bottom: clamp(10px, 3.2552083333vw, 50px);
@@ -3121,6 +3367,9 @@ td, th {
   color: var(--main-color);
   margin-bottom: clamp(10px, 1.0416666667vw, 16px);
 }
+.medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__right_txtArea_soreSpot_sore:nth-of-type(n+2) {
+  display: none;
+}
 .medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__right_txtArea_soreSpot_spot {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3131,10 +3380,10 @@ td, th {
 .medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__right_txtArea_soreSpot_spot_detail {
   border: 1px solid var(--main-color);
   background-color: #fff;
-  width: clamp(10px, 6.5104166667vw, 100px);
-  padding: 8px 0;
+  padding: 8px clamp(10px, 3.2552083333vw, 50px);
   text-align: center;
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 .medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__right_txtArea_soreSpot_spot_detail p {
   font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
@@ -3146,7 +3395,7 @@ td, th {
 .medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__img {
   position: absolute;
   top: clamp(10px, 3.2552083333vw, 50px);
-  right: 0;
+  right: -30px;
   width: clamp(10px, 19.2057291667vw, 295px);
 }
 .medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__img img {
@@ -3182,7 +3431,6 @@ td, th {
   margin-bottom: 0;
 }
 .medical-detail-contents .medical-detail-menuArea .medical-detail-menuArea__box .medical-detail-menuArea__box_contents {
-  width: clamp(10px, 62.5vw, 960px);
   margin-top: clamp(10px, 1.8229166667vw, 28px);
   margin-bottom: clamp(10px, 1.4973958333vw, 23px);
 }
@@ -3240,6 +3488,13 @@ td, th {
   font-weight: 600;
   margin-right: clamp(10px, 1.3020833333vw, 20px);
 }
+.medical-detail-contents .medical-detail-menuArea .medical-detail-menuArea__box .medical-detail-menuArea__box_contents .index_btn_wrapper p {
+  margin-bottom: 0;
+  font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-size: clamp(10px, 2rem, 20px);
+  font-weight: 300;
+  margin-right: clamp(10px, 1.3020833333vw, 20px);
+}
 .medical-detail-contents .medical-detail-btnArea {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3251,6 +3506,7 @@ td, th {
   margin: 0 auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: clamp(10px, 3.2552083333vw, 50px);
 }
 .medical-detail-contents .medical-detail-btnArea__btn {
   margin: 0 auto;
@@ -3297,7 +3553,7 @@ td, th {
   line-height: 1.76;
 }
 .facility-contents .facility-top-wrapper .facility-top::after {
-  content: "治療の流れ";
+  content: "治療体制と施設・設備";
   color: #fff;
   font-size: clamp(10px, 5rem, 50px);
   font-family: "游ゴシック体", "YuGothic", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
@@ -3865,6 +4121,9 @@ td, th {
   font-weight: 600;
   line-height: 1;
 }
+.introduce-contents .introduce-contents__inner_box_right_name_top_left p.en.other {
+  color: rgba(0, 149, 120, 0.7);
+}
 .introduce-contents .introduce-contents__inner_box_right_name_top_left p.en.white {
   color: rgba(255, 255, 255, 0.7);
 }
@@ -4139,7 +4398,8 @@ td, th {
   width: clamp(10px, 18.2291666667vw, 280px);
   margin-right: clamp(10px, 10.0911458333vw, 155px);
   padding-top: clamp(10px, 3.2552083333vw, 50px);
-  height: clamp(10px, 252.6041666667vw, 3850px);
+  height: clamp(10px, 247.3958333333vw, 3800px);
+  position: relative;
 }
 .flow-contents .flow-circle__inner_left img {
   width: 100%;
@@ -4149,6 +4409,13 @@ td, th {
   width: clamp(10px, 0.8658854167vw, 13.3px);
   height: auto;
   margin: 0 auto;
+}
+.flow-contents .flow-circle__inner_left .flow_mark {
+  position: absolute;
+  bottom: 2%;
+  right: -40%;
+  width: clamp(10px, 13.671875vw, 210px);
+  height: clamp(10px, 13.671875vw, 210px);
 }
 .flow-contents .flow-circle__inner_right {
   width: clamp(10px, 57.6171875vw, 885px);
@@ -4408,7 +4675,7 @@ td, th {
   margin-bottom: clamp(10px, 0.78125vw, 12px);
 }
 .flow-contents .flow-circle__inner_right_box_bottom_right {
-  width: clamp(10px, 26.0416666667vw, 400px);
+  width: clamp(10px, 17.9036458333vw, 275px);
 }
 .flow-contents .flow-circle__inner_right_box_bottom_right_txt {
   display: -webkit-box;
@@ -4562,8 +4829,8 @@ td, th {
 .treatment-contents .treatment__model {
   padding: 16.2760416667vw 0 21.09375vw;
   background: var(--main-color);
-  -webkit-clip-path: polygon(0 14%, 100% 0%, 100% 100%, 0 90%);
-          clip-path: polygon(0 14%, 100% 0%, 100% 100%, 0 90%);
+  -webkit-clip-path: polygon(0 11%, 100% 0%, 100% 100%, 0 90%);
+          clip-path: polygon(0 11%, 100% 0%, 100% 100%, 0 90%);
 }
 .treatment-contents .treatment__model .treatment__model-wrapper {
   position: relative;
@@ -4773,6 +5040,7 @@ td, th {
   color: var(--note-red);
   font-size: clamp(10px, 1.5rem, 15px);
   font-weight: bold;
+  line-height: 1.6;
 }
 .treatment-contents .treatment__model .treatment__model-wrapper .treatment__model-area .treatment__model-area-body .treatment__model-squre {
   border-radius: 6px;
@@ -5168,7 +5436,7 @@ td, th {
 .treatment-detail .contents-item-detail__item {
   position: relative;
   margin-bottom: 0.6510416667vw;
-  padding: 0.9765625vw 2.6041666667vw;
+  padding: 0.9765625vw 2.9296875vw;
   border-radius: 6px;
   color: var(--main-color-black);
   font-size: clamp(10px, 1.8rem, 18px);
@@ -5183,7 +5451,7 @@ td, th {
   width: 0.5208333333vw;
   height: 0.5208333333vw;
   border-radius: 50%;
-  top: 50%;
+  top: 1.953125vw;
   left: 20px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -5203,6 +5471,8 @@ td, th {
 .treatment-detail .treatment-detail__contents-item-img.treatment-detail__contents-item-img--small {
   width: 23.1119791667vw;
   margin-right: 5.46875vw;
+  margin-top: -6.5104166667vw;
+  z-index: 2;
 }
 .treatment-detail .treatment-detail__contents-item-note-wrapper {
   margin-bottom: 0.6510416667vw;
@@ -5475,9 +5745,10 @@ td, th {
   z-index: 2;
   width: 100vw;
   height: clamp(10px, 39.9088541667vw, 613px);
+  padding-bottom: 13.0208333333vw;
   background-image: url(../images/concept/concept-top-background.png);
   background-position: center;
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: clamp(10px, 2.6041666667vw, 40px);
   overflow: hidden;
@@ -5758,7 +6029,8 @@ td, th {
   line-height: 1.75;
 }
 .concept-contents .concept-interview .concept-interview__main .concept-interview__lead .concept-interview__lead-human-wrapper {
-  margin-bottom: 8.0729166667vw;
+  width: 76.3020833333vw;
+  margin: 0 auto 8.0729166667vw;
   background: var(--main-color-white);
   border-radius: 20px;
 }
@@ -5766,7 +6038,7 @@ td, th {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 3.125vw 6.0546875vw;
+  padding: 3.125vw 4.5572916667vw;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -6067,7 +6339,7 @@ td, th {
   }
   .header .header__inner .header__drawer {
     position: absolute;
-    top: 0;
+    top: -100000px;
     left: 0;
     opacity: 0;
     z-index: -1;
@@ -6126,6 +6398,9 @@ td, th {
   .footer .footer-access .footer-access__inner .footer-access__left .footer-access__time .footer-access__close {
     font-size: clamp(10px, 1.5rem, 15px);
   }
+  .footer .footer-access .footer-access__inner .footer-access__left .footer-access__time .footer-access__close-img {
+    width: 100%;
+  }
   .footer .footer-access .footer-access__inner .footer-access__right {
     width: 100vw;
     margin: 0 calc(50% - 50vw) 15.2vw;
@@ -6133,11 +6408,28 @@ td, th {
         -ms-flex-order: 3;
             order: 3;
   }
+  .footer .footer-access .footer-access__inner .footer-access__right .footer-access__right-wrapper {
+    margin-bottom: 0;
+  }
+  .footer .footer-access .footer-access__inner .footer-access__right .footer-access__right-img {
+    width: 100%;
+    margin-bottom: 8.2666666667vw;
+  }
+  .footer .footer-access .footer-access__inner .footer-access__right .footer-access__right-img-02 {
+    position: relative;
+    width: 89%;
+    margin: 0 auto;
+    bottom: 0;
+    left: 0;
+  }
   .footer .footer-access .footer-access__inner .footer-access__right .footer-access__right-text {
     width: 89%;
-    margin: 6.6666666667vw auto 0;
+    margin: 5.3333333333vw auto 0;
     font-size: clamp(10px, 1.3rem, 13px);
     line-height: 1.6;
+  }
+  .footer .footer-slider .footer-slider-wrapper {
+    height: 58.1333333333vw;
   }
   .footer .footer-contact .footer-contact__inner {
     width: 84%;
@@ -6439,6 +6731,9 @@ td, th {
             align-items: center;
     font-size: clamp(10px, 6.5rem, 65px);
     white-space: nowrap;
+  }
+  .page-title__backgraund .page-title__treatments {
+    font-size: clamp(10px, 4.9rem, 49px);
   }
   .page-title__main p {
     font-size: clamp(10px, 2.4rem, 24px);
@@ -7172,6 +7467,120 @@ td, th {
   .top .treatment {
     padding-bottom: 18.6666666667vw;
   }
+  .top .treatment .section-title__wrapper {
+    text-align: left;
+  }
+  .top .treatment .section-title__wrapper .section-sub-title:before {
+    left: 20px;
+  }
+  .top .treatment .treatment__triangle {
+    width: 30%;
+  }
+  .top .treatment .treatment__triangle.treatment__triangle--01 {
+    top: 20px;
+  }
+  .top .treatment .treatment__triangle.treatment__triangle--02 {
+    top: 1180px;
+  }
+  .top .treatment .treatment__triangle.treatment__triangle--03 {
+    display: none;
+  }
+  .top .treatment .treatment__item--service {
+    margin-bottom: 16vw !important;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .top .treatment .treatment__item--service .treatment__item--service_img {
+    width: 49.6vw;
+    margin-top: 0;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .top .treatment .treatment__item--service .treatment__item--service_img02 {
+    width: 40.2666666667vw;
+    margin-top: 58px;
+    margin-right: 25px;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .top .treatment .treatment__item--service .treatment__item--service_center {
+    width: 89%;
+    margin: 0 auto;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .top .treatment .treatment__item--exercise {
+    margin-bottom: 16vw !important;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+  }
+  .top .treatment .treatment__item--exercise .treatment__item--exercise_img {
+    width: 38.9333333333vw;
+    margin: 10.1333333333vw 0 0 30px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .top .treatment .treatment__item--exercise .treatment__item--exercise_img02 {
+    width: 49.3333333333vw;
+    margin: 0;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .top .treatment .treatment__item--exercise .treatment__item-list {
+    width: 89%;
+    margin: 0 auto;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .top .treatment .treatment__item--physical {
+    margin-bottom: 12vw !important;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+  }
+  .top .treatment .treatment__item--physical .treatment__item--physical_img {
+    width: 40vw;
+    margin: 85px 0 0 21px;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .top .treatment .treatment__item--physical .treatment__item--physical_img02 {
+    width: 49.6vw;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .top .treatment .treatment__item--physical .treatment__item-list {
+    width: 89%;
+    margin: 0 auto;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
   .top .treatment .treatment-wrapper .section-title__wrapper {
     width: 89%;
     margin: 0 auto 20vw;
@@ -7305,6 +7714,7 @@ td, th {
   }
   .price-contents .contents-box {
     width: 90%;
+    margin-bottom: 70px;
   }
   .price-contents .contents-box_cat {
     padding: 8px 0;
@@ -7312,6 +7722,53 @@ td, th {
   .price-contents .contents-box_cat p {
     font-size: clamp(10px, 1.6rem, 16px);
     text-align: center;
+  }
+  .price-contents .contents-box_menu_other {
+    display: none;
+  }
+  .price-contents .contents-box_menu_other__inner {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .price-contents .contents-box_menu_other__inner_box {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .price-contents .contents-box_menu_other__inner_box_ttl {
+    width: 61.8%;
+  }
+  .price-contents .contents-box_menu_other__inner_box_ttl p {
+    position: static;
+    width: 100%;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    font-size: clamp(10px, 1.4rem, 14px);
+  }
+  .price-contents .contents-box_menu_other__inner_box_price {
+    width: 61.8%;
+  }
+  .price-contents .contents-box_menu_other__inner_box_price p {
+    position: static;
+    width: 100%;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    font-size: clamp(10px, 1.4rem, 14px);
   }
   .price-contents .contents-box_menu__inner {
     width: 100%;
@@ -7423,34 +7880,40 @@ td, th {
             transform: translate(0, 0);
     font-size: clamp(10px, 1.5rem, 15px);
   }
-  .price-contents .contents-box_sub {
-    width: 90%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-bottom: 70px;
+  .price-contents .contents-box_caution {
+    margin-bottom: 25px;
   }
-  .price-contents .contents-box_sub_caution p {
+  .price-contents .contents-box_caution p {
     font-size: clamp(10px, 1.4rem, 14px);
   }
-  .price-contents .contents-box_sub_btn {
-    margin-top: 20px;
-  }
-  .price-contents .contents-box_sub_btn.sp_btn p {
+  .price-contents .contents-box_btn.sp_btn p {
     text-align: left;
     line-height: 1.6;
   }
-  .price-contents .contents-box_sub_btn {
+  .price-contents .contents-box_btn.center {
+    position: static;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    margin-top: 50px;
+  }
+  .price-contents .contents-box_btn.center p {
+    font-size: clamp(10px, 2rem, 20px);
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .price-contents .contents-box_btn {
     position: static;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .price-contents .contents-box_sub_btn img {
+  .price-contents .contents-box_btn img {
     width: 20px;
   }
-  .price-contents .contents-box_sub_btn p {
+  .price-contents .contents-box_btn p {
     font-size: clamp(10px, 1.6rem, 16px);
     margin-bottom: 0;
   }
@@ -7499,10 +7962,16 @@ td, th {
     font-size: clamp(10px, 1.4rem, 14px);
   }
   .medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__right_txtArea_ttl {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
   }
   .medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__right_txtArea_ttl p {
     font-size: clamp(10px, 2.4rem, 24px);
+  }
+  .medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__right_txtArea_subTtl {
+    margin-bottom: 40px;
+  }
+  .medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__right_txtArea_subTtl p {
+    font-size: clamp(10px, 1.4rem, 14px);
   }
   .medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__right_txtArea_txt {
     margin-bottom: 40px;
@@ -7517,8 +7986,7 @@ td, th {
     margin-bottom: 12px;
   }
   .medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__right_txtArea_soreSpot_spot_detail {
-    width: 75px;
-    padding: 6px 0;
+    padding: 6px clamp(10px, 2.44140625vw, 37.5px);
   }
   .medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__right_txtArea_soreSpot_spot_detail p {
     font-size: clamp(10px, 1.5rem, 15px);
@@ -7572,6 +8040,10 @@ td, th {
             justify-content: flex-start;
   }
   .medical-detail-contents .medical-detail-menuArea .medical-detail-menuArea__box .medical-detail-menuArea__box_contents .index_btn_wrapper .index_btn p {
+    font-size: clamp(10px, 1.4rem, 14px);
+    line-height: 1.6;
+  }
+  .medical-detail-contents .medical-detail-menuArea .medical-detail-menuArea__box .medical-detail-menuArea__box_contents .index_btn_wrapper p {
     font-size: clamp(10px, 1.4rem, 14px);
     line-height: 1.6;
   }
@@ -8669,12 +9141,12 @@ td, th {
   .treatment-detail .contents-item-detail__item:before {
     width: 2.1333333333vw;
     height: 2.1333333333vw;
+    top: 7.4666666667vw;
     left: 10px;
   }
   .treatment-detail .treatment-detail__contents-item-img.treatment-detail__contents-item-img--small {
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 6.4vw;
+    width: 50%;
+    margin: 0 auto 6.4vw;
   }
   .treatment-detail .treatment-detail__contents-item-note-wrapper {
     margin-bottom: 3.2vw;
@@ -8886,8 +9358,8 @@ td, th {
   }
   .concept-contents .concept-top-wrapper {
     height: 250px;
+    padding-bottom: 0;
     background-position: top;
-    background-size: 100% 100%;
     background-image: url(../images/concept/concept-top-background_sp.png);
     margin-bottom: 60px;
   }
@@ -9033,6 +9505,9 @@ td, th {
     margin-left: initial;
     margin-right: auto;
   }
+  .concept-contents .concept-background .concept-background__main .concept-background__right {
+    z-index: -1;
+  }
   .concept-contents .concept-background .concept-background__main .concept-background__title-wrapper {
     margin-bottom: 6.4vw;
   }
@@ -9075,6 +9550,7 @@ td, th {
     font-size: clamp(10px, 1.5rem, 15px);
   }
   .concept-contents .concept-interview .concept-interview__main .concept-interview__lead .concept-interview__lead-human-wrapper {
+    width: 100%;
     margin-bottom: 16.2666666667vw;
   }
   .concept-contents .concept-interview .concept-interview__main .concept-interview__lead .concept-interview__lead-human-inner {

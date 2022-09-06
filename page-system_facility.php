@@ -43,7 +43,7 @@ $rootDir = get_template_directory_uri();
         </div>
         <div class="facility-systemArea__inner_lead">
           <p>
-            「再生医療」「物理療法・手技療法」<br class="sp">「運動療法」などを駆使して、<br>
+            「再生医療」「運動療法」<br class="sp">「物理療法」などを駆使して、<br>
             ONE TEAMでトータルサポートします！
           </p>
         </div>
@@ -69,11 +69,11 @@ $rootDir = get_template_directory_uri();
           </p>
         </div>
         <div class="facility-systemArea__inner_btnArea">
-          <a href="" class="index_btn">
+          <a href="<?php echo esc_url(home_url('/flow')); ?>" class="index_btn">
             <p>治療の流れ</p>
             <img src="<?php echo $rootDir ?>/images/facility/facility_btn_right_white.png" alt="">
           </a>
-          <a href="" class="index_btn">
+          <a href="<?php echo esc_url(home_url('/staff')); ?>" class="index_btn">
             <p>医師・スタッフ紹介</p>
             <img src="<?php echo $rootDir ?>/images/facility/facility_btn_right_white.png" alt="">
           </a>
@@ -105,7 +105,7 @@ $rootDir = get_template_directory_uri();
           </div>
           <div class="facility-collaboratingArea__inner_contents_box">
             <div class="facility-collaboratingArea__inner_contents_box_left">
-              <img src="<?php echo $rootDir ?>/images/facility/facility_img_01.png" alt="">
+              <img src="<?php echo $rootDir ?>/images/facility/facility_img_01.jpg" alt="">
             </div>
             <div class="facility-collaboratingArea__inner_contents_box_right">
               <div class="facility-collaboratingArea__inner_contents_box_right_tab">
@@ -127,25 +127,25 @@ $rootDir = get_template_directory_uri();
           </div>
           <div class="facility-collaboratingArea__inner_contents_box flex">
             <div class="img">
-              <img src="<?php echo $rootDir ?>/images/facility/facility_img_01.png" alt="">
+              <img src="<?php echo $rootDir ?>/images/facility/facility_img_02.jpg" alt="">
             </div>
             <div class="img">
-              <img src="<?php echo $rootDir ?>/images/facility/facility_img_01.png" alt="">
+              <img src="<?php echo $rootDir ?>/images/facility/facility_img_03.jpg" alt="">
             </div>
             <div class="img">
-              <img src="<?php echo $rootDir ?>/images/facility/facility_img_01.png" alt="">
+              <img src="<?php echo $rootDir ?>/images/facility/facility_img_04.jpg" alt="">
             </div>
           </div>
           <div class="facility-collaboratingArea__inner_contents_box reverse">
             <div class="facility-collaboratingArea__inner_contents_box_left">
-              <img src="<?php echo $rootDir ?>/images/facility/facility_img_01.png" alt="">
+              <img src="<?php echo $rootDir ?>/images/facility/facility_img_05.jpg" alt="">
             </div>
             <div class="facility-collaboratingArea__inner_contents_box_right">
               <div class="facility-collaboratingArea__inner_contents_box_right_tab">
                 <p>連携施設</p>
               </div>
               <div class="index_btn facility-collaboratingArea__inner_contents_box_right_ttl">
-                <a class="link">
+                <a href="https://ddrobotec.com/ja/" class="link">
                   <p>ddrobtec©︎</p>
                   <img src="<?php echo $rootDir ?>/images/facility/facility_link.png" alt="">
                 </a>
@@ -162,13 +162,13 @@ $rootDir = get_template_directory_uri();
           </div>
           <div class="facility-collaboratingArea__inner_contents_box">
             <div class="facility-collaboratingArea__inner_contents_box_left">
-              <img src="<?php echo $rootDir ?>/images/facility/facility_img_01.png" alt="">
+              <img src="<?php echo $rootDir ?>/images/facility/facility_img_06.jpg" alt="">
             </div>
             <div class="facility-collaboratingArea__inner_contents_box_right">
               <div class="facility-collaboratingArea__inner_contents_box_right_tab">
                 <p>連携施設</p>
               </div>
-              <a href="" class="index_btn facility-collaboratingArea__inner_contents_box_right_ttl border">
+              <a href="https://mtx-academy.movetex.co.jp/" class="index_btn facility-collaboratingArea__inner_contents_box_right_ttl border">
                 <img src="<?php echo $rootDir ?>/images/facility/facility_btn_white.png" alt="">
                 <p>MTXアカデミー</p>
                 <img class="abso" src="<?php echo $rootDir ?>/images/facility/facility_link.png" alt="">
@@ -183,13 +183,13 @@ $rootDir = get_template_directory_uri();
           </div>
           <div class="facility-collaboratingArea__inner_contents_box flex">
             <div class="img">
-              <img src="<?php echo $rootDir ?>/images/facility/facility_img_01.png" alt="">
+              <img src="<?php echo $rootDir ?>/images/facility/facility_img_07.jpg" alt="">
             </div>
             <div class="img">
-              <img src="<?php echo $rootDir ?>/images/facility/facility_img_01.png" alt="">
+              <img src="<?php echo $rootDir ?>/images/facility/facility_img_08.jpg" alt="">
             </div>
             <div class="img">
-              <img src="<?php echo $rootDir ?>/images/facility/facility_img_01.png" alt="">
+              <img src="<?php echo $rootDir ?>/images/facility/facility_img_09.jpg" alt="">
             </div>
           </div>
         </div>
@@ -202,7 +202,7 @@ $rootDir = get_template_directory_uri();
           </div>
           <div class="facility-collaboratingArea__inner_contents_box reverse">
             <div class="facility-collaboratingArea__inner_contents_box_left">
-              <img src="<?php echo $rootDir ?>/images/facility/facility_img_01.png" alt="">
+              <img src="<?php echo $rootDir ?>/images/facility/facility_img_10.jpg" alt="">
             </div>
             <div class="facility-collaboratingArea__inner_contents_box_right">
               <div class="facility-collaboratingArea__inner_contents_box_right_logo">
@@ -225,18 +225,18 @@ $rootDir = get_template_directory_uri();
           </div>
           <div class="facility-collaboratingArea__inner_contents_box flex">
             <div class="img">
-              <img src="<?php echo $rootDir ?>/images/facility/facility_img_01.png" alt="">
+              <img src="<?php echo $rootDir ?>/images/facility/facility_img_11.jpg" alt="">
             </div>
             <div class="img">
-              <img src="<?php echo $rootDir ?>/images/facility/facility_img_01.png" alt="">
+              <img src="<?php echo $rootDir ?>/images/facility/facility_img_12.jpg" alt="">
             </div>
             <div class="img">
-              <img src="<?php echo $rootDir ?>/images/facility/facility_img_01.png" alt="">
+              <img src="<?php echo $rootDir ?>/images/facility/facility_img_13.jpg" alt="">
             </div>
           </div>
           <div class="facility-collaboratingArea__inner_contents_box sp_mb">
             <div class="facility-collaboratingArea__inner_contents_box_left">
-              <img src="<?php echo $rootDir ?>/images/facility/facility_img_01.png" alt="">
+              <img src="<?php echo $rootDir ?>/images/facility/facility_img_14.jpg" alt="">
             </div>
             <div class="facility-collaboratingArea__inner_contents_box_right">
               <div class="facility-collaboratingArea__inner_contents_box_right_logo medium">
@@ -247,7 +247,7 @@ $rootDir = get_template_directory_uri();
               </div>
               <div class="index_btn facility-collaboratingArea__inner_contents_box_right_ttl">
                 <img src="<?php echo $rootDir ?>/images/facility/facility_btn_green.png" alt="">
-                <p>HAL®（Hybrid<br class="zp"> Assistive Limb®）</p>
+                <p>HAL®（Hybrid<br class="sp"> Assistive Limb®）</p>
               </div>
               <div class="facility-collaboratingArea__inner_contents_box_right_txt">
                 <p>
@@ -259,7 +259,7 @@ $rootDir = get_template_directory_uri();
           </div>
           <div class="facility-collaboratingArea__inner_contents_box reverse">
             <div class="facility-collaboratingArea__inner_contents_box_left">
-              <img src="<?php echo $rootDir ?>/images/facility/facility_img_01.png" alt="">
+              <img src="<?php echo $rootDir ?>/images/facility/facility_img_15.jpg" alt="">
             </div>
             <div class="facility-collaboratingArea__inner_contents_box_right">
               <div class="facility-collaboratingArea__inner_contents_box_right_logo medium">
@@ -268,10 +268,10 @@ $rootDir = get_template_directory_uri();
               <div class="facility-collaboratingArea__inner_contents_box_right_tab green">
                 <p>物理療法</p>
               </div>
-              <a href="" class="index_btn facility-collaboratingArea__inner_contents_box_right_ttl">
+              <div class="index_btn facility-collaboratingArea__inner_contents_box_right_ttl">
                 <img src="<?php echo $rootDir ?>/images/facility/facility_btn_green.png" alt="">
                 <p>収束型　対外衝撃波（BTL6000-Focus)</p>
-              </a>
+              </div>
               <div class="facility-collaboratingArea__inner_contents_box_right_txt">
                 <p>
                   当院が採用した体外衝撃波はイギリスBTL社のもので、２０２２年時点で最大の出力を誇ります。<br>
@@ -283,7 +283,7 @@ $rootDir = get_template_directory_uri();
           </div>
           <div class="facility-collaboratingArea__inner_contents_box">
             <div class="facility-collaboratingArea__inner_contents_box_left">
-              <img src="<?php echo $rootDir ?>/images/facility/facility_img_01.png" alt="">
+              <img src="<?php echo $rootDir ?>/images/facility/facility_img_16.jpg" alt="">
             </div>
             <div class="facility-collaboratingArea__inner_contents_box_right">
               <div class="facility-collaboratingArea__inner_contents_box_right_logo medium">

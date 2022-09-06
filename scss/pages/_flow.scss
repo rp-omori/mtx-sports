@@ -258,7 +258,8 @@
         width: clamp(10px,get_vw(280),280px);
         margin-right: clamp(10px,get_vw(155),155px);
         padding-top: clamp(10px,get_vw(50),50px);
-        height: clamp(10px,get_vw(3880),3850px);
+        height: clamp(10px,get_vw(3800),3800px);
+        position: relative;
 
         @include sp {
           width: 100%;
@@ -279,12 +280,21 @@
             @include sp {
               display: none;
             }
+
           }
 
           @include sp {
             height: auto;
           }
 
+        }
+
+        .flow_mark{
+          position: absolute;
+          bottom: 2%;
+          right: -40%;
+          width: clamp(10px,get_vw(210),210px);
+          height: clamp(10px,get_vw(210),210px);
         }
 
       }
@@ -765,7 +775,7 @@
 
             &_right{
 
-              width: clamp(10px,get_vw(400),400px);
+              width: clamp(10px,get_vw(275),275px);
 
               @include sp {
                 width: 100%;
