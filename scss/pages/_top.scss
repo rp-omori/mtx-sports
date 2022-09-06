@@ -658,6 +658,26 @@
           font-weight: bold;
           filter: drop-shadow(2px 2px 2px rgba(182, 200, 193, .5)); // 本番公開用
 
+          &.no-link {
+            filter: none;
+
+            &:after {
+              background-image: none;
+            }
+
+            &:hover {
+              border: 1px solid #E7EDEC;
+
+              &:after {
+                background-image: none;
+              }
+            }
+
+            a {
+              cursor: auto;
+            }
+          }
+
           @include sp {
             font-size: calcFz(15);
           }

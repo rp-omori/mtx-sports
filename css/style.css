@@ -1932,6 +1932,22 @@
   -webkit-filter: drop-shadow(2px 2px 2px rgba(182, 200, 193, 0.5));
           filter: drop-shadow(2px 2px 2px rgba(182, 200, 193, 0.5));
 }
+.top .medical-menu .medical-menu__item .symptoms__list .symptoms__item.no-link {
+  -webkit-filter: none;
+          filter: none;
+}
+.top .medical-menu .medical-menu__item .symptoms__list .symptoms__item.no-link:after {
+  background-image: none;
+}
+.top .medical-menu .medical-menu__item .symptoms__list .symptoms__item.no-link:hover {
+  border: 1px solid #E7EDEC;
+}
+.top .medical-menu .medical-menu__item .symptoms__list .symptoms__item.no-link:hover:after {
+  background-image: none;
+}
+.top .medical-menu .medical-menu__item .symptoms__list .symptoms__item.no-link a {
+  cursor: auto;
+}
 .top .medical-menu .medical-menu__item .symptoms__list .symptoms__item:after {
   content: "";
   position: absolute;
