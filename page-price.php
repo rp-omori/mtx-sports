@@ -401,7 +401,7 @@ $WP_post = new WP_Query($args);
         </tbody>
       </table>
       <div class="contents-box_caution">
-        <p>※オープニング価格<br>（2022年内限定）は年内まで。</p>
+        <p>※オープニング価格（2022年内限定）は年内まで。</p>
       </div>
       <a href="<?php echo esc_url(home_url('services/#service')); ?>" class="contents-box_btn">
         <img src="<?php echo $rootDir ?>/images/price/price_btn.png" alt="">
@@ -593,9 +593,9 @@ $WP_post = new WP_Query($args);
           </tr>
         </tbody>
       </table>
-      <div class="contents-box_caution">
+      <!-- <div class="contents-box_caution">
         <p>※オープニング価格<br>（2022年内限定）は年内まで。</p>
-      </div>
+      </div> -->
       <a href="<?php echo esc_url(home_url('/contact')); ?>" class="contents-box_btn sp_btn center">
         <p>その他オプション等については、<br>お問い合わせください。</p>
       </a>
