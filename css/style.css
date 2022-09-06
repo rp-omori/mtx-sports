@@ -1956,6 +1956,7 @@
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   right: 0.6510416667vw;
+  z-index: -1;
 }
 .top .medical-menu .medical-menu__item .symptoms__list .symptoms__item:hover {
   border: 1px solid var(--main-color);
@@ -3948,9 +3949,10 @@ td, th {
   z-index: 2;
   width: 100vw;
   height: clamp(10px, 39.9088541667vw, 613px);
+  padding-bottom: 13.0208333333vw;
   background-image: url("../images/introduce/introduce-top-background.png");
   background-position: center;
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: clamp(10px, 2.6041666667vw, 40px);
   overflow: hidden;
@@ -4266,9 +4268,10 @@ td, th {
   z-index: 2;
   width: 100vw;
   height: clamp(10px, 39.9088541667vw, 613px);
+  padding-bottom: 13.0208333333vw;
   background-image: url("../images/flow/flow-top-background.png");
   background-position: center;
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: clamp(10px, 2.6041666667vw, 40px);
   overflow: hidden;
@@ -8302,10 +8305,13 @@ td, th {
             flex-direction: column-reverse;
     margin-bottom: 20px;
   }
+  .introduce-contents {
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  }
   .introduce-contents .introduce-top-wrapper {
     height: 250px;
+    padding-bottom: 0;
     background-position: top;
-    background-size: 100% 100%;
     background-image: url("../images/introduce/introduce-top-background_sp.png");
     margin-bottom: 60px;
   }
@@ -8459,10 +8465,13 @@ td, th {
   .introduce-contents .introduce-contents__inner.bg_white.pd_sp {
     padding-bottom: 0px;
   }
+  .flow-contents {
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  }
   .flow-contents .flow-top-wrapper {
     height: 250px;
+    padding-bottom: 0;
     background-position: top;
-    background-size: 100% 100%;
     background-image: url("../images/flow/flow-top-background_sp.png");
     margin-bottom: 60px;
   }
