@@ -153,7 +153,7 @@ $WP_post = new WP_Query($args);
             <td class="contents-box_menu_other__inner_box_price small bottom"><p>¥140,000</p></td>
           </tr>
           <tr class="contents-box_menu_other__inner_box">
-            <td class="contents-box_menu_other__inner_box_price small"><p>¥75,000</p></td>
+            <td class="contents-box_menu_other__inner_box_price small"><p>¥7,500</p></td>
           </tr>
           <tr class="contents-box_menu_other__inner_box">
             <td class="contents-box_menu_other__inner_box_price small"><p>¥20,000</p></td>
@@ -165,7 +165,7 @@ $WP_post = new WP_Query($args);
             <td class="contents-box_menu_other__inner_box_price small"><p>¥35,000</p></td>
           </tr>
           <tr class="contents-box_menu_other__inner_box">
-            <td class="contents-box_menu_other__inner_box_price small"><p>¥87,5000</p></td>
+            <td class="contents-box_menu_other__inner_box_price small"><p>¥87,500</p></td>
           </tr>
           <tr class="contents-box_menu_other__inner_box">
             <td class="contents-box_menu_other__inner_box_price small"><p>¥55,000</p></td>
@@ -368,7 +368,7 @@ $WP_post = new WP_Query($args);
               <p>1回</p>
             </td>
             <td class="contents-box_menu__inner_box_price">
-              <p>70,000</p>
+              <p>¥70,000</p>
             </td>
           </tr>
           <tr class="contents-box_menu__inner_box">
@@ -376,7 +376,7 @@ $WP_post = new WP_Query($args);
               <p>3回セット</p>
             </td>
             <td class="contents-box_menu__inner_box_price">
-              <p>175,000</p>
+              <p>¥175,000</p>
             </td>
           </tr>
           <tr class="contents-box_menu__inner_box">
