@@ -16,15 +16,9 @@ $rootDir = get_template_directory_uri();
       <p class="kv__float-text">MTX SPORTS & ARTICULAR CLINIC</p>
       <div class="kv__swiper">
         <div class="txtArea">
-          <!-- <div class="txtArea__head white_txt">
-            <p class="date">08.29<span>mon~</span></p>
-            <h2>GRAND OPEN!!</h2>
-          </div> -->
           <p class="txtArea__label">再生医療×運動療法で</p>
           <h3 class="txtArea__sub-title white_txt">
             <picture>
-              <!-- <source media="(max-width: 767px)" srcset="<?php echo $rootDir ?>/images/top/kv_lead-sp.svg">
-              <img src="<?php echo $rootDir ?>/images/top/kv_lead.svg" alt="治るスポーツ・関節医療を目指して"> -->
               <source media="(max-width: 767px)" srcset="<?php echo $rootDir ?>/images/top/kv_lead_new-sp.svg">
               <img src="<?php echo $rootDir ?>/images/top/kv_lead_new.svg" alt="治るスポーツ・関節医療を目指して">
             </picture>
@@ -50,33 +44,6 @@ $rootDir = get_template_directory_uri();
               <source media="(max-width: 768px)" srcset="<?php echo $rootDir ?>/images/top/kv_01-sp.png">
               <img src="<?php echo $rootDir ?>/images/top/kv_01.png" alt="">
             </picture>
-            <!-- <div class="txtArea">
-              <div class="txtArea__head white_txt">
-                <p class="date">08.29<span>mon~</span></p>
-                <h2>GRAND OPEN!!</h2>
-              </div>
-              <p class="txtArea__label">再生医療×運動療法で</p>
-              <h3 class="txtArea__sub-title white_txt">
-                <picture>
-                  <source media="(max-width: 767px)" srcset="<?php echo $rootDir ?>/images/top/kv_lead-sp.svg">
-                  <img src="<?php echo $rootDir ?>/images/top/kv_lead.svg" alt="治るスポーツ・関節医療を目指して">
-                </picture>
-              </h3>
-              <p class="txtArea__text white_txt pc">アスリートの競技人生・身体的障害のある方の人生に向き合い、身体の機能改善に取り組んできたMTXだからできる「再生医療」×「運動療法」を組み合わせた医療。医師と理学療法士、トレーナー陣が一体となって、パフォーマンスや痛みに悩む方々に寄り添い、共に解決に向かって進んでいきます。</p>
-              <div class="feature__box-wrapper pc">
-                <div class="feature__box">
-                  <div class="feature__circle">
-                    <p class="feature__circle-text">運動による<br>スポーツ障害</p>
-                  </div>
-                  <div class="feature__circle">
-                    <p class="feature__circle-text">保険診療では<br>治らなかった<br>関節痛</p>
-                  </div>
-                  <div class="feature__circle">
-                    <p class="feature__circle-text">子どもの<br>成長痛<br>・運動機能の悩み</p>
-                  </div>
-                </div>
-              </div>
-            </div> -->
           </div>
           <div class="swiper-slide">
             <div class="kv_img">
@@ -85,66 +52,12 @@ $rootDir = get_template_directory_uri();
                 <img src="<?php echo $rootDir ?>/images/top/kv_02.png" alt="">
               </picture>
             </div>
-            <!-- <div class="txtArea">
-              <div class="txtArea__head white_txt">
-                <p class="date">08.29<span>mon~</span></p>
-                <h2>GRAND OPEN!!</h2>
-              </div>
-              <p class="txtArea__label">再生医療×運動療法で</p>
-              <h3 class="txtArea__sub-title white_txt">
-                <picture>
-                  <source media="(max-width: 767px)" srcset="<?php echo $rootDir ?>/images/top/kv_lead-sp.svg">
-                  <img src="<?php echo $rootDir ?>/images/top/kv_lead.svg" alt="治るスポーツ・関節医療を目指して">
-                </picture>
-              </h3>
-              <p class="txtArea__text white_txt pc">アスリートの競技人生・身体的障害のある方の人生に向き合い、身体の機能改善に取り組んできたMTXだからできる「再生医療」×「運動療法」を組み合わせた医療。医師と理学療法士、トレーナー陣が一体となって、パフォーマンスや痛みに悩む方々に寄り添い、共に解決に向かって進んでいきます。</p>
-              <div class="feature__box-wrapper pc">
-                <div class="feature__box">
-                  <div class="feature__circle">
-                    <p class="feature__circle-text">運動による<br>スポーツ障害</p>
-                  </div>
-                  <div class="feature__circle">
-                    <p class="feature__circle-text">保険診療では<br>治らなかった<br>関節痛</p>
-                  </div>
-                  <div class="feature__circle">
-                    <p class="feature__circle-text">子どもの<br>成長痛<br>・運動機能の悩み</p>
-                  </div>
-                </div>
-              </div>
-            </div> -->
           </div>
           <div class="swiper-slide">
             <picture>
               <source media="(max-width: 768px)" srcset="<?php echo $rootDir ?>/images/top/kv_03-sp.png">
               <img src="<?php echo $rootDir ?>/images/top/kv_03.png" alt="">
             </picture>
-            <!-- <div class="txtArea">
-              <div class="txtArea__head white_txt">
-                <p class="date">08.29<span>mon~</span></p>
-                <h2>GRAND OPEN!!</h2>
-              </div>
-              <p class="txtArea__label">再生医療×運動療法で</p>
-              <h3 class="txtArea__sub-title white_txt">
-                <picture>
-                  <source media="(max-width: 767px)" srcset="<?php echo $rootDir ?>/images/top/kv_lead-sp.svg">
-                  <img src="<?php echo $rootDir ?>/images/top/kv_lead.svg" alt="治るスポーツ・関節医療を目指して">
-                </picture>
-              </h3>
-              <p class="txtArea__text white_txt pc">アスリートの競技人生・身体的障害のある方の人生に向き合い、身体の機能改善に取り組んできたMTXだからできる「再生医療」×「運動療法」を組み合わせた医療。医師と理学療法士、トレーナー陣が一体となって、パフォーマンスや痛みに悩む方々に寄り添い、共に解決に向かって進んでいきます。</p>
-              <div class="feature__box-wrapper pc">
-                <div class="feature__box">
-                  <div class="feature__circle">
-                    <p class="feature__circle-text">運動による<br>スポーツ障害</p>
-                  </div>
-                  <div class="feature__circle">
-                    <p class="feature__circle-text">保険診療では<br>治らなかった<br>関節痛</p>
-                  </div>
-                  <div class="feature__circle">
-                    <p class="feature__circle-text">子どもの<br>成長痛<br>・運動機能の悩み</p>
-                  </div>
-                </div>
-              </div>
-            </div> -->
           </div>
         </div>
 
@@ -197,7 +110,7 @@ $rootDir = get_template_directory_uri();
     <section id="medical-menu" class="medical-menu">
       <div class="section-title__wrapper --white --center js-titleAnimationTarget">
         <h2 class="section-title">MENU</h2>
-        <p class="section-sub-title">症状から探す診療メニュー</p>
+        <p class="section-sub-title">症状からさがす診療メニュー</p>
       </div>
       <ul class="medical-menu__list">
         <li class="medical-menu__item medical-menu__item--01" style="animation-delay: 0s">
@@ -238,11 +151,6 @@ $rootDir = get_template_directory_uri();
             wp_reset_postdata();
           }
           ?>
-            <!-- <li class="symptoms__item">
-              <a href="" class="symptoms__link">
-                <h4 class="symptoms__name">腱板損傷</h4>
-              </a>
-            </li> -->
           </ul>
         </li>
         <li class="medical-menu__item medical-menu__item--02" style="animation-delay: 0.2s">
@@ -283,26 +191,6 @@ $rootDir = get_template_directory_uri();
             wp_reset_postdata();
           }
           ?>
-            <!-- <li class="symptoms__item">
-              <a href="" class="symptoms__link">
-                <h4 class="symptoms__name">腰部脊柱管狭窄症</h4>
-              </a>
-            </li>
-            <li class="symptoms__item">
-              <a href="" class="symptoms__link">
-                <h4 class="symptoms__name">腰椎すべり症</h4>
-              </a>
-            </li>
-            <li class="symptoms__item">
-              <a href="" class="symptoms__link">
-                <h4 class="symptoms__name">腰椎椎間板ヘルニア</h4>
-              </a>
-            </li>
-            <li class="symptoms__item">
-              <a href="" class="symptoms__link">
-                <h4 class="symptoms__name">ロコモティブシンドローム</h4>
-              </a>
-            </li> -->
           </ul>
         </li>
         <li class="medical-menu__item medical-menu__item--03" style="animation-delay: 0.6s">
@@ -343,26 +231,6 @@ $rootDir = get_template_directory_uri();
             wp_reset_postdata();
           }
           ?>
-            <!-- <li class="symptoms__item">
-              <a href="" class="symptoms__link">
-                <h4 class="symptoms__name">腰部脊柱管狭窄症</h4>
-              </a>
-            </li>
-            <li class="symptoms__item">
-              <a href="" class="symptoms__link">
-                <h4 class="symptoms__name">腰椎すべり症</h4>
-              </a>
-            </li>
-            <li class="symptoms__item">
-              <a href="" class="symptoms__link">
-                <h4 class="symptoms__name">腰椎椎間板ヘルニア</h4>
-              </a>
-            </li>
-            <li class="symptoms__item">
-              <a href="" class="symptoms__link">
-                <h4 class="symptoms__name">ロコモティブシンドローム</h4>
-              </a>
-            </li> -->
           </ul>
         </li>
         <li class="medical-menu__item medical-menu__item--04" style="animation-delay: 0.8s">
@@ -403,16 +271,6 @@ $rootDir = get_template_directory_uri();
             wp_reset_postdata();
           }
           ?>
-            <!-- <li class="symptoms__item">
-              <a href="" class="symptoms__link">
-                <h4 class="symptoms__name">変形性関節症</h4>
-              </a>
-            </li>
-            <li class="symptoms__item">
-              <a href="" class="symptoms__link">
-                <h4 class="symptoms__name">ロコモティブシンドローム</h4>
-              </a>
-            </li> -->
           </ul>
         </li>
         <li class="medical-menu__item medical-menu__item--05 medical-menu__item--dg" style="animation-delay: 1s">
@@ -453,47 +311,6 @@ $rootDir = get_template_directory_uri();
             wp_reset_postdata();
           }
           ?>
-            <!-- <li class="symptoms__item col">
-              <a href="" class="symptoms__link">
-                <h4 class="symptoms__name">疲労骨折</h4>
-                <span class="symptoms__note">（腰椎分離症含む）</span>
-              </a>
-            </li>
-            <li class="symptoms__item">
-              <a href="" class="symptoms__link">
-                <h4 class="symptoms__name">関節捻挫<br>（靭帯損傷）</h4>
-              </a>
-            </li>
-            <li class="symptoms__item">
-              <a href="" class="symptoms__link">
-                <h4 class="symptoms__name">野球肘</h4>
-              </a>
-            </li>
-            <li class="symptoms__item">
-              <a href="" class="symptoms__link">
-                <h4 class="symptoms__name">前十字靭帯損傷</h4>
-              </a>
-            </li>
-            <li class="symptoms__item">
-              <a href="" class="symptoms__link">
-                <h4 class="symptoms__name">投球障害肩</h4>
-              </a>
-            </li>
-            <li class="symptoms__item">
-              <a href="" class="symptoms__link">
-                <h4 class="symptoms__name">シンスプリント</h4>
-              </a>
-            </li>
-            <li class="symptoms__item">
-              <a href="" class="symptoms__link">
-                <h4 class="symptoms__name">肉離れ</h4>
-              </a>
-            </li>
-            <li class="symptoms__item">
-              <a href="" class="symptoms__link">
-                <h4 class="symptoms__name">健周囲炎</h4>
-              </a>
-            </li> -->
           </ul>
         </li>
         <li class="medical-menu__item medical-menu__item--06 medical-menu__item--dg" style="animation-delay: 1.2s">
@@ -540,17 +357,6 @@ $rootDir = get_template_directory_uri();
                 <span class="symptoms__note">※まずはお問合せください</span>
               </a>
             </li>
-            <!-- <li class="symptoms__item">
-              <a href="" class="symptoms__link">
-                <h4 class="symptoms__name">成長痛（骨端症・オスグッド病）</h4>
-              </a>
-            </li>
-            <li class="symptoms__item">
-              <a href="" class="symptoms__link">
-                <h4 class="symptoms__name">運動機能の悩み</h4>
-                <span class="symptoms__note">※まずはお問合せください</span>
-              </a>
-            </li> -->
           </ul>
         </li>
       </ul>
