@@ -30,7 +30,7 @@ $rootDir = get_template_directory_uri();
             <p>FLOW</p>
           </div> -->
           <div class="flow-main__inner_left_txt">
-            <p>患者さんの 良くなった、良くなっていない といった主観的な感覚は、治療経過の評価に非常に重要なものです。ですが、この感覚は本人だけのものであり、医師は正確に評価できません。そこでわれわれ我々は、患者さんの現状を具体的かつ客観的に評価・数値化することを大切にしています。データをもとに、都度治療の方針を軌道修正することで、具体的なゴールを患者さんと共有しながら治療を進めていくのです。数値化に用いるのは、最先端の計測機器「ダイナミック・デバイス」とSFMAやCESなどが用意した、運動機能の状態を測る診断基準です。その結果、現在どこまで良くなっていて、次はどうリハビリに取り組むかという状況・情報を表す数値が、医師、理学療法士、トレーナー、患者さんの全員で共有できます。</p>
+            <p>患者さんの 良くなった、良くなっていない といった主観的な感覚は、治療経過の評価に非常に重要なものです。ですが、この感覚は本人だけのものであり、医師は正確に評価できません。そこで我々は、患者さんの現状を具体的かつ客観的に評価・数値化することを大切にしています。データをもとに、都度治療の方針を軌道修正することで、具体的なゴールを患者さんと共有しながら治療を進めていくのです。数値化に用いるのは、最先端の計測機器「ダイナミック・デバイス」とSFMAやCESなどが用意した、運動機能の状態を測る診断基準です。その結果、現在どこまで良くなっていて、次はどうリハビリに取り組むかという状況・情報を表す数値が、医師、理学療法士、トレーナー、患者さんの全員で共有できます。</p>
           </div>
           <a href="<?php echo esc_url(home_url('system_facility')); ?>" class="flow-main__inner_left_btn index_btn">
             <p>治療体制はこちら</p>
@@ -96,7 +96,7 @@ $rootDir = get_template_directory_uri();
               <div class="flow-circle__inner_right_box_middle_right">
                 <div class="flow-circle__inner_right_box_middle_right_txt">
                   <img src="<?php echo $rootDir ?>/images/flow/bottom_arrow.svg" alt="">
-                  <p>動きを診るために診察室は広い</p>
+                  <p>動きを診るための広い診察室</p>
                 </div>
                 <div class="flow-circle__inner_right_box_middle_right_img">
                 <img src="<?php echo $rootDir ?>/images/flow/flow_img_01.jpg" alt="">

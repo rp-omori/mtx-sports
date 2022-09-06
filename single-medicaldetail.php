@@ -145,14 +145,17 @@ $rootDir = get_template_directory_uri();
           <div class="index_btn_wrapper">
             <?php if(have_rows('treatment_menu')): ?>
               <?php while(have_rows('treatment_menu')): the_row(); ?>
-                <a href="<?php the_sub_field("menu_link") ?>" class="index_btn">
-                  <p><?php the_sub_field("menu_name") ?></p>
-                  <?php $etc = get_sub_field('menu_link'); ?>
-                    <?php if(empty($etc)):?>
-                    <?php else:?>
-                      <img src="<?php echo $rootDir ?>/images/medical_detail/medical_detail_btn_right.png" alt="">
-                    <?php endif;?>
-                </a>
+                <?php $etc = get_sub_field('menu_link'); ?>
+                <?php if(empty($etc)):?>
+                  <div href="<?php the_sub_field("menu_link") ?>" class="index_btn">
+                    <p><?php the_sub_field("menu_name") ?></p>
+                  </div>
+                <?php else:?>
+                  <a href="<?php the_sub_field("menu_link") ?>" class="index_btn">
+                    <p><?php the_sub_field("menu_name") ?></p>
+                    <img src="<?php echo $rootDir ?>/images/medical_detail/medical_detail_btn_right.png" alt="">
+                  </a>
+                <?php endif;?>
               <?php endwhile; ?>
             <?php endif;?>
             <p><?php the_field('other_treatment_menu'); ?></p>

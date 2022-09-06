@@ -3431,7 +3431,6 @@ td, th {
   margin-bottom: 0;
 }
 .medical-detail-contents .medical-detail-menuArea .medical-detail-menuArea__box .medical-detail-menuArea__box_contents {
-  width: clamp(10px, 62.5vw, 960px);
   margin-top: clamp(10px, 1.8229166667vw, 28px);
   margin-bottom: clamp(10px, 1.4973958333vw, 23px);
 }

@@ -268,10 +268,10 @@ $rootDir = get_template_directory_uri();
               <div class="facility-collaboratingArea__inner_contents_box_right_tab green">
                 <p>物理療法</p>
               </div>
-              <a href="" class="index_btn facility-collaboratingArea__inner_contents_box_right_ttl">
+              <div class="index_btn facility-collaboratingArea__inner_contents_box_right_ttl">
                 <img src="<?php echo $rootDir ?>/images/facility/facility_btn_green.png" alt="">
                 <p>収束型　対外衝撃波（BTL6000-Focus)</p>
-              </a>
+              </div>
               <div class="facility-collaboratingArea__inner_contents_box_right_txt">
                 <p>
                   当院が採用した体外衝撃波はイギリスBTL社のもので、２０２２年時点で最大の出力を誇ります。<br>
