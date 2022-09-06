@@ -3950,6 +3950,8 @@ td, th {
   width: 100vw;
   height: clamp(10px, 39.9088541667vw, 613px);
   padding-bottom: 13.0208333333vw;
+  height: clamp(10px, 39.9088541667vw, 613px);
+  padding-bottom: 13.0208333333vw;
   background-image: url("../images/introduce/introduce-top-background.png");
   background-position: center;
   background-size: cover;
@@ -4146,6 +4148,9 @@ td, th {
 .introduce-contents .introduce-contents__inner_box_right_name_top_left p.degree.white {
   color: white;
 }
+.introduce-contents .introduce-contents__inner_box_right_name_top_left p.degree span {
+  display: none;
+}
 .introduce-contents .introduce-contents__inner_box_right_name_top_left p.black {
   color: #000;
 }
@@ -4267,6 +4272,8 @@ td, th {
   position: relative;
   z-index: 2;
   width: 100vw;
+  height: clamp(10px, 39.9088541667vw, 613px);
+  padding-bottom: 13.0208333333vw;
   height: clamp(10px, 39.9088541667vw, 613px);
   padding-bottom: 13.0208333333vw;
   background-image: url("../images/flow/flow-top-background.png");
@@ -8309,6 +8316,7 @@ td, th {
     font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
   }
   .introduce-contents .introduce-top-wrapper {
+    padding: 0;
     height: 250px;
     padding-bottom: 0;
     background-position: top;
@@ -8396,7 +8404,7 @@ td, th {
     color: rgba(0, 149, 120, 0.7);
   }
   .introduce-contents .introduce-contents__inner_box_right_name_top_left p.degree.more {
-    bottom: -25px;
+    bottom: -30px;
   }
   .introduce-contents .introduce-contents__inner_box_right_name_top_left p.degree.less {
     bottom: -25px;
@@ -8408,6 +8416,9 @@ td, th {
     bottom: -35px;
     left: 0;
     white-space: nowrap;
+  }
+  .introduce-contents .introduce-contents__inner_box_right_name_top_left p.degree span {
+    display: inline;
   }
   .introduce-contents .introduce-contents__inner_box_right_name_top_right img.small {
     width: 40px;
@@ -8469,6 +8480,7 @@ td, th {
     font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
   }
   .flow-contents .flow-top-wrapper {
+    padding: 0;
     height: 250px;
     padding-bottom: 0;
     background-position: top;
