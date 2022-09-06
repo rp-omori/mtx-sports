@@ -2,6 +2,10 @@
   background-color: #EFF4F3;
   position: relative;
 
+  @include sp {
+    font-family: $fontFamilyHiraGo;
+  }
+
   .flow-top-wrapper{
     position: relative;
     z-index: 2;
@@ -9,6 +13,7 @@
     height: clamp(10px, 39.9088541667vw, 613px);
     padding-bottom: 13.0208333333vw;
     height: clamp(10px,get_vw(613),613px);
+    padding-bottom: get_vw(200);
     background-image: url("../images/flow/flow-top-background.png");
     background-position: center;
     background-size: cover;
@@ -19,8 +24,8 @@
     @include sp {
       padding: 0;
       height: 250px;
+      padding-bottom: 0;
       background-position: top;
-      background-size: 100% 100%;
       background-image: url("../images/flow/flow-top-background_sp.png");
       margin-bottom: 60px;
     }
