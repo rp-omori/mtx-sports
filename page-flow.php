@@ -182,7 +182,7 @@ $rootDir = get_template_directory_uri();
             <div class="flow-circle__inner_right_box_top">
               <div class="flow-circle__inner_right_box_top_ttl">
                 <div class="flow-circle__inner_right_box_top_ttl_left">
-                  <img src="<?php echo $rootDir ?>/images/flow/flow_04.svg" alt="">
+                  <img src="<?php echo $rootDir ?>/images/flow/flow_04.png" alt="">
                   <p>治療プログラム開始<br>（再生医療・運動療法・物理療法）</p>
                 </div>
                 <div class="flow-circle__inner_right_box_top_ttl_right">
@@ -288,7 +288,7 @@ $rootDir = get_template_directory_uri();
             <div class="flow-circle__inner_right_box_top">
               <div class="flow-circle__inner_right_box_top_ttl">
                 <div class="flow-circle__inner_right_box_top_ttl_left">
-                  <img src="<?php echo $rootDir ?>/images/flow/flow_08.svg" alt="">
+                  <img src="<?php echo $rootDir ?>/images/flow/flow_08.png" alt="">
                   <p>運動の日常化</p>
                 </div>
                 <div class="flow-circle__inner_right_box_top_ttl_right">
