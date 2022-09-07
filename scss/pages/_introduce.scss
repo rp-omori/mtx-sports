@@ -339,7 +339,7 @@
                   &.degree{
                     position: absolute;
                     right: -100px;
-                    font-weight: 300;
+                    // font-weight: 300;
                     top: get_vw(10);
                     font-size: calcFz(12);
                     color: #262928;
@@ -431,7 +431,7 @@
                 color: #fff;
                 font-size: calcFz(14);
                 font-family: $fontFamilyYuGo;
-                font-weight: 300;
+                // font-weight: 300;
                 line-height: 1.57;
                 letter-spacing: 0em;
 
@@ -471,7 +471,7 @@
 
               &.small{
                 font-size: calcFz(18);
-                font-weight: 300;
+                // font-weight: 300;
                 margin-top: clamp(10px,get_vw(40),40px);
 
                 @include sp {
@@ -524,7 +524,7 @@
                 color: #fff;
                 font-size: calcFz(16);
                 font-family: $fontFamilyYuGo;
-                font-weight: 300;
+                // font-weight: 300;
                 line-height: 1.75;
                 letter-spacing: 0em;
 
@@ -579,7 +579,7 @@
             li{
               font-size: calcFz(16);
               font-family: $fontFamilyYuGo;
-              font-weight: 300;
+              // font-weight: 300;
               line-height: 1.75;
               letter-spacing: 0em;
 
