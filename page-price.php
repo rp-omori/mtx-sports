@@ -416,7 +416,7 @@ $WP_post = new WP_Query($args);
       <table class="contents-box_menu">
         <tbody class="contents-box_menu__inner">
           <tr class="contents-box_menu__inner_box">
-            <td class="contents-box_menu__inner_box_name">
+            <td class="contents-box_menu__inner_box_name more">
               <div class="flex">
                 <div class="flex_box">
                   <p>DDシステム（ddrobotec®）</p>
@@ -429,7 +429,7 @@ $WP_post = new WP_Query($args);
             <!-- <td class="contents-box_menu__inner_box_price width" rowspan="4"><p>※治療と組み合わせてのご料金となります</p></td> -->
           </tr>
           <tr class="contents-box_menu__inner_box">
-            <td class="contents-box_menu__inner_box_name">
+            <td class="contents-box_menu__inner_box_name more">
               <div class="flex">
                 <div class="flex_box">
                   <p>D-Wall　（Technology社）</p>
@@ -441,7 +441,7 @@ $WP_post = new WP_Query($args);
             </td>
           </tr>
           <tr class="contents-box_menu__inner_box">
-            <td class="contents-box_menu__inner_box_name" rowspan="3">
+            <td class="contents-box_menu__inner_box_name more" rowspan="3">
               <div class="flex">
                 <div class="flex_box">
                   <p>MTXアカデミー</p>
