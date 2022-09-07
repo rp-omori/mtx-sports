@@ -195,6 +195,14 @@
             width: 47%;
             vertical-align: middle;
 
+            &.more{
+              width: 59%;
+
+              @include sp {
+                width: 100%;
+              }
+            }
+
             &.width{
               width: 23.5%;
 
