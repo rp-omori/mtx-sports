@@ -69,7 +69,7 @@
       padding: get_vw(30) get_vw(20);
       background: var(--main-color-white);
       border-radius: 5px;
-      top: get_vw(65);
+      top: var(--headerHeight);
       z-index: 100;
 
       .header__dropdown-item {
