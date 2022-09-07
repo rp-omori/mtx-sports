@@ -193,7 +193,7 @@
             p{
               font-family: $fontFamilyYuGo;
               font-size: calcFz(18);
-              font-weight: 300;
+              // font-weight: 300;
               letter-spacing: 0.02em;
               line-height: 1.77;
 
@@ -355,7 +355,7 @@
         p{
           font-family: $fontFamilyYuGo;
           font-size: calcFz(18);
-          font-weight: 300;
+          // font-weight: 300;
           letter-spacing: 0.02em;
           line-height: 1.6;
           margin-bottom: clamp(10px,get_vw(43),43px);
@@ -446,7 +446,7 @@
             margin-bottom: 0;
             font-family: $fontFamilyYuGo;
             font-size: calcFz(20);
-            font-weight: 300;
+            // font-weight: 300;
             margin-right: clamp(10px,get_vw(20),20px);
 
             @include sp {
