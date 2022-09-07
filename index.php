@@ -110,7 +110,7 @@ $rootDir = get_template_directory_uri();
     <section id="medical-menu" class="medical-menu">
       <div class="section-title__wrapper --white --center js-titleAnimationTarget">
         <h2 class="section-title">MENU</h2>
-        <p class="section-sub-title">症状からさがす診療メニュー</p>
+        <p class="section-sub-title">症状からさがす</p>
       </div>
       <ul class="medical-menu__list">
         <li class="medical-menu__item medical-menu__item--01" style="animation-delay: 0s">
