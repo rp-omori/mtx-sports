@@ -88,7 +88,7 @@
   padding: 1.953125vw 1.3020833333vw;
   background: var(--main-color-white);
   border-radius: 5px;
-  top: 4.2317708333vw;
+  top: var(--headerHeight);
   z-index: 100;
 }
 .header .header__inner .header__dropdown .header__dropdown-item {
