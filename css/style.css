@@ -255,7 +255,6 @@
   margin-bottom: 1.3020833333vw;
   color: var(--main-color-black);
   font-size: clamp(10px, 1.9rem, 19px);
-  font-weight: 300;
   line-height: 1.75;
 }
 .footer .footer-access .footer-access__inner .footer-access__left .footer-access__info .footer-access__info-link {
@@ -1023,13 +1022,11 @@
   color: #fff;
   font-size: clamp(10px, 1.6rem, 16px);
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
-  font-weight: 300;
 }
 .page-title .breadcrumb li a {
   color: #fff;
   font-size: clamp(10px, 1.6rem, 16px);
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
-  font-weight: 300;
 }
 .page-title .breadcrumb span {
   margin: 0 8px;
@@ -1082,13 +1079,11 @@
   color: #fff;
   font-size: clamp(10px, 1.6rem, 16px);
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
-  font-weight: 300;
 }
 .page-bread .breadcrumb li a {
   color: #fff;
   font-size: clamp(10px, 1.6rem, 16px);
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
-  font-weight: 300;
 }
 .page-bread .breadcrumb span {
   margin: 0 8px;
@@ -2976,7 +2971,6 @@
 .privacy-policy-contents .contents-box__text p {
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
   font-size: clamp(10px, 1.8rem, 18px);
-  font-weight: 300;
   line-height: 1.75;
 }
 .privacy-policy-contents .contents-box.lead-box .contents-box__title {
@@ -3052,7 +3046,6 @@
   text-align: center;
   font-family: din-2014, sans-serif;
   font-size: clamp(10px, 1.6rem, 16px);
-  font-weight: 300;
   color: #fff;
   line-height: 1.8;
 }
@@ -3071,7 +3064,6 @@
   text-align: center;
   font-family: din-2014, sans-serif;
   font-size: clamp(10px, 1.8rem, 18px);
-  font-weight: 300;
   color: #262928;
   line-height: 1;
 }
@@ -3134,7 +3126,6 @@
           transform: translate(-50%, -50%);
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
   font-size: clamp(10px, 1.6rem, 16px);
-  font-weight: 300;
   color: #262928;
   line-height: 1.6;
   white-space: nowrap;
@@ -3152,7 +3143,6 @@
           transform: translate(-50%, -50%);
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
   font-size: clamp(10px, 1.6rem, 16px);
-  font-weight: 300;
   color: #262928;
   line-height: 1.6;
 }
@@ -3166,7 +3156,6 @@
 .price-contents .contents-box_menu__inner_box_price.width p {
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
   font-size: clamp(10px, 1.8rem, 18px);
-  font-weight: 300;
   color: #262928;
   text-align: center;
   line-height: 1.6;
@@ -3181,7 +3170,6 @@
   text-align: right;
   font-family: din-2014, sans-serif;
   font-size: clamp(10px, 1.8rem, 18px);
-  font-weight: 300;
   color: #262928;
   line-height: 1.6;
 }
@@ -3194,7 +3182,6 @@
   margin: 0 auto;
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
   font-size: clamp(10px, 1.5rem, 15px);
-  font-weight: 300;
   color: #262928;
   line-height: 1.6;
 }
@@ -3211,7 +3198,6 @@
   color: #262928;
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
   font-size: clamp(10px, 1.6rem, 16px);
-  font-weight: 300;
 }
 .price-contents .contents-box_btn {
   position: absolute;
@@ -3353,7 +3339,6 @@ td, th {
 .medical-detail-contents .medical-detail-top-wrapper .medical-detail-top__right_txtArea_txt p {
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
   font-size: clamp(10px, 1.8rem, 18px);
-  font-weight: 300;
   letter-spacing: 0.02em;
   line-height: 1.77;
 }
@@ -3435,7 +3420,6 @@ td, th {
 .medical-detail-contents .medical-detail-menuArea .medical-detail-menuArea__box .medical-detail-menuArea__box_contents p {
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
   font-size: clamp(10px, 1.8rem, 18px);
-  font-weight: 300;
   letter-spacing: 0.02em;
   line-height: 1.6;
   margin-bottom: clamp(10px, 2.7994791667vw, 43px);
@@ -3490,7 +3474,6 @@ td, th {
   margin-bottom: 0;
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
   font-size: clamp(10px, 2rem, 20px);
-  font-weight: 300;
   margin-right: clamp(10px, 1.3020833333vw, 20px);
 }
 .medical-detail-contents .medical-detail-btnArea {
@@ -3903,7 +3886,6 @@ td, th {
 }
 .facility-contents .facility-collaboratingArea__inner_contents_box_right_txt p {
   font-size: clamp(10px, 1.8rem, 18px);
-  font-weight: 300;
   line-height: 1.75;
   letter-spacing: 0em;
 }
@@ -4122,7 +4104,6 @@ td, th {
 .introduce-contents .introduce-contents__inner_box_right_name_top_left p.degree {
   position: absolute;
   right: -100px;
-  font-weight: 300;
   top: 0.6510416667vw;
   font-size: clamp(10px, 1.2rem, 12px);
   color: #262928;
@@ -4164,7 +4145,6 @@ td, th {
   color: #fff;
   font-size: clamp(10px, 1.4rem, 14px);
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
-  font-weight: 300;
   line-height: 1.57;
   letter-spacing: 0em;
 }
@@ -4184,7 +4164,6 @@ td, th {
 }
 .introduce-contents .introduce-contents__inner_box_right_lead p.small {
   font-size: clamp(10px, 1.8rem, 18px);
-  font-weight: 300;
   margin-top: clamp(10px, 2.6041666667vw, 40px);
 }
 .introduce-contents .introduce-contents__inner_box_right_lead p.small.black {
@@ -4211,7 +4190,6 @@ td, th {
   color: #fff;
   font-size: clamp(10px, 1.6rem, 16px);
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
-  font-weight: 300;
   line-height: 1.75;
   letter-spacing: 0em;
 }
@@ -4240,7 +4218,6 @@ td, th {
 .introduce-contents .introduce-contents__inner_box_license ul li {
   font-size: clamp(10px, 1.6rem, 16px);
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
-  font-weight: 300;
   line-height: 1.75;
   letter-spacing: 0em;
 }
@@ -4354,7 +4331,6 @@ td, th {
 .flow-contents .flow-main__inner_left_txt p {
   font-size: clamp(10px, 1.8rem, 18px);
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
-  font-weight: 300;
   line-height: 1.75;
   width: 100%;
 }
@@ -4503,7 +4479,6 @@ td, th {
 .flow-contents .flow-circle__inner_right_box_top_txt p {
   font-size: clamp(10px, 1.8rem, 18px);
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
-  font-weight: 300;
   line-height: 1.75;
   letter-spacing: 0em;
 }
@@ -4583,7 +4558,6 @@ td, th {
   font-size: clamp(10px, 1.5rem, 15px);
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
   line-height: 1.73;
-  font-weight: 300;
   letter-spacing: 0em;
   margin-bottom: clamp(10px, 1.8229166667vw, 28px);
 }
@@ -4660,7 +4634,6 @@ td, th {
   font-size: clamp(10px, 1.5rem, 15px);
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
   line-height: 1.73;
-  font-weight: 300;
   letter-spacing: 0em;
   margin-bottom: clamp(10px, 1.8229166667vw, 28px);
 }
