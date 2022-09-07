@@ -53,7 +53,7 @@ $rootDir = get_template_directory_uri();
               <ul class="header__list">
                 <li class="header__item">
                   <a href="<?php echo esc_url(home_url('/')), '#', 'medical-menu'; ?>" class="header__link">
-                    症状から探す
+                    症状からさがす
                   </a>
                 </li>
                 <li class="header__item">
@@ -124,7 +124,7 @@ $rootDir = get_template_directory_uri();
                 <ul class="header__list">
                   <li class="header__item">
                     <a href="<?php echo esc_url(home_url('/')), '#', 'medical-menu'; ?>" class="header__link js-header-drawer">
-                      症状から探す
+                      症状からさがす
                     </a>
                   </li>
                   <li class="header__item">
