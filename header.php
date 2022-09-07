@@ -14,6 +14,7 @@ $rootDir = get_template_directory_uri();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, initial-scale=1.0, user-scalable=no">
+    <title>再生医療、運動療法ならMTXスポーツ・関節クリニック</title>
     <link rel="shortcut icon" href="<?php echo $rootDir; ?>/images/favicon.ico">
     <link rel="stylesheet" href="<?php echo $rootDir; ?>/css/reset.css">
     <link rel="stylesheet" href="<?php echo $rootDir; ?>/css/default.css">
