@@ -454,7 +454,7 @@
               @include sp {
                 font-family: $fontFamilyHiraGo;
                 font-size: calcFz(15);
-                font-weight: 300;
+                // font-weight: 300;
               }
             }
           }
@@ -733,7 +733,7 @@
           .symptoms__note {
             padding-left: get_vw(10);
             font-size: calcFz(13);
-            font-weight: 300;
+            // font-weight: 300;
 
             @include sp {
               margin-top: 7px;
