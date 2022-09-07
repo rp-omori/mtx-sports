@@ -3066,6 +3066,9 @@
   width: 47%;
   vertical-align: middle;
 }
+.price-contents .contents-box_menu__inner_box_name.more {
+  width: 59%;
+}
 .price-contents .contents-box_menu__inner_box_name.width {
   width: 23.5%;
 }
@@ -7747,6 +7750,9 @@ td, th {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .price-contents .contents-box_menu__inner_box_name.more {
+    width: 100%;
   }
   .price-contents .contents-box_menu__inner_box_name.width {
     width: 100%;
