@@ -117,7 +117,7 @@ $WP_post = new WP_Query($args);
       <div class="contents-box_cat">
         <p>再生医療</p>
       </div>
-      <table class="contents-box_menu_other">
+      <!-- <table class="contents-box_menu_other">
         <tbody class="contents-box_menu__other__inner">
           <tr class="contents-box_menu_other__inner_box">
             <td class="contents-box_menu_other__inner_box_ttl"><p>体験価格５０％OFF</p></td>
@@ -174,7 +174,7 @@ $WP_post = new WP_Query($args);
             <td class="contents-box_menu_other__inner_box_price small"><p>-</p></td>
           </tr>
         </tbody>
-      </table>
+      </table> -->
       <table class="contents-box_menu">
         <tbody class="contents-box_menu__inner">
           <tr class="contents-box_menu__inner_box">

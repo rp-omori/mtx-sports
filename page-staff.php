@@ -305,7 +305,7 @@ $rootDir = get_template_directory_uri();
                   <p class="en other">WATANABE</p>
                   <p>渡邊　健二</p>
                   <p class="small">わたなべ　けんじ</p>
-                  <p class="degree more white">柔道整復師</p>
+                  <p class="degree less white">柔道整復師</p>
                 </div>
                 <div class="introduce-contents__inner_box_right_name_top_right">
                   <img src="<?php echo $rootDir ?>/images/introduce/method_03.png" alt="">
