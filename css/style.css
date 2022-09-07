@@ -527,7 +527,6 @@
 }
 .footer .footer__inner .footer__menu .footer__menu-item {
   margin-bottom: 1.6276041667vw;
-  font-weight: 400;
   line-height: 1.4;
 }
 .footer .footer__inner .footer__menu .footer__menu-sub {
@@ -1294,23 +1293,18 @@
 }
 .mw_wp_form_input .form-group .form-input::-webkit-input-placeholder {
   color: #C6C6C6;
-  font-weight: 400;
 }
 .mw_wp_form_input .form-group .form-input::-moz-placeholder {
   color: #C6C6C6;
-  font-weight: 400;
 }
 .mw_wp_form_input .form-group .form-input:-ms-input-placeholder {
   color: #C6C6C6;
-  font-weight: 400;
 }
 .mw_wp_form_input .form-group .form-input::-ms-input-placeholder {
   color: #C6C6C6;
-  font-weight: 400;
 }
 .mw_wp_form_input .form-group .form-input::placeholder {
   color: #C6C6C6;
-  font-weight: 400;
 }
 .mw_wp_form_input .form-group .form-input:focus-visible {
   outline: var(--main-color) auto 1px;
@@ -1430,23 +1424,18 @@
 }
 .mw_wp_form_confirm .form-group .form-input::-webkit-input-placeholder {
   color: #C6C6C6;
-  font-weight: 400;
 }
 .mw_wp_form_confirm .form-group .form-input::-moz-placeholder {
   color: #C6C6C6;
-  font-weight: 400;
 }
 .mw_wp_form_confirm .form-group .form-input:-ms-input-placeholder {
   color: #C6C6C6;
-  font-weight: 400;
 }
 .mw_wp_form_confirm .form-group .form-input::-ms-input-placeholder {
   color: #C6C6C6;
-  font-weight: 400;
 }
 .mw_wp_form_confirm .form-group .form-input::placeholder {
   color: #C6C6C6;
-  font-weight: 400;
 }
 .mw_wp_form_confirm .form-group .form-input:focus-visible {
   outline: var(--main-color) auto 1px;
@@ -3632,7 +3621,6 @@ td, th {
 .facility-contents .facility-systemArea__inner_txt p {
   text-align: center;
   font-size: clamp(10px, 1.8rem, 18px);
-  font-weight: 400;
   line-height: 1.75;
   letter-spacing: 0em;
 }
@@ -4766,7 +4754,6 @@ td, th {
   text-align: left;
   font-size: clamp(10px, 1.8rem, 18px);
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
-  font-weight: 400;
   line-height: 1.75;
   letter-spacing: 0em;
 }
@@ -5802,7 +5789,6 @@ td, th {
   text-align: left;
   font-size: clamp(10px, 1.8rem, 18px);
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
-  font-weight: 400;
   line-height: 1.75;
   letter-spacing: 0em;
 }
@@ -6262,7 +6248,6 @@ td, th {
     display: block;
     margin-bottom: 8vw;
     font-size: clamp(10px, 1.5rem, 15px);
-    font-weight: 400;
     line-height: 1.4;
   }
   .header .header__inner .header__mobile-nav.header__mobile-nav--active .header__drawer .header__list .header__link {
@@ -7294,7 +7279,6 @@ td, th {
   .top .clinic-features .clinic-features__wrapper .clinic-features__01 .clinic-features__01-main .clinic-features__01-main-text {
     color: var(--main-color-white);
     font-size: clamp(10px, 1.5rem, 15px);
-    font-weight: 400;
     line-height: 1.6;
   }
   .top .clinic-features .clinic-features__wrapper .clinic-features__01 .clinic-features__01-main .clinic-features__btn-wrapper {
@@ -9236,7 +9220,6 @@ td, th {
         -ms-flex-order: 3;
             order: 3;
     font-size: clamp(10px, 1.2rem, 12px);
-    font-weight: 400;
   }
   .contact .form-group__head.col-3 .form-badge {
     -webkit-box-ordinal-group: 2;
