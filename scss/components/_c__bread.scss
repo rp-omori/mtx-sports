@@ -14,7 +14,7 @@
       color: #fff;
       font-size: calcFz(16);
       font-family: $fontFamilyYuGo;
-      font-weight: 300;
+      // font-weight: 300;
 
       @include sp {
         font-size: calcFz(11);
@@ -24,7 +24,7 @@
         color: #fff;
         font-size: calcFz(16);
         font-family: $fontFamilyYuGo;
-        font-weight: 300;
+        // font-weight: 300;
 
         @include sp {
           font-size: calcFz(11);

@@ -176,7 +176,7 @@
           p{
             font-size: calcFz(18);
             font-family: $fontFamilyYuGo;
-            font-weight: 300;
+            // font-weight: 300;
             line-height: 1.75;
             width: 100%;
 
@@ -459,7 +459,7 @@
               p{
                 font-size: calcFz(18);
                 font-family: $fontFamilyYuGo;
-                font-weight: 300;
+                // font-weight: 300;
                 line-height: 1.75;
                 letter-spacing: 0em;
 
@@ -605,7 +605,7 @@
                   font-size: calcFz(15);
                   font-family: $fontFamilyYuGo;
                   line-height: 1.73;
-                  font-weight: 300;
+                  // font-weight: 300;
                   letter-spacing: 0em;
                   margin-bottom: clamp(10px,get_vw(28),28px);
 
@@ -751,7 +751,7 @@
                   font-size: calcFz(15);
                   font-family: $fontFamilyYuGo;
                   line-height: 1.73;
-                  font-weight: 300;
+                  // font-weight: 300;
                   letter-spacing: 0em;
                   margin-bottom: clamp(10px,get_vw(28),28px);
 
