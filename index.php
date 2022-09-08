@@ -77,7 +77,7 @@ $rootDir = get_template_directory_uri();
       </div>
     </div>
 
-    <!-- <section class="news">
+    <section class="news">
       <div class="news__wrapper">
         <div class="news__inner">
           <div class="news__head">
@@ -115,7 +115,7 @@ $rootDir = get_template_directory_uri();
           </ul>
         </div>
       </div>
-    </section> -->
+    </section>
 
     <section id="medical-menu" class="medical-menu">
       <div class="section-title__wrapper --white --center js-titleAnimationTarget">

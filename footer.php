@@ -163,27 +163,9 @@ $rootDir = get_template_directory_uri();
                   <li class="footer__menu-head">
                     <a href="<?php echo esc_url(home_url('/staff')); ?>" class="footer__menu-link">医師・スタッフ紹介</a>
                   </li>
-                  <!-- <li class="footer__menu-item">
-                    <a href="" class="footer__menu-link">院長</a>
-                  </li>
-                  <li class="footer__menu-item">
-                    <a href="" class="footer__menu-link">監修医師</a>
-                  </li>
-                  <li class="footer__menu-item">
-                    <a href="" class="footer__menu-link">理学療法士</a>
-                  </li>
-                  <li class="footer__menu-item">
-                    <a href="" class="footer__menu-link">柔道整復師</a>
-                  </li>
-                  <li class="footer__menu-item">
-                    <a href="" class="footer__menu-link">ハリ師・きゅう師・あん摩<br>マッサージ指圧師</a>
-                  </li>
-                  <li class="footer__menu-item">
-                    <a href="" class="footer__menu-link">HALリハビリ担当</a>
-                  </li> -->
                 </ul>
               </li>
-              <!-- <li class="footer__menu-nav">
+              <li class="footer__menu-nav">
                 <ul class="footer__menu-list">
                   <li class="footer__menu-sub">
                     <a href="<?php echo esc_url(home_url('/news')); ?>" class="footer_menu-link">お知らせ</a>
@@ -192,7 +174,7 @@ $rootDir = get_template_directory_uri();
                     <a href="<?php echo esc_url(home_url('/colum')); ?>" class="footer_menu-link">コラム</a>
                   </li>
                 </ul>
-              </li> -->
+              </li>
             </ul>
           </div>
           <div class="footer__bottom">
@@ -221,7 +203,6 @@ $rootDir = get_template_directory_uri();
       <div class="footer-float">
         <div class="footer-float__inner">
           <div class="footer-float__inner-left">
-            <!-- <p class="footer-float__inner-text">診療のご予約はこちら</p> -->
             <div class="footer-contact__btn-wrapper">
               <a href="tel:0362725047" class="btn btn--white btn--tel_white sp">
                 <span></span>
@@ -247,12 +228,6 @@ $rootDir = get_template_directory_uri();
             </div>
           </div>
           <div class="footer-float__inner-right">
-            <!-- <p class="footer-float__inner-text">受診前のご相談はこちら</p>
-            <div class="footer-contact__btn-wrapper">
-              <a href="" class="btn btn--footer_green btn--email">
-                <span>メールで診療相談</span>
-              </a>
-            </div> -->
             <div class="footer-contact__time">
               <div class="footer-contact__time-inner">
                 <p class="footer-contact__tel">03-6272-5047</p>
