@@ -24,7 +24,7 @@ $rootDir = get_template_directory_uri();
         <div class="contact__time">
           <div class="contact__time-inner">
             <div class="contact__tel-wrapper">
-              <a href="">
+              <a href="tel:03-6272-5047">
                 <p class="contact__tel">03-6272-5047</p>
               </a>
             </div>
@@ -38,10 +38,10 @@ $rootDir = get_template_directory_uri();
           <div class="contact__appointment-inner">
             <h3 class="contact__appointment-head">診察のご予約はこちら</h3>
             <div class="contact__appointment-btn-wrapper">
-              <a href="#" class="btn btn--orange btn--web">
+              <a href="https://web.booking.clius.jp/reserve/mtxclinic_yotsuya" target="_blank" class="btn btn--orange btn--web">
                 <span>WEB予約</span>
               </a>
-              <a href="https://lin.ee/DhflNAe" class="btn btn--white btn--line">
+              <a href="https://lin.ee/DhflNAe" target="_blank" class="btn btn--white btn--line">
                 <span>LINEで予約</span>
               </a>
             </div>

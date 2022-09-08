@@ -41,7 +41,12 @@ $rootDir = get_template_directory_uri();
             </div>
           </div>
           <h3 class="concept-lead__title">“ 治る ” 関節治療を目指して</h3>
-          <p class="concept-lead__text">アスリートの競技人生・身体的障害のある方の人生に向き合い、身体の機能改善に取り組んできたMTXだからできる「再生医療」×「運動療法」を組み合わせた医療。医師とトレーナー陣が一体となって、パフォーマンスや痛みに悩む方々に寄り添い、共に解決に向かって進んでいきます。</p>
+          <p class="concept-lead__text">
+            これまでアスリートの競技人生・身体的障害のある方の人生に長年向き合い、身体的な機能改善に取り組んできたMTXは、今回新たに医師を仲間に加え、海外では当たり前にあるような医療と運動療法を組み合わせた複合施設型のクリニックを作ります。<br>
+            私たちが目指すのは、“寝たきりゼロの社会を作ること”そのためには、治療だけではなく、関節疾患にかからない身体をつくる予防への意識づけや習慣化が重要です。<br><br>
+            当院が用いるのは、「再生医療」と「運動療法」を組み合わせた治療。<br>
+            「再生医療」では従来の脂肪幹細胞移植治療や、PRP治療だけではなく、比較的安価な幹細胞培養上清液治療を用い、「運動療法」では、MTXアカデミーと連携し、医師の処方内容に基づいて、理学療法士・トレーナーと連携した治療で相乗効果を出すことで、症状の改善、再発の予防をしてまいります。
+          </p>
         </div>
         <div class="concept-lead__right">
           <div class="concept-lead__img">
@@ -167,7 +172,7 @@ $rootDir = get_template_directory_uri();
                   </div>
                   <div class="concept-interview__lead-human-body">
                     <p class="concept-interview__lead-human-title">MTXトレーナー</p>
-                    <p class="concept-interview__lead-human-name">木村　國宏</p>
+                    <p class="concept-interview__lead-human-name">木村　匡宏</p>
                     <p class="concept-interview__lead-human-ruby">きむら　まさひろ</p>
                   </div>
                 </div>
@@ -188,7 +193,7 @@ $rootDir = get_template_directory_uri();
                   <div class="concept-interview__comment-inner">
                     <p class="concept-interview__comment-name">世良</p>
                     <p class="concept-interview__comment-text">
-                      プロチームでスポーツドクターとして活動していましたが、プロよりも、”環境が整っていない子”のサポートに興味がありました。未だに非科学的な指導を受けている子に、運動の仕方まで処方できる正しいスポーツ医療を提供したいです。
+                      学生チームやプロチームでスポーツドクターとして活動していましたが、プロよりも、”環境が整っていない子”のサポートに興味がありました。未だに非科学的な指導を受けている子に、運動の仕方まで処方できる正しいスポーツ医療を提供したいです。
                     </p>
                   </div>
                   <div class="concept-interview__comment-inner">
@@ -264,13 +269,13 @@ $rootDir = get_template_directory_uri();
                     <p class="concept-interview__comment-name">富岡</p>
                     <p class="concept-interview__comment-text">
                       一般的な病院は、状態がマイナスに落ち込んだ人を０の状態に戻すことが任務ですが、それだけだと途中でケアが終わってしまいます。本来であればマイナスを０、そしてプラスまでもってくのが理想です。筋トレをしたりだとか、実際に球を投げるところも見て、初めて治療が完了する。<br>
-                      MTXアカデミーではそういうことまで行います。
+                      我々はMTXアカデミーと連携しそういうことまで行います。
                     </p>
                   </div>
                   <div class="concept-interview__comment-inner">
                     <p class="concept-interview__comment-name">世良</p>
                     <p class="concept-interview__comment-text">
-                      医師以外のスタッフが充実していますので、怪我まではいかないけれど腰が痛いとか、純粋にパフォーマンスを上げたいっていう人もケアできます。リハビリから先の、ケガを予防するためのパフォーマンス上昇術など木村さんなどのトレーニングは、おじいちゃん、おばあちゃんでも応用できます。この一気通貫したサービスは他にはないと思いますね。
+                      医師以外のスタッフが充実していますので、怪我まではいかないけれど腰が痛いとか、純粋にパフォーマンスを上げたいっていう人もケアできます。リハビリから先の、ケガを予防するためのパフォーマンス上昇術など、木村さんをはじめとしたMTXのトレーニングは、おじいちゃん、おばあちゃんでも応用できます。この一気通貫したサービスは他にはないと思いますね。
                     </p>
                   </div>
                 </div>
@@ -290,7 +295,7 @@ $rootDir = get_template_directory_uri();
                   <div class="concept-interview__comment-inner">
                     <p class="concept-interview__comment-name">世良</p>
                     <p class="concept-interview__comment-text">
-                      我々は、治るというのは日常生活で本人が求めるレベルまで戻ることかなと考えているのです。この本人が求めるレベルというのが、個人によって異なる。医師が行うリハビリにほとんどの運動療法は入っていないのです。
+                      我々は、治るというのは日常生活で本人が求めるレベルまで戻ることかなと考えているのです。この本人が求めるレベルというのが、個人によって異なる。医師が行う治療には、時間がかかることや保険診療でないことから、有効と分かっている運動療法がほとんど含まれないのです。
                     </p>
                   </div>
                   <div class="concept-interview__comment-inner">
@@ -302,7 +307,7 @@ $rootDir = get_template_directory_uri();
                   <div class="concept-interview__comment-inner">
                     <p class="concept-interview__comment-name">富岡</p>
                     <p class="concept-interview__comment-text">
-                      そうですね。体の異常は、構造的な異常と、機能的な異常に分けられます。レントゲンなどの検査では異常はないけれど、ダッシュをしたら痛いっていうのは、機能的な異常が放置されている可能性がある。両方しっかり診てあげて、患者さんのゴールに応じて、再生医療もリハビリも、運動療法も含めて行うことが“治る関節治療”だと思います。
+                      そうですね。体の異常は、構造的な異常と、機能的な異常に分けられます。レントゲンなどの検査では異常はないけれど、ダッシュをしたら痛いっていうのは、機能的な異常が放置されている可能性がある。両方しっかり診て、患者さんのゴールに応じて、再生医療もリハビリも、運動療法も含めて行うことが“治る関節治療”だと思います。
                     </p>
                   </div>
                 </div>
@@ -322,7 +327,7 @@ $rootDir = get_template_directory_uri();
                   <div class="concept-interview__comment-inner">
                     <p class="concept-interview__comment-name">富岡</p>
                     <p class="concept-interview__comment-text">
-                      クリニックではDDシステムとD-Wallっていう２種類の最新器具を導入しています。<br>
+                      クリニックではDDシステムとD-Wallという２種類の最新器具を導入しています。<br>
                       どちらも自分の身体の状態を数値で表示する機械です。数値で表すことで、どれくらい良くなったかが分かりやすいと思います。
                     </p>
                   </div>
@@ -357,7 +362,7 @@ $rootDir = get_template_directory_uri();
                   <div class="concept-interview__comment-inner">
                     <p class="concept-interview__comment-name">富岡</p>
                     <p class="concept-interview__comment-text">
-                      患者さんが自分の身体のことを、きちんと理解できるようになって欲しいと思いますね。<br>
+                      患者さんが自分の身体の状態を、きちんと理解できるようになるのが理想です。<br>
                       子どもは、身体の使い方を間違えたり、限界がわからず無理をしてケガをするということが多いのです。自分の身体を知れば、痛みなく効率的にパフォーマンスを伸ばせると思います。
                     </p>
                   </div>

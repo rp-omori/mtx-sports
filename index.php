@@ -16,15 +16,9 @@ $rootDir = get_template_directory_uri();
       <p class="kv__float-text">MTX SPORTS & ARTICULAR CLINIC</p>
       <div class="kv__swiper">
         <div class="txtArea">
-          <!-- <div class="txtArea__head white_txt">
-            <p class="date">08.29<span>mon~</span></p>
-            <h2>GRAND OPEN!!</h2>
-          </div> -->
           <p class="txtArea__label">再生医療×運動療法で</p>
           <h3 class="txtArea__sub-title white_txt">
             <picture>
-              <!-- <source media="(max-width: 767px)" srcset="<?php echo $rootDir ?>/images/top/kv_lead-sp.svg">
-              <img src="<?php echo $rootDir ?>/images/top/kv_lead.svg" alt="治るスポーツ・関節医療を目指して"> -->
               <source media="(max-width: 767px)" srcset="<?php echo $rootDir ?>/images/top/kv_lead_new-sp.svg">
               <img src="<?php echo $rootDir ?>/images/top/kv_lead_new.svg" alt="治るスポーツ・関節医療を目指して">
             </picture>
@@ -47,104 +41,23 @@ $rootDir = get_template_directory_uri();
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <picture>
-              <source media="(max-width: 768px)" srcset="<?php echo $rootDir ?>/images/top/kv_02-sp.png">
-              <img src="<?php echo $rootDir ?>/images/top/kv_02.png" alt="">
+              <source media="(max-width: 768px)" srcset="<?php echo $rootDir ?>/images/top/kv_01-sp.png">
+              <img src="<?php echo $rootDir ?>/images/top/kv_01.png" alt="">
             </picture>
-            <!-- <div class="txtArea">
-              <div class="txtArea__head white_txt">
-                <p class="date">08.29<span>mon~</span></p>
-                <h2>GRAND OPEN!!</h2>
-              </div>
-              <p class="txtArea__label">再生医療×運動療法で</p>
-              <h3 class="txtArea__sub-title white_txt">
-                <picture>
-                  <source media="(max-width: 767px)" srcset="<?php echo $rootDir ?>/images/top/kv_lead-sp.svg">
-                  <img src="<?php echo $rootDir ?>/images/top/kv_lead.svg" alt="治るスポーツ・関節医療を目指して">
-                </picture>
-              </h3>
-              <p class="txtArea__text white_txt pc">アスリートの競技人生・身体的障害のある方の人生に向き合い、身体の機能改善に取り組んできたMTXだからできる「再生医療」×「運動療法」を組み合わせた医療。医師と理学療法士、トレーナー陣が一体となって、パフォーマンスや痛みに悩む方々に寄り添い、共に解決に向かって進んでいきます。</p>
-              <div class="feature__box-wrapper pc">
-                <div class="feature__box">
-                  <div class="feature__circle">
-                    <p class="feature__circle-text">運動による<br>スポーツ障害</p>
-                  </div>
-                  <div class="feature__circle">
-                    <p class="feature__circle-text">保険診療では<br>治らなかった<br>関節痛</p>
-                  </div>
-                  <div class="feature__circle">
-                    <p class="feature__circle-text">子どもの<br>成長痛<br>・運動機能の悩み</p>
-                  </div>
-                </div>
-              </div>
-            </div> -->
           </div>
           <div class="swiper-slide">
             <div class="kv_img">
               <picture>
-                <source media="(max-width: 768px)" srcset="<?php echo $rootDir ?>/images/top/kv_01-sp.png">
-                <img src="<?php echo $rootDir ?>/images/top/kv_01.png" alt="">
+                <source media="(max-width: 768px)" srcset="<?php echo $rootDir ?>/images/top/kv_02-sp.png">
+                <img src="<?php echo $rootDir ?>/images/top/kv_02.png" alt="">
               </picture>
             </div>
-            <!-- <div class="txtArea">
-              <div class="txtArea__head white_txt">
-                <p class="date">08.29<span>mon~</span></p>
-                <h2>GRAND OPEN!!</h2>
-              </div>
-              <p class="txtArea__label">再生医療×運動療法で</p>
-              <h3 class="txtArea__sub-title white_txt">
-                <picture>
-                  <source media="(max-width: 767px)" srcset="<?php echo $rootDir ?>/images/top/kv_lead-sp.svg">
-                  <img src="<?php echo $rootDir ?>/images/top/kv_lead.svg" alt="治るスポーツ・関節医療を目指して">
-                </picture>
-              </h3>
-              <p class="txtArea__text white_txt pc">アスリートの競技人生・身体的障害のある方の人生に向き合い、身体の機能改善に取り組んできたMTXだからできる「再生医療」×「運動療法」を組み合わせた医療。医師と理学療法士、トレーナー陣が一体となって、パフォーマンスや痛みに悩む方々に寄り添い、共に解決に向かって進んでいきます。</p>
-              <div class="feature__box-wrapper pc">
-                <div class="feature__box">
-                  <div class="feature__circle">
-                    <p class="feature__circle-text">運動による<br>スポーツ障害</p>
-                  </div>
-                  <div class="feature__circle">
-                    <p class="feature__circle-text">保険診療では<br>治らなかった<br>関節痛</p>
-                  </div>
-                  <div class="feature__circle">
-                    <p class="feature__circle-text">子どもの<br>成長痛<br>・運動機能の悩み</p>
-                  </div>
-                </div>
-              </div>
-            </div> -->
           </div>
           <div class="swiper-slide">
             <picture>
               <source media="(max-width: 768px)" srcset="<?php echo $rootDir ?>/images/top/kv_03-sp.png">
               <img src="<?php echo $rootDir ?>/images/top/kv_03.png" alt="">
             </picture>
-            <!-- <div class="txtArea">
-              <div class="txtArea__head white_txt">
-                <p class="date">08.29<span>mon~</span></p>
-                <h2>GRAND OPEN!!</h2>
-              </div>
-              <p class="txtArea__label">再生医療×運動療法で</p>
-              <h3 class="txtArea__sub-title white_txt">
-                <picture>
-                  <source media="(max-width: 767px)" srcset="<?php echo $rootDir ?>/images/top/kv_lead-sp.svg">
-                  <img src="<?php echo $rootDir ?>/images/top/kv_lead.svg" alt="治るスポーツ・関節医療を目指して">
-                </picture>
-              </h3>
-              <p class="txtArea__text white_txt pc">アスリートの競技人生・身体的障害のある方の人生に向き合い、身体の機能改善に取り組んできたMTXだからできる「再生医療」×「運動療法」を組み合わせた医療。医師と理学療法士、トレーナー陣が一体となって、パフォーマンスや痛みに悩む方々に寄り添い、共に解決に向かって進んでいきます。</p>
-              <div class="feature__box-wrapper pc">
-                <div class="feature__box">
-                  <div class="feature__circle">
-                    <p class="feature__circle-text">運動による<br>スポーツ障害</p>
-                  </div>
-                  <div class="feature__circle">
-                    <p class="feature__circle-text">保険診療では<br>治らなかった<br>関節痛</p>
-                  </div>
-                  <div class="feature__circle">
-                    <p class="feature__circle-text">子どもの<br>成長痛<br>・運動機能の悩み</p>
-                  </div>
-                </div>
-              </div>
-            </div> -->
           </div>
         </div>
 
@@ -164,7 +77,7 @@ $rootDir = get_template_directory_uri();
       </div>
     </div>
 
-    <section class="news">
+    <!-- <section class="news">
       <div class="news__wrapper">
         <div class="news__inner">
           <div class="news__head">
@@ -202,12 +115,12 @@ $rootDir = get_template_directory_uri();
           </ul>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section id="medical-menu" class="medical-menu">
       <div class="section-title__wrapper --white --center js-titleAnimationTarget">
         <h2 class="section-title">MENU</h2>
-        <p class="section-sub-title">症状から探す診療メニュー</p>
+        <p class="section-sub-title">症状からさがす</p>
       </div>
       <ul class="medical-menu__list">
         <li class="medical-menu__item medical-menu__item--01" style="animation-delay: 0s">
@@ -220,16 +133,34 @@ $rootDir = get_template_directory_uri();
             </button>
           </h3>
           <ul class="symptoms__list">
+          <?php
+            $args = [
+              'post_type' => 'medicaldetail',
+              'order' => 'ASC',
+              'posts_per_page' => -1,
+              'tax_query' => [
+                [
+                  'taxonomy' => 'medical_type',
+                  'field'    => 'slug',
+                  'terms'    => 'shoulder',
+                ]
+              ],
+            ];
+            $WP_post = new WP_Query($args);
+            if ($WP_post->have_posts()) {
+              while ($WP_post->have_posts()) {
+                $WP_post->the_post();
+          ?>
             <li class="symptoms__item">
-              <a href="" class="symptoms__link">
-                <h4 class="symptoms__name">肩関節周囲炎<br>（凍結肩・五十肩）</h4>
+              <a href="<?php the_permalink(); ?>" class="symptoms__link">
+                <h4 class="symptoms__name"><?php the_title(); ?></h4>
               </a>
             </li>
-            <li class="symptoms__item">
-              <a href="" class="symptoms__link">
-                <h4 class="symptoms__name">腱板損傷</h4>
-              </a>
-            </li>
+          <?php
+            }
+            wp_reset_postdata();
+          }
+          ?>
           </ul>
         </li>
         <li class="medical-menu__item medical-menu__item--02" style="animation-delay: 0.2s">
@@ -242,26 +173,34 @@ $rootDir = get_template_directory_uri();
             </button>
           </h3>
           <ul class="symptoms__list">
+          <?php
+            $args = [
+              'post_type' => 'medicaldetail',
+              'order' => 'ASC',
+              'posts_per_page' => -1,
+              'tax_query' => [
+                [
+                  'taxonomy' => 'medical_type',
+                  'field'    => 'slug',
+                  'terms'    => 'lower-back',
+                ]
+              ],
+            ];
+            $WP_post = new WP_Query($args);
+            if ($WP_post->have_posts()) {
+              while ($WP_post->have_posts()) {
+                $WP_post->the_post();
+          ?>
             <li class="symptoms__item">
-              <a href="" class="symptoms__link">
-                <h4 class="symptoms__name">腰部脊柱管狭窄症</h4>
+              <a href="<?php the_permalink(); ?>" class="symptoms__link">
+                <h4 class="symptoms__name"><?php the_title(); ?></h4>
               </a>
             </li>
-            <li class="symptoms__item">
-              <a href="" class="symptoms__link">
-                <h4 class="symptoms__name">腰椎すべり症</h4>
-              </a>
-            </li>
-            <li class="symptoms__item">
-              <a href="" class="symptoms__link">
-                <h4 class="symptoms__name">腰椎椎間板ヘルニア</h4>
-              </a>
-            </li>
-            <li class="symptoms__item">
-              <a href="" class="symptoms__link">
-                <h4 class="symptoms__name">ロコモティブシンドローム</h4>
-              </a>
-            </li>
+          <?php
+            }
+            wp_reset_postdata();
+          }
+          ?>
           </ul>
         </li>
         <li class="medical-menu__item medical-menu__item--03" style="animation-delay: 0.6s">
@@ -274,26 +213,34 @@ $rootDir = get_template_directory_uri();
             </button>
           </h3>
           <ul class="symptoms__list">
+          <?php
+            $args = [
+              'post_type' => 'medicaldetail',
+              'order' => 'ASC',
+              'posts_per_page' => -1,
+              'tax_query' => [
+                [
+                  'taxonomy' => 'medical_type',
+                  'field'    => 'slug',
+                  'terms'    => 'legs',
+                ]
+              ],
+            ];
+            $WP_post = new WP_Query($args);
+            if ($WP_post->have_posts()) {
+              while ($WP_post->have_posts()) {
+                $WP_post->the_post();
+          ?>
             <li class="symptoms__item">
-              <a href="" class="symptoms__link">
-                <h4 class="symptoms__name">腰部脊柱管狭窄症</h4>
+              <a href="<?php the_permalink(); ?>" class="symptoms__link">
+                <h4 class="symptoms__name"><?php the_title(); ?></h4>
               </a>
             </li>
-            <li class="symptoms__item">
-              <a href="" class="symptoms__link">
-                <h4 class="symptoms__name">腰椎すべり症</h4>
-              </a>
-            </li>
-            <li class="symptoms__item">
-              <a href="" class="symptoms__link">
-                <h4 class="symptoms__name">腰椎椎間板ヘルニア</h4>
-              </a>
-            </li>
-            <li class="symptoms__item">
-              <a href="" class="symptoms__link">
-                <h4 class="symptoms__name">ロコモティブシンドローム</h4>
-              </a>
-            </li>
+          <?php
+            }
+            wp_reset_postdata();
+          }
+          ?>
           </ul>
         </li>
         <li class="medical-menu__item medical-menu__item--04" style="animation-delay: 0.8s">
@@ -306,16 +253,34 @@ $rootDir = get_template_directory_uri();
             </button>
           </h3>
           <ul class="symptoms__list">
+          <?php
+            $args = [
+              'post_type' => 'medicaldetail',
+              'order' => 'ASC',
+              'posts_per_page' => -1,
+              'tax_query' => [
+                [
+                  'taxonomy' => 'medical_type',
+                  'field'    => 'slug',
+                  'terms'    => 'knee',
+                ]
+              ],
+            ];
+            $WP_post = new WP_Query($args);
+            if ($WP_post->have_posts()) {
+              while ($WP_post->have_posts()) {
+                $WP_post->the_post();
+          ?>
             <li class="symptoms__item">
-              <a href="" class="symptoms__link">
-                <h4 class="symptoms__name">変形性関節症</h4>
+              <a href="<?php the_permalink(); ?>" class="symptoms__link">
+                <h4 class="symptoms__name"><?php the_title(); ?></h4>
               </a>
             </li>
-            <li class="symptoms__item">
-              <a href="" class="symptoms__link">
-                <h4 class="symptoms__name">ロコモティブシンドローム</h4>
-              </a>
-            </li>
+          <?php
+            }
+            wp_reset_postdata();
+          }
+          ?>
           </ul>
         </li>
         <li class="medical-menu__item medical-menu__item--05 medical-menu__item--dg" style="animation-delay: 1s">
@@ -328,47 +293,34 @@ $rootDir = get_template_directory_uri();
             </button>
           </h3>
           <ul class="symptoms__list">
-            <li class="symptoms__item col">
-              <a href="" class="symptoms__link">
-                <h4 class="symptoms__name">疲労骨折</h4>
-                <span class="symptoms__note">（腰椎分離症含む）</span>
-              </a>
-            </li>
+          <?php
+            $args = [
+              'post_type' => 'medicaldetail',
+              'order' => 'ASC',
+              'posts_per_page' => -1,
+              'tax_query' => [
+                [
+                  'taxonomy' => 'medical_type',
+                  'field'    => 'slug',
+                  'terms'    => 'sports',
+                ]
+              ],
+            ];
+            $WP_post = new WP_Query($args);
+            if ($WP_post->have_posts()) {
+              while ($WP_post->have_posts()) {
+                $WP_post->the_post();
+          ?>
             <li class="symptoms__item">
-              <a href="" class="symptoms__link">
-                <h4 class="symptoms__name">関節捻挫<br>（靭帯損傷）</h4>
+              <a href="<?php the_permalink(); ?>" class="symptoms__link">
+                <h4 class="symptoms__name"><?php the_title(); ?></h4>
               </a>
             </li>
-            <li class="symptoms__item">
-              <a href="" class="symptoms__link">
-                <h4 class="symptoms__name">野球肘</h4>
-              </a>
-            </li>
-            <li class="symptoms__item">
-              <a href="" class="symptoms__link">
-                <h4 class="symptoms__name">前十字靭帯損傷</h4>
-              </a>
-            </li>
-            <li class="symptoms__item">
-              <a href="" class="symptoms__link">
-                <h4 class="symptoms__name">投球障害肩</h4>
-              </a>
-            </li>
-            <li class="symptoms__item">
-              <a href="" class="symptoms__link">
-                <h4 class="symptoms__name">シンスプリント</h4>
-              </a>
-            </li>
-            <li class="symptoms__item">
-              <a href="" class="symptoms__link">
-                <h4 class="symptoms__name">肉離れ</h4>
-              </a>
-            </li>
-            <li class="symptoms__item">
-              <a href="" class="symptoms__link">
-                <h4 class="symptoms__name">健周囲炎</h4>
-              </a>
-            </li>
+          <?php
+            }
+            wp_reset_postdata();
+          }
+          ?>
           </ul>
         </li>
         <li class="medical-menu__item medical-menu__item--06 medical-menu__item--dg" style="animation-delay: 1.2s">
@@ -381,13 +333,36 @@ $rootDir = get_template_directory_uri();
             </button>
           </h3>
           <ul class="symptoms__list">
+          <?php
+            $args = [
+              'post_type' => 'medicaldetail',
+              'order' => 'ASC',
+              'posts_per_page' => -1,
+              'tax_query' => [
+                [
+                  'taxonomy' => 'medical_type',
+                  'field'    => 'slug',
+                  'terms'    => 'child',
+                ]
+              ],
+            ];
+            $WP_post = new WP_Query($args);
+            if ($WP_post->have_posts()) {
+              while ($WP_post->have_posts()) {
+                $WP_post->the_post();
+          ?>
             <li class="symptoms__item">
-              <a href="" class="symptoms__link">
-                <h4 class="symptoms__name">成長痛（骨端症・オスグッド病）</h4>
+              <a href="<?php the_permalink(); ?>" class="symptoms__link">
+                <h4 class="symptoms__name"><?php the_title(); ?></h4>
               </a>
             </li>
-            <li class="symptoms__item">
-              <a href="" class="symptoms__link">
+          <?php
+            }
+            wp_reset_postdata();
+          }
+          ?>
+            <li class="symptoms__item no-link">
+              <a href="javascript:void(0)" class="symptoms__link">
                 <h4 class="symptoms__name">運動機能の悩み</h4>
                 <span class="symptoms__note">※まずはお問合せください</span>
               </a>
@@ -431,7 +406,7 @@ $rootDir = get_template_directory_uri();
               痛みや不安と共に運動を続ける日々の中で、自分と同じような悩みをもつアスリートを助けたいと思うようになり、スポーツ医療の本場である米国に留学し、アスレティックトレーナー(ATC)の資格を取得しました。そこで得た現場第一の姿勢は今も医療者としての根幹に息づいています。<br><br>
               これまで、整形外科医として診療をする中で、手術加療を選択せざるを得ない方や、まだ手術に至らないまでも、痛みで苦しんでいる方を多く診てきました。<br>
               日本の保険診療は全ての方々に同様の質の高い医療を安価で提供できる一方、海外では認められているような再生医療を含む先進医療を導入するのには非常に時間がかかっているのが実情です。<br><br>
-              当院では、最先端の体外衝撃波や、再生医療の注射を用い、また運動療法も最先端器具と一流のスタッフで行うことにより、相乗効果で症状の改善、再発の予防をしてまいります。
+              当院では、最新の体外衝撃波や、再生医療の注射を用い、また運動療法も最新器具と一流のスタッフで行うことにより、相乗効果で症状の改善、再発の予防をしてまいります。
             </p>
             <p class="message__director fade-anime-text js-titleAnimationTarget">
               MTXスポーツ・関節クリニック院長<br>
@@ -665,11 +640,11 @@ $rootDir = get_template_directory_uri();
                 <p class="clinic-features__head">04</p>
               </div>
               <div class="clinic-features__sub-title fade-anime-text js-titleAnimationTarget">
-                日本に4台しかない最先端機器<br>
-                “DDシステム”
+                日本に6台しかない最先端機器<br>
+                “DDシステム（ddrobotec®）”
               </div>
               <p class="clinic-features__04-text fade-anime-text js-titleAnimationTarget">
-                人工知能が搭載されたDDシステム。<br>
+                人工知能が搭載されたDDシステム（ddrobotec®）。<br>
                 運動能力を数値化することが可能なため、パフォーマンス向上、再生医療と組み合わせての症状改善に向けたリカバリープログラムなど、多岐にわたって活用が可能です。<br>
                 その他、当クリニックでは運動機能の状態を評価（数値化）する機器としても活用します。
               </p>
@@ -683,6 +658,15 @@ $rootDir = get_template_directory_uri();
     </section>
 
     <section id="treatment" class="treatment">
+      <div class="treatment__triangle treatment__triangle--right treatment__triangle--01">
+        <img src="<?php echo $rootDir ?>/images/top/triangle-left.svg" alt="">
+      </div>
+      <div class="treatment__triangle treatment__triangle--left treatment__triangle--02">
+        <img src="<?php echo $rootDir ?>/images/top/triangle-right.svg" alt="">
+      </div>
+      <div class="treatment__triangle treatment__triangle--right treatment__triangle--03">
+        <img src="<?php echo $rootDir ?>/images/top/triangle-left.svg" alt="">
+      </div>
       <div class="treatment-wrapper">
         <div class="section-title__wrapper --white --center js-titleAnimationTarget">
           <h2 class="section-title section-title">TREATMENT</h2>
@@ -820,7 +804,7 @@ $rootDir = get_template_directory_uri();
               ?>
                 <li class="treatment-detail__item fade-anime-text js-titleAnimationTarget" style="animation-delay: <?php $animation_delay.'s' ?>">
                   <?php if (get_field('url') !== ''): ?>
-                  <a href="<?php echo get_field('url'); ?>" class="treatment-detail__link">
+                  <a href="<?php echo get_field('url'); ?>" target="_blank" class="treatment-detail__link">
                   <?php else: ?>
                   <a href="<?php the_permalink(); ?>" class="treatment-detail__link">
                   <?php endif; ?>

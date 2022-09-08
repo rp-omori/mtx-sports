@@ -75,36 +75,36 @@ $WP_post = new WP_Query($args);
         </div>
         <table class="contents-box_menu">
           <tbody class="contents-box_menu__inner">
-            <?php if(have_rows('treatment',$price_key)): ?>
-            <?php while(have_rows('treatment',$price_key)): the_row(); ?>
             <tr class="contents-box_menu__inner_box">
               <td class="contents-box_menu__inner_box_name">
                 <div class="flex">
                   <div class="flex_box">
-                    <!-- <p>初診</p> -->
-                    <p><?php the_sub_field("treatment_name") ?></p>
+                    <p>初診(治療を行った場合は頂戴しません)</p>
                   </div>
                 </div>
               </td>
-              <?php if(have_rows('treatment_detail')): ?>
-                <?php while(have_rows('treatment_detail')): the_row(); ?>
-                <?php if(have_rows('treatment_set')): ?>
-                  <?php while(have_rows('treatment_set')): the_row(); ?>
-                        <td class="contents-box_menu__inner_box_minute">
-                          <!-- <p>20分</p> -->
-                          <p><?php the_sub_field("treatment_times") ?></p>
-                        </td>
-                        <td class="contents-box_menu__inner_box_price">
-                          <!-- <p>¥5,000</p> -->
-                          <p><?php the_sub_field("treatment_price") ?></p>
-                        </td>
-                    <?php endwhile; ?>
-                  <?php endif;?>
-                <?php endwhile; ?>
-              <?php endif;?>
+              <td class="contents-box_menu__inner_box_minute">
+                <p>20分</p>
+              </td>
+              <td class="contents-box_menu__inner_box_price">
+                <p>¥5,500</p>
+              </td>
             </tr>
-            <?php endwhile; ?>
-            <?php endif;?>
+            <tr class="contents-box_menu__inner_box">
+              <td class="contents-box_menu__inner_box_name">
+                <div class="flex">
+                  <div class="flex_box">
+                    <p>2回目以降(治療を行った場合は頂戴しません)</p>
+                  </div>
+                </div>
+              </td>
+              <td class="contents-box_menu__inner_box_minute">
+                <p>10分</p>
+              </td>
+              <td class="contents-box_menu__inner_box_price">
+                <p>¥3,300</p>
+              </td>
+            </tr>
           </tbody>
         </table>
         <div class="contents-box_caution">
@@ -117,6 +117,64 @@ $WP_post = new WP_Query($args);
       <div class="contents-box_cat">
         <p>再生医療</p>
       </div>
+      <!-- <table class="contents-box_menu_other">
+        <tbody class="contents-box_menu__other__inner">
+          <tr class="contents-box_menu_other__inner_box">
+            <td class="contents-box_menu_other__inner_box_ttl"><p>体験価格５０％OFF</p></td>
+          </tr>
+          <tr class="contents-box_menu_other__inner_box">
+            <td class="contents-box_menu_other__inner_box_price"><p>-</p></td>
+          </tr>
+          <tr class="contents-box_menu_other__inner_box">
+            <td class="contents-box_menu_other__inner_box_price bottom"><p>-</p></td>
+          </tr>
+          <tr class="contents-box_menu_other__inner_box">
+            <td class="contents-box_menu_other__inner_box_price small"><p>-</p></td>
+          </tr>
+          <tr class="contents-box_menu_other__inner_box">
+            <td class="contents-box_menu_other__inner_box_price small"><p>-</p></td>
+          </tr>
+          <tr class="contents-box_menu_other__inner_box">
+            <td class="contents-box_menu_other__inner_box_price small"><p>-</p></td>
+          </tr>
+          <tr class="contents-box_menu_other__inner_box">
+            <td class="contents-box_menu_other__inner_box_price small bottom"><p>-</p></td>
+          </tr>
+          <tr class="contents-box_menu_other__inner_box">
+            <td class="contents-box_menu_other__inner_box_price small"><p>¥30,000</p></td>
+          </tr>
+          <tr class="contents-box_menu_other__inner_box">
+            <td class="contents-box_menu_other__inner_box_price small"><p>-</p></td>
+          </tr>
+          <tr class="contents-box_menu_other__inner_box">
+            <td class="contents-box_menu_other__inner_box_price small"><p>¥50,000</p></td>
+          </tr>
+          <tr class="contents-box_menu_other__inner_box">
+            <td class="contents-box_menu_other__inner_box_price small bottom"><p>-</p></td>
+          </tr>
+          <tr class="contents-box_menu_other__inner_box">
+            <td class="contents-box_menu_other__inner_box_price small"><p>-</p></td>
+          </tr>
+          <tr class="contents-box_menu_other__inner_box">
+            <td class="contents-box_menu_other__inner_box_price small"><p>-</p></td>
+          </tr>
+          <tr class="contents-box_menu_other__inner_box">
+            <td class="contents-box_menu_other__inner_box_price small bottom"><p>¥30,000</p></td>
+          </tr>
+          <tr class="contents-box_menu_other__inner_box">
+            <td class="contents-box_menu_other__inner_box_price small"><p>¥35,000</p></td>
+          </tr>
+          <tr class="contents-box_menu_other__inner_box">
+            <td class="contents-box_menu_other__inner_box_price small"><p>-</p></td>
+          </tr>
+          <tr class="contents-box_menu_other__inner_box">
+            <td class="contents-box_menu_other__inner_box_price small"><p>¥55,000</p></td>
+          </tr>
+          <tr class="contents-box_menu_other__inner_box">
+            <td class="contents-box_menu_other__inner_box_price small"><p>-</p></td>
+          </tr>
+        </tbody>
+      </table> -->
       <table class="contents-box_menu">
         <tbody class="contents-box_menu__inner">
           <tr class="contents-box_menu__inner_box">
@@ -135,7 +193,7 @@ $WP_post = new WP_Query($args);
               <p>1回</p>
             </td>
             <td class="contents-box_menu__inner_box_price">
-              <p>¥150,000</p>
+              <p>¥165,000</p>
             </td>
           </tr>
           <tr class="contents-box_menu__inner_box">
@@ -146,7 +204,7 @@ $WP_post = new WP_Query($args);
               <p>1回</p>
             </td>
             <td class="contents-box_menu__inner_box_price">
-              <p>¥300,000</p>
+              <p>¥330,000</p>
             </td>
           </tr>
         </tbody>
@@ -157,7 +215,7 @@ $WP_post = new WP_Query($args);
             <td class="contents-box_menu__inner_box_name width" rowspan="4">
               <div class="flex">
                 <div class="flex_box">
-                  <p class="orange_tab">オープニング価格</p>
+                  <p class="orange_tab">オープニング価格<br>（2022年内限定）</p>
                   <p>脂肪幹細胞治療（ASC）</p>
                 </div>
                 <p class="detail">肩・手・肘・股関節・膝・足関節・その他ブロック</p>
@@ -170,7 +228,7 @@ $WP_post = new WP_Query($args);
               <p>1回</p>
             </td>
             <td class="contents-box_menu__inner_box_price">
-              <p>¥1,000,000</p>
+              <p>¥1,100,000</p>
             </td>
           </tr>
           <tr class="contents-box_menu__inner_box">
@@ -178,7 +236,7 @@ $WP_post = new WP_Query($args);
               <p>2回</p>
             </td>
             <td class="contents-box_menu__inner_box_price">
-              <p>¥1,400,000</p>
+              <p>¥1,540,000</p>
             </td>
           </tr>
           <tr class="contents-box_menu__inner_box">
@@ -189,7 +247,7 @@ $WP_post = new WP_Query($args);
               <p>1回</p>
             </td>
             <td class="contents-box_menu__inner_box_price">
-              <p>¥1,400,000</p>
+              <p>¥1,540,000</p>
             </td>
           </tr>
           <tr class="contents-box_menu__inner_box">
@@ -197,7 +255,7 @@ $WP_post = new WP_Query($args);
               <p>2回</p>
             </td>
             <td class="contents-box_menu__inner_box_price">
-              <p>¥2,000,000</p>
+              <p>¥2,200,000</p>
             </td>
           </tr>
         </tbody>
@@ -208,7 +266,7 @@ $WP_post = new WP_Query($args);
             <td class="contents-box_menu__inner_box_name width" rowspan="4">
               <div class="flex">
                 <div class="flex_box">
-                  <p class="orange_tab">オープニング価格</p>
+                  <p class="orange_tab">オープニング価格<br>（2022年内限定）</p>
                   <p>培養上清液治療（関節内）</p>
                 </div>
                 <p class="detail">肩・手・肘・股関節・膝・足関節・その他ブロック</p>
@@ -221,7 +279,7 @@ $WP_post = new WP_Query($args);
               <p>1回</p>
             </td>
             <td class="contents-box_menu__inner_box_price">
-              <p>¥60,000</p>
+              <p>¥66,000</p>
             </td>
           </tr>
           <tr class="contents-box_menu__inner_box">
@@ -229,7 +287,7 @@ $WP_post = new WP_Query($args);
               <p>3回セット</p>
             </td>
             <td class="contents-box_menu__inner_box_price">
-              <p>¥150,000</p>
+              <p>¥165,000</p>
             </td>
           </tr>
           <tr class="contents-box_menu__inner_box">
@@ -240,7 +298,7 @@ $WP_post = new WP_Query($args);
               <p>1回</p>
             </td>
             <td class="contents-box_menu__inner_box_price">
-              <p>¥100,000</p>
+              <p>¥110,000</p>
             </td>
           </tr>
           <tr class="contents-box_menu__inner_box">
@@ -248,7 +306,7 @@ $WP_post = new WP_Query($args);
               <p>3回セット</p>
             </td>
             <td class="contents-box_menu__inner_box_price">
-              <p>¥280,000</p>
+              <p>¥308,000</p>
             </td>
           </tr>
         </tbody>
@@ -259,7 +317,7 @@ $WP_post = new WP_Query($args);
             <td class="contents-box_menu__inner_box_name width" rowspan="4">
               <div class="flex">
                 <div class="flex_box">
-                  <p class="orange_tab">オープニング価格</p>
+                  <p class="orange_tab">オープニング価格<br>（2022年内限定）</p>
                   <p>ハイドロリリース <br>＋ 培養上清液治療</p>
                 </div>
               </div>
@@ -271,7 +329,7 @@ $WP_post = new WP_Query($args);
               <p>1ml</p>
             </td>
             <td class="contents-box_menu__inner_box_price">
-              <p>¥15,000</p>
+              <p>¥16,500</p>
             </td>
           </tr>
           <tr class="contents-box_menu__inner_box">
@@ -279,7 +337,7 @@ $WP_post = new WP_Query($args);
               <p>3ml</p>
             </td>
             <td class="contents-box_menu__inner_box_price">
-              <p>¥40,000</p>
+              <p>¥44,000</p>
             </td>
           </tr>
           <tr class="contents-box_menu__inner_box">
@@ -287,7 +345,7 @@ $WP_post = new WP_Query($args);
               <p>5ml</p>
             </td>
             <td class="contents-box_menu__inner_box_price">
-              <p>¥60,000</p>
+              <p>¥66,000</p>
             </td>
           </tr>
         </tbody>
@@ -295,41 +353,57 @@ $WP_post = new WP_Query($args);
       <table class="contents-box_menu">
         <tbody class="contents-box_menu__inner">
           <tr class="contents-box_menu__inner_box">
-            <td class="contents-box_menu__inner_box_name width" rowspan="2">
+            <td class="contents-box_menu__inner_box_name width" rowspan="4">
               <div class="flex">
                 <div class="flex_box">
-                  <p class="orange_tab">オープニング価格</p>
+                  <p class="orange_tab">オープニング価格<br>（2022年内限定）</p>
                   <p>体外衝撃波（収束型）<br>＋ 培養上清液治療</p>
                 </div>
               </div>
             </td>
-            <td class="contents-box_menu__inner_box_part" rowspan="1">
-              <p>-</p>
+            <td class="contents-box_menu__inner_box_part" rowspan="2">
+              <p>1関節　5ml</p>
             </td>
             <td class="contents-box_menu__inner_box_minute">
               <p>1回</p>
             </td>
             <td class="contents-box_menu__inner_box_price">
-              <p>※上清液＋衝撃波1回から、− ¥5,000</p>
+              <p>¥77,000</p>
             </td>
           </tr>
           <tr class="contents-box_menu__inner_box">
-            <td class="contents-box_menu__inner_box_part" rowspan="1">
-              <p>-</p>
-            </td>
             <td class="contents-box_menu__inner_box_minute">
               <p>3回セット</p>
             </td>
             <td class="contents-box_menu__inner_box_price">
-              <p>※上清液＋衝撃波3回から、− ¥15,000</p>
+              <p>¥192,500</p>
+            </td>
+          </tr>
+          <tr class="contents-box_menu__inner_box">
+            <td class="contents-box_menu__inner_box_part" rowspan="2">
+              <p>2関節 10ml (5ml×2)</p>
+            </td>
+            <td class="contents-box_menu__inner_box_minute">
+              <p>1回</p>
+            </td>
+            <td class="contents-box_menu__inner_box_price">
+              <p>¥121,000</p>
+            </td>
+          </tr>
+          <tr class="contents-box_menu__inner_box">
+            <td class="contents-box_menu__inner_box_minute">
+              <p>3回セット</p>
+            </td>
+            <td class="contents-box_menu__inner_box_price">
+              <p>¥335,500</p>
             </td>
           </tr>
         </tbody>
       </table>
       <div class="contents-box_caution">
-        <p>※オープニング価格は年内まで。</p>
+        <p>※オープニング価格（2022年内限定）は年内まで。</p>
       </div>
-      <a href="" class="contents-box_btn">
+      <a href="<?php echo esc_url(home_url('services/#service')); ?>" class="contents-box_btn">
         <img src="<?php echo $rootDir ?>/images/price/price_btn.png" alt="">
         <p>再生医療についてはこちら</p>
       </a>
@@ -342,32 +416,32 @@ $WP_post = new WP_Query($args);
       <table class="contents-box_menu">
         <tbody class="contents-box_menu__inner">
           <tr class="contents-box_menu__inner_box">
-            <td class="contents-box_menu__inner_box_name">
+            <td class="contents-box_menu__inner_box_name more">
               <div class="flex">
                 <div class="flex_box">
-                  <p>DDシステム</p>
+                  <p>DDシステム（ddrobotec®）</p>
                 </div>
               </div>
             </td>
             <td class="contents-box_menu__inner_box_exp">
-              <p>※セットでのご提案がベースとなります</p>
+              <p>※治療と組み合わせてのご料金となります</p>
             </td>
-            <!-- <td class="contents-box_menu__inner_box_price width" rowspan="4"><p>※セットでのご提案がベースとなります</p></td> -->
+            <!-- <td class="contents-box_menu__inner_box_price width" rowspan="4"><p>※治療と組み合わせてのご料金となります</p></td> -->
           </tr>
           <tr class="contents-box_menu__inner_box">
-            <td class="contents-box_menu__inner_box_name">
+            <td class="contents-box_menu__inner_box_name more">
               <div class="flex">
                 <div class="flex_box">
-                  <p>D-Wall</p>
+                  <p>D-Wall　（Technology社）</p>
                 </div>
               </div>
             </td>
             <td class="contents-box_menu__inner_box_exp">
-              <p>※セットでのご提案がベースとなります</p>
+              <p>※治療と組み合わせてのご料金となります</p>
             </td>
           </tr>
           <tr class="contents-box_menu__inner_box">
-            <td class="contents-box_menu__inner_box_name" rowspan="2">
+            <td class="contents-box_menu__inner_box_name more" rowspan="3">
               <div class="flex">
                 <div class="flex_box">
                   <p>MTXアカデミー</p>
@@ -375,14 +449,20 @@ $WP_post = new WP_Query($args);
               </div>
             </td>
             <td class="contents-box_menu__inner_box_exp">
-              <p>トレーナーによる強化・トレーニング</p>
-              <p>※セットでのご提案がベースとなります</p>
+              <p>MTXアカデミー　Practice（実践）</p>
+              <p>※治療と組み合わせてのご料金となります</p>
+            </td>
+          </tr>
+          <tr class="contents-box_menu__inner_box">
+            <td class="contents-box_menu__inner_box_exp">
+              <p>MTXアカデミー　Strength（強化）</p>
+              <p>※治療と組み合わせてのご料金となります</p>
             </td>
           </tr>
           <tr class="contents-box_menu__inner_box">
             <td class="contents-box_menu__inner_box_exp">
               <p>HAL</p>
-              <p>※セットでのご提案がベースとなります</p>
+              <p>※治療と組み合わせてのご料金となります</p>
             </td>
           </tr>
         </tbody>
@@ -390,7 +470,7 @@ $WP_post = new WP_Query($args);
       <div class="contents-box_caution">
         <p>　</p>
       </div>
-      <a href="" class="contents-box_btn">
+      <a href="<?php echo esc_url(home_url('services/#exercise')); ?>" class="contents-box_btn">
         <img src="<?php echo $rootDir ?>/images/price/price_btn.png" alt="">
         <p>運動療法についてはこちら</p>
       </a>
@@ -406,20 +486,20 @@ $WP_post = new WP_Query($args);
             <td class="contents-box_menu__inner_box_name" rowspan="3">
               <div class="flex">
                 <div class="flex_box">
-                  <p>体外衝撃波(収束型）</p>
+                  <p>収束型 体外衝撃波(BTL-6000-Focus）</p>
                 </div>
               </div>
             </td>
             <td class="contents-box_menu__inner_box_minute"><p>1回</p></td>
-            <td class="contents-box_menu__inner_box_price"><p>¥15,000</p></td>
+            <td class="contents-box_menu__inner_box_price"><p>¥16,500</p></td>
           </tr>
           <tr class="contents-box_menu__inner_box">
             <td class="contents-box_menu__inner_box_minute"><p>3回セット</p></td>
-            <td class="contents-box_menu__inner_box_price"><p>¥40,000</p></td>
+            <td class="contents-box_menu__inner_box_price"><p>¥44,000</p></td>
           </tr>
           <tr class="contents-box_menu__inner_box">
             <td class="contents-box_menu__inner_box_minute"><p>5回セット</p></td>
-            <td class="contents-box_menu__inner_box_price"><p>¥60,000</p></td>
+            <td class="contents-box_menu__inner_box_price"><p>¥66,000</p></td>
           </tr>
         </tbody>
       </table>
@@ -436,7 +516,7 @@ $WP_post = new WP_Query($args);
             <td class="contents-box_menu__inner_box_exp">
               <p>
                 新治療器と手技を併せたMTX独自の治療（LIPUS等）<br>
-                ※治療法により異なります
+                ※治療と組み合わせてのご料金となります
               </p>
             </td>
           </tr>
@@ -445,7 +525,7 @@ $WP_post = new WP_Query($args);
       <div class="contents-box_caution">
         <p>　</p>
       </div>
-      <a href="" class="contents-box_btn">
+      <a href="<?php echo esc_url(home_url('services/#physical')); ?>" class="contents-box_btn">
         <img src="<?php echo $rootDir ?>/images/price/price_btn.png" alt="">
         <p>物理療法についてはこちら</p>
       </a>
@@ -472,10 +552,10 @@ $WP_post = new WP_Query($args);
               <p>1回</p>
             </td>
             <td class="contents-box_menu__inner_box_price">
-              <p>¥150,000</p>
+              <p>¥33,000</p>
             </td>
           </tr>
-          <tr class="contents-box_menu__inner_box">
+          <!-- <tr class="contents-box_menu__inner_box">
             <td class="contents-box_menu__inner_box_name" rowspan="1">
               <div class="flex">
                 <div class="flex_box">
@@ -492,7 +572,7 @@ $WP_post = new WP_Query($args);
             <td class="contents-box_menu__inner_box_price">
               <p>※仕入れ価格次第で決定</p>
             </td>
-          </tr>
+          </tr> -->
           <tr class="contents-box_menu__inner_box">
             <td class="contents-box_menu__inner_box_name" rowspan="1">
               <div class="flex">
@@ -508,16 +588,16 @@ $WP_post = new WP_Query($args);
               <p>1ml</p>
             </td>
             <td class="contents-box_menu__inner_box_price">
-              <p>¥30,000</p>
+              <p>¥33,000</p>
             </td>
           </tr>
         </tbody>
       </table>
-      <div class="contents-box_caution">
-        <p>※オープニング価格は年内まで。</p>
-      </div>
-      <a href="" class="contents-box_btn sp_btn">
-        <p>その他オプション等については、お問い合わせください。</p>
+      <!-- <div class="contents-box_caution">
+        <p>※オープニング価格<br>（2022年内限定）は年内まで。</p>
+      </div> -->
+      <a href="<?php echo esc_url(home_url('/contact')); ?>" class="contents-box_btn sp_btn center">
+        <p>その他オプション等については、<br>お問い合わせください。</p>
       </a>
     </div>
 

@@ -69,7 +69,7 @@
       padding: get_vw(30) get_vw(20);
       background: var(--main-color-white);
       border-radius: 5px;
-      top: get_vw(65);
+      top: var(--headerHeight);
       z-index: 100;
 
       .header__dropdown-item {
@@ -121,7 +121,7 @@
         align-items: center;
         color: #272E2C;
         font-family: $fontFamilyHiraGo;
-        font-size: calcFz(15);
+        font-size: calcFz(17);
         font-weight: bold;
 
         @include sp {
@@ -234,7 +234,7 @@
                   display: block;
                   margin-bottom: get_vw(30, 375);
                   font-size: calcFz(15);
-                  font-weight: 400;
+                  // font-weight: 400;
                   line-height: 1.4;
                 }
               }
@@ -335,7 +335,7 @@
     .header__drawer {
       @include sp {
         position: absolute;
-        top: 0;
+        top: -100000px;
         left: 0;
         opacity: 0;
         z-index: -1;

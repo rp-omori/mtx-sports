@@ -193,7 +193,7 @@
             p{
               font-family: $fontFamilyYuGo;
               font-size: calcFz(18);
-              font-weight: 300;
+              // font-weight: 300;
               letter-spacing: 0.02em;
               line-height: 1.77;
 
@@ -215,6 +215,10 @@
               letter-spacing: 0.02em;
               color: var(--main-color);
               margin-bottom: clamp(10px,get_vw(16),16px);
+
+              &:nth-of-type(n+2){
+                display: none;
+              }
 
               @include sp {
                 font-size: calcFz(15);
@@ -338,7 +342,7 @@
 
       .medical-detail-menuArea__box_contents{
 
-        width: clamp(10px,get_vw(960),960px);
+        // width: clamp(10px,get_vw(960),960px);
         margin-top: clamp(10px,get_vw(28),28px);
         margin-bottom: clamp(10px,get_vw(23),23px);
 
@@ -351,7 +355,7 @@
         p{
           font-family: $fontFamilyYuGo;
           font-size: calcFz(18);
-          font-weight: 300;
+          // font-weight: 300;
           letter-spacing: 0.02em;
           line-height: 1.6;
           margin-bottom: clamp(10px,get_vw(43),43px);
@@ -442,7 +446,7 @@
             margin-bottom: 0;
             font-family: $fontFamilyYuGo;
             font-size: calcFz(20);
-            font-weight: 300;
+            // font-weight: 300;
             margin-right: clamp(10px,get_vw(20),20px);
 
             @include sp {

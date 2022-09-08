@@ -4,30 +4,23 @@ $rootDir = get_template_directory_uri();
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-W688LWK');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, initial-scale=1.0, user-scalable=no">
-    <meta name="description" content="アスリートの競技人生・身体的障害のある方の人生に向き合い、身体の機能改善に取り組んできたMTXだからできる「再生医療」×「運動療法」を組み合わせた医療。医師とトレーナー陣が一体となって、パフォーマンスや痛みに悩む方々に寄り添い、共に解決に向かって進んでいきます。" />
-    <title>MTXスポーツ・関節クリニック</title>
+    <title>再生医療、運動療法ならMTXスポーツ・関節クリニック</title>
     <link rel="shortcut icon" href="<?php echo $rootDir; ?>/images/favicon.ico">
     <link rel="stylesheet" href="<?php echo $rootDir; ?>/css/reset.css">
     <link rel="stylesheet" href="<?php echo $rootDir; ?>/css/default.css">
     <link rel="stylesheet" href="<?php echo $rootDir; ?>/css/style.css">
     <link rel="stylesheet" href="<?php echo $rootDir; ?>/css/vender/swiper-bundle.css">
     <link rel="stylesheet" href="<?php echo $rootDir; ?>/css/vender/swiper.min.css">
-    <link rel="apple-touch-icon-precomposed" href="【画像のパス/apple-touch-icon-precomposed.png】" />
-    <!-- facebook -->
-    <meta property="og:url" content="https://mtx-clinic.jp/">
-    <meta property="og:title" content="MTXスポーツ・関節クリニック" />
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content="アスリートの競技人生・身体的障害のある方の人生に向き合い、身体の機能改善に取り組んできたMTXだからできる「再生医療」×「運動療法」を組み合わせた医療。医師とトレーナー陣が一体となって、パフォーマンスや痛みに悩む方々に寄り添い、共に解決に向かって進んでいきます。" />
-    <meta property="og:image" content="<?php echo $rootDir; ?>/images/ogp.png" />
-    <meta property="og:site_name" content="MTXスポーツ・関節クリニック" />
-    <meta property="og:locale" content="ja_JP" />
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:description" content="アスリートの競技人生・身体的障害のある方の人生に向き合い、身体の機能改善に取り組んできたMTXだからできる「再生医療」×「運動療法」を組み合わせた医療。医師とトレーナー陣が一体となって、パフォーマンスや痛みに悩む方々に寄り添い、共に解決に向かって進んでいきます。" />
-    <meta name="twitter:image:src" content="<?php echo $rootDir; ?>/images/ogp.png" />
     <!-- Adobe Fonts -->
     <link rel="stylesheet" href="https://use.typekit.net/ofs1fip.css">
 
@@ -108,7 +101,7 @@ $rootDir = get_template_directory_uri();
                     アクセス
                   </a>
                 </li>
-                <li class="header__item">
+                <!-- <li class="header__item">
                   <a href="<?php echo esc_url(home_url('/news')); ?>" class="header__link">
                     お知らせ
                   </a>
@@ -117,7 +110,7 @@ $rootDir = get_template_directory_uri();
                   <a href="<?php echo esc_url(home_url('/colum')); ?>" class="header__link">
                     コラム
                   </a>
-                </li>
+                </li> -->
               </ul>
             </nav>
 
@@ -199,7 +192,7 @@ $rootDir = get_template_directory_uri();
                       アクセス
                   </a>
                   </li>
-                  <li class="header__item">
+                  <!-- <li class="header__item">
                     <a href="<?php echo esc_url(home_url('/news')); ?>" class="header__link js-header-drawer">
                       お知らせ
                     </a>
@@ -208,7 +201,7 @@ $rootDir = get_template_directory_uri();
                     <a href="<?php echo esc_url(home_url('/colum')); ?>" class="header__link js-header-drawer">
                       コラム
                     </a>
-                  </li>
+                  </li> -->
                 </ul>
               </nav>
             </div>

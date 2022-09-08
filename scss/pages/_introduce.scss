@@ -2,24 +2,30 @@
   background-color: #EFF4F3;
   position: relative;
 
+  @include sp {
+    font-family: $fontFamilyHiraGo;
+  }
+
   .introduce-top-wrapper{
     position: relative;
     z-index: 2;
-    // padding: clamp(10px,get_vw(40),40px) 0 0;
     width: 100vw;
+    height: clamp(10px, 39.9088541667vw, 613px);
+    padding-bottom: 13.0208333333vw;
     height: clamp(10px,get_vw(613),613px);
+    padding-bottom: get_vw(200);
     background-image: url("../images/introduce/introduce-top-background.png");
     background-position: center;
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    margin-bottom: clamp(10px,get_vw(40),40px);
+    margin-bottom: clamp(10px, 2.6041666667vw, 40px);
     overflow: hidden;
 
     @include sp {
-      // padding: 20px 0 0;
+      padding: 0;
       height: 250px;
+      padding-bottom: 0;
       background-position: top;
-      background-size: 100% 100%;
       background-image: url("../images/introduce/introduce-top-background_sp.png");
       margin-bottom: 60px;
     }
@@ -314,6 +320,11 @@
                     font-weight: 600;
                     line-height: 1;
 
+                    &.other{
+                      color: rgba($color: #009578, $alpha: .7);
+                    }
+
+
                     @include sp {
                       font-size: calcFz(43);
                       color: rgba($color: #009578, $alpha: .7);
@@ -328,7 +339,7 @@
                   &.degree{
                     position: absolute;
                     right: -100px;
-                    font-weight: 300;
+                    // font-weight: 300;
                     top: get_vw(10);
                     font-size: calcFz(12);
                     color: #262928;
@@ -337,10 +348,11 @@
                       right: -140px;
 
                       @include sp{
-                        bottom: -25px;
+                        bottom: -30px;
                       }
 
                     }
+
                     &.less{
                       right: -70px;
 
@@ -361,6 +373,13 @@
                       bottom: -35px;
                       left: 0;
                       white-space: nowrap;
+                    }
+
+                    span{
+                      display: none;
+                      @include sp {
+                        display: inline;
+                      }
                     }
 
                   }
@@ -412,7 +431,7 @@
                 color: #fff;
                 font-size: calcFz(14);
                 font-family: $fontFamilyYuGo;
-                font-weight: 300;
+                // font-weight: 300;
                 line-height: 1.57;
                 letter-spacing: 0em;
 
@@ -452,7 +471,7 @@
 
               &.small{
                 font-size: calcFz(18);
-                font-weight: 300;
+                // font-weight: 300;
                 margin-top: clamp(10px,get_vw(40),40px);
 
                 @include sp {
@@ -505,7 +524,7 @@
                 color: #fff;
                 font-size: calcFz(16);
                 font-family: $fontFamilyYuGo;
-                font-weight: 300;
+                // font-weight: 300;
                 line-height: 1.75;
                 letter-spacing: 0em;
 
@@ -560,7 +579,7 @@
             li{
               font-size: calcFz(16);
               font-family: $fontFamilyYuGo;
-              font-weight: 300;
+              // font-weight: 300;
               line-height: 1.75;
               letter-spacing: 0em;
 
