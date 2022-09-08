@@ -11,6 +11,7 @@ $rootDir = get_template_directory_uri();
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-W688LWK');</script>
     <!-- End Google Tag Manager -->
+    <meta name="google-site-verification" content="w-k7Kuxavj7W_1r1d--lGlU4DwsoYFDKehOKy0M8OvA" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, initial-scale=1.0, user-scalable=no">
@@ -35,7 +36,11 @@ $rootDir = get_template_directory_uri();
             <div class="header__left">
               <h1 class="header__logo">
                 <a href="<?php echo home_url(); ?>" class="header__logo-link">
+                  <?php if (is_page()): ?>
+                  <img src="<?php echo $rootDir ?>/images/logo--black.svg" alt="<?php the_title(); ?> | 関節の痛みならMTXスポーツ・関節クリニック">
+                  <?php else: ?>
                   <img src="<?php echo $rootDir ?>/images/logo--black.svg" alt="関節の痛みならMTXスポーツ・関節クリニック">
+                  <?php endif; ?>
                 </a>
               </h1>
               <!-- <div class="header__info">
