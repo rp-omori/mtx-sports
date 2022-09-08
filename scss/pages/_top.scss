@@ -454,7 +454,7 @@
               @include sp {
                 font-family: $fontFamilyHiraGo;
                 font-size: calcFz(15);
-                font-weight: 300;
+                // font-weight: 300;
               }
             }
           }
@@ -691,6 +691,7 @@
             top: 50%;
             transform: translateY(-50%);
             right: get_vw(10);
+            z-index: -1;
 
             @include sp {
               width: 33px;
@@ -732,7 +733,7 @@
           .symptoms__note {
             padding-left: get_vw(10);
             font-size: calcFz(13);
-            font-weight: 300;
+            // font-weight: 300;
 
             @include sp {
               margin-top: 7px;
@@ -1435,7 +1436,7 @@
             @include sp {
               color: var(--main-color-white);
               font-size: calcFz(15);
-              font-weight: 400;
+              // font-weight: 400;
               line-height: 1.6;
             }
           }

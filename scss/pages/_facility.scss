@@ -54,7 +54,7 @@
         content: "治療体制と施設・設備";
         color: #fff;
         font-size: calcFz(50);
-        font-family: $fontFamilyYuGo;
+        // font-family: $fontFamilyYuGo;
         font-weight: 600;
         letter-spacing: 0.02em;
         line-height: 1.28;
@@ -174,7 +174,7 @@
           left: 0;
           color: var(--main-color);
           font-size: calcFz(40);
-          font-family: $fontFamilyYuGo;
+          // font-family: $fontFamilyYuGo;
           font-weight: 600;
           line-height: 1.75;
           width: 100%;
@@ -216,7 +216,7 @@
         p{
           color: var(--main-color-bg);
           font-size: calcFz(28);
-          font-family: $fontFamilyYuGo;
+          // font-family: $fontFamilyYuGo;
           font-weight: 600;
           line-height: 1.75;
           letter-spacing: 0em;
@@ -242,8 +242,8 @@
         p{
           text-align: center;
           font-size: calcFz(18);
-          font-family: $fontFamilyYuGo;
-          font-weight: 400;
+          // font-family: $fontFamilyYuGo;
+          // font-weight: 400;
           line-height: 1.75;
           letter-spacing: 0em;
 
@@ -434,7 +434,7 @@
           left: 0;
           color: var(--main-color);
           font-size: calcFz(40);
-          font-family: $fontFamilyYuGo;
+          // font-family: $fontFamilyYuGo;
           font-weight: 600;
           line-height: 1.75;
           width: 100%;
@@ -481,7 +481,7 @@
             width: clamp(10px,get_vw(280),280px);
             color: #fff;
             font-size: calcFz(24);
-            font-family: $fontFamilyYuGo;
+            // font-family: $fontFamilyYuGo;
             font-weight: 600;
             line-height: 1.75;
             background-color: #000;
@@ -602,7 +602,7 @@
 
               p{
                 font-size: calcFz(18);
-                font-family: $fontFamilyYuGo;
+                // font-family: $fontFamilyYuGo;
                 font-weight: 600;
                 line-height: 1.77;
                 letter-spacing: 0em;
@@ -673,7 +673,7 @@
 
                 p{
                   font-size: calcFz(16);
-                  font-family: $fontFamilyYuGo;
+                  // font-family: $fontFamilyYuGo;
                   font-weight: 600;
                   color: var(--main-color-bg);
                   // margin-right: 0;
@@ -741,8 +741,8 @@
 
               p{
                 font-size: calcFz(18);
-                font-family: $fontFamilyYuGo;
-                font-weight: 300;
+                // font-family: $fontFamilyYuGo;
+                // font-weight: 300;
                 line-height: 1.75;
                 letter-spacing: 0em;
 

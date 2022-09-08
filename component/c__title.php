@@ -9,10 +9,12 @@
       $url = $_SERVER['REQUEST_URI'];
       if (!strstr($url, 'services')):
     ?>
-      <?php if (strstr($url, 'column')):?>
-      <p class="page-title__treatments">COLUMN</p>
+      <?php if (strstr($url, 'news')): ?>
+        <p>NEWS</p>
+      <?php elseif(strstr($url, 'column')): ?>
+        <p class="page-title__treatments">COLUMN</p>
       <?php else:?>
-      <p><?php the_content(); ?></p>
+        <p><?php the_content(); ?></p>
       <?php endif;?>
     <?php else:?>
     <p class="page-title__treatments">TREATMENTS</p>
@@ -20,11 +22,13 @@
   </div>
 
   <div class="page-title__main">
-    <?php if (strstr($url, 'column')):?>
-    <p>コラム一覧</p>
+    <?php if (strstr($url, 'news')): ?>
+      <p>お知らせ一覧</p>
+    <?php elseif(strstr($url, 'column')): ?>
+      <p>コラム一覧</p>
     <?php else:?>
-    <p><?the_title();?></p>
-    <?php endif;?>
+      <p><?the_title();?></p>
+    <?php endif; ?>
   </div>
 
 </div>

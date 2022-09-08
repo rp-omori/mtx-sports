@@ -57,7 +57,7 @@
             margin-bottom: get_vw(20);
             color: var(--main-color-black);
             font-size: calcFz(19);
-            font-weight: 300;
+            // font-weight: 300;
             line-height: 1.75;
 
             @include sp {
@@ -495,7 +495,7 @@
 
       .footer__menu-item {
         margin-bottom: get_vw(25);
-        font-weight: 400;
+        // font-weight: 400;
         line-height: 1.4;
       }
 

@@ -30,7 +30,14 @@ $rootDir = get_template_directory_uri();
             <p>FLOW</p>
           </div> -->
           <div class="flow-main__inner_left_txt">
-            <p>患者さんの 良くなった、良くなっていない といった主観的な感覚は、治療経過の評価に非常に重要なものです。ですが、この感覚は本人だけのものであり、医師は正確に評価できません。そこで我々は、患者さんの現状を具体的かつ客観的に評価・数値化することを大切にしています。データをもとに、都度治療の方針を軌道修正することで、具体的なゴールを患者さんと共有しながら治療を進めていくのです。数値化に用いるのは、最先端の計測機器「ダイナミック・デバイス」とSFMAやCESなどが用意した、運動機能の状態を測る診断基準です。その結果、現在どこまで良くなっていて、次はどうリハビリに取り組むかという状況・情報を表す数値が、医師、理学療法士、トレーナー、患者さんの全員で共有できます。</p>
+            <p>
+              患者さんの “良くなった”、“良くなっていない” といった主観的な感覚は、治療経過の評価に非常に重要です。<br>
+              しかしながら、この感覚は本人だけのものであり、医師は正確に評価できません。<br>
+              当院では医師の診察により疾患の状態を数値化。それに基づき、再生医療と運動療法を組み合わせた治療計画を行います。数値化された目標に向かって、患者様と共に明確に治療経過を測りながら進めることで、目標達成へと着実に進め、<br>
+              “終わりの見える治療”を目指します。<br>
+              用いるのは、最新機器「ダイナミック・デバイス」とSFMAやCESなどの運動機能の状態を測る診断基準です。<br>
+              治療目標と経過の数値や状態は、医師、理学療法士、トレーナー、患者さんの全員で共有し、連携して進めていきます。
+            </p>
           </div>
           <a href="<?php echo esc_url(home_url('system_facility')); ?>" class="flow-main__inner_left_btn index_btn">
             <p>治療体制はこちら</p>
@@ -137,7 +144,7 @@ $rootDir = get_template_directory_uri();
               </div>
               <div class="flow-circle__inner_right_box_top_txt">
                 <p>
-                  医師により今の患部の状態を分析し、患者様とともに目標を決めます。<br>
+                  医師が今の患部の状態を分析し、患者様とともに目標を決めます。<br>
                   目標については、“まずは歩けるようになりたい”なのか“歩くことはもちろん、走ったり運動もしたい”など、
                   患者様により設定されるゴールが異なるものですので、どのような状態を目指したいのかもお聞きした上で設定いたします。
                 </p>
@@ -161,8 +168,8 @@ $rootDir = get_template_directory_uri();
               </div>
               <div class="flow-circle__inner_right_box_top_txt">
                 <p>
-                  02.で立てた目標に合わせて、医師により再生医療と運動療法・物理療法を組み合わせた治療計画をおこなっていきます。<br>
-                  治療計画は、目指すゴールに合わせて、治療期間や回数なども異なります。
+                  「02.目標設定」で立てた目標に合わせて、医師により、再生医療と運動療法・物理療法を組み合わせた治療プログラムを計画します。<br>
+                  治療プログラムは、目指すゴールに合わせて、治療期間や回数なども異なります。
                 </p>
               </div>
               <div class="flow-circle__inner_right_box_top_logo">
@@ -176,7 +183,7 @@ $rootDir = get_template_directory_uri();
               <div class="flow-circle__inner_right_box_top_ttl">
                 <div class="flow-circle__inner_right_box_top_ttl_left">
                   <img src="<?php echo $rootDir ?>/images/flow/flow_04.png" alt="">
-                  <p>治療開始<br>（再生医療・運動療法・物理療法）</p>
+                  <p>治療プログラム開始<br>（再生医療・運動療法・物理療法）</p>
                 </div>
                 <div class="flow-circle__inner_right_box_top_ttl_right">
                   <img src="<?php echo $rootDir ?>/images/flow/flow_person_01.png" alt="">
@@ -184,8 +191,8 @@ $rootDir = get_template_directory_uri();
               </div>
               <div class="flow-circle__inner_right_box_top_txt">
                 <p>
-                  03.で立てた治療計画にそって医師、理学療法士、トレーナーが連携して治療を行っていきます。<br>
-                  運動療法は、DDシステムやＭＴＸアカデミーでも行いますが、患者様の治療の状況はすべて共通のカルテで共有され、スムーズに治療を行う体制を整えております。
+                  「03.治療計画」で立てた治療計画にそって医師、理学療法士、トレーナーが連携して治療を行っていきます。<br>
+                  運動療法は、DDシステムやMTXアカデミーでも行いますが、患者様の治療の状況はすべて共通のカルテで共有され、スムーズに治療を行う体制を整えております。
                 </p>
               </div>
               <div class="flow-circle__inner_right_box_top_logo">
@@ -282,7 +289,7 @@ $rootDir = get_template_directory_uri();
               <div class="flow-circle__inner_right_box_top_ttl">
                 <div class="flow-circle__inner_right_box_top_ttl_left">
                   <img src="<?php echo $rootDir ?>/images/flow/flow_08.png" alt="">
-                  <p>フォローアップ</p>
+                  <p>運動の日常化</p>
                 </div>
                 <div class="flow-circle__inner_right_box_top_ttl_right">
                   <img src="<?php echo $rootDir ?>/images/flow/flow_person_01.png" alt="">
@@ -292,7 +299,8 @@ $rootDir = get_template_directory_uri();
               </div>
               <div id="txtArea" class="flow-circle__inner_right_box_top_txt">
                 <p class="width">
-                  私たちの目指すものは、人々が運動の必要性を感じ、人々の生活の中に常に運動があることです。<br>
+                  私たちの目指すものは、人々が運動の必要性を感じ、<br>
+                  人々の生活の中に常に運動があることです。<br>
                   それにより、人々が自分の足で人生の最後まで立ち、動き、楽しく生きられることを目指します。
                 </p>
                 <img src="<?php echo $rootDir ?>/images/flow/flow_img_07.jpg" alt="">
