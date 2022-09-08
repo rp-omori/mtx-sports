@@ -61,6 +61,10 @@
     }
   }
 
+  .column__search-area-body {
+    padding: get_vw(40) get_vw(87);
+  }
+
   .column__recommend {
     margin-bottom: get_vw(120);
 
@@ -265,5 +269,9 @@
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px;
     }
+  }
+
+  .search-box {
+    width: 52%;
   }
 }

@@ -80,6 +80,11 @@ $rootDir = get_template_directory_uri();
           <span class="column__heading-label">ALL LINE UP</span>
           <h2 class="column__heading">全てのコラム記事</h2>
         </div>
+        <div class="search-box-wrapper">
+          <div class="search-box">
+            <input type="text" class="search-box__input">
+          </div>
+        </div>
         <div class="column__search-area">
           <div class="column__search-area-head">
             <div class="column__search-area-head-inner">
@@ -97,9 +102,6 @@ $rootDir = get_template_directory_uri();
             </div>
           </div>
           <div class="column__search-area-body">
-            <div class="search-box">
-              <input type="text" class="search-box__input">
-            </div>
             <div class="column__tags">
               <div class="column__tags-left">
                 <div class="column__tags-heading">
