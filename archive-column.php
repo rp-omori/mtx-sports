@@ -82,7 +82,8 @@ $rootDir = get_template_directory_uri();
         </div>
         <div class="search-box-wrapper">
           <div class="search-box">
-            <input type="text" class="search-box__input">
+            <input type="text" class="search-box__input" placeholder="キーワードで検索">
+            <button class="search-box__button"><img src="<?php echo $rootDir ?>/images/icon/icon-search.svg" alt=""></button>
           </div>
         </div>
         <div class="column__search-area">
@@ -102,49 +103,31 @@ $rootDir = get_template_directory_uri();
             </div>
           </div>
           <div class="column__search-area-body">
+            <p class="column__tags-heading">＃タグで絞り込む</p>
             <div class="column__tags">
-              <div class="column__tags-left">
-                <div class="column__tags-heading">
-                  <div class="column__tags-list">
-                    <div class="column__tags-wrapper">
-                      <input id="1" type="checkbox" class="column__tags-check">
-                      <label for="1" class="column__tags-label"></label>
-                    </div>
-                    <div class="column__tags-wrapper">
-                      <input id="1" type="checkbox" class="column__tags-check">
-                      <label for="1" class="column__tags-label"></label>
-                    </div>
-                    <div class="column__tags-wrapper">
-                      <input id="1" type="checkbox" class="column__tags-check">
-                      <label for="1" class="column__tags-label"></label>
-                    </div>
-                  </div>
+              <div class="column__tags-list">
+                <div class="column__tags-wrapper">
+                  <input id="1" type="checkbox" class="column__tags-check" name="columns">
+                  <label for="1" class="column__tags-label"><span>タグ１</span></label>
+                </div>
+                <div class="column__tags-wrapper">
+                  <input id="2" type="checkbox" class="column__tags-check" name="columns">
+                  <label for="2" class="column__tags-label"><span>タグ２</span></label>
+                </div>
+                <div class="column__tags-wrapper">
+                  <input id="3" type="checkbox" class="column__tags-check" name="columns">
+                  <label for="3" class="column__tags-label"><span>タグ３</span></label>
                 </div>
               </div>
-              <div class="column__tags-right">
-                <div class="column__tags-heading">
-                  <div class="column__tags-list">
-                    <div class="column__tags-wrapper">
-                      <input id="1" type="checkbox" class="column__tags-check">
-                      <label for="1" class="column__tags-label"></label>
-                    </div>
-                    <div class="column__tags-wrapper">
-                      <input id="1" type="checkbox" class="column__tags-check">
-                      <label for="1" class="column__tags-label"></label>
-                    </div>
-                    <div class="column__tags-wrapper">
-                      <input id="1" type="checkbox" class="column__tags-check">
-                      <label for="1" class="column__tags-label"></label>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            </div>
+            <div class="column__tags-button">
+              <button class="btn btn--green">SEARCH</button>
             </div>
           </div>
         </div>
         <div class="column__list-wrapper">
           <ul class="column__list">
-          <li class="column__item">
+            <li class="column__item">
               <a href="" class="column__link">
                 <div class="column__head">
                   <img src="https://source.unsplash.com/Gp34PCSEbt8" alt="" class="column__img">
