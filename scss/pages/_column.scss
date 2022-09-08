@@ -298,6 +298,10 @@
       display: flex;
       flex-wrap: wrap;
       gap: get_vw(10);
+
+      @include sp {
+        gap: get_vw(10, 375);
+      }
     }
 
     .column__tags-label {
@@ -312,6 +316,11 @@
       cursor: pointer;
       text-align: center;
       filter: drop-shadow(2px 2px 2px rgba(182, 200, 193, .5));
+
+      @include sp {
+        padding: get_vw(7, 375);
+        font-size: calcFz(15);
+      }
     }
 
     input[name="columns"]:checked {
