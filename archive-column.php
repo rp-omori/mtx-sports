@@ -24,54 +24,26 @@ $rootDir = get_template_directory_uri();
         </div>
         <div class="column__list-wrapper">
           <ul class="column__list">
-            <li class="column__item">
-              <a href="" class="column__link">
-                <div class="column__head">
-                  <img src="https://source.unsplash.com/Gp34PCSEbt8" alt="" class="column__img">
-                </div>
-                <div class="column__body">
-                  <h3 class="column__title">タイトル</h3>
-                  <p class="column__date">2022.5.10</p>
-                  <div class="column__category-wrapper">
-                    <span class="column__category">カテ1</span>
-                    <span class="column__category">カテ2</span>
-                    <span class="column__category">カテ3</span>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="column__item">
-              <a href="" class="column__link">
-                <div class="column__head">
-                  <img src="https://source.unsplash.com/Gp34PCSEbt8" alt="" class="column__img">
-                </div>
-                <div class="column__body">
-                  <h3 class="column__title">タイトル</h3>
-                  <p class="column__date">2022.5.10</p>
-                  <div class="column__category-wrapper">
-                    <span class="column__category">カテ1</span>
-                    <span class="column__category">カテ2</span>
-                    <span class="column__category">カテ3</span>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="column__item">
-              <a href="" class="column__link">
-                <div class="column__head">
-                  <img src="https://source.unsplash.com/Gp34PCSEbt8" alt="" class="column__img">
-                </div>
-                <div class="column__body">
-                  <h3 class="column__title">タイトル</h3>
-                  <p class="column__date">2022.5.10</p>
-                  <div class="column__category-wrapper">
-                    <span class="column__category">カテ1</span>
-                    <span class="column__category">カテ2</span>
-                    <span class="column__category">カテ3</span>
-                  </div>
-                </div>
-              </a>
-            </li>
+            <?php
+              $post_id = 341;
+              if(get_field('recommend_column', $post_id)):
+                $count = 0;
+                $arrayLength =  count(get_field('recommend_column', $post_id));
+                if($arrayLength > 3) {
+                    $arrayLength = 3;
+                };
+                while($count < $arrayLength): ?>
+              <?php
+                  // $args = get_field('recommend_column', $post_id)[$count];
+                // var_dump($post_column);
+                $args = [
+                  'column_article' => get_field('recommend_column', $post_id)[$count],
+                ];
+                get_template_part('c-column_article', null, $args); ?>
+                <?php
+                    $count++;
+                endwhile;
+            endif; ?>
           </ul>
         </div>
       </div>
@@ -106,125 +78,34 @@ $rootDir = get_template_directory_uri();
             <p class="column__tags-heading">＃タグで絞り込む</p>
             <div class="column__tags">
               <div class="column__tags-list">
+              <?php
+              $terms = get_terms('column_tag','hide_empty=0');
+              $count = 1;
+              foreach ( $terms as $term ) : ?>
                 <div class="column__tags-wrapper">
-                  <input id="1" type="checkbox" class="column__tags-check" name="columns">
-                  <label for="1" class="column__tags-label"><span>タグ１</span></label>
+                  <input id="<?php echo $count ?>" type="checkbox" class="column__tags-check" name="columns">
+                  <label for="<?php echo $count ?>" class="column__tags-label"><span><?php echo $term->name; ?></span></label>
                 </div>
-                <div class="column__tags-wrapper">
-                  <input id="2" type="checkbox" class="column__tags-check" name="columns">
-                  <label for="2" class="column__tags-label"><span>タグ２</span></label>
-                </div>
-                <div class="column__tags-wrapper">
-                  <input id="3" type="checkbox" class="column__tags-check" name="columns">
-                  <label for="3" class="column__tags-label"><span>タグ３</span></label>
-                </div>
+                <?php $count++; endforeach; ?>
               </div>
             </div>
+
             <div class="column__tags-button">
               <button class="btn btn--green">SEARCH</button>
             </div>
           </div>
         </div>
+
+        <?php if ( have_posts() ) : ?>
         <div class="column__list-wrapper">
           <ul class="column__list">
-            <li class="column__item">
-              <a href="" class="column__link">
-                <div class="column__head">
-                  <img src="https://source.unsplash.com/Gp34PCSEbt8" alt="" class="column__img">
-                </div>
-                <div class="column__body">
-                  <h3 class="column__title">タイトル</h3>
-                  <p class="column__date">2022.5.10</p>
-                  <div class="column__category-wrapper">
-                    <span class="column__category">カテ1</span>
-                    <span class="column__category">カテ2</span>
-                    <span class="column__category">カテ3</span>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="column__item">
-              <a href="" class="column__link">
-                <div class="column__head">
-                  <img src="https://source.unsplash.com/Gp34PCSEbt8" alt="" class="column__img">
-                </div>
-                <div class="column__body">
-                  <h3 class="column__title">タイトル</h3>
-                  <p class="column__date">2022.5.10</p>
-                  <div class="column__category-wrapper">
-                    <span class="column__category">カテ1</span>
-                    <span class="column__category">カテ2</span>
-                    <span class="column__category">カテ3</span>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="column__item">
-              <a href="" class="column__link">
-                <div class="column__head">
-                  <img src="https://source.unsplash.com/Gp34PCSEbt8" alt="" class="column__img">
-                </div>
-                <div class="column__body">
-                  <h3 class="column__title">タイトル</h3>
-                  <p class="column__date">2022.5.10</p>
-                  <div class="column__category-wrapper">
-                    <span class="column__category">カテ1</span>
-                    <span class="column__category">カテ2</span>
-                    <span class="column__category">カテ3</span>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="column__item">
-              <a href="" class="column__link">
-                <div class="column__head">
-                  <img src="https://source.unsplash.com/Gp34PCSEbt8" alt="" class="column__img">
-                </div>
-                <div class="column__body">
-                  <h3 class="column__title">タイトル</h3>
-                  <p class="column__date">2022.5.10</p>
-                  <div class="column__category-wrapper">
-                    <span class="column__category">カテ1</span>
-                    <span class="column__category">カテ2</span>
-                    <span class="column__category">カテ3</span>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="column__item">
-              <a href="" class="column__link">
-                <div class="column__head">
-                  <img src="https://source.unsplash.com/Gp34PCSEbt8" alt="" class="column__img">
-                </div>
-                <div class="column__body">
-                  <h3 class="column__title">タイトル</h3>
-                  <p class="column__date">2022.5.10</p>
-                  <div class="column__category-wrapper">
-                    <span class="column__category">カテ1</span>
-                    <span class="column__category">カテ2</span>
-                    <span class="column__category">カテ3</span>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li class="column__item">
-              <a href="" class="column__link">
-                <div class="column__head">
-                  <img src="https://source.unsplash.com/Gp34PCSEbt8" alt="" class="column__img">
-                </div>
-                <div class="column__body">
-                  <h3 class="column__title">タイトル</h3>
-                  <p class="column__date">2022.5.10</p>
-                  <div class="column__category-wrapper">
-                    <span class="column__category">カテ1</span>
-                    <span class="column__category">カテ2</span>
-                    <span class="column__category">カテ3</span>
-                  </div>
-                </div>
-              </a>
-            </li>
+            <?php
+            while ( have_posts() ) : the_post();
+            $post_column = $post; ?>
+            <?php get_template_part('c-column_article'); ?>
+            <?php endwhile; ?>
           </ul>
-        </div>
+        </div><?php endif; ?>
       </div>
     </div>
     <?php get_template_part('component/footer__other'); ?>
