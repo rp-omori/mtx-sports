@@ -42,6 +42,7 @@ develop-before-deployブランチ以外のブランチで作業するときは�
 開発環境用branch
 > developブランチはgit actionsでステージング環境と同期しています。プッシュしたらステージング環境が更新されるので注意してください。
 ### develop-before-deploy
+> コンパイル用ブランチ（actionsでnpm run devをrunさせれば必要がないブランチです。。。）
 > featureブランチでテストをして、問題なければdevelop-before-deployブランチにプルリクエストをしてマージしてください。
 > 問題なければ、このブランチでコンパイルしてからdevelopブランチにマージしてください。
 
