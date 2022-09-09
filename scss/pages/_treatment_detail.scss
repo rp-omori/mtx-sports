@@ -1,0 +1,332 @@
+.treatment-detail {
+  padding-top: get_vw(120);
+
+  @include sp {
+    padding-top: get_vw(48, 375);
+  }
+
+  .triangle {
+    position: absolute;
+    width: get_vw(225);
+    height: get_vw(543);
+    z-index: -1;
+
+    @include sp {
+      width: get_vw(104, 375);
+      height: get_vw(250, 375);
+    }
+
+    &.triangle--01 {
+      top: get_vw(85 + 182 + 120 + 40 + 60 + 200);
+      right: 0;
+
+      @include sp {
+        top: 1200px;
+      }
+    }
+
+    &.triangle--02 {
+      top: get_vw(85 + 182 + 120 + 40 + 60 + 750);
+      left: 0;
+
+      @include sp {
+        top: 1686px;
+      }
+    }
+
+    &.triangle--03 {
+      top: get_vw(85 + 182 + 120 + 40 + 60 + 1700);
+      right: 0;
+
+      @include sp {
+        top: 2740px;
+      }
+    }
+
+    &.triangle--04 {
+      top: get_vw(85 + 182 + 120 + 40 + 60 + 3150);
+      left: 0;
+
+      @include sp {
+        display: none;
+      }
+    }
+  }
+
+  .treatment-detail__inner {
+    width: 83%;
+    margin: 0 auto get_vw(120);
+
+    @include sp {
+      width: 89.5%;
+      margin: 0 auto get_vw(70, 375);
+    }
+  }
+
+  .index_btn__wrapper {
+    display: flex;
+    width: get_vw(706);
+    max-width: 706px;
+    margin: 0 auto get_vw(60);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: get_vw(40) 0;
+
+    @include sp {
+      width: 100%;
+      margin-bottom: get_vw(40, 375);
+      gap: get_vw(20, 375) 0;
+    }
+
+    .index_btn {
+      @include sp {
+        margin-bottom: 0;
+        align-items: flex-end;
+      }
+
+      img {
+        @include sp {
+          margin-bottom: 4px;
+        }
+      }
+    }
+  }
+
+  .treatment-detail__contents {
+    width: 100%;
+    background: var(--main-color-white);
+    border-radius: 20px;
+
+    .treatment-detail__contents-inner {
+      padding: get_vw(24) get_vw(30) get_vw(48);
+
+      @include sp {
+        padding: get_vw(24, 375) get_vw(20, 375);
+      }
+    }
+  }
+
+  .treatment-detail__contents-title {
+    margin-bottom: get_vw(28);
+
+    @include sp {
+      margin-bottom: get_vw(24, 375);
+    }
+  }
+
+  .treatment-detail__contents-body {
+    display: flex;
+
+    @include sp {
+      flex-direction: column-reverse;
+    }
+
+    .treatment-detail__contents-text {
+      width: get_vw(610);
+      font-size: calcFz(18);
+      line-height: 1.6;
+
+      @include sp {
+        width: 100%;
+        font-size: calcFz(15);
+      }
+    }
+
+    .treatment-detail__contents-img {
+      width: get_vw(533);
+      margin-left: get_vw(77);
+
+      @include sp {
+        width: 100%;
+        margin-bottom: get_vw(24, 375);
+        margin-left: 0;
+      }
+    }
+  }
+
+  .treatment-detail__contents-item {
+    margin-bottom: get_vw(64);
+
+    @include sp {
+      margin-bottom: get_vw(40, 375);
+    }
+
+    &:first-child {
+      margin-bottom: get_vw(81);
+
+      @include sp {
+        margin-bottom: get_vw(40, 375);
+      }
+    }
+
+    &:last-child {
+      margin-bottom: get_vw(120);
+
+      @include sp {
+        margin-bottom: get_vw(64, 375);
+      }
+    }
+
+    .treatment-detail__contents-item-inner {
+      padding: 0 get_vw(30);
+
+      @include sp {
+        padding: 0 get_vw(20, 375);
+      }
+    }
+  }
+
+  .treatment-detail__contents-item-body {
+    .treatment-detail__contents-item-body-flex {
+      display: flex;
+      justify-content: space-between;
+
+      @include sp {
+        flex-direction: column-reverse;
+      }
+    }
+
+    .treatment-detail__contents-item-text {
+      margin-bottom: get_vw(10);
+
+      @include sp {
+        margin-bottom: get_vw(12, 375);
+      }
+    }
+  }
+
+  .contents-item-detail__list {
+    width: get_vw(600);
+
+    @include sp {
+      width: 100%;
+    }
+  }
+
+  .contents-item-detail__item {
+    position: relative;
+    margin-bottom: get_vw(10);
+    padding: get_vw(15) get_vw(45);
+    border-radius: 6px;
+    color: var(--main-color-black);
+    font-size: calcFz(18);
+    font-weight: bold;
+    line-height: 1.6;
+    filter: drop-shadow(2px 2px 2px rgb(182, 200, 193));
+
+    @include sp {
+      margin-bottom: get_vw(10, 375);
+      padding: get_vw(16, 375) get_vw(10, 375) get_vw(16, 375) get_vw(30, 375);
+      font-size: calcFz(15);
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: get_vw(8);
+      height: get_vw(8);
+      border-radius: 50%;
+      top: get_vw(30);
+      left: 20px;
+      transform: translateY(-50%);
+
+      @include sp {
+        width: get_vw(8, 375);
+        height: get_vw(8, 375);
+        top: get_vw(28, 375);
+        left: 10px;
+      }
+    }
+
+    &.contents-item-detail__item--white {
+      background: var(--main-color-white);
+
+      &:before {
+        background: var(--main-color);
+      }
+    }
+
+    &.contents-item-detail__item--green {
+      background: #C6DBD4;
+
+      &:before {
+        background: #6A8381;
+      }
+    }
+  }
+
+  .treatment-detail__contents-item-img {
+    &.treatment-detail__contents-item-img--small {
+      width: get_vw(355);
+      margin-right: get_vw(84);
+      margin-top: get_vw(-100);
+      z-index: 2;
+
+      @include sp {
+        width: 50%;
+        margin: 0 auto get_vw(24, 375);
+      }
+    }
+  }
+
+  .treatment-detail__contents-item-note-wrapper {
+    margin-bottom: get_vw(10);
+
+    @include sp {
+      margin-bottom: get_vw(12, 375);
+    }
+
+    .treatment-detail__contents-item-note {
+      color: var(--note-red);
+      font-size: calcFz(18);
+      font-weight: bold;
+      line-height: 1.6;
+
+      @include sp {
+        font-size: calcFz(14);
+      }
+    }
+  }
+
+  .treatment-detail__contents-item-text {
+    color: var(--main-color-black);
+    font-size: calcFz(18);
+    line-height: 1.6;
+
+    &.fwb {
+      font-weight: bold;
+    }
+
+    @include sp {
+      font-size: calcFz(15);
+    }
+  }
+
+  .treatment-detail-btnArea {
+    display: flex;
+    justify-content: center;
+
+    @include sp {
+      flex-direction: column;
+    }
+
+    .treatment-detail-btnArea__btn {
+      &:first-child {
+        margin-right: get_vw(20);
+
+        @include sp {
+          margin-right: 0;
+          margin-bottom: get_vw(20, 375);
+        }
+      }
+
+      &:last-child {
+        margin-left: get_vw(20);
+
+        @include sp {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

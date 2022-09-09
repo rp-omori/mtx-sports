@@ -1,0 +1,323 @@
+.mw_wp_form_input {
+  .form-group {
+    .form-group__head {
+      display: flex;
+      margin-bottom: get_vw(12);
+      align-items: center;
+
+      @include sp {
+        margin-bottom: get_vw(8, 375);
+      }
+    }
+
+    .form-label {
+      margin-right: get_vw(20);
+      font-size: calcFz(20);
+      font-weight: bold;
+
+      @include sp {
+        margin-right: get_vw(12, 375);
+        font-size: calcFz(15);
+      }
+    }
+
+    .form-badge {
+      padding: get_vw(8) get_vw(20);
+      border-radius: 2px;
+      color: var(--main-color-white);
+      font-size: calcFz(14);
+      font-weight: bold;
+
+      @include sp {
+        padding: get_vw(3, 375) get_vw(8, 375);
+        font-size: calcFz(12);
+      }
+
+      &.form-badge--required {
+        background: var(--note-red);
+      }
+
+      &.form-badge--optional {
+        background: #9DA7A6;
+      }
+    }
+
+    .form-group__body {
+      width: 100%;
+    }
+
+    .form-select-wrapper {
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: get_vw(12);
+        height: get_vw(7);
+        top: 50%;
+        right: get_vw(24);
+        transform: translateY(-50%);
+        background-image: url(#{$img-root-dir}/icon/icon-arrow-bottom--black.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @include sp {
+          width: get_vw(7, 375);
+          height: get_vw(4, 375);
+          right: get_vw(12, 375);
+        }
+      }
+    }
+
+    .form-input {
+      width: 100%;
+      padding: get_vw(30) get_vw(40);
+      background: #EFF4F3;
+      border: 1px solid #CADDD9;
+      border-radius: 5px;
+      color: var(--main-color-black);
+      font-size: calcFz(18);
+      appearance: none;
+      box-sizing: border-box;
+
+      @include sp {
+        padding: get_vw(16, 375);
+        font-size: calcFz(15);
+      }
+
+      &::placeholder {
+        color: #C6C6C6;
+        // font-weight: 400;
+      }
+
+      &:focus-visible {
+        outline: var(--main-color) auto 1px;
+      }
+    }
+
+    textarea {
+      resize: vertical;
+    }
+  }
+}
+
+.form-checkbox {
+  label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    input {
+      margin: 0;
+      cursor: pointer;
+    }
+
+    span {
+      display: block;
+      margin-left: get_vw(8);
+      font-size: calcFz(18);
+      font-weight: bold;
+      cursor: pointer;
+
+      @include sp {
+        margin-left: get_vw(6, 375);
+        font-size: calcFz(16);
+      }
+    }
+  }
+}
+
+.form-btn {
+  .btn {
+    margin: 0 auto;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.mw_wp_form_confirm {
+  .form-body {
+    margin-top: get_vw(-35);
+    margin-bottom: get_vw(80);
+
+    @include sp {
+      margin-top: get_vw(-20, 375);
+      margin-bottom: get_vw(30, 375);
+    }
+  }
+
+  .form-group {
+    display: flex;
+    padding: get_vw(35) 0;
+    align-items: flex-start;
+    border-bottom: 1px solid #CADAD4;
+
+    @include sp {
+      padding: get_vw(20, 375) get_vw(10, 375);
+      flex-direction: column;
+    }
+
+    .form-group__head {
+      min-width: get_vw(264);
+      font-size: calcFz(20);
+      font-weight: bold;
+      line-height: 1.7;
+
+      @include sp {
+        min-width: initial;
+        margin-bottom: get_vw(20, 375);
+        font-size: calcFz(15);
+        line-height: 1.6;
+      }
+    }
+
+    .form-label {
+      margin-right: get_vw(20);
+      font-size: calcFz(20);
+      font-weight: bold;
+
+      @include sp {
+        margin-right: get_vw(12, 375);
+        font-size: calcFz(15);
+      }
+    }
+
+    .form-badge {
+      display: none;
+      padding: get_vw(8) get_vw(20);
+      border-radius: 2px;
+      color: var(--main-color-white);
+      font-size: calcFz(14);
+      font-weight: bold;
+
+      @include sp {
+        padding: get_vw(3, 375) get_vw(8, 375);
+        font-size: calcFz(12);
+      }
+
+      &.form-badge--required {
+        background: var(--note-red);
+      }
+
+      &.form-badge--optional {
+        background: #9DA7A6;
+      }
+    }
+
+    .form-group__body {
+      width: 100%;
+    }
+
+    .form-select-wrapper {
+      // display: none;
+      position: relative;
+
+      &:after {
+        // content: '';
+        position: absolute;
+        display: block;
+        width: get_vw(12);
+        height: get_vw(7);
+        top: 50%;
+        right: get_vw(24);
+        transform: translateY(-50%);
+        background-image: url(#{$img-root-dir}/icon/icon-arrow-bottom--black.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        @include sp {
+          width: get_vw(7, 375);
+          height: get_vw(4, 375);
+          right: get_vw(12, 375);
+        }
+      }
+    }
+
+    .form-input-wrapper {
+      font-size: calcFz(18);
+      line-height: 1.7;
+
+      @include sp {
+        padding-left: 1em;
+        font-size: calcFz(15);
+        line-height: 1.6;
+      }
+    }
+
+    .form-note {
+      display: none;
+    }
+
+    .form-input {
+      display: none;
+      width: 100%;
+      padding: get_vw(30) get_vw(40);
+      background: #EFF4F3;
+      border: 1px solid #CADDD9;
+      border-radius: 5px;
+      color: var(--main-color-black);
+      font-size: calcFz(18);
+      appearance: none;
+      box-sizing: border-box;
+
+      @include sp {
+        padding: get_vw(16, 375);
+        font-size: calcFz(15);
+      }
+
+      &::placeholder {
+        color: #C6C6C6;
+        // font-weight: 400;
+      }
+
+      &:focus-visible {
+        outline: var(--main-color) auto 1px;
+      }
+    }
+
+    textarea {
+      display: none;
+      resize: vertical;
+    }
+  }
+
+  .form-checkbox {
+    display: none;
+    label {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      input {
+        margin: 0;
+        cursor: pointer;
+      }
+
+      span {
+        display: block;
+        margin-left: get_vw(8);
+        font-size: calcFz(18);
+        font-weight: bold;
+        cursor: pointer;
+
+        @include sp {
+          margin-left: get_vw(6, 375);
+          font-size: calcFz(16);
+        }
+      }
+    }
+  }
+
+  .form-agree {
+    display: none;
+  }
+
+  .form-btn {
+    .btn {
+      &:first-child {
+        margin-bottom: get_vw(40);
+      }
+    }
+  }
+}

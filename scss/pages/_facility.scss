@@ -1,0 +1,808 @@
+.facility-contents{
+  background-color: #EFF4F3;
+  position: relative;
+
+  .facility-top-wrapper{
+    position: relative;
+    z-index: 2;
+    // padding: clamp(10px,get_vw(40),40px) 0 0;
+    width: 100vw;
+    height: clamp(10px,get_vw(613),613px);
+    background-image: url("../images/facility/facility-top-background.png");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-bottom: clamp(10px,get_vw(40),40px);
+    overflow: hidden;
+
+    @include sp {
+      // padding: 20px 0 0;
+      height: 250px;
+      background-position: top;
+      background-size: 100% 100%;
+      background-image: url("../images/facility/facility-top-background_sp.png");
+      margin-bottom: 60px;
+    }
+
+    .facility-top{
+
+      position: absolute;
+      top: clamp(10px,get_vw(250),250px);
+      left: clamp(10px,get_vw(127),127px);
+      width: 100%;
+
+      @include sp {
+        top: 65px;
+        left: 18px;
+      }
+
+      p{
+        color: rgba($color: #fff, $alpha: .15);
+        font-size: calcFz(143);
+        font-family: $fontFamilyDin2014;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        line-height: 1.76;
+
+        @include sp {
+          font-size: calcFz(72);
+        }
+
+      }
+
+      &::after{
+        content: "治療体制と施設・設備";
+        color: #fff;
+        font-size: calcFz(50);
+        // font-family: $fontFamilyYuGo;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        line-height: 1.28;
+        position: absolute;
+        bottom: 13%;
+        left: 0;
+
+        @include sp {
+          font-size: calcFz(25);
+        }
+
+      }
+
+    }
+
+  }
+
+  .facility-indexArea{
+    position: relative;
+    z-index: 2;
+    width: clamp(10px,get_vw(560),560px);
+    margin: 0 auto clamp(10px,get_vw(120),120px);
+    display: flex;
+    justify-content: space-between;
+
+    @include sp {
+      width: 77.3%;
+      flex-wrap: wrap;
+      margin: 0 auto 50px;
+    }
+
+
+    .index_btn{
+      position: relative;
+
+      @include sp {
+        width: 100%;
+        margin-bottom: 35.5px;
+      }
+
+      .green_txt{
+        position: absolute;
+        top: -26px;
+        left: 0;
+        color: var(--main-color-bg);
+        font-size: calcFz(14);
+        font-family: $fontFamilyDin2014;
+        font-weight: 600;
+        line-height: 1.92;
+        width: 100%;
+
+        @include sp {
+          top: -20px;
+          font-size: calcFz(12);
+        }
+
+      }
+
+
+      p{
+
+        @include sp {
+          font-size: calcFz(15);
+        }
+
+      }
+
+    }
+
+
+  }
+
+  .facility-systemArea{
+    width: 100%;
+    margin-bottom: clamp(10px,get_vw(120),120px);
+
+    @include sp {
+      margin-bottom: 70px;
+    }
+
+    &__inner{
+      width: clamp(10px,get_vw(1000),1000px);
+      margin: 0 auto;
+
+      @include sp {
+        width: 90%;
+      }
+
+      &_ttl{
+        text-align: center;
+        position: relative;
+        margin-bottom: clamp(10px,get_vw(86),86px);
+
+        p{
+          color: rgba($color: #fff, $alpha: 1);
+          font-size: calcFz(100);
+          font-family: $fontFamilyDin2014;
+          font-weight: 600;
+          line-height: 1.75;
+          letter-spacing: 0em;
+
+          @include sp {
+            width: 100vw;
+            position: relative;
+            z-index: 1;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: calcFz(48);
+          }
+
+        }
+
+        &::before{
+          content: "治療体制";
+          position: absolute;
+          bottom: 10%;
+          left: 0;
+          color: var(--main-color);
+          font-size: calcFz(40);
+          // font-family: $fontFamilyYuGo;
+          font-weight: 600;
+          line-height: 1.75;
+          width: 100%;
+
+          @include sp {
+            font-size: calcFz(24);
+            z-index: 2;
+          }
+
+        }
+
+        &::after{
+          content: "";
+          display: block;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          width: clamp(10px,get_vw(64),64px);
+          height: 3px;
+          background-color:var(--main-color);
+
+          @include sp {
+            width: 44px;
+          }
+
+        }
+
+      }
+
+      &_lead{
+        text-align: center;
+        margin-bottom: clamp(10px,get_vw(40),40px);
+
+        @include sp {
+          margin-bottom: 32px;
+        }
+
+        p{
+          color: var(--main-color-bg);
+          font-size: calcFz(28);
+          // font-family: $fontFamilyYuGo;
+          font-weight: 600;
+          line-height: 1.75;
+          letter-spacing: 0em;
+
+          @include sp {
+            font-size: calcFz(18);
+            line-height: 1.6;
+          }
+
+        }
+
+      }
+
+      &_txt{
+        width: clamp(10px,get_vw(1000),1000px);
+        margin: 0 auto clamp(10px,get_vw(40),40px);
+
+        @include sp {
+          width: 100%;
+          margin-bottom: 34px;
+        }
+
+        p{
+          text-align: center;
+          font-size: calcFz(18);
+          // font-family: $fontFamilyYuGo;
+          // font-weight: 400;
+          line-height: 1.75;
+          letter-spacing: 0em;
+
+          @include sp {
+            font-size: calcFz(15);
+            line-height: 1.6;
+            text-align: left;
+          }
+
+        }
+
+      }
+
+      &_img{
+        width: 100%;
+        margin: 0 auto clamp(10px,get_vw(40),40px);
+
+        @include sp {
+          width: 100vw;
+          position: relative;
+          left: 50%;
+          transform: translateX(-50%);
+          margin-bottom: 25px;
+        }
+
+        img{
+          width: 100%;
+        }
+
+      }
+
+      &_btnArea{
+        display: flex;
+        justify-content: center;
+
+        @include sp {
+          flex-direction: column;
+        }
+
+        .index_btn{
+          background-color: #fff;
+          padding: clamp(10px,get_vw(20),20px);
+          width: clamp(10px,get_vw(260),260px);
+          border: 1px solid #E7EDEC;
+          box-shadow: 2px 2px 2px #B6C8C1;
+          justify-content: space-between;
+          border-radius: 6px;
+
+          @include sp {
+            width: calc(95% - 40px);
+            margin: 0 auto;
+            padding: 13px 20px;
+          }
+
+          &:nth-child(1){
+            margin-right: Clamp(10px,get_vw(40),40px);
+
+            @include sp {
+              margin-right: auto;
+              margin-bottom: 10px;
+            }
+
+          }
+
+          p{
+            color: var(--main-color);
+
+            @include sp {
+              line-height: 1.6;
+              margin-right: 0;
+            }
+
+          }
+
+          img{
+            width: clamp(10px,get_vw(34),34px);
+
+            @include sp {
+              width: 8%;
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  .facility-collaboratingArea{
+    width: 100%;
+    background-color: var(--main-section-bg);
+    padding: clamp(10px,get_vw(160),160px) 0;
+    position: relative;
+    margin-bottom: clamp(10px,get_vw(90),90px);
+
+    @include sp {
+      padding: 100px 0;
+      margin-bottom: 100px;
+    }
+
+    .bg_img_left{
+      position: absolute;
+      top: clamp(10px,get_vw(1790),1790px);
+      left: 0;
+      width: clamp(10px,get_vw(300),300px);
+
+      @include sp {
+        width: 165px;
+        top: 3720px;
+      }
+
+      img{
+        width: 100%;
+      }
+
+    }
+
+    .bg_img_right{
+      position: absolute;
+      top: clamp(10px,get_vw(920),920px);
+      right: 0;
+      width: clamp(10px,get_vw(300),300px);
+
+      @include sp {
+        width: 165px;
+        top: 1290px;
+      }
+
+      img{
+        width: 100%;
+      }
+
+    }
+
+    .bg_img_bottom{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: clamp(10px,get_vw(590),590px);
+
+      @include sp {
+        width: 280px;
+      }
+
+      img{
+        width: 100%;
+      }
+
+    }
+
+    &__inner{
+      width: clamp(10px,get_vw(1280),1280px);
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+
+      @include sp {
+        width: 90%;
+      }
+
+
+      &_ttl{
+        position: relative;
+        margin-bottom: clamp(10px,get_vw(80),80px);
+
+        p{
+          color: rgba($color: #fff, $alpha: 1);
+          font-size: calcFz(100);
+          font-family: $fontFamilyDin2014;
+          font-weight: 600;
+          line-height: 1.75;
+          letter-spacing: 0em;
+
+          @include sp {
+            font-size: calcFz(55);
+            line-height: 1.7;
+          }
+
+        }
+
+        &::before{
+          content: "クリニック＆連携施設・設備";
+          position: absolute;
+          bottom: 10%;
+          left: 0;
+          color: var(--main-color);
+          font-size: calcFz(40);
+          // font-family: $fontFamilyYuGo;
+          font-weight: 600;
+          line-height: 1.75;
+          width: 100%;
+
+          @include sp {
+            font-size: calcFz(24);
+            line-height: 1.5;
+          }
+
+        }
+
+        &::after{
+          content: "";
+          display: block;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: clamp(10px,get_vw(64),64px);
+          height: 3px;
+          background-color:var(--main-color);
+
+          @include sp {
+            width: 45px;
+          }
+
+        }
+
+      }
+
+      &_contents{
+        margin-bottom: clamp(10px,get_vw(120),120px);
+
+        &_ttl{
+          width: 100%;
+          position: relative;
+          margin-bottom: clamp(10px,get_vw(65),65px);
+
+          @include sp {
+            margin-bottom: 40px;
+          }
+
+          p{
+            text-align: center;
+            width: clamp(10px,get_vw(280),280px);
+            color: #fff;
+            font-size: calcFz(24);
+            // font-family: $fontFamilyYuGo;
+            font-weight: 600;
+            line-height: 1.75;
+            background-color: #000;
+
+            @include sp {
+              font-size: calcFz(18);
+              line-height: 2.3;
+              width: 212px;
+            }
+
+          }
+
+          &::after{
+            content: "";
+            width: 100%;
+            height: 1.5px;
+            background-color: #262928;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+          }
+
+        }
+
+        &_box{
+          width: clamp(10px,get_vw(1220),1220px);
+          margin: 0 auto clamp(10px,get_vw(47),47px);
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+
+          @include sp {
+            width: 100%;
+            flex-direction: column-reverse;
+            margin-bottom: 20px;
+          }
+
+          &.sp_mb{
+
+            @include sp {
+              margin-bottom: 60px;
+            }
+
+          }
+
+          &_left{
+            width: clamp(10px,get_vw(610),610px);
+
+            @include sp {
+              width: 100%;
+            }
+
+            img{
+              width: 100%;
+            }
+
+          }
+
+          &_right{
+            width: clamp(10px,get_vw(555),555px);
+            position: relative;
+
+            @include sp {
+              width: 100%;
+            }
+
+            &_logo{
+              position: absolute;
+              top: 0;
+              right: 0;
+              width: clamp(10px,get_vw(80),80px);
+
+              &.medium{
+                width: clamp(10px,get_vw(120),120px);
+
+                @include sp {
+                  top: 65px;
+                  width: 75px;
+                }
+
+              }
+
+              @include sp {
+                top: 55px;
+                width: 46px;
+              }
+
+              img{
+                width: 100%;
+              }
+
+            }
+
+            &_tab{
+              width: clamp(10px,get_vw(130),130px);
+              margin-bottom: clamp(10px,get_vw(45),45px);
+              border: 1px solid var(--border-line);
+              text-align: center;
+
+              &.green{
+                background-color: var(--main-color);
+
+                p{
+                  color: #fff;
+                }
+
+              }
+
+              @include sp {
+                margin-bottom: 40px;
+              }
+
+              @include sp {
+                display: inline-block;
+                width: auto;
+                padding: 0px 16px;
+              }
+
+              p{
+                font-size: calcFz(18);
+                // font-family: $fontFamilyYuGo;
+                font-weight: 600;
+                line-height: 1.77;
+                letter-spacing: 0em;
+                color: var(--main-color);
+
+                @include sp {
+                  font-size: calcFz(15);
+                  line-height: 1.6;
+                }
+              }
+
+            }
+
+            &_ttl{
+              padding-bottom: 0;
+              border: 0;
+              margin-bottom: clamp(10px,get_vw(24.5),24.5px);
+              align-items: center;
+              position: relative;
+
+              @include sp {
+                width: 100%;
+                align-items: flex-start;
+                justify-content: flex-start;
+                margin-bottom: 24.5px;
+              }
+
+              &.border{
+                width: auto;
+
+                &::after{
+                  content: "";
+                  position: absolute;
+                  bottom: 0;
+                  left: clamp(10px, get_vw(48), 48px);
+                  width: clamp(10px,get_vw(235),235px);
+                  height: 1px;
+                  background-color: var(--border-line);
+
+                  @include sp {
+                    position: absolute;
+                    bottom: 0;
+                    left: 38px;
+                    width: 180px;
+                    height: 1px;
+                    background-color: var(--border-line);
+                  }
+
+                }
+
+              }
+
+              .link{
+                position: absolute;
+                top: -20px;
+                left: clamp(10px,get_vw(50),50px);
+                display: flex;
+                align-items: center;
+                border-bottom: 1px solid var(--border-line);
+
+                @include sp {
+                  left: 37px;
+                }
+
+                &:hover{
+                  cursor: pointer;
+                }
+
+                p{
+                  font-size: calcFz(16);
+                  // font-family: $fontFamilyYuGo;
+                  font-weight: 600;
+                  color: var(--main-color-bg);
+                  // margin-right: 0;
+                  line-height: 1.2;
+
+                  @include sp {
+                    font-size: calcFz(14);
+                  }
+
+                }
+
+                img{
+                  width: clamp(10px,get_vw(14),14px);
+                  margin-right: 0;
+
+                  @include sp {
+                    margin-top: 0px;
+                    width: 10px;
+                  }
+
+                }
+
+              }
+
+              img{
+                width: clamp(10px,get_vw(34),34px);
+                margin-right: clamp(10px,get_vw(14),14px);
+
+                @include sp {
+                  margin-top: 7px;
+                  width: 25px;
+                  margin-right: 12px;
+                }
+              }
+
+              .abso{
+                width: clamp(10px,get_vw(17),17px);
+
+                @include sp {
+                  width: 15px;
+                  margin-top: 10px;
+                }
+
+              }
+
+              p{
+                color: var(--main-color-bg);
+                font-size: calcFz(28);
+                line-height: 1.75;
+                white-space: nowrap;
+
+                @include sp {
+                  font-size: calcFz(22);
+                  white-space: normal;
+                }
+              }
+
+            }
+
+            &_txt{
+
+              @include sp {
+                margin-bottom: 20px;
+              }
+
+              p{
+                font-size: calcFz(18);
+                // font-family: $fontFamilyYuGo;
+                // font-weight: 300;
+                line-height: 1.75;
+                letter-spacing: 0em;
+
+                @include sp {
+                  font-size: calcFz(15);
+                  line-height: 1.6;
+                }
+
+              }
+
+            }
+
+          }
+
+          &.flex{
+            display: flex;
+            justify-content: space-between;
+
+            @include sp {
+              margin-bottom: 60px;
+            }
+
+            .img{
+              width: clamp(10px,get_vw(376),376px);
+
+              @include sp {
+                width: 100%;
+                margin-bottom: 20px;
+
+                &:nth-child(1){
+                  margin-bottom: 0;
+                }
+
+              }
+
+              img{
+                width: 100%;
+              }
+
+            }
+
+          }
+
+          &.reverse{
+            flex-direction: row-reverse;
+
+            @include sp {
+              flex-direction: column-reverse;
+              margin-bottom: 20px;
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+
+}

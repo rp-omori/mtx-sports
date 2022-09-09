@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="697" viewBox="0 0 12 697">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="12" height="65" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect width="12" height="204" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect width="12" height="327" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="dots" transform="translate(-220 -4350)">
+    <g id="three_dots" transform="translate(220 4350)" clip-path="url(#clip-path)">
+      <g transform="translate(-221 -4349)">
+        <circle id="flow_circle_dot" cx="6" cy="6" r="6" transform="translate(221 4349)" fill="#00a384"/>
+      </g>
+      <g transform="translate(-221 -4323)">
+        <circle id="flow_circle_dot-2" data-name="flow_circle_dot" cx="6" cy="6" r="6" transform="translate(221 4349)" fill="#00a384"/>
+      </g>
+      <g transform="translate(-221 -4297)">
+        <circle id="flow_circle_dot-3" data-name="flow_circle_dot" cx="6" cy="6" r="6" transform="translate(221 4349)" fill="#00a384"/>
+      </g>
+    </g>
+    <g id="eight_dots" transform="translate(220 4471)" clip-path="url(#clip-path-2)">
+      <g transform="translate(-221 -4349)">
+        <circle id="楕円形_890" data-name="楕円形 890" cx="6" cy="6" r="6" transform="translate(221 4349)" fill="#00a384"/>
+      </g>
+      <g transform="translate(-221 -4323)">
+        <circle id="楕円形_890-2" data-name="楕円形 890" cx="6" cy="6" r="6" transform="translate(221 4349)" fill="#00a384"/>
+      </g>
+      <g transform="translate(-221 -4297)">
+        <circle id="楕円形_890-3" data-name="楕円形 890" cx="6" cy="6" r="6" transform="translate(221 4349)" fill="#00a384"/>
+      </g>
+      <g transform="translate(-221 -4271)">
+        <circle id="楕円形_890-4" data-name="楕円形 890" cx="6" cy="6" r="6" transform="translate(221 4349)" fill="#00a384"/>
+      </g>
+      <g transform="translate(-221 -4245)">
+        <circle id="楕円形_890-5" data-name="楕円形 890" cx="6" cy="6" r="6" transform="translate(221 4349)" fill="#00a384"/>
+      </g>
+      <g transform="translate(-221 -4219)">
+        <circle id="楕円形_890-6" data-name="楕円形 890" cx="6" cy="6" r="6" transform="translate(221 4349)" fill="#00a384"/>
+      </g>
+      <g transform="translate(-221 -4193)">
+        <circle id="楕円形_890-7" data-name="楕円形 890" cx="6" cy="6" r="6" transform="translate(221 4349)" fill="#00a384"/>
+      </g>
+      <g transform="translate(-221 -4167)">
+        <circle id="楕円形_890-8" data-name="楕円形 890" cx="6" cy="6" r="6" transform="translate(221 4349)" fill="#00a384"/>
+      </g>
+    </g>
+    <g id="thirteen_dots" transform="translate(220 4720)" clip-path="url(#clip-path-3)">
+      <g transform="translate(-221 -4349)">
+        <circle id="楕円形_890-9" data-name="楕円形 890" cx="6" cy="6" r="6" transform="translate(221 4349)" fill="#00a384"/>
+      </g>
+      <g transform="translate(-221 -4323)">
+        <circle id="楕円形_890-10" data-name="楕円形 890" cx="6" cy="6" r="6" transform="translate(221 4349)" fill="#00a384"/>
+      </g>
+      <g transform="translate(-221 -4297)">
+        <circle id="楕円形_890-11" data-name="楕円形 890" cx="6" cy="6" r="6" transform="translate(221 4349)" fill="#00a384"/>
+      </g>
+      <g transform="translate(-221 -4271)">
+        <circle id="楕円形_890-12" data-name="楕円形 890" cx="6" cy="6" r="6" transform="translate(221 4349)" fill="#00a384"/>
+      </g>
+      <g transform="translate(-221 -4245)">
+        <circle id="楕円形_890-13" data-name="楕円形 890" cx="6" cy="6" r="6" transform="translate(221 4349)" fill="#00a384"/>
+      </g>
+      <g transform="translate(-221 -4219)">
+        <circle id="楕円形_890-14" data-name="楕円形 890" cx="6" cy="6" r="6" transform="translate(221 4349)" fill="#00a384"/>
+      </g>
+      <g transform="translate(-221 -4193)">
+        <circle id="楕円形_890-15" data-name="楕円形 890" cx="6" cy="6" r="6" transform="translate(221 4349)" fill="#00a384"/>
+      </g>
+      <g transform="translate(-221 -4167)">
+        <circle id="楕円形_890-16" data-name="楕円形 890" cx="6" cy="6" r="6" transform="translate(221 4349)" fill="#00a384"/>
+      </g>
+      <g transform="translate(-221 -4141)">
+        <circle id="楕円形_890-17" data-name="楕円形 890" cx="6" cy="6" r="6" transform="translate(221 4349)" fill="#00a384"/>
+      </g>
+      <g transform="translate(-221 -4115)">
+        <circle id="楕円形_890-18" data-name="楕円形 890" cx="6" cy="6" r="6" transform="translate(221 4349)" fill="#00a384"/>
+      </g>
+      <g transform="translate(-221 -4089)">
+        <circle id="楕円形_890-19" data-name="楕円形 890" cx="6" cy="6" r="6" transform="translate(221 4349)" fill="#00a384"/>
+      </g>
+      <g transform="translate(-221 -4063)">
+        <circle id="楕円形_890-20" data-name="楕円形 890" cx="6" cy="6" r="6" transform="translate(221 4349)" fill="#00a384"/>
+      </g>
+      <g transform="translate(-221 -4037)">
+        <circle id="楕円形_890-21" data-name="楕円形 890" cx="6" cy="6" r="6" transform="translate(221 4349)" fill="#00a384"/>
+      </g>
+    </g>
+  </g>
+</svg>

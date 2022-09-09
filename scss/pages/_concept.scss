@@ -1,0 +1,953 @@
+.concept-contents {
+  background-color: #EFF4F3;
+  position: relative;
+
+  @include sp {
+    font-family: $fontFamilyHiraGo;
+  }
+
+  .concept-top-wrapper {
+    position: relative;
+    z-index: 2;
+    width: 100vw;
+    height: clamp(10px, get_vw(613), 613px);
+    padding-bottom: get_vw(200);
+    background-image: url(#{$img-root-dir}/concept/concept-top-background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: clamp(10px, get_vw(40), 40px);
+    overflow: hidden;
+
+    @include sp {
+      height: 250px;
+      padding-bottom: 0;
+      background-position: top;
+      background-image: url(#{$img-root-dir}/concept/concept-top-background_sp.png);
+      margin-bottom: 60px;
+    }
+
+    .concept-top {
+
+      position: absolute;
+      top: clamp(10px, get_vw(250), 250px);
+      left: clamp(10px, get_vw(127), 127px);
+      width: 100%;
+
+      @include sp {
+        top: 65px;
+        left: 18px;
+      }
+
+      p {
+        color: rgba($color: #fff, $alpha: .15);
+        font-size: calcFz(143);
+        font-family: $fontFamilyDin2014;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        line-height: 1.76;
+
+        @include sp {
+          font-size: calcFz(72);
+        }
+      }
+
+      &::after {
+        content: "開院の背景と想い";
+        color: #fff;
+        font-size: calcFz(50);
+        font-family: $fontFamilyYuGo;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        line-height: 1.28;
+        position: absolute;
+        bottom: 13%;
+        left: 0;
+
+        @include sp {
+          font-size: calcFz(25);
+        }
+      }
+    }
+  }
+
+  .concept-systemArea {
+    width: 100%;
+    margin-bottom: clamp(10px, get_vw(90), 90px);
+
+    @include sp {
+      margin-bottom: 70px;
+    }
+
+    &__inner {
+      width: clamp(10px,get_vw(880),880px);
+      margin: 0 auto;
+
+      @include sp {
+        width: 90%;
+      }
+
+      &_ttl {
+        text-align: center;
+        position: relative;
+        margin-bottom: clamp(10px, get_vw(80), 80px);
+
+        p{
+          color: rgba($color: #fff, $alpha: 1);
+          font-size: calcFz(100);
+          font-family: $fontFamilyDin2014;
+          font-weight: 600;
+          line-height: 1.75;
+          letter-spacing: 0em;
+
+          @include sp {
+            width: 100vw;
+            position: relative;
+            z-index: 1;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: calcFz(48);
+          }
+        }
+
+        &::before {
+          content: "私たちの想い";
+          position: absolute;
+          bottom: 10%;
+          left: 0;
+          color: var(--main-color);
+          font-size: calcFz(40);
+          font-family: $fontFamilyYuGo;
+          font-weight: 600;
+          line-height: 1.75;
+          width: 100%;
+
+          @include sp {
+            font-size: calcFz(24);
+            z-index: 2;
+          }
+        }
+
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          width: clamp(10px, get_vw(64), 64px);
+          height: 3px;
+          background-color:var(--main-color);
+
+          @include sp {
+            width: 44px;
+          }
+        }
+      }
+
+      &_txt {
+        margin: 0 auto clamp(10px, get_vw(40), 40px);
+
+        @include sp {
+          width: 100%;
+          margin-bottom: 34px;
+        }
+
+        p {
+          text-align: left;
+          font-size: calcFz(18);
+          font-family: $fontFamilyYuGo;
+          // font-weight: 400;
+          line-height: 1.75;
+          letter-spacing: 0em;
+
+          @include sp {
+            font-size: calcFz(15);
+            line-height: 1.6;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+
+  .concept-indexArea {
+    position: relative;
+    z-index: 2;
+    width: clamp(10px, get_vw(630), 630px);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    @include sp {
+      width: 77.3%;
+      flex-wrap: wrap;
+      margin: 0 auto;
+    }
+
+
+    .index_btn {
+      position: relative;
+
+      @include sp {
+        width: 100%;
+        margin-bottom: 35.5px;
+      }
+
+      &:last-child {
+        @include sp {
+          margin-bottom: 17px;
+        }
+      }
+
+      .green_txt {
+        position: absolute;
+        top: -26px;
+        left: 0;
+        color: var(--main-color-bg);
+        font-size: calcFz(14);
+        font-family: $fontFamilyDin2014;
+        font-weight: 600;
+        line-height: 1.92;
+        width: 100%;
+        white-space: nowrap;
+
+        @include sp {
+          top: -20px;
+          font-size: calcFz(12);
+        }
+      }
+
+      p {
+        @include sp {
+          font-size: calcFz(15);
+        }
+      }
+    }
+  }
+
+  .concept-lead {
+    width: 71%;
+    margin: 0 auto;
+
+    @include sp {
+      width: 89%;
+    }
+
+    .concept-lead__wrapper {
+      display: flex;
+      margin-bottom: get_vw(146);
+      align-items: center;
+
+      @include sp {
+        margin-bottom: get_vw(70, 375);
+        flex-direction: column;
+      }
+
+      .concept-lead__left {
+        width: get_vw(575);
+        margin-right: get_vw(80);
+
+        @include sp {
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: get_vw(32, 375);
+        }
+      }
+
+      .concept-lead__right {
+        width: get_vw(446);
+
+        @include sp {
+          width: get_vw(257, 375);
+        }
+      }
+
+      .concept-lead__head {
+        display: flex;
+        margin-bottom: get_vw(28);
+        align-items: center;
+        // gap: 0 53px;
+
+        @include sp {
+          margin-bottom: get_vw(15, 375);
+          justify-content: center;
+        }
+      }
+
+      .concept-lead__cross {
+        position: relative;
+
+        .concept-lead__cross-text {
+          display: block;
+          padding: get_vw(16) get_vw(24);
+          background: var(--main-color);
+          color: var(--main-color-white);
+          font-size: calcFz(28);
+          font-weight: bold;
+
+          @include sp {
+            padding: get_vw(12, 375) get_vw(16, 375);
+            font-size: calcFz(18);
+          }
+        }
+
+        &:first-child {
+          &:before {
+            // content: '✖️';
+            position: absolute;
+            color: var(--main-color);
+            font-size: calcFz(32);
+            top: 50%;
+            right: calc(get_vw(-32) + get_vw(-16));
+            transform: translateY(-50%);
+          }
+        }
+      }
+
+      .concept-lead__cross-icon {
+        margin: 0 get_vw(11);
+        color: var(--main-color);
+        font-size: calcFz(32);
+        font-weight: bold;
+
+        @include sp {
+          margin: 0 get_vw(16, 375);
+        }
+      }
+
+      .concept-lead__title {
+        margin-bottom: get_vw(56);
+        color: var(--main-color);
+        font-size: calcFz(32);
+        font-weight: bold;
+
+        @include sp {
+          margin-bottom: get_vw(32, 375);
+          font-size: calcFz(18);
+          text-align: center;
+        }
+      }
+
+      .concept-lead__text {
+        color: var(--main-color-black);
+        font-size: calcFz(18);
+        line-height: 1.75;
+
+        @include sp {
+          font-size: calcFz(15);
+        }
+      }
+    }
+  }
+
+  .concept-background {
+    padding-top: get_vw(147);
+    padding-bottom: get_vw(350);
+    background: var(--main-color);
+    clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0 92%);
+
+    @include sp {
+      padding-top: get_vw(142, 375);
+      padding-bottom: get_vw(223, 375);
+      clip-path: polygon(0 4%, 100% 0%, 100% 100%, 0 94%);
+    }
+
+    .concept-background__wrapper {
+      position: relative;
+    }
+
+    .concept-background__main {
+      padding-top: get_vw(245);
+
+      @include sp {
+        padding-top: get_vw(140, 375);
+      }
+
+      .concept-background__main-inner {
+        width: 91%;
+        display: flex;
+        gap: 0 44px;
+
+        @include sp {
+          width: 100%;
+          margin: 0 auto;
+          flex-direction: column-reverse;
+        }
+
+        &:first-child {
+          margin-left: auto;
+          margin-bottom: get_vw(80);
+
+          @include sp {
+            margin-bottom: get_vw(87, 375);
+            margin-left: auto;
+          }
+
+          .concept-background__left {
+            margin-top: get_vw(48);
+
+            @include sp {
+              width: 82%;
+              margin: -20px auto 0;
+            }
+          }
+        }
+
+        &:last-child {
+          margin-right: auto;
+          flex-direction: row-reverse;
+
+          @include sp {
+            flex-direction: column-reverse;
+          }
+
+          .concept-background__left {
+            @include sp {
+              width: 82%;
+              margin: -20px auto 0;
+            }
+          }
+
+          .concept-background__right {
+            margin-top: get_vw(48);
+
+            @include sp {
+              margin-top: 0;
+            }
+
+            .concept-background__img {
+              @include sp {
+                margin-left: initial;
+                margin-right: auto;
+              }
+            }
+          }
+        }
+      }
+
+      .concept-background__right {
+        @include sp {
+          z-index: -1;
+        }
+      }
+
+      .concept-background__title-wrapper {
+        margin-bottom: get_vw(48);
+
+        @include sp {
+          margin-bottom: get_vw(24, 375);
+        }
+      }
+
+      .concept-background__title {
+        width: fit-content;
+        padding: 0.3em;
+        margin-bottom: 8px;
+        background: var(--main-color-white);
+        color: var(--main-color);
+        font-size: calcFz(35);
+        font-weight: bold;
+
+        @include sp {
+          padding: 12px 16px;
+          font-size: calcFz(18);
+        }
+      }
+
+      .concept-background__main-text {
+        color: var(--main-color-white);
+        font-size: calcFz(18);
+        line-height: 1.75;
+
+        @include sp {
+          font-size: calcFz(15);
+        }
+      }
+
+      .concept-background__img {
+        width: get_vw(811);
+
+        @include sp {
+          width: 82%;
+          margin-left: auto;
+        }
+      }
+    }
+  }
+
+  .concept-interview {
+    position: relative;
+
+    .triangle--left,
+    .triangle--right {
+      position: absolute;
+    }
+
+    .triangle--left {
+      right: 0;
+    }
+
+    .triangle--right {
+      left: 0;
+    }
+
+    .triangle--01 {
+      top: 18%;
+
+      @include sp {
+        top: 16%;
+        width: 50%;
+      }
+    }
+
+    .triangle--02 {
+      top: 27%;
+
+      @include sp {
+        top: 30%;
+        width: 50%;
+      }
+    }
+
+    .triangle--03 {
+      top: 50%;
+
+      @include sp {
+        top: 49%;
+        width: 50%;
+      }
+    }
+
+    .triangle--04 {
+      top: 80%;
+
+      @include sp {
+        top: 86%;
+        width: 50%;
+      }
+    }
+
+    .concept-interview__wrapper {
+      position: relative;
+    }
+
+    .concept-interview__main {
+      padding-top: get_vw(245);
+
+      @include sp {
+        padding-top: get_vw(136, 375);
+      }
+
+      .concept-interview__lead {
+        width: 83%;
+        margin: 0 auto;
+
+        @include sp {
+          width: 89%;
+        }
+
+        .concept-interview__lead-text {
+          margin-bottom: get_vw(48);
+          color: var(--main-color-black);
+          font-size: calcFz(18);
+          line-height: 1.75;
+
+          @include sp {
+            margin-bottom: get_vw(20, 375);
+            padding: 0 10px;
+            font-size: calcFz(15);
+          }
+        }
+
+        .concept-interview__lead-human-wrapper {
+          width: get_vw(1172);
+          margin: 0 auto get_vw(124);
+          background: var(--main-color-white);
+          border-radius: 20px;
+
+          @include sp {
+            width: 100%;
+            margin-bottom: get_vw(61, 375);
+          }
+        }
+
+        .concept-interview__lead-human-inner {
+          display: flex;
+          padding: get_vw(48) get_vw(70);
+          justify-content: space-between;
+          gap: 60px;
+
+          @include sp {
+            padding: get_vw(20, 375);
+            flex-direction: column;
+            gap: 10px 0;
+          }
+        }
+
+        .concept-interview__lead-human {
+          display: flex;
+          align-items: center;
+
+          &:nth-child(2) {
+            @include sp {
+              flex-direction: row-reverse;
+              justify-content: flex-start;
+            }
+
+            .concept-interview__lead-human-body {
+              @include sp {
+                margin-left: 0;
+                margin-right: get_vw(23, 375);
+              }
+            }
+          }
+        }
+
+        .concept-interview__lead-human-img {
+          width: get_vw(149);
+
+          @include sp {
+            width: get_vw(120, 375);
+          }
+        }
+
+        .concept-interview__lead-human-body {
+          margin-left: get_vw(24);
+
+          @include sp {
+            margin-left: get_vw(23, 375);
+          }
+
+          .concept-interview__lead-human-title {
+            margin-bottom: get_vw(10);
+            color: var(--main-color-black);
+            font-size: calcFz(16);
+
+            @include sp {
+              margin-bottom: 8px;
+              font-size: calcFz(14);
+            }
+          }
+
+          .concept-interview__lead-human-name {
+            margin-bottom: get_vw(16);
+            color: var(--main-color-black);
+            font-size: calcFz(24);
+
+            @include sp {
+              margin-bottom: 16px;
+              font-size: calcFz(18);
+            }
+          }
+
+          .concept-interview__lead-human-ruby {
+            color: var(--main-color-bg);
+            font-size: calcFz(14);
+
+            @include sp {
+              font-size: calcFz(12);
+            }
+          }
+        }
+      }
+    }
+
+    .concept-interview__body {
+      .concept-interview__body-wrapper {
+        width: 91%;
+        display: flex;
+        margin-bottom: get_vw(120);
+
+        @include sp {
+          width: 100%;
+          flex-direction: column-reverse;
+        }
+
+        .concept-interview__comment-wrapper {
+          @include sp {
+            width: 89%;
+            margin: 0 auto;
+          }
+        }
+
+        &.concept-interview__body-wrapper--right {
+          margin-left: auto;
+
+          @include sp {
+            margin-right: auto;
+          }
+
+          .concept-interview__comment-wrapper {
+            margin-right: get_vw(69);
+
+            @include sp {
+              // margin-right: 0;
+            }
+          }
+        }
+
+        &.concept-interview__body-wrapper--left {
+          margin-right: auto;
+          flex-direction: row-reverse;
+
+          @include sp {
+            margin-left: auto;
+            flex-direction: column-reverse;
+          }
+
+          .concept-interview__comment-wrapper {
+            margin-left: get_vw(69);
+
+            @include sp {
+              // margin-left: 0;
+            }
+          }
+        }
+
+        &.concept-interview__body-wrapper--col {
+          flex-direction: column-reverse;
+
+          @include sp {
+            width: 100%;
+          }
+
+          .concept-interview__comment-wrapper {
+            width: get_vw(910);
+            margin-top: get_vw(40);
+            margin-left: auto;
+
+            @include sp {
+              width: 89%;
+              margin: get_vw(8, 375) auto;
+            }
+          }
+        }
+      }
+
+      .concept-interview__title {
+        position: relative;
+        margin-bottom: get_vw(40);
+        padding-left: get_vw(30);
+        color: var(--main-color-bg);
+        font-size: calcFz(28);
+        font-weight: bold;
+        line-height: 1.7;
+
+        @include sp {
+          margin-bottom: get_vw(28, 375);
+          padding-left: get_vw(16, 375);
+          font-size: calcFz(18);
+        }
+
+        &:before {
+          content: '';
+          position: absolute;
+          width: get_vw(12);
+          height: get_vw(12);
+          background: var(--main-color-bg);
+          border-radius: 50%;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+
+          @include sp {
+            width: get_vw(8, 375);
+            height: get_vw(8, 375);
+          }
+        }
+      }
+
+      .concept-interview__comment-inner {
+        display: flex;
+        margin-bottom: get_vw(32);
+        align-items: flex-start;
+
+        @include sp {
+          margin-bottom: get_vw(20, 375);
+        }
+      }
+
+      .concept-interview__comment-name {
+        min-width: get_vw(72);
+        color: var(--main-color-black);
+        font-size: calcFz(18);
+        font-weight: bold;
+        line-height: 1.75;
+
+        @include sp {
+          min-width: get_vw(50, 375);
+          font-size: calcFz(15);
+        }
+      }
+
+      .concept-interview__comment-text {
+        color: var(--main-color-black);
+        font-size: calcFz(18);
+        line-height: 1.75;
+
+        @include sp {
+          font-size: calcFz(15);
+        }
+      }
+
+      .concept-interview__img-wrapper {
+        @include sp {
+          margin-bottom: get_vw(32, 375);
+        }
+      }
+
+      .concept-interview__img {
+        &.concept-interview__img--01 {
+          width: get_vw(669);
+          margin-top: get_vw(50);
+
+          @include sp {
+            width: get_vw(295, 375);
+            margin-left: auto;
+          }
+        }
+
+        &.concept-interview__img--02 {
+          width: get_vw(675);
+
+          @include sp {
+            width: get_vw(355, 375);
+            margin-right: auto;
+          }
+        }
+
+        &.concept-interview__img--03 {
+          width: get_vw(647);
+          margin-top: get_vw(50);
+
+          @include sp {
+            width: get_vw(355, 375);
+            margin-left: auto;
+          }
+        }
+
+        &.concept-interview__img--04 {
+          width: get_vw(536);
+
+          @include sp {
+            width: get_vw(310, 375);
+            margin-right: auto;
+          }
+        }
+
+        &.concept-interview__img--05 {
+          width: get_vw(712);
+
+          @include sp {
+            width: get_vw(355, 375);
+            margin-left: auto;
+          }
+        }
+
+        &.concept-interview__img--06 {
+          width: get_vw(1203);
+
+          @include sp {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .concept-section__title-wrapper {
+    position: absolute;
+    width: auto;
+    top: 0;
+
+    .concept-section__title {
+      font-size: calcFz(100);
+      font-weight: bold;
+      font-family: $fontFamilyDin2014;
+
+      @include sp {
+        font-size: calcFz(55);
+      }
+    }
+
+    .concept-section__sub-title {
+      position: absolute;
+      padding-bottom: get_vw(39);
+      bottom: get_vw(-43);
+      font-size: calcFz(46);
+      font-weight: bold;
+
+      @include sp {
+        padding-bottom: get_vw(25, 375);
+        font-size: calcFz(24);
+        bottom: -35px;
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 1.5em;
+        height: 2px;
+        bottom: 0;
+      }
+    }
+
+    &.concept-section__title-wrapper--green {
+      .concept-section__title {
+        color: #12A88C;
+      }
+
+      .concept-section__sub-title {
+        color: var(--main-color-white);
+
+        &:before {
+          background: var(--main-color-white);
+        }
+      }
+    }
+
+    &.concept-section__title-wrapper--white {
+      .concept-section__title {
+        color: var(--main-color-white);
+      }
+
+      .concept-section__sub-title {
+        color: #12A88C;
+
+        &:before {
+          background: #12A88C;
+        }
+      }
+    }
+
+    &.concept-section__title-wrapper--right {
+      right: get_vw(128);
+
+      @include sp {
+        right: 20px;
+      }
+
+      .concept-section__sub-title {
+        right: 0;
+
+        &:before {
+          right: 0;
+        }
+      }
+    }
+
+    &.concept-section__title-wrapper--left {
+      left: get_vw(128);
+
+      .concept-section__sub-title {
+        left: 0;
+
+        &:before {
+          left: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,516 @@
+.medical-detail-contents{
+  background-color: #EFF4F3;
+  position: relative;
+
+  .bg_img_left{
+    position: absolute;
+    top: clamp(10px,get_vw(1090),1090px);
+    left: 0;
+    width: clamp(10px,get_vw(225),225px);
+
+    @include sp {
+      width: 126px;
+      top: 1100px;
+    }
+
+    img{
+      width: 100%;
+    }
+
+  }
+
+  .bg_img_right{
+    position: absolute;
+    top: clamp(10px,get_vw(2167),2167px);
+    right: 0;
+    width: clamp(10px,get_vw(225),225px);
+
+    @include sp {
+      width: 126px;
+      top: 2600px;
+    }
+
+    img{
+      width: 100%;
+    }
+
+  }
+
+
+
+  .medical-detail-top-wrapper{
+    position: relative;
+    z-index: 2;
+    padding: clamp(10px,get_vw(40),40px) 0 0;
+    width: 100vw;
+    height: clamp(10px,get_vw(580),580px);
+    background-image: url("../images/medical_detail/medical-detail-top-background.png");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-bottom: clamp(10px,get_vw(40),40px);
+
+    @include sp {
+      padding: 20px 0 0;
+      height: auto;
+      background-position: top;
+      background-size: 100% 62%;
+      background-image: url("../images/medical_detail/medical-detail-top-background_sp.png");
+      margin-bottom: 105px;
+    }
+
+    .medical-detail-top{
+
+      display: flex;
+      width: clamp(10px,get_vw(1188),1188px);
+      height: 100%;
+      margin: 0 auto;
+      position: relative;
+
+      @include sp {
+        flex-direction: column;
+        width: 90%;
+      }
+
+      &__left{
+
+        width: clamp(10px,get_vw(526),526px);
+        margin-right: clamp(10px,get_vw(50),50px);
+
+        @include sp {
+          width: 100%;
+          margin: 0 auto 24px;
+        }
+
+        img{
+          width: 100%;
+        }
+
+      }
+
+      &__right{
+
+        display: flex;
+        margin-top: clamp(10px,get_vw(50),50px);
+
+        @include sp {
+          width: 100%;
+          margin-top: 0;
+        }
+
+        &_txtArea{
+
+          width: clamp(10px,get_vw(380),380px);
+
+          @include sp {
+            width: 100%;
+          }
+
+          &_tab{
+
+            background-color: var(--footer--other--orange);
+            display: inline-block;
+            padding: clamp(10px,get_vw(12),12px) clamp(10px,get_vw(20),20px);
+            border-radius: 20px;
+            margin-bottom: clamp(10px,get_vw(20),20px);
+
+            @include sp {
+              padding: 8px 14px;
+              margin-bottom: 12px;
+            }
+
+            p{
+              font-family: $fontFamilyYuGo;
+              font-size: calcFz(16);
+              font-weight: 600;
+              letter-spacing: 0.01em;
+              color: #fff;
+
+              @include sp {
+                font-size: calcFz(14);
+              }
+
+            }
+
+          }
+
+          &_ttl{
+
+            margin-bottom: clamp(10px,get_vw(10),10px);
+
+            @include sp {
+              margin-bottom: 10px;
+            }
+
+            p{
+              font-family: $fontFamilyYuGo;
+              font-size: calcFz(41);
+              font-weight: 600;
+              letter-spacing: 0.02em;
+              color: var(--main-color-bg);
+
+              @include sp {
+                font-size: calcFz(24);
+              }
+
+            }
+
+          }
+
+          &_subTtl{
+
+            margin-bottom: clamp(10px,get_vw(40),40px);
+
+            @include sp {
+              margin-bottom: 40px;
+            }
+
+            p{
+              font-family: $fontFamilyYuGo;
+              font-size: calcFz(15);
+              font-weight: 600;
+              letter-spacing: 0.02em;
+              line-height: 1.6;
+              color: #6A8381;
+
+              @include sp {
+                font-size: calcFz(14);
+              }
+
+            }
+
+          }
+
+          &_txt{
+
+            margin-bottom: clamp(10px,get_vw(50),50px);
+
+            @include sp {
+              margin-bottom: 40px;
+              width: 190px;
+            }
+
+            p{
+              font-family: $fontFamilyYuGo;
+              font-size: calcFz(18);
+              // font-weight: 300;
+              letter-spacing: 0.02em;
+              line-height: 1.77;
+
+              @include sp {
+                font-size: calcFz(15);
+                line-height: 1.6;
+              }
+
+            }
+
+          }
+
+          &_soreSpot{
+
+            &_sore{
+              font-family: $fontFamilyYuGo;
+              font-size: calcFz(20);
+              font-weight: 600;
+              letter-spacing: 0.02em;
+              color: var(--main-color);
+              margin-bottom: clamp(10px,get_vw(16),16px);
+
+              &:nth-of-type(n+2){
+                display: none;
+              }
+
+              @include sp {
+                font-size: calcFz(15);
+                margin-bottom: 12px;
+              }
+
+            }
+
+            &_spot{
+
+              display: flex;
+              flex-wrap: wrap;
+
+              &_detail{
+
+                border:1px solid  var(--main-color);
+                background-color: #fff;
+                // width: clamp(10px,get_vw(100),100px);
+                padding: 8px clamp(10px,get_vw(50),50px);
+                text-align: center;
+                margin-right: 10px;
+                margin-bottom: 10px;
+
+                @include sp {
+                  // width: 75px;
+                  padding: 6px clamp(10px,get_vw(37.5),37.5px);
+                  // padding: 6px 0;
+                }
+
+                p{
+                  font-family: $fontFamilyYuGo;
+                  font-size: calcFz(20);
+                  font-weight: 600;
+                  letter-spacing: 0.02em;
+                  color: var(--main-color);
+
+                  @include sp {
+                    font-size: calcFz(15);
+                  }
+
+                }
+
+
+              }
+
+            }
+
+          }
+
+        }
+
+      }
+
+      &__img{
+        position: absolute;
+        top: clamp(10px,get_vw(50),50px);
+        right: -30px;
+        width: clamp(10px,get_vw(295),295px);
+
+        @include sp {
+          width: 135px;
+          top: auto;
+          bottom: -65px;
+          right: 0;
+        }
+
+        img{
+          width: 100%;
+        }
+
+      }
+
+    }
+
+  }
+
+  .medical-detail-indexArea{
+    position: relative;
+    z-index: 2;
+    width: clamp(10px,get_vw(1117),1117px);
+    margin: 0 auto clamp(10px,get_vw(80.5),80.5px);
+    display: flex;
+    justify-content: space-between;
+
+    @include sp {
+      width: 90%;
+      flex-wrap: wrap;
+      margin: 0 auto 50px;
+    }
+
+  }
+
+  .medical-detail-menuArea{
+    position: relative;
+    z-index: 2;
+    width: clamp(10px,get_vw(1280),1280px);
+    margin: 0 auto clamp(10px,get_vw(80),80px);
+
+    @include sp {
+      width: 90%;
+      margin: 0 auto 40px;
+    }
+
+    .medical-detail-menuArea__box{
+      width: calc(100% - clamp(10px,get_vw(60),60px));
+      margin: 0 auto;
+      padding: clamp(10px,get_vw(24.5),24.5px) clamp(10px,get_vw(30),30px);
+      border-radius: 20px;
+      background-color: #fff;
+      margin-bottom: clamp(10px,get_vw(64),64px);
+
+      &:nth-last-child(1){
+        margin-bottom: 0;
+      }
+
+      @include sp {
+        width: calc(100% - 40px);
+        padding: 24.5px 20px;
+        margin-bottom: 50px;
+      }
+
+      .medical-detail-menuArea__box_contents{
+
+        // width: clamp(10px,get_vw(960),960px);
+        margin-top: clamp(10px,get_vw(28),28px);
+        margin-bottom: clamp(10px,get_vw(23),23px);
+
+        @include sp {
+          width: 100%;
+          margin-top: 24.5px;
+          margin-bottom: 15.4px;
+        }
+
+        p{
+          font-family: $fontFamilyYuGo;
+          font-size: calcFz(18);
+          // font-weight: 300;
+          letter-spacing: 0.02em;
+          line-height: 1.6;
+          margin-bottom: clamp(10px,get_vw(43),43px);
+          display: block;
+
+          &:nth-last-child(1){
+            margin-bottom: 0;
+          }
+
+          @include sp {
+            font-size: calcFz(15);
+            margin-bottom: 32px;
+          }
+
+        }
+
+        ul{
+
+          width: clamp(10px,get_vw(735),735px);
+          margin-bottom: clamp(10px,get_vw(43),43px);
+
+          @include sp {
+            width: 100%;
+            margin-bottom: 32px;
+          }
+
+          li{
+            list-style: inside;
+            // list-style: none;
+            padding-left: get_vw(25);
+            text-indent: get_vw(-25);
+            font-family: $fontFamilyYuGo;
+            font-size: calcFz(18);
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            line-height: 1.6;
+            margin-bottom: clamp(10px,get_vw(28),28px);
+
+            &:nth-last-child(1){
+              margin-bottom: 0;
+            }
+
+            @include sp {
+              font-size: calcFz(15);
+              padding-left: 18px;
+              text-indent: -18px;
+              margin-bottom: 24px;
+            }
+
+            &::marker{
+              color: var(--main-color);
+            }
+
+          }
+
+        }
+
+        .index_btn_wrapper{
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+
+          .index_btn{
+            border: 0;
+            padding-bottom: 0;
+
+            @include sp {
+              align-items: center;
+              justify-content: flex-start;
+            }
+
+            p{
+              margin-bottom: 0;
+              font-family: $fontFamilyYuGo;
+              font-size: calcFz(20);
+              font-weight: 600;
+              margin-right: clamp(10px,get_vw(20),20px);
+
+              @include sp {
+                font-size: calcFz(14);
+                line-height: 1.6;
+              }
+            }
+
+          }
+
+          p{
+            margin-bottom: 0;
+            font-family: $fontFamilyYuGo;
+            font-size: calcFz(20);
+            // font-weight: 300;
+            margin-right: clamp(10px,get_vw(20),20px);
+
+            @include sp {
+              font-size: calcFz(14);
+              line-height: 1.6;
+            }
+          }
+
+        }
+
+
+      }
+
+    }
+
+  }
+
+  .medical-detail-btnArea{
+
+    display: flex;
+    justify-content: space-between;
+    width: clamp(10px,get_vw(750),750px);
+    margin: 0 auto;
+    flex-wrap: wrap;
+    margin-bottom: clamp(10px,get_vw(50),50px);
+
+    @include sp {
+      width: 90%;
+      margin-bottom: 40px;
+    }
+
+    &__btn{
+
+      margin: 0 auto;
+      max-width: none;
+      min-width: auto;
+      padding: clamp(10px,get_vw(30),30px) clamp(10px,get_vw(95),95px);
+      margin-bottom: clamp(10px,get_vw(40),40px);
+
+      @include sp {
+        margin-bottom: 20px;
+        padding: 20.5px 0;
+
+        &:nth-last-child(1){
+          margin-bottom: 0;
+        }
+
+      }
+
+      p{
+        color: #fff;
+        font-family: $fontFamilyYuGo;
+        font-size: calcFz(21);
+        font-weight: 600;
+
+        @include sp {
+          font-size: calcFz(14);
+        }
+
+      }
+
+    }
+
+  }
+
+
+}

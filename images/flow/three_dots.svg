@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="65" viewBox="0 0 12 65">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="12" height="65" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="three_dots" clip-path="url(#clip-path)">
+    <g transform="translate(-221 -4349)">
+      <circle id="flow_circle_dot" cx="6" cy="6" r="6" transform="translate(221 4349)" fill="#00a384"/>
+    </g>
+    <g transform="translate(-221 -4323)">
+      <circle id="flow_circle_dot-2" data-name="flow_circle_dot" cx="6" cy="6" r="6" transform="translate(221 4349)" fill="#00a384"/>
+    </g>
+    <g transform="translate(-221 -4297)">
+      <circle id="flow_circle_dot-3" data-name="flow_circle_dot" cx="6" cy="6" r="6" transform="translate(221 4349)" fill="#00a384"/>
+    </g>
+  </g>
+</svg>
