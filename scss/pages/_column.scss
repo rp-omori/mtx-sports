@@ -100,7 +100,10 @@
     }
 
     .column__link {
+      display: flex;
       padding: get_vw(30) get_vw(33) get_vw(43);
+      flex-direction: column;
+      flex-grow: 1;
 
       @include sp {
         padding: get_vw(20, 375);
@@ -159,7 +162,9 @@
       color: var(--main-color);
       font-size: calcFz(18);
       font-weight: bold;
+      flex-grow: 1;
       line-height: 1.75;
+      word-break: break-all;
 
       @include sp {
         margin-bottom: get_vw(15, 375);

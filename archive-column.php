@@ -87,7 +87,7 @@ $rootDir = get_template_directory_uri();
           </div>
         </div>
         <div class="column__search-area">
-          <div class="column__search-area-head">
+          <!-- <div class="column__search-area-head">
             <div class="column__search-area-head-inner">
               <div class="column__search-area-list">
                 <a href="" class="column__search-area-link">
@@ -101,7 +101,7 @@ $rootDir = get_template_directory_uri();
                 </a>
               </div>
             </div>
-          </div>
+          </div> -->
           <div class="column__search-area-body">
             <p class="column__tags-heading">＃タグで絞り込む</p>
             <div class="column__tags">
