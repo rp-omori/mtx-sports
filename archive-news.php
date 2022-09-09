@@ -21,8 +21,9 @@ $rootDir = get_template_directory_uri();
         <?php
           $args = [
             'post_type' => 'news',
+            'paged' => get_query_var('page'),
             'order' => 'ASC',
-            'posts_per_page' => -1
+            'posts_per_page' => 10
           ];
           $WP_post = new WP_Query($args);
           if ($WP_post->have_posts()) {
@@ -37,10 +38,24 @@ $rootDir = get_template_directory_uri();
         </li>
         <?php
             }
-            wp_reset_postdata();
+            // wp_reset_postdata();
           }
         ?>
       </ul>
+
+      <div class="pagination">
+        <?php echo paginate_links(array(
+          'format' => '?page=%#%',
+          'current' => max(1, get_query_var('page')),
+          'total' => $WP_post->max_num_pages,
+          'type' => 'list',
+          'mid_size' => '1',
+          'prev_text' => '',
+          'next_text' => '',
+        ));
+        wp_reset_postdata();
+        ?>
+      </div>
     </div>
     <?php get_template_part('component/footer__other'); ?>
   </div>
