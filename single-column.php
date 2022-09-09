@@ -39,19 +39,23 @@ $rootDir = get_template_directory_uri();
                 <li class="column-article__contents-h2">
                   <a href="#chapter-1"><strong>1.背景</strong></a>
                   <ol>
-                    <li class="column-article__contents-h3"><a href="#chapter-2">業務負荷改善を目的として、外部パッケージシステムの導入を決定。既存システムからのリプレースを実施。</a></li>
-                    <ol>
-                      <li class="column-article__contents-h4"><a href="#chapter-3">h4h4h4h4h4h4h4h4h4h4h4h4</a></li>
-                    </ol>
+                    <li class="column-article__contents-h3">
+                      <a href="#chapter-2">業務負荷改善を目的として、外部パッケージシステムの導入を決定。既存システムからのリプレースを実施。</a>
+                      <ol>
+                        <li class="column-article__contents-h4"><a href="#chapter-3">h4h4h4h4h4h4h4h4h4h4h4h4</a></li>
+                      </ol>
+                    </li>
                   </ol>
                 </li>
                 <li class="column-article__contents-h2">
                   <a href="#chapter-4"><strong>2.課題</strong></a>
                   <ol>
-                    <li class="column-article__contents-h3"><a href="#chapter-5">業務負荷軽減のためのパッケージシステム導入が、更なる負荷増大を招く。</a></li>
-                    <ol>
-                      <li class="column-article__contents-h4"><a href="#chapter-6">h4h4h4h4h4h4h4h4h4h4h4h4</a></li>
-                    </ol>
+                    <li class="column-article__contents-h3">
+                      <a href="#chapter-5">業務負荷軽減のためのパッケージシステム導入が、更なる負荷増大を招く。</a>
+                      <ol>
+                        <li class="column-article__contents-h4"><a href="#chapter-6">h4h4h4h4h4h4h4h4h4h4h4h4</a></li>
+                      </ol>
+                    </li>
                   </ol>
                 </li>
               </ol>
