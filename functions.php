@@ -195,3 +195,56 @@ function imgPathcode() {
 return get_template_directory_uri();
 }
 add_shortcode('imgPath', 'imgPathcode');
+
+//ウェブサイトの投稿や固定ページが更新されるたびにsitemap.xmlを更新する
+function update_sitemap() {
+
+  //トップページ 新着記事も更新されるので現在時刻にする
+  $url = esc_url(home_url());
+  $lastmod = date('Y-m-d\TH:i:s\Z');
+  $xml = "<url>
+    <loc>{$url}</loc>
+    <lastmod>{$lastmod}</lastmod>
+  </url>";
+
+  //固定ページと記事ページを取得
+  $posts_array = get_posts(array(
+    'post_type' => array("page", "post", "blog", "prices", "services", "medicaldetail", "news", "column"),
+    'posts_per_page' => -1,
+    'meta_query' => array(
+      array(
+        'key' => 'noindex',
+        'compare' => 'NOT EXISTS',
+      )
+    )
+  ));
+  if($posts_array){
+    foreach($posts_array as $post){
+      setup_postdata($post);
+      $url = get_the_permalink($post->ID);
+      $lastmod = date('Y-m-d\TH:i:s\Z', get_post_timestamp($post, "modified"));
+      $xml .= "<url>
+        <loc>{$url}</loc>
+        <lastmod>{$lastmod}</lastmod>
+      </url>";
+    }
+    wp_reset_postdata();
+  }
+
+  //カテゴリー
+  $category_ids = get_terms("category", array("fields" => "ids"));
+  foreach($category_ids as $category_id){
+    $xml .= "<url>
+      <loc>".get_category_link($category_id)."</loc>
+    </url>";
+  }
+
+  //最終的なxmlデータを整形
+  $xml = "<?xml version=\"1.0\" encoding=\"UTF-8\"?><urlset
+  xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">{$xml}
+  </urlset>";
+
+  //ファイルを書き出し
+  file_put_contents(get_theme_file_path("sitemap.xml"), $xml, LOCK_EX);
+}
+add_action('save_post', 'update_sitemap');
