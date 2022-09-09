@@ -15,6 +15,8 @@ npm install
 # serve with hot reload at localhost:8080
 npm run dev
 ```
+## cssについて
+cssフォルダはdevelop-before-deployブランチ以外ではプッシュしないでください。
 ## Git
 - featureブランチで作業すること。
 - featureブランチを切る際は、developブランチから切ること。また、その際にdevelopをプルして最新の状態にしておくこと。
