@@ -141,7 +141,6 @@
       }
 
       .column__category {
-        margin-bottom: get_vw(15);
         padding: get_vw(8) get_vw(7);
         background: var(--footer--other--orange);
         color: var(--main-color-white);
@@ -156,7 +155,7 @@
     }
 
     .column__title {
-      margin-bottom: get_vw(23);
+      margin-bottom: get_vw(20);
       color: var(--main-color);
       font-size: calcFz(18);
       font-weight: bold;
@@ -164,6 +163,16 @@
 
       @include sp {
         margin-bottom: get_vw(15, 375);
+      }
+    }
+
+    .column__date {
+      margin-bottom: get_vw(20);
+      font-size: calcFz(15);
+
+      @include sp {
+        margin-bottom: get_vw(15, 375);
+        font-size: calcFz(12);
       }
     }
 

@@ -30,13 +30,13 @@ $rootDir = get_template_directory_uri();
                   <img src="https://source.unsplash.com/Gp34PCSEbt8" alt="" class="column__img">
                 </div>
                 <div class="column__body">
+                  <h3 class="column__title">タイトル</h3>
+                  <p class="column__date">2022.5.10</p>
                   <div class="column__category-wrapper">
                     <span class="column__category">カテ1</span>
                     <span class="column__category">カテ2</span>
                     <span class="column__category">カテ3</span>
                   </div>
-                  <h3 class="column__title">タイトル</h3>
-                  <p class="column__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                 </div>
               </a>
             </li>
@@ -46,13 +46,13 @@ $rootDir = get_template_directory_uri();
                   <img src="https://source.unsplash.com/Gp34PCSEbt8" alt="" class="column__img">
                 </div>
                 <div class="column__body">
+                  <h3 class="column__title">タイトル</h3>
+                  <p class="column__date">2022.5.10</p>
                   <div class="column__category-wrapper">
                     <span class="column__category">カテ1</span>
                     <span class="column__category">カテ2</span>
                     <span class="column__category">カテ3</span>
                   </div>
-                  <h3 class="column__title">タイトル</h3>
-                  <p class="column__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                 </div>
               </a>
             </li>
@@ -62,13 +62,13 @@ $rootDir = get_template_directory_uri();
                   <img src="https://source.unsplash.com/Gp34PCSEbt8" alt="" class="column__img">
                 </div>
                 <div class="column__body">
+                  <h3 class="column__title">タイトル</h3>
+                  <p class="column__date">2022.5.10</p>
                   <div class="column__category-wrapper">
                     <span class="column__category">カテ1</span>
                     <span class="column__category">カテ2</span>
                     <span class="column__category">カテ3</span>
                   </div>
-                  <h3 class="column__title">タイトル</h3>
-                  <p class="column__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                 </div>
               </a>
             </li>
@@ -133,13 +133,13 @@ $rootDir = get_template_directory_uri();
                   <img src="https://source.unsplash.com/Gp34PCSEbt8" alt="" class="column__img">
                 </div>
                 <div class="column__body">
+                  <h3 class="column__title">タイトル</h3>
+                  <p class="column__date">2022.5.10</p>
                   <div class="column__category-wrapper">
                     <span class="column__category">カテ1</span>
                     <span class="column__category">カテ2</span>
                     <span class="column__category">カテ3</span>
                   </div>
-                  <h3 class="column__title">タイトル</h3>
-                  <p class="column__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                 </div>
               </a>
             </li>
@@ -149,13 +149,13 @@ $rootDir = get_template_directory_uri();
                   <img src="https://source.unsplash.com/Gp34PCSEbt8" alt="" class="column__img">
                 </div>
                 <div class="column__body">
+                  <h3 class="column__title">タイトル</h3>
+                  <p class="column__date">2022.5.10</p>
                   <div class="column__category-wrapper">
                     <span class="column__category">カテ1</span>
                     <span class="column__category">カテ2</span>
                     <span class="column__category">カテ3</span>
                   </div>
-                  <h3 class="column__title">タイトル</h3>
-                  <p class="column__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                 </div>
               </a>
             </li>
@@ -165,13 +165,13 @@ $rootDir = get_template_directory_uri();
                   <img src="https://source.unsplash.com/Gp34PCSEbt8" alt="" class="column__img">
                 </div>
                 <div class="column__body">
+                  <h3 class="column__title">タイトル</h3>
+                  <p class="column__date">2022.5.10</p>
                   <div class="column__category-wrapper">
                     <span class="column__category">カテ1</span>
                     <span class="column__category">カテ2</span>
                     <span class="column__category">カテ3</span>
                   </div>
-                  <h3 class="column__title">タイトル</h3>
-                  <p class="column__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                 </div>
               </a>
             </li>
@@ -181,13 +181,13 @@ $rootDir = get_template_directory_uri();
                   <img src="https://source.unsplash.com/Gp34PCSEbt8" alt="" class="column__img">
                 </div>
                 <div class="column__body">
+                  <h3 class="column__title">タイトル</h3>
+                  <p class="column__date">2022.5.10</p>
                   <div class="column__category-wrapper">
                     <span class="column__category">カテ1</span>
                     <span class="column__category">カテ2</span>
                     <span class="column__category">カテ3</span>
                   </div>
-                  <h3 class="column__title">タイトル</h3>
-                  <p class="column__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                 </div>
               </a>
             </li>
@@ -197,13 +197,13 @@ $rootDir = get_template_directory_uri();
                   <img src="https://source.unsplash.com/Gp34PCSEbt8" alt="" class="column__img">
                 </div>
                 <div class="column__body">
+                  <h3 class="column__title">タイトル</h3>
+                  <p class="column__date">2022.5.10</p>
                   <div class="column__category-wrapper">
                     <span class="column__category">カテ1</span>
                     <span class="column__category">カテ2</span>
                     <span class="column__category">カテ3</span>
                   </div>
-                  <h3 class="column__title">タイトル</h3>
-                  <p class="column__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                 </div>
               </a>
             </li>
@@ -213,13 +213,13 @@ $rootDir = get_template_directory_uri();
                   <img src="https://source.unsplash.com/Gp34PCSEbt8" alt="" class="column__img">
                 </div>
                 <div class="column__body">
+                  <h3 class="column__title">タイトル</h3>
+                  <p class="column__date">2022.5.10</p>
                   <div class="column__category-wrapper">
                     <span class="column__category">カテ1</span>
                     <span class="column__category">カテ2</span>
                     <span class="column__category">カテ3</span>
                   </div>
-                  <h3 class="column__title">タイトル</h3>
-                  <p class="column__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                 </div>
               </a>
             </li>
