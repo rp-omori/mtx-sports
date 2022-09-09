@@ -6,7 +6,8 @@
 
 https://github.com/terraphic/docker-lamp-wp
 ### Dockerコンテナ作成後
-以下を実行して開発環境を整えてください。
+themeフォルダ直下にこのリポジトリをクローンしてください。
+mtx-sportsディレクトリで以下を実行して開発環境を整えてください。
 ```bash
 # install dependencies
 npm install
