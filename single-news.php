@@ -22,9 +22,11 @@ $rootDir = get_template_directory_uri();
         <div class="news-article__inner">
           <p class="news-article__date"><?php the_time('Y.n.j') ?></p>
           <h2 class="news-article__title"><?php the_title() ?></h2>
+          <?php if(the_post_thumbnail()) :?>
           <div class="news-article__img">
             <img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id()); ?>" alt="<?php the_title() ?>">
           </div>
+          <?php endif ?>
           <div class="news-article__text"><?php the_content() ?></div>
         </div>
       </div>
