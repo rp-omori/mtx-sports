@@ -55,19 +55,28 @@ window.addEventListener('scroll', (e) => {
 window.addEventListener('load', () => {
   headerHeight = header.offsetHeight - 10;
   root.style.setProperty('--headerHeight', headerHeight + 'px');
-  // initFooterSwiper();
+  initColumnSwiper();
   // profileToggle();
 })
 
-const initFooterSwiper = () => {
-  const kvSwiper = new Swiper('.footer-swiper', {
-    loop: true,
-    loopedSlides: 2,
-    slidesPerView: "auto",
-    speed: 8000,
-    autoplay: {
-      delay: 0,
-      disableOnInteraction: false,
+const initColumnSwiper = () => {
+  const columnSwiper = new Swiper('.column__swiper', {
+    slidesPerView: 1.2,
+    spaceBetween: 15,
+    grabCursor: true,
+    pagination: {
+      el: '.column-slider .column__swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.column-slider .swiper-button-next',
+      prevEl: '.column-slider .swiper-button-prev',
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 3.5,
+        spaceBetween: 15,
+      }
     },
   });
 }

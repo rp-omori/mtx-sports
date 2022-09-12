@@ -39,19 +39,23 @@ $rootDir = get_template_directory_uri();
                 <li class="column-article__contents-h2">
                   <a href="#chapter-1"><strong>1.背景</strong></a>
                   <ol>
-                    <li class="column-article__contents-h3"><a href="#chapter-2">業務負荷改善を目的として、外部パッケージシステムの導入を決定。既存システムからのリプレースを実施。</a></li>
-                    <ol>
-                      <li class="column-article__contents-h4"><a href="#chapter-3">h4h4h4h4h4h4h4h4h4h4h4h4</a></li>
-                    </ol>
+                    <li class="column-article__contents-h3">
+                      <a href="#chapter-2">業務負荷改善を目的として、外部パッケージシステムの導入を決定。既存システムからのリプレースを実施。</a>
+                      <ol>
+                        <li class="column-article__contents-h4"><a href="#chapter-3">h4h4h4h4h4h4h4h4h4h4h4h4</a></li>
+                      </ol>
+                    </li>
                   </ol>
                 </li>
                 <li class="column-article__contents-h2">
                   <a href="#chapter-4"><strong>2.課題</strong></a>
                   <ol>
-                    <li class="column-article__contents-h3"><a href="#chapter-5">業務負荷軽減のためのパッケージシステム導入が、更なる負荷増大を招く。</a></li>
-                    <ol>
-                      <li class="column-article__contents-h4"><a href="#chapter-6">h4h4h4h4h4h4h4h4h4h4h4h4</a></li>
-                    </ol>
+                    <li class="column-article__contents-h3">
+                      <a href="#chapter-5">業務負荷軽減のためのパッケージシステム導入が、更なる負荷増大を招く。</a>
+                      <ol>
+                        <li class="column-article__contents-h4"><a href="#chapter-6">h4h4h4h4h4h4h4h4h4h4h4h4</a></li>
+                      </ol>
+                    </li>
                   </ol>
                 </li>
               </ol>
@@ -85,7 +89,7 @@ $rootDir = get_template_directory_uri();
                   </div>
                   <div class="column-article__latest-body">
                     <p class="column-article__latest-title">タイトル</p>
-                    <p class="column-article__latest-text">本文</p>
+                    <p class="column-article__latest-text">本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文</p>
                     <div class="column-article__latest-other">
                       <p class="column-article__latest-date">2022.5.10</p>
                       <p class="column-article__latest-more">続きを読む</p>
@@ -134,11 +138,13 @@ $rootDir = get_template_directory_uri();
               <li class="column-article__category-item">
                 <a href="" class="column-article__category-link">
                   <p class="column-article__category-text">スポーツによる関節の怪我・痛み</p>
+                  <div class="column-article__category-circle"><img src="<?php echo $rootDir ?>/images/icon/icon-arrow-circle-right--white.svg" alt=""></div>
                 </a>
               </li>
               <li class="column-article__category-item">
                 <a href="" class="column-article__category-link">
                   <p class="column-article__category-text">加齢による関節の痛み</p>
+                  <div class="column-article__category-circle"><img src="<?php echo $rootDir ?>/images/icon/icon-arrow-circle-right--white.svg" alt=""></div>
                 </a>
               </li>
               <li class="column-article__category-item">
@@ -147,6 +153,7 @@ $rootDir = get_template_directory_uri();
                     子どもの成長による痛みと<br>
                     運動機能の悩み
                   </p>
+                  <div class="column-article__category-circle"><img src="<?php echo $rootDir ?>/images/icon/icon-arrow-circle-right--white.svg" alt=""></div>
                 </a>
               </li>
             </ul>
@@ -180,6 +187,52 @@ $rootDir = get_template_directory_uri();
             </ul>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="column__related">
+      <div class="column__related-inner">
+        <div class="column__heading-wrapper column__heading-wrapper--related">
+          <span class="column__heading-label">RELATED</span>
+          <h2 class="column__heading">関連記事</h2>
+        </div>
+        <ul class="column__related-list">
+          <li class="column__related-item">
+            <a href="" class="column__related-link">
+              <div class="column__related-img">
+                <img src="https://source.unsplash.com/Gp34PCSEbt8" alt="">
+              </div>
+              <div class="column__related-body">
+                <span class="column__related-label">カテゴリー</span>
+                <p class="column__related-title">タイトル</p>
+                <p class="column__related-text">テキスと</p>
+              </div>
+            </a>
+          </li>
+          <li class="column__related-item">
+            <a href="" class="column__related-link">
+              <div class="column__related-img">
+                <img src="https://source.unsplash.com/Gp34PCSEbt8" alt="">
+              </div>
+              <div class="column__related-body">
+                <span class="column__related-label">カテゴリー</span>
+                <p class="column__related-title">タイトル</p>
+                <p class="column__related-text">テキスと</p>
+              </div>
+            </a>
+          </li>
+          <li class="column__related-item">
+            <a href="" class="column__related-link">
+              <div class="column__related-img">
+                <img src="https://source.unsplash.com/Gp34PCSEbt8" alt="">
+              </div>
+              <div class="column__related-body">
+                <span class="column__related-label">カテゴリー</span>
+                <p class="column__related-title">タイトル</p>
+                <p class="column__related-text">テキスと</p>
+              </div>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
     <?php get_template_part('component/footer__other'); ?>
