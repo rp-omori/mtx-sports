@@ -208,7 +208,7 @@ $rootDir = get_template_directory_uri();
                 <span></span>
               </a>
               <a href="https://web.booking.clius.jp/reserve/mtxclinic_yotsuya" target="_blank" class="btn btn--orange btn--web pc">
-                <span>まずはWEB予約</span>
+                <span>WEB予約</span>
               </a>
               <a href="https://web.booking.clius.jp/reserve/mtxclinic_yotsuya" target="_blank" class="btn btn--orange btn--web sp">
                 <span>WEB予約</span>

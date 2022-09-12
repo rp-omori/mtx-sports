@@ -1476,6 +1476,68 @@
   margin-bottom: 2.6041666667vw;
 }
 
+.pagination {
+  max-width: 30rem;
+  margin: 0 auto;
+  background-color: transparent;
+}
+.pagination > .page-numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: transparent;
+}
+.pagination > .page-numbers li .page-numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 3.9713541667vw;
+  height: 3.9713541667vw;
+  margin: 0 0.4rem;
+  color: #6A8381;
+  font-family: din-2014, sans-serif;
+  font-size: clamp(10px, 2rem, 20px);
+  line-height: 1;
+  text-align: center;
+}
+.pagination > .page-numbers li .page-numbers.-disabled {
+  opacity: 0.7;
+  pointer-events: none;
+}
+.pagination > .page-numbers li .current {
+  background: var(--main-color);
+  border-radius: 50%;
+  color: var(--main-color-white);
+}
+.pagination > .page-numbers li .prev .pagination__button,
+.pagination > .page-numbers li .next .pagination__button {
+  display: inline-block;
+  width: 2.2rem;
+  height: 1.2rem;
+}
+.pagination > .page-numbers li .prev {
+  margin-right: 5rem;
+}
+.pagination > .page-numbers li .prev .pagination__button {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+.pagination > .page-numbers li .next {
+  margin-left: 5rem;
+}
+
 .top {
   overflow: hidden;
 }
@@ -6981,6 +7043,12 @@ td, th {
   .mw_wp_form_confirm .form-checkbox label span {
     margin-left: 1.6vw;
     font-size: clamp(10px, 1.6rem, 16px);
+  }
+  .pagination > .page-numbers li .prev {
+    margin-right: 3rem;
+  }
+  .pagination > .page-numbers li .next {
+    margin-left: 3rem;
   }
   .top .kv {
     padding-top: 6.1333333333vw;
