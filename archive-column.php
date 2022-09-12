@@ -28,18 +28,16 @@ $rootDir = get_template_directory_uri();
               $post_id = 341;
               if(get_field('recommend_column', $post_id)):
                 $count = 0;
-                $arrayLength =  count(get_field('recommend_column', $post_id));
+                $arrayLength = count(get_field('recommend_column', $post_id));
                 if($arrayLength > 3) {
                     $arrayLength = 3;
                 };
                 while($count < $arrayLength): ?>
               <?php
-                  // $args = get_field('recommend_column', $post_id)[$count];
-                // var_dump($post_column);
                 $args = [
                   'column_article' => get_field('recommend_column', $post_id)[$count],
                 ];
-                get_template_part('c-column_article', null, $args); ?>
+                get_template_part('component/c__column_article', null, $args); ?>
                 <?php
                     $count++;
                 endwhile;
@@ -102,7 +100,7 @@ $rootDir = get_template_directory_uri();
             <?php
             while ( have_posts() ) : the_post();
             $post_column = $post; ?>
-            <?php get_template_part('c-column_article'); ?>
+            <?php get_template_part('component/c__column_article'); ?>
             <?php endwhile; ?>
           </ul>
         </div><?php endif; ?>
