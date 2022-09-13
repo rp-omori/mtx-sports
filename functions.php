@@ -248,3 +248,91 @@ function update_sitemap() {
   file_put_contents(get_theme_file_path("sitemap.xml"), $xml, LOCK_EX);
 }
 add_action('save_post', 'update_sitemap');
+
+
+/* ビジュアルエディタから見出し1を削除  */
+function custom_tiny_mce_formats( $settings ){
+  $settings[ 'block_formats' ] = 'ブロック=div;段落=p;見出し2=h2;見出し3=h3;見出し4=h4;見出し5=h5;見出し6=h6;';
+  return $settings;
+}
+add_filter( 'tiny_mce_before_init', 'custom_tiny_mce_formats' );
+
+
+/* ビジュアルエディタからhタグを抽出して目次を生成  */
+function my_add_content_column( $content ) {
+  if ( is_singular('column') ) {
+    // 属性を持たないh2・h3要素を正規表現で表すパターン
+    $pattern = '/<h[2-3]>(.*?)<\/h[2-3]>/i';
+    // 本文の中から、すべてのh2・h3要素を検索
+    preg_match_all( $pattern, $content, $matches, PREG_SET_ORDER );
+
+    // ページ内のh2・h3要素が2つ以上の場合に目次を出力
+    if( count( $matches ) > 0 ){
+      // 目次の出力に使用する変数
+      $toc = '
+          <div class="column-article__contents"><p class="column-article__contents-title">目次</p><ol>
+      ';
+      // 目次の階層の判断に使用する変数
+      $hierarchy = NULL;
+      // ループ回数を数える変数
+      $i = 0;
+
+      // 本文内のh2・h3要素を上から順番にループで処理
+      foreach( $matches as $element ){
+        // ループ回数を1加算
+        $i++;
+        // h2・h3に指定するIDの属性値を作成
+        $id = 'chapter-' . $i;
+        // h2・h3タグにIDを追加
+        $chapter = preg_replace( '/<(.+?)>(.+?)<\/(.+?)>/',  '<$1 id ="' . $id . '">$2</$3>', $element[0] );
+        // ページ内のh2・h3要素を、IDが追加されているh2・h3要素に置換
+        $content = preg_replace( $pattern, $chapter, $content, 1);
+
+        // 現在のループで扱う要素を判断する条件分岐
+        if( strpos( $element[0], '<h2' ) === 0 ){
+          $level = 0;
+        }else{
+          $level = 1;
+        }
+
+        //現在の状態を判断する条件分岐
+        if( $hierarchy === $level ){ // h2またはh3がそれぞれ連続する場合
+          $toc .= '</li>';
+        }elseif( $hierarchy < $level ){ // h2の次がh3となる場合
+          $toc .= '<ol>';
+          $hierarchy = 1;
+        }elseif( $hierarchy > $level ){ // h3の次がh2となる場合
+          $toc .= '</li></ol></li>';
+          $hierarchy = 0;
+        }elseif( $i == 1 ){ // ループ1回目の場合
+          $hierarchy = 0;
+        }
+
+        // 目次の項目で使用する要素を指定
+        $title = $element[1];
+        // 目次の項目を作成。※次のループで<li>の直下に<ol>タグを出力する場合ががあるので、ここでは<li>タグを閉じていません。
+        // $toc .= '<li><a href="#' . $id . '">' . $title . '</a>';
+        if( $level == 0 ){
+            $toc .= '<li class="column-article__contents-h2"><a href="#' . $id . '">' . $title . '</a>';
+        }elseif( $level == 1 ){
+            $toc .= '<li class="column-article__contents-h3"><a href="#' . $id . '">' . $title . '</a>';
+        }
+        }
+
+      // 目次の最後の項目をどの要素から作成したかによりタグの閉じ方を変更
+      if( $level == 0 ){
+        $toc .= '</li></ol></div><div class="column-article__body">';
+      }elseif( $level == 1 ){
+        $toc .= '</li></ol></li></ol></div><div class="column-article__body">';
+      }
+
+      // 本文に目次を追加
+      $content = $toc . $content . '</div>';
+    }
+  } else{
+      $content = '<div class="column-article__body">' . $content . '</div>';
+  }
+
+  return $content;
+}
+add_filter( 'the_content', 'my_add_content_column' );
