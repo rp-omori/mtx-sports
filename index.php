@@ -833,6 +833,8 @@ $rootDir = get_template_directory_uri();
         </div>
       </div>
     </section>
+    <!-- コラム -->
+    <?php get_template_part('component/c__column'); ?>
   </div>
 </main>
 
