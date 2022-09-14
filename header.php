@@ -88,7 +88,7 @@ $rootDir = get_template_directory_uri();
                   </a>
                 </li>
                 <li class="header__item">
-                  <a href="<?php echo esc_url(home_url('/colum')); ?>" class="header__link">
+                  <a href="<?php echo esc_url(home_url('/column')); ?>" class="header__link">
                     コラム
                   </a>
                 </li>
@@ -156,7 +156,7 @@ $rootDir = get_template_directory_uri();
                     </a>
                   </li>
                   <li class="header__item">
-                    <a href="<?php echo esc_url(home_url('/colum')); ?>" class="header__link js-header-drawer">
+                    <a href="<?php echo esc_url(home_url('/column')); ?>" class="header__link js-header-drawer">
                       コラム
                     </a>
                   </li>
