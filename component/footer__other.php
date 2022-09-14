@@ -86,7 +86,7 @@ $rootDir = get_template_directory_uri();
       <p class="white">治療の流れ</p>
     </div>
   </a>
-  <!-- <a href="<?php echo esc_url(home_url()); ?>" class="footer__other_box">
+  <a href="<?php echo esc_url(home_url('/column')); ?>" class="footer__other_box">
     <div class="footer__other_box_img">
       <img src="<?php echo $rootDir ?>/images/footer__other/footer_other_05.jpg" alt="">
     </div>
@@ -94,7 +94,7 @@ $rootDir = get_template_directory_uri();
       <p class="orange">COLUMN</p>
       <p class="white">コラム</p>
     </div>
-  </a> -->
+  </a>
 </div>
 
 <?php elseif(is_page('price')) :?>
