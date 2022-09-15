@@ -31,7 +31,7 @@ $rootDir = get_template_directory_uri();
       </a>
       <a href="#collaborating" class="index_btn">
         <p class="green_txt">FACILITY</p>
-        <p>クリニック＆連携施設・設備</p>
+        <p>クリニック・連携施設・使用機器</p>
         <img src="<?php echo $rootDir ?>/images/facility/facility_btn.png" alt="">
       </a>
     </div>
@@ -195,10 +195,10 @@ $rootDir = get_template_directory_uri();
         </div>
       </div>
 
-      <div class="facility-collaboratingArea__inner">
+      <div id="facility_detail" class="facility-collaboratingArea__inner">
         <div class="facility-collaboratingArea__inner_contents">
           <div class="facility-collaboratingArea__inner_contents_ttl">
-            <p>機器</p>
+            <p>使用機器</p>
           </div>
           <div class="facility-collaboratingArea__inner_contents_box reverse">
             <div class="facility-collaboratingArea__inner_contents_box_left">
@@ -301,7 +301,6 @@ $rootDir = get_template_directory_uri();
                   伊藤超短波社製UST-770にLIPUS（リーパス）が搭載されています。<br>
                   また、１秒間に数百万回のミクロマッサージ効果が得られる超音波も使えるハイブリット治療器です。<br>
                   LIPUSは骨折治療器として唯一認められている機器です。骨折部にプローブを固定し照射する事で骨を作る細胞や、血管を作る細胞を刺激し骨の形成を促進します。<br>
-                  <br><br>
                   超音波は温熱効果と音圧効果（ミクロマッサージ）が特徴で、ホットパックなどの熱は皮膚表面で消費されるのに対し、超音波は最大６cmまで熱と振動を届かせる事が出来ます。それにより手技では届かない深層にアプローチする事が可能です。
                 </p>
               </div>
