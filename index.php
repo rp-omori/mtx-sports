@@ -649,7 +649,7 @@ $rootDir = get_template_directory_uri();
                 その他、当クリニックでは運動機能の状態を評価（数値化）する機器としても活用します。
               </p>
               <a href="<?php echo esc_url(home_url('/system_facility/#facility_detail')); ?>" class="btn btn--dark_green">
-                <span>施設・設備の紹介</span>
+                <span>DDシステム</span>
               </a>
             </div>
           </div>
