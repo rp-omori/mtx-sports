@@ -54,7 +54,7 @@ $rootDir = get_template_directory_uri();
 <?php elseif(is_page('staff')) :?>
 
 <div class="footer__other">
-  <!-- <a href="<?php echo esc_url(home_url()); ?>" class="footer__other_box">
+  <a href="<?php echo esc_url(home_url()); ?>" class="footer__other_box">
     <div class="footer__other_box_img">
       <img src="<?php echo $rootDir ?>/images/footer__other/footer_other_05.jpg" alt="">
     </div>
@@ -62,7 +62,7 @@ $rootDir = get_template_directory_uri();
       <p class="orange">COLUMN</p>
       <p class="white">コラム</p>
     </div>
-  </a> -->
+  </a>
   <a href="<?php echo esc_url(home_url('/aboutus')); ?>" class="footer__other_box">
     <div class="footer__other_box_img">
       <img src="<?php echo $rootDir ?>/images/footer__other/footer_other_07.jpg" alt="">
