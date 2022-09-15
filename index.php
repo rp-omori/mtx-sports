@@ -120,7 +120,7 @@ $rootDir = get_template_directory_uri();
     <section id="medical-menu" class="medical-menu">
       <div class="section-title__wrapper --white --center js-titleAnimationTarget">
         <h2 class="section-title">MENU</h2>
-        <p class="section-sub-title">症状からさがす</p>
+        <p class="section-sub-title">症状からさがす<span>診療科目</span></p>
       </div>
       <ul class="medical-menu__list">
         <li class="medical-menu__item medical-menu__item--01" style="animation-delay: 0s">
@@ -648,7 +648,7 @@ $rootDir = get_template_directory_uri();
                 運動能力を数値化することが可能なため、パフォーマンス向上、再生医療と組み合わせての症状改善に向けたリカバリープログラムなど、多岐にわたって活用が可能です。<br>
                 その他、当クリニックでは運動機能の状態を評価（数値化）する機器としても活用します。
               </p>
-              <a href="<?php echo esc_url(home_url('/system_facility')); ?>" class="btn btn--dark_green">
+              <a href="<?php echo esc_url(home_url('/system_facility/#facility_detail')); ?>" class="btn btn--dark_green">
                 <span>施設・設備の紹介</span>
               </a>
             </div>

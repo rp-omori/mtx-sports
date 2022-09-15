@@ -24,6 +24,7 @@ $rootDir = get_template_directory_uri();
     </div>
 
     <div class="introduce-top-lead">
+      <p>一人の患者さんに対し、<br class="sp">医師・トレーナー・理学療法士<br>がチームを組んで治療していきます。</p>
     <img class="pc" src="<?php echo $rootDir ?>/images/introduce/introduce-top-img.png" alt="">
     <img class="sp" src="<?php echo $rootDir ?>/images/introduce/introduce-top-img_sp.png" alt="">
     </div>
@@ -221,7 +222,7 @@ $rootDir = get_template_directory_uri();
       </div>
       <div class="introduce-contents__inner bg_white mb">
         <div class="introduce-contents__inner_ttl pd_0">
-          <p class="green">MTXアカデミートレーナー<br>- 強化トレーニング -</p>
+          <p class="green">MTXアカデミートレーナー<br>- 実践トレーニング担当 -</p>
         </div>
         <div class="introduce-contents__inner_box reverse">
           <div class="introduce-contents__inner_box_left sp_right">
@@ -247,7 +248,7 @@ $rootDir = get_template_directory_uri();
                 “日本に、スポーツ医学を正しく広めること”です
               </p>
               <p class="small black">
-                我々の想いは、一部のトップアスリートだけではなく、小・中学生、学生、一般の方まで、 誰もが、最先端のスポーツ医学を身近に活用できるクリニックであることです。 <br>ドクターとトレーナーが力を合わせ、みなさまをサポートしてまいります。
+                我々の想いは、一部のトップアスリートだけではなく、小・中学生、学生、一般の方まで、 誰もが最先端のスポーツ医学を身近に活用できるクリニックであることです。<br><br>ドクターとトレーナーが力を合わせ、みなさまをサポートしてまいります。
               </p>
             </div>
           </div>
@@ -255,7 +256,7 @@ $rootDir = get_template_directory_uri();
       </div>
       <div class="introduce-contents__inner bg_white pd_sp">
         <div class="introduce-contents__inner_ttl pd_0">
-          <p class="green">MTXアカデミートレーナー<br>- 実践トレーニング -</p>
+          <p class="green">MTXアカデミートレーナー<br>- 強化トレーニング担当 -</p>
         </div>
         <div class="introduce-contents__inner_box">
           <div class="introduce-contents__inner_box_left">
@@ -290,7 +291,7 @@ $rootDir = get_template_directory_uri();
       </div>
       <div class="introduce-contents__inner pd_more">
         <div class="introduce-contents__inner_ttl">
-          <p>MTXアカデミートレーナー<br>- 回復治療 -</p>
+          <p>MTXアカデミートレーナー<br>- 回復治療担当 -</p>
         </div>
         <div class="introduce-contents__inner_box mb_more reverse">
           <div class="introduce-contents__inner_box_left sp_right">
@@ -316,7 +317,7 @@ $rootDir = get_template_directory_uri();
                 サポートを行います
               </p>
               <p class="small">
-                私も柔道整復師として患者様と向き合っていく中で、必ずぶつかってきた壁があります。それは「施術の限界」という壁でした。<br>
+                私が柔道整復師として患者様と向き合っていく中で、必ずぶつかってきた壁があります。それは「施術の限界」という壁でした。<br>
                 このクリニックでは、その「施術の限界」を突破するきっかけをドクターが作ってくれます。<br>
                 さらに、治療連携においては整骨院と整形外科との連携をこれまで以上に身近にし、正確な診断のもと、さらに患者様に寄り添ったサポートを、チーム一丸で行なってまいります。
               </p>
@@ -324,7 +325,7 @@ $rootDir = get_template_directory_uri();
           </div>
         </div>
         <div class="introduce-contents__inner_ttl">
-          <p>MTXアカデミートレーナー<br>- HAL® -</p>
+          <p>MTXアカデミートレーナー<br>- HAL®担当 -</p>
         </div>
         <div class="introduce-contents__inner_box mb">
           <div class="introduce-contents__inner_box_left">

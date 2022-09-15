@@ -42,7 +42,7 @@ $rootDir = get_template_directory_uri();
           </div>
           <h3 class="concept-lead__title">“ 治る ” 関節治療を目指して</h3>
           <p class="concept-lead__text">
-            これまでアスリートの競技人生・身体的障害のある方の人生に長年向き合い、身体的な機能改善に取り組んできたMTXは、今回新たに医師を仲間に加え、海外では当たり前にあるような医療と運動療法を組み合わせた複合施設型のクリニックを作ります。<br>
+            これまでアスリートの競技人生・身体的障害のある方の人生に長年向き合い、身体的な機能改善に取り組んできたMTXは、今回新たに医師を仲間に加え、海外では当たり前にあるような医療と運動療法を組み合わせた複合施設型のクリニックを作りました。<br>
             私たちが目指すのは、“寝たきりゼロの社会を作ること”そのためには、治療だけではなく、関節疾患にかからない身体をつくる予防への意識づけや習慣化が重要です。<br><br>
             当院が用いるのは、「再生医療」と「運動療法」を組み合わせた治療。<br>
             「再生医療」では従来の脂肪幹細胞移植治療や、PRP治療だけではなく、比較的安価な幹細胞培養上清液治療を用い、「運動療法」では、MTXアカデミーと連携し、医師の処方内容に基づいて、理学療法士・トレーナーと連携した治療で相乗効果を出すことで、症状の改善、再発の予防をしてまいります。
@@ -185,9 +185,12 @@ $rootDir = get_template_directory_uri();
                 <h4 class="concept-interview__title">まずはお三方の経歴を教えてください</h4>
                 <div class="concept-interview__comment">
                   <div class="concept-interview__comment-inner">
-                    <p class="concept-interview__comment-name">木村</p>
+                    <p class="concept-interview__comment-name">富岡</p>
                     <p class="concept-interview__comment-text">
-                      2005年からスポーツトレーナーとして活動しています。高齢者向け体操教室や、健康講演のような活動をするなかで、運動に触れていない人たち、触れられない人たちに、運動の素晴らしさを広げるための活動が必要と感じました。
+                      日本の高校を卒業後アメリカの大学に進学し、アスレティックトレーナー(Certified Athletic Trainer)という資格をとって日本に帰ってきました。<br>
+                      この資格は、スポーツの現場で活躍する医療の資格です。<br>
+                      その後日本の大学医学部に編入し医師免許も取得しました。<br>
+                      プロだけでなく、スポーツドクターの存在を知らない人の助けになりたいです。
                     </p>
                   </div>
                   <div class="concept-interview__comment-inner">
@@ -197,12 +200,9 @@ $rootDir = get_template_directory_uri();
                     </p>
                   </div>
                   <div class="concept-interview__comment-inner">
-                    <p class="concept-interview__comment-name">富岡</p>
+                    <p class="concept-interview__comment-name">木村</p>
                     <p class="concept-interview__comment-text">
-                      日本の高校を卒業後アメリカの大学に進学し、アスレティックトレーナー(Certified Athletic Trainer)という資格をとって日本に帰ってきました。<br>
-                      この資格は、スポーツの現場で活躍する医療の資格です。<br>
-                      その後日本の大学医学部に編入し医師免許も取得しました。<br>
-                      私もプロだけでなく、スポーツドクターの存在を知らない人の助けになりたいです。
+                      2005年からスポーツトレーナーとして活動しています。高齢者向け体操教室や、健康講演のような活動をするなかで、運動に触れていない人たち、触れられない人たちに、運動の素晴らしさを広げるための活動が必要と感じました。
                     </p>
                   </div>
                 </div>
