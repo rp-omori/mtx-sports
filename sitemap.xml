@@ -1,8 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?><urlset
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
     <loc>http://localhost:8080</loc>
-    <lastmod>2022-09-15T02:07:54Z</lastmod>
+    <lastmod>2022-09-15T11:19:54Z</lastmod>
   </url><url>
+        <loc>http://localhost:8080/column/%e3%83%86%e3%82%b9%e3%83%8806/</loc>
+        <lastmod>2022-09-15T11:19:53Z</lastmod>
+      </url><url>
+        <loc>http://localhost:8080/column/%e3%83%86%e3%82%b9%e3%83%8805/</loc>
+        <lastmod>2022-09-15T11:19:35Z</lastmod>
+      </url><url>
+        <loc>http://localhost:8080/column/%e3%83%86%e3%82%b9%e3%83%8804/</loc>
+        <lastmod>2022-09-15T11:19:18Z</lastmod>
+      </url><url>
+        <loc>http://localhost:8080/column/%e3%83%86%e3%82%b9%e3%83%8803/</loc>
+        <lastmod>2022-09-15T11:19:00Z</lastmod>
+      </url><url>
+        <loc>http://localhost:8080/column/%e3%83%86%e3%82%b9%e3%83%8802/</loc>
+        <lastmod>2022-09-15T11:18:20Z</lastmod>
+      </url><url>
+        <loc>http://localhost:8080/column/%e3%83%86%e3%82%b9%e3%83%8801/</loc>
+        <lastmod>2022-09-15T11:18:40Z</lastmod>
+      </url><url>
         <loc>http://localhost:8080/news/%e3%83%9b%e3%83%bc%e3%83%a0%e3%83%9a%e3%83%bc%e3%82%b8%e3%82%92%e5%85%ac%e9%96%8b%e3%81%97%e3%81%be%e3%81%97%e3%81%9f%e3%80%82/</loc>
         <lastmod>2022-09-12T06:47:37Z</lastmod>
       </url><url>
