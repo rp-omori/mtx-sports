@@ -59,7 +59,7 @@ $rootDir = get_template_directory_uri();
         <p>5. 問い合わせの窓口</p>
       </div>
       <div class="contents-box__text">
-        <p>当院の個人情報保護基本方針に関するお問い合わせは、【担当部署名および連絡先をご記入ください】でお受けいたします。</p>
+        <p>当院の個人情報保護基本方針に関するお問い合わせは、<br class="pc">クリニックにて（電話番号:<a style="color:#00a384;" href="tel:03-6272-5047">03-6272-5047</a>）お受けします。</p>
       </div>
     </div>
     <div class="contents-box">
