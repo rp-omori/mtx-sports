@@ -94,6 +94,7 @@ $rootDir = get_template_directory_uri();
               $args = [
                 'post_type' => 'news',
                 'order' => 'ASC',
+                'post_status' => 'publish',
                 'posts_per_page' => 2
               ];
               $WP_post = new WP_Query($args);
@@ -137,6 +138,7 @@ $rootDir = get_template_directory_uri();
             $args = [
               'post_type' => 'medicaldetail',
               'order' => 'ASC',
+              'post_status' => 'publish',
               'posts_per_page' => -1,
               'tax_query' => [
                 [
