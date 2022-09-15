@@ -96,7 +96,62 @@ $rootDir = get_template_directory_uri();
           </div>
         </div>
 
-        <?php if ( have_posts() ) : ?>
+
+        <?php
+          $column_arr = [];
+          $column_tax = 'column_cat';
+          $columnargs = array(
+              'hide_empty' => false
+          );
+          $columnTerms = get_terms( $column_tax , $columnargs );
+
+          foreach($columnTerms as $items) {
+              $column_arr[] = $items->name;
+          }
+
+          $args = array(
+              'post_type' => 'column',
+              'posts_per_page' => -1,
+              'order' => 'ASC',
+          );
+          $WP_post = new WP_Query($args);
+
+          // 最終的に格納する配列
+          $PostData = [];
+          $i = 0;
+
+          // データ編集
+          if($WP_post -> have_posts()){
+            while($WP_post -> have_posts()) {
+              ++$i;
+              $my_post = [];
+              $WP_post->the_post();
+              $my_post['title'] = get_the_title();
+              $my_post['thumbnail'] = get_the_post_thumbnail_url($post->ID, 'full');
+              $my_post['url'] = get_permalink();
+              $my_post['date'] = get_the_date('Y.m.d');
+              $my_post['id'] = $i;
+
+              //タクソノミー取得
+              $post_id = get_the_ID();
+              $column_term = get_the_terms($post_id, 'column_tag');
+              if ($column_term == true) {
+                  $my_post['column_tag'] = array_column($column_term, 'name');
+              } else {
+                  $my_post['column_tag'] = [];
+              }
+
+              $PostData[] = $my_post;
+            }
+          }
+          wp_reset_postdata();
+          $WP_post_json = json_encode($PostData);
+
+          // var_dump($WP_post_json);
+        ?>
+
+
+        <!-- <?php if ( have_posts() ) : ?>
         <div class="column__list-wrapper">
           <ul class="column__list">
             <?php
@@ -105,7 +160,171 @@ $rootDir = get_template_directory_uri();
             <?php get_template_part('component/c__column_article'); ?>
             <?php endwhile; ?>
           </ul>
-        </div><?php endif; ?>
+        </div><?php endif; ?> -->
+
+        <div class="column__list-wrapper">
+          <ul class="column__list column__list__deploy">
+          </ul>
+        </div>
+
+<script>
+/* 初期段階の表示の制御 */
+{
+
+  window.addEventListener('load', function() {
+      init()
+      linkCreate();
+  })
+
+  /* JSONの形として排出 */
+  const getWPData = () => {
+      const data = JSON.parse('<?php echo $WP_post_json; ?>');
+      console.log(data);
+      return data;
+  }
+
+  const init = () => {
+    const containerArea = document.querySelector('.column__list__deploy')
+    // const industryBtn = document.getElementById('l-industryBtn')
+    let dataArr = getWPData()
+    let filterArticleArr = [] // "事例"絞り込み用
+    let CheckboxArr = [] // チェックボックスでの絞り込み用
+    let displayFlag = false
+
+    /* ページロード時の初期表示作成 */
+    const createArticleList = (type) => {
+      let articleList = ''
+
+      updateListArr().forEach(item => {
+        articleList += `
+          <li class="column__item">
+            <a href="${item.url}" class="column__link">
+              <div class="column__head">
+                <img src="${item.thumbnail}" alt="">
+              </div>
+              <div class="column__body">
+                <h3 class="column__title">${item.title}</h3>
+                <p class="column__date">${item.date}</p>
+                  <div class="column__category-wrapper">
+
+          `
+        if (item.column_term && item.column_term.length !== 0) {
+            item.column_term.forEach(column_termItem => {
+                articleList += `
+                  <span class="column__category">${column_termItem}</span>
+                                        `
+            })
+        }
+
+          articleList += `
+              </div>
+            </a>
+          </li>
+              `
+      })
+
+      containerArea.innerHTML = articleList
+
+      // console.log(articleList);
+
+      // if (type === 'insert') {
+      //     containerArea.insertAdjacentHTML('afterbegin', articleList)
+      // } else {
+      //     containerArea.innerHTML = articleList
+      // }
+    }
+
+      /*
+        * 絞り込みボタンを押したときの挙動
+        */
+      const doCheckItem = () => {
+          const industryCheckList = document.querySelectorAll('input[name="industry"]')
+          const featureCheckList = document.querySelectorAll('input[name="feature"]')
+          const checkboxInput = document.querySelectorAll('.checkboxInput')
+
+          //業界の絞り込み
+          industryCheckList.forEach(checkItem => {
+              checkItem.addEventListener("change", () => {
+                  if (checkItem.checked) {
+                      CheckboxArr.push(checkItem.value)
+                  } else {
+                      CheckboxArr = CheckboxArr.filter(item => {
+                          return item !== checkItem.value
+                      })
+                  }
+                  filterItems();
+                  linkCreate();
+              })
+          })
+
+      }
+
+
+      const filterItems = () => {
+          filterArticleArr = dataArr.filter(data => {
+              return CheckboxArr.reduce((prev, current) => {
+                  return prev || data.industry.includes(current) || data.feature.includes(
+                      current)
+              }, false)
+          })
+          createArticleList();
+          linkCreate();
+      }
+
+
+      /*
+        * @summary 絞り込み検索で生成した配列が空だったら全件配列、そうでなければ絞り込み検索で生成した配列を返す
+        * @return データ一覧の配列を返す
+        */
+      const updateListArr = () => {
+          if (filterArticleArr.length === 0) {
+              if (CheckboxArr.length === 0) {
+                  return dataArr
+              } else if (CheckboxArr.length >= 1 && filterArticleArr.length === 0) {
+                  return []
+              }
+          } else {
+              return filterArticleArr
+          }
+      }
+
+      linkCreate();
+      createArticleList();
+      doCheckItem();
+
+  }
+  // リンク生成
+  const linkCreate = () => {
+      const containerArea = document.querySelectorAll('.js-casestudyListLink')
+      containerArea.forEach(item => {
+          item.addEventListener("click", () => {
+              location.href = item.dataset.url;
+          });
+      })
+  }
+}
+</script>
+
+
+
+
+      </div>
+      <div class="pagination">
+      <?php
+        global $wp_query;
+        $big = 999999999; // need an unlikely integer
+
+        echo paginate_links( array(
+          'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+          'format' => '?paged=%#%',
+          'current' => max( 1, get_query_var('paged') ),
+          'total' => $wp_query->max_num_pages,
+          'type' => 'list',
+          'mid_size' => '1',
+          'prev_text' => '',
+          'next_text' => '',
+        ) );
+      ?>
       </div>
     </div>
     <?php get_template_part('component/footer__other'); ?>
