@@ -46,6 +46,60 @@ $rootDir = get_template_directory_uri();
           </ul>
         </div>
       </div>
+
+      <?php
+        $column_arr = [];
+        $column_tax = 'column_tag';
+        $columnargs = array(
+            'hide_empty' => false
+        );
+        $columnTerms = get_terms( $column_tax , $columnargs );
+
+        foreach($columnTerms as $items) {
+            $column_arr[] = $items->name;
+        }
+
+        $args = array(
+            'post_type' => 'column',
+            'posts_per_page' => -1,
+            'order' => 'ASC',
+        );
+        $WP_post = new WP_Query($args);
+
+        // 最終的に格納する配列
+        $PostData = [];
+        $i = 0;
+
+        // データ編集
+        if($WP_post -> have_posts()){
+          while($WP_post -> have_posts()) {
+            ++$i;
+            $my_post = [];
+            $WP_post->the_post();
+            $my_post['title'] = get_the_title();
+            $my_post['thumbnail'] = get_the_post_thumbnail_url($post->ID, 'full');
+            $my_post['url'] = get_permalink();
+            $my_post['date'] = get_the_date('Y.m.d');
+            $my_post['id'] = $i;
+
+            //タクソノミー取得
+            $post_id = get_the_ID();
+            $column_term = get_the_terms($post_id, 'column_tag');
+            if ($column_term == true) {
+                $my_post['column_tag'] = array_column($column_term, 'name');
+            } else {
+                $my_post['column_tag'] = [];
+            }
+
+            $PostData[] = $my_post;
+          }
+        }
+        wp_reset_postdata();
+        $WP_post_json = json_encode($PostData);
+
+        // var_dump($WP_post_json);
+      ?>
+
       <div class="column__lineup">
         <div class="column__heading-wrapper">
           <span class="column__heading-label">ALL LINE UP</span>
@@ -78,77 +132,24 @@ $rootDir = get_template_directory_uri();
             <p class="column__tags-heading">＃タグで絞り込む</p>
             <div class="column__tags">
               <div class="column__tags-list">
-              <?php
-              $terms = get_terms('column_tag','hide_empty=0');
-              $count = 1;
-              foreach ( $terms as $term ) : ?>
-                <div class="column__tags-wrapper">
-                  <input id="<?php echo $count ?>" type="checkbox" class="column__tags-check" name="columns">
-                  <label for="<?php echo $count ?>" class="column__tags-label"><span><?php echo $term->name; ?></span></label>
-                </div>
-                <?php $count++; endforeach; ?>
+                <?php
+                  foreach($column_arr as $items){
+                    echo "
+                      <div class='column__tags-wrapper'>
+                        <input class='column__tags-check' type='checkbox' name='columns' value='$items' id='$items'>
+                        <label for='$items' class='column__tags-label'>$items</label>
+                      </div>
+                      ";
+                    }
+                ?>
               </div>
             </div>
 
             <div class="column__tags-button">
-              <button class="btn btn--green">SEARCH</button>
+              <button class="btn btn--green" id="tag_search" name="tag_search">SEARCH</button>
             </div>
           </div>
         </div>
-
-
-        <?php
-          $column_arr = [];
-          $column_tax = 'column_cat';
-          $columnargs = array(
-              'hide_empty' => false
-          );
-          $columnTerms = get_terms( $column_tax , $columnargs );
-
-          foreach($columnTerms as $items) {
-              $column_arr[] = $items->name;
-          }
-
-          $args = array(
-              'post_type' => 'column',
-              'posts_per_page' => -1,
-              'order' => 'ASC',
-          );
-          $WP_post = new WP_Query($args);
-
-          // 最終的に格納する配列
-          $PostData = [];
-          $i = 0;
-
-          // データ編集
-          if($WP_post -> have_posts()){
-            while($WP_post -> have_posts()) {
-              ++$i;
-              $my_post = [];
-              $WP_post->the_post();
-              $my_post['title'] = get_the_title();
-              $my_post['thumbnail'] = get_the_post_thumbnail_url($post->ID, 'full');
-              $my_post['url'] = get_permalink();
-              $my_post['date'] = get_the_date('Y.m.d');
-              $my_post['id'] = $i;
-
-              //タクソノミー取得
-              $post_id = get_the_ID();
-              $column_term = get_the_terms($post_id, 'column_tag');
-              if ($column_term == true) {
-                  $my_post['column_tag'] = array_column($column_term, 'name');
-              } else {
-                  $my_post['column_tag'] = [];
-              }
-
-              $PostData[] = $my_post;
-            }
-          }
-          wp_reset_postdata();
-          $WP_post_json = json_encode($PostData);
-
-          // var_dump($WP_post_json);
-        ?>
 
 
         <!-- <?php if ( have_posts() ) : ?>
@@ -179,13 +180,12 @@ $rootDir = get_template_directory_uri();
   /* JSONの形として排出 */
   const getWPData = () => {
       const data = JSON.parse('<?php echo $WP_post_json; ?>');
-      console.log(data);
+      // console.log(data);
       return data;
   }
 
   const init = () => {
     const containerArea = document.querySelector('.column__list__deploy')
-    // const industryBtn = document.getElementById('l-industryBtn')
     let dataArr = getWPData()
     let filterArticleArr = [] // "事例"絞り込み用
     let CheckboxArr = [] // チェックボックスでの絞り込み用
@@ -206,7 +206,6 @@ $rootDir = get_template_directory_uri();
                 <h3 class="column__title">${item.title}</h3>
                 <p class="column__date">${item.date}</p>
                   <div class="column__category-wrapper">
-
           `
         if (item.column_term && item.column_term.length !== 0) {
             item.column_term.forEach(column_termItem => {
@@ -224,6 +223,7 @@ $rootDir = get_template_directory_uri();
       })
 
       containerArea.innerHTML = articleList
+      // console.log(articleList);
 
       // console.log(articleList);
 
@@ -234,16 +234,13 @@ $rootDir = get_template_directory_uri();
       // }
     }
 
-      /*
-        * 絞り込みボタンを押したときの挙動
-        */
+      /* 絞り込みボタンを押したときの挙動 */
       const doCheckItem = () => {
-          const industryCheckList = document.querySelectorAll('input[name="industry"]')
-          const featureCheckList = document.querySelectorAll('input[name="feature"]')
-          const checkboxInput = document.querySelectorAll('.checkboxInput')
-
-          //業界の絞り込み
-          industryCheckList.forEach(checkItem => {
+          const columnCheckList = document.querySelectorAll('input[name="columns"]')
+          const checkboxInput = document.querySelectorAll('.column__tags-check')
+        console.log(columnCheckList);
+          //タグの絞り込み
+          columnCheckList.forEach(checkItem => {
               checkItem.addEventListener("change", () => {
                   if (checkItem.checked) {
                       CheckboxArr.push(checkItem.value)
@@ -252,24 +249,33 @@ $rootDir = get_template_directory_uri();
                           return item !== checkItem.value
                       })
                   }
-                  filterItems();
-                  linkCreate();
+
+                  // filterItems();
+                  // linkCreate();
               })
           })
 
-      }
-
-
-      const filterItems = () => {
-          filterArticleArr = dataArr.filter(data => {
-              return CheckboxArr.reduce((prev, current) => {
-                  return prev || data.industry.includes(current) || data.feature.includes(
-                      current)
-              }, false)
+          // 絞り込みボタン押下時
+          const tagSearchButton = document.getElementById('tag_search')
+          // console.log(tagSearchButton);
+          tagSearchButton.addEventListener('click', () => {
+            // filterItems();
+            linkCreate();
+            console.log('aaa');
           })
-          createArticleList();
-          linkCreate();
+
       }
+
+
+      // const filterItems = () => {
+      //     filterArticleArr = dataArr.filter(data => {
+      //         return CheckboxArr.reduce((prev, current) => {
+      //             return prev || data.column.includes(current)
+      //         }, false)
+      //     })
+      //     createArticleList();
+      //     linkCreate();
+      // }
 
 
       /*
@@ -295,18 +301,21 @@ $rootDir = get_template_directory_uri();
   }
   // リンク生成
   const linkCreate = () => {
-      const containerArea = document.querySelectorAll('.js-casestudyListLink')
+      const containerArea = document.querySelectorAll('.column__item')
       containerArea.forEach(item => {
           item.addEventListener("click", () => {
               location.href = item.dataset.url;
           });
       })
   }
+
+
+
 }
+
+
+
 </script>
-
-
-
 
       </div>
       <div class="pagination">

@@ -14,7 +14,7 @@
       <?php elseif(strstr($url, 'column')): ?>
         <p class="page-title__treatments">COLUMN</p>
       <?php else:?>
-        <p><?php the_content(); ?></p>
+        <!-- <p><?php the_content(); ?></p> -->
       <?php endif;?>
     <?php else:?>
     <p class="page-title__treatments">TREATMENTS</p>
