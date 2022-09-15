@@ -192,7 +192,7 @@ $rootDir = get_template_directory_uri();
             <div class="footer__copyright-wrapper">
               <a href="<?php echo esc_url(home_url('/privacy-policy')); ?>" class="footer__copyright-wrapper-text">個人情報保護方針</a>
               <div class="footer__copyright">
-                <small>Copyright © 2022 MTXスポーツ・関節CLINIC.All Rights Reserved.</small>
+                <small>Copyright © 2022 MTXスポーツ・関節クリニック.All Rights Reserved.</small>
               </div>
             </div>
           </div>
