@@ -2013,6 +2013,16 @@
 .top .medical-menu .section-title__wrapper {
   margin-bottom: 7.2265625vw;
 }
+.top .medical-menu .section-title__wrapper .section-sub-title {
+  top: 50px;
+}
+.top .medical-menu .section-title__wrapper .section-sub-title span {
+  display: block;
+  color: var(--main-color);
+  font-size: clamp(10px, 2rem, 20px);
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  margin-top: clamp(10px, 0.6510416667vw, 10px);
+}
 .top .medical-menu .medical-menu__list {
   display: grid;
   padding-bottom: 2.6041666667vw;
@@ -3761,7 +3771,7 @@ td, th {
   line-height: 1.76;
 }
 .facility-contents .facility-top-wrapper .facility-top::after {
-  content: "治療体制と施設・設備";
+  content: "治療体制と施設・使用機器の紹介";
   color: #fff;
   font-size: clamp(10px, 5rem, 50px);
   font-weight: 600;
@@ -3941,6 +3951,7 @@ td, th {
 .facility-contents .facility-collaboratingArea__inner_ttl {
   position: relative;
   margin-bottom: clamp(10px, 5.2083333333vw, 80px);
+  text-align: center;
 }
 .facility-contents .facility-collaboratingArea__inner_ttl p {
   color: white;
@@ -3951,7 +3962,7 @@ td, th {
   letter-spacing: 0em;
 }
 .facility-contents .facility-collaboratingArea__inner_ttl::before {
-  content: "クリニック＆連携施設・設備";
+  content: "クリニック・連携施設・使用機器";
   position: absolute;
   bottom: 10%;
   left: 0;
@@ -3966,7 +3977,9 @@ td, th {
   display: block;
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: clamp(10px, 4.1666666667vw, 64px);
   height: 3px;
   background-color: var(--main-color);
@@ -4184,6 +4197,16 @@ td, th {
 .introduce-contents .introduce-top-lead {
   width: clamp(10px, 83.3333333333vw, 1280px);
   margin: 0 auto clamp(10px, 5.5338541667vw, 85px);
+}
+.introduce-contents .introduce-top-lead p {
+  color: var(--main-color);
+  font-size: clamp(10px, 3rem, 30px);
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  font-weight: 600;
+  line-height: 1.75;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: clamp(10px, 5.2083333333vw, 80px);
 }
 .introduce-contents .introduce-top-lead img {
   width: 100%;
@@ -4998,7 +5021,7 @@ td, th {
 .treatment-contents .treatment-indexArea {
   position: relative;
   z-index: 2;
-  width: clamp(10px, 41.015625vw, 630px);
+  width: clamp(10px, 52.0833333333vw, 800px);
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8196,6 +8219,16 @@ td, th {
     width: 89%;
     padding: 16vw 0 34.4vw;
   }
+  .top .medical-menu .section-title__wrapper .section-sub-title {
+    top: 30px;
+  }
+  .top .medical-menu .section-title__wrapper .section-sub-title span {
+    font-size: clamp(10px, 1.2rem, 12px);
+    margin-top: 5px;
+  }
+  .top .medical-menu .section-title__wrapper .section-sub-title::before {
+    bottom: -15px;
+  }
   .top .medical-menu .section-title__wrapper {
     margin-bottom: 14.1333333333vw;
   }
@@ -9253,7 +9286,7 @@ td, th {
     font-size: clamp(10px, 7.2rem, 72px);
   }
   .facility-contents .facility-top-wrapper .facility-top::after {
-    font-size: clamp(10px, 2.5rem, 25px);
+    font-size: clamp(10px, 2.2rem, 22px);
   }
   .facility-contents .facility-indexArea {
     width: 77.3%;
@@ -9277,6 +9310,9 @@ td, th {
   }
   .facility-contents .facility-systemArea__inner {
     width: 90%;
+  }
+  .facility-contents .facility-systemArea__inner_ttl {
+    margin-bottom: 40px;
   }
   .facility-contents .facility-systemArea__inner_ttl p {
     width: 100vw;
@@ -9358,12 +9394,15 @@ td, th {
   .facility-contents .facility-collaboratingArea__inner {
     width: 90%;
   }
+  .facility-contents .facility-collaboratingArea__inner_ttl {
+    margin-bottom: 50px;
+  }
   .facility-contents .facility-collaboratingArea__inner_ttl p {
     font-size: clamp(10px, 5.5rem, 55px);
     line-height: 1.7;
   }
   .facility-contents .facility-collaboratingArea__inner_ttl::before {
-    font-size: clamp(10px, 2.4rem, 24px);
+    font-size: clamp(10px, 2rem, 20px);
     line-height: 1.5;
   }
   .facility-contents .facility-collaboratingArea__inner_ttl::after {
@@ -9502,6 +9541,10 @@ td, th {
   }
   .introduce-contents .introduce-top-lead {
     margin-bottom: 20px;
+  }
+  .introduce-contents .introduce-top-lead p {
+    font-size: clamp(10px, 1.8rem, 18px);
+    margin-bottom: 40px;
   }
   .introduce-contents .introduce-contents {
     margin-bottom: 70px;

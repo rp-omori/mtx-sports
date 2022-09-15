@@ -35,6 +35,11 @@ $rootDir = get_template_directory_uri();
       </div>
     </div>
     <div class="treatment-indexArea">
+      <a href="#model" class="index_btn">
+        <p class="green_txt">TREATMENT MODEL PLAN</p>
+        <p>治療モデルプラン</p>
+        <img src="<?php echo $rootDir ?>/images/facility/facility_btn.png" alt="">
+      </a>
       <a href="#service" class="index_btn">
         <p class="green_txt">SERVICE THERAPY</p>
         <p>再生治療</p>
@@ -51,11 +56,11 @@ $rootDir = get_template_directory_uri();
         <img src="<?php echo $rootDir ?>/images/facility/facility_btn.png" alt="">
       </a>
     </div>
-    <section class="treatment__model">
+    <section id="model" class="treatment__model">
       <div class="treatment__model-wrapper">
         <div class="treatment__model-title-wrapper">
           <h3 class="treatment__model-title">
-            再生医療×運動療法の<br class="sp">治療モデルプラン
+            治療モデルプラン
           </h3>
         </div>
         <div class="treatment__model-group">
@@ -67,7 +72,7 @@ $rootDir = get_template_directory_uri();
               <div class="treatment__model-area-wrapper">
                 <div class="treatment__model-area-head">
                   <div class="treatment__model-area-head-title-wrapper">
-                    <p class="treatment__model-area-head-title">対象診療科目</p>
+                    <p class="treatment__model-area-head-title">モデルプラン01</p>
                   </div>
                   <div class="treatment__model-area-head-tag-wrapper">
                     <p class="treatment__model-area-head-tag">変形性関節症</p>
@@ -145,7 +150,7 @@ $rootDir = get_template_directory_uri();
               <div class="treatment__model-area-wrapper">
                 <div class="treatment__model-area-head">
                   <div class="treatment__model-area-head-title-wrapper">
-                    <p class="treatment__model-area-head-title">対象診療科目</p>
+                    <p class="treatment__model-area-head-title">モデルプラン02</p>
                   </div>
                   <div class="treatment__model-area-head-tag-wrapper">
                       <p class="treatment__model-area-head-tag">スポーツ障害</p>

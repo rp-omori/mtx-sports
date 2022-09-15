@@ -476,6 +476,37 @@
     .section-title__wrapper {
       margin-bottom: get_vw(111);
 
+      .section-sub-title{
+        top: 50px;
+
+        @include sp {
+          top: 30px;
+        }
+
+        span{
+          display: block;
+          color:var(--main-color);
+          font-size: calcFz(20);
+          font-family: $fontFamilyHiraGo;
+          margin-top: clamp(10px,get_vw(10),10px);
+
+          @include sp {
+            font-size: calcFz(12);
+            margin-top: 5px;
+          }
+
+        }
+
+        &::before{
+
+          @include sp {
+            bottom: -15px;
+          }
+
+        }
+
+      }
+
       @include sp {
         margin-bottom: get_vw(53, 375);
       }
