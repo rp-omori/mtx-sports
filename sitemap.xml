@@ -1,115 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?><urlset
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
     <loc>http://localhost:8080</loc>
-    <lastmod>2022-09-15T11:19:54Z</lastmod>
+    <lastmod>2022-09-21T09:16:49Z</lastmod>
   </url><url>
-        <loc>http://localhost:8080/column/%e3%83%86%e3%82%b9%e3%83%8806/</loc>
-        <lastmod>2022-09-15T11:19:53Z</lastmod>
-      </url><url>
-        <loc>http://localhost:8080/column/%e3%83%86%e3%82%b9%e3%83%8805/</loc>
-        <lastmod>2022-09-15T11:19:35Z</lastmod>
-      </url><url>
-        <loc>http://localhost:8080/column/%e3%83%86%e3%82%b9%e3%83%8804/</loc>
-        <lastmod>2022-09-15T11:19:18Z</lastmod>
-      </url><url>
-        <loc>http://localhost:8080/column/%e3%83%86%e3%82%b9%e3%83%8803/</loc>
-        <lastmod>2022-09-15T11:19:00Z</lastmod>
-      </url><url>
-        <loc>http://localhost:8080/column/%e3%83%86%e3%82%b9%e3%83%8802/</loc>
-        <lastmod>2022-09-15T11:18:20Z</lastmod>
-      </url><url>
-        <loc>http://localhost:8080/column/%e3%83%86%e3%82%b9%e3%83%8801/</loc>
-        <lastmod>2022-09-15T11:18:40Z</lastmod>
+        <loc>http://localhost:8080/column/%e3%82%aa%e3%82%b9%e3%82%b0%e3%83%83%e3%83%89%e7%97%85%e3%81%a8%e3%81%af/</loc>
+        <lastmod>2022-09-15T11:57:31Z</lastmod>
       </url><url>
         <loc>http://localhost:8080/news/%e3%83%9b%e3%83%bc%e3%83%a0%e3%83%9a%e3%83%bc%e3%82%b8%e3%82%92%e5%85%ac%e9%96%8b%e3%81%97%e3%81%be%e3%81%97%e3%81%9f%e3%80%82/</loc>
-        <lastmod>2022-09-12T06:47:37Z</lastmod>
+        <lastmod>2022-09-15T07:24:14Z</lastmod>
+      </url><url>
+        <loc>http://localhost:8080/column/%e3%82%bf%e3%82%a4%e3%83%88%e3%83%ab_%e3%83%86%e3%82%b9%e3%83%8806/</loc>
+        <lastmod>2022-09-14T05:13:46Z</lastmod>
+      </url><url>
+        <loc>http://localhost:8080/column/%e3%82%bf%e3%82%a4%e3%83%88%e3%83%ab_%e3%83%86%e3%82%b9%e3%83%8805/</loc>
+        <lastmod>2022-09-14T05:13:09Z</lastmod>
+      </url><url>
+        <loc>http://localhost:8080/column/%e3%82%bf%e3%82%a4%e3%83%88%e3%83%ab_%e3%83%86%e3%82%b9%e3%83%8804/</loc>
+        <lastmod>2022-09-14T05:14:02Z</lastmod>
+      </url><url>
+        <loc>http://localhost:8080/column/%e3%82%bf%e3%82%a4%e3%83%88%e3%83%ab_%e3%83%86%e3%82%b9%e3%83%8803/</loc>
+        <lastmod>2022-09-14T05:12:16Z</lastmod>
+      </url><url>
+        <loc>http://localhost:8080/column/%e3%82%bf%e3%82%a4%e3%83%88%e3%83%ab_%e3%83%86%e3%82%b9%e3%83%8802/</loc>
+        <lastmod>2022-09-14T05:11:50Z</lastmod>
+      </url><url>
+        <loc>http://localhost:8080/column/%e3%82%bf%e3%82%a4%e3%83%88%e3%83%ab_%e3%83%86%e3%82%b9%e3%83%8801/</loc>
+        <lastmod>2022-09-14T05:11:12Z</lastmod>
+      </url><url>
+        <loc>http://localhost:8080/column/</loc>
+        <lastmod>2022-09-21T09:16:49Z</lastmod>
       </url><url>
         <loc>http://localhost:8080/news/%e3%83%8b%e3%83%a5%e3%83%bc%e3%82%b9%e3%83%86%e3%82%b9%e3%83%88/</loc>
         <lastmod>2022-09-08T01:01:47Z</lastmod>
       </url><url>
-        <loc>http://localhost:8080/medicaldetail/%e6%88%90%e9%95%b7%e7%97%9b/</loc>
-        <lastmod>2022-09-07T09:12:06Z</lastmod>
+        <loc>http://localhost:8080/medicaldetail/rokomothibushindoromu/</loc>
+        <lastmod>2022-09-15T02:27:56Z</lastmod>
       </url><url>
-        <loc>http://localhost:8080/medicaldetail/%e3%83%ad%e3%82%b3%e3%83%a2%e3%83%bc%e3%83%86%e3%82%a3%e3%83%96-%e3%82%b7%e3%83%b3%e3%83%89%e3%83%ad%e3%83%bc%e3%83%a0/</loc>
-        <lastmod>2022-09-07T09:12:18Z</lastmod>
+        <loc>http://localhost:8080/medicaldetail/kyuseiyoutsuisyou/</loc>
+        <lastmod>2022-09-15T02:28:11Z</lastmod>
       </url><url>
-        <loc>http://localhost:8080/medicaldetail/%e6%80%a5%e6%80%a7%e8%85%b0%e7%97%9b%e7%97%87/</loc>
-        <lastmod>2022-09-07T09:12:32Z</lastmod>
+        <loc>http://localhost:8080/services/mtxacademy-recovery%ef%bc%89/</loc>
+        <lastmod>2022-09-15T02:46:11Z</lastmod>
       </url><url>
-        <loc>http://localhost:8080/services/mtx%e3%82%a2%e3%82%ab%e3%83%87%e3%83%9f%e3%83%bc-recovery%ef%bc%88%e5%9b%9e%e5%be%a9%ef%bc%89/</loc>
-        <lastmod>2022-09-07T09:19:23Z</lastmod>
+        <loc>http://localhost:8080/services/silent-manipulation/</loc>
+        <lastmod>2022-09-15T02:46:30Z</lastmod>
       </url><url>
-        <loc>http://localhost:8080/services/%e3%82%b5%e3%82%a4%e3%83%ac%e3%83%b3%e3%83%88%e3%83%9e%e3%83%8b%e3%83%94%e3%83%a5%e3%83%ac%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b3/</loc>
-        <lastmod>2022-09-07T09:19:57Z</lastmod>
+        <loc>http://localhost:8080/services/police-peace-love/</loc>
+        <lastmod>2022-09-15T02:46:47Z</lastmod>
       </url><url>
-        <loc>http://localhost:8080/services/%e6%80%a5%e6%80%a7%e6%9c%9f%e3%81%ae%e5%87%a6%e7%bd%ae%ef%bc%88police%e3%80%81peace%ef%bc%86love%ef%bc%89/</loc>
-        <lastmod>2022-09-07T09:20:10Z</lastmod>
+        <loc>http://localhost:8080/services/btl-6000-focus/</loc>
+        <lastmod>2022-09-15T02:47:04Z</lastmod>
       </url><url>
-        <loc>http://localhost:8080/services/%e5%8f%8e%e6%9d%9f%e5%9e%8b-%e4%bd%93%e5%a4%96%e8%a1%9d%e6%92%83%e6%b3%a2btl-6000-focus%ef%bc%89/</loc>
-        <lastmod>2022-09-07T09:20:23Z</lastmod>
+        <loc>http://localhost:8080/services/mtxacademy-practice/</loc>
+        <lastmod>2022-09-15T02:47:22Z</lastmod>
       </url><url>
-        <loc>http://localhost:8080/services/mtx%e3%82%a2%e3%82%ab%e3%83%87%e3%83%9f%e3%83%bc-practice%e5%ae%9f%e8%b7%b5%e3%83%88%e3%83%ac%e3%83%bc%e3%83%8b%e3%83%b3%e3%82%b0%ef%bc%89/</loc>
-        <lastmod>2022-09-07T09:21:09Z</lastmod>
-      </url><url>
-        <loc>http://localhost:8080/services/mtx%e3%82%a2%e3%82%ab%e3%83%87%e3%83%9f%e3%83%bc-strength%e5%bc%b7%e5%8c%96%e3%83%88%e3%83%ac%e3%83%bc%e3%83%8b%e3%83%b3%e3%82%b0%ef%bc%89/</loc>
-        <lastmod>2022-09-07T09:21:40Z</lastmod>
+        <loc>http://localhost:8080/services/mtxacademy-strength/</loc>
+        <lastmod>2022-09-15T02:47:45Z</lastmod>
       </url><url>
         <loc>http://localhost:8080/services/hal/</loc>
-        <lastmod>2022-09-07T09:22:05Z</lastmod>
+        <lastmod>2022-09-15T02:48:01Z</lastmod>
       </url><url>
         <loc>http://localhost:8080/services/d-wall/</loc>
         <lastmod>2022-09-07T09:22:18Z</lastmod>
       </url><url>
-        <loc>http://localhost:8080/services/dd%e3%82%b7%e3%82%b9%e3%83%86%e3%83%a0/</loc>
-        <lastmod>2022-09-07T09:22:14Z</lastmod>
+        <loc>http://localhost:8080/services/ddshisutemu/</loc>
+        <lastmod>2022-09-15T02:48:16Z</lastmod>
       </url><url>
-        <loc>http://localhost:8080/services/%e3%83%8f%e3%82%a4%e3%83%89%e3%83%ad%e3%83%aa%e3%83%aa%e3%83%bc%e3%82%b9/</loc>
-        <lastmod>2022-09-07T09:22:08Z</lastmod>
+        <loc>http://localhost:8080/services/haidororirisu/</loc>
+        <lastmod>2022-09-15T02:48:33Z</lastmod>
       </url><url>
-        <loc>http://localhost:8080/services/asc%ef%bc%88%e8%84%82%e8%82%aa%e7%94%b1%e6%9d%a5%e5%b9%b9%e7%b4%b0%e8%83%9e%ef%bc%89%e6%b2%bb%e7%99%82/</loc>
-        <lastmod>2022-09-15T02:05:02Z</lastmod>
+        <loc>http://localhost:8080/services/asc/</loc>
+        <lastmod>2022-09-15T02:48:55Z</lastmod>
       </url><url>
         <loc>http://localhost:8080/services/prp/</loc>
         <lastmod>2022-09-07T09:21:52Z</lastmod>
       </url><url>
-        <loc>http://localhost:8080/services/%e5%b9%b9%e7%b4%b0%e8%83%9e%e5%9f%b9%e9%a4%8a%e4%b8%8a%e6%b8%85%e6%b6%b2%e6%b2%bb%e7%99%82/</loc>
-        <lastmod>2022-09-15T02:07:54Z</lastmod>
+        <loc>http://localhost:8080/services/kansaiboubaiyouzyouseiekichiryou/</loc>
+        <lastmod>2022-09-15T02:49:22Z</lastmod>
       </url><url>
-        <loc>http://localhost:8080/medicaldetail/%e8%85%b0%e6%a4%8e%e6%a4%8e%e9%96%93%e6%9d%bf%e3%83%98%e3%83%ab%e3%83%8b%e3%82%a2/</loc>
-        <lastmod>2022-09-07T09:12:49Z</lastmod>
+        <loc>http://localhost:8080/medicaldetail/youtsuitsuikanbanherunia/</loc>
+        <lastmod>2022-09-15T02:28:29Z</lastmod>
       </url><url>
-        <loc>http://localhost:8080/medicaldetail/%e8%82%a9%e9%96%a2%e7%af%80%e5%91%a8%e5%9b%b2%e7%82%8e/</loc>
-        <lastmod>2022-09-08T02:47:26Z</lastmod>
+        <loc>http://localhost:8080/medicaldetail/katakansetsusyuien/</loc>
+        <lastmod>2022-09-15T02:28:48Z</lastmod>
       </url><url>
-        <loc>http://localhost:8080/medicaldetail/%e8%85%b1%e6%9d%bf%e6%90%8d%e5%82%b7/</loc>
-        <lastmod>2022-09-07T09:13:22Z</lastmod>
+        <loc>http://localhost:8080/medicaldetail/kenbansonsyou/</loc>
+        <lastmod>2022-09-15T02:29:06Z</lastmod>
       </url><url>
-        <loc>http://localhost:8080/medicaldetail/%e8%85%b0%e9%83%a8%e8%84%8a%e6%9f%b1%e7%ae%a1%e7%8b%ad%e7%aa%84%e7%97%87/</loc>
-        <lastmod>2022-09-07T09:13:35Z</lastmod>
+        <loc>http://localhost:8080/medicaldetail/youbusekityukankyousakusyou/</loc>
+        <lastmod>2022-09-15T02:29:22Z</lastmod>
       </url><url>
-        <loc>http://localhost:8080/medicaldetail/%e5%a4%89%e5%bd%a2%e6%80%a7%e9%96%a2%e7%af%80%e7%97%87/</loc>
-        <lastmod>2022-09-07T09:16:14Z</lastmod>
+        <loc>http://localhost:8080/medicaldetail/henkeiseikansetsusyou/</loc>
+        <lastmod>2022-09-15T02:29:41Z</lastmod>
       </url><url>
-        <loc>http://localhost:8080/medicaldetail/%e8%85%b1%e5%91%a8%e5%9b%b2%e7%82%8e/</loc>
-        <lastmod>2022-09-07T09:16:59Z</lastmod>
+        <loc>http://localhost:8080/medicaldetail/kensyuien/</loc>
+        <lastmod>2022-09-15T02:30:00Z</lastmod>
       </url><url>
-        <loc>http://localhost:8080/medicaldetail/%e8%82%89%e3%81%b0%e3%81%aa%e3%82%8c/</loc>
-        <lastmod>2022-09-07T09:17:11Z</lastmod>
+        <loc>http://localhost:8080/medicaldetail/nikubanare/</loc>
+        <lastmod>2022-09-15T02:30:22Z</lastmod>
       </url><url>
-        <loc>http://localhost:8080/medicaldetail/%e3%82%b7%e3%83%b3%e3%82%b9%e3%83%97%e3%83%aa%e3%83%b3%e3%83%88/</loc>
-        <lastmod>2022-09-07T09:17:52Z</lastmod>
+        <loc>http://localhost:8080/medicaldetail/sinsupurinto/</loc>
+        <lastmod>2022-09-15T02:30:39Z</lastmod>
       </url><url>
-        <loc>http://localhost:8080/medicaldetail/%e5%89%8d%e5%8d%81%e5%ad%97%e9%9d%ad%e5%b8%af%e6%90%8d%e5%82%b7/</loc>
-        <lastmod>2022-09-07T09:18:06Z</lastmod>
+        <loc>http://localhost:8080/medicaldetail/zenzyujijintaisonsyou/</loc>
+        <lastmod>2022-09-15T02:30:55Z</lastmod>
       </url><url>
-        <loc>http://localhost:8080/medicaldetail/%e9%96%a2%e7%af%80%e6%8d%bb%e6%8c%ab/</loc>
-        <lastmod>2022-09-07T09:18:27Z</lastmod>
+        <loc>http://localhost:8080/medicaldetail/kansetsunenza/</loc>
+        <lastmod>2022-09-15T02:31:13Z</lastmod>
       </url><url>
-        <loc>http://localhost:8080/medicaldetail/%e6%8a%95%e7%90%83%e9%9a%9c%e5%ae%b3%e8%82%a9/</loc>
-        <lastmod>2022-09-07T09:18:43Z</lastmod>
+        <loc>http://localhost:8080/medicaldetail/toukyusyougaikata/</loc>
+        <lastmod>2022-09-15T02:45:08Z</lastmod>
       </url><url>
-        <loc>http://localhost:8080/medicaldetail/%e7%96%b2%e5%8a%b4%e9%aa%a8%e6%8a%98/</loc>
-        <lastmod>2022-09-07T09:18:55Z</lastmod>
+        <loc>http://localhost:8080/medicaldetail/hiroukossetsu/</loc>
+        <lastmod>2022-09-15T02:45:30Z</lastmod>
       </url><url>
         <loc>http://localhost:8080/prices/%e8%a8%ba%e7%99%82/</loc>
         <lastmod>2022-08-30T09:50:17Z</lastmod>
@@ -126,8 +129,8 @@
         <loc>http://localhost:8080/contact/confirm/</loc>
         <lastmod>2022-09-07T09:09:19Z</lastmod>
       </url><url>
-        <loc>http://localhost:8080/medicaldetail/%e9%87%8e%e7%90%83%e8%82%98/</loc>
-        <lastmod>2022-09-07T09:19:07Z</lastmod>
+        <loc>http://localhost:8080/medicaldetail/yakyuhiji/</loc>
+        <lastmod>2022-09-15T02:45:52Z</lastmod>
       </url><url>
         <loc>http://localhost:8080/flow/</loc>
         <lastmod>2022-09-07T09:10:41Z</lastmod>
@@ -146,5 +149,7 @@
       </url><url>
         <loc>http://localhost:8080/privacy-policy/</loc>
         <lastmod>2022-09-07T09:08:01Z</lastmod>
-      </url>
+      </url><url>
+      <loc>http://localhost:8080/category/uncategorized/</loc>
+    </url>
   </urlset>

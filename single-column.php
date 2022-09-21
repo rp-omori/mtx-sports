@@ -134,7 +134,7 @@ $rootDir = get_template_directory_uri();
               $count = 1;
               foreach($column_tag_terms as $term): ?>
               <li class="column-article__tag-list-item">
-                <a href="<?php echo esc_url(get_term_link($term)); ?>" class="column-article__tag-list-link">
+                <a href="<?php echo home_url('/column/?column_tags%5B%5D=' . $term->slug); ?>" class="column-article__tag-list-link">
                   <p class="column-article__tag-list-text"><?php echo esc_html($term->name); ?></p>
                 </a>
               </li>

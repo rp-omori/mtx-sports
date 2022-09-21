@@ -93,7 +93,7 @@ $rootDir = get_template_directory_uri();
             <?php
               $args = [
                 'post_type' => 'news',
-                'order' => 'ASC',
+                'order' => 'DESC',
                 'post_status' => 'publish',
                 'posts_per_page' => 2
               ];

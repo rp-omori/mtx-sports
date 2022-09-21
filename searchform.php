@@ -1,4 +1,4 @@
-<form role="search" method="get" class="search-form search-box" action="<?php echo home_url( '/' ); ?>">
+<form role="search" method="get" class="search-form search-box" action="<?php echo home_url( '/column/#column__search-area-body' ); ?>">
     <label>
         <span class="screen-reader-text"><?php echo _x( 'Search for:', 'label' ) ?></span>
         <input type="search" class="search-box__input" placeholder="<?php echo esc_attr_x( 'キーワードで検索', 'placeholder' ) ?>"
