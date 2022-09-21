@@ -180,10 +180,12 @@ $rootDir = get_template_directory_uri();
               <p>・ 保有資格</p>
               <ul>
                 <li>Physical Therapist｜理学療法士</li>
-                <li>SFMA | Selective Functional Movement Assessment</li>
+                <li>Clinical Anatomy for Orthopaedics Rehabilitation Completed</li>
+                <li>FMS｜Functional Movement Systems</li>
+                <li>SFMA｜Selective Functional Movement Assessment</li>
                 <li>TRX functional training</li>
-                <li>Fascal　Manipulation®</li>
-                <li>PRI ® ｜Postural Restoration Institute</li>
+                <li>Fascial Manipulation® level Ⅰ.Ⅱ</li>
+                <li>PRI｜POSTURAL RESTORATION INSTITUTE® Primary Course、Impingement＆Instability</li>
               </ul>
             </div>
           </div>

@@ -22,7 +22,7 @@ $rootDir = get_template_directory_uri();
           $args = [
             'post_type' => 'news',
             'paged' => get_query_var('page'),
-            'order' => 'ASC',
+            'order' => 'DESC',
             'posts_per_page' => 10
           ];
           $WP_post = new WP_Query($args);

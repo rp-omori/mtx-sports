@@ -22,80 +22,76 @@ $rootDir = get_template_directory_uri();
           <span class="column__heading-label">RECOMMEND</span>
           <h2 class="column__heading">おすすめ記事</h2>
         </div>
-        <div class="column__list-wrapper">
-          <ul class="column__list">
+
+
             <?php
               // $post_id = 341;
               $post_id = get_page_by_path('column');
-              if(get_field('recommend_column', $post_id->ID)):
-                $count = 0;
-                $arrayLength = count(get_field('recommend_column', $post_id->ID));
-                if($arrayLength > 3) {
-                    $arrayLength = 3;
-                };
-                while($count < $arrayLength): ?>
-              <?php
-                $args = [
-                  'column_article' => get_field('recommend_column', $post_id->ID)[$count],
-                ];
-                get_template_part('component/c__column_article', null, $args); ?>
-                <?php
-                    $count++;
-                endwhile;
-            endif; ?>
-          </ul>
-        </div>
+              $recommend_column = get_field('recommend_column', $post_id->ID);
+              $recommend_column_ids = array_column($recommend_column, 'ID');
+                $recommended_args = array(
+                  'post_type' => 'column',
+                  'order' => 'DESC',
+                  'posts_per_page' => 3,
+                  'post__in' => $recommend_column_ids,
+                );
+
+                $recommended_wp_query = new WP_Query($recommended_args);
+                if ($recommended_wp_query->have_posts()) { ?>
+                <div class="column__list-wrapper" id="column__list-wrapper">
+                  <ul class="column__list">
+                  <?php
+                    while ($recommended_wp_query->have_posts()) {
+                      $recommended_wp_query->the_post();
+                      $post_id = get_the_ID();
+                      ?>
+                    <?php get_template_part('component/c__column_article'); ?>
+                    <?php } ?>
+                  </ul>
+                </div>
+                <?php } ?>
+
       </div>
 
       <?php
-        $column_arr = [];
-        $column_tax = 'column_tag';
-        $columnargs = array(
-            'hide_empty' => false
-        );
-        $columnTerms = get_terms( $column_tax , $columnargs );
 
-        foreach($columnTerms as $items) {
-            $column_arr[] = $items->name;
-        }
+        // $args = array(
+        //     'post_type' => 'column',
+        //     'posts_per_page' => -1,
+        //     'order' => 'DESC',
+        // );
+        // $WP_post = new WP_Query($args);
 
-        $args = array(
-            'post_type' => 'column',
-            'posts_per_page' => -1,
-            'order' => 'ASC',
-        );
-        $WP_post = new WP_Query($args);
+        // // 最終的に格納する配列
+        // $PostData = [];
+        // $i = 0;
 
-        // 最終的に格納する配列
-        $PostData = [];
-        $i = 0;
+        // // データ編集
+        // if($WP_post -> have_posts()){
+        //   while($WP_post -> have_posts()) {
+        //     ++$i;
+        //     $my_post = [];
+        //     $WP_post->the_post();
+        //     $my_post['title'] = get_the_title();
+        //     $my_post['thumbnail'] = get_the_post_thumbnail_url($post->ID, 'full');
+        //     $my_post['url'] = get_permalink();
+        //     $my_post['date'] = get_the_date('Y.m.d');
+        //     $my_post['id'] = $i;
 
-        // データ編集
-        if($WP_post -> have_posts()){
-          while($WP_post -> have_posts()) {
-            ++$i;
-            $my_post = [];
-            $WP_post->the_post();
-            $my_post['title'] = get_the_title();
-            $my_post['thumbnail'] = get_the_post_thumbnail_url($post->ID, 'full');
-            $my_post['url'] = get_permalink();
-            $my_post['date'] = get_the_date('Y.m.d');
-            $my_post['id'] = $i;
+        //     //タクソノミー取得
+        //     $post_id = get_the_ID();
+        //     $column_term = get_the_terms($post_id, 'column_tag');
+        //     if ($column_term == true) {
+        //         $my_post['column_tag'] = array_column($column_term, 'name');
+        //     } else {
+        //         $my_post['column_tag'] = [];
+        //     }
 
-            //タクソノミー取得
-            $post_id = get_the_ID();
-            $column_term = get_the_terms($post_id, 'column_tag');
-            if ($column_term == true) {
-                $my_post['column_tag'] = array_column($column_term, 'name');
-            } else {
-                $my_post['column_tag'] = [];
-            }
-
-            $PostData[] = $my_post;
-          }
-        }
-        wp_reset_postdata();
-        $WP_post_json = json_encode($PostData);
+        //     $PostData[] = $my_post;
+        //   }
+        // }
+        // wp_reset_postdata();
+        // $WP_post_json = json_encode($PostData);
 
         // var_dump($WP_post_json);
       ?>
@@ -128,64 +124,97 @@ $rootDir = get_template_directory_uri();
               </div>
             </div>
           </div> -->
-          <div class="column__search-area-body">
+          <form class="column__search-area-body" method="GET" action="<?php echo esc_url(home_url('/column#column__search-area-body')); ?>" id="column__search-area-body">
             <p class="column__tags-heading">＃タグで絞り込む</p>
             <div class="column__tags">
               <div class="column__tags-list">
                 <?php
-                  foreach($column_arr as $items){
-                    echo "
-                      <div class='column__tags-wrapper'>
-                        <input class='column__tags-check' type='checkbox' name='columns' value='$items' id='$items'>
-                        <label for='$items' class='column__tags-label'>$items</label>
+                  if (isset($_GET['column_tags'])) {
+                    $params = $_GET['column_tags'];
+                  }
+
+                  $column_arr = [];
+                  $column_tax = 'column_tag';
+                  $columnargs = array(
+                      'hide_empty' => false
+                  );
+                  $column_terms = get_terms( $column_tax , $columnargs );
+
+                  foreach($column_terms as $term){
+                    $checked = (is_array($params) && in_array($term->slug, $params)) ? 'checked' : '';
+                    ?>
+                      <div class="column__tags-wrapper">
+                        <input class="column__tags-check" type="checkbox" name="column_tags[]" value="<?php echo $term->slug ?>" id="<?php echo $term->slug ?>" <?php echo esc_attr($checked) ?>>
+                        <label for="<?php echo $term->slug ?>" class="column__tags-label"><?php echo $term->name ?></label>
                       </div>
-                      ";
-                    }
-                ?>
+                  <?php } ?>
               </div>
             </div>
 
             <div class="column__tags-button">
-              <button class="btn btn--green" id="tag_search" name="tag_search">SEARCH</button>
+              <button class="btn btn--green" id="tag_search">SEARCH</button>
             </div>
-          </div>
+          </form>
         </div>
 
+          <?php
+          $args = array(
+            'post_type' => 'column',
+            'paged' => get_query_var('page'),
+            'order' => 'DESC',
+            'posts_per_page' => 6,
+          );
 
-        <!-- <?php if ( have_posts() ) : ?>
-        <div class="column__list-wrapper">
-          <ul class="column__list">
+          if (isset($_GET['column_tags'])) {
+            $args['tax_query'] = [
+              'relation' => 'OR',
+              [
+                'taxonomy' => $column_tax,
+                'field' => 'slug',
+                'terms' => $params,
+              ]
+            ];
+          }
+
+          if (is_search()) {
+            $args['s'] = $_GET['s'];
+          }
+
+          $wp_query = new WP_Query($args);
+          if ($wp_query->have_posts()) { ?>
+          <div class="column__list-wrapper" id="column__list-wrapper">
+            <ul class="column__list">
             <?php
-            while ( have_posts() ) : the_post();
-            $post_column = $post; ?>
-            <?php get_template_part('component/c__column_article'); ?>
-            <?php endwhile; ?>
-          </ul>
-        </div><?php endif; ?> -->
+              while ($wp_query->have_posts()) {
+                $wp_query->the_post();
+                $post_id = get_the_ID();
+                 ?>
+              <?php get_template_part('component/c__column_article'); ?>
+              <?php } ?>
+            </ul>
+          </div>
+          <?php } ?>
 
-        <div class="column__list-wrapper">
+        <!-- <div class="column__list-wrapper">
           <ul class="column__list column__list__deploy">
           </ul>
-        </div>
+        </div> -->
 
 
 
       </div>
       <div class="pagination">
-        <?php
-          global $wp_query;
-          $big = 999999999; // need an unlikely integer
-
-          echo paginate_links( array(
-            'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
-            'format' => '?paged=%#%',
-            'current' => max( 1, get_query_var('paged') ),
-            'total' => $wp_query->max_num_pages,
-            'type' => 'list',
-            'mid_size' => '1',
-            'prev_text' => '',
-            'next_text' => '',
-          ) );
+        <?php echo paginate_links(array(
+          'format' => '?page=%#%',
+          'current' => max(1, get_query_var('paged')),
+          'total' => $wp_query->max_num_pages,
+          'type' => 'list',
+          'mid_size' => '1',
+          'prev_next' => false,
+          'prev_text' => '',
+          'next_text' => '',
+        ));
+        wp_reset_postdata();
         ?>
       </div>
     </div>
@@ -260,33 +289,33 @@ $rootDir = get_template_directory_uri();
 
           }
 
-            /* 絞り込みボタンを押したときの挙動 */
-            const doCheckItem = () => {
-                const checkboxInput = document.querySelectorAll('input[name="columns"]')
-                const columnCheckList = document.querySelectorAll('.column__tags-label')
-                //タグの絞り込み
-                checkboxInput.forEach(checkItem => {
-                    checkItem.addEventListener("change", () => {
-                        if (checkItem.checked) {
-                            CheckboxArr.push(checkItem.value)
-                            console.log(CheckboxArr)
-                        } else {
-                            CheckboxArr = CheckboxArr.filter(item => {
-                              console.log(CheckboxArr)
-                                return item !== checkItem.value
-                            })
-                        }
-                    })
-                })
+            // /* 絞り込みボタンを押したときの挙動 */
+            // const doCheckItem = () => {
+            //     const checkboxInput = document.querySelectorAll('input[name="columns"]')
+            //     const columnCheckList = document.querySelectorAll('.column__tags-label')
+            //     //タグの絞り込み
+            //     checkboxInput.forEach(checkItem => {
+            //         checkItem.addEventListener("change", () => {
+            //             if (checkItem.checked) {
+            //                 CheckboxArr.push(checkItem.value)
+            //                 console.log(CheckboxArr)
+            //             } else {
+            //                 CheckboxArr = CheckboxArr.filter(item => {
+            //                   console.log(CheckboxArr)
+            //                     return item !== checkItem.value
+            //                 })
+            //             }
+            //         })
+            //     })
 
-                // 絞り込みボタン押下時
-                const tagSearchButton = document.getElementById('tag_search')
-                tagSearchButton.addEventListener('click', () => {
-                  filterItems();
-                  linkCreate();
-                })
+            //     // 絞り込みボタン押下時
+            //     const tagSearchButton = document.getElementById('tag_search')
+            //     tagSearchButton.addEventListener('click', () => {
+            //       filterItems();
+            //       linkCreate();
+            //     })
 
-            }
+            // }
 
 
             const filterItems = () => {
