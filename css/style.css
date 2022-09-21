@@ -1488,9 +1488,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: transparent;
 }
 .pagination > .page-numbers li .page-numbers {
@@ -6464,6 +6464,7 @@ td, th {
 }
 .column .column__list-wrapper {
   width: 100%;
+  margin-bottom: 6.5104166667vw;
 }
 .column .column__list-wrapper .column__list {
   display: grid;
@@ -6659,7 +6660,7 @@ td, th {
   -webkit-filter: drop-shadow(2px 2px 2px rgba(182, 200, 193, 0.5));
           filter: drop-shadow(2px 2px 2px rgba(182, 200, 193, 0.5));
 }
-.column .column__search-area input[name=columns]:checked + .column__tags-label {
+.column .column__search-area input[name="column_tags[]"]:checked + .column__tags-label {
   background: var(--main-color);
   color: var(--main-color-white);
 }
@@ -6669,7 +6670,7 @@ td, th {
 .column .column__search-area .column__tags-button .btn:after {
   content: none;
 }
-.column input[name=columns] {
+.column input[name="column_tags[]"] {
   display: none;
 }
 .column .search-box-wrapper {
@@ -8000,6 +8001,10 @@ td, th {
   .mw_wp_form_confirm .form-checkbox label span {
     margin-left: 1.6vw;
     font-size: clamp(10px, 1.6rem, 16px);
+  }
+  .pagination > .page-numbers li .page-numbers {
+    width: 12vw;
+    height: 12vw;
   }
   .pagination > .page-numbers li .prev {
     margin-right: 3rem;
@@ -10910,6 +10915,9 @@ td, th {
     padding: 12.2666666667vw 0 26.6666666667vw;
   }
   .column .column__recommend {
+    margin-bottom: 21.3333333333vw;
+  }
+  .column .column__list-wrapper {
     margin-bottom: 21.3333333333vw;
   }
   .column .column__list-wrapper .column__list {
