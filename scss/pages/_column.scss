@@ -28,6 +28,11 @@
 
   .column__list-wrapper {
     width: 100%;
+    margin-bottom: get_vw(100);
+
+    @include sp {
+      margin-bottom: get_vw(80, 375);
+    }
 
     .column__list {
       display: grid;
@@ -290,7 +295,7 @@
       }
     }
 
-    input[name="columns"]:checked {
+    input[name="column_tags[]"]:checked {
       & + .column__tags-label {
         background: var(--main-color);
         color: var(--main-color-white);
@@ -308,7 +313,7 @@
     }
   }
 
-  input[name="columns"] {
+  input[name="column_tags[]"] {
     display: none;
   }
 

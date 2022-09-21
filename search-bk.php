@@ -83,7 +83,7 @@ $rootDir = get_template_directory_uri();
               $count = 1;
               foreach ( $terms as $term ) : ?>
                 <div class="column__tags-wrapper">
-                  <input id="<?php echo $count ?>" type="checkbox" class="column__tags-check" name="columns">
+                  <input id="<?php echo $count ?>" type="checkbox" class="column__tags-check" name="column_tags[]">
                   <label for="<?php echo $count ?>" class="column__tags-label"><span><?php echo $term->name; ?></span></label>
                 </div>
                 <?php $count++; endforeach; ?>
