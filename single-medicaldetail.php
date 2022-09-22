@@ -152,8 +152,8 @@ $rootDir = get_template_directory_uri();
                   </div>
                 <?php else:?>
                   <a href="<?php the_sub_field("menu_link") ?>" class="index_btn">
-                    <p><?php the_sub_field("menu_name") ?></p>
                     <img src="<?php echo $rootDir ?>/images/medical_detail/medical_detail_btn_right.png" alt="">
+                    <p><?php the_sub_field("menu_name") ?></p>
                   </a>
                 <?php endif;?>
               <?php endwhile; ?>
