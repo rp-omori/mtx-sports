@@ -3666,7 +3666,7 @@ td, th {
   margin-bottom: 0;
 }
 .medical-detail-contents .medical-detail-menuArea .medical-detail-menuArea__box .medical-detail-menuArea__box_contents ul {
-  width: clamp(10px, 47.8515625vw, 735px);
+  width: 100%;
   margin-bottom: clamp(10px, 2.7994791667vw, 43px);
 }
 .medical-detail-contents .medical-detail-menuArea .medical-detail-menuArea__box .medical-detail-menuArea__box_contents ul li {
@@ -3705,7 +3705,7 @@ td, th {
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
   font-size: clamp(10px, 2rem, 20px);
   font-weight: 600;
-  margin-right: clamp(10px, 1.3020833333vw, 20px);
+  margin-left: clamp(10px, 1.3020833333vw, 20px);
 }
 .medical-detail-contents .medical-detail-menuArea .medical-detail-menuArea__box .medical-detail-menuArea__box_contents .index_btn_wrapper p {
   margin-bottom: 0;
@@ -9237,7 +9237,6 @@ td, th {
     margin-bottom: 32px;
   }
   .medical-detail-contents .medical-detail-menuArea .medical-detail-menuArea__box .medical-detail-menuArea__box_contents ul {
-    width: 100%;
     margin-bottom: 32px;
   }
   .medical-detail-contents .medical-detail-menuArea .medical-detail-menuArea__box .medical-detail-menuArea__box_contents ul li {
