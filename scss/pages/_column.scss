@@ -702,7 +702,7 @@
       background: #0a6460;
       border-radius: 6px;
       color: var(--main-color-white);
-      font-family: $fontFamilyYuGo;
+      font-family: $fontFamilyYuGo !important;
       font-size: calcFz(27);
       font-weight: bold;
       line-height: 1.5;
@@ -710,7 +710,7 @@
       @include sp {
         margin-bottom: get_vw(40, 375);
         padding: get_vw(12, 375) get_vw(10, 375);
-        font-family: $fontFamilyHiraGo;
+        font-family: $fontFamilyHiraGo !important;
         font-size: calcFz(18);
       }
       &:not(:first-child) {
@@ -718,10 +718,10 @@
       }
 
       span {
-        font-family: $fontFamilyYuGo;
+        font-family: $fontFamilyYuGo !important;
 
         @include sp {
-          font-family: $fontFamilyHiraGo;
+          font-family: $fontFamilyHiraGo !important;
         }
       }
     }
@@ -732,14 +732,14 @@
       padding-bottom: get_vw(20);
       border-bottom: 2px solid var(--border-color-green);
       color: var(--main-color);
-      font-family: $fontFamilyYuGo;
+      font-family: $fontFamilyYuGo !important;
       font-size: calcFz(24);
       font-weight: bold;
 
       @include sp {
         margin-bottom: get_vw(20, 375);
         padding-bottom: get_vw(13, 375);
-        font-family: $fontFamilyHiraGo;
+        font-family: $fontFamilyHiraGo !important;
         font-size: calcFz(16);
         line-height: 1.6;
       }
@@ -754,10 +754,10 @@
       }
 
       span {
-        font-family: $fontFamilyYuGo;
+        font-family: $fontFamilyYuGo !important;
 
         @include sp {
-          font-family: $fontFamilyHiraGo;
+          font-family: $fontFamilyHiraGo !important;
         }
       }
     }
@@ -765,43 +765,43 @@
     h4 {
       margin-bottom: get_vw(20);
       color: var(--main-color-black);
-      font-family: $fontFamilyYuGo;
+      font-family: $fontFamilyYuGo !important;
       font-size: calcFz(18);
       font-weight: bold;
       line-height: 1.5;
 
       @include sp {
         margin-bottom: get_vw(15, 375);
-        font-family: $fontFamilyHiraGo;
+        font-family: $fontFamilyHiraGo !important;
         font-size: calcFz(16);
       }
 
       span {
-        font-family: $fontFamilyYuGo;
+        font-family: $fontFamilyYuGo !important;
 
         @include sp {
-          font-family: $fontFamilyHiraGo;
+          font-family: $fontFamilyHiraGo !important;
         }
       }
     }
 
     p {
       color: var(--main-color-black);
-      font-family: $fontFamilyYuGo;
+      font-family: $fontFamilyYuGo !important;
       font-size: calcFz(18);
       line-height: 1.75;
       margin-bottom: get_vw(20);
 
       @include sp {
-        font-family: $fontFamilyHiraGo;
+        font-family: $fontFamilyHiraGo !important;
         font-size: calcFz(15);
       }
 
       span {
-        font-family: $fontFamilyYuGo;
+        font-family: $fontFamilyYuGo !important;
 
         @include sp {
-          font-family: $fontFamilyHiraGo;
+          font-family: $fontFamilyHiraGo !important;
         }
       }
     }
