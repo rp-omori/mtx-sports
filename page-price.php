@@ -84,7 +84,7 @@ $WP_post = new WP_Query($args);
                 </div>
               </td>
               <td class="contents-box_menu__inner_box_minute">
-                <p>20分</p>
+                <p>30分</p>
               </td>
               <td class="contents-box_menu__inner_box_price">
                 <p>¥5,500</p>
@@ -99,7 +99,7 @@ $WP_post = new WP_Query($args);
                 </div>
               </td>
               <td class="contents-box_menu__inner_box_minute">
-                <p>10分</p>
+                <p>15分</p>
               </td>
               <td class="contents-box_menu__inner_box_price">
                 <p>¥3,300</p>

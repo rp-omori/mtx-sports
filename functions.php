@@ -336,3 +336,57 @@ function my_add_content_column( $content ) {
   return $content;
 }
 add_filter( 'the_content', 'my_add_content_column' );
+
+/* アーカイブとシングルページのタイトル */
+function change_title($title){
+  if (is_post_type_archive('column')) {
+    $title = 'コラム｜関節の痛みならMTXスポーツ・関節クリニック';
+  } else if (is_post_type_archive('news')) {
+    $title = 'お知らせ｜関節の痛みならMTXスポーツ・関節クリニック';
+  } else if (is_post_type_archive('services')) {
+    $title = '治療メニュー｜関節の痛みならMTXスポーツ・関節クリニック';
+  }
+  if(is_singular('column')) {
+    $title = get_the_title() . '｜関節の痛みならMTXスポーツ・関節クリニック';
+  } else if(is_singular('news')) {
+    $title = get_the_title() . '｜関節の痛みならMTXスポーツ・関節クリニック';
+  }
+  return $title;
+}
+add_filter('aioseop_title', 'change_title');
+
+/* アーカイブとシングルページのディスクリプション */
+function  change_description($description){
+  if (is_post_type_archive('column')) {
+    $description = 'コラムはこちら。治らない関節の痛み、しつこい筋肉の凝りに。再生医療を用いた治療と、トップアスリートが通うMTXのトレーナーによる運動療法を組み合わせた、トータルの治療プログラムを提供します。';
+  } else if (is_post_type_archive('news')) {
+    $description = 'お知らせはこちら。治らない関節の痛み、しつこい筋肉の凝りに。再生医療を用いた治療と、トップアスリートが通うMTXのトレーナーによる運動療法を組み合わせた、トータルの治療プログラムを提供します。';
+  } else if (is_post_type_archive('services')) {
+    $description = '治療メニューはこちら。治らない関節の痛み、しつこい筋肉の凝りに。再生医療を用いた治療と、トップアスリートが通うMTXのトレーナーによる運動療法を組み合わせた、トータルの治療プログラムを提供します。';
+  }
+  if(is_singular('column')) {
+    $description = get_the_title() . '。治らない関節の痛み、しつこい筋肉の凝りに。再生医療を用いた治療と、トップアスリートが通うMTXのトレーナーによる運動療法を組み合わせた、トータルの治療プログラムを提供します。';
+  } else if(is_singular('news')) {
+    $description = get_the_title() . 'はこちら。治らない関節の痛み、しつこい筋肉の凝りに。再生医療を用いた治療と、トップアスリートが通うMTXのトレーナーによる運動療法を組み合わせた、トータルの治療プログラムを提供します。';
+  }
+  return $description;
+}
+add_filter('aioseop_description', 'change_description');
+
+/* アーカイブとシングルページのキーワード */
+function change_keywords( $keywords ) {
+  if (is_post_type_archive('column')) {
+    $keywords = 'コラム,再生医療,運動療法,関節痛み,筋肉凝り,MTXスポーツ,関節クリニック';
+  } else if (is_post_type_archive('news')) {
+    $keywords = 'お知らせ,再生医療,運動療法,関節痛み,筋肉凝り,MTXスポーツ,関節クリニック';
+  } else if (is_post_type_archive('services')) {
+    $keywords = '治療メニュー,再生医療,運動療法,関節痛み,筋肉凝り,MTXスポーツ,関節クリニック';
+  }
+  if( is_singular( 'column' ) ) {
+    $keywords = 'コラム,再生医療,運動療法,関節痛み,筋肉凝り,MTXスポーツ,関節クリニック';
+  } else if( is_singular( 'news' ) ) {
+    $keywords = 'お知らせ,再生医療,運動療法,関節痛み,筋肉凝り,MTXスポーツ,関節クリニック';
+  }
+  return $keywords;
+}
+add_filter('aioseop_keywords', 'change_keywords');

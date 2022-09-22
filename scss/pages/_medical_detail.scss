@@ -374,11 +374,10 @@
 
         ul{
 
-          width: clamp(10px,get_vw(735),735px);
+          width: 100%;
           margin-bottom: clamp(10px,get_vw(43),43px);
 
           @include sp {
-            width: 100%;
             margin-bottom: 32px;
           }
 
@@ -432,7 +431,7 @@
               font-family: $fontFamilyYuGo;
               font-size: calcFz(20);
               font-weight: 600;
-              margin-right: clamp(10px,get_vw(20),20px);
+              margin-left: clamp(10px,get_vw(20),20px);
 
               @include sp {
                 font-size: calcFz(14);

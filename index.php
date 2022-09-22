@@ -526,9 +526,9 @@ $rootDir = get_template_directory_uri();
                   </div>
                 </div>
                 <p class="clinic-features__02-left-text fade-anime-text js-titleAnimationTarget">
-                  今の患部の状態を評価（数値化）した内容を基に、目指す目標を患者さんと共に最初に決めます。<br>
-                  次に、目標に向けた最適な治療プログラムを医師が計画し、治療を開始となります。<br>
-                  治療プログラム実行中も、定期的に医師が評価、治療プログラム計画の見直しや調整を行うことで、患者さんの目標達成へと着実につなげます。
+                  最初に今の患部や身体の状態を数値化し、その評価を基に目標を患者さんと共に決めます。<br>
+                  次に、目標に向けた最適な治療プログラムを医師が計画し、治療を開始します。<br>
+                  その後も定期的に医師が評価、計画の見直しや調整を行うことで、患者さんの目標達成へと着実につなげます。
                 </p>
                 <a href="<?php echo esc_url(home_url('/flow')); ?>" class="btn btn--dark_green">
                   <span>治療の流れ</span>
