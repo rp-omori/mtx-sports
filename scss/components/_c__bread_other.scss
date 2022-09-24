@@ -58,3 +58,15 @@
 
 
 }
+.page-bread--column {
+  ul {
+    color: var(--main-color) !important;
+  }
+  li {
+    color: var(--main-color) !important;
+
+    a {
+      color: var(--main-color) !important;
+    }
+  }
+}
