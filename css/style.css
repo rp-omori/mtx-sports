@@ -1116,6 +1116,16 @@
   margin: 0 8px;
 }
 
+.page-bread--column ul {
+  color: var(--main-color) !important;
+}
+.page-bread--column li {
+  color: var(--main-color) !important;
+}
+.page-bread--column li a {
+  color: var(--main-color) !important;
+}
+
 .index_btn {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -104,7 +104,7 @@ $rootDir = get_template_directory_uri();
             <?php endwhile; endif; wp_reset_postdata();?>
             </ul>
           </div>
-          <div class="column-article__nav-wrapper">
+          <!-- <div class="column-article__nav-wrapper">
             <div class="column-article__nav-title-wrapper">
               <p class="column-article__nav-title">カテゴリー</p>
               <p class="column-article__nav-label">CATEGORY</p>
@@ -122,7 +122,7 @@ $rootDir = get_template_directory_uri();
               </li>
               <?php $count++; endforeach; ?>
             </ul>
-          </div>
+          </div> -->
           <div class="column-article__nav-wrapper">
             <div class="column-article__nav-title-wrapper">
               <p class="column-article__nav-title">タグ一覧</p>
