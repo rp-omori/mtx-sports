@@ -37,21 +37,13 @@ $rootDir = get_template_directory_uri();
               <?php if(is_singular('column')) { ?>
               <div class="header__logo">
                 <a href="<?php echo home_url(); ?>" class="header__logo-link">
-                  <?php if (is_page()): ?>
-                  <img src="<?php echo $rootDir ?>/images/logo--black.svg" alt="<?php the_title(); ?> | 関節の痛みならMTXスポーツ・関節クリニック">
-                  <?php else: ?>
-                  <img src="<?php echo $rootDir ?>/images/logo--black.svg" alt="関節の痛みならMTXスポーツ・関節クリニック">
-                  <?php endif; ?>
+                  <img src="<?php echo $rootDir ?>/images/logo--black.svg" alt="<?php the_title(); ?> | 関節の痛みなら、MTXスポーツ・関節クリニック">
                 </a>
               </div>
               <?php } else { ?>
               <h1 class="header__logo">
                 <a href="<?php echo home_url(); ?>" class="header__logo-link">
-                  <?php if (is_page()): ?>
-                  <img src="<?php echo $rootDir ?>/images/logo--black.svg" alt="<?php the_title(); ?> | 関節の痛みならMTXスポーツ・関節クリニック">
-                  <?php else: ?>
-                  <img src="<?php echo $rootDir ?>/images/logo--black.svg" alt="関節の痛みならMTXスポーツ・関節クリニック">
-                  <?php endif; ?>
+                  <img src="<?php echo $rootDir ?>/images/logo--black.svg" alt="<?php the_title(); ?> | 関節の痛みなら、MTXスポーツ・関節クリニック">
                 </a>
               </h1>
               <?php } ?>
