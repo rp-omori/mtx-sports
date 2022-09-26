@@ -25,14 +25,14 @@ $rootDir = get_template_directory_uri();
             <h1 class="column-article__title"><?php the_title(); ?></h1>
             <div class="column-article__tags-wrapper">
 
-              <?php //category
+              <!-- <?php //category
                 $terms = get_the_terms($post->ID,'column_cat');
                 foreach( $terms as $term ) : ?>
                 <span class="column-article__tags column-article__tags--category">
                 <?php echo esc_html($term->name); ?>
                 </span>
                 <?php $column_cat_term = $term;
-                endforeach; ?>
+                endforeach; ?> -->
 
               <?php //tag
                 $terms = get_the_terms($post->ID,'column_tag');

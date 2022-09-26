@@ -6991,6 +6991,10 @@ td, th {
 .column-article .column-article__body p span {
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif !important;
 }
+.column-article .column-article__body a {
+  color: var(--main-color);
+  text-decoration: underline;
+}
 .column-article .column-article__inner {
   padding: 3.90625vw;
 }
