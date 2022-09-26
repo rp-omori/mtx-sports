@@ -829,6 +829,11 @@
         }
       }
     }
+
+    a {
+      color: var(--main-color);
+      text-decoration: underline;
+    }
   }
 
   .column-article__inner {
