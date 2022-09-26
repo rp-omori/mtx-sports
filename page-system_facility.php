@@ -270,7 +270,7 @@ $rootDir = get_template_directory_uri();
               </div>
               <div class="index_btn facility-collaboratingArea__inner_contents_box_right_ttl">
                 <img src="<?php echo $rootDir ?>/images/facility/facility_btn_green.png" alt="">
-                <p>収束型　対外衝撃波（BTL6000-Focus)</p>
+                <p>集束型　対外衝撃波（BTL6000-Focus)</p>
               </div>
               <div class="facility-collaboratingArea__inner_contents_box_right_txt">
                 <p>
