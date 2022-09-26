@@ -34,13 +34,17 @@ $rootDir = get_template_directory_uri();
                 <?php $column_cat_term = $term;
                 endforeach; ?> -->
 
-              <?php //tag
+              <?php
                 $terms = get_the_terms($post->ID,'column_tag');
-                foreach( $terms as $term ) : ?>
-                <span class="column-article__tags column-article__tags--tag">
-                <?php echo esc_html($term->name); ?>
-                </span>
-                <?php endforeach; ?>
+                if ($terms && count($terms) > 0) {
+                  foreach( $terms as $term ) { ?>
+                    <span class="column-article__tags column-article__tags--tag">
+                      <?php echo esc_html($term->name); ?>
+                    </span>
+              <?php
+                  }
+                }
+              ?>
             </div>
             <div class="column-article__img">
                 <?php if(has_post_thumbnail()):
