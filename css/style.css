@@ -7385,6 +7385,96 @@ td, th {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
+
+.p-message {
+  width: 77%;
+  margin: 0 auto;
+  padding: 6.5104166667vw 0 13.0208333333vw;
+}
+.p-message .p-message__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 67%;
+  margin: 0 auto 9.765625vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.p-message .contentsBox_ttl {
+  margin-bottom: 2.6041666667vw;
+}
+.p-message .p-message__contents p {
+  color: var(--main-color);
+  font-size: clamp(10px, 2.4rem, 24px);
+}
+.p-message .p-message__text {
+  font-size: clamp(10px, 1.8rem, 18px);
+  line-height: 1.75;
+}
+.p-message .p-message__about {
+  margin-bottom: 3.8411458333vw;
+}
+.p-message .p-message__btn-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 3.90625vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.p-message .p-message__btn-wrapper .btn {
+  min-width: initial;
+  padding-left: 2.6041666667vw;
+  padding-right: 2.6041666667vw;
+}
+.p-message .p-message__btn-wrapper .btn p {
+  color: var(--white);
+}
+.p-message .p-message__flow .p-message__title-wrapper {
+  margin-bottom: 3.2552083333vw;
+  text-align: center;
+}
+.p-message .p-message__flow .p-message__title-wrapper .p-message__title {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 2.2786458333vw;
+  color: var(--main-color);
+  font-size: clamp(10px, 3.5rem, 35px);
+  font-weight: bold;
+}
+.p-message .p-message__flow .p-message__title-wrapper .p-message__title:after {
+  content: "";
+  position: absolute;
+  width: 2em;
+  height: 3px;
+  background: var(--main-color);
+  border-radius: 3px;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.p-message .p-message__flow .p-message__flow-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.p-message .p-message__flow .p-message__img {
+  width: 100%;
+  margin-bottom: 5.2083333333vw;
+}
+.p-message .p-message__flow .p-message__for-clinic {
+  width: 50%;
+  margin-right: 3.6458333333vw;
+}
+.p-message .p-message__flow .p-message__for-trainer {
+  width: calc(50% - 3.6458333333vw);
+}
 @media screen and (max-width: 767px) {
   .header {
     height: 50px;
@@ -11329,6 +11419,75 @@ td, th {
     width: 18px;
     height: 18px;
     left: -26px;
+  }
+  .p-message {
+    width: 89%;
+    padding: 16vw 0 26.6666666667vw;
+  }
+  .p-message .p-message__top {
+    width: 100%;
+    margin: 0 auto 21.3333333333vw;
+  }
+  .p-message .contentsBox_ttl {
+    margin-bottom: 5.3333333333vw;
+  }
+  .p-message .p-message__contents p {
+    font-size: clamp(10px, 1.6rem, 16px);
+  }
+  .p-message .p-message__text {
+    font-size: clamp(10px, 1.5rem, 15px);
+  }
+  .p-message .p-message__about {
+    margin-bottom: 10.6666666667vw;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .p-message .p-message__cooperation {
+    margin-bottom: 10.6666666667vw;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .p-message .p-message__btn-wrapper {
+    margin-bottom: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .p-message .p-message__btn-wrapper .btn {
+    min-width: 100%;
+    margin-bottom: 5.3333333333vw;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .p-message .p-message__flow .p-message__title-wrapper {
+    margin-bottom: 8vw;
+  }
+  .p-message .p-message__flow .p-message__title-wrapper .p-message__title {
+    padding-bottom: 7.7333333333vw;
+    font-size: clamp(10px, 2.4rem, 24px);
+  }
+  .p-message .p-message__flow .p-message__flow-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .p-message .p-message__flow .p-message__img {
+    margin-bottom: 16vw;
+  }
+  .p-message .p-message__flow .p-message__for-clinic {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10.6666666667vw;
+  }
+  .p-message .p-message__flow .p-message__for-trainer {
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {

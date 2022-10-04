@@ -6,13 +6,17 @@
 
 https://github.com/terraphic/docker-lamp-wp
 ### Dockerコンテナ作成後
-以下を実行して開発環境を整えてください。
+themeフォルダ直下にこのリポジトリをクローンしてください。
+
+mtx-sportsディレクトリで以下を実行して開発環境を整えてください。
 ```bash
 # install dependencies
 npm install
 # serve with hot reload at localhost:8080
 npm run dev
 ```
+## cssについて
+cssフォルダはdevelop-before-deployブランチ以外ではプッシュしないでください。
 ## Git
 - featureブランチで作業すること。
 - featureブランチを切る際は、developブランチから切ること。また、その際にdevelopをプルして最新の状態にしておくこと。
@@ -38,6 +42,7 @@ develop-before-deployブランチ以外のブランチで作業するときは�
 開発環境用branch
 > developブランチはgit actionsでステージング環境と同期しています。プッシュしたらステージング環境が更新されるので注意してください。
 ### develop-before-deploy
+> コンパイル用ブランチ（actionsでnpm run devをrunさせれば必要がないブランチです。。。）
 > featureブランチでテストをして、問題なければdevelop-before-deployブランチにプルリクエストをしてマージしてください。
 > 問題なければ、このブランチでコンパイルしてからdevelopブランチにマージしてください。
 

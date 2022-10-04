@@ -1,0 +1,169 @@
+.p-message {
+  width: 77%;
+  margin: 0 auto;
+  padding: get_vw(100) 0 get_vw(200);
+
+  @include sp {
+    width: 89%;
+    padding: get_vw(60, 375) 0 get_vw(100, 375);
+  }
+
+  .p-message__top {
+    display: flex;
+    width: 67%;
+    margin: 0 auto get_vw(150);
+    flex-direction: column;
+
+    @include sp {
+      width: 100%;
+      margin: 0 auto get_vw(80, 375);
+    }
+  }
+
+  .contentsBox_ttl {
+    margin-bottom: get_vw(40);
+
+    @include sp {
+      margin-bottom: get_vw(20, 375);
+    }
+  }
+
+  .p-message__contents {
+    p {
+      color: var(--main-color);
+      font-size: calcFz(24);
+
+      @include sp {
+        font-size: calcFz(16);
+      }
+    }
+  }
+
+  .p-message__text {
+    font-size: calcFz(18);
+    line-height: 1.75;
+
+    @include sp {
+      font-size: calcFz(15);
+    }
+  }
+
+  .p-message__about {
+    margin-bottom: get_vw(59);
+
+    @include sp {
+      margin-bottom: get_vw(40, 375);
+      order: 1;
+    }
+  }
+
+  .p-message__cooperation {
+    @include sp {
+      margin-bottom: get_vw(40, 375);
+      order: 2;
+    }
+  }
+
+  .p-message__btn-wrapper {
+    display: flex;
+    margin-bottom: get_vw(60);
+    justify-content: space-between;
+
+    @include sp {
+      margin-bottom: 0;
+      flex-direction: column;
+      order: 3;
+    }
+
+    .btn {
+      min-width: initial;
+      padding-left: get_vw(40);
+      padding-right: get_vw(40);
+
+      @include sp {
+        min-width: 100%;
+        margin-bottom: get_vw(20, 375);
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      p {
+        color: var(--white);
+      }
+    }
+  }
+
+  .p-message__flow {
+    .p-message__title-wrapper {
+      margin-bottom: get_vw(50);
+      text-align: center;
+
+      @include sp {
+        margin-bottom: get_vw(30, 375);
+      }
+
+      .p-message__title {
+        position: relative;
+        display: inline-block;
+        padding-bottom: get_vw(35);
+        color: var(--main-color);
+        font-size: calcFz(35);
+        font-weight: bold;
+
+        &:after {
+          content: '';
+          position: absolute;
+          width: 2em;
+          height: 3px;
+          background: var(--main-color);
+          border-radius: 3px;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+
+        @include sp {
+          padding-bottom: get_vw(29, 375);
+          font-size: calcFz(24);
+        }
+      }
+    }
+
+    .p-message__flow-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+
+      @include sp {
+        flex-direction: column;
+      }
+    }
+
+    .p-message__img {
+      width: 100%;
+      margin-bottom: get_vw(80);
+
+      @include sp {
+        margin-bottom: get_vw(60, 375);
+      }
+    }
+
+    .p-message__for-clinic {
+      width: 50%;
+      margin-right: get_vw(56);
+
+      @include sp {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: get_vw(40, 375);
+      }
+    }
+
+    .p-message__for-trainer {
+      width: calc(50% - get_vw(56));
+
+      @include sp {
+        width: 100%;
+      }
+    }
+  }
+}

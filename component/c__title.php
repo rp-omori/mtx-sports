@@ -13,6 +13,8 @@
         <p>NEWS</p>
       <?php elseif(strstr($url, 'column')): ?>
         <p class="page-title__treatments">COLUMN</p>
+      <?php elseif(strstr($url, 'message')):?>
+        <p><?php the_content(); ?></p>
       <?php else:?>
         <!-- <p><?php the_content(); ?></p> -->
       <?php endif;?>
