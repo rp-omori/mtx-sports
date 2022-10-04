@@ -5,7 +5,7 @@
   </div>
   <div class="column-slider__inner">
     <div class="column__to-archive">
-      <a href="" class="column__to-archive-link">一覧を見る</a>
+      <a href="<?php echo esc_url(home_url('/column')); ?>" class="column__to-archive-link">一覧を見る</a>
     </div>
     <div class="column__swiper">
       <div class="swiper-wrapper">
