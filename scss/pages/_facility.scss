@@ -806,6 +806,31 @@
 
           }
 
+          &.flex-start{
+            justify-content: flex-start;
+
+            .img{
+              margin-right: clamp(10px,get_vw(48),48px);
+
+              @include sp {
+                margin-right: 0;
+                width: 100%;
+                margin-bottom: 20px;
+
+                &:nth-child(1){
+                  margin-bottom: 0;
+                }
+
+              }
+
+              img{
+                width: 100%;
+              }
+
+            }
+
+          }
+
         }
 
       }
