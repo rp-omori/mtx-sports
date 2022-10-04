@@ -163,6 +163,9 @@ $rootDir = get_template_directory_uri();
                   <li class="footer__menu-head">
                     <a href="<?php echo esc_url(home_url('/staff')); ?>" class="footer__menu-link">医師・スタッフ紹介</a>
                   </li>
+                  <li class="footer__menu-head">
+                    <a href="<?php echo esc_url(home_url('/message')); ?>" class="footer__menu-link">医療関係者の皆様へ</a>
+                  </li>
                 </ul>
               </li>
               <li class="footer__menu-nav">

@@ -164,6 +164,11 @@ $rootDir = get_template_directory_uri();
                       コラム
                     </a>
                   </li>
+                  <li class="header__item">
+                    <a href="<?php echo esc_url(home_url('/message')); ?>" class="header__link js-header-drawer">
+                      医療関係者の皆様へ
+                    </a>
+                  </li>
                 </ul>
               </nav>
             </div>
