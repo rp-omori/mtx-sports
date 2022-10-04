@@ -160,6 +160,17 @@ $rootDir = get_template_directory_uri();
               </div>
             </div>
           </div>
+          <div class="facility-collaboratingArea__inner_contents_box flex flex-start">
+            <div class="img">
+              <img src="<?php echo $rootDir ?>/images/facility/facility_img_11.jpg" alt="">
+            </div>
+            <div class="img">
+              <img src="<?php echo $rootDir ?>/images/facility/facility_img_12.jpg" alt="">
+            </div>
+            <!-- <div class="img">
+              <img src="<?php echo $rootDir ?>/images/facility/facility_img_13.jpg" alt="">
+            </div> -->
+          </div>
           <div class="facility-collaboratingArea__inner_contents_box">
             <div class="facility-collaboratingArea__inner_contents_box_left">
               <img src="<?php echo $rootDir ?>/images/facility/facility_img_06.jpg" alt="">
@@ -221,17 +232,6 @@ $rootDir = get_template_directory_uri();
                   最初は、スポーツのパフォーマンスアップのために作られましたが、モニターを見ながらトレーニングすることで、神経系のパフォーマンスアップに繋がるという副次的な結果も得られるようになったことから、怪我からの復帰にも力を入れることとなりました。測定からゲーム感覚の運動までオールインワンのマシンを是非ご体験ください。
                 </p>
               </div>
-            </div>
-          </div>
-          <div class="facility-collaboratingArea__inner_contents_box flex">
-            <div class="img">
-              <img src="<?php echo $rootDir ?>/images/facility/facility_img_11.jpg" alt="">
-            </div>
-            <div class="img">
-              <img src="<?php echo $rootDir ?>/images/facility/facility_img_12.jpg" alt="">
-            </div>
-            <div class="img">
-              <img src="<?php echo $rootDir ?>/images/facility/facility_img_13.jpg" alt="">
             </div>
           </div>
           <div class="facility-collaboratingArea__inner_contents_box sp_mb">

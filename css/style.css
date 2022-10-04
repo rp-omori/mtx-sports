@@ -4158,6 +4158,17 @@ td, th {
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
+.facility-contents .facility-collaboratingArea__inner_contents_box.flex-start {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.facility-contents .facility-collaboratingArea__inner_contents_box.flex-start .img {
+  margin-right: clamp(10px, 3.125vw, 48px);
+}
+.facility-contents .facility-collaboratingArea__inner_contents_box.flex-start .img img {
+  width: 100%;
+}
 
 .introduce-contents {
   background-color: #EFF4F3;
@@ -9650,6 +9661,14 @@ td, th {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     margin-bottom: 20px;
+  }
+  .facility-contents .facility-collaboratingArea__inner_contents_box.flex-start .img {
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .facility-contents .facility-collaboratingArea__inner_contents_box.flex-start .img:nth-child(1) {
+    margin-bottom: 0;
   }
   .introduce-contents {
     font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
