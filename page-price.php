@@ -357,7 +357,7 @@ $WP_post = new WP_Query($args);
               <div class="flex">
                 <div class="flex_box">
                   <p class="orange_tab">オープニング価格<br>（2022年内限定）</p>
-                  <p>体外衝撃波（収束型）<br>＋ 培養上清液治療</p>
+                  <p>体外衝撃波（集束型）<br>＋ 培養上清液治療</p>
                 </div>
               </div>
             </td>
@@ -486,7 +486,7 @@ $WP_post = new WP_Query($args);
             <td class="contents-box_menu__inner_box_name" rowspan="3">
               <div class="flex">
                 <div class="flex_box">
-                  <p>収束型 体外衝撃波(BTL-6000-Focus）</p>
+                  <p>集束型 体外衝撃波(BTL-6000-Focus）</p>
                 </div>
               </div>
             </td>
