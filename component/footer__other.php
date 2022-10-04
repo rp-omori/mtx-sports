@@ -120,6 +120,29 @@ $rootDir = get_template_directory_uri();
   </a>
 </div>
 
+<?php elseif(is_page('message')) :?>
+
+<div class="footer__other">
+  <a href="<?php echo esc_url(home_url()); ?>" class="footer__other_box">
+    <div class="footer__other_box_img">
+      <img src="<?php echo $rootDir ?>/images/footer__other/footer_other_05.jpg" alt="">
+    </div>
+    <div class="footer__other_box_text">
+      <p class="orange">COLUMN</p>
+      <p class="white">コラム</p>
+    </div>
+  </a>
+  <a href="<?php echo esc_url(home_url('/staff')); ?>" class="footer__other_box">
+    <div class="footer__other_box_img">
+      <img src="<?php echo $rootDir ?>/images/footer__other/footer_other_02.jpg" alt="">
+    </div>
+    <div class="footer__other_box_text">
+      <p class="orange">STAFF</p>
+      <p class="white">医師・スタッフ紹介</p>
+    </div>
+  </a>
+</div>
+
 <?php elseif( is_single('')) :?>
 
 <div class="footer__other">
