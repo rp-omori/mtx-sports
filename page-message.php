@@ -35,7 +35,7 @@ $rootDir = get_template_directory_uri();
         <a href="<?php echo esc_url(home_url('/system_facility')); ?>" class="btn btn--green">
           <p>治療体制と施設・設備</p>
         </a>
-        <a href="<?php echo esc_url(home_url('/'), '#', 'medical-menu'); ?>" class="btn btn--green">
+        <a href="<?php echo esc_url(home_url('/#medical-menu')); ?>" class="btn btn--green">
           <p>診療科目</p>
         </a>
       </div>
