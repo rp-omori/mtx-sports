@@ -4166,6 +4166,9 @@ td, th {
 .facility-contents .facility-collaboratingArea__inner_contents_box.flex-start .img {
   margin-right: clamp(10px, 3.125vw, 48px);
 }
+.facility-contents .facility-collaboratingArea__inner_contents_box.flex-start .img.large {
+  width: clamp(10px, 32.5520833333vw, 500px);
+}
 .facility-contents .facility-collaboratingArea__inner_contents_box.flex-start .img img {
   width: 100%;
 }

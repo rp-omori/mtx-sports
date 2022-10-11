@@ -812,6 +812,10 @@
             .img{
               margin-right: clamp(10px,get_vw(48),48px);
 
+              &.large{
+                width: clamp(10px, get_vw(500), 500px);
+              }
+
               @include sp {
                 margin-right: 0;
                 width: 100%;
