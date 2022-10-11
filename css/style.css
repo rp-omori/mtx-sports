@@ -9665,6 +9665,14 @@ td, th {
             flex-direction: column-reverse;
     margin-bottom: 20px;
   }
+  .facility-contents .facility-collaboratingArea__inner_contents_box.flex-start .img.large {
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .facility-contents .facility-collaboratingArea__inner_contents_box.flex-start .img.large:nth-child(1) {
+    margin-bottom: 0;
+  }
   .facility-contents .facility-collaboratingArea__inner_contents_box.flex-start .img {
     margin-right: 0;
     width: 100%;
