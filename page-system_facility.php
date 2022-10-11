@@ -161,10 +161,10 @@ $rootDir = get_template_directory_uri();
             </div>
           </div>
           <div class="facility-collaboratingArea__inner_contents_box flex flex-start">
-            <div class="img">
+            <div class="img large">
               <img src="<?php echo $rootDir ?>/images/facility/facility_img_11.jpg" alt="">
             </div>
-            <div class="img">
+            <div class="img large">
               <img src="<?php echo $rootDir ?>/images/facility/facility_img_12.jpg" alt="">
             </div>
             <!-- <div class="img">
