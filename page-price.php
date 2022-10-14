@@ -16,13 +16,14 @@ $rootDir = get_template_directory_uri();
 
   <!-- コンテンツ部分 -->
 
+
   <div class="price-contents">
 
     <div class="contents-box">
-        <div class="contents-box_cat">
+        <!-- <div class="contents-box_cat">
           <p>診断</p>
-        </div>
-        <table class="contents-box_menu">
+        </div> -->
+        <!-- <table class="contents-box_menu">
           <tbody class="contents-box_menu__inner">
 
           <?php $fields = (get_field('diagnose')); ?>
@@ -68,24 +69,23 @@ $rootDir = get_template_directory_uri();
                     endforeach;
                 endif; ?>
 
-                <!-- </tr> -->
-
           <?php
               endforeach;
           endif;
           ?>
 
           </tbody>
-        </table>
+        </table> -->
+        <?php the_content()?>
         <div class="contents-box_caution">
           <p>※治療を行なった場合は、診察料を頂戴しません。</p>
         </div>
     </div>
 
     <div class="contents-box">
-      <div class="contents-box_cat">
+      <!-- <div class="contents-box_cat">
         <p>再生医療</p>
-      </div>
+      </div> -->
       <!-- <table class="contents-box_menu">
         <tbody class="contents-box_menu__inner">
           <tr class="contents-box_menu__inner_box">
@@ -171,7 +171,7 @@ $rootDir = get_template_directory_uri();
           </tr>
         </tbody>
       </table> -->
-      <table class="contents-box_menu">
+      <!-- <table class="contents-box_menu">
         <tbody class="contents-box_menu__inner">
 
         <?php $fields = (get_field('regenerative_medicine')); ?>
@@ -240,7 +240,7 @@ $rootDir = get_template_directory_uri();
         ?>
 
         </tbody>
-      </table>
+      </table> -->
       <!-- <table class="contents-box_menu">
         <tbody class="contents-box_menu__inner">
           <tr class="contents-box_menu__inner_box">
@@ -381,13 +381,13 @@ $rootDir = get_template_directory_uri();
           </tr>
         </tbody>
       </table> -->
-      <div class="contents-box_caution">
+      <!-- <div class="contents-box_caution">
         <p>※オープニング価格（2022年内限定）は年内まで。</p>
-      </div>
-      <a href="<?php echo esc_url(home_url('services/#service')); ?>" class="contents-box_btn">
+      </div> -->
+      <!-- <a href="<?php echo esc_url(home_url('services/#service')); ?>" class="contents-box_btn">
         <img src="<?php echo $rootDir ?>/images/price/price_btn.png" alt="">
         <p>再生医療についてはこちら</p>
-      </a>
+      </a> -->
     </div>
 
     <!-- <div class="contents-box">
@@ -568,3 +568,14 @@ $rootDir = get_template_directory_uri();
 </main>
 
 <?php get_footer(); ?>
+
+<style>
+  td{
+    vertical-align: middle;
+    padding: 15px 5px;
+  }
+
+  td span {
+  }
+
+</style>
