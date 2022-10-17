@@ -76,17 +76,36 @@ $rootDir = get_template_directory_uri();
 
           </tbody>
         </table> -->
-        <?php the_content()?>
-        <div class="contents-box_caution">
+
+
+        <?php if ( wp_is_mobile() ) : ?>
+
+          <?php if(have_rows('price_table')): ?>
+            <?php while(have_rows('price_table')): the_row(); ?>
+              <?php the_sub_field('price_table_sp'); ?>
+            <?php endwhile; ?>
+          <?php endif; ?>
+
+        <?php else: ?>
+
+          <?php if(have_rows('price_table')): ?>
+            <?php while(have_rows('price_table')): the_row(); ?>
+              <?php the_sub_field('price_table_pc'); ?>
+            <?php endwhile; ?>
+          <?php endif; ?>
+
+        <?php endif; ?>
+
+        <!-- <div class="contents-box_caution">
           <p>※治療を行なった場合は、診察料を頂戴しません。</p>
-        </div>
+        </div> -->
     </div>
 
-    <div class="contents-box">
-      <!-- <div class="contents-box_cat">
+    <!-- <div class="contents-box">
+      <div class="contents-box_cat">
         <p>再生医療</p>
-      </div> -->
-      <!-- <table class="contents-box_menu">
+      </div>
+      <table class="contents-box_menu">
         <tbody class="contents-box_menu__inner">
           <tr class="contents-box_menu__inner_box">
             <td class="contents-box_menu__inner_box_name width" rowspan="2">
@@ -119,8 +138,8 @@ $rootDir = get_template_directory_uri();
             </td>
           </tr>
         </tbody>
-      </table> -->
-      <!-- <table class="contents-box_menu">
+      </table>
+      <table class="contents-box_menu">
         <tbody class="contents-box_menu__inner">
           <tr class="contents-box_menu__inner_box">
             <td class="contents-box_menu__inner_box_name width" rowspan="4">
@@ -170,8 +189,8 @@ $rootDir = get_template_directory_uri();
             </td>
           </tr>
         </tbody>
-      </table> -->
-      <!-- <table class="contents-box_menu">
+      </table>
+      <table class="contents-box_menu">
         <tbody class="contents-box_menu__inner">
 
         <?php $fields = (get_field('regenerative_medicine')); ?>
@@ -240,8 +259,8 @@ $rootDir = get_template_directory_uri();
         ?>
 
         </tbody>
-      </table> -->
-      <!-- <table class="contents-box_menu">
+      </table>
+      <table class="contents-box_menu">
         <tbody class="contents-box_menu__inner">
           <tr class="contents-box_menu__inner_box">
             <td class="contents-box_menu__inner_box_name width" rowspan="4">
@@ -291,8 +310,8 @@ $rootDir = get_template_directory_uri();
             </td>
           </tr>
         </tbody>
-      </table> -->
-      <!-- <table class="contents-box_menu">
+      </table>
+      <table class="contents-box_menu">
         <tbody class="contents-box_menu__inner">
           <tr class="contents-box_menu__inner_box">
             <td class="contents-box_menu__inner_box_name width" rowspan="4">
@@ -330,8 +349,8 @@ $rootDir = get_template_directory_uri();
             </td>
           </tr>
         </tbody>
-      </table> -->
-      <!-- <table class="contents-box_menu">
+      </table>
+      <table class="contents-box_menu">
         <tbody class="contents-box_menu__inner">
           <tr class="contents-box_menu__inner_box">
             <td class="contents-box_menu__inner_box_name width" rowspan="4">
@@ -380,15 +399,15 @@ $rootDir = get_template_directory_uri();
             </td>
           </tr>
         </tbody>
-      </table> -->
-      <!-- <div class="contents-box_caution">
+      </table>
+      <div class="contents-box_caution">
         <p>※オープニング価格（2022年内限定）は年内まで。</p>
-      </div> -->
-      <!-- <a href="<?php echo esc_url(home_url('services/#service')); ?>" class="contents-box_btn">
+      </div>
+      <a href="<?php echo esc_url(home_url('services/#service')); ?>" class="contents-box_btn">
         <img src="<?php echo $rootDir ?>/images/price/price_btn.png" alt="">
         <p>再生医療についてはこちら</p>
-      </a> -->
-    </div>
+      </a>
+    </div> -->
 
     <!-- <div class="contents-box">
       <div class="contents-box_cat">
