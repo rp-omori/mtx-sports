@@ -3488,6 +3488,19 @@ td, th {
   border-collapse: collapse;
   padding: clamp(10px, 1.953125vw, 30px) 0;
 }
+td span, th span {
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif !important;
+}
+td > div > span, th > div > span {
+  padding: 5px 10px;
+  display: inline-block;
+}
+td div, th div {
+  margin-bottom: 10px;
+}
+td div:nth-last-child(1), th div:nth-last-child(1) {
+  margin-bottom: 0;
+}
 
 .medical-detail-contents {
   background-color: #EFF4F3;
@@ -9279,6 +9292,18 @@ td, th {
   }
   .price-contents .contents-box_btn p {
     font-size: clamp(10px, 1.6rem, 16px);
+    margin-bottom: 0;
+  }
+  td > div > span, th > div > span {
+    padding: 0;
+  }
+  td > div > span > span > span, th > div > span > span > span {
+    padding: 5px;
+  }
+  td div, th div {
+    margin-bottom: 18px;
+  }
+  td div:nth-last-child(1), th div:nth-last-child(1) {
     margin-bottom: 0;
   }
   td, th {
