@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><urlset
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
     <loc>http://localhost:8080</loc>
-    <lastmod>2022-10-04T05:57:07Z</lastmod>
+    <lastmod>2022-10-18T02:45:21Z</lastmod>
   </url><url>
         <loc>http://localhost:8080/message/</loc>
         <lastmod>2022-10-04T05:57:07Z</lastmod>
@@ -114,8 +114,8 @@
         <loc>http://localhost:8080/medicaldetail/%e7%96%b2%e5%8a%b4%e9%aa%a8%e6%8a%98/</loc>
         <lastmod>2022-09-07T09:18:55Z</lastmod>
       </url><url>
-        <loc>http://localhost:8080/prices/%e8%a8%ba%e7%99%82/</loc>
-        <lastmod>2022-08-30T09:50:17Z</lastmod>
+        <loc>http://localhost:8080/?p=94</loc>
+        <lastmod>2022-10-13T05:06:40Z</lastmod>
       </url><url>
         <loc>http://localhost:8080/aboutus/</loc>
         <lastmod>2022-09-07T09:11:43Z</lastmod>
@@ -145,7 +145,7 @@
         <lastmod>2022-09-07T09:11:30Z</lastmod>
       </url><url>
         <loc>http://localhost:8080/price/</loc>
-        <lastmod>2022-09-07T09:10:18Z</lastmod>
+        <lastmod>2022-10-18T02:45:20Z</lastmod>
       </url><url>
         <loc>http://localhost:8080/privacy-policy/</loc>
         <lastmod>2022-09-07T09:08:01Z</lastmod>
