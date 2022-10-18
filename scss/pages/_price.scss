@@ -17,6 +17,15 @@
       margin-bottom: 70px;
     }
 
+    table{
+      margin-bottom: clamp(10px,get_vw(40),40px);
+
+      @include sp {
+        margin-bottom: 30px;
+      }
+
+    }
+
     &_cat{
       width: 100%;
       padding: clamp(10px,get_vw(20),20px) 0;
@@ -548,6 +557,7 @@
   }
 
 }
+
 
 td, th {
 	border: 1px solid #CADAD4;

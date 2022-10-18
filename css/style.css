@@ -3246,6 +3246,9 @@
   margin: 0 auto;
   margin-bottom: clamp(10px, 4.2317708333vw, 65px);
 }
+.price-contents .contents-box table {
+  margin-bottom: clamp(10px, 2.6041666667vw, 40px);
+}
 .price-contents .contents-box_cat {
   width: 100%;
   padding: clamp(10px, 1.3020833333vw, 20px) 0;
@@ -9070,6 +9073,9 @@ td, th {
   .price-contents .contents-box {
     width: 90%;
     margin-bottom: 70px;
+  }
+  .price-contents .contents-box table {
+    margin-bottom: 30px;
   }
   .price-contents .contents-box_cat {
     padding: 8px 0;
