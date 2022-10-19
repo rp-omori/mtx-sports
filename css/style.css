@@ -3268,6 +3268,7 @@
 }
 .price-contents .contents-box p span span img {
   width: 20px;
+  margin-right: 5px;
 }
 .price-contents .contents-box p span span a {
   text-decoration: none !important;
