@@ -3247,7 +3247,30 @@
   margin-bottom: clamp(10px, 4.2317708333vw, 65px);
 }
 .price-contents .contents-box table {
-  margin-bottom: clamp(10px, 2.6041666667vw, 40px);
+  margin-bottom: clamp(10px, 0.9765625vw, 15px);
+}
+.price-contents .contents-box p {
+  margin-bottom: clamp(10px, 6.5104166667vw, 100px);
+}
+.price-contents .contents-box p span {
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif !important;
+}
+.price-contents .contents-box p span span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.price-contents .contents-box p span span img {
+  width: 20px;
+}
+.price-contents .contents-box p span span a {
+  text-decoration: none !important;
 }
 .price-contents .contents-box_cat {
   width: 100%;
@@ -3461,7 +3484,7 @@
           align-items: center;
 }
 .price-contents .contents-box_btn.center {
-  bottom: -150px;
+  bottom: -230px;
   left: 50%;
   right: auto;
   -webkit-transform: translateX(-50%);
@@ -3490,6 +3513,7 @@ td, th {
 }
 td span, th span {
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif !important;
+  line-height: 1.5;
 }
 td > div > span, th > div > span {
   padding: 5px 10px;
@@ -9088,7 +9112,10 @@ td div:nth-last-child(1), th div:nth-last-child(1) {
     margin-bottom: 70px;
   }
   .price-contents .contents-box table {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+  }
+  .price-contents .contents-box p {
+    margin-bottom: 60px;
   }
   .price-contents .contents-box_cat {
     padding: 8px 0;
@@ -9296,6 +9323,9 @@ td div:nth-last-child(1), th div:nth-last-child(1) {
   }
   td > div > span, th > div > span {
     padding: 0;
+  }
+  td > div > span > span, th > div > span > span {
+    padding: 5px 10px;
   }
   td > div > span > span > span, th > div > span > span > span {
     padding: 5px;

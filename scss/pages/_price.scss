@@ -17,13 +17,44 @@
       margin-bottom: 70px;
     }
 
+    //CMS化によりCSS調整
     table{
-      margin-bottom: clamp(10px,get_vw(40),40px);
+      margin-bottom: clamp(10px,get_vw(15),15px);
 
       @include sp {
-        margin-bottom: 30px;
+        margin-bottom: 10px;
       }
 
+    }
+
+    //CMS化によりCSS調整
+    p{
+      margin-bottom: clamp(10px,get_vw(100),100px);
+
+      @include sp {
+        margin-bottom: 60px;
+      }
+
+      span{
+        font-family: $fontFamilyYuGo !important;
+
+        span{
+
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+
+          img{
+            width: 20px;
+          }
+
+          a{
+            text-decoration: none !important;
+          }
+
+        }
+
+      }
     }
 
     &_cat{
@@ -499,7 +530,7 @@
       }
 
       &.center{
-        bottom: -150px;
+        bottom: -230px;
         left: 50%;
         right: auto;
         transform: translateX(-50%);
@@ -559,6 +590,7 @@
 }
 
 
+//CMS化によりCSS調整
 td, th {
 	border: 1px solid #CADAD4;
 	border-collapse: collapse;
@@ -566,6 +598,7 @@ td, th {
 
   span{
     font-family: $fontFamilyYuGo !important;
+    line-height: 1.5;
   }
 
   > div{
@@ -578,6 +611,8 @@ td, th {
         padding: 0;
 
         > span {
+
+          padding: 5px 10px;
 
           >span {
             padding: 5px;

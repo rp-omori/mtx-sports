@@ -27,6 +27,10 @@ $rootDir = get_template_directory_uri();
         <?php endwhile; ?>
       <?php endif; ?>
 
+      <a href="<?php echo esc_url(home_url('/contact')); ?>" class="contents-box_btn center">
+        <p>その他オプション等については、<br>お問い合わせください。</p>
+      </a>
+
     </div>
 
     <div class="contents-box sp">
@@ -37,8 +41,12 @@ $rootDir = get_template_directory_uri();
         <?php endwhile; ?>
       <?php endif; ?>
 
-    </div>
+      <a href="<?php echo esc_url(home_url('/contact')); ?>" class="contents-box_btn center">
+        <p>その他オプション等については、<br>お問い合わせください。</p>
+      </a>
 
+
+    </div>
   </div>
 
   <!-- footer手前の２つ並びのメニュー -->
