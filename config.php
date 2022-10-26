@@ -7,7 +7,7 @@
     $form_key = 82;
     $price_key = 94;
   } else {
-    $form_key = 110;
+    $form_key = 82;
     $price_key = 62;
   }
 
