@@ -10725,7 +10725,7 @@ td div:nth-last-child(1), th div:nth-last-child(1) {
     text-align: left;
   }
   .contact .contact__appointment .contact__appointment-inner {
-    padding: 0;
+    padding: 20px 50px;
     background: inherit;
   }
   .contact .contact__appointment .contact__appointment-head {
