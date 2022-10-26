@@ -5795,7 +5795,7 @@ td div:nth-last-child(1), th div:nth-last-child(1) {
 .contact .contact__head .contact__head-inner {
   width: 59%;
   margin: 0 auto;
-  padding: 6.5104166667vw 0;
+  padding: 3.2552083333vw 0;
 }
 .contact .contact__head .contact__head-lead {
   margin-bottom: 3.2552083333vw;
@@ -5803,9 +5803,6 @@ td div:nth-last-child(1), th div:nth-last-child(1) {
   font-weight: bold;
   line-height: 1.75;
   text-align: center;
-}
-.contact .contact__head .contact__time {
-  margin-bottom: 4.5572916667vw;
 }
 .contact .contact__head .contact__time .contact__time-inner {
   display: -webkit-box;
@@ -5845,37 +5842,13 @@ td div:nth-last-child(1), th div:nth-last-child(1) {
   font-size: clamp(10px, 1.9rem, 19px);
   line-height: 1.5;
 }
-.contact .contact__head .contact__appointment .contact__appointment-inner {
-  padding: 2.4088541667vw 5.9895833333vw;
-  background: var(--main-section-bg);
-  border-radius: 10px;
-}
-.contact .contact__head .contact__appointment .contact__appointment-head {
-  margin-bottom: 1.4973958333vw;
-  color: var(--main-color);
-  font-size: clamp(10px, 2.4rem, 24px);
-  font-weight: bold;
-  text-align: center;
-}
-.contact .contact__head .contact__appointment .contact__appointment-btn-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.contact .contact__head .contact__appointment .btn {
-  display: inline-block;
-  width: calc(50% - 7.5px);
-}
 .contact .contact__body {
   background: var(--main-color-white);
 }
 .contact .contact__body .contact__body-inner {
   width: 52%;
   margin: 0 auto;
-  padding: 6.5104166667vw 0 13.0208333333vw;
+  padding: 6.5104166667vw 0 6.5104166667vw;
 }
 .contact .form-body {
   margin-bottom: 2.6041666667vw;
@@ -5941,6 +5914,29 @@ td div:nth-last-child(1), th div:nth-last-child(1) {
 }
 .contact .form-btn .btn p {
   color: var(--main-color-white);
+}
+.contact .contact__appointment .contact__appointment-inner {
+  padding: 3.90625vw 13.0208333333vw;
+  border-radius: 10px;
+}
+.contact .contact__appointment .contact__appointment-head {
+  margin-bottom: 1.953125vw;
+  color: var(--main-color);
+  font-size: clamp(10px, 2.4rem, 24px);
+  font-weight: bold;
+  text-align: center;
+}
+.contact .contact__appointment .contact__appointment-btn-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contact .contact__appointment .btn {
+  display: inline-block;
+  width: calc(50% - 7.5px);
 }
 
 .contact-confirm {
@@ -10638,9 +10634,6 @@ td div:nth-last-child(1), th div:nth-last-child(1) {
     font-size: clamp(10px, 1.5rem, 15px);
     text-align: left;
   }
-  .contact .contact__head .contact__time {
-    margin-bottom: 14.6666666667vw;
-  }
   .contact .contact__head .contact__time .contact__time-inner {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -10668,30 +10661,6 @@ td div:nth-last-child(1), th div:nth-last-child(1) {
   .contact .contact__head .contact__time .contact__time-text {
     font-size: clamp(10px, 1.4rem, 14px);
     text-align: center;
-  }
-  .contact .contact__head .contact__appointment .contact__appointment-inner {
-    padding: 0;
-    background: inherit;
-  }
-  .contact .contact__head .contact__appointment .contact__appointment-head {
-    margin-bottom: 4vw;
-    font-size: clamp(10px, 1.8rem, 18px);
-  }
-  .contact .contact__head .contact__appointment .contact__appointment-btn-wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .contact .contact__head .contact__appointment .btn {
-    width: 100%;
-    padding: 15.5px 0;
-    margin-bottom: 3.2vw;
-    -webkit-filter: drop-shadow(2px 2px 2px rgba(182, 200, 193, 0.5));
-            filter: drop-shadow(2px 2px 2px rgba(182, 200, 193, 0.5));
-  }
-  .contact .contact__head .contact__appointment .btn span {
-    font-size: clamp(10px, 1.5rem, 15px);
   }
   .contact .contact__body .contact__body-inner {
     width: 84%;
@@ -10754,6 +10723,30 @@ td div:nth-last-child(1), th div:nth-last-child(1) {
     font-size: clamp(10px, 1.5rem, 15px);
     line-height: 1.6;
     text-align: left;
+  }
+  .contact .contact__appointment .contact__appointment-inner {
+    padding: 0;
+    background: inherit;
+  }
+  .contact .contact__appointment .contact__appointment-head {
+    margin-bottom: 4vw;
+    font-size: clamp(10px, 1.8rem, 18px);
+  }
+  .contact .contact__appointment .contact__appointment-btn-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact .contact__appointment .btn {
+    width: 100%;
+    padding: 15.5px 0;
+    margin-bottom: 3.2vw;
+    -webkit-filter: drop-shadow(2px 2px 2px rgba(182, 200, 193, 0.5));
+            filter: drop-shadow(2px 2px 2px rgba(182, 200, 193, 0.5));
+  }
+  .contact .contact__appointment .btn span {
+    font-size: clamp(10px, 1.5rem, 15px);
   }
   .contact-confirm {
     font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
